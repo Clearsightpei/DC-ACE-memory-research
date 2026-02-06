@@ -1,0 +1,13 @@
+# Ignore the generated dataset (we only share the generator code)
+dataset_pilot/
+dataset_v1/
+output/
+__pycache__/
+
+# Ignore system files
+.DS_Store
+
+# Ignore virtual environments
+.conda/
+env/
+venv/
