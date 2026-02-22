@@ -1,0 +1,848 @@
+{
+  "total_characters": 30,
+  "samples_per_character": 3,
+  "total_images": 90,
+  "description": "DC-ACE Chinese Character Dataset - 30 basic characters with stroke-accurate rendering",
+  "characters": [
+    {
+      "index": 1,
+      "character": "一",
+      "pinyin": "yī",
+      "meaning": "one",
+      "description": "horizontal line",
+      "prompt": "Draw Chinese character '一' (yī, meaning: one) - horizontal line",
+      "samples": [
+        {
+          "filename": "01_一_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "01_一_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "01_一_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "character": "人",
+      "pinyin": "rén",
+      "meaning": "person",
+      "description": "two strokes forming a person",
+      "prompt": "Draw Chinese character '人' (rén, meaning: person) - two strokes forming a person",
+      "samples": [
+        {
+          "filename": "02_人_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "02_人_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "02_人_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "character": "入",
+      "pinyin": "rù",
+      "meaning": "enter",
+      "description": "two strokes entering downward",
+      "prompt": "Draw Chinese character '入' (rù, meaning: enter) - two strokes entering downward",
+      "samples": [
+        {
+          "filename": "03_入_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "03_入_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "03_入_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "character": "八",
+      "pinyin": "bā",
+      "meaning": "eight",
+      "description": "two strokes separating outward",
+      "prompt": "Draw Chinese character '八' (bā, meaning: eight) - two strokes separating outward",
+      "samples": [
+        {
+          "filename": "04_八_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "04_八_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "04_八_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "character": "刀",
+      "pinyin": "dāo",
+      "meaning": "knife",
+      "description": "curved blade shape",
+      "prompt": "Draw Chinese character '刀' (dāo, meaning: knife) - curved blade shape",
+      "samples": [
+        {
+          "filename": "05_刀_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "05_刀_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "05_刀_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "character": "力",
+      "pinyin": "lì",
+      "meaning": "power/strength",
+      "description": "muscular arm shape",
+      "prompt": "Draw Chinese character '力' (lì, meaning: power/strength) - muscular arm shape",
+      "samples": [
+        {
+          "filename": "06_力_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "06_力_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "06_力_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "character": "又",
+      "pinyin": "yòu",
+      "meaning": "again/also",
+      "description": "right hand shape",
+      "prompt": "Draw Chinese character '又' (yòu, meaning: again/also) - right hand shape",
+      "samples": [
+        {
+          "filename": "07_又_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "07_又_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "07_又_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "character": "十",
+      "pinyin": "shí",
+      "meaning": "ten",
+      "description": "cross/plus shape",
+      "prompt": "Draw Chinese character '十' (shí, meaning: ten) - cross/plus shape",
+      "samples": [
+        {
+          "filename": "08_十_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "08_十_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "08_十_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "character": "工",
+      "pinyin": "gōng",
+      "meaning": "work/labor",
+      "description": "three horizontal lines",
+      "prompt": "Draw Chinese character '工' (gōng, meaning: work/labor) - three horizontal lines",
+      "samples": [
+        {
+          "filename": "09_工_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "09_工_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "09_工_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "character": "土",
+      "pinyin": "tǔ",
+      "meaning": "earth/soil",
+      "description": "ground with line above",
+      "prompt": "Draw Chinese character '土' (tǔ, meaning: earth/soil) - ground with line above",
+      "samples": [
+        {
+          "filename": "10_土_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "10_土_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "10_土_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "character": "木",
+      "pinyin": "mù",
+      "meaning": "wood/tree",
+      "description": "tree with branches",
+      "prompt": "Draw Chinese character '木' (mù, meaning: wood/tree) - tree with branches",
+      "samples": [
+        {
+          "filename": "11_木_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "11_木_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "11_木_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "character": "火",
+      "pinyin": "huǒ",
+      "meaning": "fire",
+      "description": "flames rising",
+      "prompt": "Draw Chinese character '火' (huǒ, meaning: fire) - flames rising",
+      "samples": [
+        {
+          "filename": "12_火_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "12_火_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "12_火_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "character": "水",
+      "pinyin": "shuǐ",
+      "meaning": "water",
+      "description": "flowing water",
+      "prompt": "Draw Chinese character '水' (shuǐ, meaning: water) - flowing water",
+      "samples": [
+        {
+          "filename": "13_水_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "13_水_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "13_水_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "character": "口",
+      "pinyin": "kǒu",
+      "meaning": "mouth",
+      "description": "square opening",
+      "prompt": "Draw Chinese character '口' (kǒu, meaning: mouth) - square opening",
+      "samples": [
+        {
+          "filename": "14_口_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "14_口_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "14_口_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "character": "日",
+      "pinyin": "rì",
+      "meaning": "sun/day",
+      "description": "sun with line inside",
+      "prompt": "Draw Chinese character '日' (rì, meaning: sun/day) - sun with line inside",
+      "samples": [
+        {
+          "filename": "15_日_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "15_日_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "15_日_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "character": "月",
+      "pinyin": "yuè",
+      "meaning": "moon/month",
+      "description": "crescent moon",
+      "prompt": "Draw Chinese character '月' (yuè, meaning: moon/month) - crescent moon",
+      "samples": [
+        {
+          "filename": "16_月_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "16_月_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "16_月_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "character": "田",
+      "pinyin": "tián",
+      "meaning": "field",
+      "description": "rice field grid",
+      "prompt": "Draw Chinese character '田' (tián, meaning: field) - rice field grid",
+      "samples": [
+        {
+          "filename": "17_田_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "17_田_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "17_田_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "character": "目",
+      "pinyin": "mù",
+      "meaning": "eye",
+      "description": "eye with pupils",
+      "prompt": "Draw Chinese character '目' (mù, meaning: eye) - eye with pupils",
+      "samples": [
+        {
+          "filename": "18_目_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "18_目_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "18_目_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "character": "白",
+      "pinyin": "bái",
+      "meaning": "white",
+      "description": "sun with line",
+      "prompt": "Draw Chinese character '白' (bái, meaning: white) - sun with line",
+      "samples": [
+        {
+          "filename": "19_白_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "19_白_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "19_白_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "character": "山",
+      "pinyin": "shān",
+      "meaning": "mountain",
+      "description": "three peaks",
+      "prompt": "Draw Chinese character '山' (shān, meaning: mountain) - three peaks",
+      "samples": [
+        {
+          "filename": "20_山_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "20_山_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "20_山_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "character": "女",
+      "pinyin": "nǚ",
+      "meaning": "woman",
+      "description": "seated figure",
+      "prompt": "Draw Chinese character '女' (nǚ, meaning: woman) - seated figure",
+      "samples": [
+        {
+          "filename": "21_女_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "21_女_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "21_女_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "character": "子",
+      "pinyin": "zǐ",
+      "meaning": "child",
+      "description": "baby with arms up",
+      "prompt": "Draw Chinese character '子' (zǐ, meaning: child) - baby with arms up",
+      "samples": [
+        {
+          "filename": "22_子_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "22_子_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "22_子_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "character": "夕",
+      "pinyin": "xī",
+      "meaning": "evening",
+      "description": "crescent moon",
+      "prompt": "Draw Chinese character '夕' (xī, meaning: evening) - crescent moon",
+      "samples": [
+        {
+          "filename": "23_夕_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "23_夕_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "23_夕_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "character": "大",
+      "pinyin": "dà",
+      "meaning": "big/large",
+      "description": "person with arms spread",
+      "prompt": "Draw Chinese character '大' (dà, meaning: big/large) - person with arms spread",
+      "samples": [
+        {
+          "filename": "24_大_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "24_大_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "24_大_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "character": "小",
+      "pinyin": "xiǎo",
+      "meaning": "small/little",
+      "description": "three small dots",
+      "prompt": "Draw Chinese character '小' (xiǎo, meaning: small/little) - three small dots",
+      "samples": [
+        {
+          "filename": "25_小_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "25_小_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "25_小_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "character": "王",
+      "pinyin": "wáng",
+      "meaning": "king",
+      "description": "three horizontal lines with vertical",
+      "prompt": "Draw Chinese character '王' (wáng, meaning: king) - three horizontal lines with vertical",
+      "samples": [
+        {
+          "filename": "26_王_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "26_王_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "26_王_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "character": "车",
+      "pinyin": "chē",
+      "meaning": "vehicle/car",
+      "description": "cart from above",
+      "prompt": "Draw Chinese character '车' (chē, meaning: vehicle/car) - cart from above",
+      "samples": [
+        {
+          "filename": "27_车_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "27_车_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "27_车_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "character": "贝",
+      "pinyin": "bèi",
+      "meaning": "shell/treasure",
+      "description": "cowrie shell",
+      "prompt": "Draw Chinese character '贝' (bèi, meaning: shell/treasure) - cowrie shell",
+      "samples": [
+        {
+          "filename": "28_贝_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "28_贝_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "28_贝_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "character": "门",
+      "pinyin": "mén",
+      "meaning": "door/gate",
+      "description": "two door panels",
+      "prompt": "Draw Chinese character '门' (mén, meaning: door/gate) - two door panels",
+      "samples": [
+        {
+          "filename": "29_门_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "29_门_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "29_门_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "character": "言",
+      "pinyin": "yán",
+      "meaning": "speech/words",
+      "description": "mouth speaking",
+      "prompt": "Draw Chinese character '言' (yán, meaning: speech/words) - mouth speaking",
+      "samples": [
+        {
+          "filename": "30_言_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "30_言_2.png",
+          "scale": 0.6,
+          "offset_x": -30,
+          "offset_y": 20
+        },
+        {
+          "filename": "30_言_3.png",
+          "scale": 0.45,
+          "offset_x": 25,
+          "offset_y": -15
+        }
+      ]
+    }
+  ]
+}

@@ -14,7 +14,7 @@ from PIL import Image
 WIDTH = 800
 HEIGHT = 600
 # Save dataset into user's Documents folder as requested
-OUT_DIR = "/Users/peilinwu/Documents/dataset_pilot"
+OUT_DIR = "/Users/peilinwu/Documents/AI memory research/dataset_pilot"
 
 COLORS = [
     "red", "green", "blue", "orange", "purple",
@@ -457,6 +457,232 @@ def draw_dragonfly(t, size):
         draw_leaf(t, size*0.8, 100, "cyan")
     t.penup(); t.goto(cx, cy); t.setheading(90); t.pendown()
 
+
+# ==========================================
+# 8. Level 3 Systemic Patterns (The Architect's Test)
+# ==========================================
+
+def draw_village_circle(t, radius, count, house_size):
+    """L3: Arranges houses in a circle, facing inward."""
+    cx, cy = t.position()
+    angle_step = 360.0 / count
+    
+    for i in range(count):
+        # Calculate polar coordinates
+        angle = i * angle_step
+        rad_angle = math.radians(angle)
+        
+        # Position house on the perimeter
+        x = cx + radius * math.cos(rad_angle)
+        y = cy + radius * math.sin(rad_angle)
+        
+        # Move to position
+        t.penup(); t.goto(x, y); t.setheading(angle + 90) # Face center? Or outward? Let's face upright for simplicity first, or align with radius.
+        # Actually, standard house draws upright. Let's just place them.
+        t.setheading(90) 
+        t.pendown()
+        
+        # Diversity: Random roof colors
+        c1 = random.choice(COLORS)
+        c2 = random.choice(COLORS)
+        draw_house(t, house_size, c1, c2)
+        
+    t.penup(); t.goto(cx, cy); t.setheading(90); t.pendown()
+
+def draw_flower_grid(t, rows, cols, cell_size):
+    """L3: Draws a grid of flowers."""
+    cx, cy = t.position()
+    # Start from top-left to center the grid
+    width = cols * cell_size
+    height = rows * cell_size
+    start_x = cx - width / 2 + cell_size / 2
+    start_y = cy + height / 2 - cell_size / 2
+    
+    for r in range(rows):
+        for c in range(cols):
+            x = start_x + c * cell_size
+            y = start_y - r * cell_size
+            t.penup(); t.goto(x, y); t.pendown()
+            
+            # Random flower properties
+            petals = random.choice([5, 6, 8])
+            p_size = cell_size * 0.3
+            cols_list = random.sample(COLORS, 3)
+            draw_flower(t, petals, p_size, 60, cols_list)
+            
+    t.penup(); t.goto(cx, cy); t.setheading(90); t.pendown()
+
+def draw_snow_family(t, count, start_size):
+    """L3: Draws a line of snowmen getting smaller."""
+    cx, cy = t.position()
+    gap = start_size * 0.8
+    # Start on the left
+    current_x = cx - (count * gap) / 2
+    current_size = start_size
+    
+    for i in range(count):
+        t.penup(); t.goto(current_x, cy); t.pendown()
+        draw_snowman(t, current_size)
+        
+        current_x += gap
+        current_size *= 0.8 # Shrink factor
+        
+    t.penup(); t.goto(cx, cy); t.setheading(90); t.pendown()
+
+def draw_galaxy_spiral(t, arms, stars_per_arm):
+    """L3: Arranges stars/badges in a spiral."""
+    cx, cy = t.position()
+    draw_sun(t, 40) # Center
+    
+    max_r = 250
+    for i in range(arms * stars_per_arm):
+        # Logarithmic spiral formula
+        angle = i * (360 / stars_per_arm) * 0.5
+        radius = 60 + (i / (arms * stars_per_arm)) * max_r
+        
+        rad = math.radians(angle)
+        x = cx + radius * math.cos(rad)
+        y = cy + radius * math.sin(rad)
+        
+        t.penup(); t.goto(x, y); t.pendown()
+        if i % 2 == 0:
+            draw_star(t, random.uniform(10, 20), "gold")
+        else:
+            draw_badge(t, random.uniform(15, 25), "blue", "white")
+
+    t.penup(); t.goto(cx, cy); t.setheading(90); t.pendown()
+def draw_traffic_scene(t, car_count, light_count):
+    """
+    L3: A busy street scene. 
+    - Draws a road line.
+    - Places traffic lights at regular intervals.
+    - Places cars randomly in gaps, ensuring they don't overlap with light poles.
+    """
+    cx, cy = t.position()
+    
+    # 1. Draw Road (Full width across screen)
+    road_y = cy - 50
+    t.penup(); t.goto(cx, road_y); t.pendown()
+    draw_rectangle(t, 800, 10, "grey") 
+    
+    # 2. Place Traffic Lights (Regular intervals)
+    spacing = 600 / (light_count + 1)
+    light_x_positions = []
+    current_x = cx - 300 + spacing
+    
+    for i in range(light_count):
+        t.penup(); t.goto(current_x, road_y + 60); t.pendown()
+        draw_traffic_light(t, 60)
+        light_x_positions.append(current_x)
+        current_x += spacing
+
+    # 3. Place Cars (Collision Avoidance with Lights AND other cars)
+    car_x_positions = []
+    car_length = 50
+    for _ in range(car_count):
+        valid_spot = False
+        attempts = 0
+        while not valid_spot and attempts < 20:
+            tx = random.uniform(cx - 300, cx + 300)
+            conflict = False
+
+            # Check distance from lights (width approx 20)
+            for lx in light_x_positions:
+                if abs(tx - lx) < 40:
+                    conflict = True
+                    break
+
+            # Check distance from other cars
+            if not conflict:
+                for car_x in car_x_positions:
+                    if abs(tx - car_x) < car_length + 10:  # car_length + gap
+                        conflict = True
+                        break
+
+            if not conflict:
+                valid_spot = True
+                c = random.choice(["red", "blue", "green", "silver"])
+                t.penup(); t.goto(tx, road_y + 15); t.pendown()
+                draw_car(t, car_length, c)
+                car_x_positions.append(tx)
+            attempts += 1
+            
+    t.penup(); t.goto(cx, cy); t.setheading(90); t.pendown()
+
+def draw_enchanted_garden(t, tree_count, pot_count, insect_count):
+    """
+    L3: A complex garden scene.
+    - Background: Pine trees that MUST NOT OVERLAP (requires keeping track of state).
+    - Foreground: Flower pots.
+    - Sky: Random Butterflies and Dragonflies.
+    """
+    cx, cy = t.position()
+    ground_y = cy - 100
+    
+    # 1. Pine Trees (Collision Detection)
+    placed_trees = [] # Store (x, width)
+    for _ in range(tree_count):
+        h = random.uniform(100, 150)
+        w = h * 0.5 
+        
+        # Try finding a spot
+        for _ in range(50): 
+            tx = random.uniform(cx - 300, cx + 300)
+            overlap = False
+            for (ex_x, ex_w) in placed_trees:
+                min_dist = (w + ex_w) / 2 + 10 
+                if abs(tx - ex_x) < min_dist:
+                    overlap = True
+                    break
+            if not overlap:
+                t.penup(); t.goto(tx, ground_y + h*0.2); t.pendown()
+                draw_pine_tree(t, h)
+                placed_trees.append((tx, w))
+                break 
+
+    # 2. Flower Pots (Collision Detection with trees and other pots)
+    placed_pots = []  # Store (x, width)
+    for _ in range(pot_count):
+        pot_size = random.uniform(30, 50)
+
+        # Try finding a spot
+        for _ in range(50):
+            px = random.uniform(cx - 250, cx + 250)
+            py = ground_y - random.uniform(0, 20)
+            overlap = False
+
+            # Check collision with trees
+            for (tree_x, tree_w) in placed_trees:
+                min_dist = (pot_size + tree_w) / 2 + 10
+                if abs(px - tree_x) < min_dist:
+                    overlap = True
+                    break
+
+            # Check collision with other pots
+            if not overlap:
+                for (pot_x, pot_w) in placed_pots:
+                    min_dist = (pot_size + pot_w) / 2 + 10
+                    if abs(px - pot_x) < min_dist:
+                        overlap = True
+                        break
+
+            if not overlap:
+                t.penup(); t.goto(px, py); t.pendown()
+                draw_flower_pot(t, pot_size)
+                placed_pots.append((px, pot_size))
+                break
+
+    # 3. Insects (Sky)
+    for _ in range(insect_count):
+        ix = random.uniform(cx - 300, cx + 300)
+        iy = cy + random.uniform(0, 150)
+        t.penup(); t.goto(ix, iy); t.pendown()
+        if random.random() > 0.5:
+            draw_butterfly(t, random.uniform(20, 30), random.choice(COLORS))
+        else:
+            draw_dragonfly(t, random.uniform(20, 30))
+
+    t.penup(); t.goto(cx, cy); t.setheading(90); t.pendown()
 # ==========================================
 # 4. Generator Class
 # ==========================================
@@ -540,6 +766,8 @@ class TaskGenerator:
             self._save(self._get_id("L1_Leaf") + ".png", 1,
                        f"Draw a {c} leaf angle {ang} size {int(s)} at ({int(x)},{int(y)}).",
                        {"type": "leaf", "size": s, "angle": ang})
+
+       
 
         # --- Level 2 (5 samples each) ---
         # Helper to simplify loop
@@ -702,6 +930,60 @@ class TaskGenerator:
             self.t.penup(); self.t.goto(x, y); self.t.pendown(); draw_dragonfly(self.t, s)
             self._save(self._get_id("L2_Dragonfly")+".png", 2, f"Dragonfly size {int(s)}", {"type":"dragonfly"})
 
+        # --- LEVEL 3: SYSTEMIC PATTERNS ---
+        
+        # 25. Village
+        for _ in range(5):
+            r = random.uniform(100, 160); cnt = random.randint(5, 10); h_s = random.uniform(30, 50)
+            x, y = self._rand_pos(r + h_s + 20)
+            self.t.penup(); self.t.goto(x, y); self.t.pendown()
+            draw_village_circle(self.t, r, cnt, h_s)
+            self._save(self._get_id("L3_Village")+".png", 3, f"Village circle radius {int(r)} count {cnt}", {"type":"village"})
+
+        # 26. Flower Grid
+        for _ in range(5):
+            rows = random.randint(2, 4); cols = random.randint(2, 4); sz = random.uniform(40, 60)
+            margin = max(rows, cols) * sz * 0.6 + 40
+            x, y = self._rand_pos(margin)
+            self.t.penup(); self.t.goto(x, y); self.t.pendown()
+            draw_flower_grid(self.t, rows, cols, sz)
+            self._save(self._get_id("L3_Garden")+".png", 3, f"Flower Grid {rows}x{cols}", {"type":"garden"})
+
+        # 27. Snowman Family
+        for _ in range(5):
+            cnt = random.randint(3, 5); start_sz = random.uniform(60, 90)
+            x, y = self._rand_pos(cnt * start_sz/2 + 40)
+            self.t.penup(); self.t.goto(x, y); self.t.pendown()
+            draw_snow_family(self.t, cnt, start_sz)
+            self._save(self._get_id("L3_Family")+".png", 3, f"Snowman Family count {cnt}", {"type":"family"})
+
+        # 29. Galaxy Spiral
+        for _ in range(5):
+            arms = random.randint(3, 5); stars = random.randint(5, 10)
+            x, y = self._rand_pos(260)
+            self.t.penup(); self.t.goto(x, y); self.t.pendown()
+            draw_galaxy_spiral(self.t, arms, stars)
+            self._save(self._get_id("L3_Galaxy")+".png", 3, f"Galaxy Spiral arms {arms}", {"type":"galaxy"})
+
+        # 30. Traffic Scene (NEW)
+        for _ in range(5):
+            cars = random.randint(3, 6); lights = random.randint(2, 4)
+            x, y = self._rand_pos(350)
+            self.t.penup(); self.t.goto(x, y); self.t.pendown()
+            draw_traffic_scene(self.t, cars, lights)
+            self._save(self._get_id("L3_Traffic") + ".png", 3,
+                       f"Draw a traffic scene with a full-width road, {lights} traffic lights evenly spaced, and {cars} non-overlapping cars that avoid both lights and other cars",
+                       {"type": "traffic_scene", "lights": lights, "cars": cars})
+
+        # 31. Enchanted Garden (NEW)
+        for _ in range(5):
+            trees = random.randint(3, 6); pots = random.randint(4, 8); insects = random.randint(3, 6)
+            x, y = self._rand_pos(350)
+            self.t.penup(); self.t.goto(x, y); self.t.pendown()
+            draw_enchanted_garden(self.t, trees, pots, insects)
+            self._save(self._get_id("L3_Garden_Complex") + ".png", 3,
+                       f"Draw an enchanted garden with {trees} non-overlapping pine trees in the background, {pots} flower pots that don't overlap with trees or each other, and {insects} flying insects (butterflies/dragonflies) in the sky",
+                       {"type": "enchanted_garden", "trees": trees, "pots": pots, "insects": insects})
         # Metadata
         with open(os.path.join(OUT_DIR, "tasks.json"), "w") as f:
             json.dump(self.metadata, f, indent=2)
@@ -713,3 +995,4 @@ class TaskGenerator:
 if __name__ == "__main__":
     gen = TaskGenerator()
     gen.generate_all()
+    

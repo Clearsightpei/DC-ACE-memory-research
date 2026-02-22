@@ -1,0 +1,2102 @@
+[
+  {
+    "id": "L1_Stroke_Dian_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 点 (Dian/dot) size 20 at (-111,-106)",
+    "params": {
+      "type": "stroke_dian",
+      "stroke": "点",
+      "pinyin": "dian",
+      "meaning": "dot",
+      "size": 20.16827132337987,
+      "x": -111.89559555502672,
+      "y": -106.08434213744533
+    }
+  },
+  {
+    "id": "L1_Stroke_Dian_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 点 (Dian/dot) size 22 at (-11,151)",
+    "params": {
+      "type": "stroke_dian",
+      "stroke": "点",
+      "pinyin": "dian",
+      "meaning": "dot",
+      "size": 22.390443487464985,
+      "x": -11.727424734736246,
+      "y": 151.77391441329758
+    }
+  },
+  {
+    "id": "L1_Stroke_Dian_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 点 (Dian/dot) size 17 at (-214,-134)",
+    "params": {
+      "type": "stroke_dian",
+      "stroke": "点",
+      "pinyin": "dian",
+      "meaning": "dot",
+      "size": 17.389824194923737,
+      "x": -214.1571738738774,
+      "y": -134.19141349167018
+    }
+  },
+  {
+    "id": "L1_Stroke_Dian_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 点 (Dian/dot) size 23 at (195,54)",
+    "params": {
+      "type": "stroke_dian",
+      "stroke": "点",
+      "pinyin": "dian",
+      "meaning": "dot",
+      "size": 23.81448630788366,
+      "x": 195.41510015964343,
+      "y": 54.225890673787546
+    }
+  },
+  {
+    "id": "L1_Stroke_Dian_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 点 (Dian/dot) size 12 at (282,195)",
+    "params": {
+      "type": "stroke_dian",
+      "stroke": "点",
+      "pinyin": "dian",
+      "meaning": "dot",
+      "size": 12.864383277767324,
+      "x": 282.60565387977726,
+      "y": 195.11536033928485
+    }
+  },
+  {
+    "id": "L1_Stroke_Heng_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横 (Heng/horizontal) size 89 at (-32,21)",
+    "params": {
+      "type": "stroke_heng",
+      "stroke": "横",
+      "pinyin": "heng",
+      "meaning": "horizontal",
+      "size": 89.65360161238155,
+      "x": -32.28872186900706,
+      "y": 21.568513720447065
+    }
+  },
+  {
+    "id": "L1_Stroke_Heng_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横 (Heng/horizontal) size 58 at (-54,-11)",
+    "params": {
+      "type": "stroke_heng",
+      "stroke": "横",
+      "pinyin": "heng",
+      "meaning": "horizontal",
+      "size": 58.006478254683316,
+      "x": -54.58845987560528,
+      "y": -11.143322792903874
+    }
+  },
+  {
+    "id": "L1_Stroke_Heng_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横 (Heng/horizontal) size 46 at (-67,67)",
+    "params": {
+      "type": "stroke_heng",
+      "stroke": "横",
+      "pinyin": "heng",
+      "meaning": "horizontal",
+      "size": 46.00919180044119,
+      "x": -67.68090231878944,
+      "y": 67.91055766528874
+    }
+  },
+  {
+    "id": "L1_Stroke_Heng_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横 (Heng/horizontal) size 90 at (12,-11)",
+    "params": {
+      "type": "stroke_heng",
+      "stroke": "横",
+      "pinyin": "heng",
+      "meaning": "horizontal",
+      "size": 90.34134091366079,
+      "x": 12.180821211373853,
+      "y": -11.11716810498056
+    }
+  },
+  {
+    "id": "L1_Stroke_Heng_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横 (Heng/horizontal) size 46 at (132,61)",
+    "params": {
+      "type": "stroke_heng",
+      "stroke": "横",
+      "pinyin": "heng",
+      "meaning": "horizontal",
+      "size": 46.80827589568395,
+      "x": 132.61722545875216,
+      "y": 61.88141464700999
+    }
+  },
+  {
+    "id": "L1_Stroke_Shu_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖 (Shu/vertical) size 50 at (245,-83)",
+    "params": {
+      "type": "stroke_shu",
+      "stroke": "竖",
+      "pinyin": "shu",
+      "meaning": "vertical",
+      "size": 50.17239008439847,
+      "x": 245.91015689746573,
+      "y": -83.17533278426784
+    }
+  },
+  {
+    "id": "L1_Stroke_Shu_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖 (Shu/vertical) size 56 at (-42,30)",
+    "params": {
+      "type": "stroke_shu",
+      "stroke": "竖",
+      "pinyin": "shu",
+      "meaning": "vertical",
+      "size": 56.75963202048881,
+      "x": -42.22079514410197,
+      "y": 30.964808320569546
+    }
+  },
+  {
+    "id": "L1_Stroke_Shu_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖 (Shu/vertical) size 96 at (8,7)",
+    "params": {
+      "type": "stroke_shu",
+      "stroke": "竖",
+      "pinyin": "shu",
+      "meaning": "vertical",
+      "size": 96.82005032619028,
+      "x": 8.78309634991696,
+      "y": 7.654533690188305
+    }
+  },
+  {
+    "id": "L1_Stroke_Shu_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖 (Shu/vertical) size 93 at (-61,9)",
+    "params": {
+      "type": "stroke_shu",
+      "stroke": "竖",
+      "pinyin": "shu",
+      "meaning": "vertical",
+      "size": 93.53111158120663,
+      "x": -61.74440912240405,
+      "y": 9.464461768366917
+    }
+  },
+  {
+    "id": "L1_Stroke_Shu_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖 (Shu/vertical) size 84 at (-69,39)",
+    "params": {
+      "type": "stroke_shu",
+      "stroke": "竖",
+      "pinyin": "shu",
+      "meaning": "vertical",
+      "size": 84.68641838143216,
+      "x": -69.75645124424146,
+      "y": 39.141744628205615
+    }
+  },
+  {
+    "id": "L1_Stroke_Pie_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 撇 (Pie/throw/left-falling) size 74 at (-68,40)",
+    "params": {
+      "type": "stroke_pie",
+      "stroke": "撇",
+      "pinyin": "pie",
+      "meaning": "throw/left-falling",
+      "size": 74.84048918263898,
+      "x": -68.1784344848722,
+      "y": 40.450854173293834
+    }
+  },
+  {
+    "id": "L1_Stroke_Pie_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 撇 (Pie/throw/left-falling) size 75 at (-120,34)",
+    "params": {
+      "type": "stroke_pie",
+      "stroke": "撇",
+      "pinyin": "pie",
+      "meaning": "throw/left-falling",
+      "size": 75.73467567137362,
+      "x": -120.41754462492852,
+      "y": 34.60003846143128
+    }
+  },
+  {
+    "id": "L1_Stroke_Pie_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 撇 (Pie/throw/left-falling) size 50 at (-246,-106)",
+    "params": {
+      "type": "stroke_pie",
+      "stroke": "撇",
+      "pinyin": "pie",
+      "meaning": "throw/left-falling",
+      "size": 50.56184821154571,
+      "x": -246.3768055160032,
+      "y": -106.72655158607168
+    }
+  },
+  {
+    "id": "L1_Stroke_Pie_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 撇 (Pie/throw/left-falling) size 54 at (203,-125)",
+    "params": {
+      "type": "stroke_pie",
+      "stroke": "撇",
+      "pinyin": "pie",
+      "meaning": "throw/left-falling",
+      "size": 54.709993037933025,
+      "x": 203.4159303189551,
+      "y": -125.24128468099046
+    }
+  },
+  {
+    "id": "L1_Stroke_Pie_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 撇 (Pie/throw/left-falling) size 56 at (141,14)",
+    "params": {
+      "type": "stroke_pie",
+      "stroke": "撇",
+      "pinyin": "pie",
+      "meaning": "throw/left-falling",
+      "size": 56.517943066624696,
+      "x": 141.86202709300386,
+      "y": 14.832612438916357
+    }
+  },
+  {
+    "id": "L1_Stroke_Na_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 捺 (Na/press/right-falling) size 47 at (-154,71)",
+    "params": {
+      "type": "stroke_na",
+      "stroke": "捺",
+      "pinyin": "na",
+      "meaning": "press/right-falling",
+      "size": 47.67809765436503,
+      "x": -154.5760344220506,
+      "y": 71.67208108405569
+    }
+  },
+  {
+    "id": "L1_Stroke_Na_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 捺 (Na/press/right-falling) size 72 at (0,-57)",
+    "params": {
+      "type": "stroke_na",
+      "stroke": "捺",
+      "pinyin": "na",
+      "meaning": "press/right-falling",
+      "size": 72.02997771969103,
+      "x": 0.569735037529199,
+      "y": -57.19980827962318
+    }
+  },
+  {
+    "id": "L1_Stroke_Na_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 捺 (Na/press/right-falling) size 80 at (-90,-48)",
+    "params": {
+      "type": "stroke_na",
+      "stroke": "捺",
+      "pinyin": "na",
+      "meaning": "press/right-falling",
+      "size": 80.24930347167368,
+      "x": -90.84545987201366,
+      "y": -48.569385821709055
+    }
+  },
+  {
+    "id": "L1_Stroke_Na_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 捺 (Na/press/right-falling) size 88 at (73,18)",
+    "params": {
+      "type": "stroke_na",
+      "stroke": "捺",
+      "pinyin": "na",
+      "meaning": "press/right-falling",
+      "size": 88.9959962706676,
+      "x": 73.81492403837973,
+      "y": 18.08990205014208
+    }
+  },
+  {
+    "id": "L1_Stroke_Na_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 捺 (Na/press/right-falling) size 90 at (-88,-8)",
+    "params": {
+      "type": "stroke_na",
+      "stroke": "捺",
+      "pinyin": "na",
+      "meaning": "press/right-falling",
+      "size": 90.53058202685949,
+      "x": -88.58295940875965,
+      "y": -8.149353723010517
+    }
+  },
+  {
+    "id": "L1_Stroke_Ti_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 提 (Ti/rise) size 75 at (28,-58)",
+    "params": {
+      "type": "stroke_ti",
+      "stroke": "提",
+      "pinyin": "ti",
+      "meaning": "rise",
+      "size": 75.85279675201932,
+      "x": 28.269205060638456,
+      "y": -58.180579363397655
+    }
+  },
+  {
+    "id": "L1_Stroke_Ti_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 提 (Ti/rise) size 98 at (75,0)",
+    "params": {
+      "type": "stroke_ti",
+      "stroke": "提",
+      "pinyin": "ti",
+      "meaning": "rise",
+      "size": 98.14144810359636,
+      "x": 75.99914714383047,
+      "y": -0.09740016988682143
+    }
+  },
+  {
+    "id": "L1_Stroke_Ti_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 提 (Ti/rise) size 66 at (2,59)",
+    "params": {
+      "type": "stroke_ti",
+      "stroke": "提",
+      "pinyin": "ti",
+      "meaning": "rise",
+      "size": 66.46016542901809,
+      "x": 2.7012646715834876,
+      "y": 59.601759336545115
+    }
+  },
+  {
+    "id": "L1_Stroke_Ti_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 提 (Ti/rise) size 82 at (34,43)",
+    "params": {
+      "type": "stroke_ti",
+      "stroke": "提",
+      "pinyin": "ti",
+      "meaning": "rise",
+      "size": 82.8500996152579,
+      "x": 34.99584168623278,
+      "y": 43.767038806081786
+    }
+  },
+  {
+    "id": "L1_Stroke_Ti_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 提 (Ti/rise) size 65 at (167,-13)",
+    "params": {
+      "type": "stroke_ti",
+      "stroke": "提",
+      "pinyin": "ti",
+      "meaning": "rise",
+      "size": 65.82813586619771,
+      "x": 167.31935695366514,
+      "y": -13.418092265098153
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZhe_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折 (HengZhe/horizontal-vertical fold) size 63 at (175,-36)",
+    "params": {
+      "type": "stroke_hengzhe",
+      "stroke": "横折",
+      "pinyin": "hengzhe",
+      "meaning": "horizontal-vertical fold",
+      "size": 63.52766295008601,
+      "x": 175.75115512637134,
+      "y": -36.98536323055407
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZhe_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折 (HengZhe/horizontal-vertical fold) size 59 at (-88,92)",
+    "params": {
+      "type": "stroke_hengzhe",
+      "stroke": "横折",
+      "pinyin": "hengzhe",
+      "meaning": "horizontal-vertical fold",
+      "size": 59.33297174021207,
+      "x": -88.98224068961528,
+      "y": 92.0406992885473
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZhe_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折 (HengZhe/horizontal-vertical fold) size 70 at (-125,54)",
+    "params": {
+      "type": "stroke_hengzhe",
+      "stroke": "横折",
+      "pinyin": "hengzhe",
+      "meaning": "horizontal-vertical fold",
+      "size": 70.81372917872194,
+      "x": -125.48776244587202,
+      "y": 54.98942130772997
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZhe_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折 (HengZhe/horizontal-vertical fold) size 56 at (-118,-12)",
+    "params": {
+      "type": "stroke_hengzhe",
+      "stroke": "横折",
+      "pinyin": "hengzhe",
+      "meaning": "horizontal-vertical fold",
+      "size": 56.77208268488329,
+      "x": -118.37782492654247,
+      "y": -12.934013203384296
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZhe_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折 (HengZhe/horizontal-vertical fold) size 45 at (121,98)",
+    "params": {
+      "type": "stroke_hengzhe",
+      "stroke": "横折",
+      "pinyin": "hengzhe",
+      "meaning": "horizontal-vertical fold",
+      "size": 45.118443997684466,
+      "x": 121.55016074650791,
+      "y": 98.73334817021217
+    }
+  },
+  {
+    "id": "L1_Stroke_HengPie_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横撇 (HengPie/horizontal-throw) size 78 at (15,38)",
+    "params": {
+      "type": "stroke_hengpie",
+      "stroke": "横撇",
+      "pinyin": "hengpie",
+      "meaning": "horizontal-throw",
+      "size": 78.02436506199228,
+      "x": 15.132874252483987,
+      "y": 38.61904089180909
+    }
+  },
+  {
+    "id": "L1_Stroke_HengPie_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横撇 (HengPie/horizontal-throw) size 79 at (-121,-55)",
+    "params": {
+      "type": "stroke_hengpie",
+      "stroke": "横撇",
+      "pinyin": "hengpie",
+      "meaning": "horizontal-throw",
+      "size": 79.12689046806256,
+      "x": -121.75614432113849,
+      "y": -55.21458856553517
+    }
+  },
+  {
+    "id": "L1_Stroke_HengPie_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横撇 (HengPie/horizontal-throw) size 73 at (26,47)",
+    "params": {
+      "type": "stroke_hengpie",
+      "stroke": "横撇",
+      "pinyin": "hengpie",
+      "meaning": "horizontal-throw",
+      "size": 73.20635142154842,
+      "x": 26.05007110243082,
+      "y": 47.28886921180222
+    }
+  },
+  {
+    "id": "L1_Stroke_HengPie_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横撇 (HengPie/horizontal-throw) size 69 at (92,5)",
+    "params": {
+      "type": "stroke_hengpie",
+      "stroke": "横撇",
+      "pinyin": "hengpie",
+      "meaning": "horizontal-throw",
+      "size": 69.30466135588604,
+      "x": 92.26044875849266,
+      "y": 5.580663116316117
+    }
+  },
+  {
+    "id": "L1_Stroke_HengPie_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横撇 (HengPie/horizontal-throw) size 40 at (185,-120)",
+    "params": {
+      "type": "stroke_hengpie",
+      "stroke": "横撇",
+      "pinyin": "hengpie",
+      "meaning": "horizontal-throw",
+      "size": 40.44544495385896,
+      "x": 185.17590657515353,
+      "y": -120.69552709037396
+    }
+  },
+  {
+    "id": "L1_Stroke_HengGou_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横钩 (HengGou/horizontal hook) size 63 at (203,44)",
+    "params": {
+      "type": "stroke_henggou",
+      "stroke": "横钩",
+      "pinyin": "henggou",
+      "meaning": "horizontal hook",
+      "size": 63.02812895693271,
+      "x": 203.99035178221243,
+      "y": 44.880121477701834
+    }
+  },
+  {
+    "id": "L1_Stroke_HengGou_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横钩 (HengGou/horizontal hook) size 52 at (-102,-104)",
+    "params": {
+      "type": "stroke_henggou",
+      "stroke": "横钩",
+      "pinyin": "henggou",
+      "meaning": "horizontal hook",
+      "size": 52.313789505533535,
+      "x": -102.08807920380232,
+      "y": -104.30060307750313
+    }
+  },
+  {
+    "id": "L1_Stroke_HengGou_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横钩 (HengGou/horizontal hook) size 48 at (-210,-131)",
+    "params": {
+      "type": "stroke_henggou",
+      "stroke": "横钩",
+      "pinyin": "henggou",
+      "meaning": "horizontal hook",
+      "size": 48.74751644849188,
+      "x": -210.5283242336939,
+      "y": -131.86280026123413
+    }
+  },
+  {
+    "id": "L1_Stroke_HengGou_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横钩 (HengGou/horizontal hook) size 77 at (81,-60)",
+    "params": {
+      "type": "stroke_henggou",
+      "stroke": "横钩",
+      "pinyin": "henggou",
+      "meaning": "horizontal hook",
+      "size": 77.4306815346066,
+      "x": 81.74546941040202,
+      "y": -60.2421712945387
+    }
+  },
+  {
+    "id": "L1_Stroke_HengGou_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横钩 (HengGou/horizontal hook) size 69 at (76,20)",
+    "params": {
+      "type": "stroke_henggou",
+      "stroke": "横钩",
+      "pinyin": "henggou",
+      "meaning": "horizontal hook",
+      "size": 69.33389279208578,
+      "x": 76.81988585428545,
+      "y": 20.545113795759505
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheGou_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折钩 (HengZheGou/horizontal-vertical-hook) size 42 at (261,36)",
+    "params": {
+      "type": "stroke_hengzhegou",
+      "stroke": "横折钩",
+      "pinyin": "hengzhegou",
+      "meaning": "horizontal-vertical-hook",
+      "size": 42.4191237621355,
+      "x": 261.4090078979302,
+      "y": 36.58803429170155
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheGou_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折钩 (HengZheGou/horizontal-vertical-hook) size 45 at (246,158)",
+    "params": {
+      "type": "stroke_hengzhegou",
+      "stroke": "横折钩",
+      "pinyin": "hengzhegou",
+      "meaning": "horizontal-vertical-hook",
+      "size": 45.64232560471963,
+      "x": 246.25333587360734,
+      "y": 158.3182364549122
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheGou_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折钩 (HengZheGou/horizontal-vertical-hook) size 41 at (77,-54)",
+    "params": {
+      "type": "stroke_hengzhegou",
+      "stroke": "横折钩",
+      "pinyin": "hengzhegou",
+      "meaning": "horizontal-vertical-hook",
+      "size": 41.34797250940582,
+      "x": 77.6918250268817,
+      "y": -54.73854107159096
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheGou_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折钩 (HengZheGou/horizontal-vertical-hook) size 44 at (122,-8)",
+    "params": {
+      "type": "stroke_hengzhegou",
+      "stroke": "横折钩",
+      "pinyin": "hengzhegou",
+      "meaning": "horizontal-vertical-hook",
+      "size": 44.361588154691084,
+      "x": 122.3659472202628,
+      "y": -8.745192802707578
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheGou_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折钩 (HengZheGou/horizontal-vertical-hook) size 36 at (-122,-24)",
+    "params": {
+      "type": "stroke_hengzhegou",
+      "stroke": "横折钩",
+      "pinyin": "hengzhegou",
+      "meaning": "horizontal-vertical-hook",
+      "size": 36.29048908488617,
+      "x": -122.81913632938645,
+      "y": -24.59009259339615
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheTi_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折提 (HengZheTi/horizontal-vertical-rise) size 38 at (14,-162)",
+    "params": {
+      "type": "stroke_hengzheti",
+      "stroke": "横折提",
+      "pinyin": "hengzheti",
+      "meaning": "horizontal-vertical-rise",
+      "size": 38.95503074703938,
+      "x": 14.022256044603125,
+      "y": -162.66771300468105
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheTi_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折提 (HengZheTi/horizontal-vertical-rise) size 51 at (-159,86)",
+    "params": {
+      "type": "stroke_hengzheti",
+      "stroke": "横折提",
+      "pinyin": "hengzheti",
+      "meaning": "horizontal-vertical-rise",
+      "size": 51.37033116227798,
+      "x": -159.44503918426966,
+      "y": 86.06783205890378
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheTi_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折提 (HengZheTi/horizontal-vertical-rise) size 52 at (200,-98)",
+    "params": {
+      "type": "stroke_hengzheti",
+      "stroke": "横折提",
+      "pinyin": "hengzheti",
+      "meaning": "horizontal-vertical-rise",
+      "size": 52.66541033606502,
+      "x": 200.14197666385974,
+      "y": -98.34344136835043
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheTi_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折提 (HengZheTi/horizontal-vertical-rise) size 43 at (-65,103)",
+    "params": {
+      "type": "stroke_hengzheti",
+      "stroke": "横折提",
+      "pinyin": "hengzheti",
+      "meaning": "horizontal-vertical-rise",
+      "size": 43.296054379749194,
+      "x": -65.25906361539802,
+      "y": 103.44176226803984
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheTi_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折提 (HengZheTi/horizontal-vertical-rise) size 59 at (-47,-77)",
+    "params": {
+      "type": "stroke_hengzheti",
+      "stroke": "横折提",
+      "pinyin": "hengzheti",
+      "meaning": "horizontal-vertical-rise",
+      "size": 59.009695704208895,
+      "x": -47.69588054250352,
+      "y": -77.93764540532494
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZhe_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折 (HengZheZhe/horizontal double fold) size 38 at (-215,68)",
+    "params": {
+      "type": "stroke_hengzhezhe",
+      "stroke": "横折折",
+      "pinyin": "hengzhezhe",
+      "meaning": "horizontal double fold",
+      "size": 38.43640368405532,
+      "x": -215.4517687572311,
+      "y": 68.48859290257008
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZhe_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折 (HengZheZhe/horizontal double fold) size 39 at (-243,48)",
+    "params": {
+      "type": "stroke_hengzhezhe",
+      "stroke": "横折折",
+      "pinyin": "hengzhezhe",
+      "meaning": "horizontal double fold",
+      "size": 39.178771156997946,
+      "x": -243.53111097038294,
+      "y": 48.69587816351307
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZhe_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折 (HengZheZhe/horizontal double fold) size 35 at (285,102)",
+    "params": {
+      "type": "stroke_hengzhezhe",
+      "stroke": "横折折",
+      "pinyin": "hengzhezhe",
+      "meaning": "horizontal double fold",
+      "size": 35.664115507253484,
+      "x": 285.0023929948256,
+      "y": 102.08044594948791
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZhe_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折 (HengZheZhe/horizontal double fold) size 32 at (-247,-132)",
+    "params": {
+      "type": "stroke_hengzhezhe",
+      "stroke": "横折折",
+      "pinyin": "hengzhezhe",
+      "meaning": "horizontal double fold",
+      "size": 32.770969402801356,
+      "x": -247.35517458126083,
+      "y": -132.1572442707295
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZhe_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折 (HengZheZhe/horizontal double fold) size 35 at (-65,-104)",
+    "params": {
+      "type": "stroke_hengzhezhe",
+      "stroke": "横折折",
+      "pinyin": "hengzhezhe",
+      "meaning": "horizontal double fold",
+      "size": 35.7119786568773,
+      "x": -65.049290166697,
+      "y": -104.1597052224868
+    }
+  },
+  {
+    "id": "L1_Stroke_HengXieGou_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横斜钩 (HengXieGou/horizontal slant hook) size 37 at (-253,-17)",
+    "params": {
+      "type": "stroke_hengxiegou",
+      "stroke": "横斜钩",
+      "pinyin": "hengxiegou",
+      "meaning": "horizontal slant hook",
+      "size": 37.5217030516524,
+      "x": -253.14126623871277,
+      "y": -17.853700982669523
+    }
+  },
+  {
+    "id": "L1_Stroke_HengXieGou_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横斜钩 (HengXieGou/horizontal slant hook) size 57 at (-144,-26)",
+    "params": {
+      "type": "stroke_hengxiegou",
+      "stroke": "横斜钩",
+      "pinyin": "hengxiegou",
+      "meaning": "horizontal slant hook",
+      "size": 57.37496936654547,
+      "x": -144.74518270539596,
+      "y": -26.768113800752758
+    }
+  },
+  {
+    "id": "L1_Stroke_HengXieGou_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横斜钩 (HengXieGou/horizontal slant hook) size 44 at (182,118)",
+    "params": {
+      "type": "stroke_hengxiegou",
+      "stroke": "横斜钩",
+      "pinyin": "hengxiegou",
+      "meaning": "horizontal slant hook",
+      "size": 44.74021967191327,
+      "x": 182.09620495025456,
+      "y": 118.10169027521252
+    }
+  },
+  {
+    "id": "L1_Stroke_HengXieGou_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横斜钩 (HengXieGou/horizontal slant hook) size 54 at (82,55)",
+    "params": {
+      "type": "stroke_hengxiegou",
+      "stroke": "横斜钩",
+      "pinyin": "hengxiegou",
+      "meaning": "horizontal slant hook",
+      "size": 54.579518444856674,
+      "x": 82.00945595416113,
+      "y": 55.72266389424351
+    }
+  },
+  {
+    "id": "L1_Stroke_HengXieGou_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横斜钩 (HengXieGou/horizontal slant hook) size 48 at (112,54)",
+    "params": {
+      "type": "stroke_hengxiegou",
+      "stroke": "横斜钩",
+      "pinyin": "hengxiegou",
+      "meaning": "horizontal slant hook",
+      "size": 48.2918718385278,
+      "x": 112.94043237802936,
+      "y": 54.15663662738021
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheWanGou_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折弯钩 (HengZheWanGou/horizontal fold curve hook) size 37 at (-30,108)",
+    "params": {
+      "type": "stroke_hengzhewangou",
+      "stroke": "横折弯钩",
+      "pinyin": "hengzhewangou",
+      "meaning": "horizontal fold curve hook",
+      "size": 37.03714413137072,
+      "x": -30.088870005999638,
+      "y": 108.99714322741553
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheWanGou_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折弯钩 (HengZheWanGou/horizontal fold curve hook) size 48 at (57,-57)",
+    "params": {
+      "type": "stroke_hengzhewangou",
+      "stroke": "横折弯钩",
+      "pinyin": "hengzhewangou",
+      "meaning": "horizontal fold curve hook",
+      "size": 48.23205315038939,
+      "x": 57.762009620784795,
+      "y": -57.35914082484081
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheWanGou_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折弯钩 (HengZheWanGou/horizontal fold curve hook) size 53 at (233,48)",
+    "params": {
+      "type": "stroke_hengzhewangou",
+      "stroke": "横折弯钩",
+      "pinyin": "hengzhewangou",
+      "meaning": "horizontal fold curve hook",
+      "size": 53.83912668238212,
+      "x": 233.57806303926728,
+      "y": 48.688999769255645
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheWanGou_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折弯钩 (HengZheWanGou/horizontal fold curve hook) size 59 at (-150,-12)",
+    "params": {
+      "type": "stroke_hengzhewangou",
+      "stroke": "横折弯钩",
+      "pinyin": "hengzhewangou",
+      "meaning": "horizontal fold curve hook",
+      "size": 59.07693009708805,
+      "x": -150.06656921680323,
+      "y": -12.342369015399541
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheWanGou_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折弯钩 (HengZheWanGou/horizontal fold curve hook) size 55 at (-165,83)",
+    "params": {
+      "type": "stroke_hengzhewangou",
+      "stroke": "横折弯钩",
+      "pinyin": "hengzhewangou",
+      "meaning": "horizontal fold curve hook",
+      "size": 55.08552593282157,
+      "x": -165.01016134475913,
+      "y": 83.5803618897911
+    }
+  },
+  {
+    "id": "L1_Stroke_HengPieWanGou_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横撇弯钩 (HengPieWanGou/horizontal throw curve hook) size 56 at (-128,115)",
+    "params": {
+      "type": "stroke_hengpiewangou",
+      "stroke": "横撇弯钩",
+      "pinyin": "hengpiewangou",
+      "meaning": "horizontal throw curve hook",
+      "size": 56.61435706579609,
+      "x": -128.60009508758313,
+      "y": 115.25862044466666
+    }
+  },
+  {
+    "id": "L1_Stroke_HengPieWanGou_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横撇弯钩 (HengPieWanGou/horizontal throw curve hook) size 36 at (94,-89)",
+    "params": {
+      "type": "stroke_hengpiewangou",
+      "stroke": "横撇弯钩",
+      "pinyin": "hengpiewangou",
+      "meaning": "horizontal throw curve hook",
+      "size": 36.85108292515082,
+      "x": 94.89302458965892,
+      "y": -89.30045872562357
+    }
+  },
+  {
+    "id": "L1_Stroke_HengPieWanGou_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横撇弯钩 (HengPieWanGou/horizontal throw curve hook) size 51 at (90,-56)",
+    "params": {
+      "type": "stroke_hengpiewangou",
+      "stroke": "横撇弯钩",
+      "pinyin": "hengpiewangou",
+      "meaning": "horizontal throw curve hook",
+      "size": 51.271587318968784,
+      "x": 90.70150096449169,
+      "y": -56.089904005534365
+    }
+  },
+  {
+    "id": "L1_Stroke_HengPieWanGou_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横撇弯钩 (HengPieWanGou/horizontal throw curve hook) size 50 at (-139,139)",
+    "params": {
+      "type": "stroke_hengpiewangou",
+      "stroke": "横撇弯钩",
+      "pinyin": "hengpiewangou",
+      "meaning": "horizontal throw curve hook",
+      "size": 50.81142797144397,
+      "x": -139.20090178785213,
+      "y": 139.58840375334626
+    }
+  },
+  {
+    "id": "L1_Stroke_HengPieWanGou_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横撇弯钩 (HengPieWanGou/horizontal throw curve hook) size 37 at (108,37)",
+    "params": {
+      "type": "stroke_hengpiewangou",
+      "stroke": "横撇弯钩",
+      "pinyin": "hengpiewangou",
+      "meaning": "horizontal throw curve hook",
+      "size": 37.31128698909772,
+      "x": 108.06818114950835,
+      "y": 37.46618025358907
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZhePie_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折撇 (HengZheZhePie/horizontal double fold throw) size 54 at (-99,28)",
+    "params": {
+      "type": "stroke_hengzhezhepie",
+      "stroke": "横折折撇",
+      "pinyin": "hengzhezhepie",
+      "meaning": "horizontal double fold throw",
+      "size": 54.87286800090145,
+      "x": -99.6072114669179,
+      "y": 28.714096498427637
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZhePie_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折撇 (HengZheZhePie/horizontal double fold throw) size 33 at (175,147)",
+    "params": {
+      "type": "stroke_hengzhezhepie",
+      "stroke": "横折折撇",
+      "pinyin": "hengzhezhepie",
+      "meaning": "horizontal double fold throw",
+      "size": 33.45994263103808,
+      "x": 175.5301237477455,
+      "y": 147.1414893530447
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZhePie_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折撇 (HengZheZhePie/horizontal double fold throw) size 43 at (-42,65)",
+    "params": {
+      "type": "stroke_hengzhezhepie",
+      "stroke": "横折折撇",
+      "pinyin": "hengzhezhepie",
+      "meaning": "horizontal double fold throw",
+      "size": 43.72932944409459,
+      "x": -42.294589954036724,
+      "y": 65.14472755924737
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZhePie_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折撇 (HengZheZhePie/horizontal double fold throw) size 36 at (136,157)",
+    "params": {
+      "type": "stroke_hengzhezhepie",
+      "stroke": "横折折撇",
+      "pinyin": "hengzhezhepie",
+      "meaning": "horizontal double fold throw",
+      "size": 36.169700612566444,
+      "x": 136.3457086092559,
+      "y": 157.58402877678094
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZhePie_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折撇 (HengZheZhePie/horizontal double fold throw) size 51 at (-124,64)",
+    "params": {
+      "type": "stroke_hengzhezhepie",
+      "stroke": "横折折撇",
+      "pinyin": "hengzhezhepie",
+      "meaning": "horizontal double fold throw",
+      "size": 51.59451557576524,
+      "x": -124.88301240709221,
+      "y": 64.93250943622596
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZheZheGou_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折折钩 (HengZheZheZheGou/horizontal triple fold hook) size 49 at (-166,10)",
+    "params": {
+      "type": "stroke_hengzhezhezhegou",
+      "stroke": "横折折折钩",
+      "pinyin": "hengzhezhezhegou",
+      "meaning": "horizontal triple fold hook",
+      "size": 49.139000297767716,
+      "x": -166.32382807796102,
+      "y": 10.124413199681015
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZheZheGou_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折折钩 (HengZheZheZheGou/horizontal triple fold hook) size 26 at (145,-141)",
+    "params": {
+      "type": "stroke_hengzhezhezhegou",
+      "stroke": "横折折折钩",
+      "pinyin": "hengzhezhezhegou",
+      "meaning": "horizontal triple fold hook",
+      "size": 26.64841442631389,
+      "x": 145.16972491679712,
+      "y": -141.77285023866983
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZheZheGou_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折折钩 (HengZheZheZheGou/horizontal triple fold hook) size 46 at (197,-97)",
+    "params": {
+      "type": "stroke_hengzhezhezhegou",
+      "stroke": "横折折折钩",
+      "pinyin": "hengzhezhezhegou",
+      "meaning": "horizontal triple fold hook",
+      "size": 46.23128141483774,
+      "x": 197.09849844196896,
+      "y": -97.05687786433793
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZheZheGou_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折折钩 (HengZheZheZheGou/horizontal triple fold hook) size 35 at (-162,-157)",
+    "params": {
+      "type": "stroke_hengzhezhezhegou",
+      "stroke": "横折折折钩",
+      "pinyin": "hengzhezhezhegou",
+      "meaning": "horizontal triple fold hook",
+      "size": 35.409830532904955,
+      "x": -162.20956362803756,
+      "y": -157.59764065857775
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZheZheGou_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折折钩 (HengZheZheZheGou/horizontal triple fold hook) size 28 at (-125,-165)",
+    "params": {
+      "type": "stroke_hengzhezhezhegou",
+      "stroke": "横折折折钩",
+      "pinyin": "hengzhezhezhegou",
+      "meaning": "horizontal triple fold hook",
+      "size": 28.146602021503732,
+      "x": -125.83997114103505,
+      "y": -165.2676914165307
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZheZhe_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折折 (HengZheZheZhe/horizontal triple fold) size 37 at (107,-170)",
+    "params": {
+      "type": "stroke_hengzhezhezhe",
+      "stroke": "横折折折",
+      "pinyin": "hengzhezhezhe",
+      "meaning": "horizontal triple fold",
+      "size": 37.3367310266008,
+      "x": 107.02041676500323,
+      "y": -170.07482168105838
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZheZhe_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折折 (HengZheZheZhe/horizontal triple fold) size 33 at (203,-155)",
+    "params": {
+      "type": "stroke_hengzhezhezhe",
+      "stroke": "横折折折",
+      "pinyin": "hengzhezhezhe",
+      "meaning": "horizontal triple fold",
+      "size": 33.49572865906921,
+      "x": 203.36193287466818,
+      "y": -155.00474090287102
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZheZhe_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折折 (HengZheZheZhe/horizontal triple fold) size 46 at (-201,-31)",
+    "params": {
+      "type": "stroke_hengzhezhezhe",
+      "stroke": "横折折折",
+      "pinyin": "hengzhezhezhe",
+      "meaning": "horizontal triple fold",
+      "size": 46.87241705652245,
+      "x": -201.9971669678228,
+      "y": -31.11181303920631
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZheZhe_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折折 (HengZheZheZhe/horizontal triple fold) size 26 at (222,-104)",
+    "params": {
+      "type": "stroke_hengzhezhezhe",
+      "stroke": "横折折折",
+      "pinyin": "hengzhezhezhe",
+      "meaning": "horizontal triple fold",
+      "size": 26.56472160005265,
+      "x": 222.13538074309963,
+      "y": -104.58858190894547
+    }
+  },
+  {
+    "id": "L1_Stroke_HengZheZheZhe_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 横折折折 (HengZheZheZhe/horizontal triple fold) size 30 at (75,136)",
+    "params": {
+      "type": "stroke_hengzhezhezhe",
+      "stroke": "横折折折",
+      "pinyin": "hengzhezhezhe",
+      "meaning": "horizontal triple fold",
+      "size": 30.318618560936486,
+      "x": 75.09911746934392,
+      "y": 136.69670168541995
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuTi_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖提 (ShuTi/vertical-rise) size 42 at (249,-63)",
+    "params": {
+      "type": "stroke_shuti",
+      "stroke": "竖提",
+      "pinyin": "shuti",
+      "meaning": "vertical-rise",
+      "size": 42.861182805636076,
+      "x": 249.0064320762882,
+      "y": -63.515467810932975
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuTi_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖提 (ShuTi/vertical-rise) size 50 at (61,-140)",
+    "params": {
+      "type": "stroke_shuti",
+      "stroke": "竖提",
+      "pinyin": "shuti",
+      "meaning": "vertical-rise",
+      "size": 50.042492587658096,
+      "x": 61.80655477572546,
+      "y": -140.77708991614128
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuTi_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖提 (ShuTi/vertical-rise) size 57 at (-98,56)",
+    "params": {
+      "type": "stroke_shuti",
+      "stroke": "竖提",
+      "pinyin": "shuti",
+      "meaning": "vertical-rise",
+      "size": 57.78954650845505,
+      "x": -98.27712394842263,
+      "y": 56.69590790639282
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuTi_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖提 (ShuTi/vertical-rise) size 51 at (-133,-47)",
+    "params": {
+      "type": "stroke_shuti",
+      "stroke": "竖提",
+      "pinyin": "shuti",
+      "meaning": "vertical-rise",
+      "size": 51.386482740178295,
+      "x": -133.12541729331838,
+      "y": -47.69951431156848
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuTi_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖提 (ShuTi/vertical-rise) size 34 at (124,-167)",
+    "params": {
+      "type": "stroke_shuti",
+      "stroke": "竖提",
+      "pinyin": "shuti",
+      "meaning": "vertical-rise",
+      "size": 34.60901955223379,
+      "x": 124.56400401524087,
+      "y": -167.9502075195686
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZhe_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折 (ShuZhe/vertical-horizontal fold) size 35 at (-21,-49)",
+    "params": {
+      "type": "stroke_shuzhe",
+      "stroke": "竖折",
+      "pinyin": "shuzhe",
+      "meaning": "vertical-horizontal fold",
+      "size": 35.80906295958451,
+      "x": -21.394548605825833,
+      "y": -49.381331121905504
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZhe_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折 (ShuZhe/vertical-horizontal fold) size 52 at (-86,-111)",
+    "params": {
+      "type": "stroke_shuzhe",
+      "stroke": "竖折",
+      "pinyin": "shuzhe",
+      "meaning": "vertical-horizontal fold",
+      "size": 52.382069591180624,
+      "x": -86.76764640486277,
+      "y": -111.7470348759173
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZhe_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折 (ShuZhe/vertical-horizontal fold) size 31 at (138,-64)",
+    "params": {
+      "type": "stroke_shuzhe",
+      "stroke": "竖折",
+      "pinyin": "shuzhe",
+      "meaning": "vertical-horizontal fold",
+      "size": 31.376235203321126,
+      "x": 138.27036001655102,
+      "y": -64.90496680586503
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZhe_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折 (ShuZhe/vertical-horizontal fold) size 48 at (-158,120)",
+    "params": {
+      "type": "stroke_shuzhe",
+      "stroke": "竖折",
+      "pinyin": "shuzhe",
+      "meaning": "vertical-horizontal fold",
+      "size": 48.28131546473609,
+      "x": -158.30854478033226,
+      "y": 120.31134307763745
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZhe_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折 (ShuZhe/vertical-horizontal fold) size 45 at (-177,-80)",
+    "params": {
+      "type": "stroke_shuzhe",
+      "stroke": "竖折",
+      "pinyin": "shuzhe",
+      "meaning": "vertical-horizontal fold",
+      "size": 45.65411101070472,
+      "x": -177.15554041932418,
+      "y": -80.89876564580563
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuGou_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖钩 (ShuGou/vertical hook) size 62 at (84,-20)",
+    "params": {
+      "type": "stroke_shugou",
+      "stroke": "竖钩",
+      "pinyin": "shugou",
+      "meaning": "vertical hook",
+      "size": 62.31626437486888,
+      "x": 84.63619703109816,
+      "y": -20.308143994630242
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuGou_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖钩 (ShuGou/vertical hook) size 74 at (57,10)",
+    "params": {
+      "type": "stroke_shugou",
+      "stroke": "竖钩",
+      "pinyin": "shugou",
+      "meaning": "vertical hook",
+      "size": 74.6708010515174,
+      "x": 57.73659678143221,
+      "y": 10.387702127169192
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuGou_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖钩 (ShuGou/vertical hook) size 55 at (-171,39)",
+    "params": {
+      "type": "stroke_shugou",
+      "stroke": "竖钩",
+      "pinyin": "shugou",
+      "meaning": "vertical hook",
+      "size": 55.94850003635705,
+      "x": -171.67081072627232,
+      "y": 39.480091584852744
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuGou_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖钩 (ShuGou/vertical hook) size 44 at (-213,69)",
+    "params": {
+      "type": "stroke_shugou",
+      "stroke": "竖钩",
+      "pinyin": "shugou",
+      "meaning": "vertical hook",
+      "size": 44.988325588400734,
+      "x": -213.2638267965407,
+      "y": 69.96465965169355
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuGou_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖钩 (ShuGou/vertical hook) size 59 at (25,104)",
+    "params": {
+      "type": "stroke_shugou",
+      "stroke": "竖钩",
+      "pinyin": "shugou",
+      "meaning": "vertical hook",
+      "size": 59.284463870611205,
+      "x": 25.309348470895145,
+      "y": 104.23570166623486
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuWanGou_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖弯钩 (ShuWanGou/vertical curve hook) size 49 at (-75,-45)",
+    "params": {
+      "type": "stroke_shuwangou",
+      "stroke": "竖弯钩",
+      "pinyin": "shuwangou",
+      "meaning": "vertical curve hook",
+      "size": 49.12183506407206,
+      "x": -75.77303275048436,
+      "y": -45.26093895139009
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuWanGou_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖弯钩 (ShuWanGou/vertical curve hook) size 48 at (214,68)",
+    "params": {
+      "type": "stroke_shuwangou",
+      "stroke": "竖弯钩",
+      "pinyin": "shuwangou",
+      "meaning": "vertical curve hook",
+      "size": 48.57730879672479,
+      "x": 214.3840295074733,
+      "y": 68.40303418728209
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuWanGou_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖弯钩 (ShuWanGou/vertical curve hook) size 44 at (-7,1)",
+    "params": {
+      "type": "stroke_shuwangou",
+      "stroke": "竖弯钩",
+      "pinyin": "shuwangou",
+      "meaning": "vertical curve hook",
+      "size": 44.38306201930125,
+      "x": -7.736627551399181,
+      "y": 1.6928206366456777
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuWanGou_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖弯钩 (ShuWanGou/vertical curve hook) size 58 at (-67,47)",
+    "params": {
+      "type": "stroke_shuwangou",
+      "stroke": "竖弯钩",
+      "pinyin": "shuwangou",
+      "meaning": "vertical curve hook",
+      "size": 58.6023904364405,
+      "x": -67.84720990095877,
+      "y": 47.51827116285915
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuWanGou_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖弯钩 (ShuWanGou/vertical curve hook) size 38 at (233,-172)",
+    "params": {
+      "type": "stroke_shuwangou",
+      "stroke": "竖弯钩",
+      "pinyin": "shuwangou",
+      "meaning": "vertical curve hook",
+      "size": 38.793521637266046,
+      "x": 233.5844220739807,
+      "y": -172.27603087456828
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZhePie_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折撇 (ShuZhePie/vertical fold throw) size 52 at (-64,-27)",
+    "params": {
+      "type": "stroke_shuzhepie",
+      "stroke": "竖折撇",
+      "pinyin": "shuzhepie",
+      "meaning": "vertical fold throw",
+      "size": 52.4466744012754,
+      "x": -64.02415991297468,
+      "y": -27.808541090997906
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZhePie_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折撇 (ShuZhePie/vertical fold throw) size 33 at (-63,-197)",
+    "params": {
+      "type": "stroke_shuzhepie",
+      "stroke": "竖折撇",
+      "pinyin": "shuzhepie",
+      "meaning": "vertical fold throw",
+      "size": 33.56249845650544,
+      "x": -63.96290433914089,
+      "y": -197.48226356464244
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZhePie_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折撇 (ShuZhePie/vertical fold throw) size 41 at (216,-142)",
+    "params": {
+      "type": "stroke_shuzhepie",
+      "stroke": "竖折撇",
+      "pinyin": "shuzhepie",
+      "meaning": "vertical fold throw",
+      "size": 41.19148908615107,
+      "x": 216.61992228002543,
+      "y": -142.772734765663
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZhePie_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折撇 (ShuZhePie/vertical fold throw) size 38 at (-272,125)",
+    "params": {
+      "type": "stroke_shuzhepie",
+      "stroke": "竖折撇",
+      "pinyin": "shuzhepie",
+      "meaning": "vertical fold throw",
+      "size": 38.53376350986305,
+      "x": -272.5397543987497,
+      "y": 125.84023787147964
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZhePie_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折撇 (ShuZhePie/vertical fold throw) size 46 at (63,-7)",
+    "params": {
+      "type": "stroke_shuzhepie",
+      "stroke": "竖折撇",
+      "pinyin": "shuzhepie",
+      "meaning": "vertical fold throw",
+      "size": 46.11870281333281,
+      "x": 63.64507300044829,
+      "y": -7.320694982056125
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZheZhe_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折折 (ShuZheZhe/vertical double fold) size 54 at (9,-100)",
+    "params": {
+      "type": "stroke_shuzhezhe",
+      "stroke": "竖折折",
+      "pinyin": "shuzhezhe",
+      "meaning": "vertical double fold",
+      "size": 54.41762137925238,
+      "x": 9.952784802497149,
+      "y": -100.36267406361006
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZheZhe_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折折 (ShuZheZhe/vertical double fold) size 40 at (184,43)",
+    "params": {
+      "type": "stroke_shuzhezhe",
+      "stroke": "竖折折",
+      "pinyin": "shuzhezhe",
+      "meaning": "vertical double fold",
+      "size": 40.4536902611639,
+      "x": 184.1159873557308,
+      "y": 43.27023202023827
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZheZhe_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折折 (ShuZheZhe/vertical double fold) size 59 at (-158,78)",
+    "params": {
+      "type": "stroke_shuzhezhe",
+      "stroke": "竖折折",
+      "pinyin": "shuzhezhe",
+      "meaning": "vertical double fold",
+      "size": 59.0383264987514,
+      "x": -158.08840573699237,
+      "y": 78.98468787849382
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZheZhe_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折折 (ShuZheZhe/vertical double fold) size 59 at (155,-101)",
+    "params": {
+      "type": "stroke_shuzhezhe",
+      "stroke": "竖折折",
+      "pinyin": "shuzhezhe",
+      "meaning": "vertical double fold",
+      "size": 59.79235927854943,
+      "x": 155.6509397224532,
+      "y": -101.13020625886533
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZheZhe_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折折 (ShuZheZhe/vertical double fold) size 31 at (90,-165)",
+    "params": {
+      "type": "stroke_shuzhezhe",
+      "stroke": "竖折折",
+      "pinyin": "shuzhezhe",
+      "meaning": "vertical double fold",
+      "size": 31.776631151858837,
+      "x": 90.80466850729499,
+      "y": -165.60438475558436
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZheZheGou_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折折钩 (ShuZheZheGou/vertical double fold hook) size 56 at (43,60)",
+    "params": {
+      "type": "stroke_shuzhezhegou",
+      "stroke": "竖折折钩",
+      "pinyin": "shuzhezhegou",
+      "meaning": "vertical double fold hook",
+      "size": 56.79513012634458,
+      "x": 43.7036332806708,
+      "y": 60.866554411335045
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZheZheGou_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折折钩 (ShuZheZheGou/vertical double fold hook) size 57 at (64,-102)",
+    "params": {
+      "type": "stroke_shuzhezhegou",
+      "stroke": "竖折折钩",
+      "pinyin": "shuzhezhegou",
+      "meaning": "vertical double fold hook",
+      "size": 57.61236232628875,
+      "x": 64.76368377526543,
+      "y": -102.10798730465672
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZheZheGou_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折折钩 (ShuZheZheGou/vertical double fold hook) size 42 at (113,-131)",
+    "params": {
+      "type": "stroke_shuzhezhegou",
+      "stroke": "竖折折钩",
+      "pinyin": "shuzhezhegou",
+      "meaning": "vertical double fold hook",
+      "size": 42.13606543769286,
+      "x": 113.32649451422122,
+      "y": -131.0676027941855
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZheZheGou_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折折钩 (ShuZheZheGou/vertical double fold hook) size 53 at (-118,-97)",
+    "params": {
+      "type": "stroke_shuzhezhegou",
+      "stroke": "竖折折钩",
+      "pinyin": "shuzhezhegou",
+      "meaning": "vertical double fold hook",
+      "size": 53.21681510946694,
+      "x": -118.08697464930603,
+      "y": -97.03327983548394
+    }
+  },
+  {
+    "id": "L1_Stroke_ShuZheZheGou_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 竖折折钩 (ShuZheZheGou/vertical double fold hook) size 42 at (-139,166)",
+    "params": {
+      "type": "stroke_shuzhezhegou",
+      "stroke": "竖折折钩",
+      "pinyin": "shuzhezhegou",
+      "meaning": "vertical double fold hook",
+      "size": 42.924693002747844,
+      "x": -139.80739602874516,
+      "y": 166.35075289594937
+    }
+  },
+  {
+    "id": "L1_Stroke_PieDian_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 撇点 (PieDian/throw-dot) size 37 at (287,-158)",
+    "params": {
+      "type": "stroke_piedian",
+      "stroke": "撇点",
+      "pinyin": "piedian",
+      "meaning": "throw-dot",
+      "size": 37.49090124382626,
+      "x": 287.18412050771974,
+      "y": -158.934678014493
+    }
+  },
+  {
+    "id": "L1_Stroke_PieDian_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 撇点 (PieDian/throw-dot) size 57 at (-39,73)",
+    "params": {
+      "type": "stroke_piedian",
+      "stroke": "撇点",
+      "pinyin": "piedian",
+      "meaning": "throw-dot",
+      "size": 57.83491481445555,
+      "x": -39.8900564276432,
+      "y": 73.6528235333036
+    }
+  },
+  {
+    "id": "L1_Stroke_PieDian_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 撇点 (PieDian/throw-dot) size 35 at (207,-95)",
+    "params": {
+      "type": "stroke_piedian",
+      "stroke": "撇点",
+      "pinyin": "piedian",
+      "meaning": "throw-dot",
+      "size": 35.11848288992563,
+      "x": 207.46080506053852,
+      "y": -95.03111080594401
+    }
+  },
+  {
+    "id": "L1_Stroke_PieDian_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 撇点 (PieDian/throw-dot) size 40 at (-55,-95)",
+    "params": {
+      "type": "stroke_piedian",
+      "stroke": "撇点",
+      "pinyin": "piedian",
+      "meaning": "throw-dot",
+      "size": 40.13151403966141,
+      "x": -55.17757734240345,
+      "y": -95.11549668218494
+    }
+  },
+  {
+    "id": "L1_Stroke_PieDian_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 撇点 (PieDian/throw-dot) size 45 at (-87,-54)",
+    "params": {
+      "type": "stroke_piedian",
+      "stroke": "撇点",
+      "pinyin": "piedian",
+      "meaning": "throw-dot",
+      "size": 45.688822180119644,
+      "x": -87.59123224989361,
+      "y": -54.16027854724426
+    }
+  },
+  {
+    "id": "L1_Stroke_PieZhe_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 撇折 (PieZhe/throw-rise) size 47 at (-252,-44)",
+    "params": {
+      "type": "stroke_piezhe",
+      "stroke": "撇折",
+      "pinyin": "piezhe",
+      "meaning": "throw-rise",
+      "size": 47.659942656455314,
+      "x": -252.37174462244448,
+      "y": -44.911483826017616
+    }
+  },
+  {
+    "id": "L1_Stroke_PieZhe_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 撇折 (PieZhe/throw-rise) size 45 at (64,-57)",
+    "params": {
+      "type": "stroke_piezhe",
+      "stroke": "撇折",
+      "pinyin": "piezhe",
+      "meaning": "throw-rise",
+      "size": 45.50351162395779,
+      "x": 64.70357644195064,
+      "y": -57.99545478584699
+    }
+  },
+  {
+    "id": "L1_Stroke_PieZhe_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 撇折 (PieZhe/throw-rise) size 41 at (-100,-122)",
+    "params": {
+      "type": "stroke_piezhe",
+      "stroke": "撇折",
+      "pinyin": "piezhe",
+      "meaning": "throw-rise",
+      "size": 41.61819957811545,
+      "x": -100.95682241425632,
+      "y": -122.59999752113742
+    }
+  },
+  {
+    "id": "L1_Stroke_PieZhe_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 撇折 (PieZhe/throw-rise) size 32 at (262,-173)",
+    "params": {
+      "type": "stroke_piezhe",
+      "stroke": "撇折",
+      "pinyin": "piezhe",
+      "meaning": "throw-rise",
+      "size": 32.59278950851564,
+      "x": 262.59865950287724,
+      "y": -173.84983267805328
+    }
+  },
+  {
+    "id": "L1_Stroke_PieZhe_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 撇折 (PieZhe/throw-rise) size 54 at (217,-7)",
+    "params": {
+      "type": "stroke_piezhe",
+      "stroke": "撇折",
+      "pinyin": "piezhe",
+      "meaning": "throw-rise",
+      "size": 54.325948457439935,
+      "x": 217.8124378451608,
+      "y": -7.881520451312639
+    }
+  },
+  {
+    "id": "L1_Stroke_XieGou_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 斜钩 (XieGou/slant hook) size 49 at (-216,139)",
+    "params": {
+      "type": "stroke_xiegou",
+      "stroke": "斜钩",
+      "pinyin": "xiegou",
+      "meaning": "slant hook",
+      "size": 49.47430119668566,
+      "x": -216.66490830002755,
+      "y": 139.50874527343706
+    }
+  },
+  {
+    "id": "L1_Stroke_XieGou_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 斜钩 (XieGou/slant hook) size 59 at (175,17)",
+    "params": {
+      "type": "stroke_xiegou",
+      "stroke": "斜钩",
+      "pinyin": "xiegou",
+      "meaning": "slant hook",
+      "size": 59.13339691757173,
+      "x": 175.2860503277299,
+      "y": 17.7492917504062
+    }
+  },
+  {
+    "id": "L1_Stroke_XieGou_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 斜钩 (XieGou/slant hook) size 65 at (-193,43)",
+    "params": {
+      "type": "stroke_xiegou",
+      "stroke": "斜钩",
+      "pinyin": "xiegou",
+      "meaning": "slant hook",
+      "size": 65.7345591294991,
+      "x": -193.07513772487926,
+      "y": 43.464808398922315
+    }
+  },
+  {
+    "id": "L1_Stroke_XieGou_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 斜钩 (XieGou/slant hook) size 57 at (-126,-47)",
+    "params": {
+      "type": "stroke_xiegou",
+      "stroke": "斜钩",
+      "pinyin": "xiegou",
+      "meaning": "slant hook",
+      "size": 57.37975281394417,
+      "x": -126.95008260365098,
+      "y": -47.0580730472615
+    }
+  },
+  {
+    "id": "L1_Stroke_XieGou_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 斜钩 (XieGou/slant hook) size 50 at (223,-70)",
+    "params": {
+      "type": "stroke_xiegou",
+      "stroke": "斜钩",
+      "pinyin": "xiegou",
+      "meaning": "slant hook",
+      "size": 50.7850034420524,
+      "x": 223.94139416523103,
+      "y": -70.49911045605674
+    }
+  },
+  {
+    "id": "L1_Stroke_WanGou_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 弯钩 (WanGou/curved hook) size 42 at (11,31)",
+    "params": {
+      "type": "stroke_wangou",
+      "stroke": "弯钩",
+      "pinyin": "wangou",
+      "meaning": "curved hook",
+      "size": 42.101141325355,
+      "x": 11.109526855969705,
+      "y": 31.19808096344707
+    }
+  },
+  {
+    "id": "L1_Stroke_WanGou_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 弯钩 (WanGou/curved hook) size 79 at (-36,-25)",
+    "params": {
+      "type": "stroke_wangou",
+      "stroke": "弯钩",
+      "pinyin": "wangou",
+      "meaning": "curved hook",
+      "size": 79.2334732045116,
+      "x": -36.23108416948811,
+      "y": -25.160414401798
+    }
+  },
+  {
+    "id": "L1_Stroke_WanGou_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 弯钩 (WanGou/curved hook) size 70 at (-181,16)",
+    "params": {
+      "type": "stroke_wangou",
+      "stroke": "弯钩",
+      "pinyin": "wangou",
+      "meaning": "curved hook",
+      "size": 70.21180183232468,
+      "x": -181.92817185251926,
+      "y": 16.41883676721781
+    }
+  },
+  {
+    "id": "L1_Stroke_WanGou_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 弯钩 (WanGou/curved hook) size 43 at (-239,52)",
+    "params": {
+      "type": "stroke_wangou",
+      "stroke": "弯钩",
+      "pinyin": "wangou",
+      "meaning": "curved hook",
+      "size": 43.35913548269896,
+      "x": -239.00283672927864,
+      "y": 52.4637859910857
+    }
+  },
+  {
+    "id": "L1_Stroke_WanGou_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 弯钩 (WanGou/curved hook) size 79 at (-54,-47)",
+    "params": {
+      "type": "stroke_wangou",
+      "stroke": "弯钩",
+      "pinyin": "wangou",
+      "meaning": "curved hook",
+      "size": 79.992365364027,
+      "x": -54.7843771262129,
+      "y": -47.89021146374518
+    }
+  },
+  {
+    "id": "L1_Stroke_WoGou_1.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 卧钩 (WoGou/lying hook) size 71 at (14,61)",
+    "params": {
+      "type": "stroke_wogou",
+      "stroke": "卧钩",
+      "pinyin": "wogou",
+      "meaning": "lying hook",
+      "size": 71.22116088062211,
+      "x": 14.30244388857679,
+      "y": 61.76652594889538
+    }
+  },
+  {
+    "id": "L1_Stroke_WoGou_2.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 卧钩 (WoGou/lying hook) size 63 at (-96,-40)",
+    "params": {
+      "type": "stroke_wogou",
+      "stroke": "卧钩",
+      "pinyin": "wogou",
+      "meaning": "lying hook",
+      "size": 63.72899557191879,
+      "x": -96.13137074340234,
+      "y": -40.91015507052619
+    }
+  },
+  {
+    "id": "L1_Stroke_WoGou_3.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 卧钩 (WoGou/lying hook) size 48 at (-16,78)",
+    "params": {
+      "type": "stroke_wogou",
+      "stroke": "卧钩",
+      "pinyin": "wogou",
+      "meaning": "lying hook",
+      "size": 48.5708688542693,
+      "x": -16.043078718536037,
+      "y": 78.22933311264768
+    }
+  },
+  {
+    "id": "L1_Stroke_WoGou_4.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 卧钩 (WoGou/lying hook) size 78 at (-89,58)",
+    "params": {
+      "type": "stroke_wogou",
+      "stroke": "卧钩",
+      "pinyin": "wogou",
+      "meaning": "lying hook",
+      "size": 78.60236817236276,
+      "x": -89.64647145409296,
+      "y": 58.120110125398014
+    }
+  },
+  {
+    "id": "L1_Stroke_WoGou_5.png",
+    "level": 1,
+    "prompt": "Draw Chinese stroke 卧钩 (WoGou/lying hook) size 42 at (-16,-81)",
+    "params": {
+      "type": "stroke_wogou",
+      "stroke": "卧钩",
+      "pinyin": "wogou",
+      "meaning": "lying hook",
+      "size": 42.113626640234834,
+      "x": -16.80184058992336,
+      "y": -81.32130035423936
+    }
+  }
+]

@@ -1,0 +1,669 @@
+{
+  "total_characters": 30,
+  "samples_per_character": 2,
+  "total_images": 60,
+  "level": 3,
+  "description": "DC-ACE Level 3 Chinese Character Dataset - 30 compound characters composed of basic radicals",
+  "characters": [
+    {
+      "index": 1,
+      "character": "二",
+      "pinyin": "èr",
+      "meaning": "two",
+      "description": "two horizontal lines",
+      "prompt": "Draw Chinese character '二' (èr, meaning: two) - two horizontal lines",
+      "samples": [
+        {
+          "filename": "01_二_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "01_二_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 2,
+      "character": "三",
+      "pinyin": "sān",
+      "meaning": "three",
+      "description": "three horizontal lines",
+      "prompt": "Draw Chinese character '三' (sān, meaning: three) - three horizontal lines",
+      "samples": [
+        {
+          "filename": "02_三_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "02_三_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 3,
+      "character": "从",
+      "pinyin": "cóng",
+      "meaning": "from/follow",
+      "description": "two people following",
+      "prompt": "Draw Chinese character '从' (cóng, meaning: from/follow) - two people following",
+      "samples": [
+        {
+          "filename": "03_从_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "03_从_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 4,
+      "character": "众",
+      "pinyin": "zhòng",
+      "meaning": "crowd/many people",
+      "description": "three people together",
+      "prompt": "Draw Chinese character '众' (zhòng, meaning: crowd/many people) - three people together",
+      "samples": [
+        {
+          "filename": "04_众_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "04_众_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 5,
+      "character": "林",
+      "pinyin": "lín",
+      "meaning": "forest/woods",
+      "description": "two trees side by side",
+      "prompt": "Draw Chinese character '林' (lín, meaning: forest/woods) - two trees side by side",
+      "samples": [
+        {
+          "filename": "05_林_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "05_林_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 6,
+      "character": "森",
+      "pinyin": "sēn",
+      "meaning": "dense forest",
+      "description": "three trees together",
+      "prompt": "Draw Chinese character '森' (sēn, meaning: dense forest) - three trees together",
+      "samples": [
+        {
+          "filename": "06_森_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "06_森_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 7,
+      "character": "吕",
+      "pinyin": "lǚ",
+      "meaning": "surname Lü",
+      "description": "two mouths stacked",
+      "prompt": "Draw Chinese character '吕' (lǚ, meaning: surname Lü) - two mouths stacked",
+      "samples": [
+        {
+          "filename": "07_吕_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "07_吕_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 8,
+      "character": "品",
+      "pinyin": "pǐn",
+      "meaning": "product/quality",
+      "description": "three mouths forming triangle",
+      "prompt": "Draw Chinese character '品' (pǐn, meaning: product/quality) - three mouths forming triangle",
+      "samples": [
+        {
+          "filename": "08_品_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "08_品_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 9,
+      "character": "昌",
+      "pinyin": "chāng",
+      "meaning": "prosperous",
+      "description": "two suns stacked",
+      "prompt": "Draw Chinese character '昌' (chāng, meaning: prosperous) - two suns stacked",
+      "samples": [
+        {
+          "filename": "09_昌_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "09_昌_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 10,
+      "character": "晶",
+      "pinyin": "jīng",
+      "meaning": "crystal/bright",
+      "description": "three suns forming triangle",
+      "prompt": "Draw Chinese character '晶' (jīng, meaning: crystal/bright) - three suns forming triangle",
+      "samples": [
+        {
+          "filename": "10_晶_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "10_晶_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 11,
+      "character": "炎",
+      "pinyin": "yán",
+      "meaning": "inflammation/flame",
+      "description": "two fires stacked",
+      "prompt": "Draw Chinese character '炎' (yán, meaning: inflammation/flame) - two fires stacked",
+      "samples": [
+        {
+          "filename": "11_炎_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "11_炎_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 12,
+      "character": "焱",
+      "pinyin": "yàn",
+      "meaning": "flames/blaze",
+      "description": "three fires forming triangle",
+      "prompt": "Draw Chinese character '焱' (yàn, meaning: flames/blaze) - three fires forming triangle",
+      "samples": [
+        {
+          "filename": "12_焱_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "12_焱_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 13,
+      "character": "圭",
+      "pinyin": "guī",
+      "meaning": "jade tablet",
+      "description": "two earths stacked",
+      "prompt": "Draw Chinese character '圭' (guī, meaning: jade tablet) - two earths stacked",
+      "samples": [
+        {
+          "filename": "13_圭_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "13_圭_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 14,
+      "character": "双",
+      "pinyin": "shuāng",
+      "meaning": "pair/double",
+      "description": "two birds together",
+      "prompt": "Draw Chinese character '双' (shuāng, meaning: pair/double) - two birds together",
+      "samples": [
+        {
+          "filename": "14_双_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "14_双_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 15,
+      "character": "多",
+      "pinyin": "duō",
+      "meaning": "many/much",
+      "description": "two evenings together",
+      "prompt": "Draw Chinese character '多' (duō, meaning: many/much) - two evenings together",
+      "samples": [
+        {
+          "filename": "15_多_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "15_多_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 16,
+      "character": "回",
+      "pinyin": "huí",
+      "meaning": "return/回",
+      "description": "enclosed square within square",
+      "prompt": "Draw Chinese character '回' (huí, meaning: return/回) - enclosed square within square",
+      "samples": [
+        {
+          "filename": "16_回_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "16_回_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 17,
+      "character": "因",
+      "pinyin": "yīn",
+      "meaning": "because/cause",
+      "description": "large enclosed with small inside",
+      "prompt": "Draw Chinese character '因' (yīn, meaning: because/cause) - large enclosed with small inside",
+      "samples": [
+        {
+          "filename": "17_因_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "17_因_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 18,
+      "character": "困",
+      "pinyin": "kùn",
+      "meaning": "sleepy/trapped",
+      "description": "tree enclosed in box",
+      "prompt": "Draw Chinese character '困' (kùn, meaning: sleepy/trapped) - tree enclosed in box",
+      "samples": [
+        {
+          "filename": "18_困_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "18_困_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 19,
+      "character": "国",
+      "pinyin": "guó",
+      "meaning": "country/nation",
+      "description": "jade enclosed in box",
+      "prompt": "Draw Chinese character '国' (guó, meaning: country/nation) - jade enclosed in box",
+      "samples": [
+        {
+          "filename": "19_国_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "19_国_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 20,
+      "character": "呆",
+      "pinyin": "dāi",
+      "meaning": "dull/foolish/stay",
+      "description": "mouth with tree above",
+      "prompt": "Draw Chinese character '呆' (dāi, meaning: dull/foolish/stay) - mouth with tree above",
+      "samples": [
+        {
+          "filename": "20_呆_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "20_呆_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 21,
+      "character": "尖",
+      "pinyin": "jiān",
+      "meaning": "sharp/pointed",
+      "description": "small on top of large",
+      "prompt": "Draw Chinese character '尖' (jiān, meaning: sharp/pointed) - small on top of large",
+      "samples": [
+        {
+          "filename": "21_尖_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "21_尖_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 22,
+      "character": "好",
+      "pinyin": "hǎo",
+      "meaning": "good",
+      "description": "woman with child",
+      "prompt": "Draw Chinese character '好' (hǎo, meaning: good) - woman with child",
+      "samples": [
+        {
+          "filename": "22_好_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "22_好_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 23,
+      "character": "明",
+      "pinyin": "míng",
+      "meaning": "bright/clear",
+      "description": "sun and moon together",
+      "prompt": "Draw Chinese character '明' (míng, meaning: bright/clear) - sun and moon together",
+      "samples": [
+        {
+          "filename": "23_明_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "23_明_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 24,
+      "character": "男",
+      "pinyin": "nán",
+      "meaning": "male/man",
+      "description": "field with power",
+      "prompt": "Draw Chinese character '男' (nán, meaning: male/man) - field with power",
+      "samples": [
+        {
+          "filename": "24_男_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "24_男_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 25,
+      "character": "加",
+      "pinyin": "jiā",
+      "meaning": "add/plus",
+      "description": "power with mouth",
+      "prompt": "Draw Chinese character '加' (jiā, meaning: add/plus) - power with mouth",
+      "samples": [
+        {
+          "filename": "25_加_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "25_加_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 26,
+      "character": "信",
+      "pinyin": "xìn",
+      "meaning": "letter/trust/believe",
+      "description": "person with words",
+      "prompt": "Draw Chinese character '信' (xìn, meaning: letter/trust/believe) - person with words",
+      "samples": [
+        {
+          "filename": "26_信_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "26_信_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 27,
+      "character": "问",
+      "pinyin": "wèn",
+      "meaning": "ask/question",
+      "description": "door with mouth",
+      "prompt": "Draw Chinese character '问' (wèn, meaning: ask/question) - door with mouth",
+      "samples": [
+        {
+          "filename": "27_问_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "27_问_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 28,
+      "character": "闪",
+      "pinyin": "shǎn",
+      "meaning": "flash/dodge",
+      "description": "door with person",
+      "prompt": "Draw Chinese character '闪' (shǎn, meaning: flash/dodge) - door with person",
+      "samples": [
+        {
+          "filename": "28_闪_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "28_闪_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 29,
+      "character": "囚",
+      "pinyin": "qiú",
+      "meaning": "prisoner",
+      "description": "person enclosed in box",
+      "prompt": "Draw Chinese character '囚' (qiú, meaning: prisoner) - person enclosed in box",
+      "samples": [
+        {
+          "filename": "29_囚_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "29_囚_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    },
+    {
+      "index": 30,
+      "character": "杏",
+      "pinyin": "xìng",
+      "meaning": "apricot",
+      "description": "tree with mouth below",
+      "prompt": "Draw Chinese character '杏' (xìng, meaning: apricot) - tree with mouth below",
+      "samples": [
+        {
+          "filename": "30_杏_1.png",
+          "scale": 0.5,
+          "offset_x": 0,
+          "offset_y": 0
+        },
+        {
+          "filename": "30_杏_2.png",
+          "scale": 0.55,
+          "offset_x": -20,
+          "offset_y": 15
+        }
+      ]
+    }
+  ]
+}
