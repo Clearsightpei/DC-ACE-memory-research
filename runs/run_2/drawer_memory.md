@@ -44,38 +44,65 @@ t.pendown(); t.forward(70); t.penup()
 ```
 Thin straight line, ~70 px, straight down. Solved — reuse verbatim.
 
+### 撇 pie — left-falling — 0.706 → **0.936** (cycle 2)
+```python
+t.penup(); t.goto(24, 35); t.setheading(260)
+t.pendown()
+steps = 60
+for _ in range(steps):
+    t.forward(70.0 / steps)
+    t.right(55.0 / steps)   # gentle ~55° clockwise arc over the length
+t.penup()
+```
+Small thin gentle arc, upper-right → lower-left. Mastered — reuse
+verbatim.
+
+### 提 ti — rising flick — 0.662 → **0.932** (cycle 2)
+```python
+t.penup(); t.goto(-30, -20); t.setheading(33)
+t.pendown(); t.forward(70); t.penup()
+```
+Short thin straight rising line at 33°, no start blob. Scored 0.93
+on both independent attempts (stable). Mastered — reuse verbatim.
+
 ---
 
 ## Strokes that need refinement (carry-over, < 0.85)
 
-### 撇 pie — 0.706 (dice 0.61)
-Direction was right (upper-right → lower-left, convex to the right)
-but it was drawn ~5× too long and very thick/tapered. Fix: thin
-pensize-3, ~70 px total. Start near (24, 35), heading ~260°, curve
-gently with ~50–60° of total clockwise rotation over the length
-(e.g. 60 steps of `forward(70/60)` + `t.right(1)`), ending lower-left.
-Compact gentle arc, not a long heavy sweep.
+### 捺 na — 0.703 → 0.602 (cycle 2, WORSE; consistent on both attempts)
+Size/weight is now fine, but the **curve bows the wrong way**. The
+cycle-2 attempt used `setheading(-40)` (≈320°, down-right) with
+`t.left(...)`, which produced a curve that humps **upward**
+(concave-DOWN, like a frown). The GT 捺 is the opposite: it descends
+from upper-left and is **concave-UP (a valley/smile)** — steeper near
+the top, then the tail flattens out toward the lower-right.
 
-### 捺 na — 0.703 (dice 0.60)
-Right idea (upper-left → lower-right) but again far too large and
-heavy. Fix: thin pensize-3, ~70–75 px. na is a *shallow* descent
-(~45° down-right) that bows gently and flattens toward the tail —
-front-load a small left-curve then straighten. NOT a deep curve, NOT
-a thick wedge. Keep it small.
+Fix — start steeper and curve the OTHER way (clockwise, `t.right`),
+not `t.left`:
+```python
+t.penup(); t.goto(-28, 30); t.setheading(300)   # down-right, fairly steep
+t.pendown()
+steps = 60
+for i in range(steps):
+    t.forward(74.0 / steps)
+    t.right(0.7 if i < steps*0.55 else 0.18)     # bow early, flatten tail
+t.penup()
+```
+Key correction vs last cycle: **`t.right` (clockwise), not `t.left`**,
+and a steeper start heading (~300°, not ~320°). This makes it
+concave-up like the GT. Keep it thin pensize-3, ~74 px.
 
-### 提 ti — 0.662 (proportion 0.65, the lowest)
-GT 提 is a SHORT, THIN, straight rising line (~70 px) at ~30–40°
-up-and-to-the-right. The attempt was a long spike with a heavy 顿笔
-blob at the start — that blob wrecked the proportion term. Fix:
-plain pensize-3, start lower-left ~(-30,-20), heading ~30°,
-`forward(~70)`, no start blob; only a very slight taper at the very
-end if any. Short and clean.
-
-### 点 dian — 0.783 (closest of the four)
-GT 点 is tiny (~17 px) and roundish — a small pressed dab, not a
-line. Attempt was a bit too large/linear. Fix: keep it ~15–18 px,
-compact and blunt. A short `t.dot(9)` or a very short thick-ish dab
-works better than a drawn-out tear-drop.
+### 点 dian — 0.783 → 0.739 (cycle 2, still short)
+The attempt drew a short *line* (16 px, pensize 5, a directional
+dash). GT 点 is a small **round dab**, not a line. Stop drawing a
+line — use a filled dot centered at origin:
+```python
+t.penup(); t.goto(0, 0); t.pendown()
+t.dot(11)            # round filled dab, ~11 px
+t.penup()
+```
+Do not use `forward()` for 点. A `t.dot()` of ~10–12 px is the
+shape; tune only the diameter if it carries over again.
 
 ---
 
@@ -90,7 +117,11 @@ works better than a drawn-out tear-drop.
 
 ## What to try next cycle
 
-All four carry-overs share ONE root cause: **too big, too heavy**.
-Redraw pie/na/ti/dian small (~70 px, 点 ~17 px) and thin (pensize 3),
-keeping the directions above. heng/shu are solved — reuse their
-recipes if asked again.
+Mastered (≥0.85, reuse recipes verbatim): **heng, shu, pie, ti**.
+Still open:
+- **na**: flip the curve — `t.right` not `t.left`, start steeper
+  (~300°), concave-UP like a valley. (Last 2 cycles bowed the wrong
+  way → 0.70 then 0.60.)
+- **dian**: use `t.dot(11)` at origin — a round dab, NOT a line.
+The "small + thin pensize-3, no fill/blob" rule still applies to
+both.

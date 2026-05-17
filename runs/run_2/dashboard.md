@@ -1,37 +1,40 @@
 # DC-ACE Dashboard — run_2 — last update: 2026-05-17
 
-- **Cycle**: 1 (first cycle of fresh run_2, new composite judge)
-- **Phase**: 1 (atomic strokes)
-- **This cycle**: **2/6 mastered** (gate visual≥0.85) — heng 0.92 ✓, shu 0.92 ✓, dian 0.78, pie 0.71, na 0.70, ti 0.66
-- **Last batch**: [dian, heng, shu, pie, na, ti] (the 6 atomic strokes)
-- **OCR**: off (Phase 1, dataset judge.use_ocr=false) → final_score == visual_score
-- **Avg visual**: 0.78
-- **Memory size**: ~95 lines (first real memory written this cycle)
-- **Curator note**: One root cause for all 4 misses — strokes drawn far too big and heavy vs the small/thin GTs. Memory codifies small+thin. heng/shu mastered.
+- **Cycle**: 2  | **Phase**: 1 (atomic strokes)
+- **This cycle**: pie ✓0.94, ti ✓0.93 (×2 stable) newly mastered; dian 0.74, na 0.60 still < gate
+- **Mastered (4/6 atomic)**: heng 0.92, shu 0.92, pie 0.94, ti 0.93
+- **Open (2)**: dian (draw as a line → must be `t.dot`), na (curve bows wrong way — concave-down vs GT concave-up)
+- **Last batch**: [dian, pie, na, ti, na, ti]  | **OCR**: off (Phase 1)
+- **Avg visual**: 0.79
+- **Curator note**: Memory transfer confirmed — the cycle-1 reflection lifted pie +0.23 and ti +0.27 over the gate. na regressed (wrong curve direction, now corrected to t.right/steeper); dian needs t.dot not a line.
 - **Loop status**: running (delete runs/run_2/.stop to pause)
 
-## Headline (cycle 1)
+## Headline (cycle 2)
 
-The new composite judge gives a usable cold-start gradient: a fresh
-memoryless Drawer reached 0.92 on the two straight strokes and
-0.66–0.78 on the curved/short ones — a real, monotonic signal (the
-old phase-correlation metric scored ~0.05 for everything). The
-failure is one clean, learnable mistake (scale + weight), exactly
-the kind of seed the Curator can encode for cycle 2.
+The new composite judge + memory loop is working as designed: a
+single Curator reflection ("small + thin, no blob" + recipes),
+applied by a fresh Drawer, moved pie and ti from clear failures
+(0.66–0.71) to mastered (0.93–0.94) in one cycle — and the duplicate
+ti attempts scored identically (0.932/0.932), showing the score is
+stable, not noisy, at the stroke level. The remaining two failures
+are now precise, actionable shape errors (dian: line vs dot; na:
+inverted curvature), exactly the kind the gate is meant to drill out
+before any phase advance.
 
 ## Per-stroke status (Phase 1)
 
-| stroke | char | visual | components | status |
-|--------|------|--------|------------|--------|
-| heng | 横 | 0.924 | dice .89 cham .98 prop .88 | mastered (retire) |
-| shu  | 竖 | 0.922 | dice .91 cham .99 prop .81 | mastered (retire) |
-| dian | 点 | 0.783 | dice .76 cham .84 prop .73 | carry over |
-| pie  | 撇 | 0.706 | dice .61 cham .78 prop .75 | carry over |
-| na   | 捺 | 0.703 | dice .60 cham .76 prop .79 | carry over |
-| ti   | 提 | 0.662 | dice .58 cham .75 prop .65 | carry over |
+| stroke | char | c1 | c2 | status |
+|--------|------|----|----|--------|
+| heng | 横 | 0.92 | — | mastered |
+| shu  | 竖 | 0.92 | — | mastered |
+| pie  | 撇 | 0.71 | 0.94 | mastered (post-reflection) |
+| ti   | 提 | 0.66 | 0.93 | mastered (post-reflection, ×2 stable) |
+| dian | 点 | 0.78 | 0.74 | carry — must be t.dot, not a line |
+| na   | 捺 | 0.70 | 0.60 | carry — curve inverted; fix = t.right + steeper |
 
 ## Recommendation to Teacher
 
-Carry dian/pie/na/ti (mandatory, all <0.85 and pre-reflection). Do
-not introduce new strokes or advance phase until these four clear
-0.85 — depth over breadth. heng/shu retire.
+Carry dian + na (mandatory, <0.85). Fill batch with drills of the
+two (and/or stable re-confirm of a mastered one for variance data) —
+do NOT introduce new strokes or advance phase until dian & na clear
+0.85. heng/shu/pie/ti retire.
