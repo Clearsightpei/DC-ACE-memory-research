@@ -1,0 +1,50 @@
+[
+  {
+    "index": 1,
+    "character": "捺",
+    "pinyin": "na",
+    "visual_score": 0.1377,
+    "recognized_char": "一",
+    "ocr_confidence": 0.0973,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_01(t):\n    # Shallow ~45° right-falling press: heading 325° (down-and-right),\n    # front-loaded left curve, flattening tail. Verbatim from memory.\n    t.penup(); t.goto(-30, 25); t.setheading(325)\n    t.pendown()\n    for i in range(60):\n        t.forward(75 / 60)\n        if i < 35:\n            t.left(0.55)   # early curve\n        else:\n            t.left(0.12)   # tail flattens toward horizontal\n    t.penup()",
+    "final_score": 0.0688,
+    "ai_file": "01_na.png",
+    "gt_file": "01_na.png"
+  },
+  {
+    "index": 2,
+    "character": "点",
+    "pinyin": "dian",
+    "visual_score": 0.4028,
+    "recognized_char": "",
+    "ocr_confidence": 0.0,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_02(t):\n    # Smallest stroke: a tiny round dab, not a line. Filled 10px dot.\n    t.penup(); t.goto(0, 0); t.pendown()\n    t.dot(10)\n    t.penup()",
+    "final_score": 0.2014,
+    "ai_file": "02_dian.png",
+    "gt_file": "02_dian.png"
+  },
+  {
+    "index": 3,
+    "character": "横折",
+    "pinyin": "heng_zhe",
+    "visual_score": 0.3286,
+    "recognized_char": "",
+    "ocr_confidence": 0.0,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_03(t):\n    # Compact right-angle fold: ~45px horizontal then sharp fold south\n    # for ~45px. Recentered on canvas. Verbatim from memory.\n    t.penup(); t.goto(-22, 5); t.setheading(4)\n    t.pendown()\n    t.forward(45)        # horizontal, shorter than a lone heng\n    t.right(94)          # fold to straight-down\n    t.forward(45)        # vertical drop\n    t.penup()\n\n\ndef main():\n    screen = turtle.Screen()\n    screen.setup(WIDTH, HEIGHT); screen.bgcolor(\"white\")\n    screen.tracer(0, 0)\n    t = turtle.Turtle()\n    for idx, (key, fn) in enumerate([\n        (\"na\", task_01),\n        (\"dian\", task_02),\n        (\"heng_zhe\", task_03),\n    ], start=1):\n        reset_turtle(t)\n        fn(t)\n        screen.update()\n        save_canvas_to_png(screen, os.path.join(OUT_DIR, f\"{idx:02d}_{key}.png\"))\n\n\nif __name__ == \"__main__\":\n    main()",
+    "final_score": 0.1643,
+    "ai_file": "03_heng_zhe.png",
+    "gt_file": "03_heng_zhe.png"
+  }
+]

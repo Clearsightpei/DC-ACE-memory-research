@@ -1,0 +1,50 @@
+[
+  {
+    "index": 1,
+    "character": "大",
+    "pinyin": "da",
+    "visual_score": 0.0494,
+    "recognized_char": "大",
+    "ocr_confidence": 0.997,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_01(t):\n    # 大 = heng (horizontal bar) crossed by pie + na.\n    # STRUCTURAL FIX (memory c7 lesson): the pie must start ABOVE the\n    # heng — its top is the character's highest point and pokes\n    # through the bar. The heng is crossed near its MIDDLE, NOT\n    # sitting on top of a separate 人/八 below it. If heng is the\n    # topmost element with pie+na hanging below, OCR reads 天.\n    t.pensize(12)\n\n    # 1) Horizontal bar (heng), flat, centered, crossed near its middle.\n    #    Place it in the upper-middle so strokes can pass above it.\n    t.penup(); t.goto(-150, 70); t.setheading(0)\n    t.pendown(); t.forward(300); t.penup()\n\n    # 2) Pie: a left-falling sweep whose TOP is ABOVE the bar (highest\n    #    point of the whole glyph) and which pierces through the heng,\n    #    continuing well below it to the lower-left.\n    t.penup(); t.goto(40, 150); t.setheading(255)\n    t.pendown()\n    steps = 70\n    for _ in range(steps):\n        t.forward(300 / steps)\n        t.right(0.55)  # gentle ~38° clockwise bend over the stroke\n    t.penup()\n\n    # 3) Na: a right-falling press starting near where the pie crosses\n    #    the bar (just below the bar's middle), sweeping down-right.\n    t.penup(); t.goto(-20, 55); t.setheading(305)\n    t.pendown()\n    steps = 60\n    for i in range(steps):\n        t.forward(230 / steps)\n        t.left(0.45 if i < 35 else 0.12)  # front-loaded curve, flat tail\n    t.penup()",
+    "final_score": 0.5247,
+    "ai_file": "01_大.png",
+    "gt_file": "01_大.png"
+  },
+  {
+    "index": 2,
+    "character": "八",
+    "pinyin": "ba",
+    "visual_score": 0.0568,
+    "recognized_char": "八",
+    "ocr_confidence": 0.9994,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_02(t):\n    # 八 = two SEPARATE splaying strokes, NOT touching at the top —\n    # like two spread legs. Left = pie, right = na. Gap at the top.\n    t.pensize(12)\n\n    # Left leg: pie, top-center-ish, falling down-left.\n    t.penup(); t.goto(-30, 150); t.setheading(245)\n    t.pendown()\n    steps = 60\n    for _ in range(steps):\n        t.forward(300 / steps)\n        t.right(0.45)  # mild left-falling curve\n    t.penup()\n\n    # Right leg: na, starts separated from the pie's top (clear gap),\n    # falling down-right.\n    t.penup(); t.goto(30, 150); t.setheading(300)\n    t.pendown()\n    steps = 60\n    for i in range(steps):\n        t.forward(300 / steps)\n        t.left(0.40 if i < 35 else 0.12)  # front-loaded press curve\n    t.penup()",
+    "final_score": 0.5284,
+    "ai_file": "02_八.png",
+    "gt_file": "02_八.png"
+  },
+  {
+    "index": 3,
+    "character": "三",
+    "pinyin": "san",
+    "visual_score": 0.0694,
+    "recognized_char": "三",
+    "ocr_confidence": 0.9996,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_03(t):\n    # 三 = three stacked horizontal strokes (heng), flat.\n    # Top: shorter. Middle: shortest. Bottom: longest.\n    t.pensize(12)\n\n    # Top heng — shorter, upper.\n    t.penup(); t.goto(-110, 120); t.setheading(0)\n    t.pendown(); t.forward(220); t.penup()\n\n    # Middle heng — short, centered vertically.\n    t.penup(); t.goto(-95, 0); t.setheading(0)\n    t.pendown(); t.forward(190); t.penup()\n\n    # Bottom heng — longest, lower.\n    t.penup(); t.goto(-150, -120); t.setheading(0)\n    t.pendown(); t.forward(300); t.penup()\n\n\ndef main():\n    screen = turtle.Screen()\n    screen.setup(WIDTH, HEIGHT); screen.bgcolor(\"white\")\n    screen.tracer(0, 0)\n    t = turtle.Turtle()\n    for idx, (key, fn) in enumerate([\n        (\"大\", task_01),\n        (\"八\", task_02),\n        (\"三\", task_03),\n    ], start=1):\n        reset_turtle(t)\n        fn(t)\n        screen.update()\n        save_canvas_to_png(screen, os.path.join(OUT_DIR, f\"{idx:02d}_{key}.png\"))\n\n\nif __name__ == \"__main__\":\n    main()",
+    "final_score": 0.5347,
+    "ai_file": "03_三.png",
+    "gt_file": "03_三.png"
+  }
+]

@@ -1,3 +1,17 @@
+# Runs now live INSIDE this single repo under runs/ (run_1, run_2, …)
+# and are tracked here — no per-run repos, no separate remotes.
+# (Legacy first run dc_ace_run/ has been moved to runs/run_1/.)
+
+# Secrets & machine-local config — never commit (this repo is public).
+.env
+.claude/settings.local.json
+
+# Active-run pointer — ephemeral / environment-specific.
+active_run.txt
+
+# Per-run history backups (bundles) — local safety copies, not for git.
+*.bundle
+
 # Ignore the generated dataset (we only share the generator code)
 dataset_pilot/
 dataset_v1/

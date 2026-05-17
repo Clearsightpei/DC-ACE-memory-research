@@ -1,0 +1,9 @@
+[32m[INFO] 2026-05-16 17:43:57,802 [RapidOCR] base.py:22: Using engine_name: onnxruntime[0m
+[32m[INFO] 2026-05-16 17:43:57,939 [RapidOCR] download_file.py:60: File exists and is valid: /Users/peilinwu/Documents/AI memory research/.conda/lib/python3.11/site-packages/rapidocr/models/ch_PP-OCRv4_det_mobile.onnx[0m
+[32m[INFO] 2026-05-16 17:43:57,939 [RapidOCR] main.py:57: Using /Users/peilinwu/Documents/AI memory research/.conda/lib/python3.11/site-packages/rapidocr/models/ch_PP-OCRv4_det_mobile.onnx[0m
+[32m[INFO] 2026-05-16 17:43:57,996 [RapidOCR] base.py:22: Using engine_name: onnxruntime[0m
+[32m[INFO] 2026-05-16 17:43:57,997 [RapidOCR] download_file.py:60: File exists and is valid: /Users/peilinwu/Documents/AI memory research/.conda/lib/python3.11/site-packages/rapidocr/models/ch_ppocr_mobile_v2.0_cls_mobile.onnx[0m
+[32m[INFO] 2026-05-16 17:43:57,997 [RapidOCR] main.py:57: Using /Users/peilinwu/Documents/AI memory research/.conda/lib/python3.11/site-packages/rapidocr/models/ch_ppocr_mobile_v2.0_cls_mobile.onnx[0m
+[32m[INFO] 2026-05-16 17:43:58,032 [RapidOCR] base.py:22: Using engine_name: onnxruntime[0m
+[32m[INFO] 2026-05-16 17:43:58,041 [RapidOCR] download_file.py:60: File exists and is valid: /Users/peilinwu/Documents/AI memory research/.conda/lib/python3.11/site-packages/rapidocr/models/ch_PP-OCRv4_rec_mobile.onnx[0m
+[32m[INFO] 2026-05-16 17:43:58,041 [RapidOCR] main.py:57: Using /Users/peilinwu/Documents/AI memory research/.conda/lib/python3.11/site-packages/rapidocr/models/ch_PP-OCRv4_rec_mobile.onnx[0m

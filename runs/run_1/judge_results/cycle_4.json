@@ -1,0 +1,50 @@
+[
+  {
+    "index": 1,
+    "character": "捺",
+    "pinyin": "na",
+    "visual_score": 0.3104,
+    "recognized_char": "一",
+    "ocr_confidence": 0.3865,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_01(t):\n    # Memory fix: na = shallow bow with a flattening tail, NOT a mirrored\n    # pie. Start (-24,35), heading ~285°, 60 steps of forward(70/60),\n    # ~20° total LEFT-rotation, front-loaded so the tail flattens.\n    t.penup(); t.goto(-24, 35); t.setheading(285)\n    t.pendown()\n    for i in range(60):\n        t.forward(70 / 60)\n        if i < 30:\n            t.left(0.5)   # steps 1–30: more curve\n        else:\n            t.left(0.15)  # steps 31–60: tail flattens\n    t.penup()",
+    "final_score": 0.1552,
+    "ai_file": "01_na.png",
+    "gt_file": "01_na.png"
+  },
+  {
+    "index": 2,
+    "character": "点",
+    "pinyin": "dian",
+    "visual_score": 0.3764,
+    "recognized_char": "",
+    "ocr_confidence": 0.0,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_02(t):\n    # A very short stroke (~15–20px), drawn top-to-bottom-right: a small\n    # tear-drop/dot. The smallest stroke. Heading ~300° = down and to\n    # the right; ~18px total.\n    t.penup(); t.goto(-6, 9); t.setheading(300)\n    t.pendown()\n    for i in range(18):\n        t.forward(18 / 18)\n        t.left(0.6)  # very slight bow gives a tear-drop feel\n    t.penup()",
+    "final_score": 0.1882,
+    "ai_file": "02_dian.png",
+    "gt_file": "02_dian.png"
+  },
+  {
+    "index": 3,
+    "character": "横折",
+    "pinyin": "heng_zhe",
+    "visual_score": 0.4858,
+    "recognized_char": "",
+    "ocr_confidence": 0.0,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_03(t):\n    # Compound: horizontal segment left-to-right, then sharp ~90° turn\n    # folding straight downward — like the top-right corner of a box.\n    # heng length ~60px (from memory: heng ~70px, slight upward tilt);\n    # then turn the corner and go down ~55px.\n    t.penup(); t.goto(-30, 25); t.setheading(4)  # slight upward tilt\n    t.pendown()\n    t.forward(60)            # horizontal segment\n    t.right(94)              # sharp ~90° fold (4° tilt + 90° → ~94° turn)\n    t.forward(55)            # vertical drop\n    t.penup()\n\n\ndef main():\n    screen = turtle.Screen()\n    screen.setup(WIDTH, HEIGHT); screen.bgcolor(\"white\")\n    screen.tracer(0, 0)\n    t = turtle.Turtle()\n    for idx, (key, fn) in enumerate([\n        (\"na\", task_01),\n        (\"dian\", task_02),\n        (\"heng_zhe\", task_03),\n    ], start=1):\n        reset_turtle(t)\n        fn(t)\n        screen.update()\n        save_canvas_to_png(screen, os.path.join(OUT_DIR, f\"{idx:02d}_{key}.png\"))\n\n\nif __name__ == \"__main__\":\n    main()",
+    "final_score": 0.2429,
+    "ai_file": "03_heng_zhe.png",
+    "gt_file": "03_heng_zhe.png"
+  }
+]

@@ -1,0 +1,5 @@
+[
+  {"id": "L1_Stroke_Heng_1", "params": {"stroke": "横", "pinyin": "heng", "meaning": "horizontal"}},
+  {"id": "L1_Stroke_Shu_1",  "params": {"stroke": "竖", "pinyin": "shu",  "meaning": "vertical"}},
+  {"id": "L1_Stroke_Pie_1",  "params": {"stroke": "撇", "pinyin": "pie",  "meaning": "throw"}}
+]

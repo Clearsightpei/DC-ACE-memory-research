@@ -1,0 +1,5 @@
+[
+  {"id": "L1_Stroke_Na_1",      "params": {"stroke": "捺",   "pinyin": "na",       "meaning": "press"}},
+  {"id": "L1_Stroke_Dian_1",    "params": {"stroke": "点",   "pinyin": "dian",     "meaning": "dot"}},
+  {"id": "L1_Stroke_HengZhe_1", "params": {"stroke": "横折", "pinyin": "heng_zhe", "meaning": "horizontal-fold"}}
+]

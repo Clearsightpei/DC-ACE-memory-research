@@ -1,0 +1,50 @@
+[
+  {
+    "index": 1,
+    "character": "天",
+    "pinyin": "tian",
+    "visual_score": 0.074,
+    "recognized_char": "元",
+    "ocr_confidence": 0.6125,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_01(t):\n    # Like 大 but with an EXTRA bar ON TOP, and pie/na must NOT rise\n    # above the top bar. Stacking order: top short heng is the\n    # highest element; lower (longer) heng below; pie+na hang BELOW\n    # the lower heng, their tops at/below the lower bar.\n    t.pensize(11)\n    # Top bar: short, highest point of the character\n    heng(t, -90, 150, 180, tilt=2)\n    # Lower bar: longer, below the top bar\n    heng(t, -150, 40, 300, tilt=2)\n    # Pie: starts just BELOW the lower bar (NOT above the top bar),\n    # sweeps down-left\n    pie(t, 20, 30, 200, total_rot=55)\n    # Na: starts just below the lower bar near centre, sweeps down-right\n    na(t, -10, 30, 210)",
+    "final_score": 0.037,
+    "ai_file": "01_天.png",
+    "gt_file": "01_天.png"
+  },
+  {
+    "index": 2,
+    "character": "本",
+    "pinyin": "ben",
+    "visual_score": 0.0635,
+    "recognized_char": "本",
+    "ocr_confidence": 0.9659,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_02(t):\n    # 木 = heng crossed by a shu that pierces it from above; pie + na\n    # branch down-outward from the crossing. Then one extra short\n    # horizontal near the BOTTOM of the vertical = 本.\n    t.pensize(11)\n    # Main horizontal bar (the heng of 木)\n    heng(t, -160, 70, 320, tilt=2)\n    # Vertical shu pierces the heng from above (top above the bar)\n    shu(t, 0, 170, 330)\n    # Pie branches down-left from the crossing region\n    pie(t, 10, 60, 175, total_rot=55)\n    # Na branches down-right from the crossing region\n    na(t, -5, 60, 185)\n    # Extra short horizontal near the bottom of the vertical\n    heng(t, -55, -120, 110, tilt=2)",
+    "final_score": 0.5318,
+    "ai_file": "02_本.png",
+    "gt_file": "02_本.png"
+  },
+  {
+    "index": 3,
+    "character": "口",
+    "pinyin": "kou",
+    "visual_score": 0.0508,
+    "recognized_char": "口",
+    "ocr_confidence": 0.9379,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_03(t):\n    # Closed box: left vertical (shu), top + right side as one\n    # horizontal-then-fold stroke, bottom horizontal closing it.\n    t.pensize(11)\n    half = 130          # half-width / half-height of the box\n    left_x = -half\n    right_x = half\n    top_y = half\n    bot_y = -half\n    # Stroke 1: left vertical (shu) — top-left down to bottom-left\n    shu(t, left_x, top_y, top_y - bot_y)\n    # Stroke 2: heng-zhe — across the top then fold straight down\n    # the right side (box top-right corner shape).\n    t.penup(); t.goto(left_x, top_y); t.setheading(0)\n    t.pendown()\n    t.forward(right_x - left_x)      # top edge, left -> right\n    t.right(90)\n    t.forward(top_y - bot_y)         # right edge, top -> bottom\n    t.penup()\n    # Stroke 3: bottom horizontal closing the box\n    heng(t, left_x, bot_y, right_x - left_x, tilt=0)\n\n\ndef main():\n    screen = turtle.Screen()\n    screen.setup(WIDTH, HEIGHT); screen.bgcolor(\"white\")\n    screen.tracer(0, 0)\n    t = turtle.Turtle()\n    for idx, (key, fn) in enumerate([\n        (\"天\", task_01),\n        (\"本\", task_02),\n        (\"口\", task_03),\n    ], start=1):\n        reset_turtle(t)\n        fn(t)\n        screen.update()\n        save_canvas_to_png(screen, os.path.join(OUT_DIR, f\"{idx:02d}_{key}.png\"))\n\n\nif __name__ == \"__main__\":\n    main()",
+    "final_score": 0.5254,
+    "ai_file": "03_口.png",
+    "gt_file": "03_口.png"
+  }
+]

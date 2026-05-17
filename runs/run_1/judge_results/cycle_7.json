@@ -1,0 +1,50 @@
+[
+  {
+    "index": 1,
+    "character": "一",
+    "pinyin": "yi",
+    "visual_score": 0.2439,
+    "recognized_char": "一",
+    "ocr_confidence": 0.6281,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_01(t):\n    # Memory hypothesis: 一 is an OCR blind spot; keep it NEAR-FLAT\n    # (~0deg tilt, not 4deg) and use a THICKER pen so it reads as a\n    # bold bar, not a hairline. Scale ~340px wide, centered.\n    t.pensize(12)\n    stroke_heng(t, 0, 0, 340, tilt=0)",
+    "final_score": 0.6219,
+    "ai_file": "01_一.png",
+    "gt_file": "01_一.png"
+  },
+  {
+    "index": 2,
+    "character": "大",
+    "pinyin": "da",
+    "visual_score": 0.0822,
+    "recognized_char": "天",
+    "ocr_confidence": 0.3923,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_02(t):\n    # 大 = heng near top + pie and na crossing like arms/legs.\n    t.pensize(9)\n    # Top horizontal, ~300px, near-flat, sitting in upper region.\n    stroke_heng(t, 0, 110, 300, tilt=0)\n    # Pie: left-falling sweep starting from middle of the heng,\n    # going down-left. Scaled-up 60deg-curve recipe (~300px).\n    stroke_pie(t, 25, 110, 300, total_rot=55, heading=255)\n    # Na: right-falling press starting near the same crossing point,\n    # going down-right. Scaled-up na recipe (~300px).\n    stroke_na(t, -5, 95, 300, heading=300)",
+    "final_score": 0.0411,
+    "ai_file": "02_大.png",
+    "gt_file": "02_大.png"
+  },
+  {
+    "index": 3,
+    "character": "木",
+    "pinyin": "mu",
+    "visual_score": 0.0917,
+    "recognized_char": "木",
+    "ocr_confidence": 0.9974,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_03(t):\n    # 木 = heng crossed by shu; pie and na branch downward-outward\n    # from the crossing.\n    t.pensize(9)\n    # Horizontal bar, ~300px, near top-middle.\n    stroke_heng(t, 0, 90, 300, tilt=0)\n    # Vertical down the center through the heng.\n    stroke_shu(t, 0, 150, 320)\n    # Pie branching down-left from the crossing (where heng meets shu).\n    stroke_pie(t, 0, 70, 230, total_rot=55, heading=250)\n    # Na branching down-right from the crossing.\n    stroke_na(t, 0, 70, 230, heading=305)\n\n\ndef main():\n    screen = turtle.Screen()\n    screen.setup(WIDTH, HEIGHT); screen.bgcolor(\"white\")\n    screen.tracer(0, 0)\n    t = turtle.Turtle()\n    for idx, (key, fn) in enumerate([\n        (\"一\", task_01),\n        (\"大\", task_02),\n        (\"木\", task_03),\n    ], start=1):\n        reset_turtle(t)\n        fn(t)\n        screen.update()\n        save_canvas_to_png(screen, os.path.join(OUT_DIR, f\"{idx:02d}_{key}.png\"))\n\n\nif __name__ == \"__main__\":\n    main()",
+    "final_score": 0.5458,
+    "ai_file": "03_木.png",
+    "gt_file": "03_木.png"
+  }
+]

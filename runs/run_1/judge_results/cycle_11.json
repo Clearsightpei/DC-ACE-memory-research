@@ -1,0 +1,50 @@
+[
+  {
+    "index": 1,
+    "character": "天",
+    "pinyin": "tian",
+    "visual_score": 0.0463,
+    "recognized_char": "天",
+    "ocr_confidence": 0.9993,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_01(t):\n    # Corrected memory theory (lesson #6): 天 = a SHORT heng on top,\n    # then the CONFIRMED 大 recipe directly below it (c8, scored 1.00).\n    # The embedded 大 has the ONE full-width bar; the pie starts ABOVE\n    # that bar and pierces through it (pie's top is the highest point of\n    # the 大), na crosses from the same point. NOT 二 + 人, NOT two\n    # stacked full bars with detached legs.\n    t.pensize(11)\n\n    # Short heng on top (narrower than the 大's bar below it)\n    t.penup(); t.goto(-90, 150); t.setheading(2)\n    t.pendown(); t.forward(180); t.penup()\n\n    # ----- embedded 大 (confirmed c8 recipe, scaled/centered) -----\n    # The single full-width bar of the 大. The pie pierces through it\n    # from above, so it must start ABOVE this bar.\n    bar_y = 70\n    # Heng of the 大 (the only full-width horizontal)\n    t.penup(); t.goto(-160, bar_y); t.setheading(2)\n    t.pendown(); t.forward(320); t.penup()\n\n    # pie: starts ABOVE the bar (its top is the highest point of the 大)\n    # and sweeps down-left, piercing through the bar.\n    t.penup(); t.goto(40, 140); t.setheading(255)\n    t.pendown()\n    for _ in range(60):\n        t.forward(220 / 60)\n        t.right(0.85)          # gentle leftward sweep\n    t.penup()\n\n    # na: from the same crossing region, sweeps down-right.\n    t.penup(); t.goto(20, 130); t.setheading(305)\n    t.pendown()\n    for i in range(60):\n        t.forward(210 / 60)\n        t.left(0.5 if i < 35 else 0.12)   # front-loaded curve, flat tail\n    t.penup()",
+    "final_score": 0.5232,
+    "ai_file": "01_天.png",
+    "gt_file": "01_天.png"
+  },
+  {
+    "index": 2,
+    "character": "王",
+    "pinyin": "wang",
+    "visual_score": 0.0416,
+    "recognized_char": "王",
+    "ocr_confidence": 0.9993,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_02(t):\n    # 三 with a vertical spine through all three bar centres.\n    # Top bar, shorter middle bar, widest bottom bar; one vertical\n    # connecting their centres.\n    t.pensize(11)\n\n    top_y, mid_y, bot_y = 150, 0, -150\n\n    # top heng\n    t.penup(); t.goto(-150, top_y); t.setheading(2)\n    t.pendown(); t.forward(300); t.penup()\n\n    # middle heng (shorter)\n    t.penup(); t.goto(-110, mid_y); t.setheading(2)\n    t.pendown(); t.forward(220); t.penup()\n\n    # bottom heng (widest)\n    t.penup(); t.goto(-165, bot_y); t.setheading(2)\n    t.pendown(); t.forward(330); t.penup()\n\n    # vertical spine through the centres\n    t.penup(); t.goto(0, top_y + 8); t.setheading(270)\n    t.pendown(); t.forward((top_y - bot_y) + 16); t.penup()",
+    "final_score": 0.5208,
+    "ai_file": "02_王.png",
+    "gt_file": "02_王.png"
+  },
+  {
+    "index": 3,
+    "character": "土",
+    "pinyin": "tu",
+    "visual_score": 0.0775,
+    "recognized_char": "土",
+    "ocr_confidence": 0.9833,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def task_03(t):\n    # A short heng crossed by a vertical (like 十), then a wider\n    # heng across the bottom — the bottom bar is the widest.\n    t.pensize(11)\n\n    mid_y, bot_y = 60, -150\n\n    # upper (shorter) heng\n    t.penup(); t.goto(-110, mid_y); t.setheading(2)\n    t.pendown(); t.forward(220); t.penup()\n\n    # bottom heng (widest)\n    t.penup(); t.goto(-170, bot_y); t.setheading(2)\n    t.pendown(); t.forward(340); t.penup()\n\n    # vertical spine: from above the upper heng down to the bottom heng\n    t.penup(); t.goto(0, 160); t.setheading(270)\n    t.pendown(); t.forward(160 - bot_y); t.penup()\n\n\ndef main():\n    screen = turtle.Screen()\n    screen.setup(WIDTH, HEIGHT); screen.bgcolor(\"white\")\n    screen.tracer(0, 0)\n    t = turtle.Turtle()\n    for idx, (key, fn) in enumerate([\n        (\"天\", task_01),\n        (\"王\", task_02),\n        (\"土\", task_03),\n    ], start=1):\n        reset_turtle(t)\n        fn(t)\n        screen.update()\n        save_canvas_to_png(screen, os.path.join(OUT_DIR, f\"{idx:02d}_{key}.png\"))\n\n\nif __name__ == \"__main__\":\n    main()",
+    "final_score": 0.5388,
+    "ai_file": "03_土.png",
+    "gt_file": "03_土.png"
+  }
+]

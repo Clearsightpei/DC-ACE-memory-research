@@ -1,0 +1,11 @@
+{
+  "cycle": 0,
+  "phase": 1,
+  "last_batch": [],
+  "last_pass_count": null,
+  "last_total": null,
+  "last_finished_at": null,
+  "batch_size": 6,
+  "pass_signal": "Phase 1: visual_score >= 0.85 (composite shape-fidelity gate, post-reflection) — no skipping. Phase 2/3: visual_score primary + OCR is_correct as secondary aid.",
+  "notes": "Composite Dice+Chamfer+proportion judge; OCR is Teacher-configured via dataset judge.use_ocr (off for strokes by default)."
+}
