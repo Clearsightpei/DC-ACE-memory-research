@@ -1,18 +1,18 @@
 {
-  "cycle": 2,
+  "cycle": 3,
   "phase": 1,
   "last_batch": [
     "dian",
+    "na",
+    "dian",
+    "na",
     "pie",
-    "na",
-    "ti",
-    "na",
     "ti"
   ],
   "last_pass_count": 4,
   "last_total": 6,
-  "last_finished_at": "2026-05-17T01:05:00-04:00",
+  "last_finished_at": "2026-05-17T01:35:00-04:00",
   "batch_size": 6,
   "pass_signal": "Phase 1: visual_score >= 0.85 (composite shape-fidelity gate, post-reflection) \u2014 no skipping. Phase 2/3: visual_score primary + OCR is_correct as secondary aid.",
-  "notes": "Cycle 2 carry-over. pie 0.71->0.94 & ti 0.66->0.93 mastered post-reflection (4/6 atomic mastered: heng/shu/pie/ti). dian 0.74 (must be t.dot not line), na 0.70->0.60 (curve bowed wrong way; fix t.right+steeper). Carry dian+na; no phase advance."
+  "notes": "Cycle 3. dian 0.74->0.93 mastered (t.dot). pie/ti regression-stable. 5/6 atomic mastered (heng,shu,pie,ti,dian). na regressed 0.60->0.24 (Curator heading-fix wrong twice; faithfully applied). na switched to explicit-points recipe. Carry na only; no phase advance."
 }
