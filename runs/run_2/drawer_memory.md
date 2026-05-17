@@ -63,46 +63,55 @@ t.penup(); t.goto(-30, -20); t.setheading(33)
 t.pendown(); t.forward(70); t.penup()
 ```
 Short thin straight rising line at 33°, no start blob. Scored 0.93
-on both independent attempts (stable). Mastered — reuse verbatim.
+on both independent attempts (stable, incl. cycle-3 regression
+check). Mastered — reuse verbatim.
+
+### 点 dian — dot — 0.78 → 0.74 → **0.932** (cycle 3)
+```python
+t.penup(); t.goto(0, 0); t.pendown()
+t.dot(11)            # round filled dab — NOT a forward() line
+t.penup()
+```
+The fix that worked: a `t.dot(11)` round dab, not a directional
+line. Scored 0.93 on both attempts (stable). Mastered — reuse
+verbatim. Never use `forward()` for 点.
 
 ---
 
 ## Strokes that need refinement (carry-over, < 0.85)
 
-### 捺 na — 0.703 → 0.602 (cycle 2, WORSE; consistent on both attempts)
-Size/weight is now fine, but the **curve bows the wrong way**. The
-cycle-2 attempt used `setheading(-40)` (≈320°, down-right) with
-`t.left(...)`, which produced a curve that humps **upward**
-(concave-DOWN, like a frown). The GT 捺 is the opposite: it descends
-from upper-left and is **concave-UP (a valley/smile)** — steeper near
-the top, then the tail flattens out toward the lower-right.
+### 捺 na — 0.703 → 0.602 → 0.245 (getting WORSE; Curator mis-read it twice)
 
-Fix — start steeper and curve the OTHER way (clockwise, `t.right`),
-not `t.left`:
+**Stop guessing headings.** Two heading-based "fixes" both made it
+worse, applied faithfully by the Drawer:
+- cycle 2: `setheading(320)` + `t.left` → 0.60 (shallow arc, closest so far).
+- cycle 3: `setheading(300)` + `t.right` → 0.24 (came out nearly
+  VERTICAL — heading 300 is ~60° below horizontal, far too steep).
+
+Ground truth, read directly from the GT image (turtle coords,
+origin = canvas centre, y up): 捺 is a **short, gentle, almost
+straight ~45° diagonal from the upper-left down to the lower-right**,
+spanning roughly **+58 px in x and −53 px in y**, with only a *very
+slight* concave-up bow and a tail that flattens a little near the
+end. It is NOT steep, NOT a deep curve.
+
+Recipe — draw it through **explicit points** (no heading math; this
+removes the ambiguity that burned the last two cycles). Thin
+pensize 3:
 ```python
-t.penup(); t.goto(-28, 30); t.setheading(300)   # down-right, fairly steep
-t.pendown()
-steps = 60
-for i in range(steps):
-    t.forward(74.0 / steps)
-    t.right(0.7 if i < steps*0.55 else 0.18)     # bow early, flatten tail
+pts = [(-28, 26), (-18, 14), (-8, 1), (3, -12),
+       (16, -22), (30, -29), (44, -33)]   # gentle ~45° down-right,
+                                          # flattening toward the tail
+t.penup(); t.goto(*pts[0]); t.pendown()
+for p in pts[1:]:
+    t.goto(*p)
 t.penup()
 ```
-Key correction vs last cycle: **`t.right` (clockwise), not `t.left`**,
-and a steeper start heading (~300°, not ~320°). This makes it
-concave-up like the GT. Keep it thin pensize-3, ~74 px.
-
-### 点 dian — 0.783 → 0.739 (cycle 2, still short)
-The attempt drew a short *line* (16 px, pensize 5, a directional
-dash). GT 点 is a small **round dab**, not a line. Stop drawing a
-line — use a filled dot centered at origin:
-```python
-t.penup(); t.goto(0, 0); t.pendown()
-t.dot(11)            # round filled dab, ~11 px
-t.penup()
-```
-Do not use `forward()` for 点. A `t.dot()` of ~10–12 px is the
-shape; tune only the diameter if it carries over again.
+Span ≈ 72 px wide, 59 px tall — matches the GT. Slope is steeper
+early ( (−28,26)→(3,−12) ) and flatter late ( (30,−29)→(44,−33) ):
+concave-up with a flattening tail. If it still misses, adjust the
+*points* (nudge the tail flatter / shift start), do NOT switch back
+to heading+`t.left/right` loops — those have failed twice.
 
 ---
 
@@ -117,11 +126,10 @@ shape; tune only the diameter if it carries over again.
 
 ## What to try next cycle
 
-Mastered (≥0.85, reuse recipes verbatim): **heng, shu, pie, ti**.
-Still open:
-- **na**: flip the curve — `t.right` not `t.left`, start steeper
-  (~300°), concave-UP like a valley. (Last 2 cycles bowed the wrong
-  way → 0.70 then 0.60.)
-- **dian**: use `t.dot(11)` at origin — a round dab, NOT a line.
-The "small + thin pensize-3, no fill/blob" rule still applies to
-both.
+Mastered (≥0.85, reuse recipes verbatim): **heng, shu, pie, ti,
+dian** (5/6 atomic).
+Only **na** is open. Use the **explicit-points** recipe above —
+do NOT go back to `setheading`+`t.left/right` loops (failed twice,
+0.60 then 0.24). If still short, nudge the points, keep it a
+gentle ~45° down-right diagonal (not steep, not deeply curved),
+thin pensize-3.
