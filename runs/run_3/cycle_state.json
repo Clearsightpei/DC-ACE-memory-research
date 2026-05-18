@@ -1,11 +1,18 @@
 {
-  "cycle": 0,
+  "cycle": 1,
   "phase": 1,
-  "last_batch": [],
-  "last_pass_count": null,
-  "last_total": null,
-  "last_finished_at": null,
+  "last_batch": [
+    "dian",
+    "heng",
+    "shu",
+    "pie",
+    "na",
+    "ti"
+  ],
+  "last_pass_count": 6,
+  "last_total": 6,
+  "last_finished_at": "2026-05-17T03:10:00-04:00",
   "batch_size": 6,
-  "pass_signal": "Teacher is the tool orchestrator (dataset judge.eval). Strokes: Claude-vision rubric total>=7/10 (no 0 criterion), post-reflection — hand-coded stroke GT is a weak reference, do not gate strokes on it. Characters: OCR is_correct AND rubric>=7/10; GT visual_score tracked for regression only (cross-renderer low is normal, run_1 0.03-0.40). Soft Teacher-judged phase gate, depth over breadth.",
-  "notes": "Tool-orchestrator era. eval in {vision, gt, ocr, +combos}; vision rubric scored orchestrator-side (no API). Per-run POSTMORTEM.md mandatory before starting a new run."
+  "pass_signal": "Teacher is the tool orchestrator (dataset judge.eval). Strokes: Claude-vision rubric total>=7/10 (no 0 criterion), post-reflection \u2014 hand-coded stroke GT is a weak reference, do not gate strokes on it. Characters: OCR is_correct AND rubric>=7/10; GT visual_score tracked for regression only (cross-renderer low is normal, run_1 0.03-0.40). Soft Teacher-judged phase gate, depth over breadth.",
+  "notes": "Cycle 1 cold start, eval=vision (no GT). 6/6 strokes 9-10/10 (avg 9.5) \u2014 thesis validated vs run_1 crude 3-4/10. Carry-over recommended to confirm post-reflection, then Phase 2 simple chars."
 }
