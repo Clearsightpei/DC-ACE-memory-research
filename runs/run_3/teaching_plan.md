@@ -35,7 +35,7 @@ mastery gate. Gate retained at total ≥ 7 with no criterion == 0.
 
 | Phase | What | Stroke band | Pool source | Default eval |
 |-------|------|-------------|-------------|--------------|
-| 1 | Atomic strokes | — | the 6 atomics, then compounds | `vision` (no GT — stroke GT is weak) |
+| 1 | Atomic strokes | — | the 6 atomics, then compounds | `vision`
 | 2 | Simple characters | 1–4 | `list_chars.py --min 1 --max 4` | `gt+ocr+vision` |
 | 3 | Complex characters | 5–18 | `list_chars.py --min 5 --max 18` | `gt+ocr+vision` |
 
