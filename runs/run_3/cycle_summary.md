@@ -1,7 +1,1 @@
-<!--
-Curator → Teacher channel. Overwritten each cycle by the Curator.
-1–3 sentences describing what kind of mistake (or success) happened,
-to inform the next batch.
-
-Empty until cycle 1 finishes.
--->
+Cycle 1 (run_3, cold start, eval=vision — NO stroke GT): **6/6 strokes scored 9–10/10** on the reference-free calligraphy rubric (avg 9.5). This directly validates the run_3 thesis: with the weak hand-coded stroke GT removed and strokes judged by Claude-vision, a fresh memoryless Drawer produced genuinely brushed strokes (real taper via per-point pensize, weighted 顿笔 entries, fine tapered points) — vs run_1's GT-regressed thin uniform lines which the same rubric scored only 3–4/10. Memory now codifies the brushed approach (vary pensize along a Bézier centerline; weighted entry + end press; taper to a point). Only soft gap: 弧度 scored 1 on heng/pie/ti (a touch straight) — fine for heng/shu, minor for 撇/提. All six are essentially mastered pending the post-reflection confirmation; recommend one carry-over cycle to confirm stability, then advance toward Phase 2 simple characters (eval=gt+ocr+vision, GT from list_chars.py 1–4 stroke pool).
