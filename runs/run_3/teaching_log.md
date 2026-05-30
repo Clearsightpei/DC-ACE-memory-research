@@ -33,3 +33,20 @@ prior entries.
 - Why this batch: mastery requires a clean post-reflection pass. If
   6/6 hold ≥7 with no 0, all six retire and cycle 3 advances to
   Phase 2 (1–4 stroke characters, eval=gt+ocr+vision).
+
+## Cycle 3 — 2026-05-30
+
+- Phase: **2** (first Phase-2 cycle — phase advanced)
+- Batch: [一, 二, 三, 十, 人, 八]
+- Carry-overs: none — cycle 2 retired all 6 atomic strokes at 9.67/10
+  avg with no criterion 0 (100% mastered post-reflection ≫ 80% gate).
+  Phase-advance rationale recorded in teaching_plan.md.
+- Tools (eval): **gt+ocr+vision** — characters get all three signals.
+  Trustworthy GT from graphics.txt (make_char_gt.py), OCR guards
+  recognizability, vision guards brush quality. use_ocr=true.
+- Why this batch: six simple characters chosen to exercise every
+  atomic primitive in composition. 一/二/三 stress heng-stacking with
+  varying relative lengths (the bottom-heng-longest convention is the
+  key risk). 十 tests heng+shu intersection. 人 vs 八 differentiates
+  shared-apex (人) from gap-top (八) — also tests the
+  撇-longer-than-捺 proportion rule (run_1's 人 failure mode).

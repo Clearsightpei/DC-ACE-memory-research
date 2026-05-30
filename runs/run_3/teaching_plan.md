@@ -49,14 +49,24 @@ post-reflection; characters → OCR is_correct AND rubric ≥7/10. GT
 
 | item | phase | signal | best post-reflection | mastered? |
 |------|-------|--------|----------------------|-----------|
-| dian | 1 | vision | — | no |
-| heng | 1 | vision | — | no |
-| shu  | 1 | vision | — | no |
-| pie  | 1 | vision | — | no |
-| na   | 1 | vision | — | no |
-| ti   | 1 | vision | — | no |
+| dian | 1 | vision | 10/10 (c2) | **yes** |
+| heng | 1 | vision | 9/10 (c2)  | **yes** |
+| shu  | 1 | vision | 9/10 (c2)  | **yes** |
+| pie  | 1 | vision | 10/10 (c2) | **yes** |
+| na   | 1 | vision | 10/10 (c2) | **yes** |
+| ti   | 1 | vision | 10/10 (c2) | **yes** |
 
 (Updated each cycle from the calligraphy_rubric / Curator reflection.)
+
+## Phase advance — cycle 2 → cycle 3 rationale
+
+All 6 atomic strokes mastered post-reflection (c2 avg 9.67/10,
+no criterion == 0). 6/6 = 100% mastered ≫ 80% gate. Advance to
+**Phase 2** (simple characters, 1–4 strokes) starting cycle 3.
+Phase-2 starter pool chosen to exercise every atomic primitive:
+一 (heng), 二 (2 heng), 三 (3 heng), 十 (heng+shu), 人 (撇+捺),
+八 (撇+捺 with gap). New gate: `is_correct == true` AND
+rubric ≥ 7. GT `visual_score` for regression only.
 
 ## Open questions
 
