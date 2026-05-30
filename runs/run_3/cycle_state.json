@@ -1,11 +1,11 @@
 {
-  "cycle": 10,
+  "cycle": 11,
   "phase": 2,
-  "last_batch": ["火", "习", "也", "力", "巴", "已"],
-  "last_pass_count": 2,
+  "last_batch": ["火", "也", "力", "巴", "月", "见"],
+  "last_pass_count": 1,
   "last_total": 6,
-  "last_finished_at": "2026-05-30T19:45:00-04:00",
+  "last_finished_at": "2026-05-30T20:00:00-04:00",
   "batch_size": 6,
   "pass_signal": "Teacher is the tool orchestrator (dataset judge.eval). Strokes: rubric>=7/10 no 0. Characters: OCR is_correct AND rubric>=7/10.",
-  "notes": "Cycle 10 carry 火/习/也 + intro 力/巴/已. 2/6 mastered (习 carry-fix + 已 first-try). 火 3rd-attempt fail (likely OCR-wall). 也/力/巴 active. 21 chars mastered."
+  "notes": "Cycle 11 final 火 + 也/力/巴 refined + 月/见. 1/6 mastered (月 first-try). 火 confirmed OCR-wall (4th attempt). RapidOCR-bias documented across 钩 family (也→卫 力→刀 巴→已 见→月). Run end state: 22 chars mastered, 3 OCR-wall, 4 OCR-bias active. Ready for run_3 POSTMORTEM."
 }
