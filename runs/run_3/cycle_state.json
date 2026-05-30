@@ -1,11 +1,11 @@
 {
-  "cycle": 8,
+  "cycle": 9,
   "phase": 2,
-  "last_batch": ["大", "入", "工", "王", "火", "中"],
+  "last_batch": ["火", "口", "子", "习", "也", "日"],
   "last_pass_count": 3,
   "last_total": 6,
-  "last_finished_at": "2026-05-30T19:15:00-04:00",
+  "last_finished_at": "2026-05-30T19:30:00-04:00",
   "batch_size": 6,
-  "pass_signal": "Teacher is the tool orchestrator (dataset judge.eval). Strokes: Claude-vision rubric total>=7/10 (no 0 criterion), post-reflection — hand-coded stroke GT is a weak reference, do not gate strokes on it. Characters: OCR is_correct AND rubric>=7/10; GT visual_score tracked for regression only (cross-renderer low is normal, run_1 0.03-0.40). Soft Teacher-judged phase gate, depth over breadth.",
-  "notes": "Cycle 8 carry 大/入 + 工王火中, eval=gt+ocr+vision. 3/6 mastered (工, 王, 中 — first attempt; 中 brought 横折 compound). 大 and 入 confirmed OCR-wall (rubric 8-9/10, visually correct, RapidOCR rejects). 火 read as 八 (no shared apex). 16 chars mastered Phase-2. c9 will carry 火 + introduce frame-family (口) and 钩 family."
+  "pass_signal": "Teacher is the tool orchestrator (dataset judge.eval). Strokes: Claude-vision rubric total>=7/10 (no 0 criterion), post-reflection. Characters: OCR is_correct AND rubric>=7/10; GT visual_score for regression only.",
+  "notes": "Cycle 9 carry 火 + intro 口/子/习/也/日, eval=gt+ocr+vision. 3/6 mastered (口/子/日 first attempt). 火/习/也 carry to c10. Frame family + 钩 family both have a verified primitive (中/口/日 and 子 respectively). 19 chars mastered Phase-2."
 }
