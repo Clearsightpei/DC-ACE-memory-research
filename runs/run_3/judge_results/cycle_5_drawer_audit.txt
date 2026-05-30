@@ -1,0 +1,9 @@
+Drawer audit — cycle 5 (2026-05-30T22:18:15Z)
+[1] attempts/cycle_5/:
+generated.py
+
+[2] forbidden refs:
+(none — clean)
+
+[3] marker:
+(removed)
