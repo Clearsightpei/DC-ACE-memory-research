@@ -37,6 +37,28 @@ NEVER run `git add -A` / `git add .` at the project root (the root has
 unrelated work-in-progress and untracked files, incl. secrets). Only
 ever stage `"$RUN_REL"`. The commit-message scheme is unchanged.
 
+**Per-run postmortem rule.** Every run folder must contain a
+`POSTMORTEM.md` written when it is *frozen* (the core problem that run
+surfaced and why it motivates the next run). This is enforced at run
+creation (`new_run.sh` warns if the previously-active run lacks one).
+`/cycle` does not block on it, but never start a *new* run without
+having written the prior run's `POSTMORTEM.md` first.
+
+**Quarantine crash recovery.** If `$RUN_DIR/.drawer_quarantine` exists,
+a prior Drawer phase was interrupted between quarantining the GTs and
+restoring them. Recover **before doing anything else**:
+
+```bash
+if [ -f "$RUN_DIR/.drawer_quarantine" ]; then
+  Q=$(cat "$RUN_DIR/.drawer_quarantine")
+  echo "RECOVER: prior quarantine $Q — restoring"
+  [ -d "$Q/ground_truths" ] && [ ! -e "$RUN_DIR/ground_truths" ] && mv "$Q/ground_truths" "$RUN_DIR/ground_truths"
+  [ -d "$Q/tools" ]         && [ ! -e "$RUN_DIR/tools" ]         && mv "$Q/tools"         "$RUN_DIR/tools"
+  rmdir "$Q" 2>/dev/null
+  rm "$RUN_DIR/.drawer_quarantine"
+fi
+```
+
 **Stop check.** If `./.stop` exists in the run dir, output exactly:
 > Loop stopped (.stop sentinel present in $RUN_DIR). To resume, delete that file. To halt /loop fully, press Esc.
 
@@ -69,6 +91,38 @@ git -C "$PROJECT_ROOT" commit -m "cycle ${N} teacher: <one-line summary of today
 
 ## 2. Drawer phase (dispatched to a fresh subagent — DO NOT play this role yourself)
 
+**Experimental integrity — hard isolation.** The Drawer subagent runs
+in the same harness with the same `Read`/`Bash` tools as the
+orchestrator. Prompt-only restrictions are NOT enough. Before spawning
+it you MUST physically quarantine the answer key and tools so they
+cannot be accessed even if the subagent ignored the prompt. After it
+returns, audit its output. Both steps are mandatory.
+
+### 2a. Quarantine (A: hard prevention) — BEFORE spawning the subagent
+
+Move `ground_truths/` and `tools/` out of the project tree to a temp
+location, leaving a marker for crash recovery:
+
+```bash
+TS=$(date +%Y%m%d_%H%M%S)
+Q="/tmp/dcace_quarantine/${RUN_REL//\//_}_cycle_${N}_${TS}_$$"
+mkdir -p "$Q"
+[ -d "$RUN_DIR/ground_truths" ] && mv "$RUN_DIR/ground_truths" "$Q/ground_truths"
+[ -d "$RUN_DIR/tools" ]         && mv "$RUN_DIR/tools"         "$Q/tools"
+printf '%s\n' "$Q" > "$RUN_DIR/.drawer_quarantine"
+ls "$RUN_DIR" | grep -Eq '^(ground_truths|tools)$' && \
+  { echo "QUARANTINE FAILED — ground_truths or tools still present; ABORT"; exit 1; }
+echo "quarantined to $Q"
+```
+
+Verify (sanity, must print "MISSING" for both before continuing):
+```bash
+test -e "$RUN_DIR/ground_truths" && echo "ground_truths PRESENT (BAD)" || echo "ground_truths MISSING (good)"
+test -e "$RUN_DIR/tools"         && echo "tools PRESENT (BAD)"         || echo "tools MISSING (good)"
+```
+
+### 2b. Spawn the Drawer subagent
+
 Spawn a fresh Agent with `subagent_type: general-purpose` and a prompt
 that includes:
 1. The full contents of `.claude/skills/drawer/SKILL.md`.
@@ -96,9 +150,74 @@ that includes:
 > textual description.
 
 The subagent does not inherit this conversation's context — it starts
-fresh. After it returns, verify that `attempts/cycle_${N}/generated.py`
-and at least one PNG exist. Then run the generated code with a hard
-timeout:
+fresh. The prompt's "MUST NOT read" list is now redundant defense —
+the paths physically don't exist during its turn (Step 2a) — but keep
+the list for clarity and as documentation of intent.
+
+After it returns, verify that `attempts/cycle_${N}/generated.py`
+and at least one PNG exist. Then **immediately do Steps 2c (restore)
+and 2d (audit) BEFORE running the generated code or committing.**
+
+### 2c. Restore (always, even on subagent failure)
+
+```bash
+Q=$(cat "$RUN_DIR/.drawer_quarantine" 2>/dev/null || true)
+if [ -n "$Q" ] && [ -d "$Q" ]; then
+  [ -d "$Q/ground_truths" ] && mv "$Q/ground_truths" "$RUN_DIR/ground_truths"
+  [ -d "$Q/tools" ]         && mv "$Q/tools"         "$RUN_DIR/tools"
+  rmdir "$Q" 2>/dev/null
+  rm "$RUN_DIR/.drawer_quarantine"
+  echo "restored from $Q"
+fi
+test -d "$RUN_DIR/ground_truths" || echo "WARN: ground_truths not restored"
+test -d "$RUN_DIR/tools"         || echo "WARN: tools not restored"
+```
+
+### 2d. Audit the subagent's output (B: post-spawn audit)
+
+Even with quarantine, audit the produced artifacts for any
+forbidden-path references — a defense-in-depth integrity check that
+also produces an audit log for the experimental record:
+
+```bash
+AUDIT="$RUN_DIR/judge_results/cycle_${N}_drawer_audit.txt"
+mkdir -p "$RUN_DIR/judge_results"
+LEAK=0
+{
+  echo "Drawer audit — cycle ${N} ($(date -u +%FT%TZ))"
+  echo "Quarantine path: $Q"
+  echo
+  echo "[1] Files in attempts/cycle_${N}/ (only expected PNGs + generated.py):"
+  ls -1 "$RUN_DIR/attempts/cycle_${N}/" 2>/dev/null
+  echo
+  echo "[2] Forbidden-path references in generated.py:"
+  if grep -nE 'ground_truths|/tools/|tools\.(strokes|make_(stroke|char)_gt|judge)|/dcace_quarantine/|\.\./\.\./draw_character' "$RUN_DIR/attempts/cycle_${N}/generated.py" 2>/dev/null; then
+    echo "→ LEAK INDICATOR: generated.py references a forbidden path."
+    LEAK=1
+  else
+    echo "(none — clean)"
+  fi
+  echo
+  echo "[3] Quarantine marker cleanup:"
+  [ -f "$RUN_DIR/.drawer_quarantine" ] && { echo "→ LEAK INDICATOR: quarantine marker still present"; LEAK=1; } \
+                                       || echo "(marker removed — clean)"
+} > "$AUDIT"
+cat "$AUDIT"
+if [ "$LEAK" -ne 0 ]; then
+  echo "DRAWER AUDIT FAILED — committing block-out and aborting cycle."
+  git -C "$PROJECT_ROOT" add "$RUN_REL"
+  git -C "$PROJECT_ROOT" commit -m "cycle ${N} blocked: drawer-audit leak (see judge_results/cycle_${N}_drawer_audit.txt)"
+  exit 1
+fi
+```
+
+Also inspect the subagent's returned summary text for any
+"no such file" / "ground_truths" / "tools" mentions — those would
+indicate the subagent *tried* to access quarantined paths. If found,
+note in the audit and treat as a soft warning (the access was blocked
+by Step 2a, but the attempt is worth recording).
+
+### 2e. Run the generated code with a hard timeout
 
 ```bash
 python3 -c "
@@ -124,9 +243,18 @@ git -C "$PROJECT_ROOT" add "$RUN_REL"
 git -C "$PROJECT_ROOT" commit -m "cycle ${N} drawer: <one-line note on what the subagent produced>"
 ```
 
-## 3. Judge phase
+## 3. Judge phase (GT / OCR signals — only if the Teacher selected them)
 
-Run the judge against this cycle's attempts and ground truths.
+Read the dataset's `judge.eval` field
+(`task_briefs/cycle_${N}_dataset.json`). It is a `+`-joined subset of
+`gt`, `ocr`, `vision` (defaults if absent: strokes → `vision`;
+characters → `gt+ocr+vision`). The Teacher is the tool orchestrator —
+**honor its choice**.
+
+**Run `tools/judge.py` only if `eval` includes `gt` or `ocr`.** (If
+`eval` is `vision` only — the typical stroke cycle — there is no GT;
+**skip judge.py entirely** and `judge_results/cycle_${N}.json` is
+created fresh by Step 3.5 instead.)
 
 ```bash
 python tools/judge.py \
@@ -140,32 +268,60 @@ python tools/judge.py \
 ```
 
 `--skip-coords` is the safe default (the DeepSeek-OCR Ollama call requires
-a remote server that may not be reachable). Drop it only if the operator
-has confirmed the Ollama host is up.
+a remote server that may not be reachable). `use_ocr` in the dataset
+drives RapidOCR; do **not** pass `--skip-ocr` (emergency override only).
+`visual_score` is the composite shape-fidelity metric (Dice+Chamfer+
+proportion); `scoring_mode` is `visual_only` (OCR off) or
+`blended_0.6_0.4` (OCR on). For **characters** a low `visual_score` is
+normal (cross-renderer; run_1 correct chars sat 0.03–0.40) — it is a
+regression signal, not a pass/fail gate. `--legacy-visual` is never
+used in normal cycles. If the judge command itself errors, write stderr
+to `judge_results/cycle_${N}_error.txt` and continue; don't retry.
 
-**OCR is controlled by the Teacher, not here.** The judge reads the
-`judge.use_ocr` block from the dataset file and enables/disables RapidOCR
-itself (default: off for Phase-1 stroke datasets, on for Phase-2/3
-character datasets). Do **not** add `--skip-ocr` to the command — let
-the dataset drive it. (Passing `--skip-ocr` is only an emergency hard
-override.)
+## 3.5 Calligraphy rubric (Claude-vision — only if `eval` includes `vision`)
 
-The judge uses the new **composite shape-fidelity** `visual_score`
-(Dice + Chamfer + proportion, monotonic, calibrated so faithful single
-strokes ≈0.94–1.00). Each result also carries `visual_components`
-(`dice`, `chamfer`, `proportion`, …) and a `scoring_mode`
-(`visual_only` when OCR off → `final_score == visual_score`;
-`blended_0.6_0.4` when OCR on). `--legacy-visual` exists only to
-reproduce the old phaseCorrelate metric; never use it in normal cycles.
+If `eval` includes `vision`, **you (the orchestrator) score a
+reference-free calligraphy rubric using your built-in vision** — no
+API, no subprocess. For each attempt PNG in `attempts/cycle_${N}/`
+(the `NN_<key>.png` files), open **only the attempt** (NOT the GT —
+this signal must stay reference-free) and score this **fixed rubric**,
+each criterion an integer band **0 / 1 / 2**:
 
-If the judge command itself errors (not the per-character results — those
-are fine), write the stderr to `judge_results/cycle_${N}_error.txt` and
-continue. Don't retry.
+| criterion | 0 | 1 | 2 |
+|-----------|---|---|---|
+| `dunbi` 顿笔 (pause/weight at start/turn/end) | absent | partial | clearly present |
+| `hudu` 弧度 (natural curvature, not robotic) | wrong/none | crude | natural |
+| `taper` 粗细 (stroke-width variation) | uniform line | slight | clear brush taper |
+| `proportion` (relative size/placement/balance) | distorted | off | balanced |
+| `overall` (reads as brush-written 楷书) | no | weak | yes |
 
-Commit:
+`total` = sum (0–10). Write a **one-line rationale per criterion**
+referencing only what is visible in the attempt.
+
+Then write/augment `judge_results/cycle_${N}.json` (a JSON **list**,
+one dict per task in index order). If judge.py ran (Step 3), augment
+each existing dict; if it didn't (vision-only), create the list with
+one dict per task containing at least
+`{index, character, pinyin}`. Add to each dict:
+
+```json
+"calligraphy_rubric": {
+  "dunbi": 0-2, "hudu": 0-2, "taper": 0-2, "proportion": 0-2, "overall": 0-2,
+  "total": 0-10, "max": 10,
+  "rationale": {"dunbi": "...", "hudu": "...", "taper": "...",
+                "proportion": "...", "overall": "..."},
+  "scored_by": "orchestrator-vision", "rubric_version": 1
+}
+```
+
+Never blend the rubric into `final_score`/`visual_score` — it is a
+parallel, independently logged signal. Keep `visual_score`, OCR
+fields, `scoring_mode` untouched when augmenting.
+
+Commit (single commit for steps 3 + 3.5):
 ```bash
 git -C "$PROJECT_ROOT" add "$RUN_REL"
-git -C "$PROJECT_ROOT" commit -m "cycle ${N} judge: <K>/<6> pass, avg_visual=<X.XX>"
+git -C "$PROJECT_ROOT" commit -m "cycle ${N} judge: eval=<eval>, <signals summary e.g. avg_rubric=<Y>/10, K/6 ocr-ok, avg_visual=<X.XX>>"
 ```
 
 ## 4. Curator phase (main thread plays this role — DOES have GT access)

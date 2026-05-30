@@ -14,9 +14,26 @@ A repeating cycle, fired every 10 minutes by Claude Code's `/loop`:
 Teacher → Drawer (fresh subagent) → Judge → Curator → 4 git commits → next fire
 ```
 
-- **Teacher** (main thread) decides **6 tasks**, generates ground-truth PNGs, writes a task brief. Pacing is the Teacher's *except* a hard no-skipping gate: it may not leave Phase 1 while any introduced stroke is below the fidelity threshold (see Phase progression).
-- **Drawer** is **dispatched to a fresh subagent each cycle**, with strict read-access limits — it cannot see ground truths or `tools/` (those leak the answer key into its memory). Reads only `drawer_memory.md` and the task brief; writes only its `attempts/cycle_N/` output.
-- **Judge** (`tools/judge.py`) — primary signal is a **composite shape-fidelity score** (`visual_score` = Dice overlap + symmetric Chamfer + proportion; monotonic, detail-sensitive, calibrated so faithful single strokes ≈0.94–1.00). OCR (RapidOCR) is an **optional, Teacher-configured aid** via the dataset's `judge.use_ocr` block (off for strokes, on for characters by default); OCR can pass a glyph that is obviously wrong to a human, so it is secondary. `--legacy-visual` reproduces the old phase-correlation metric. DeepSeek-OCR `comparison_markdown` still optional.
+- **Teacher** (main thread) is the **curriculum designer AND tool
+  orchestrator**. Its one goal: teach the Drawer to draw the best
+  *characters* possible. It decides **6 tasks** and, crucially, **which
+  evaluation tool(s) to use** (`judge.eval` in the dataset): `vision`
+  (reference-free Claude-vision calligraphy rubric), `gt` (composite
+  shape-fidelity vs a GT), `ocr`, or any `+` combination. Pacing is a
+  **soft, Teacher-judged gate** (depth over breadth — no hard pixel
+  threshold).
+- **Drawer** is **dispatched to a fresh subagent each cycle**, with **hard filesystem isolation** (not just a prompt restriction): `/cycle` physically moves `ground_truths/` and `tools/` out of the project tree to a quarantine location *before* spawning the subagent and restores them after. The subagent literally cannot read those paths during its turn. A post-spawn audit greps the produced `generated.py` for forbidden-path references and aborts the cycle with a leak report if any are found. Reads only `drawer_memory.md` + the task brief; writes only `attempts/cycle_N/`.
+- **Judge** — *not a fixed pipeline*. Three selectable signals: (1)
+  **Claude-vision rubric** (orchestrator-side, no API; reference-free;
+  顿笔/弧度/粗细/proportion/overall, bands 0–2, /10) — the **default
+  for strokes**, because the hand-coded stroke GTs are weaker than the
+  model's own strokes (`runs/run_2/POSTMORTEM.md`); (2)
+  **`tools/judge.py`** composite shape-fidelity `visual_score`
+  (Dice+Chamfer+proportion) — trustworthy for **characters** (GTs are
+  MakeMeAHanzi standard glyphs), low absolute scores normal
+  cross-renderer; (3) **OCR** (RapidOCR) recognizability, characters
+  only, weak secondary. Signals are logged separately, never blended.
+- **Curator** (main thread) reads judge results + drawer code + ground truths (legitimately, for diagnosis), and edits `drawer_memory.md` plus writes `cycle_summary.md` for the next Teacher.
 - **Curator** (main thread) reads judge results + drawer code + ground truths (legitimately, for diagnosis), and edits `drawer_memory.md` plus writes `cycle_summary.md` for the next Teacher.
 
 Single-writer rule per file. The Curator is the only writer of
@@ -84,24 +101,35 @@ Pause / resume the auto-fire variant: `<run_dir>/stop_loop.sh` / `start_loop.sh`
 | `dashboard.md`                    | Curator  |
 | `cycle_state.json`                | `/cycle` orchestrator |
 
-## Phase progression (Teacher decides)
+## Phase progression (Teacher decides) + mandatory per-run postmortem
 
-| Phase | What is taught       | Tool used by Teacher                 |
-|-------|----------------------|--------------------------------------|
-| 1     | Atomic strokes       | `tools/make_stroke_gt.py`            |
-| 2     | Simple characters    | `tools/make_char_gt.py` (graphics.txt) |
-| 3     | Complex characters   | `tools/make_char_gt.py`              |
+| Phase | What is taught         | GT tool (only if `eval` uses `gt`) |
+|-------|------------------------|------------------------------------|
+| 1     | Atomic/compound strokes | `tools/make_stroke_gt.py` (hand-coded — *optional aid only*; strokes default to `eval:vision`, no GT) |
+| 2     | Simple characters (≈1–4 strokes) | `tools/make_char_gt.py` (graphics.txt — trustworthy) |
+| 3     | Complex characters (≈5–18 strokes) | `tools/make_char_gt.py` |
 
-Pacing within a phase is the Teacher's, and is part of what we observe
-— **but advancement is gated**: the Teacher may not leave Phase 1 while
-any stroke it has introduced is still below the fidelity threshold
-(`visual_score >= 0.85`, measured on a cycle *after* the Curator's
-reflection on that stroke). The old metric was too noisy for any
-threshold; the new composite judge is calibrated so faithful single
-strokes score 0.94–1.00 and crude/wrong ones ≤0.51, which makes 0.85 a
-clean "the calligraphic detail (顿笔/小折/弧度) is actually there" line.
-The Teacher tracks a stroke-mastery checklist in `teaching_plan.md`.
-"At least finish the strokes" is a rule now, not a hope.
+The Teacher picks the character pool per phase by stroke count via
+`tools/list_chars.py` (enumerates `draw_character/graphics.txt`;
+seeded common-frequency list by default, `--all` for the full band).
+
+Pacing is a **soft, Teacher-judged gate** (no hard pixel threshold —
+the old 0.85 stroke gate was removed because the stroke GT is a weak
+reference). "Mastered" is judged by the signal the Teacher selected:
+strokes → Claude-vision rubric `total ≥ 7/10` (no 0 criterion),
+post-reflection; characters → OCR `is_correct` AND rubric `≥ 7/10`
+(GT `visual_score` for characters is tracked for *regression* only —
+correct cross-renderer chars legitimately score low, run_1: 0.03–0.40).
+Don't *skip* learning (depth over breadth) but the gate is the
+Teacher's judgement, recorded in `teaching_plan.md`.
+
+**Mandatory per-run postmortem.** Every run folder must contain a
+`POSTMORTEM.md` written when the run is frozen: 1–2 paragraphs naming
+the core problem that run surfaced and why it motivates the next run
+(see `runs/run_1/POSTMORTEM.md`, `runs/run_2/POSTMORTEM.md`).
+**Before activating a new run you MUST write the previous run's
+POSTMORTEM.** `new_run.sh` warns if the previously-active run lacks
+one. The postmortem chain is part of the experimental record.
 
 ## Reading the experimental record
 
