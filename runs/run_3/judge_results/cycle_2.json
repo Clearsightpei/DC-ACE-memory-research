@@ -1,0 +1,110 @@
+[
+  {
+    "index": 1,
+    "character": "点",
+    "pinyin": "dian",
+    "calligraphy_rubric": {
+      "dunbi": 2, "hudu": 2, "taper": 2, "proportion": 2, "overall": 2,
+      "total": 10, "max": 10,
+      "rationale": {
+        "dunbi": "Clear weighted rounded belly at the top, with a deliberate pause/press visible — classic 点 head.",
+        "hudu": "Natural teardrop curve, slight rightward arc as it tapers — not a robotic straight wedge.",
+        "taper": "Wide rounded head modulates smoothly to a fine point at lower-left — true brush taper.",
+        "proportion": "Compact and centered; size appropriate for a dot stroke.",
+        "overall": "Reads unambiguously as a brushed 点."
+      },
+      "scored_by": "orchestrator-vision",
+      "rubric_version": 1
+    }
+  },
+  {
+    "index": 2,
+    "character": "横",
+    "pinyin": "heng",
+    "calligraphy_rubric": {
+      "dunbi": 2, "hudu": 1, "taper": 2, "proportion": 2, "overall": 2,
+      "total": 9, "max": 10,
+      "rationale": {
+        "dunbi": "Both ends visibly weighted — rounded entry at left, weighted end-press at right.",
+        "hudu": "Near-straight by design; faint upward tilt only — appropriate for 横, hence the band-1 score.",
+        "taper": "Clear thin-in-the-middle, thicker-at-ends profile — width is genuinely modulated.",
+        "proportion": "Well-centered across the canvas, horizontal length right for a single stroke.",
+        "overall": "Reads as a brushed horizontal stroke with proper end-weight."
+      },
+      "scored_by": "orchestrator-vision",
+      "rubric_version": 1
+    }
+  },
+  {
+    "index": 3,
+    "character": "竖",
+    "pinyin": "shu",
+    "calligraphy_rubric": {
+      "dunbi": 2, "hudu": 1, "taper": 2, "proportion": 2, "overall": 2,
+      "total": 9, "max": 10,
+      "rationale": {
+        "dunbi": "Weighted bulb visible at both top and foot — clear 起笔/收笔 pauses.",
+        "hudu": "Straight spine — correct for 竖, scored band-1 because rubric measures curvature presence (intentional).",
+        "taper": "Bulb–thin middle–bulb modulation is clearly present, not a uniform line.",
+        "proportion": "Centered vertically, sized appropriately.",
+        "overall": "Reads as a brushed vertical stroke with proper end-weighting."
+      },
+      "scored_by": "orchestrator-vision",
+      "rubric_version": 1
+    }
+  },
+  {
+    "index": 4,
+    "character": "撇",
+    "pinyin": "pie",
+    "calligraphy_rubric": {
+      "dunbi": 2, "hudu": 2, "taper": 2, "proportion": 2, "overall": 2,
+      "total": 10, "max": 10,
+      "rationale": {
+        "dunbi": "Strong weighted head upper-right, rounded — emphatic 起笔.",
+        "hudu": "Gentle natural bow visible — improved over cycle 1's near-straight 撇; large-radius small-arc as memory prescribed.",
+        "taper": "Smooth taper from heavy head to a true hairline point lower-left.",
+        "proportion": "Diagonal length and angle appropriate; well-placed on canvas.",
+        "overall": "Reads as a brushed 撇 with the curated softer curvature applied."
+      },
+      "scored_by": "orchestrator-vision",
+      "rubric_version": 1
+    }
+  },
+  {
+    "index": 5,
+    "character": "捺",
+    "pinyin": "na",
+    "calligraphy_rubric": {
+      "dunbi": 2, "hudu": 2, "taper": 2, "proportion": 2, "overall": 2,
+      "total": 10, "max": 10,
+      "rationale": {
+        "dunbi": "Distinct flat pressed-tail 顿笔 at lower-right — the signature 捺 finish is present and emphatic.",
+        "hudu": "Natural curving spine from upper-left thin entry to lower-right body.",
+        "taper": "Clear broadening from a fine entry into a heavy belly, then the flat kick.",
+        "proportion": "Diagonal extent and pressed-tail location appropriate.",
+        "overall": "Reads as a brushed 捺 in the textbook form."
+      },
+      "scored_by": "orchestrator-vision",
+      "rubric_version": 1
+    }
+  },
+  {
+    "index": 6,
+    "character": "提",
+    "pinyin": "ti",
+    "calligraphy_rubric": {
+      "dunbi": 2, "hudu": 2, "taper": 2, "proportion": 2, "overall": 2,
+      "total": 10, "max": 10,
+      "rationale": {
+        "dunbi": "Weighted rounded base lower-left — clear anchored 起笔.",
+        "hudu": "Gentle natural rising curve, no longer straight — Curator's nudge applied.",
+        "taper": "Heavy base modulates to a fine flicked point upper-right — real taper.",
+        "proportion": "Rising diagonal length and angle look natural; centered.",
+        "overall": "Reads as a brushed 提 flick."
+      },
+      "scored_by": "orchestrator-vision",
+      "rubric_version": 1
+    }
+  }
+]
