@@ -122,3 +122,17 @@ prior entries.
   composition, brand new for the run), 中 (first 横折 in a frame —
   introduces the boxed-frame composition that all 田/口/日/目/etc.
   characters will use later).
+
+## Cycle 9 — 2026-05-30
+
+- Phase: 2
+- Batch: [火, 口, 子, 习, 也, 日]
+- Carry-overs: **1** (火). 大 and 入 RETIRED under "OCR-wall" status
+  — by c8 both had geometrically-textbook silhouettes and rubric
+  8–9/10 but RapidOCR consistently rejected both. Memory documents
+  this finding; no more cycles on them unless RapidOCR is replaced.
+- Tools (eval): **gt+ocr+vision**. use_ocr=true.
+- Why this batch: introduce the frame family (口, 日) building on c8's
+  successful 中 横折, and stress-test the 钩 (hook) family across
+  three different 钩 compounds (子's 竖钩, 习's 提-ending family,
+  也's 横折钩 + 竖弯钩). 钩 strokes are a major remaining gap.
