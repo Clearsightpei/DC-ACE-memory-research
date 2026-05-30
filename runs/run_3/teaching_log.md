@@ -50,3 +50,16 @@ prior entries.
   key risk). 十 tests heng+shu intersection. 人 vs 八 differentiates
   shared-apex (人) from gap-top (八) — also tests the
   撇-longer-than-捺 proportion rule (run_1's 人 failure mode).
+
+## Cycle 4 — 2026-05-30
+
+- Phase: 2
+- Batch: [一, 二, 三, 十, 人, 八]
+- Carry-overs: **ALL 6** — cycle 3 was 6/6 OCR but 0/6 mastered
+  (rubric avg 5.67/10). Composition rules were applied correctly;
+  brushwork degraded under composition. Carries over until clean
+  post-reflection pass (run_3 mandatory carry-over rule).
+- Tools (eval): **gt+ocr+vision** (same as c3). use_ocr=true.
+- Why this batch: verify the Curator's two brushwork reflections
+  (soften 顿笔 end-discs on heng/shu; fix inverted 捺 taper on 人/八).
+  Composition rules stay — only brushwork is being repaired.
