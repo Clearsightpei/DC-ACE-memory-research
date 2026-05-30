@@ -136,3 +136,16 @@ prior entries.
   successful 中 横折, and stress-test the 钩 (hook) family across
   three different 钩 compounds (子's 竖钩, 习's 提-ending family,
   也's 横折钩 + 竖弯钩). 钩 strokes are a major remaining gap.
+
+## Cycle 10 — 2026-05-30
+
+- Phase: 2
+- Batch: [火, 习, 也, 力, 巴, 已]
+- Carry-overs: **3** (火, 习, 也). Each tests a specific Curator
+  composition fix from c9. The other c9 chars (口/子/日) retired
+  first-attempt.
+- Tools (eval): **gt+ocr+vision**. use_ocr=true.
+- Why this batch: drill the 钩 family further (力 has 横折钩 + 撇;
+  巴 and 已 both feature 竖弯钩 as the signature bottom stroke). 力
+  is also a compact 2-stroke check on whether the 横折钩 primitive
+  generalizes outside of 习/也.
