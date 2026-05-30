@@ -1,10 +1,7 @@
 # Drawer memory
 
-Curator-owned. Strokes are judged by a reference-free Claude-vision
-calligraphy rubric (顿笔 / 弧度 / 粗细 taper / proportion / overall,
-0–2 each, /10). Characters add OCR + GT regression-only.
-Mastery: `is_correct == true` AND rubric total ≥ 7, no 0,
-post-reflection.
+Curator-owned. Calligraphy rubric (0–2 × 5 / 10). Mastery:
+`is_correct` AND total ≥ 7, no 0, post-reflection.
 
 ---
 
@@ -22,94 +19,91 @@ middle ≥ 50% of peak.
 | 提     | start (heavy weighted base) | end (fine flicked point) |
 | 点     | belly | tail |
 
-## Compound strokes — current state
+## Compound strokes (mastered as of c10)
 
 | compound | first verified | status |
 |----------|---------------|--------|
-| 竖弯 (七 stroke 2) | c6 | mastered |
-| 竖折 (山 stroke 2) | c6 | mastered |
-| 横撇 (又 stroke 1) | c7 | mastered |
-| 横折 (中 frame, 口, 日 frame) | c8 / c9 | mastered |
-| 竖钩 (子 stroke 2) | c9 | mastered |
-| 横折钩 (习, 也) | c9 | partial — composition issues |
-| 竖弯钩 (也 stroke 3) | c9 | partial — character read fail |
+| 竖弯 | c6 (七) | yes |
+| 竖折 | c6 (山) | yes |
+| 横撇 | c7 (又) | yes |
+| 横折 | c8/c9 (中/口/日) | yes |
+| 竖钩 | c9 (子) | yes |
+| 横折钩 | c10 (习, 已) | yes (drill more) |
+| 竖弯钩 | c10 (已) | yes (drill more) |
 
-Compound recipe: one continuous brushed path across all segments;
-each turn is a 顿笔 Gaussian thickening; hooks are short tail-arms
-(10–20% of main length) chained off the end with a fine taper.
+One continuous brushed path; each turn is a 顿笔 Gaussian
+thickening; hooks are short tail-arms (15–20% main length) with
+fine taper.
 
 ## Canvas conventions
 
-- 800×600 white, black; per-sample pensize on Bézier.
-- `screen.tracer(0,0)` + `update()`; PostScript → PIL → PNG.
-- `t.reset()` between tasks. Each task starts at (0,0) heading 90°.
+- 800×600 white; per-sample pensize; PostScript → PIL → PNG.
+- `t.reset()` between tasks. Each task at (0,0) heading 90°.
 
-## Verified character compositions
+## Verified character compositions (21 mastered through c10)
 
-**Phase-2 mastered (19 chars through c9):**
 - 1–2 strokes: 一, 二, 十, 人, 八, 又.
-- 3 strokes: 三, 上, 下, 个, 山, 七, 工, 口, 子.
+- 3 strokes: 三, 上, 下, 个, 山, 七, 工, 口, 子, 习, 已.
 - 4 strokes: 不, 木, 王, 中, 日.
 
-**OCR-wall (retired, do not retry):** 大, 入.
+## OCR-wall (retired)
 
-## Active failure modes — c9 lessons
+- 大 (c5–c8): geometrically textbook silhouette, RapidOCR returns empty.
+- 入 (c5–c8): geometrically textbook silhouette, RapidOCR returns 人.
 
-### 火 (c5/c8/c9) — three failed attempts, still failing
+## Probably OCR-wall (3rd attempt failure, document and consider retiring)
 
-c9 fix landed: 撇 + 捺 share apex. New issue: the two **点 still
-float above the apex with a visible gap**, plus the 撇 is too thin
-(weak head). **Fix for c10:**
-- The two 点 must HUG the apex — their *tails* nearly touch the
-  apex point. The 点 belly is up-and-slightly-outward from the apex.
-  Read: "two tiny ears immediately at the top of the V", not "two
-  floating dots way above".
-- 撇 head must be heavier (peak weight matching 捺 head).
+- **火 (c8, c9, c10):** apex-share + 点-hugging progressively
+  refined; rubric crept from 5→6→6, OCR returns empty each time.
+  This is the same pattern as 大. **For c11:** if a final refined
+  attempt doesn't OCR, document as OCR-wall and stop drilling.
 
-### 习 — c9 first attempt failed
+## Active failure modes — c10 lessons
 
-The 提 (third stroke) was too short and disconnected from the 横折
-above; the result looked like 刁 or a partial 习. **Fix for c10:**
-- 提 must be a SUBSTANTIAL rising flick (length ~60–70% of the 横折's
-  width), and its head (weighted base) must be VISUALLY CLOSE to the
-  bottom-left corner of the 横折 above, so the two strokes read as
-  one tight assembly.
-- 点 at the top-left of the 横折 should be small and tucked near the
-  upper-left interior, not floating off-frame.
+### 也 (c9, c10) — still fragmented
 
-### 也 — c9 first attempt failed
+The three strokes (横折钩, middle shu, 竖弯钩) need to OVERLAP into
+one body. c10 still drew them too parallel.
+**Fix for c11:** treat 也 as: the 竖弯钩 forms a horizontal floor +
+right-side wall; the 横折钩 hangs from the top-left into that wall;
+the middle shu drops STRAIGHT through the middle of the body, its
+foot landing ON the floor of the 竖弯钩 (touching the bottom curl).
+The three strokes occupy the SAME bounding rectangle, not three
+side-by-side fragments.
 
-The three strokes (横折钩, middle shu, 竖弯钩) were drawn as three
-SEPARATE fragments side by side, not as a unified character. **Fix
-for c10:**
-- 横折钩 (stroke 1) goes top-left, descending into a hook at the
-  middle.
-- middle shu (stroke 2) sits CLOSELY to the right of 横折钩's
-  vertical portion, NOT independently centered.
-- 竖弯钩 (stroke 3) wraps around BOTH preceding strokes — it sweeps
-  from the upper-right area down to the bottom, then curls right
-  along the bottom, then hooks up-right. Its bottom portion forms
-  the FLOOR of the character with the other strokes ABOVE it.
-- Net effect: 也 is a unified shape with 竖弯钩 as a "cradle" around
-  the other strokes. Three separated fragments will not OCR.
+### 力 (c10) — 撇 needs to cross through
+
+c10 had 横折钩 + 撇 side-by-side. **Fix for c11:** the 撇 must
+PASS THROUGH the interior of the 横折钩's frame. Start the 撇 head
+at the top of the 横折钩 (near the top heng's middle) and sweep
+down-left out through the frame and beyond. Visible overlap between
+the 撇 and the frame's interior is essential.
+
+### 巴 (c10) — read as 已 because frame was too small/single-level
+
+c10 巴 had a small upper frame + 竖弯钩 → indistinguishable from 已.
+**Fix for c11:** 巴 has a TWO-LEVEL frame distinct from 已. The
+top portion of 巴 is a small filled rectangle (not just a corner),
+with a middle heng visible INSIDE it. Then the 竖弯钩 extends below.
+Make the upper rectangle clearly closed and double-decked (heng top,
+middle heng inside, plus the side strokes).
 
 ## Soft / completed observations
 
-- Frame family (口, 日, 中, 王) transfers cleanly via 横折.
-- 子's 竖钩 transferred first-try.
-- 火 has been a stubborn first-try failure across 3 attempts — the
-  Drawer keeps placing 点 too high. The c10 prescription must be
-  explicit on hugging-the-apex.
+- 习 mastered after c9→c10 reflection.
+- 已 mastered first-try (the 钩-family primitives generalized).
+- Frame family + 钩 family both have multiple verified instances.
+- 火 has now failed 3 attempts — probable OCR-wall, not memory.
 
 ## What to do next cycle
 
-c10 should carry **火 / 习 / 也** with the specific composition fixes
-above. Introduce 3 new chars to round out the batch — candidates:
-- 巴 (4 strokes, frame-family extension)
-- 力 (2 strokes — 横折钩 + 撇, drill the 横折钩 primitive)
-- 心 (4 strokes, 4-点 composition with center 卧钩) — might be
-  ambitious.
-Safer pick: drill 力 and 巴; add a simpler filler like 已 or 上 (already
-mastered — skip).
+c11 should carry **也, 力, 巴** with the explicit composition fixes
+and try one final 火 with strict apex-hugging. Add 2–3 new chars to
+fill the batch — candidates:
+- 月 (4 strokes, 撇 + 横折钩 + two interior heng — frame-family
+  extension with hooks)
+- 见 (4 strokes, similar 月 structure + 撇 + 竖弯钩 footer)
+- 心 (4 strokes, 卧钩 + 3 dian — radically new 卧钩 primitive)
+Safer: 月, 见, and one more easy.
 
-Recommendation: c10 = [火, 习, 也, 力, 巴, 已].
+Recommended c11: [火, 也, 力, 巴, 月, 见].
