@@ -109,3 +109,16 @@ prior entries.
   stroke). 个 mirrors 人 + a center shu. 不 / 木 add a center shu to
   a 撇/捺 composition — 木 is the canonical "cross with diagonal
   limbs" composition.
+
+## Cycle 8 — 2026-05-30
+
+- Phase: 2
+- Batch: [大, 入, 工, 王, 火, 中]
+- Carry-overs: **2** (大, 入). c7 retired 又/个/不/木 first attempt.
+- Tools (eval): **gt+ocr+vision**. use_ocr=true.
+- Why this batch: stricter numeric prescription on 大 (heng ≥ 2.0×)
+  and amplified 入 asymmetry. The four new chars introduce: 工/王
+  (horizontal heng-stacking new layout), 火 (two 点 + 撇 + 捺
+  composition, brand new for the run), 中 (first 横折 in a frame —
+  introduces the boxed-frame composition that all 田/口/日/目/etc.
+  characters will use later).
