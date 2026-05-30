@@ -1,27 +1,20 @@
 # DC-ACE Dashboard — run_3 — last update: 2026-05-30
 
-- **Cycle**: 6
+- **Cycle**: 7
 - **Phase**: 2
-- **This cycle**: 4/6 mastered (上 下 七 山), rubric avg **8.17/10**, visual_score avg 0.64
-- **Last batch**: [大, 入, 上, 下, 七, 山]
-- **Trend (last 6 cycles)**: c1 9.5, c2 9.67 (strokes mastered) | c3 5.67 → c4 9.00 (clean repair) | c5 5.83 → c6 8.17 (partial repair)
-- **Memory size**: ~215 lines / ~8.2 KB
-- **Curator note**: Brushwork repair landed cleanly across all 6 — short and compound primitives now hold the brushed sweep. 大 topology half-landed (apex above + heng crosses, but heng too short → "A"-shape); 入 topology half-landed (捺 on 撇 spine, but junction too high). Memory adds numeric fixes (heng ≥1.4× limb span; 入 junction at 45–55%). c7 carries 大/入.
-- **Loop status**: running (delete runs/run_3/.stop to allow cycles; create it to pause)
+- **This cycle**: 4/6 mastered (又个不木), rubric avg **9.17/10**, visual_score avg 0.59
+- **Last batch**: [大, 入, 又, 个, 不, 木]
+- **Trend (last 7 cycles)**: c1 9.5, c2 9.67 | c3 5.67 → c4 9.00 | c5 5.83 → c6 8.17 → c7 9.17 (4 new chars mastered first attempt)
+- **Memory size**: ~245 lines / ~9.4 KB
+- **Curator note**: First strong cross-character generalization — 又/个/不/木 mastered first try. 大 needs heng ≥2.0× span. 入 hit OCR-recognition wall at rubric 9 (visually 入 but OCR returns 人).
+- **Loop status**: running.
 
-## Phase-2 mastery checklist
+## Phase-2 mastery (13 chars mastered through c7)
 
-| char | phase | best post-reflection | mastered? |
-|------|-------|----------------------|-----------|
-| 一   | 2 | 9/10 (c4) | yes |
-| 二   | 2 | 9/10 (c4) | yes |
-| 三   | 2 | 9/10 (c4) | yes |
-| 十   | 2 | 9/10 (c4) | yes |
-| 人   | 2 | 9/10 (c4) | yes |
-| 八   | 2 | 9/10 (c4) | yes |
-| 大   | 2 | 6/10 (c6) | no — heng too short |
-| 入   | 2 | 8/10 OCR-fail (c6) | no — junction too high |
-| 上   | 2 | 9/10 (c6) | yes |
-| 下   | 2 | 9/10 (c6) | yes |
-| 七   | 2 | 8/10 (c6) | yes |
-| 山   | 2 | 9/10 (c6) | yes |
+| char | best post-reflection | mastered? |
+|------|----------------------|-----------|
+| 一 二 三 十 人 八 | 9/10 (c4) | yes |
+| 上 下 七 山 | 8–9/10 (c6) | yes |
+| 又 个 不 木 | 9–10/10 (c7) | yes |
+| 大 | 6/10 (c7, OCR empty) | no — heng still too short |
+| 入 | 9/10 OCR-fail (c7) | no — OCR wall, not composition |

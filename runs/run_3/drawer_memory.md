@@ -8,18 +8,17 @@ graphics.txt GT (`visual_score` — *regression* only). Mastery:
 
 ---
 
-## Verified atomic-stroke recipes (c1+c2 isolation 9–10/10; c4+c6 composition 9/10)
+## Verified atomic-stroke recipes
 
-The brushed approach holds for the six core strokes at any reasonable
-size, AND across compound primitives (c6 七/山 mastered).
+c1+c2 isolation 9–10/10; c4+c6 composition 9/10; c7 generalization
+9–10/10 on first attempt for 又, 个, 不, 木.
 
 ### Core technique
 
-Cubic-Bézier centerline sampled at ~120–200 points; `pensize` set
-per sample. **peak ≤ ~2× middle; middle ≥ ~50% of peak** (raised
-from 30% after c5 short-stroke regression — c6 confirmed 50% works).
-Apply width modulation across the ENTIRE path of every primitive,
-including the corners of compound strokes.
+Cubic-Bézier centerline sampled ~120–200 points; `pensize` per
+sample. **peak ≤ ~2× middle; middle ≥ 50% of peak.** Width
+modulation across the ENTIRE path of every primitive, including
+compound stroke corners.
 
 ### Width-profile per atomic stroke
 
@@ -30,10 +29,9 @@ including the corners of compound strokes.
 - **撇 pie:** heavy weighted head at START → gentle bow → fine point
   at END.
 - **捺 na:** thin entry → broadening → **heavy pressed tail at END**
-  with **flat-kick plateau** (hold near-peak width over last
-  10–15% of arclength, c5/c6 入 nailed this).
-- **提 ti:** weighted base at START → gentle rise → fine flicked
-  point at END.
+  with **flat-kick plateau** (last 10–15% near-peak; c5/c6/c7 入 all
+  nailed this).
+- **提 ti:** weighted base at START → gentle rise → fine flick at END.
 
 ### "Which end is heavy?" cheat sheet
 
@@ -46,15 +44,13 @@ including the corners of compound strokes.
 | 提     | start | end |
 | 点     | belly | tail |
 
-Key to stroke identity, not chord direction.
+## Compound strokes (verified across c6/c7)
 
-## Compound strokes (c6 mastered: 七 竖弯, 山 竖折)
-
-Draw as ONE continuous brushed path. Per-sample pensize sweep across
-both arms AND through the corner. The corner is a 顿笔 — a clear
-thickening at the turn that reads as a 折/弯, not a hairline angle.
-c6 七 had a subtle corner (dunbi=1); future cycles should make the
-corner thickening more pronounced (lift to dunbi=2).
+Mastered: 竖弯 (七), 竖折 (山), 横撇 (又).
+Draw as ONE continuous brushed path with per-sample pensize across
+both arms AND through the corner. Gaussian 顿笔 bump at the turn
+(c7 又's corner-boost at factor ~1.55 lifted dunbi to 2 — keep that
+approach).
 
 ## Canvas conventions
 
@@ -66,48 +62,56 @@ corner thickening more pronounced (lift to dunbi=2).
 
 ## Verified character compositions
 
-**Mastered (c4):** 一, 二, 三, 十, 人, 八.
-**Mastered (c6):** 上, 下, 七, 山.
+**Mastered (Phase 2):**
+- 1–2 strokes: 一, 二, 三 (c4), 十 (c4), 人 (c4), 八 (c4),
+  又 (c7).
+- 3 strokes: 上 (c6), 下 (c6), 个 (c7), 山 (c6), 七 (c6).
+- 4 strokes: 不 (c7), 木 (c7).
 
-**Still failing — refined diagnoses after c6:**
+That's **13 characters mastered** through cycle 7.
 
-- **大 (c5: 撇/捺 below heng → 天; c6: heng too short → ambiguous /
-  "A"-shape).** Updated recipe:
-  - apex of 撇/捺 ABOVE the heng (~150–170 px above center) ✓
-  - heng cuts horizontally through both limbs ~30–40% down ✓
-  - **NEW FIX: the heng must extend WELL past the crossing points
-    on both sides** (≥ 30–40% past each limb, so the heng is the
-    widest element of the character). c6 drew heng barely wider
-    than the limb-crossing span; that reads as 'A' with a crossbar
-    rather than 大. Target heng length ≈ 1.4–1.6 × the horizontal
-    distance between the 撇 and 捺 at the crossing height.
+**Still failing:**
 
-- **入 (c5: 捺 at apex → 人; c6: junction too high → still 人).**
-  Updated recipe:
-  - only 撇 has the top apex ✓
-  - 捺 starts ON the 撇's spine, **45–55% down from the head** (c6
-    was ~35% — too close to the top to disambiguate). Push the
-    junction visibly past the midpoint of the 撇.
-  - 捺 ends well below and to the right of where 撇 ends (the right
-    extent of 入 is dominated by the 捺's tail; 人 is more
-    symmetric).
+- **大 (c5/c6/c7).** Topology correct in c7 (apex above heng, heng
+  cuts through, 1.55× limb-crossing span) — still reads as "A with
+  crossbar". The 1.4–1.6× rule was insufficient. **NEW FIX for c8:**
+  - heng length ≥ **2.0×** the limb-crossing span at heng height
+    (was 1.55×).
+  - pull apex HIGHER so the "stem above heng" is more prominent
+    (apex at y ≈ +200, heng at y ≈ +50, limb tails at y ≈ -200).
+  - Optional: emphasize the 撇 head extending above the heng (small
+    overshoot of the apex past where 撇/捺 meet).
+
+- **入 (c5/c6/c7).** Topology is now visibly correct (c7 junction at
+  ~50% down 撇 — the silhouette reads as 入 to a human), but RapidOCR
+  still returns 人. This is now an **OCR-recognition wall**, not a
+  composition issue. Two diagnostic options for c8:
+  - **(a)** Push asymmetry harder: make 撇 head significantly
+    heavier and longer than the 捺 entry; have the 撇 fully extend
+    past the 捺 on the upper-left and the 捺 dominate the lower-right
+    further. This might cross OCR's threshold.
+  - **(b)** Accept the OCR-wall finding and document. The rubric
+    scored 9/10 (visually correct); the failure is an OCR limitation,
+    not a memory failure.
 
 ## Soft / completed observations
 
-- 捺 flat-kick plateau: solidly mastered (c5/c6 入).
-- 七 compound: brushed sweep landed; corner thickening could be
-  stronger (currently dunbi=1).
+- 捺 flat-kick plateau: mastered.
+- 撇 + 捺 family generalizes well: 又, 个, 不, 木 all mastered first
+  attempt with no special instruction beyond memory + brief.
+- Compound strokes (竖弯, 竖折, 横撇): brushed sweep + corner boost
+  works as a reusable primitive.
 
 ## What to do next cycle
 
-c7 should carry **大 and 入** (un-mastered after the c6 refinement).
-The other 4 (上, 下, 七, 山) are mastered and retire. Teacher can
-either:
-- (a) carry over only the 2 un-mastered + introduce 4 new chars
-  testing the next set of strokes/compositions, or
-- (b) drill 大/入 with 4 chars sharing the same difficulty class
-  (more 撇+捺 characters: 木, 火, 个, 又).
+c8 should carry only **大 and 入**, plus introduce 4 more characters
+to test broader generalization. The 大 numeric push (heng 2.0×) is
+the actionable next step. For 入, try option (a) — more asymmetry —
+and if it still fails, accept the OCR wall.
 
-Either way, the two specific c7 fixes for 大/入 are:
-- 大: heng length ≥ 1.4× the limb-crossing span.
-- 入: junction at 45–55% down the 撇's spine, not 35%.
+Candidate new chars for c8 (testing untested strokes/compositions):
+- 工 (3): heng + shu + heng — vertical 工 layout.
+- 王 (4): heng + heng + shu + heng — 工-with-middle-heng.
+- 火 (4): 点 + 撇 + 撇 + 捺 — uses two 撇.
+- 中 (4): shu + 横折 (compound) + heng + shu — first time a 横折
+  inside a frame.

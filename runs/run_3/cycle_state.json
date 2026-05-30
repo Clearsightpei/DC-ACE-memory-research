@@ -1,11 +1,11 @@
 {
-  "cycle": 6,
+  "cycle": 7,
   "phase": 2,
-  "last_batch": ["大", "入", "上", "下", "七", "山"],
+  "last_batch": ["大", "入", "又", "个", "不", "木"],
   "last_pass_count": 4,
   "last_total": 6,
-  "last_finished_at": "2026-05-30T18:45:00-04:00",
+  "last_finished_at": "2026-05-30T19:00:00-04:00",
   "batch_size": 6,
   "pass_signal": "Teacher is the tool orchestrator (dataset judge.eval). Strokes: Claude-vision rubric total>=7/10 (no 0 criterion), post-reflection — hand-coded stroke GT is a weak reference, do not gate strokes on it. Characters: OCR is_correct AND rubric>=7/10; GT visual_score tracked for regression only (cross-renderer low is normal, run_1 0.03-0.40). Soft Teacher-judged phase gate, depth over breadth.",
-  "notes": "Cycle 6 full carry-over of c5, eval=gt+ocr+vision. 4/6 mastered (上, 下, 七, 山), rubric avg 8.17/10. Brushwork repair landed across all 6 including short strokes + compound primitives. 大 (heng too short → 'A'-shape) and 入 (junction at 35% too high) still fail and carry to c7. Phase-2 mastered set now: 一二三十人八上下七山 (10/12 introduced)."
+  "notes": "Cycle 7 carry-overs + 4 new chars, eval=gt+ocr+vision. 4/6 mastered (又, 个, 不, 木 — all first attempt, rubric 9-10/10), avg 9.17. 大 carry (heng still too short). 入 hit OCR-wall at rubric 9 (visually correct but OCR returns 人). 13 Phase-2 chars mastered total. c8 will push 大 heng to 2.0x; try amplified 入 asymmetry, then accept OCR wall if needed."
 }
