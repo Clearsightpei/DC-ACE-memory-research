@@ -6,6 +6,6 @@
   "last_total": null,
   "last_finished_at": null,
   "batch_size": 6,
-  "pass_signal": "Phase 1: visual_score >= 0.85 (composite shape-fidelity gate, post-reflection) — no skipping. Phase 2/3: visual_score primary + OCR is_correct as secondary aid.",
-  "notes": "Composite Dice+Chamfer+proportion judge; OCR is Teacher-configured via dataset judge.use_ocr (off for strokes by default)."
+  "pass_signal": "Teacher is the tool orchestrator (dataset judge.eval). Strokes: Claude-vision rubric total>=7/10 (no 0 criterion), post-reflection — hand-coded stroke GT is a weak reference, do not gate strokes on it. Characters: OCR is_correct AND rubric>=7/10; GT visual_score tracked for regression only (cross-renderer low is normal, run_1 0.03-0.40). Soft Teacher-judged phase gate, depth over breadth.",
+  "notes": "Tool-orchestrator era. eval in {vision, gt, ocr, +combos}; vision rubric scored orchestrator-side (no API). Per-run POSTMORTEM.md mandatory before starting a new run."
 }

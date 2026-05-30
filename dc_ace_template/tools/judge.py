@@ -632,6 +632,13 @@ Example:
     use_ocr = bool(judge_cfg.get("use_ocr", True))
     skip_ocr = args.skip_ocr or (not use_ocr)
 
+    # Teacher's tool-orchestration advisories. The judge does NOT act on
+    # these (the orchestrator decides whether to even call judge.py, and
+    # scores the vision rubric itself) — they are echoed into every
+    # result purely for the audit trail / Curator context.
+    eval_requested = judge_cfg.get("eval")
+    mastery_policy = judge_cfg.get("mastery")
+
     # ── Initialize RapidOCR (local, fast) ─────────────────────────────
     ocr_engine = None
     if not skip_ocr:
@@ -679,6 +686,10 @@ Example:
             generated_code=code,
             legacy_visual=args.legacy_visual,
         )
+        if eval_requested is not None:
+            result["eval_requested"] = eval_requested
+        if mastery_policy is not None:
+            result["mastery_policy"] = mastery_policy
         results.append(result)
 
     # ── Save JSON report ──────────────────────────────────────────────

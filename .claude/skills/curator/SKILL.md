@@ -24,12 +24,23 @@ already identified the cycle number `N`.
 
 ## You read (but do not write) these
 
-- `judge_results/cycle_${N}.json` — per-task: `visual_score` (composite
-  shape-fidelity, primary signal), `visual_components`
-  (`dice` = overlap, `chamfer` = fine-detail fidelity,
-  `proportion`/`ar_term`/`quad_term` = relative structure),
-  `scoring_mode`, `recognized_char`, `is_correct`, `final_score`,
-  `generated_code` snippet.
+- `judge_results/cycle_${N}.json` — per-task. **Which fields are
+  present depends on the Teacher's chosen `eval`** (`vision`, `gt`,
+  `ocr`, or a `+` combination):
+  - `calligraphy_rubric` (when `eval` had `vision`) — the
+    reference-free Claude-vision score: `dunbi/hudu/taper/proportion/
+    overall` (0–2), `total` (/10), and a `rationale` per criterion.
+    **This is the primary quality signal for strokes** and a
+    co-primary for characters.
+  - `visual_score` + `visual_components` (`dice`,`chamfer`,
+    `proportion`,…) + `scoring_mode` (when `eval` had `gt`) — GT
+    shape-fidelity. Trustworthy for characters; for strokes it may be
+    absent (no GT generated) or, if present, treat skeptically (the
+    hand-coded stroke GT is a weak reference — see
+    `runs/run_2/POSTMORTEM.md`).
+  - `recognized_char`/`is_correct`/`ocr_confidence` (when `eval` had
+    `ocr`) — recognizability, characters only, weak secondary.
+  - `generated_code` snippet always present.
 - `attempts/cycle_${N}/generated.py` — the full code the Drawer wrote.
 - `attempts/cycle_${N}/*.png` — what the Drawer actually drew (open and
   compare against `ground_truths/cycle_${N}/*.png` if it helps).
@@ -40,27 +51,41 @@ already identified the cycle number `N`.
 ### 1. Read the evidence
 
 Open `judge_results/cycle_${N}.json` and the Drawer's `generated.py`.
-For each task:
-- Did the Drawer pass? **`visual_score` is the primary signal**
-  (Phase-1 mastery gate = `visual_score >= 0.85`). OCR `is_correct`,
-  when present, is a *secondary* aid only — OCR will happily recognize
-  a glyph that is clearly wrong to a human (e.g. 人 with 撇 and 捺 the
-  same length when the 撇 must be longer and start higher). If OCR says
-  correct but `visual_score` is low, that is a **failure**, and the
-  most important kind to diagnose.
-- Use `visual_components` to localize the fault: high `dice` but low
-  `chamfer` → topology right, fine detail wrong (a missing 顿笔/pause,
-  a too-shallow 弧度/curve, a dropped 小折/hook); low `proportion`/
-  `ar_term`/`quad_term` → wrong relative proportion (the 人 case). Open
-  the PNG vs the GT and name the *specific* calligraphic detail that is
-  missing — do not accept "looks roughly right".
+**Judge each task by the signal the Teacher chose for it** (see the
+`eval`/fields present), not by a fixed metric:
+
+- **Strokes (typically `eval: vision`)**: `calligraphy_rubric` is the
+  truth. Mastered ≈ `total >= 7/10` with no criterion 0
+  (post-reflection). Do **not** judge a stroke by a GT `visual_score`
+  even if one is present — the hand-coded stroke GT is weaker than the
+  model's own strokes; chasing it *degrades* calligraphy (this is
+  exactly the run_2 failure, see `runs/run_2/POSTMORTEM.md`).
+- **Characters (typically `eval: gt+ocr+vision`)**: pass needs
+  `is_correct == true` AND `calligraphy_rubric.total >= 7`. The GT
+  `visual_score` for characters is legitimately LOW even when correct
+  (cross-renderer; run_1 correct chars sat 0.03–0.40) — **never treat
+  a low absolute character `visual_score` as failure**. Use it only as
+  a *regression* signal: a sharp drop vs that character's own prior
+  best is worth a carry-over even if absolute value is low.
+- OCR correct but rubric low / a rubric criterion 0 → still a
+  **failure** (a recognizable but ugly glyph). That gap is the most
+  important thing to diagnose.
+
+Localize the fault with the rubric rationale + `visual_components`
+(when present): which of 顿笔 / 弧度 / 粗细 taper / proportion is
+missing or wrong. Open the attempt PNG (and the GT only when `eval`
+included `gt`) and name the *specific* calligraphic defect — do not
+accept "looks roughly right".
+
 - If failed: code bug (crash/blank PNG), wrong shape, wrong proportion,
-  or missing calligraphic detail? Is the insight generalizable?
+  or missing brush detail? Is the insight generalizable?
 
 Your reflections must call out the concrete missing detail and how to
-produce it (e.g. "斜钩: GT uses a large-radius circle with only a 30°
-arc for a gentle 弧度 — the attempt used a tight full curve; widen the
-radius and shrink the arc extent"), not just "make it more accurate".
+produce it (e.g. "斜钩: a gentle 弧度 = a large-radius circle with only
+a ~30° arc, not a tight full curve; widen radius, shrink arc extent"),
+not just "make it more accurate". If the judge signal itself misled
+(e.g. a weak GT, or an OCR pass on an ugly glyph), say so in
+`cycle_summary.md` so the Teacher can pick a better tool next cycle.
 
 ### 2. Edit `drawer_memory.md`
 

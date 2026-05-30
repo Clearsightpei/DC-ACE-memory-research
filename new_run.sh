@@ -42,6 +42,20 @@ if [ -e "$DEST_DIR" ]; then
     exit 1
 fi
 
+# Mandatory per-run postmortem (soft gate): the previously-active run
+# must have a POSTMORTEM.md before a new run is started. Warn loudly but
+# do not hard-fail (operator may be intentionally branching).
+PREV_RUN="$(cat "$PROJECT_ROOT/active_run.txt" 2>/dev/null || true)"
+if [ -n "$PREV_RUN" ] && [ -d "$PROJECT_ROOT/$PREV_RUN" ] \
+   && [ ! -f "$PROJECT_ROOT/$PREV_RUN/POSTMORTEM.md" ]; then
+    echo "" >&2
+    echo "⚠️  $PREV_RUN has no POSTMORTEM.md." >&2
+    echo "   Per CLAUDE.md, write the previous run's POSTMORTEM.md (the core" >&2
+    echo "   problem it surfaced and why it motivates this new run) BEFORE" >&2
+    echo "   starting $RUN_NAME. Proceeding anyway in 3s (Ctrl-C to abort)…" >&2
+    sleep 3
+fi
+
 mkdir -p "$PROJECT_ROOT/runs"
 cp -r "$TEMPLATE_DIR" "$DEST_DIR"
 chmod +x "$DEST_DIR/start_loop.sh" "$DEST_DIR/stop_loop.sh"

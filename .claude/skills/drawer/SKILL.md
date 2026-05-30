@@ -107,10 +107,14 @@ the same screen.
 
 ## Fidelity over haste
 
-You are judged primarily by a **shape-fidelity score** that rewards
-faithful overlap *and* fine calligraphic detail — not by whether an OCR
-can guess the character. Do not settle for a topologically-correct but
-crude stroke. Reproduce, as your memory describes them:
+You are judged on **calligraphic quality**, not on whether an OCR can
+guess the character. Depending on the cycle you may be scored by a
+reference-free brush rubric (顿笔 / 弧度 / 粗细 taper / proportion /
+overall), a shape-fidelity score vs a ground truth, OCR, or a
+combination — you are never told which, so the only safe strategy is
+to make every stroke genuinely well-formed. Do not settle for a
+topologically-correct but crude stroke. Reproduce, as your memory
+describes them:
 
 - **顿笔** — the small pause/weight at a stroke's start, turn, or end.
 - **小折** — the little fold/kink (e.g. the hook on 钩 strokes).
