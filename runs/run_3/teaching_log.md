@@ -94,3 +94,18 @@ prior entries.
   including short ones (上, 下) and compound primitives (七 竖弯,
   山 竖折). c4 → c6 mirrors c3 → c4: a hard-fail cycle followed by a
   reflection-validation cycle.
+
+## Cycle 7 — 2026-05-30
+
+- Phase: 2
+- Batch: [大, 入, 又, 个, 不, 木]
+- Carry-overs: **2** (大, 入) — c6 fixes half-landed; numeric
+  refinements in `drawer_memory.md` (heng ≥ 1.4× limb span; 入
+  junction at 45–55% down 撇). The other 4 c6 chars (上, 下, 七,
+  山) retired at 8–9/10 post-reflection.
+- Tools (eval): **gt+ocr+vision**. use_ocr=true.
+- Why this batch: drill the 撇+捺 composition family while c7 stress-
+  tests the c6 numeric fixes. 又 introduces 横撇 (a new compound
+  stroke). 个 mirrors 人 + a center shu. 不 / 木 add a center shu to
+  a 撇/捺 composition — 木 is the canonical "cross with diagonal
+  limbs" composition.

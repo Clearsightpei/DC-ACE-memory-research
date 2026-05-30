@@ -1,0 +1,15 @@
+{
+  "judge": {
+    "eval": "gt+ocr+vision",
+    "use_ocr": true,
+    "mastery": "is_correct == true AND calligraphy_rubric.total >= 7 (post-reflection). visual_score for regression only."
+  },
+  "characters": [
+    {"index": 1, "character": "大", "pinyin": "da"},
+    {"index": 2, "character": "入", "pinyin": "ru"},
+    {"index": 3, "character": "又", "pinyin": "you"},
+    {"index": 4, "character": "个", "pinyin": "ge"},
+    {"index": 5, "character": "不", "pinyin": "bu"},
+    {"index": 6, "character": "木", "pinyin": "mu"}
+  ]
+}
