@@ -149,3 +149,15 @@ prior entries.
   巴 and 已 both feature 竖弯钩 as the signature bottom stroke). 力
   is also a compact 2-stroke check on whether the 横折钩 primitive
   generalizes outside of 习/也.
+
+## Cycle 11 — 2026-05-30
+
+- Phase: 2
+- Batch: [火, 也, 力, 巴, 月, 见]
+- Carry-overs: **4** (火, 也, 力, 巴). 火 is final attempt before
+  documented retire as OCR-wall. 也/力/巴 each test a specific c10
+  composition prescription.
+- Tools (eval): **gt+ocr+vision**. use_ocr=true.
+- Why this batch: close out the active-failure list with refined
+  prescriptions, then introduce 月 and 见 — both frame-with-interior-
+  hooks compositions building on c9/c10's 横折钩 mastery.
