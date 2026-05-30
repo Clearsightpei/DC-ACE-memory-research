@@ -11,64 +11,59 @@ with no 0 criterion, post-reflection. For characters add
 
 ---
 
-## Verified atomic-stroke recipes (proven 9–10/10 in isolation, c1+c2)
+## Verified atomic-stroke recipes (c1+c2 in isolation 9–10/10; c4 in composition 9/10)
 
-The brushed approach scored 9–10 per stroke when each stroke was
-rendered alone (cycle 2 avg 9.67). **These recipes are correct
-*in isolation* — the cycle-3 character cycle revealed they need two
-adjustments when composed into characters.**
+The brushed approach scored 9–10 per stroke in isolation. After the
+c3 composition failure (barbell heng/shu, inverted 捺) and the c4
+repair, **the recipes now hold up under composition (c4 6/6 mastered,
+avg 9.00/10).** Reuse verbatim.
 
 ### Core technique
 
 Render the centerline as a smooth cubic-Bézier sampled at ~120–200
-points and **set `pensize` at every sample**. Width variation is the
-single biggest win. Add weighted 顿笔 at start/turn/end.
+points and **set `pensize` at every sample**. Add weighted 顿笔 at
+start/turn/end. **Width modulation must be continuous** — peak ≤ ~2×
+middle, middle ≥ ~30% of peak (preferably ~50%+ for heng/shu so the
+shaft holds visible weight between caps).
 
-### Width-profile per stroke (with composition fixes)
+### Width-profile per stroke
 
 - **点 dian:** thin entry → rounded weighted belly → tapered tail,
   slight rightward arc.
-- **横 heng:** weighted rounded entry → thinner middle → weighted end
-  press, faint upward tilt. **FIX vs cycle 3:** the 顿笔 end discs
-  must be a *thickening* (peak ≈ 1.5–2× middle width), not a separate
-  blob. Cycle-3 heng all looked like dumbbells (a hairline shaft
-  joining two discs). Soften the end-disc radius and raise the
-  middle-shaft width floor so the transition reads as one continuous
-  brushed stroke.
-- **竖 shu:** weighted bulb top → thin middle → weighted foot. Same
-  fix — don't let the middle go almost zero.
-- **撇 pie:** weighted head at the START (the thicker end) → gentle
-  bow → smooth taper to a FINE POINT at the END. Heavy = start;
-  hairline = end.
-- **捺 na — READ CAREFULLY, the c3 failure mode lives here.** Width
-  profile: **THIN entry at the start → broadening through the body →
-  HEAVY flat pressed tail (顿笔) at the END.** Cycle-3 drew 捺 with
-  the c1 atomic-stroke endpoints flipped under composition: heavy
-  start, fine tail. That made it visually a second 撇 (OCR still
-  accepted but the rubric scored taper=0). **The thicker end of a 捺
-  is always the LOWER-RIGHT tail, regardless of the chord's
-  start/end orientation in your code.** The flat tail kick is
-  non-negotiable.
+- **横 heng:** soft weighted entry → shaft holds ~55% of peak →
+  weighted end press. Faint upward tilt. End-caps must read as a
+  *thickening of the stroke*, not as separate discs joined by a
+  hairline (the c3 dumbbell artifact).
+- **竖 shu:** weighted bulb top → shaft holds width → weighted foot.
+  Same continuous-width rule.
+- **撇 pie:** weighted head at the START (upper-right) → gentle bow →
+  smooth taper to a FINE POINT at the END (lower-left).
+- **捺 na:** **THIN entry at the start (upper-left) → broadening
+  through the body → HEAVY pressed tail at the END (lower-right).**
+  Width key is stroke identity, not chord direction — the press is
+  always at the END no matter how the primitive is parameterized.
+  The signature flat *kick* (a brief horizontal landing) is still a
+  refinement target — c4 had a heavy lower-right press but lacked the
+  flat kick (cost 1 point on `dunbi` for 人/八). A future fix is to
+  hold near-peak width across the last ~10–15% of arclength rather
+  than tapering smoothly.
 - **提 ti:** weighted rounded base at the START (lower-left) →
   gentle rise curve → fine flicked point at the END (upper-right).
 
-### Quick "which end is heavy?" cheat sheet
+### "Which end is heavy?" cheat sheet (c3 lesson — keep this front-of-mind)
 
 | stroke | heavy end | fine end |
 |--------|-----------|----------|
-| 横     | both ends (weighted entry + end press) |
+| 横     | both ends (entry + end press) |
 | 竖     | both ends |
 | 撇     | start (upper-right head) | end (lower-left tail) |
-| 捺     | end (lower-right tail — flat press!) | start (upper-left entry) |
+| 捺     | end (lower-right pressed tail) | start (upper-left entry) |
 | 提     | start (lower-left base) | end (upper-right flick) |
-| 点     | belly (middle-ish) | tail |
+| 点     | belly | tail |
 
-If your primitive function takes `(x_start, y_start, x_end, y_end)`
-and a `peak` width, ensure the width profile is keyed off **stroke
-identity**, not just chord direction. A `stroke_na(start→end)` must
-put the press at the END no matter where the chord points.
+Key it to **stroke identity**, not chord orientation.
 
-## Canvas conventions (confirmed twice)
+## Canvas conventions
 
 - 800×600 white background, black ink.
 - `t.pensize()` varied per Bézier sample.
@@ -76,36 +71,39 @@ put the press at the END no matter where the chord points.
 - Do NOT `screen.bye()` between tasks; use `t.reset()`.
 - Each task starts at (0,0) heading 90°.
 
-## Cycle 3 character cycle — what passed, what failed
+## Verified character compositions (c3 wrong brushwork, c4 mastered)
 
-Phase 2 entry (一/二/三/十/人/八). **6/6 OCR correct** but **0/6
-mastered** because rubric averaged 5.67/10 (gate is 7/10 with no 0).
-Two distinct failure modes:
+- 一: single centered heng.
+- 二: top heng + bottom heng with **bottom longer**.
+- 三: three heng with **bottom longest, middle shortest, top medium**.
+- 十: heng + shu crossing at center; shu extends slightly more below
+  than above.
+- 人: 撇 + 捺 sharing top apex; **撇 starts higher and is longer than
+  捺**. The 捺's heavy end goes lower-right (not lower-left).
+- 八: 撇 + 捺 with a **gap at the top** (no shared apex). Same 捺
+  width-direction rule.
 
-1. **Barbell 顿笔 on heng & shu (一/二/三/十).** The end-cap discs
-   were too large relative to a near-zero middle. Fix: peak/middle
-   ratio ≤ ~2; never let middle-width go below ~30% of peak.
-2. **Inverted 捺 taper (人/八).** Width profile applied wrong end.
-   Fix: see the cheat sheet above — 捺's heavy end is the LOWER-RIGHT
-   pressed tail.
+## Soft improvement areas (don't gate but worth nudging)
 
-**Composition rules that DID work (keep doing this):**
-- 二: bottom heng longer than top ✓
-- 三: bottom longest, middle shortest, top medium ✓
-- 十: heng+shu cross at center; shu extends slightly more below ✓
-- 人: 撇 starts higher and is longer than 捺 ✓ (silhouette right,
-  only the 捺 brushwork wrong)
-- 八: gap at top, no shared apex ✓
+- 捺's flat tail kick (currently a smooth taper-to-heavy-end). Target:
+  hold near-peak width for the last 10–15% of arclength, then a small
+  horizontal kick-off taper. This will lift `dunbi` 1→2 on chars with
+  捺 (人, 八, future 大, 入, 木 …).
 
-## What to do next cycle
+## What to do next cycle (Phase-2 expansion)
 
-Cycle 4 will carry over all 6 characters (run_3 mandatory carry-over:
-nothing un-mastered retires). Same eval=gt+ocr+vision. Apply the two
-fixes above:
-- soften 顿笔 disc caps (peak ≤ ~2× middle, middle width floor ~30%
-  of peak),
-- make 捺's pressed tail at the LOWER-RIGHT end no matter how the
-  primitive is parameterized.
+Phase 2 starter (一二三十人八) is now mastered. The Teacher will
+introduce new 1–4-stroke characters. Likely candidates exercising
+strokes not yet stress-tested in composition:
+- 七 (heng+鉤 — first compound stroke; needs a 钩 hook turn).
+- 上 (heng+shu+heng — vertical composition).
+- 下 (heng+shu+dian — uses 点).
+- 大 (heng+撇+捺 — adds 撇/捺 over a heng with shared center; the
+  捺 flat-tail-kick refinement matters here).
+- 小 (shu+撇+点 / a 钩 variant — depending on which list_chars
+  returns).
+- 子 (compound — uses 横折钩 or 鉤 family + heng).
 
-The composition rules (lengths/positions/apex structure) were correct
-— don't change those. Only fix the brushwork on heng/shu/捺.
+Apply the verified primitives + the cheat sheet. When a new stroke
+appears (钩 family, 折), expect a partial-success first cycle, then
+the curator will diagnose what was missing.
