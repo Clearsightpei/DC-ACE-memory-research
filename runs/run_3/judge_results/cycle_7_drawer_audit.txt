@@ -1,0 +1,7 @@
+Audit c7 (2026-05-30T22:41:38Z)
+[1]
+generated.py
+[2] forbidden:
+(none)
+[3] marker:
+(removed)
