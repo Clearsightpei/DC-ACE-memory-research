@@ -63,3 +63,19 @@ prior entries.
 - Why this batch: verify the Curator's two brushwork reflections
   (soften 顿笔 end-discs on heng/shu; fix inverted 捺 taper on 人/八).
   Composition rules stay — only brushwork is being repaired.
+
+## Cycle 5 — 2026-05-30
+
+- Phase: 2
+- Batch: [大, 入, 上, 下, 七, 山]
+- Carry-overs: none — c4 retired all 6 of c3/c4's batch
+  (一二三十人八) at 9.00/10 avg, post-reflection. New Phase-2
+  expansion batch.
+- Tools (eval): **gt+ocr+vision**. use_ocr=true.
+- Why this batch: three goals — (1) stress the c4 soft gap on 捺 flat
+  tail kick (大, 入 — both 撇+捺 chars), (2) test vertical-stacking
+  composition (上, 下 — uses 点 in 下 for the first time in a
+  character), (3) introduce two new compound strokes: 七 brings the
+  竖弯-钩-family turn, 山 brings the 竖折 corner. Partial success
+  expected on the compound strokes; the resulting Curator diagnosis
+  is the experimental data we want.
