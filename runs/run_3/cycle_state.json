@@ -1,5 +1,5 @@
 {
-  "cycle": 1,
+  "cycle": 2,
   "phase": 1,
   "last_batch": [
     "dian",
@@ -11,8 +11,8 @@
   ],
   "last_pass_count": 6,
   "last_total": 6,
-  "last_finished_at": "2026-05-17T03:10:00-04:00",
+  "last_finished_at": "2026-05-30T18:00:00-04:00",
   "batch_size": 6,
-  "pass_signal": "Teacher is the tool orchestrator (dataset judge.eval). Strokes: Claude-vision rubric total>=7/10 (no 0 criterion), post-reflection \u2014 hand-coded stroke GT is a weak reference, do not gate strokes on it. Characters: OCR is_correct AND rubric>=7/10; GT visual_score tracked for regression only (cross-renderer low is normal, run_1 0.03-0.40). Soft Teacher-judged phase gate, depth over breadth.",
-  "notes": "Cycle 1 cold start, eval=vision (no GT). 6/6 strokes 9-10/10 (avg 9.5) \u2014 thesis validated vs run_1 crude 3-4/10. Carry-over recommended to confirm post-reflection, then Phase 2 simple chars."
+  "pass_signal": "Teacher is the tool orchestrator (dataset judge.eval). Strokes: Claude-vision rubric total>=7/10 (no 0 criterion), post-reflection — hand-coded stroke GT is a weak reference, do not gate strokes on it. Characters: OCR is_correct AND rubric>=7/10; GT visual_score tracked for regression only (cross-renderer low is normal, run_1 0.03-0.40). Soft Teacher-judged phase gate, depth over breadth.",
+  "notes": "Cycle 2 post-reflection drill, eval=vision. 6/6 strokes 9-10/10 (avg 9.67) — memory transfer confirmed, 撇/提 弧度 nudged 1→2. All 6 atomic strokes mastered post-reflection. Advance to Phase 2 (simple characters 1–4 strokes, eval=gt+ocr+vision) next cycle."
 }
