@@ -1,0 +1,9 @@
+Drawer audit — cycle 4 (2026-05-30T22:11:36Z)
+[1] attempts/cycle_4/:
+generated.py
+
+[2] forbidden refs in generated.py:
+(none — clean)
+
+[3] quarantine marker:
+(removed — clean)
