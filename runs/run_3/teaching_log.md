@@ -79,3 +79,18 @@ prior entries.
   竖弯-钩-family turn, 山 brings the 竖折 corner. Partial success
   expected on the compound strokes; the resulting Curator diagnosis
   is the experimental data we want.
+
+## Cycle 6 — 2026-05-30
+
+- Phase: 2
+- Batch: [大, 入, 上, 下, 七, 山]
+- Carry-overs: **ALL 6** — c5 was 4/6 OCR but 0/6 mastered.
+  Mandatory carry-over rule applied; each task tests a specific
+  Curator reflection.
+- Tools (eval): **gt+ocr+vision** (same as c5). use_ocr=true.
+- Why this batch: verify three c5 reflections — (a) 大 topology
+  (撇/捺 apex above heng with heng cutting through), (b) 入 topology
+  (捺 on 撇's spine, asymmetric), (c) brushed width on every stroke
+  including short ones (上, 下) and compound primitives (七 竖弯,
+  山 竖折). c4 → c6 mirrors c3 → c4: a hard-fail cycle followed by a
+  reflection-validation cycle.
