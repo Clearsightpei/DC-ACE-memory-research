@@ -1,0 +1,10 @@
+Drawer audit — cycle 3 (2026-05-30T22:05:54Z)
+
+[1] Files in attempts/cycle_3/:
+generated.py
+
+[2] Forbidden-path references in generated.py:
+(none — clean)
+
+[3] Quarantine marker:
+(removed — clean)
