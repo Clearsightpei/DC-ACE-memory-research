@@ -221,3 +221,14 @@ prior entries.
   artifacts on 也); this cycle drills smooth-Bézier rendering on
   the same composition. 2 new chars: 寸 (3-stroke, intros 点
   in upper-right) and 万 (3-stroke, intros 横折弯钩 compound).
+
+## Cycle 17 — 2026-05-30
+
+- Phase: 2
+- Batch: [也, 巴, 寸, 万, 太, 几]
+- Carry-overs: **4** (也/巴/寸/万). c16 mastered 见 + 小.
+- Tools (eval): **gt+ocr+vision**. use_ocr=true.
+- Why: continue carry-over drill with refined prescriptions. New
+  chars 太 (leverages c12-mastered 大 + 点 to differentiate from 大)
+  and 几 (compact 2-stroke, 2nd attempt at 横折弯钩 in a simpler
+  context than 万's). Last cycle of this 6-cycle batch.
