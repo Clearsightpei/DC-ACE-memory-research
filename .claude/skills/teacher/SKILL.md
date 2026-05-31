@@ -14,6 +14,19 @@ characters possible.** Strokes are taught only because they make
 characters better. Every decision — what to teach, how to pace, and
 *which evaluation tool to use* — serves that single objective.
 
+**Quality over quantity. Correctness over coverage.** Your job is
+NOT to march the Drawer through as many characters as possible. Your
+job is to make the characters you DO teach come out genuinely right.
+A run that masters 10 characters cleanly is more valuable than a run
+that "covers" 30 with half of them rationalized as OCR-walls. If a
+character doesn't look like the character, that is a failure of the
+Drawer/Curator loop — not a measurement-tool limitation — until you
+have done at least 4 honest carry-over cycles with progressively
+specific reflections AND the Curator has written a postmortem that
+names a *concrete* RapidOCR mis-recognition (e.g. "RapidOCR confuses
+this silhouette with 人 because…"). Even then, prefer to keep
+drilling.
+
 You are reading this file because `/cycle` told you to. You operate inside
 the **active run directory** (whatever `/cycle` `cd`'d you into) as your
 working directory.
@@ -105,11 +118,34 @@ observes.
    - gt: `visual_score` below the level the Curator deems faithful for
      that item, or a regression vs its prior best.
    - ocr (characters): `is_correct == false` / wrong char / low conf.
+
+   **HARD NO-SKIP RULES (cannot be overridden by Teacher judgement
+   or Curator "OCR-wall" rationalization):**
+   - If `is_correct == false`, the character **MUST** be carried
+     over. No exceptions.
+   - If `is_correct == true` but `ocr_confidence < 0.4`, the
+     character **MUST** be carried over. A barely-recognized character
+     is not a mastered character — it just got lucky with the OCR
+     threshold.
+   - The label "OCR-wall" is NOT permission to retire a character.
+     Even when the Curator suspects RapidOCR has a systematic bias
+     against a silhouette, you keep drilling — the goal is to make
+     the character right enough that even a biased OCR recognizes it,
+     not to declare the OCR broken and move on.
+   - You may retire a non-mastered character ONLY if: (a) it has
+     carried over for ≥ 4 cycles with progressively specific Curator
+     reflections in `drawer_memory.md`, AND (b) the Curator has
+     written an explicit postmortem entry naming the concrete
+     RapidOCR mis-recognition pattern with evidence (drawer code
+     references + visual_score trend), AND (c) you document the
+     retirement in `teaching_log.md` with the exact cycle range it
+     was attempted. This is a last resort, not a default.
+
    Fill remaining slots with new tasks that build on what's learned,
-   or deliberate drills/re-tests. If >6 would carry over, prioritise
-   the freshest Curator reflections; note deferrals in
-   `teaching_log.md`. Always document which tasks are carry-overs and
-   which reflection each tests.
+   or deliberate drills/re-tests. If >6 would carry over, the batch
+   is **6 carry-overs only** — do NOT introduce new chars while
+   the un-mastered backlog exceeds the batch size. Always document
+   which tasks are carry-overs and which reflection each tests.
 
 3. **Generate ground truths — only if your `eval` includes `gt`.**
    - To pick characters for the curriculum, enumerate the pool by
@@ -200,6 +236,13 @@ observes.
 - **Every un-mastered / fragile task from `last_batch` MUST be carried
   over** until it passes cleanly *after* a Curator reflection. This is
   how the experiment verifies reflections — not optional pacing.
+- **Hard no-skip:** `is_correct == false` OR `ocr_confidence < 0.4`
+  forces a carry-over. "OCR-wall" is not permission to retire — see
+  Decision 2 for the exact retirement criteria (≥4 carry-overs +
+  Curator postmortem + log entry). Quality > coverage.
+- If the un-mastered backlog ≥ 6, the next batch is 6 carry-overs
+  only — no new characters introduced while the previous batch is
+  still failing.
 - The judge is your tool: pick `eval` deliberately and **record the
   choice and its rationale in `teaching_log.md`**. Never rely on OCR
   alone. For strokes, default to `vision` (hand-coded stroke GT is a
