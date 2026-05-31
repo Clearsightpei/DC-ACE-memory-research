@@ -210,3 +210,14 @@ prior entries.
   (also re-think 也 with 竖弯钩 as the dominant frame). New char
   小 — compact 3-stroke 竖钩+点+点 layout, distinct from any failure
   silhouette.
+
+## Cycle 16 — 2026-05-30
+
+- Phase: 2
+- Batch: [也, 巴, 见, 小, 寸, 万]
+- Carry-overs: **4** (也/巴/见/小). c15 mastered 天 + 了.
+- Tools (eval): **gt+ocr+vision**. use_ocr=true.
+- Why: c15 surfaced a new brush-rendering pitfall (dot-stamp
+  artifacts on 也); this cycle drills smooth-Bézier rendering on
+  the same composition. 2 new chars: 寸 (3-stroke, intros 点
+  in upper-right) and 万 (3-stroke, intros 横折弯钩 compound).
