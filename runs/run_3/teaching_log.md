@@ -161,3 +161,17 @@ prior entries.
 - Why this batch: close out the active-failure list with refined
   prescriptions, then introduce 月 and 见 — both frame-with-interior-
   hooks compositions building on c9/c10's 横折钩 mastery.
+
+## Cycle 12 — 2026-05-30
+
+- Phase: 2
+- Batch: [大, 入, 火, 也, 力, 巴]
+- Carry-overs: **all 6**. Teacher skill updated with hard no-skip
+  rule (no "OCR-wall" exit): 大/入/火 un-retired and back in
+  rotation alongside 也/力/巴. Backlog is 7 (includes 见); per the
+  "backlog ≥ 6 → carry-overs only" rule, no new chars this cycle;
+  见 deferred to c13.
+- Tools (eval): **gt+ocr+vision**. use_ocr=true.
+- Why this batch: stop pretending these are unfixable. Each has a
+  specific composition prescription in `drawer_memory.md`. Quality
+  over coverage.
