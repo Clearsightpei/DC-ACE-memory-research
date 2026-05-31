@@ -1,11 +1,9 @@
 {
-  "cycle": 12,
-  "phase": 2,
-  "last_batch": ["大", "入", "火", "也", "力", "巴"],
-  "last_pass_count": 2,
-  "last_total": 6,
-  "last_finished_at": "2026-05-30T20:30:00-04:00",
+  "cycle": 13, "phase": 2,
+  "last_batch": ["火","也","力","巴","见","天"],
+  "last_pass_count": 1, "last_total": 6,
+  "last_finished_at": "2026-05-30T20:45:00-04:00",
   "batch_size": 6,
-  "pass_signal": "Teacher is the tool orchestrator (dataset judge.eval). HARD NO-SKIP: is_correct==false OR ocr_confidence<0.4 forces carry-over. No 'OCR-wall' retirement.",
-  "notes": "Cycle 12 all-carry-overs (大/入/火/也/力/巴). 大 and 入 BOTH MASTERED at 10/10 after un-retirement — 'OCR-wall' was rationalization. 4 chars still carry (火/也/力/巴) + deferred 见 = 5 active. 24 chars mastered Phase-2."
+  "pass_signal": "Hard no-skip: is_correct==false OR ocr_confidence<0.4 forces carry-over.",
+  "notes": "c13 1/6 mastered (力). Refined prescriptions for 5 carry-overs (火/也/巴/见/天). 25 chars mastered Phase-2."
 }
