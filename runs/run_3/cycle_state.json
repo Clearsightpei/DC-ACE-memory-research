@@ -1,11 +1,11 @@
 {
-  "cycle": 11,
+  "cycle": 12,
   "phase": 2,
-  "last_batch": ["火", "也", "力", "巴", "月", "见"],
-  "last_pass_count": 1,
+  "last_batch": ["大", "入", "火", "也", "力", "巴"],
+  "last_pass_count": 2,
   "last_total": 6,
-  "last_finished_at": "2026-05-30T20:00:00-04:00",
+  "last_finished_at": "2026-05-30T20:30:00-04:00",
   "batch_size": 6,
-  "pass_signal": "Teacher is the tool orchestrator (dataset judge.eval). Strokes: rubric>=7/10 no 0. Characters: OCR is_correct AND rubric>=7/10.",
-  "notes": "Cycle 11 final 火 + 也/力/巴 refined + 月/见. 1/6 mastered (月 first-try). 火 confirmed OCR-wall (4th attempt). RapidOCR-bias documented across 钩 family (也→卫 力→刀 巴→已 见→月). Run end state: 22 chars mastered, 3 OCR-wall, 4 OCR-bias active. Ready for run_3 POSTMORTEM."
+  "pass_signal": "Teacher is the tool orchestrator (dataset judge.eval). HARD NO-SKIP: is_correct==false OR ocr_confidence<0.4 forces carry-over. No 'OCR-wall' retirement.",
+  "notes": "Cycle 12 all-carry-overs (大/入/火/也/力/巴). 大 and 入 BOTH MASTERED at 10/10 after un-retirement — 'OCR-wall' was rationalization. 4 chars still carry (火/也/力/巴) + deferred 见 = 5 active. 24 chars mastered Phase-2."
 }
