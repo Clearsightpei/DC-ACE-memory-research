@@ -199,3 +199,14 @@ prior entries.
 - Why this batch: continue carry-over drill with c13-refined
   prescriptions. New char 了 (2 strokes) introduces 横钩 compound —
   expanding the compound stroke library.
+
+## Cycle 15 — 2026-05-30
+
+- Phase: 2
+- Batch: [也, 巴, 见, 天, 了, 小]
+- Carry-overs: **5** (也/巴/见/天/了). c14 mastered 火.
+- Tools (eval): **gt+ocr+vision**. use_ocr=true.
+- Why: continue carry-over drill with c14-refined prescriptions
+  (also re-think 也 with 竖弯钩 as the dominant frame). New char
+  小 — compact 3-stroke 竖钩+点+点 layout, distinct from any failure
+  silhouette.
