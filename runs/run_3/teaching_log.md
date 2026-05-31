@@ -175,3 +175,17 @@ prior entries.
 - Why this batch: stop pretending these are unfixable. Each has a
   specific composition prescription in `drawer_memory.md`. Quality
   over coverage.
+
+## Cycle 13 — 2026-05-30
+
+- Phase: 2
+- Batch: [火, 也, 力, 巴, 见, 天]
+- Carry-overs: **5** (火/也/力/巴/见). c12 mastered 大/入 (the
+  un-retired "OCR-wall" cases — both 10/10), so backlog dropped to
+  5; 1 new char allowed by the "backlog ≥ 6 → only carry-overs"
+  rule. Each carry-over has a c12-refined diagnosis.
+- Tools (eval): **gt+ocr+vision**. use_ocr=true.
+- Why this batch: continue the no-skip drill. New char 天 chosen
+  deliberately as a 大-contrast study — pre-c12 RapidOCR sometimes
+  read 大 attempts as 天 — teaching 天 explicitly anchors the
+  distinction.
