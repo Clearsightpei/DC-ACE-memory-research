@@ -189,3 +189,13 @@ prior entries.
   deliberately as a 大-contrast study — pre-c12 RapidOCR sometimes
   read 大 attempts as 天 — teaching 天 explicitly anchors the
   distinction.
+
+## Cycle 14 — 2026-05-30
+
+- Phase: 2
+- Batch: [火, 也, 巴, 见, 天, 了]
+- Carry-overs: **5** (火/也/巴/见/天). c13 mastered 力 only.
+- Tools (eval): **gt+ocr+vision**. use_ocr=true.
+- Why this batch: continue carry-over drill with c13-refined
+  prescriptions. New char 了 (2 strokes) introduces 横钩 compound —
+  expanding the compound stroke library.
