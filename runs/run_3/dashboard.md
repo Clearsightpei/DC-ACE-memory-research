@@ -1,14 +1,14 @@
 # DC-ACE Dashboard — run_3 — last update: 2026-05-30
 
-- **Cycle**: 15
+- **Cycle**: 16
 - **Phase**: 2
-- **This cycle**: 2/6 mastered (天 10/10, 了 10/10), rubric avg **7.83/10**
-- **Last batch**: [也, 巴, 见, 天, 了, 小]
-- **Memory size**: ~225 lines / ~8.5 KB
-- **Curator note**: 天 + 了 mastered with their c14 prescriptions. 也 hit a NEW failure (dot-stamp brush artifacts). 4 active carry-overs (也巴见小).
+- **This cycle**: 2/6 mastered (见 10/10, 小 10/10), rubric avg **8.33/10**
+- **Last batch**: [也, 巴, 见, 小, 寸, 万]
+- **Memory size**: ~250 lines / ~9.5 KB
+- **Curator note**: 见 + 小 mastered with their specific prescriptions. Smooth-Bézier rendering landed (also benefited). 4 active carry-overs (也巴寸万).
 - **Loop status**: running.
 
-## Phase-2 mastery (28 chars mastered through c15)
+## Phase-2 mastery (30 chars mastered through c16)
 
 | chars | first | best |
 |---|---|---|
@@ -22,5 +22,6 @@
 | 大 入 | c12 | 10 |
 | 力 | c13 | 10 |
 | 火 | c14 | 10 |
-| **天 了** | **c15** | **10/10** |
-| 也 巴 见 小 | — | 6–8 (active) |
+| 天 了 | c15 | 10 |
+| **见 小** | **c16** | **10** |
+| 也 巴 寸 万 | — | 6–8 (active) |

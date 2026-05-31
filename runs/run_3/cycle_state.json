@@ -1,9 +1,9 @@
 {
-  "cycle": 15, "phase": 2,
-  "last_batch": ["也","巴","见","天","了","小"],
+  "cycle": 16, "phase": 2,
+  "last_batch": ["也","巴","见","小","寸","万"],
   "last_pass_count": 2, "last_total": 6,
-  "last_finished_at": "2026-05-30T21:00:00-04:00",
+  "last_finished_at": "2026-05-30T21:10:00-04:00",
   "batch_size": 6,
   "pass_signal": "Hard no-skip active.",
-  "notes": "c15: 天 + 了 mastered (10/10). 28 chars total. 4 carry: 也巴见小."
+  "notes": "c16: 见 + 小 mastered (10/10). Smooth-Bézier rendering rule landed. 30 chars total. 4 carry: 也巴寸万."
 }
