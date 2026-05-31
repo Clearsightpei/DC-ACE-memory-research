@@ -1,15 +1,15 @@
 # DC-ACE Dashboard — run_3 — last update: 2026-05-30
 
-- **Cycle**: 13
+- **Cycle**: 14
 - **Phase**: 2
-- **This cycle**: 1/6 mastered (力 10/10), rubric avg **7.17/10**
-- **Last batch**: [火, 也, 力, 巴, 见, 天]
-- **Trend (last 13 cycles)**: c1 9.5 c2 9.67 | c3 5.67 c4 9.00 | c5 5.83 c6 8.17 c7 9.17 c8 7.83 c9 6.67 c10 6.67 c11 6.50 c12 7.83 c13 7.17
-- **Memory size**: ~225 lines / ~8.5 KB
-- **Curator note**: 力 mastered (cross-through fix). Refined diagnoses for 火/也/巴/见/天 — each has a new actionable prescription. 巴 broke 已-prior (now 县). c14 carries 5 + 了 (intros 横钩).
+- **This cycle**: 1/6 mastered (火 10/10), rubric avg **7.83/10**
+- **Last batch**: [火, 也, 巴, 见, 天, 了]
+- **Trend (last 14 cycles)**: c1 9.5 c2 9.67 | c3 5.67 c4 9.00 | c5 5.83 c6 8.17 c7 9.17 c8 7.83 c9 6.67 c10 6.67 c11 6.50 c12 7.83 c13 7.17 c14 7.83
+- **Memory size**: ~205 lines / ~7.8 KB
+- **Curator note**: **All three originally "OCR-wall" chars (大入火) now mastered**. 火 c14 fix: removed apex stub + 点 at x±100. 5 active carry-overs (也巴见天了).
 - **Loop status**: running.
 
-## Phase-2 mastery (25 chars mastered through c13)
+## Phase-2 mastery (26 chars mastered through c14)
 
 | chars | first | best | mastered? |
 |---|---|---|---|
@@ -21,5 +21,6 @@
 | 习已 | c10 | 8–9 | yes |
 | 月 | c11 | 9 | yes |
 | 大 入 | c12 | 10 | yes |
-| **力** | **c13** | **10** | **yes** |
-| 火 也 巴 见 天 | — | 6–8 | 5 active carry-overs |
+| 力 | c13 | 10 | yes |
+| **火** | **c14** | **10** | **yes** |
+| 也 巴 见 天 了 | — | 6–9 | 5 active carry-overs |

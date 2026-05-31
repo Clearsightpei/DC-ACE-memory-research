@@ -7,10 +7,22 @@ Curator-owned. Calligraphy rubric (0–2 × 5 / 10). Mastery:
 
 ---
 
+## "OCR-wall" claim fully disproven (c12–c14)
+
+All three characters previously labeled OCR-wall were mastered with
+concrete composition prescriptions:
+- 大 (c12): wide limb tails ±260 + short apex + slight V-dip in heng.
+- 入 (c12): 捺 dominant (longer + heavier than 撇).
+- 火 (c14): apex stub REMOVED + 点 at x±100 flanking apex at apex
+  height.
+
+The principle: when OCR rejects, the silhouette has a fixable
+geometric defect. Find and fix it. Do not declare measurement broken.
+
 ## Verified atomic-stroke recipes
 
-Cubic-Bézier centerline ~120–200 points; per-sample pensize;
-middle ≥ 50% of peak.
+Bézier centerline ~120–200 points; per-sample pensize; middle ≥ 50%
+of peak.
 
 | stroke | heavy end | fine end |
 |--------|-----------|----------|
@@ -23,72 +35,56 @@ middle ≥ 50% of peak.
 
 ## Compound strokes (mastered)
 
-竖弯, 竖折, 横撇, 横折, 竖钩, 横折钩, 竖弯钩.
+竖弯, 竖折, 横撇, 横折, 竖钩, 横折钩, 竖弯钩, 横钩.
 
 ## Canvas conventions
 
 - 800×600 white; per-sample pensize on Bézier.
 - `t.reset()` between tasks. Each task at (0,0) heading 90°.
 
-## Verified character compositions (25 mastered through c13)
+## Verified character compositions (26 mastered through c14)
 
 - 1–2 strokes: 一, 二, 十, 人, 八, 又, 入, 力.
 - 3 strokes: 三, 上, 下, 个, 山, 七, 工, 口, 子, 习, 已, 大.
-- 4 strokes: 不, 木, 王, 中, 日, 月.
+- 4 strokes: 不, 木, 王, 中, 日, 月, 火.
 
-**力 (c13 fix):** 撇 head must visibly cross the top heng (撇 head
-at y > heng_y, then sweep DOWN through and out lower-left). Top heng
-extends well to the LEFT of the 横折钩's corner (heng start ≈ −150,
-corner ≈ +80). Without the visible cross-through, OCR reads 刀.
+**火 (c14 fix):** apex stub REMOVED entirely (撇/捺 just meet, no
+vertical extra). 点 at x ≈ ±100, at apex height, sloped inward.
+Read as ears flanking the apex.
 
-## Active carry-overs
+## Active carry-overs (5)
 
-c13 attempted all 5 prior + 1 new (天); 1 mastered. Refined diagnoses:
+c14 mastered 火; 5 still failing. Each has a refined diagnosis.
 
-- **火 (6 attempts).** c13 had apex height for 点 (closer than c12),
-  but OCR returned 人. Issue: visible apex stub above 撇/捺 meeting
-  point + 点 too close to apex sides. **Next fix:** REMOVE the apex
-  stub entirely (apex is just the meeting point; no extra vertical
-  above it); push 点 further outward (x ±100, not ±60) so they
-  clearly sit beside the apex as flanking ears.
+- **也 (6 attempts).** c14: hook on 横折钩 + thinner shu — OCR returned
+  empty (different from 卫/山). **Next:** TIGHTER bounding box; strong
+  horizontal connection at the bottom; the three strokes must overlap
+  into one body. Maybe re-think 也 as: 竖弯钩 as the dominant FRAME
+  (sweeps from upper area down + right + hook); other 2 strokes
+  inside that frame.
 
-- **也 (5 attempts).** c13 changed failure mode: OCR returned 山
-  (not 卫). The bottom wraparound now reads like 山's bottom + 凵.
-  **Next fix:** 横折钩 needs a visible 钩 hook at its bottom-left
-  end (currently looks like a 横折); make middle shu thinner so it
-  doesn't compete with the 横折钩 for visual weight.
+- **巴 (5 attempts).** c14 widened the upper frame — still 已 (conf
+  0.681). **Next:** try a SQUARER aspect ratio (less tall, more
+  square) and see if breaking the verticality breaks the 已 prior.
 
-- **巴 (4 attempts).** c13 tri-decker landed — OCR's 已-prior broken
-  (returned 县 instead of 已). Progress but not mastery. **Next
-  fix:** widen the upper frame further so it visibly dominates; OR
-  add a small horizontal at the very top of the 竖弯钩 to suggest
-  the 巳/巴 differentiator.
+- **见 (3 attempts).** c14: OCR returned 凡 (new mode, not 月).
+  Progress. **Next:** smaller top frame; shorter 撇 leg; the 竖弯钩
+  should clearly be the right edge of the frame extended downward.
 
-- **见 (2 attempts).** c13 撇 diverged slightly but OCR still 月.
-  **Next fix:** make the 撇 a DISTINCT third stroke that exits the
-  frame's bottom-left at a clear diagonal (sweep length 150+ px
-  going down-LEFT at ~45°).
+- **天 (2 attempts).** c14: OCR returned 元 again. The 捺 curves
+  too much, reading as 竖弯钩. **Next:** straighter 捺 diagonal,
+  strong horizontal flat-tail kick at the bottom-right.
 
-- **天 (1 attempt).** OCR returned 元. Composition is right (two
-  heng stacked, 撇/捺 below); the 捺 might lack a strong enough
-  flat-tail to read as 捺 rather than a hooked stroke. **Next fix:**
-  emphasize the 捺's flat horizontal kick at the tail (last 15% of
-  the stroke horizontal, near-peak width).
-
-## Soft / completed observations
-
-- c12-c13 confirmed: "OCR-wall" was rationalization. Concrete
-  composition prescriptions are the right response to OCR rejection.
-- Frame family + 钩 family both mature.
+- **了 (1 attempt).** OCR returned 丁. **Next:** make the bottom
+  stroke clearly CURVED (sweeping right then hooking left at bottom),
+  not a straight vertical-with-hook like 丁.
 
 ## What to do next cycle
 
-c14 backlog = 5 (火, 也, 巴, 见, 天). Backlog < 6 → 1 new char
-allowed. Strong recommendation: focus on the carry-overs with the
-clearest next-fixes (all 5 have them) and add 1 simple new char
-that doesn't risk new OCR confusions. Candidates:
-- 几 (2 strokes) — could intro 横折弯钩 family.
-- 了 (2 strokes) — could intro 横钩 (top heng with corner).
-- 之 (3 strokes) — 点 + 横撇 + 捺.
-- 也→也 is what we're working on, skip similar shapes.
-Recommended c14 6th slot: **了** (simple 2-stroke, intro 横钩).
+c15 backlog = 5 (也, 巴, 见, 天, 了). Backlog < 6 → 1 new char
+allowed.
+
+Recommended c15 6th slot — keep new chars simple and far from
+current failures: **三** was already mastered; **小** is 3 strokes
+introducing a vertical-hook + 点 + 点 composition (new for the run).
+Try **小**.
