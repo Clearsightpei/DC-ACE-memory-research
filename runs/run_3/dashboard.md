@@ -1,14 +1,13 @@
-# DC-ACE Dashboard — run_3 — last update: 2026-05-30
+# DC-ACE Dashboard — run_3 — last update: 2026-06-05
 
-- **Cycle**: 16
+- **Cycle**: 17
 - **Phase**: 2
-- **This cycle**: 2/6 mastered (见 10/10, 小 10/10), rubric avg **8.33/10**
-- **Last batch**: [也, 巴, 见, 小, 寸, 万]
-- **Memory size**: ~250 lines / ~9.5 KB
-- **Curator note**: 见 + 小 mastered with their specific prescriptions. Smooth-Bézier rendering landed (also benefited). 4 active carry-overs (也巴寸万).
+- **This cycle**: 0/6 strict-mastered (3/6 OCR-pass: 也 太 几), rubric avg **4.50/10**
+- **Last batch**: [也, 巴, 寸, 万, 太, 几]
+- **Curator note**: Brushwork regression — strokes hairline-thin under c17 prompt; OCR permissive but rubric correctly fails taper=0. Width floors re-asserted in memory.
 - **Loop status**: running.
 
-## Phase-2 mastery (30 chars mastered through c16)
+## Phase-2 mastery (30 chars mastered through c17)
 
 | chars | first | best |
 |---|---|---|
@@ -23,5 +22,5 @@
 | 力 | c13 | 10 |
 | 火 | c14 | 10 |
 | 天 了 | c15 | 10 |
-| **见 小** | **c16** | **10** |
-| 也 巴 寸 万 | — | 6–8 (active) |
+| 见 小 | c16 | 10 |
+| 也 巴 寸 万 太 几 | — | 3–5 (active, c17 brushwork regression) |

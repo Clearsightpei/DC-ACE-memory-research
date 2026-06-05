@@ -1,9 +1,9 @@
 {
-  "cycle": 16, "phase": 2,
-  "last_batch": ["也","巴","见","小","寸","万"],
-  "last_pass_count": 2, "last_total": 6,
-  "last_finished_at": "2026-05-30T21:10:00-04:00",
+  "cycle": 17, "phase": 2,
+  "last_batch": ["也","巴","寸","万","太","几"],
+  "last_pass_count": 0, "last_total": 6,
+  "last_finished_at": "2026-06-05T14:15:00-04:00",
   "batch_size": 6,
-  "pass_signal": "Hard no-skip active.",
-  "notes": "c16: 见 + 小 mastered (10/10). Smooth-Bézier rendering rule landed. 30 chars total. 4 carry: 也巴寸万."
+  "pass_signal": "Hard no-skip + strict rubric (taper=0 fails).",
+  "notes": "c17: brushwork regression (撇 hairline; uniform widths). 3 OCR-pass (也/太/几) but rubric 4-5/10 → 0 strict mastered. Width floors re-asserted. c18 backlog=6 forces carry-over-only."
 }

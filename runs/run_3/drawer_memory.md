@@ -55,46 +55,88 @@ upper-right area through frame to lower-left.
 **小 (c16 fix):** tilted 点 (~45°), teardrop, outer-end heavy,
 tail-toward-center.
 
-## Active carry-overs (4)
+## CRITICAL — brushwork regression in c17 (撇 hairline; uniform widths)
 
-- **也 (8 attempts).** c16 had smooth-Bézier (good) but OCR returned
-  己. Different mode every cycle (people/animal/empty/卫/山/己).
-  Composition is the persistent challenge. **Next:** the 竖弯钩
-  should originate from the UPPER-MIDDLE of the character (not
-  upper-left) and wrap around the others. Make 横折钩 sit clearly
-  INSIDE the 竖弯钩's arc.
+c17 introduced a serious regression: many strokes rendered as
+near-uniform thin lines, and 撇 in 太 was almost invisible (hairline).
+The OCR was permissive (3/6 passed including 也, 太, 几) but the
+calligraphy rubric correctly scored them 4–5/10 (taper=0 on all
+three). **OCR-pass without brushwork is NOT mastery.**
 
-- **巴 (7 attempts).** c16 read as 日 again. **Next:** the 竖弯钩's
-  lower curve must be MUCH longer — doubling the character's
-  vertical extent. The bottom-extending 弯 part must be unmistakable
-  (currently OCR sees just the frame).
+**Required brushwork (re-asserted, MUST NOT regress):**
 
-- **寸 (1 attempt).** OCR returned 下. The 点 didn't register as
-  separate from the 竖钩. **Next:** place 点 to the upper-right
-  (clearly above the heng) OR in the traditional 寸 spot (below
-  heng, beside 竖钩, right side mid-height). Make it visibly
-  separate.
+```python
+def brushed_bezier(t, P0, P1, P2, P3, w_profile, samples=160):
+    t.penup(); t.goto(P0); t.pendown()
+    for i in range(samples + 1):
+        s = i / samples
+        x = (1-s)**3*P0[0] + 3*(1-s)**2*s*P1[0] + 3*(1-s)*s*s*P2[0] + s**3*P3[0]
+        y = (1-s)**3*P0[1] + 3*(1-s)**2*s*P1[1] + 3*(1-s)*s*s*P2[1] + s**3*P3[1]
+        t.pensize(max(3, w_profile(s)))   # NEVER below 3 anywhere
+        t.goto(x, y)
+```
 
-- **万 (1 attempt).** OCR empty. New compound 横折弯钩 didn't render
-  well. **Next:** make the 横折弯钩's bottom curve clearly sweep
-  RIGHT before the up-hook. Currently the bottom curl may not be
-  pronounced enough.
+Width profiles MUST have peak ≥ 14 and middle ≥ 7 (50% of peak).
+The c1–c16 widths were e.g. heng peaks 16–18 with middle 9–11. If
+your `w_profile` returns 2 or 3 anywhere except for the very tip
+of a tapered end, the stroke will read as a hairline and rubric
+taper goes to 0.
+
+**Per-stroke width floor:**
+
+| stroke | peak | middle (shaft) | tip |
+|--------|------|----------------|-----|
+| 横     | 16   | 10             | 6 at both ends-of-taper (not at the very tips, which are weighted) |
+| 竖     | 16   | 10             | 6 |
+| 撇     | 17 at head | 11 shaft | 2 only at the very last 5% |
+| 捺     | 18 at tail | 10 shaft | 4 at head |
+| 提     | 14 at base | 9 shaft | 2 only at very last 5% |
+| 点     | 14 at belly | n/a | 2 at tail |
+
+Compound strokes follow whichever atomic they currently embody; never
+let the whole stroke uniform-thin out.
+
+## Active carry-overs after c17 (6 — all unmastered or regressed)
+
+- **也 (9 attempts).** c17 finally OCR'd as 也 (conf 0.94)! But
+  rubric only 4/10 — taper=0 (uniform lines), composition reads as
+  4 disjoint fragments. **Next:** keep the upper-middle 竖弯钩 +
+  内嵌 横折钩 layout (it works for OCR), but apply proper widths
+  per the cheat sheet — peak 16, middle 10. Integrate the fragments
+  with visible brushed continuity.
+
+- **巴 (8 attempts).** c17 read as 电. Frame too small, 弯钩 too
+  uniform-thin. **Next:** widen the upper frame (it should be wider
+  than tall — currently it's a small square); make 弯钩 brushed
+  with proper widths (peak 16, middle 10).
+
+- **寸 (2 attempts).** c17 OCR'd as 卡 (conf 0.31 < threshold).
+  Composition vaguely correct but brushwork uniform. **Next:** keep
+  the 点 in traditional spot; thicken everything; make the 竖钩 a
+  proper brushed stroke (not a uniform line).
+
+- **万 (2 attempts).** c17 OCR'd as 瓦 with confidence 0.97 —
+  CONFIDENTLY WRONG. The 撇 needs to start ABOVE the heng and
+  dominate. In c17 the 撇 head was at the heng level, so the
+  composition reads as 瓦. **Next:** 撇 head at y > heng_y + 30; 撇
+  sweeps THROUGH the heng to lower-left. Standard width.
+
+- **太 (1 attempt — REGRESSION).** c17 OCR'd as 太 (conf 0.99) but
+  rubric 5/10: 撇 was hairline-thin. **Next:** redraw 大-shape with
+  proper widths (this was MASTERED at 10/10 in c12!), then add the
+  点 below. Reference c12's 大.
+
+- **几 (1 attempt — REGRESSION).** c17 OCR'd as 几 (conf 0.99) but
+  rubric 5/10: 撇 hairline, 横折弯钩 uniform. **Next:** proper
+  widths on both strokes.
 
 ## What to do next cycle
 
-c17 is the final scheduled cycle in this batch. Backlog = 4
-(也, 巴, 寸, 万). Backlog < 6 → 2 new chars allowed. But: focus on
-the carry-overs to maximize mastery growth. Possible c17:
-[也, 巴, 寸, 万, +2 simple fillers like 几, 长 or just one filler
-like 几 + a re-test of a previously mastered character to confirm
-no regression].
+c17 backlog grew to 6 (the no-skip rule triggered on 太/几 too due
+to taper=0). Backlog ≥ 6 forces a carry-overs-only batch. c18 MUST
+be exactly [也, 巴, 寸, 万, 太, 几]. NO new characters until
+brushwork regression is fixed.
 
-Actually with only 1 cycle left and 4 carry-overs, the best play
-is [也, 巴, 寸, 万, + 2 simple chars likely-mastered-first-try].
-Try: **几** (2-stroke 撇 + 横折弯钩), **长** (4-stroke uses 撇/捺
-familiar). Or safer: **公** (4-stroke 撇+捺+厶), **太** (4-stroke
-大+点, leverages mastered 大 + simple 点 addition).
-
-Recommended: **太** (4 strokes — 大 + 点 below: leverages c12's
-mastered 大) and **几** (2 strokes — 撇 + 横折弯钩, second attempt
-at 横折弯钩 in a simpler context than 万's).
+The key fix is RE-ASSERT THE WIDTH FLOORS (see top of this file).
+The drawer subagent has shown over c17 that smooth-Bézier alone
+isn't sufficient — explicit minimum widths are needed.
