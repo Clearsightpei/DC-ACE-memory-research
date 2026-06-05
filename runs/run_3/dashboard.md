@@ -1,13 +1,13 @@
 # DC-ACE Dashboard — run_3 — last update: 2026-06-05
 
-- **Cycle**: 17
+- **Cycle**: 18
 - **Phase**: 2
-- **This cycle**: 0/6 strict-mastered (3/6 OCR-pass: 也 太 几), rubric avg **4.50/10**
+- **This cycle**: 1/6 strict mastered (太 10/10), rubric avg **5.67/10**
 - **Last batch**: [也, 巴, 寸, 万, 太, 几]
-- **Curator note**: Brushwork regression — strokes hairline-thin under c17 prompt; OCR permissive but rubric correctly fails taper=0. Width floors re-asserted in memory.
+- **Curator note**: Width floors restored brushwork (also 万 8/10). But composition precision still gap — 万 silhouette reads as 九; 几 missing 钩; 也 lost 弯钩 sweep.
 - **Loop status**: running.
 
-## Phase-2 mastery (30 chars mastered through c17)
+## Phase-2 mastery (31 chars mastered through c18)
 
 | chars | first | best |
 |---|---|---|
@@ -23,4 +23,5 @@
 | 火 | c14 | 10 |
 | 天 了 | c15 | 10 |
 | 见 小 | c16 | 10 |
-| 也 巴 寸 万 太 几 | — | 3–5 (active, c17 brushwork regression) |
+| **太** | **c18** | **10** |
+| 也 巴 寸 万 几 | — | 2–8 (active) |

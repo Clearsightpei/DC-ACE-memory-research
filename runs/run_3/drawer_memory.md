@@ -48,7 +48,7 @@ that hurt OCR and rubric.
 
 - 1–2 strokes: 一, 二, 十, 人, 八, 又, 入, 力, 了.
 - 3 strokes: 三, 上, 下, 个, 山, 七, 工, 口, 子, 习, 已, 大, 小.
-- 4 strokes: 不, 木, 王, 中, 日, 月, 火, 天, 见.
+- 4 strokes: 不, 木, 王, 中, 日, 月, 火, 天, 见, 太.
 
 **见 (c16 fix):** 撇 as LONG diagonal (>200 px) sweeping from
 upper-right area through frame to lower-left.
@@ -96,47 +96,53 @@ taper goes to 0.
 Compound strokes follow whichever atomic they currently embody; never
 let the whole stroke uniform-thin out.
 
-## Active carry-overs after c17 (6 — all unmastered or regressed)
+## c18 update — width floors WORK (太 10/10 mastered) but cause OCR tradeoffs
 
-- **也 (9 attempts).** c17 finally OCR'd as 也 (conf 0.94)! But
-  rubric only 4/10 — taper=0 (uniform lines), composition reads as
-  4 disjoint fragments. **Next:** keep the upper-middle 竖弯钩 +
-  内嵌 横折钩 layout (it works for OCR), but apply proper widths
-  per the cheat sheet — peak 16, middle 10. Integrate the fragments
-  with visible brushed continuity.
+c18 width floors restored brushwork: 太 mastered 10/10 (canonical
+大-shape + 点), 万 rubric jumped to 8/10. But OCR became more
+sensitive to silhouette shape — 万 read as 九 (撇 head not visibly
+above heng), 几 read as 门 (no visible 钩), 巴 read as 日 (弯钩
+absent in render). **Lesson:** width floors are correct; the
+remaining gap is composition precision — strokes must end where
+the character demands, not just be brushed.
 
-- **巴 (8 attempts).** c17 read as 电. Frame too small, 弯钩 too
-  uniform-thin. **Next:** widen the upper frame (it should be wider
-  than tall — currently it's a small square); make 弯钩 brushed
-  with proper widths (peak 16, middle 10).
+## Active carry-overs after c18 (5)
 
-- **寸 (2 attempts).** c17 OCR'd as 卡 (conf 0.31 < threshold).
-  Composition vaguely correct but brushwork uniform. **Next:** keep
-  the 点 in traditional spot; thicken everything; make the 竖钩 a
-  proper brushed stroke (not a uniform line).
+- **也 (10 attempts).** c17 OCR-passed but rubric 4. c18 lost the
+  竖弯钩 sweep entirely — only upper two heng + small hook remained.
+  **Next:** the 竖弯钩 must dominate the bottom half of the
+  character (sweep from y≈+100 down to y≈-100 then right to x≈+150
+  with a 50px up-hook). The c17 layout was structurally correct;
+  c18 dropped the long sweep. Restore c17 layout WITH width floors.
 
-- **万 (2 attempts).** c17 OCR'd as 瓦 with confidence 0.97 —
-  CONFIDENTLY WRONG. The 撇 needs to start ABOVE the heng and
-  dominate. In c17 the 撇 head was at the heng level, so the
-  composition reads as 瓦. **Next:** 撇 head at y > heng_y + 30; 撇
-  sweeps THROUGH the heng to lower-left. Standard width.
+- **巴 (9 attempts).** c18 read as 日 conf 0.86. The 竖弯钩 below
+  was supposed to be there but appears absent in the render.
+  **Next:** verify the 竖弯钩 actually renders — extend it well
+  below the frame (frame bottom y=-150, 弯钩 bottom y=-280, hook
+  tip y=-260 x=+200). Visually unmistakable.
 
-- **太 (1 attempt — REGRESSION).** c17 OCR'd as 太 (conf 0.99) but
-  rubric 5/10: 撇 was hairline-thin. **Next:** redraw 大-shape with
-  proper widths (this was MASTERED at 10/10 in c12!), then add the
-  点 below. Reference c12's 大.
+- **寸 (3 attempts).** c18 OCR'd 于 conf 0.25. Still ambiguous.
+  **Next:** make 竖钩 hook MORE pronounced (longer leftward hook
+  arm) so it can't be confused with a straight 竖. Move 点 to upper-
+  right area above the heng to differentiate from 于's structure.
 
-- **几 (1 attempt — REGRESSION).** c17 OCR'd as 几 (conf 0.99) but
-  rubric 5/10: 撇 hairline, 横折弯钩 uniform. **Next:** proper
-  widths on both strokes.
+- **万 (3 attempts).** c18 brushwork 8/10 but OCR 九 conf 0.81 —
+  撇 head was at heng level, not above. **Next:** push 撇 head HIGHER
+  — head y = heng_y + 80 (not just +30); the 撇 must START in the
+  empty space ABOVE the heng top, then sweep DOWN through the heng,
+  exiting at lower-left.
+
+- **几 (2 attempts).** c18 brushwork 6/10 but OCR 门 conf 0.83 —
+  no visible 钩 at bottom-right. **Next:** make the 钩 (up-hook at
+  end of 横折弯钩) PROMINENT — hook arm length 60+ px, tip clearly
+  pointing up-and-left. Without the hook 几 reads as 门.
+
+- **(太 MASTERED c18 at 10/10 — removed from carry-overs.)**
 
 ## What to do next cycle
 
-c17 backlog grew to 6 (the no-skip rule triggered on 太/几 too due
-to taper=0). Backlog ≥ 6 forces a carry-overs-only batch. c18 MUST
-be exactly [也, 巴, 寸, 万, 太, 几]. NO new characters until
-brushwork regression is fixed.
-
-The key fix is RE-ASSERT THE WIDTH FLOORS (see top of this file).
-The drawer subagent has shown over c17 that smooth-Bézier alone
-isn't sufficient — explicit minimum widths are needed.
+c19 backlog = 5 (也, 巴, 寸, 万, 几). Backlog < 6 → 1 new char
+allowed. Recommended c19: [也, 巴, 寸, 万, 几, + 1 new].
+For the new char, pick something far from any OCR-confusing
+silhouette — e.g. **公** (4-stroke 八+厶, distinct from anything
+on the failure list).
