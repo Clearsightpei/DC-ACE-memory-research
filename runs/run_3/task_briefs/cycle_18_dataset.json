@@ -1,0 +1,12 @@
+{
+  "judge": {"eval": "gt+ocr+vision", "use_ocr": true,
+    "mastery": "is_correct AND ocr_confidence>=0.4 AND rubric>=7 no 0. Hard no-skip + strict rubric (taper=0 fails)."},
+  "characters": [
+    {"index": 1, "character": "也", "pinyin": "ye"},
+    {"index": 2, "character": "巴", "pinyin": "ba"},
+    {"index": 3, "character": "寸", "pinyin": "cun"},
+    {"index": 4, "character": "万", "pinyin": "wan"},
+    {"index": 5, "character": "太", "pinyin": "tai"},
+    {"index": 6, "character": "几", "pinyin": "ji"}
+  ]
+}

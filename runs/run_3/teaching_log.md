@@ -190,6 +190,18 @@ prior entries.
   read 大 attempts as 天 — teaching 天 explicitly anchors the
   distinction.
 
+## Cycle 18 — 2026-06-05
+
+- Phase: 2
+- Batch: [也, 巴, 寸, 万, 太, 几]
+- Carry-overs: **all 6** (backlog hit 6 after c17 brushwork regression
+  triggered no-skip on 太/几 too — rubric taper=0 fails mastery
+  despite OCR-pass).
+- Tools (eval): **gt+ocr+vision**. use_ocr=true.
+- Why this batch: enforce per-stroke width floors. c17 proved that
+  smooth-Bézier alone isn't enough — explicit minimum widths needed
+  to prevent hairline strokes.
+
 ## Cycle 14 — 2026-05-30
 
 - Phase: 2
