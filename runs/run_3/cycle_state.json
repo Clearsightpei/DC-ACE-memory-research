@@ -1,9 +1,9 @@
 {
-  "cycle": 18, "phase": 2,
-  "last_batch": ["也","巴","寸","万","太","几"],
-  "last_pass_count": 1, "last_total": 6,
-  "last_finished_at": "2026-06-05T14:18:00-04:00",
+  "cycle": 19, "phase": 2,
+  "last_batch": ["也","巴","寸","万","几","公"],
+  "last_pass_count": 0, "last_total": 6,
+  "last_finished_at": "2026-06-05T14:24:00-04:00",
   "batch_size": 6,
   "pass_signal": "Hard no-skip + strict rubric.",
-  "notes": "c18: width floors restored brushwork. 太 MASTERED 10/10. 万 brushwork 8/10 but OCR 九. 31 chars mastered. 5 carry (也巴寸万几)."
+  "notes": "c19: 0 strict. Brushwork solid (avg 6/10, peaks 8/10 万/公). Composition precision wall — silhouettes near-miss OCR class boundaries (万→力, 公→今, 巴→甲, 寸→十). 31 chars mastered. Likely freeze + POSTMORTEM after c20."
 }

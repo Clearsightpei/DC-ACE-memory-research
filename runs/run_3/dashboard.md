@@ -1,13 +1,15 @@
 # DC-ACE Dashboard — run_3 — last update: 2026-06-05
 
-- **Cycle**: 18
+- **Cycle**: 19
 - **Phase**: 2
-- **This cycle**: 1/6 strict mastered (太 10/10), rubric avg **5.67/10**
-- **Last batch**: [也, 巴, 寸, 万, 太, 几]
-- **Curator note**: Width floors restored brushwork (also 万 8/10). But composition precision still gap — 万 silhouette reads as 九; 几 missing 钩; 也 lost 弯钩 sweep.
+- **This cycle**: 0/6 strict mastered, rubric avg **6.0/10** (brushwork solid)
+- **Last batch**: [也, 巴, 寸, 万, 几, 公]
+- **Curator note**: Composition precision wall identified. Brushwork good (avg 6/10, peaks 8/10 on 万 + 公). OCR class boundary near-misses: 万→力, 公→今, 巴→甲, 寸→十. Likely run_3 finding ceiling.
 - **Loop status**: running.
 
-## Phase-2 mastery (31 chars mastered through c18)
+## Phase-2 mastery (31 chars through c19)
+
+(Same as c18 — no new mastery this cycle.)
 
 | chars | first | best |
 |---|---|---|
@@ -23,5 +25,5 @@
 | 火 | c14 | 10 |
 | 天 了 | c15 | 10 |
 | 见 小 | c16 | 10 |
-| **太** | **c18** | **10** |
-| 也 巴 寸 万 几 | — | 2–8 (active) |
+| 太 | c18 | 10 |
+| 也 巴 寸 万 几 公 | — | 4–8 (active, OCR-boundary near-misses) |

@@ -106,7 +106,28 @@ absent in render). **Lesson:** width floors are correct; the
 remaining gap is composition precision — strokes must end where
 the character demands, not just be brushed.
 
-## Active carry-overs after c18 (5)
+## c19 finding — composition precision wall
+
+c19: 0/6 mastered despite brushwork rubric averaging 6/10 (万 8/10,
+公 8/10 — both gorgeous). Each failure has the SAME structure: the
+brushwork is good, but the silhouette lands on the wrong side of an
+OCR class boundary by a small margin:
+
+- 万 brushwork 8/10 → OCR 力 (need bigger 撇 dominance)
+- 公 brushwork 8/10 → OCR 今 (厶 needs closed triangle, not open hook)
+- 巴 → 甲 (cross-divider in frame makes interior grid-like)
+- 寸 → 十 (点 in upper-right merged with heng)
+- 几 → empty (overshot 钩 broke recognition)
+- 也 → empty (3 disjoint pieces, no integrating sweep)
+
+**This is the experimental finding of c17–c19**: text-brief
+geometric prescription gets the BRUSHWORK right but cannot reliably
+land the SILHOUETTE within the correct OCR class for idiosyncratic
+characters. Mastered chars (31/31) were structurally simpler. Each
+failure here is a near-miss that the Drawer cannot self-correct from
+prose alone.
+
+## Active carry-overs after c19 (5 + 公 = 6)
 
 - **也 (10 attempts).** c17 OCR-passed but rubric 4. c18 lost the
   竖弯钩 sweep entirely — only upper two heng + small hook remained.
