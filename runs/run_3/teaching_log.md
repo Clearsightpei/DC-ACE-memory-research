@@ -202,6 +202,18 @@ prior entries.
   smooth-Bézier alone isn't enough — explicit minimum widths needed
   to prevent hairline strokes.
 
+## Cycle 19 — 2026-06-05
+
+- Phase: 2
+- Batch: [也, 巴, 寸, 万, 几, 公]
+- Carry-overs: **5** (也/巴/寸/万/几). c18 mastered 太 (10/10),
+  backlog dropped to 5 → 1 new char allowed. Picked 公 (八+厶,
+  distinct silhouette).
+- Tools (eval): **gt+ocr+vision**. use_ocr=true.
+- Why this batch: each carry-over has a c18-refined composition
+  diagnosis (vertical extent for 弯钩 chars; 撇-above-heng for 万;
+  prominent 钩 for 几).
+
 ## Cycle 14 — 2026-05-30
 
 - Phase: 2
