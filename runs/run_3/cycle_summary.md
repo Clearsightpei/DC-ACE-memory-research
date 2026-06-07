@@ -1,1 +1,1 @@
-Cycle 24 (run_3, 5 carry + 女): **1/6 mastered (女 10/10 first try!)**. 36 chars. 4 chars remain in stuck-loop: 也(15x→卫), 寸(8x→于), 万(8x→力), 公(6x→六), 为(2x→六). Pattern: stable rubric 4-8 but OCR persistently mis-classifies. These 5 may be at the text-prescription ceiling.
+Cycle 25 (run_3, 5 carry + 东): **2/6 mastered (公 10/10 + 为 10/10!)**. 37 chars total. 厶-as-open-triangle prescription worked for 公; prominent slanted top 点 worked for 为. 3 stuck: 也 (16x → empty/卫 family), 寸 (9x → 十/于), 万 (9x → 力/方). 东 first try → 不 (close).
