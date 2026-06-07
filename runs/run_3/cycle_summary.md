@@ -1,1 +1,1 @@
-Cycle 21 (run_3, 5 carry + 夫): **1/6 mastered (巴 9/10 after 12 attempts!)**. Stacked-double frame + dominant 弯钩 cracked the OCR boundary. 33 chars total. 也 empty (open 横折钩 broke it). 寸→十 (still). 万→方 (closer!). 公 empty (gap broke it). 夫 empty (rubric 10/10 but OCR doesn't read).
+Cycle 22 (run_3, 5 carry + 车): **1/6 mastered (车 10/10 first try)**. 34 chars total. 也 empty (13 attempts). 寸→于. 万→力 still. 公 lost 厶 entirely. 夫→共 (close visually).

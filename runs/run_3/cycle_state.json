@@ -1,5 +1,5 @@
-{"cycle": 21, "phase": 2, "last_batch": ["也","巴","寸","万","公","夫"],
+{"cycle": 22, "phase": 2, "last_batch": ["也","寸","万","公","夫","车"],
  "last_pass_count": 1, "last_total": 6,
- "last_finished_at": "2026-06-07T16:42:00-04:00",
+ "last_finished_at": "2026-06-07T16:46:00-04:00",
  "batch_size": 6, "pass_signal": "Hard no-skip + strict rubric.",
- "notes": "c21: 巴 MASTERED after 12 attempts. 33 chars. 5 carry: 也寸万公夫."}
+ "notes": "c22: 车 MASTERED first try. 34 chars. 5 carry: 也寸万公夫."}
