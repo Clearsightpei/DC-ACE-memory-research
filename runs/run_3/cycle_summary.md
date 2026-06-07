@@ -1,1 +1,1 @@
-Cycle 23 (run_3, 5 carry + 为): **1/6 mastered (夫 10/10!)**. Short top heng + long lower heng with gap 150 worked. 35 chars total. 也 14 attempts still failing. 寸→小 ‎. 万→力. 公→今. 为→六.
+Cycle 24 (run_3, 5 carry + 女): **1/6 mastered (女 10/10 first try!)**. 36 chars. 4 chars remain in stuck-loop: 也(15x→卫), 寸(8x→于), 万(8x→力), 公(6x→六), 为(2x→六). Pattern: stable rubric 4-8 but OCR persistently mis-classifies. These 5 may be at the text-prescription ceiling.
