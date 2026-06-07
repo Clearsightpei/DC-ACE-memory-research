@@ -1,0 +1,9 @@
+{"judge":{"eval":"gt+ocr+vision","use_ocr":true,"mastery":"is_correct AND conf>=0.4 AND rubric>=7 no 0."},
+ "characters":[
+   {"index":1,"character":"也","pinyin":"ye"},
+   {"index":2,"character":"寸","pinyin":"cun"},
+   {"index":3,"character":"万","pinyin":"wan"},
+   {"index":4,"character":"公","pinyin":"gong"},
+   {"index":5,"character":"为","pinyin":"wei"},
+   {"index":6,"character":"东","pinyin":"dong"}
+ ]}
