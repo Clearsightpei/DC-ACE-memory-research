@@ -49,6 +49,7 @@ that hurt OCR and rubric.
 - 1–2 strokes: 一, 二, 十, 人, 八, 又, 入, 力, 了.
 - 3 strokes: 三, 上, 下, 个, 山, 七, 工, 口, 子, 习, 已, 大, 小.
 - 4 strokes: 不, 木, 王, 中, 日, 月, 火, 天, 见, 太.
+- 2-stroke: 几 (c20 — moderate hook landed, 40px not 60+).
 
 **见 (c16 fix):** 撇 as LONG diagonal (>200 px) sweeping from
 upper-right area through frame to lower-left.
