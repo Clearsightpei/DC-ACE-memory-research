@@ -256,3 +256,11 @@ prior entries.
   chars 太 (leverages c12-mastered 大 + 点 to differentiate from 大)
   and 几 (compact 2-stroke, 2nd attempt at 横折弯钩 in a simpler
   context than 万's). Last cycle of this 6-cycle batch.
+
+## Cycle 20 — 2026-06-05
+- Phase: 2
+- Batch: [也, 巴, 寸, 万, 几, 公]
+- Carry-overs: all 6 (forced — backlog hit 6 after c19).
+- Tools (eval): gt+ocr+vision.
+- Why this batch: pixel-level boundary fixes per c19 OCR-class diagnoses (also 弯钩 must wrap the others; 巴 remove middle divider; 寸 点 in lower-right; 万 撇 VERY high above heng; 几 moderate 钩; 公 厶 closure).
+
