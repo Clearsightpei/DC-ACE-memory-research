@@ -1,1 +1,1 @@
-Cycle 20 (run_3, 6 carry, eval=gt+ocr+vision): **1/6 mastered (几 10/10)** — moderate hook (40px) landed. 32 chars total. 也→吧 conf 0.76 (composition close, contains 也). 巴→已 (frame fix lost detail). 寸→于 (0.34 < threshold). 万→九 (still). 公→今 (closure didn't help). 5 carry-overs: 也巴寸万公.
+Cycle 21 (run_3, 5 carry + 夫): **1/6 mastered (巴 9/10 after 12 attempts!)**. Stacked-double frame + dominant 弯钩 cracked the OCR boundary. 33 chars total. 也 empty (open 横折钩 broke it). 寸→十 (still). 万→方 (closer!). 公 empty (gap broke it). 夫 empty (rubric 10/10 but OCR doesn't read).
