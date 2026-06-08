@@ -1,10 +1,10 @@
 {
-  "cycle": 1,
+  "cycle": 2,
   "phase": 1,
   "current_focus": null,
   "last_outcome": "mastered",
-  "last_finished_at": "2026-06-07T20:30:00-04:00",
-  "success_bank_size": 1,
+  "last_finished_at": "2026-06-07T22:10:00-04:00",
+  "success_bank_size": 2,
   "pass_signal": "Three-bank memory. ONE focus per cycle. Two-phase for chars (Phase 3+); single-phase for atomic/compound strokes (Phase 1/2). Self-preview budget 2 per phase. Mastery: is_correct AND ocr_confidence>=0.4 AND rubric>=7 no 0 (chars); rubric>=7 no 0 (strokes).",
-  "notes": "c1: 横 mastered 10/10 first try. Success Bank seeded. Principle Bank §1/§2.1/§5.3 seeded. Visual index built."
+  "notes": "c2: 竖 mastered 10/10 first try. §2.1 reuse interface verified."
 }

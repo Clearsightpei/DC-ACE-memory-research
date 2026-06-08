@@ -36,6 +36,23 @@ closing press 19 (right end is heaviest, this is the 收笔).
 
 Established by c1 (rubric 10/10).
 
+### §1.2 — 竖 (shu, vertical stroke, 垂露 variant)
+
+**To draw 竖**: use `success_bank/code/shu.py`'s `draw(t, ox=0,
+oy=0, scale=1.0)`. Canonical endpoints (0, +200) → (0, -200),
+perfectly vertical. Width profile: symmetric barbell — top
+press 16 → shaft 11 → bottom 垂露 press 18.
+
+The 垂露 (rounded-bottom) variant is preferred over 悬针
+(needle-tip) for general reuse inside compound characters. If a
+needle-tip is needed later (e.g. lone 竖 in 中, 十), add a separate
+`shu_needle.py` entry rather than modifying this one.
+
+Established by c2 (rubric 10/10). Also verified the §2.1 reuse
+interface: shu.py imports `brushed_bezier` from heng.py rather than
+duplicating the helper. This is the canonical pattern for future
+entries.
+
 
 ---
 
