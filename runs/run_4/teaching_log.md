@@ -78,3 +78,7 @@ prior entries.
 - Phase 2. Focus: 横折钩.
 - Combines c7 (横折) + c8 (hook). Three segments per §1.5.
 - Success Bank size before: 8.
+
+## Cycle 10
+- Phase 2. Focus: 竖弯钩. The 钩 family signature stroke.
+- Three segments — first compound with a true CURVED middle segment (not a straight arm + sharp turn).
