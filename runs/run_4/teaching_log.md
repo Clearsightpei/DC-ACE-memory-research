@@ -107,3 +107,5 @@ prior entries.
 - Phase 3. Focus: 三. Three-call composition of 横.
 
 ## Cycle 17 — 十. heng+shu intersection.
+
+## Cycle 18 — 八. 撇+捺 separated (gap-top).
