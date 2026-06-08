@@ -113,3 +113,5 @@ prior entries.
 ## Cycle 19 — 人. Same as 八 but 撇/捺 SHARE apex.
 
 ## Cycle 20 — 入. 捺 dominant + 撇 partway down 捺.
+
+## Cycle 21 — 大. heng + 撇 + 捺, limbs above heng + sweep past.
