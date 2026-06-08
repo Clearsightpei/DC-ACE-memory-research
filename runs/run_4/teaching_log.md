@@ -105,3 +105,5 @@ prior entries.
 
 ## Cycle 16
 - Phase 3. Focus: 三. Three-call composition of 横.
+
+## Cycle 17 — 十. heng+shu intersection.
