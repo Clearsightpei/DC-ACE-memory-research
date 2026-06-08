@@ -90,6 +90,14 @@ Width profile:
 - Main sweep: 5 → 8 → 14 → 18.
 - Flat kick: 18 → 16 (press hold, 25%) → 3 (release, 75%).
 
+### §1.4b — 提 (ti, upward flick)
+
+**To draw 提**: use `success_bank/code/ti.py`'s `draw(...)`. Endpoints
+base (-100, -80) → tip (+150, +60); about 250 px length. Width
+profile 14 → 11 → 9 → 3 (same tapered-tip family as 撇, lighter
+peak). Established by c5 (rubric 10/10) — reused the c3 lesson that
+12% taper window reads smoother than shorter windows.
+
 ### §1.5 — Two-segment stitched strokes (general pattern)
 
 (Established by c4 with 捺's main + kick segments.)
