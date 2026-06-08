@@ -62,3 +62,9 @@ prior entries.
 - Phase 1. Focus: 点. Last atomic.
 - Different family — short, teardrop-shaped, both ends thin.
 - Success Bank size before: 5.
+
+## Cycle 7 — 2026-06-07
+
+- Phase 2 (compound strokes) BEGINS. Focus: 横折.
+- First compound stroke using the §1.5 two-segment pattern from c4.
+- Success Bank size before: 6 (all 6 atomics).
