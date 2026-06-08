@@ -1,0 +1,5 @@
+Drawer audit — cycle 2 (2026-06-08T05:07:28Z)
+01_竖.png
+generated.py
+---forbidden refs---
+(clean)
