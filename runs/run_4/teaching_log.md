@@ -102,3 +102,6 @@ prior entries.
 ## Cycle 15
 - Phase 3. Focus: 二.
 - Composes 横 (×2) with translate/scale. Short top + long bottom convention.
+
+## Cycle 16
+- Phase 3. Focus: 三. Three-call composition of 横.
