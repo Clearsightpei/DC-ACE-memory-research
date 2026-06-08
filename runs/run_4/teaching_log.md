@@ -93,3 +93,8 @@ prior entries.
 ## Cycle 13
 - Phase 2 LAST compound. Focus: 横折弯钩.
 - 4 segments — composes c7 heng+turn + c10 curve+hook.
+
+## Cycle 14
+- Phase 3 BEGINS. Focus: 一. FIRST two-phase cycle (skeleton + brushwork).
+- Prerequisites verified: 横 in Success Bank.
+- Numeric heng target derived from graphics.txt: (-160,-100)→(+160,-100).
