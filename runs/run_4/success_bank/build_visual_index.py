@@ -20,7 +20,9 @@ OUT = os.path.join(RUN_DIR, 'success_bank', 'visual', 'visual_index.png')
 entries = []
 with open(INDEX) as f:
     for line in f:
-        m = re.match(r'^\|\s*(\S)\s*\|.*\bc(\d+)\s*\|', line)
+        # Match the char column. Atomic strokes are 1 char, compound strokes
+        # can be 2+ chars (e.g. 横折). Stop at the next | or whitespace before |.
+        m = re.match(r'^\|\s*(\S+?)\s*\|.*\bc(\d+)\s*\|', line)
         if m:
             entries.append((m.group(1), int(m.group(2))))
 
