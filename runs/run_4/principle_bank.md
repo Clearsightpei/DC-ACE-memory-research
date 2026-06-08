@@ -72,6 +72,49 @@ a gentle concave-down arc. Width profile: head 18 → shaft 14 → 11
 
 Established by c3 (rubric 10/10).
 
+### §1.4 — 捺 (na, right-diagonal with flat kick, 斜捺 variant)
+
+**To draw 捺**: use `success_bank/code/na.py`'s `draw(...)`. The
+critical difference from 撇: 捺's width profile is REVERSED
+(thin head → heavy tail) and it has a **flat-kick** tail (顿笔 +
+出锋), not a tapered point.
+
+Canonical segments:
+- **Main sweep**: head (-150, +200) → kick base (+170, -180).
+  Controls bow the centerline below the straight line → gentle
+  concave-UP arc (opposite of 撇's concave-down).
+- **Flat kick**: (+170, -180) → (+240, -172). Short ~70 px,
+  near-horizontal release.
+
+Width profile:
+- Main sweep: 5 → 8 → 14 → 18.
+- Flat kick: 18 → 16 (press hold, 25%) → 3 (release, 75%).
+
+### §1.5 — Two-segment stitched strokes (general pattern)
+
+(Established by c4 with 捺's main + kick segments.)
+
+When a stroke has a distinct **terminal feature** (kick, hook,
+turn) that has different width and direction than the main sweep,
+implement it as **TWO Bézier segments stitched at a junction**:
+
+1. **Segment A** = the main sweep. End its centerline pointing
+   tangentially toward the next segment's direction by placing A's
+   final control point (A2) near the junction in the direction of
+   B's first control point (B1).
+2. **Segment B** = the terminal feature. Start at A's endpoint
+   (A3 == B0).
+3. Use independent `w_profile` functions for each segment so the
+   width can change discontinuously across the junction if needed
+   (e.g. 捺's kick starts at the same width A ended at, then has
+   its own press-and-release sub-curve).
+
+This pattern is what makes 横折, 竖钩, 横折钩, 竖弯钩, 横撇,
+横折弯钩, 撇点 all expressible as small variations on a shared
+structure. The c4 self-preview verified that **tangential junction
+control** (pulling A2 toward the next segment's direction)
+eliminates the angular-notch artifact at the junction.
+
 
 ---
 

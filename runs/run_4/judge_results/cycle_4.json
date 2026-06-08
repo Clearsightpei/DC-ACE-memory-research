@@ -1,0 +1,26 @@
+[
+  {
+    "index": 1,
+    "stroke_key": "L1_Stroke_Na_1",
+    "stroke": "捺",
+    "pinyin": "na",
+    "calligraphy_rubric": {
+      "dunbi": 2,
+      "hudu": 2,
+      "taper": 2,
+      "proportion": 2,
+      "overall": 2,
+      "total": 10,
+      "max": 10,
+      "rationale": {
+        "dunbi": "Heavy 顿笔 press at the kick base + flat 出锋 release — the diagnostic 捺 signature.",
+        "hudu": "Gentle concave-up arc, large radius — natural curvature.",
+        "taper": "Reversed-vs-撇 profile (thin head 5 → heavy tail 18) clearly visible; smooth transition.",
+        "proportion": "Main sweep ~430 px diagonal mirrors 撇's length; kick ~70 px is appropriate.",
+        "overall": "Canonical 楷书 斜捺. Drawer's two-segment approach + tangential junction (iter-1→2 refinement) produced a kick that reads as a deliberate flat release, not a notch."
+      },
+      "scored_by": "orchestrator-vision",
+      "rubric_version": 1
+    }
+  }
+]
