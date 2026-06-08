@@ -1,1 +1,1 @@
-Cycle 8: 竖钩 MASTERED 10/10. The junction-tangency trick from c4 (nudge A2 toward the next segment) generalized cleanly to the hook variant. Visual: 8 entries.
+Cycle 9: 横折钩 MASTERED 10/10 first try. THREE-segment compound (heng + shu + hook) — confirms §1.5 pattern extends to N segments with N-1 tangency junctions. 9 entries.
