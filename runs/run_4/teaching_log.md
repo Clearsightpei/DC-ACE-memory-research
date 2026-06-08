@@ -117,3 +117,5 @@ prior entries.
 ## Cycle 21 — 大. heng + 撇 + 捺, limbs above heng + sweep past.
 
 ## Cycle 22 — 又. 横撇 + 捺 crossing.
+
+## Cycle 23 — 力. 横折钩 + 撇 through heng.
