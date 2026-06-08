@@ -50,3 +50,4 @@ visual reference** (it shows the Drawer's own past outputs, not GT).
 | 三    | [code/san.py](code/san.py) | 10/10 (OCR 三, visual 0.64) | tag:character tag:3-strokes tag:heng-stacked | c16 |
 | 十    | [code/shi.py](code/shi.py) | 10/10 (OCR 十, visual 0.72) | tag:character tag:2-strokes tag:heng+shu | c17 |
 | 八    | [code/ba.py](code/ba.py) | 10/10 (OCR 八, visual 0.42) | tag:character tag:2-strokes tag:撇捺-separated | c18 |
+| 入    | [code/ru.py](code/ru.py) | 10/10 (OCR 入, visual 0.58) | tag:character tag:2-strokes tag:捺-dominant tag:asymmetric | c20 |
