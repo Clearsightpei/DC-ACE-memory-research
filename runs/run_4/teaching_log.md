@@ -89,3 +89,7 @@ prior entries.
 
 ## Cycle 12
 - Phase 2. Focus: 竖折. Bottom-left L frame for 山/凶/区.
+
+## Cycle 13
+- Phase 2 LAST compound. Focus: 横折弯钩.
+- 4 segments — composes c7 heng+turn + c10 curve+hook.
