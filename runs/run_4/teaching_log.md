@@ -68,3 +68,8 @@ prior entries.
 - Phase 2 (compound strokes) BEGINS. Focus: 横折.
 - First compound stroke using the §1.5 two-segment pattern from c4.
 - Success Bank size before: 6 (all 6 atomics).
+
+## Cycle 8 — 2026-06-07
+- Phase 2. Focus: 竖钩.
+- Same two-segment pattern as 横折 but the second segment is a tapered hook (like 撇's tail family).
+- Success Bank size before: 7.
