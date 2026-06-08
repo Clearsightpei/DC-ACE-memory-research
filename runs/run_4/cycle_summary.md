@@ -1,1 +1,1 @@
-Cycle 12: 竖折 MASTERED 10/10 first try. Mirror of 横折 (c7). 12 entries.
+Cycle 13: 横折弯钩 MASTERED 10/10 first try. PHASE 2 COMPLETE — all 13 atomic + compound strokes mastered. The §1.5 pattern handled 2/3/4-segment compounds, sharp corners, curved middles, and tapered hooks all uniformly. Next: Phase 3 — first character 一 (FIRST two-phase cycle with skeleton+brushwork+GT).
