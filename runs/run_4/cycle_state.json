@@ -1,1 +1,1 @@
-{"cycle":13,"phase":2,"current_focus":null,"last_outcome":"mastered","last_finished_at":"2026-06-07T23:12:00-04:00","success_bank_size":13,"notes":"c13: 横折弯钩 mastered. PHASE 2 COMPLETE (6 atomic + 7 compound strokes)."}
+{"cycle":14,"phase":3,"current_focus":null,"last_outcome":"mastered","last_finished_at":"2026-06-07T23:08:00-04:00","success_bank_size":14,"pass_signal":"Phase 3+: skel→brush two-phase. Mastery: is_correct AND ocr_confidence>=0.4 AND rubric>=7 no 0.","notes":"c14: 一 mastered 10/10, OCR 0.77, visual 0.85. Two-phase architecture validated."}

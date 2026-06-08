@@ -45,3 +45,4 @@ visual reference** (it shows the Drawer's own past outputs, not GT).
 | 横撇  | [code/heng_pie.py](code/heng_pie.py) | 10/10 | tag:compound-stroke tag:横撇 tag:tapered-tip tag:multi-segment tag:corner-顿笔 | c11 |
 | 竖折  | [code/shu_zhe.py](code/shu_zhe.py) | 10/10 | tag:compound-stroke tag:竖折 tag:multi-segment tag:corner-顿笔 | c12 |
 | 横折弯钩 | [code/heng_zhe_wan_gou.py](code/heng_zhe_wan_gou.py) | 10/10 | tag:compound-stroke tag:横折弯钩 tag:hook tag:multi-segment tag:corner-顿笔 tag:curved-middle | c13 |
+| 一    | [code/yi.py](code/yi.py) | 10/10 (OCR 一 conf 0.77, visual 0.85) | tag:character tag:1-stroke tag:heng tag:component-of(三,二,王,工,干,上,下) | c14 |

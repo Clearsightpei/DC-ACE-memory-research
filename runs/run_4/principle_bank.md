@@ -206,6 +206,28 @@ run_4 splits each character into two phases:
 (Width-floor table and Bézier helper to be added once the first
 atomic-stroke recipes are mastered in run_4 cycle 1–2.)
 
+### §5.2 — Phase-3 characters: skeleton-then-brushwork (verified c14)
+
+For Phase 3+ characters where a GT exists, the cycle splits in two:
+
+**Phase A (skeleton):** Drawer writes `generated_skel.py` with
+uniform pensize 3 and saves `01_<char>_skel.png`. Curator compares
+this skeleton against the GT (GT is also skeleton — graphics.txt
+has no brushwork). If composition (endpoints + topology) matches,
+Curator writes `SKELETON_APPROVED`.
+
+**Phase B (brushwork):** Only invoked if Phase A is approved. Drawer
+composes mastered Success Bank components by calling their `draw()`
+functions with appropriate (ox, oy, scale) translations. **MUST NOT
+change skeleton endpoints.** The brushwork is inherited from the
+constituent Success Bank entries; you only translate/scale them
+into character position.
+
+Verified by c14 (一): single function call `draw_heng(t, ox=0,
+oy=-100, scale=0.8)` reproduced the c1 mastered brushwork at the
+GT-derived position. OCR 一 conf 0.77, visual 0.85, rubric 10/10
+— first try.
+
 ### §5.3 — Atomic strokes are SINGLE-PHASE
 
 (Established by c1 design.)

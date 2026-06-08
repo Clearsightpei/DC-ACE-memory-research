@@ -1,11 +1,12 @@
 # DC-ACE Dashboard — run_4 — last update: 2026-06-07
 
-- **Cycle**: 4
-- **Educational phase**: 1 (atomic strokes) — 4/6 atomics done
-- **Current focus**: none (just mastered 捺)
-- **This cycle**: 捺 MASTERED 10/10 (single-phase, eval=vision)
-- **Success Bank**: 4 entries — 横, 竖, 撇, 捺
-- **Principle Bank**: §1.0–§1.4 (per-stroke recipes), §1.5 (two-segment pattern), §2.1 (reuse), §5.3 (atomic single-phase)
-- **Trend**: 4/4 mastered first-cycle. Cumulative mastery rate 100%.
-- **Curator note**: c4 established the two-segment stitched-stroke pattern that will template every compound stroke coming up. Self-preview budget is doing real refinement work (taper at c3, junction at c4).
+- **Cycle**: 14
+- **Educational phase**: 3 (Phase 3 BEGINS — Phase 1+2 complete)
+- **Current focus**: none (just mastered 一)
+- **This cycle**: 一 MASTERED 10/10 (FIRST two-phase cycle: skel→brush)
+- **Success Bank**: 14 entries
+- **Visual_score**: 0.85 (vs run_1/run_3 chars typically 0.03–0.40 — major improvement from skeleton-first)
+- **Principle Bank**: §1.0–§1.5b (per-stroke recipes + tapered-tip), §2.1 (reuse interface), §5.2 (skeleton-then-brushwork validated), §5.3 (atomic single-phase)
+- **Trend**: 14/14 mastered (every cycle first-try)
+- **Curator note**: Two-phase architecture works. The mastered Success Bank composes through translate/scale into characters; brushwork is inherited automatically. Phase 3 is unlocked.
 - **Loop status**: running.
