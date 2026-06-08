@@ -1,0 +1,26 @@
+[
+  {
+    "index": 1,
+    "stroke_key": "L1_Stroke_Heng_1",
+    "stroke": "横",
+    "pinyin": "heng",
+    "calligraphy_rubric": {
+      "dunbi": 2,
+      "hudu": 2,
+      "taper": 2,
+      "proportion": 2,
+      "overall": 2,
+      "total": 10,
+      "max": 10,
+      "rationale": {
+        "dunbi": "Both ends weighted; right (closing 收笔) clearly heaviest — distinct rounded press.",
+        "hudu": "Gentle upward tilt with subtle Bézier curvature — natural, not robotic-straight.",
+        "taper": "Clear shaft-narrower-than-ends taper; closing peak ≈19, shaft ≈11, well above 50% floor.",
+        "proportion": "Centered on origin, ~400 px length — balanced.",
+        "overall": "Reads as canonical 楷书 横 — heavy entry, thinner shaft, heavier closing press, slight rise."
+      },
+      "scored_by": "orchestrator-vision",
+      "rubric_version": 1
+    }
+  }
+]
