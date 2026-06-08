@@ -73,3 +73,8 @@ prior entries.
 - Phase 2. Focus: 竖钩.
 - Same two-segment pattern as 横折 but the second segment is a tapered hook (like 撇's tail family).
 - Success Bank size before: 7.
+
+## Cycle 9 — 2026-06-07
+- Phase 2. Focus: 横折钩.
+- Combines c7 (横折) + c8 (hook). Three segments per §1.5.
+- Success Bank size before: 8.
