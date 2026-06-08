@@ -38,3 +38,4 @@ visual reference** (it shows the Drawer's own past outputs, not GT).
 | 捺    | [code/na.py](code/na.py)     | 10/10 | tag:atomic-stroke tag:捺 tag:斜捺 tag:flat-kick-tail tag:multi-segment | c4 |
 | 提    | [code/ti.py](code/ti.py)     | 10/10 | tag:atomic-stroke tag:提 tag:tapered-tip | c5 |
 | 点    | [code/dian.py](code/dian.py) | 10/10 | tag:atomic-stroke tag:点 tag:右点 | c6 |
+| 横折  | [code/heng_zhe.py](code/heng_zhe.py) | 10/10 | tag:compound-stroke tag:横折 tag:multi-segment tag:corner-顿笔 | c7 |
