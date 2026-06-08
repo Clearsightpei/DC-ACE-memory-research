@@ -98,3 +98,7 @@ prior entries.
 - Phase 3 BEGINS. Focus: 一. FIRST two-phase cycle (skeleton + brushwork).
 - Prerequisites verified: 横 in Success Bank.
 - Numeric heng target derived from graphics.txt: (-160,-100)→(+160,-100).
+
+## Cycle 15
+- Phase 3. Focus: 二.
+- Composes 横 (×2) with translate/scale. Short top + long bottom convention.
