@@ -1,0 +1,48 @@
+[
+  {
+    "index": 1,
+    "character": "二",
+    "pinyin": "er",
+    "visual_score": 0.7261,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.586,
+      "chamfer": 0.779,
+      "chamfer_px": 7.49,
+      "proportion": 0.9005,
+      "ar_term": 0.9005,
+      "quad_term": 0.9615
+    },
+    "recognized_char": "二",
+    "ocr_confidence": 0.9871,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "# Top heng — short (scale 0.35), shifted left to center on -20.\n    draw_heng(t, ox=-20, oy=+50, scale=0.35)\n\n    # Bottom heng — long (scale 0.65), centered on 0.\n    draw_heng(t, ox=0, oy=-100, scale=0.65)\n\n    screen.update()\n    canvas = screen.getcanvas()\n    canvas.postscript(file=\"01_二.eps\")\n\n    try:\n        from PIL import Image\n        img = Image.open(\"01_二.eps\")\n        img.load(scale=2)\n        img.save(\"01_二.png\", \"PNG\")\n    except Exception as e:\n        print(f\"PNG conversion fallback: {e}\")\n\n    screen.bye()\n\n\nif __name__ == \"__main__\":\n    main()",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8357,
+    "ai_file": "01_二.png",
+    "gt_file": "01_二.png",
+    "eval_requested": "gt+ocr+vision",
+    "mastery_policy": "is_correct AND conf>=0.4 AND rubric>=7 no 0",
+    "calligraphy_rubric": {
+      "dunbi": 2,
+      "hudu": 2,
+      "taper": 2,
+      "proportion": 2,
+      "overall": 2,
+      "total": 10,
+      "max": 10,
+      "rationale": {
+        "dunbi": "Both hengs weighted ends.",
+        "hudu": "Natural.",
+        "taper": "Inherited from c1 mastered.",
+        "proportion": "Short top + long bottom convention.",
+        "overall": "Two-call composition of mastered 横."
+      },
+      "scored_by": "orchestrator-vision",
+      "rubric_version": 1
+    }
+  }
+]
