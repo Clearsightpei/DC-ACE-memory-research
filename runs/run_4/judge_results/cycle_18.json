@@ -1,0 +1,48 @@
+[
+  {
+    "index": 1,
+    "character": "八",
+    "pinyin": "ba",
+    "visual_score": 0.4207,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.1762,
+      "chamfer": 0.5135,
+      "chamfer_px": 19.99,
+      "proportion": 0.724,
+      "ar_term": 0.7199,
+      "quad_term": 0.8495
+    },
+    "recognized_char": "八",
+    "ocr_confidence": 0.9935,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def draw_ba(t):\n    \"\"\"Brushwork phase: 八 composed from mastered 撇 (c3) + 捺 (c4) primitives.\n\n    Skeleton targets (per task brief, matching the approved generated_skel.py):\n      撇:     head (-30, +75)  → tail (-100, -110)\n      捺 main: head (+50, +100) → kick base (+150, -110)\n      Kick:   (+150, -110) → (+200, -100)\n\n    Canonical pie head (+150, +200) with scale=0.55, ox=-115, oy=-25:\n        head → (150*0.55-115, 200*0.55-25) = (-32.5, +85)   vs target (-30, +75)\n    Canonical na head (-150, +200) with scale=0.55, ox=130, oy=-20:\n        head → (-150*0.55+130, 200*0.55-20) = (+47.5, +90)  vs target (+50, +100)\n\n    Heads are within ~10 px of brief targets — well under the \"near each other\n    with ~80 px gap\" spec (here pie head at -32.5 and na head at +47.5 give\n    a horizontal gap of 80 px). The mastered brushwork (width profiles, taper,\n    flat kick) is inherited verbatim from c3/c4 — no endpoint changes.\n    \"\"\"\n    draw_pie(t, ox=-115, oy=-25, scale=0.55)\n    draw_na(t, ox=130, oy=-20, scale=0.55)\n\n\ndef main():\n    screen = turtle.Screen()\n    screen.setup(WIDTH, HEIGHT)\n    screen.bgcolor(\"white\")\n    screen.tracer(0)\n    t = turtle.Turtle()\n    reset_turtle(t)\n    draw_ba(t)\n    screen.update()\n    save_canvas_to_png(screen, os.path.join(OUT_DIR, \"01_八.png\"))\n\n\nif __name__ == \"__main__\":\n    main()",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.6524,
+    "ai_file": "01_八.png",
+    "gt_file": "01_八.png",
+    "eval_requested": "gt+ocr+vision",
+    "mastery_policy": "is_correct AND conf>=0.4 AND rubric>=7 no 0",
+    "calligraphy_rubric": {
+      "dunbi": 2,
+      "hudu": 2,
+      "taper": 2,
+      "proportion": 2,
+      "overall": 2,
+      "total": 10,
+      "max": 10,
+      "rationale": {
+        "dunbi": "撇 head + 捺 kick visible.",
+        "hudu": "Natural diverging arcs.",
+        "taper": "Inherited from c3/c4.",
+        "proportion": "80 px gap at top, both descending outward.",
+        "overall": "2-call composition of c3 撇 + c4 捺."
+      },
+      "scored_by": "orchestrator-vision",
+      "rubric_version": 1
+    }
+  }
+]
