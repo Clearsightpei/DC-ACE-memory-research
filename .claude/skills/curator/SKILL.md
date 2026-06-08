@@ -17,9 +17,9 @@ or B brushwork) just ran.
 ## You own these files
 
 - `success_bank/INDEX.md` — append a new entry on mastery; never delete.
-- `success_bank/code/<char>.py` + `<char>.md` — add on mastery.
-- `success_bank/visual/visual_index.png` — regenerate when new entries added.
-- `principle_bank.md` — promote proven Sandbox findings here.
+- `success_bank/code/<char>.py` — add on mastery. **One file per entry. Metadata (tags, description, mastered-cycle, rubric) lives in the module docstring at the top of this .py file — NO separate `.md` file per entry.**
+- `success_bank/visual/visual_index.png` — regenerate when new entries added (run `python3 success_bank/build_visual_index.py`).
+- `principle_bank.md` — promote proven Sandbox findings here. **This is the ONE central file for first principles that apply across all entries.**
 - `sandbox.md` — manage active-focus iteration; reset on mastery.
 - `cycle_summary.md` — overwrite each cycle (1–3 sentences).
 - `dashboard.md` — overwrite each cycle (operator snapshot).
@@ -94,24 +94,32 @@ Promote to Success Bank:
 
 1. Create `success_bank/code/<char>.py` — a self-contained `draw(t,
    ox=0, oy=0, scale=1.0)` function based on the Drawer's
-   `generated.py`. Keep ALL parameters intact (the user's instruction:
-   immutable; changing parameters causes disconnects).
-2. Create `success_bank/code/<char>.md` — description + component
-   tags. Tags include:
-   - `tag:character` or `tag:atomic-stroke` or `tag:compound-stroke` or `tag:component`
-   - one tag per stroke type used: `tag:heng`, `tag:shu`, `tag:撇`, etc.
-   - structural tags: `tag:撇捺-symmetric`, `tag:heng-stacked`, `tag:frame-with-hook`, ...
-   - `tag:component-of(<char1>, <char2>, ...)` for characters this
-     character is a part of.
-3. Append a row to `success_bank/INDEX.md`.
-4. Regenerate `success_bank/visual/visual_index.png` — a grid PNG
-   showing all Success Bank wins side by side. Use the saved attempt
-   PNGs (`attempts/cycle_<M>/01_<char>.png` for each mastered entry).
-   A simple PIL script that arranges them in a 4-column grid with
-   captions is fine.
-5. Promote any generalizable findings from `sandbox.md` into the
-   appropriate Principle Bank section (§1–§5).
-6. **Reset `sandbox.md`**: overwrite with an empty "Current focus
+   `generated.py`. Keep ALL parameters intact (immutable rule).
+   **Include a module docstring at the top** with:
+   - `Tags:` line listing all applicable tags (see tag set below)
+   - `Component-of:` line listing characters this is a part of (or
+     "(to fill)" if not yet known)
+   - `Mastered:` line — `run_<R> cycle <N>, rubric <X>/10 (...)`
+   - 1-paragraph description of what this entry produces
+   - Reuse interface example (how to call `draw()` with translate/scale)
+   - Any caveats
+
+   Tag set:
+   - `tag:character` | `tag:atomic-stroke` | `tag:compound-stroke` | `tag:component` (radical/部首)
+   - One tag per constituent stroke type: `tag:heng`, `tag:shu`, `tag:撇`, etc.
+   - Structural tags: `tag:撇捺-symmetric`, `tag:heng-stacked`, `tag:frame-with-hook`, ...
+   - `tag:component-of(<char1>, <char2>, ...)` for parents.
+
+   **Do NOT create a separate `<char>.md`** — the docstring is the
+   description. INDEX.md is the queryable surface.
+
+2. Append a row to `success_bank/INDEX.md`.
+3. Regenerate the visual index: `python3 success_bank/build_visual_index.py`.
+4. Promote any generalizable findings from `sandbox.md` into the
+   appropriate Principle Bank section (§1–§5). The Principle Bank
+   is the ONE central file for first principles; per-entry
+   information stays in the .py docstring.
+5. **Reset `sandbox.md`**: overwrite with an empty "Current focus
    not yet set" template. The Teacher will fill in the next focus
    in the following cycle.
 

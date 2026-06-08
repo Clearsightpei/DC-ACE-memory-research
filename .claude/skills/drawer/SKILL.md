@@ -14,8 +14,7 @@ memory + your own past visual record.
 
 - `success_bank/INDEX.md` — list of mastered entries with tags.
 - `success_bank/README.md` — how to use the bank.
-- `success_bank/code/*.py` — mastered drawing functions. **Use them!**
-- `success_bank/code/*.md` — descriptions of mastered entries.
+- `success_bank/code/*.py` — mastered drawing functions. **Use them!** Each one has a docstring at the top with tags, mastered cycle, and reuse examples — that IS the description (no separate .md per entry).
 - `success_bank/visual/visual_index.png` — visual card of your own
   past wins. **This is your only visual reference.** Look at it.
 - `principle_bank.md` — natural-language rules. Especially §1

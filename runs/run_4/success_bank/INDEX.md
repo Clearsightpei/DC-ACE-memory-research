@@ -32,4 +32,4 @@ visual reference** (it shows the Drawer's own past outputs, not GT).
 
 | char | file | rubric | component tags | added in cycle |
 |------|------|--------|----------------|----------------|
-| 横    | [code/heng.py](code/heng.py) ([desc](code/heng.md)) | 10/10 | tag:atomic-stroke tag:heng | c1 |
+| 横    | [code/heng.py](code/heng.py) | 10/10 | tag:atomic-stroke tag:heng | c1 |

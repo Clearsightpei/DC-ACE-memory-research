@@ -1,15 +1,32 @@
 """
 横 (heng) — atomic horizontal stroke.
 
-Mastered in run_4 cycle 1 at rubric 10/10.
-Source: attempts/cycle_1/generated.py (preserved verbatim from the
-mastered render — DO NOT modify parameters).
+Tags: tag:atomic-stroke tag:heng
+Component-of: (to be filled in as 横 appears inside mastered chars — 一, 二, 三, 十, 工, 王, ...)
+Mastered: run_4 cycle 1, rubric 10/10
+  (dunbi=2, hudu=2, taper=2, proportion=2, overall=2)
 
-To reuse this stroke at a different location/scale, call
-draw(t, ox, oy, scale) — internally translates the canonical (-200,
-0) → (+200, 0) endpoints by (ox, oy) and multiplies coordinates by
-scale. Width profile widths are NOT scaled (use update_widths to
-override if needed).
+The canonical 楷书 horizontal stroke. Used as the top/middle/bottom
+bar in dozens of simple characters and as a constituent inside
+hundreds of compound ones. This is the first Phase-1 primitive
+mastered in run_4.
+
+Reuse interface:
+    from heng import draw as draw_heng
+    draw_heng(t)                          # centered at origin
+    draw_heng(t, ox=0, oy=100)            # shift up 100 px (e.g. top heng of 二)
+    draw_heng(t, ox=0, oy=-100)           # shift down 100 px (e.g. bottom heng of 二)
+    draw_heng(t, ox=0, oy=0, scale=0.6)   # shrink to 60% (e.g. short top heng of 王)
+
+The function preserves all mastered parameters verbatim — DO NOT modify
+this file (Success Bank immutability rule). If a different profile is
+needed, create a new entry (e.g. heng_short.py) that supersedes.
+
+What this entry establishes for the project:
+- The brushed-Bézier-with-per-sample-pensize pattern (brushed_bezier helper).
+- The min-pensize-3 floor (run_3 c17 lesson).
+- The 楷书 weighted-entry / lighter-shaft / heavier-closing-press width profile.
+- The Success Bank's draw(t, ox=0, oy=0, scale=1.0) interface convention.
 """
 
 from typing import Callable
