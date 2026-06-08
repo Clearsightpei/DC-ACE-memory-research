@@ -48,3 +48,4 @@ visual reference** (it shows the Drawer's own past outputs, not GT).
 | 一    | [code/yi.py](code/yi.py) | 10/10 (OCR 一 conf 0.77, visual 0.85) | tag:character tag:1-stroke tag:heng tag:component-of(三,二,王,工,干,上,下) | c14 |
 | 二    | [code/er.py](code/er.py) | 10/10 (OCR 二, visual 0.73) | tag:character tag:2-strokes tag:heng-stacked tag:component-of(三,王,工) | c15 |
 | 三    | [code/san.py](code/san.py) | 10/10 (OCR 三, visual 0.64) | tag:character tag:3-strokes tag:heng-stacked | c16 |
+| 十    | [code/shi.py](code/shi.py) | 10/10 (OCR 十, visual 0.72) | tag:character tag:2-strokes tag:heng+shu | c17 |
