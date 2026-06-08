@@ -50,3 +50,9 @@ prior entries.
   characters in Phase 3.
 - Success Bank size before: 3 (横, 竖, 撇).
 
+
+## Cycle 5 — 2026-06-07
+
+- Phase 1. Focus: 提.
+- Same family as 撇 (tapered-tip), shorter (~250 px).
+- Success Bank size before: 4.
