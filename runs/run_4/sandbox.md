@@ -17,3 +17,4 @@ Sandbox reset. Awaiting Teacher's next focus for c2.)
 
 (Drafts move here when partially proven; promoted when verified by
 a Success Bank entry.)
+Skeleton matches GT: centerline at y=-100, length ~320 px, straight horizontal — APPROVED.
