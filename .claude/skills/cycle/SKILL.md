@@ -1,14 +1,21 @@
 ---
 name: cycle
-description: Run one full DC-ACE training cycle (Teacher → Drawer-skeleton → Curator-skeleton-review → Drawer-brushwork → Curator-brushwork-review → commit). Two phases per cycle (skeleton + brushwork). Operates on whichever run directory `active_run.txt` points to.
+description: Run one full DC-ACE training cycle (run_5). Teacher picks 3 tasks → Drawer renders them in a fresh subagent (with GT vision access, tools/ quarantined) → Judge runs OCR+visual → Curator promotes via strict Claude-vision identity check. Operates on whichever run directory `active_run.txt` points to.
 ---
 
-# /cycle — One DC-ACE training cycle (run_4: two-phase)
+# /cycle — One DC-ACE training cycle (run_5: 3 tasks, mimic-by-vision)
 
-You are the orchestrator for one cycle of an emergent-memory experiment.
-Across the cycle you play **two roles directly** (Teacher, Curator) and
-**dispatch the Drawer to a fresh subagent twice** (once for skeleton,
-once for brushwork) so it cannot inherit your conversation context.
+You are the orchestrator for one cycle. You play **two roles
+directly** (Teacher, Curator) and **dispatch the Drawer to a fresh
+subagent once** (it renders all 3 tasks in one shot).
+
+run_5 vs run_4:
+- **3 tasks per cycle** (not 1).
+- **Single phase** (no skeleton→brushwork split — the Drawer mimics
+  the GT directly).
+- **`ground_truths/` is NOT quarantined** — the Drawer sees it. Only
+  `tools/` is quarantined.
+- **Curator promotes only on strict Claude-vision identity check**.
 
 ## 0. Pre-flight
 
@@ -16,13 +23,13 @@ Read `active_run.txt` from the project root.
 
 ```bash
 PROJECT_ROOT="$(pwd)"
-RUN_REL=$(cat active_run.txt 2>/dev/null || echo runs/run_4)
+RUN_REL=$(cat active_run.txt 2>/dev/null || echo runs/run_5)
 RUN_DIR="$PROJECT_ROOT/$RUN_REL"
 cd "$RUN_DIR"
 ```
 
-**Single-repo git model.** Runs are plain folders in the one project
-repo. Every commit is scoped to the run folder:
+**Single-repo git model.** Runs are plain folders in the one
+project repo. Every commit is scoped to the run folder:
 
 ```bash
 git -C "$PROJECT_ROOT" add "$RUN_REL"
@@ -31,28 +38,29 @@ git -C "$PROJECT_ROOT" commit -m "<message>"
 
 Never `git add -A` at the project root.
 
-**Per-run postmortem rule.** Before activating a new run, the prior
-run's `POSTMORTEM.md` MUST exist (enforced by `new_run.sh`).
+**Per-run postmortem rule.** Before activating a new run, the
+prior run's `POSTMORTEM.md` MUST exist (enforced by `new_run.sh`).
 
 **Quarantine crash recovery.** If `$RUN_DIR/.drawer_quarantine`
-exists, restore before doing anything else:
+exists from a prior crash, restore:
 
 ```bash
 if [ -f "$RUN_DIR/.drawer_quarantine" ]; then
   Q=$(cat "$RUN_DIR/.drawer_quarantine")
   echo "RECOVER: prior quarantine $Q — restoring"
-  [ -d "$Q/ground_truths" ] && [ ! -e "$RUN_DIR/ground_truths" ] && mv "$Q/ground_truths" "$RUN_DIR/ground_truths"
-  [ -d "$Q/tools" ]         && [ ! -e "$RUN_DIR/tools" ]         && mv "$Q/tools"         "$RUN_DIR/tools"
+  [ -d "$Q/tools" ] && [ ! -e "$RUN_DIR/tools" ] && mv "$Q/tools" "$RUN_DIR/tools"
   rmdir "$Q" 2>/dev/null
   rm "$RUN_DIR/.drawer_quarantine"
 fi
 ```
 
+(Note: run_5 only quarantines `tools/`, not `ground_truths/`.)
+
 **Stop check.** If `./.stop` exists in the run dir, exit without
-doing anything else. Do not commit.
+doing anything else.
 
 Otherwise, read into working memory:
-- `cycle_state.json` — current cycle number, focus, last attempt.
+- `cycle_state.json` — current cycle number.
 - `teaching_plan.md`, `teaching_log.md`, `cycle_summary.md`.
 - `success_bank/INDEX.md`, `principle_bank.md`, `sandbox.md`.
 
@@ -60,70 +68,79 @@ Let `N = cycle_state.json["cycle"] + 1`.
 
 ## 1. Teacher phase (main thread plays this role)
 
-Read `.claude/skills/teacher/SKILL.md` and follow it. Pick ONE focus
-for this cycle. Verify all prerequisites are in the Success Bank
-(or switch focus to the missing prerequisite). Output:
+Read `.claude/skills/teacher/SKILL.md` and follow it. Output:
 
+- **Mastery audit of cycle N-1** (Claude-vision check of last
+  batch's attempts vs GTs; carry-overs flagged).
+- 3-task slate.
 - `task_briefs/cycle_<N>.md` and `task_briefs/cycle_<N>_dataset.json`.
+- `ground_truths/cycle_<N>/0K_<char>.png` for K = 1, 2, 3
+  (generated via `tools/make_char_gt.py`).
 - Updated `teaching_plan.md` and appended `teaching_log.md`.
-- `ground_truths/cycle_<N>/` (only if eval includes `gt`).
 
 Commit:
 ```bash
 git -C "$PROJECT_ROOT" add "$RUN_REL"
-git -C "$PROJECT_ROOT" commit -m "cycle ${N} teacher: focus=<char>, phase=<…>"
+git -C "$PROJECT_ROOT" commit -m "cycle ${N} teacher: slate=<c1>/<c2>/<c3>, phase=<…>"
 ```
 
-## 2. Drawer phase A — SKELETON (fresh subagent)
+## 2. Drawer phase (fresh subagent)
 
-The Drawer writes `attempts/cycle_<N>/generated_skel.py` using
-uniform pensize 3 (no brushwork). Goal: get composition right.
+The Drawer writes ONE `attempts/cycle_<N>/generated.py` that
+renders all 3 tasks, each to `attempts/cycle_<N>/0K_<char>.png`.
 
-### 2a. Quarantine (BEFORE spawning)
-
-Move `ground_truths/` and `tools/` to a temp location:
+### 2a. Quarantine `tools/` BEFORE spawning
 
 ```bash
 TS=$(date +%Y%m%d_%H%M%S)
 Q="/tmp/dcace_quarantine/${RUN_REL//\//_}_cycle_${N}_${TS}_$$"
 mkdir -p "$Q"
-[ -d "$RUN_DIR/ground_truths" ] && mv "$RUN_DIR/ground_truths" "$Q/ground_truths"
-[ -d "$RUN_DIR/tools" ]         && mv "$RUN_DIR/tools"         "$Q/tools"
+[ -d "$RUN_DIR/tools" ] && mv "$RUN_DIR/tools" "$Q/tools"
 printf '%s\n' "$Q" > "$RUN_DIR/.drawer_quarantine"
-ls "$RUN_DIR" | grep -Eq '^(ground_truths|tools)$' && \
-  { echo "QUARANTINE FAILED"; exit 1; }
+ls "$RUN_DIR" | grep -Eq '^tools$' && { echo "QUARANTINE FAILED"; exit 1; }
 ```
 
-### 2b. Spawn Drawer subagent for skeleton
+(`ground_truths/` stays in place — the Drawer needs to see it.)
 
-Spawn a fresh Agent (`subagent_type: general-purpose`) with the
-contents of `.claude/skills/drawer/SKILL.md` and an explicit
-phase indicator: **"PHASE = A (skeleton). Use uniform pensize 3.
-Output `attempts/cycle_<N>/generated_skel.py`. Self-preview budget = 2."**
+### 2b. Spawn the Drawer subagent
 
-The subagent reads `success_bank/`, `principle_bank.md`, `sandbox.md`,
-and the task brief. It writes the skeleton script, runs it, views its
-own PNG, refines (max 2 iterations), and commits.
+Spawn a fresh Agent (`subagent_type: general-purpose`). The prompt:
+
+- Contents of `.claude/skills/drawer/SKILL.md`.
+- The cycle number `N`.
+- An explicit allowlist reminder: the Drawer may read the GT PNGs
+  in `ground_truths/cycle_${N}/`, `success_bank/`,
+  `principle_bank.md`, `sandbox.md`, the task brief, and its own
+  attempt PNGs. It may NOT read `tools/` (physically absent),
+  prior `attempts/`, `judge_results/`, `teaching_*`, or other runs.
+
+The subagent:
+1. Reads the 3 GT PNGs.
+2. Reads success_bank + principle_bank.
+3. Writes `attempts/cycle_<N>/generated.py` with `task_01/02/03`.
+4. Runs it, viewing each task's PNG vs its GT, refining ≤ 2x per task.
+5. Returns a brief summary.
 
 ### 2c. Restore + run + audit
 
 ```bash
 Q=$(cat "$RUN_DIR/.drawer_quarantine" 2>/dev/null || true)
 if [ -n "$Q" ] && [ -d "$Q" ]; then
-  [ -d "$Q/ground_truths" ] && mv "$Q/ground_truths" "$RUN_DIR/ground_truths"
-  [ -d "$Q/tools" ]         && mv "$Q/tools"         "$RUN_DIR/tools"
+  [ -d "$Q/tools" ] && mv "$Q/tools" "$RUN_DIR/tools"
   rmdir "$Q" 2>/dev/null
   rm "$RUN_DIR/.drawer_quarantine"
 fi
 ```
 
-Run the generated skeleton script:
+Run the generated script (the Drawer may have already run it, but
+re-run on the orchestrator side as the source of truth):
+
 ```bash
 python3 -c "
 import subprocess, sys
 try:
-    r = subprocess.run(['python3', 'attempts/cycle_${N}/generated_skel.py'],
-                       timeout=60, capture_output=True, text=True)
+    r = subprocess.run(['python3', 'attempts/cycle_${N}/generated.py'],
+                       timeout=120, capture_output=True, text=True)
     print(r.stdout); print(r.stderr, file=sys.stderr)
     sys.exit(r.returncode)
 except subprocess.TimeoutExpired:
@@ -131,63 +148,25 @@ except subprocess.TimeoutExpired:
 "
 ```
 
-Audit `generated_skel.py` for forbidden-path references and write
-`judge_results/cycle_${N}_drawer_audit.txt`. Abort cycle if leak
-detected.
+Audit `generated.py` for forbidden-path references. The Drawer
+legitimately reads `ground_truths/` in run_5, so only flag:
+`tools/`, `from strokes`, `import strokes`, references to other
+run directories under `runs/`, and `subprocess` / `os.system`.
+Write `judge_results/cycle_${N}_drawer_audit.txt`. Abort the cycle
+if a leak is detected.
+
+Verify the 3 PNGs exist at `attempts/cycle_<N>/0K_<char>.png`.
 
 Commit:
 ```bash
 git -C "$PROJECT_ROOT" add "$RUN_REL"
-git -C "$PROJECT_ROOT" commit -m "cycle ${N} drawer-skel: <focus>"
+git -C "$PROJECT_ROOT" commit -m "cycle ${N} drawer: <c1>/<c2>/<c3>"
 ```
 
-## 3. Curator phase A — Skeleton review (main thread, has GT access)
+## 3. Judge phase
 
-Read `.claude/skills/curator/SKILL.md`. Open the attempt skeleton PNG
-side by side with the GT skeleton PNG. Compare composition only:
-endpoints, stroke count, proportions, layout. **DO NOT judge
-brushwork** — the skeleton has none.
-
-Two outcomes:
-
-**Approved**: write `attempts/cycle_<N>/SKELETON_APPROVED` (empty
-file). Append approval note to `sandbox.md`. Proceed to Phase B.
-
-**Rejected**: write `attempts/cycle_<N>/SKELETON_REJECTED` with a
-one-line reason. Write detailed composition feedback into
-`sandbox.md`. **Skip Phase B** (no brushwork without an approved
-skeleton). Jump to Step 5 (Curator finalize) with no Phase-B data.
-
-Commit:
-```bash
-git -C "$PROJECT_ROOT" add "$RUN_REL"
-git -C "$PROJECT_ROOT" commit -m "cycle ${N} curator-skel: <approved|rejected>"
-```
-
-## 4. Drawer phase B — BRUSHWORK (only if skeleton approved)
-
-If `attempts/cycle_<N>/SKELETON_APPROVED` exists, dispatch the Drawer
-again (fresh subagent) with **"PHASE = B (brushwork). Add per-sample
-pensize per Principle Bank §1 width floors to the approved skeleton.
-DO NOT change any endpoint. Output `attempts/cycle_<N>/generated.py`.
-Self-preview budget = 2."**
-
-### 4a. Quarantine + spawn + restore + audit + run
-
-Same pattern as Phase A — quarantine ground_truths and tools, spawn
-the Drawer subagent, restore, audit, then run `generated.py` and
-verify the brushed PNG exists at `attempts/cycle_<N>/01_<char>.png`.
-
-Commit:
-```bash
-git -C "$PROJECT_ROOT" add "$RUN_REL"
-git -C "$PROJECT_ROOT" commit -m "cycle ${N} drawer-brush: <focus>"
-```
-
-### 4b. Run the judge
-
-Read `task_briefs/cycle_<N>_dataset.json` for `judge.eval`. Run
-`tools/judge.py` only if `eval` includes `gt` or `ocr`:
+Read `task_briefs/cycle_<N>_dataset.json`. Run `tools/judge.py`
+(visual_score + OCR) on the 3 tasks:
 
 ```bash
 python tools/judge.py \
@@ -200,51 +179,49 @@ python tools/judge.py \
     --skip-coords
 ```
 
-### 4c. Calligraphy rubric (vision)
-
-If `eval` includes `vision`, you (the orchestrator) score the
-calligraphy rubric by opening each attempt PNG (not the GT) and
-scoring `dunbi/hudu/taper/proportion/overall` (0–2 each). Augment
-`judge_results/cycle_<N>.json` with the `calligraphy_rubric` field
-per task. Same rubric and JSON shape as run_3.
+The Curator will augment this JSON with the per-task vision
+rubric.
 
 Commit:
 ```bash
 git -C "$PROJECT_ROOT" add "$RUN_REL"
-git -C "$PROJECT_ROOT" commit -m "cycle ${N} judge: <signal summary>"
+git -C "$PROJECT_ROOT" commit -m "cycle ${N} judge: <K>/3 OCR-correct (vision identity pending)"
 ```
 
-## 5. Curator phase B (or finalize on skeleton-rejection)
+## 4. Curator phase (main thread plays this role)
 
-Read `.claude/skills/curator/SKILL.md`. Phase B's job:
+Read `.claude/skills/curator/SKILL.md`. For each task K = 1, 2, 3:
 
-- If Phase B ran and mastery gate met (`is_correct AND
-  ocr_confidence >= 0.4 AND rubric_total >= 7 AND no rubric 0`):
-  promote the entry to Success Bank, regenerate the visual index,
-  promote sandbox findings to Principle Bank, reset sandbox.
-- If Phase B ran but mastery gate NOT met: write detailed
-  brushwork feedback to sandbox; don't add to Success Bank.
-- If Phase A was rejected: just finalize the sandbox composition
-  feedback from Step 3.
+1. Open attempt PNG and GT PNG.
+2. Apply the **strict-vision identity check**: is this
+   unambiguously the target character?
+3. If YES, score rubric. If ≥ 7 with no 0, promote to Success
+   Bank. Else carry over with sandbox notes.
+4. If NO or uncertain, carry over with sandbox notes.
 
-Write `cycle_summary.md` (overwrite) and `dashboard.md` (overwrite).
+After all 3:
+- Update `success_bank/INDEX.md` for any promotions.
+- Run `python3 success_bank/build_visual_index.py` if promotions.
+- Promote any verified rules from Sandbox to Principle Bank.
+- Write `cycle_summary.md` and `dashboard.md`.
 
 Commit:
 ```bash
 git -C "$PROJECT_ROOT" add "$RUN_REL"
-git -C "$PROJECT_ROOT" commit -m "cycle ${N} curator: <focus> <outcome>"
+git -C "$PROJECT_ROOT" commit -m "cycle ${N} curator: <K>/3 promoted (<promoted-list>)"
 ```
 
-## 6. Wrap
+## 5. Wrap
 
 Update `cycle_state.json`:
 
 ```json
 {
   "cycle": <N>,
-  "phase": <1..5 educational phase>,
-  "current_focus": "<char or null if mastered>",
-  "last_outcome": "skeleton_rejected | brushwork_failed | mastered",
+  "phase": <1..4 educational phase>,
+  "current_slate": ["<c1>", "<c2>", "<c3>"],
+  "last_promoted": ["<chars promoted>"],
+  "last_carry_overs": ["<chars carried over>"],
   "last_finished_at": "<ISO>",
   "success_bank_size": <count>,
   "notes": "..."
@@ -257,7 +234,7 @@ git -C "$PROJECT_ROOT" add "$RUN_REL/cycle_state.json"
 git -C "$PROJECT_ROOT" commit -m "cycle ${N} state: bump"
 ```
 
-## 7. Push
+## 6. Push
 
 ```bash
 git -C "$PROJECT_ROOT" push origin HEAD || echo "push deferred"
@@ -267,10 +244,10 @@ git -C "$PROJECT_ROOT" push origin HEAD || echo "push deferred"
 
 - Never `git add -A` at project root.
 - Never delete `ground_truths/`, `attempts/`, or `judge_results/`.
-- If a phase is blocked, write to `dashboard.md` and commit
-  `cycle ${N} blocked: <reason>`.
+- If the Drawer audit detects a `tools/` leak, abort and commit
+  `cycle ${N} blocked: tools-leak detected`.
 
 ## Done
 
 Output a final line:
-> Cycle <N> complete. Focus: <char>. Outcome: <mastered|brushwork_failed|skeleton_rejected>. Success Bank size: <M>.
+> Cycle <N> complete. Slate: <c1>/<c2>/<c3>. Promoted: <K>/3 (<list>). Carry-overs: <list>. Success Bank size: <M>.

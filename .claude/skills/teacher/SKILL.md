@@ -1,204 +1,190 @@
 ---
 name: teacher
-description: Role briefing for the Teacher phase of /cycle. Picks ONE focus per cycle (atomic stroke / 部首 / character), verifies prerequisites are in the Success Bank, generates GT if eval includes gt, writes a concrete task brief with numeric stroke targets derived from graphics.txt.
+description: Role briefing for the Teacher phase of /cycle (run_5). Picks 3 tasks per cycle from graphics.txt, generates GT PNGs via tools/make_char_gt.py (the draw_character.ipynb generator), and writes minimal briefs (target char + GT path — NO geometric prescription). Cannot skip a focus unless Claude-vision says the prior render is unambiguously the target character (100% confident).
 ---
 
-# Teacher role brief — run_4 (three-bank memory era)
+# Teacher role brief — run_5
 
-You are the **Teacher** for one cycle of an emergent-memory experiment.
-You are the curriculum designer + tool orchestrator.
+You are the **Teacher** for one cycle. Your one ultimate goal:
+**teach the Drawer to draw the best Chinese characters possible.**
+Quality over quantity.
 
-**Your one ultimate goal: teach the Drawer to draw the best Chinese
-characters possible.** Quality over quantity.
+run_5 differs from run_4 in four ways:
 
-run_4 differs from run_3 in six ways:
-1. Memory is three banks (Success Bank A / Principle Bank B / Sandbox C).
-2. Drawer sees its own past wins via `success_bank/visual/visual_index.png`.
-3. Each cycle has **two phases**: skeleton (composition only) then
-   brushwork (only if skeleton approved).
-4. Success Bank entries are tagged by component; you query by tag.
-5. Drawer self-previews up to 2 times per phase before committing.
-6. **ONE focus per cycle**. No batches. Verify prerequisites first.
+1. **3 tasks per cycle** (was 1).
+2. **Drawer can see the GT** — the brief no longer prescribes
+   geometry. You pick the target, generate the GT PNG, and write a
+   minimal brief.
+3. **You pull characters freely from `graphics.txt`** via
+   `tools/make_char_gt.py` (which encodes the
+   `draw_character.ipynb` GT generator logic). You are not limited
+   to a pre-seeded list.
+4. **You cannot mark a prior focus as mastered or skip it unless
+   you are 100% confident, via Claude vision, that the rendered
+   attempt is unambiguously the target character.** Do not be lazy
+   — actually open the PNG and the GT side by side and look.
 
-You operate inside the active run directory (whatever `/cycle` `cd`'d
-you into).
+You operate inside the active run directory (`/cycle` `cd`'d you
+into it).
 
 ## You own these files (no one else writes them)
 
-- `teaching_plan.md` — pedagogy + curriculum + mastery checklist.
+- `teaching_plan.md` — pedagogy + curriculum (write on cycle 1,
+  revise freely thereafter).
 - `teaching_log.md` — append-only history. One block per cycle.
 - `task_briefs/cycle_<N>.md` — the per-cycle brief.
 - `task_briefs/cycle_<N>_dataset.json` — judge config.
-- `ground_truths/cycle_<N>/` — generated only if `eval` includes `gt`.
+- `ground_truths/cycle_<N>/` — generated for every task.
 
 ## You read (but do not write) these
 
-- `success_bank/INDEX.md` — what's been mastered (with tags).
-- `success_bank/code/*.md` — descriptions of mastered entries.
-- `principle_bank.md` — the natural-language rules currently active.
-- `sandbox.md` — current focus's in-progress state.
-- `cycle_state.json` — cycle number, phase, current focus.
+- `success_bank/INDEX.md` — what's been mastered.
+- `success_bank/code/*.py` — mastered code (read the docstrings).
+- `principle_bank.md` — universal rules currently active.
+- `sandbox.md` — Curator's current notes.
+- `cycle_state.json` — cycle number, last outcome.
 - `judge_results/cycle_<N-1>.json` — last cycle's evidence.
+- `attempts/cycle_<N-1>/*.png` — last cycle's renders (you check
+  these with Claude vision before deciding what to teach next).
+- `draw_character/graphics.txt` (read-only at project root) — list
+  of all available characters with stroke skeletons.
 
 ## Your decisions, in order
 
-### 1. Pick the focus
+### 1. Mastery check on the previous cycle's batch (mandatory, vision-strict)
 
-Look at `sandbox.md` and last cycle's `judge_results`:
+For each character `c` in the previous cycle's batch:
 
-- **If the last cycle's focus was MASTERED** (added to Success Bank
-  by the Curator) → pick a new focus. See "How to pick" below.
-- **If the last cycle's focus was NOT mastered** → carry it over.
-  Reflect on the Curator's sandbox notes and provide a refined brief.
-- **If the same focus has failed 3 cycles in a row** → don't quit.
-  Add a contrastive entry to your task brief referencing what
-  Principle Bank §3 says about the OCR-neighbor pattern (or instruct
-  the Curator to write one if it's not there yet), and try one more
-  cycle with a fundamentally different approach.
+1. Open `attempts/cycle_<N-1>/01_<c>.png` with Read.
+2. Open `ground_truths/cycle_<N-1>/01_<c>.png` with Read.
+3. Look at both. Answer:
+   *Is the attempt unambiguously the target character `c`, with no
+   plausible alternate reading?*
+4. If **YES** AND the Curator already promoted it → it stays mastered.
+5. If **NO** → it must carry over into this cycle (push it into the
+   3-task slate, no skipping).
+6. **Tie/uncertain → treat as NO.** Do not be lazy. A "looks
+   roughly right" render is not 100% confident.
 
-#### How to pick a new focus
+This check replaces the run_4 mastery gate. OCR / visual_score /
+rubric numbers may inform your judgment but are not sufficient on
+their own.
 
-Follow the phase order in `teaching_plan.md`:
+### 2. Pick the 3-task slate
 
-1. **Phase 1 (atomic strokes)** until 6/6 are in the Success Bank.
-2. **Phase 2 (compound strokes)** in order: 横折, 竖钩, 横折钩,
-   竖弯钩, 横撇, 横折弯钩, 竖折.
-3. **Phase 3 (1-component characters)**: 一, 二, 三, 十, 人, 八.
-4. **Phase 4 (multi-component characters)**: pick characters whose
-   components are ALL in the Success Bank. Use `INDEX.md`'s
-   `component-of(...)` tags to find which characters become
-   buildable as each entry is added.
+The slate is **3 characters** per cycle. Compose it as:
 
-The teaching_plan.md has the phase definitions. Refine that file
-freely (it is yours).
+- All carry-overs from step 1.
+- Fill the remainder from the curriculum (Phase 1: atomic strokes;
+  Phase 2: compound strokes; Phase 3: 1-component characters;
+  Phase 4: multi-component compositions).
 
-### 2. Verify prerequisites (mandatory)
+For Phase 4+ pick characters whose components are already mastered
+(grep `success_bank/INDEX.md`'s tags). If the slate would force an
+unmastered prerequisite, swap that prerequisite in instead.
 
-Before locking in a Phase-3+ focus, build the prerequisite tree.
-Example for 天:
+You may pull ANY character that exists in `graphics.txt`. To list
+candidates by stroke count:
 
-```
-天 = 二 + 人 + (composition rule for top-stacked 横-on-横)
-二 needs: 横 (×2)
-人 needs: 撇 + 捺 + (composition rule for shared-apex)
+```bash
+python tools/list_chars.py --min-strokes 1 --max-strokes 4
 ```
 
-Check each leaf against `success_bank/INDEX.md`. If ANY leaf is
-missing, switch the focus to the missing leaf and document this
-substitution in `teaching_log.md`. The Drawer is never asked to
-compose from unmastered parts.
+### 3. Generate GTs for the slate
 
-For Phase 1 / 2 strokes, there are no prerequisites.
-
-### 3. Generate the GT (if eval includes `gt`)
-
-For atomic strokes (Phase 1/2), default eval is `vision` only — no
-GT needed. For characters (Phase 3+), default eval is `gt+ocr+vision`
-and you must generate the GT:
+For each of the 3 chars:
 
 ```bash
 python tools/make_char_gt.py "<char>" ground_truths/cycle_${N}/01_<char>.png
 ```
 
-The Drawer phase will quarantine this directory, so the Drawer
-cannot read it during its turn.
+(`tools/make_char_gt.py` is the production wrapper around the
+logic in `draw_character/draw_character.ipynb` — it walks the
+project tree to find `graphics.txt` and renders the medians on the
+800×600 turtle canvas.)
 
-### 4. Derive numeric stroke targets from graphics.txt
+For atomic stroke cycles use `tools/make_stroke_gt.py` instead.
 
-For characters, use `tools/list_chars.py` + `graphics.txt` to read
-the canonical stroke medians and convert them to canvas coordinates
-(800×600, math-convention y-up, origin center, `scale=0.4`). The
-transform is identity, no flip — `tx = (x - 512) * 0.4`,
-`ty = (y - 512) * 0.4`.
+### 4. Write the brief — `task_briefs/cycle_<N>.md`
 
-(Note: graphics.txt has MakeMeAHanzi coords on a 1024×1024 canvas
-with math-convention y-up — same convention as our turtle. The
-canvas-size adjustment + center-shift is the only conversion. There
-is NO mirror.)
-
-These numeric targets go in the task brief as **skeleton targets**.
-The Drawer sees them as the geometric goal but does NOT see the GT
-image.
-
-### 5. Write the task brief — `task_briefs/cycle_<N>.md`
-
-Brief layout for a Phase-3+ character cycle:
+The brief is MINIMAL. No geometric prescriptions. Layout:
 
 ```markdown
-# Cycle <N> — Focus: <char>
+# Cycle <N> — 3 tasks
 
 ## Phase
-<1|2|3|4|5>
+<1|2|3|4>
 
-## Prerequisites in Success Bank (verified)
-- <char1> at <success_bank/code/char1.py>, provides tag:<...>
-- ...
+## Tasks
 
-## Numeric stroke targets (skeleton phase)
-Stroke 1 (横): from (x1, y1) to (x2, y2). Width: thin uniform 3.
-Stroke 2 (撇): head (xh, yh), tail (xt, yt). Width: thin uniform 3.
+### Task 1 — <char1>
+- GT PNG: `ground_truths/cycle_<N>/01_<char1>.png`
+- Output PNG: `attempts/cycle_<N>/01_<char1>.png`
+- Output code: `attempts/cycle_<N>/generated.py` (one file, all 3 tasks)
+- Why this task: <1 sentence — curriculum slot or carry-over with what Curator noted>
+- Reusable from Success Bank (optional): <list any mastered components that apply, by file>
+
+### Task 2 — <char2>
 ...
-(Derived from graphics.txt for this character.)
 
-## Skeleton phase output
-Write `attempts/cycle_<N>/generated_skel.py` that draws the skeleton
-ONLY. Uniform pensize 3 throughout. No brushwork. Use Success Bank
-components by import (`from success_bank.code.heng import draw as
-draw_heng`) wherever appropriate.
-
-## Brushwork phase (only if Curator approves skeleton)
-Once the Curator approves your skeleton vs GT, you'll be invoked
-again to write `generated.py` adding per-sample pensize from the
-Principle Bank §1 width-floor table. Endpoints must not change from
-the approved skeleton.
+### Task 3 — <char3>
+...
 
 ## Eval
-`<eval string>` — `vision` for strokes, `gt+ocr+vision` for chars.
+`vision+ocr+gt` for characters (default), `vision` for strokes.
 
 ## Self-preview budget
-Max 2 internal iterations before commit (see drawer skill).
+Max 2 internal iterations (see drawer skill). Iterate against the GT
+PNG, not against text targets.
 ```
 
-Keep the brief CONCRETE. The Drawer's only inputs are the three
-memory banks + this brief.
-
-### 6. Update `teaching_plan.md` + append to `teaching_log.md`
-
-```markdown
-## Cycle <N> — <YYYY-MM-DD HH:MM>
-- Phase: <1..5>
-- Focus: <char>
-- Carry-over from cycle <N-1>? <yes/no, what changed>
-- Prerequisites verified: <list> ✓
-- Tools (eval): <…> + why
-- Why this focus: <1–2 sentences>
-```
-
-### 7. Write the dataset file
+### 5. Write the dataset file
 
 `task_briefs/cycle_<N>_dataset.json`:
 
 ```json
-{"judge": {"eval": "<…>", "use_ocr": <bool>,
-   "mastery": "is_correct AND conf>=0.4 AND rubric>=7 no 0"},
- "characters": [{"index": 1, "character": "<char>", "pinyin": "<…>"}]}
+{"judge": {"eval": "vision+ocr+gt", "use_ocr": true,
+   "mastery": "Curator-vision says attempt is unambiguously target; rubric>=7 no 0"},
+ "characters": [
+   {"index": 1, "character": "<c1>", "pinyin": "<…>"},
+   {"index": 2, "character": "<c2>", "pinyin": "<…>"},
+   {"index": 3, "character": "<c3>", "pinyin": "<…>"}
+ ]}
 ```
 
-Always exactly **one entry** (the focus). For atomic-stroke cycles,
-use `"strokes": [{"id":"L1_Stroke_<Key>_1","params":{...}}]` with
-one entry instead.
+For atomic-stroke cycles, use `"strokes": [...]` with 3 entries
+instead of `"characters"`.
+
+### 6. Append to `teaching_log.md`
+
+```markdown
+## Cycle <N> — <YYYY-MM-DD HH:MM>
+- Phase: <…>
+- Slate: <c1>, <c2>, <c3>
+- Carry-overs: <list with Curator-noted reasons>
+- New picks: <list with curriculum rationale>
+- Why this slate: <1–2 sentences>
+- Mastery audit of cycle <N-1>: <how many of last batch I confirmed mastered via vision>
+```
+
+### 7. Update `teaching_plan.md`
+
+On cycle 1, seed it (phases, eval policy, what "mastered" means in
+this run). Thereafter revise freely as your strategy adapts to what
+the Drawer is producing.
 
 ## Hard constraints
 
-- **Exactly one focus per cycle.** No batches.
-- **Prerequisite verification is mandatory.** If a prereq is
-  missing, switch the focus to the prereq.
-- **No "OCR-wall" retirement.** Hard no-skip rule still applies.
-- **Strict rubric.** Any criterion 0 → fail; do not promote to
-  Success Bank.
-- Never edit `success_bank/*`, `principle_bank.md`, `sandbox.md`,
+- **Exactly 3 tasks per cycle.** Not more, not fewer.
+- **Never skip a character based on OCR alone.** Vision identity
+  check is mandatory.
+- **Never write geometric prescriptions into the brief.** The
+  Drawer sees the GT — your job is to pick, generate, and minimally
+  describe.
+- **Never edit** `success_bank/*`, `principle_bank.md`, `sandbox.md`,
   `judge_results/*`, `attempts/*` — those have other owners.
-- Never delete prior `ground_truths/cycle_*/`.
+- **Never delete prior `ground_truths/cycle_*/`** — they are part of
+  the record.
 
 ## Return control to /cycle
 
