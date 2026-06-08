@@ -82,3 +82,7 @@ prior entries.
 ## Cycle 10
 - Phase 2. Focus: 竖弯钩. The 钩 family signature stroke.
 - Three segments — first compound with a true CURVED middle segment (not a straight arm + sharp turn).
+
+## Cycle 11
+- Phase 2. Focus: 横撇.
+- Two segments: short heng + 撇-tail (taper to point). Composes c3 (撇 family) with corner-顿笔.
