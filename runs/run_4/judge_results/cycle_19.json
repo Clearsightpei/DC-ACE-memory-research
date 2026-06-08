@@ -1,0 +1,48 @@
+[
+  {
+    "index": 1,
+    "character": "人",
+    "pinyin": "ren",
+    "visual_score": 0.3788,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.1595,
+      "chamfer": 0.4258,
+      "chamfer_px": 25.62,
+      "proportion": 0.7234,
+      "ar_term": 0.912,
+      "quad_term": 0.7875
+    },
+    "recognized_char": "入",
+    "ocr_confidence": 0.318,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "def main():\n    screen = turtle.Screen()\n    screen.setup(WIDTH, HEIGHT)\n    screen.bgcolor(\"white\")\n    screen.tracer(0)\n\n    t = turtle.Turtle()\n    reset_turtle(t)\n\n    # 撇 dominant: head at apex (+15, +120). Reaches well down-left.\n    # pie head canonical (+150,+200) at scale 0.70 = (+105,+140).\n    # Want head (+15,+120): ox=15-105=-90, oy=120-140=-20.\n    draw_pie(t, ox=-90, oy=-20, scale=0.70)\n\n    # 捺 head SLIGHTLY BELOW 撇's apex — at (+15, +90), making the\n    # junction visibly below the top (vs 入 where 捺 starts much lower).\n    # na head canonical (-150,+200) at scale 0.50 = (-75,+100).\n    # Want head (+15,+90): ox=15-(-75)=90, oy=90-100=-10.\n    draw_na(t, ox=90, oy=-10, scale=0.50)\n\n    screen.update()\n    save_canvas_to_png(screen, os.path.join(OUT_DIR, \"01_人.png\"))\n\n\nif __name__ == \"__main__\":\n    main()",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.2273,
+    "ai_file": "01_人.png",
+    "gt_file": "01_人.png",
+    "eval_requested": "gt+ocr+vision",
+    "mastery_policy": "is_correct AND conf>=0.4 AND rubric>=7 no 0",
+    "calligraphy_rubric": {
+      "dunbi": 2,
+      "hudu": 2,
+      "taper": 2,
+      "proportion": 1,
+      "overall": 1,
+      "total": 8,
+      "max": 10,
+      "rationale": {
+        "dunbi": "撇 head + 捺 kick visible.",
+        "hudu": "Natural diverging arcs.",
+        "taper": "Inherited from c3/c4.",
+        "proportion": "Tried 3 variants; OCR returns 入.",
+        "overall": "OCR confusion pair 人/入; carries over. Rubric 8/10 brushwork."
+      },
+      "scored_by": "orchestrator-vision",
+      "rubric_version": 1
+    }
+  }
+]
