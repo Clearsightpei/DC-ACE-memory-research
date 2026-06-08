@@ -64,13 +64,13 @@ unmastered parts.
 
 ### Phase progression (revised)
 
-| Phase | What is taught | Mastery gate |
-|-------|---------------|--------------|
-| 1     | Atomic strokes: 横, 竖, 撇, 捺, 提, 点 | rubric ≥ 7 no 0 |
-| 2     | Compound strokes: 横折, 竖钩, 横折钩, 竖弯钩, 横撇, 横折弯钩, 竖折, ... | rubric ≥ 7 no 0 |
-| 3     | Single-component characters (1–4 strokes): 一, 二, 三, 十, 人, 八 | is_correct AND conf ≥ 0.4 AND rubric ≥ 7 no 0 |
-| 4     | Multi-component characters using Success Bank parts: 大, 木, 林, 火, ... | same |
-| 5     | Complex compositions | same |
+| Phase | What is taught | Eval | Mastery gate | Skeleton/brushwork split? |
+|-------|---------------|------|--------------|---------------------------|
+| 1     | Atomic strokes: 横, 竖, 撇, 捺, 提, 点 | `vision` | rubric ≥ 7 no 0 | **No** — single phase. No GT to compare skeleton against; the stroke IS the composition. |
+| 2     | Compound strokes: 横折, 竖钩, 横折钩, 竖弯钩, 横撇, 横折弯钩, 竖折, ... | `vision` | rubric ≥ 7 no 0 | **No** — same reason. |
+| 3     | Single-component characters (1–4 strokes): 一, 二, 三, 十, 人, 八 | `gt+ocr+vision` | is_correct AND conf ≥ 0.4 AND rubric ≥ 7 no 0 | **Yes** — skeleton vs GT, then brushwork. |
+| 4     | Multi-component characters using Success Bank parts: 大, 木, 林, 火, ... | `gt+ocr+vision` | same | **Yes** |
+| 5     | Complex compositions | `gt+ocr+vision` | same | **Yes** |
 
 Phase boundaries are soft and Teacher-judged.
 
