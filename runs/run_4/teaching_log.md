@@ -119,3 +119,5 @@ prior entries.
 ## Cycle 22 — 又. 横撇 + 捺 crossing.
 
 ## Cycle 23 — 力. 横折钩 + 撇 through heng.
+
+## Cycle 24 — 万. heng + 横折钩 + 撇 (with 撇 head above heng to differentiate from 力).
