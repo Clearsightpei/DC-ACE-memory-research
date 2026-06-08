@@ -42,3 +42,4 @@ visual reference** (it shows the Drawer's own past outputs, not GT).
 | 竖钩  | [code/shu_gou.py](code/shu_gou.py) | 10/10 | tag:compound-stroke tag:竖钩 tag:hook tag:multi-segment | c8 |
 | 横折钩 | [code/heng_zhe_gou.py](code/heng_zhe_gou.py) | 10/10 | tag:compound-stroke tag:横折钩 tag:hook tag:multi-segment tag:corner-顿笔 | c9 |
 | 竖弯钩 | [code/shu_wan_gou.py](code/shu_wan_gou.py) | 10/10 | tag:compound-stroke tag:竖弯钩 tag:hook tag:multi-segment tag:curved-middle | c10 |
+| 横撇  | [code/heng_pie.py](code/heng_pie.py) | 10/10 | tag:compound-stroke tag:横撇 tag:tapered-tip tag:multi-segment tag:corner-顿笔 | c11 |
