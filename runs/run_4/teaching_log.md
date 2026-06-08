@@ -38,3 +38,15 @@ prior entries.
   pattern needed for fine-tip strokes (also 提, eventually).
 - Success Bank size before: 2 (横, 竖).
 
+## Cycle 4 — 2026-06-07
+
+- Educational phase: 1 (atomic strokes)
+- Focus: 捺 (na, 斜捺 variant with flat-kick tail).
+- Prerequisites: none.
+- Eval: `vision`. Single-phase.
+- Why this focus: fourth atomic. The right-diagonal counterpart of 撇,
+  with REVERSED width profile (thin entry → heavy tail) and a
+  distinctive flat-kick at the end. Pairing 撇+捺 unlocks 人/八/入/大/...
+  characters in Phase 3.
+- Success Bank size before: 3 (横, 竖, 撇).
+
