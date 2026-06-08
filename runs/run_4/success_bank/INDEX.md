@@ -30,13 +30,6 @@ visual reference** (it shows the Drawer's own past outputs, not GT).
 
 ## Entries
 
-(Empty — populated as run_4 proceeds.)
-
-<!--
-Entry format:
 | char | file | rubric | component tags | added in cycle |
 |------|------|--------|----------------|----------------|
-| 一    | code/一.py | 10/10 | tag:heng tag:atomic-stroke | c1 |
-| 二    | code/二.py | 9/10  | tag:heng-pair tag:simple-char | c3 |
-| 木    | code/木.py | 10/10 | tag:character tag:heng tag:shu tag:撇捺-symmetric tag:component-of(林,森,本) | c7 |
--->
+| 横    | [code/heng.py](code/heng.py) ([desc](code/heng.md)) | 10/10 | tag:atomic-stroke tag:heng | c1 |

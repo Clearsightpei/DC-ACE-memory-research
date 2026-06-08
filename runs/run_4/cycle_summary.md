@@ -1,7 +1,1 @@
-<!--
-Curator → Teacher channel. Overwritten each cycle by the Curator.
-1–3 sentences describing what kind of mistake (or success) happened,
-to inform the next batch.
-
-Empty until cycle 1 finishes.
--->
+Cycle 1 (run_4, focus=横, atomic single-phase, eval=vision): **MASTERED 10/10**. Canonical 楷书 horizontal with weighted entry (16), shaft (~11), heavier closing press 收笔 (19), gentle ~6 px upward rise. Promoted to `success_bank/code/heng.py` (tag:atomic-stroke tag:heng). Principle Bank seeded with §1.0 universal brushwork rules, §1.1 横 recipe, §2.1 Success Bank `draw(t, ox, oy, scale)` interface, §5.3 atomic-strokes-are-single-phase. Visual index built (1 entry). Next focus: 竖 (second atomic stroke).

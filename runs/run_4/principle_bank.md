@@ -12,10 +12,30 @@ generalizable rule out and writes it here.
 
 ## §1 — Brushwork primitives
 
-(Initially empty — populated as run_4 develops mastered atomic
-strokes. Likely first entries: how to render 横/竖/撇/捺/提/点
-with per-sample pensize on a smooth cubic Bézier, with the width
-floor mandate from run_3's c17→c18 lesson.)
+### §1.0 — Universal brushwork rules
+
+**To render any brushed stroke**: use a smooth cubic Bézier
+centerline with per-sample pensize. The canonical helper, kept as
+`brushed_bezier(t, P0, P1, P2, P3, w_profile, samples=220)`, walks
+`s ∈ [0, 1]` and calls `t.pensize(max(3, w_profile(s)))` then
+`t.goto(x, y)` at each sample. The `max(3, ...)` floor is
+non-negotiable — pensize < 3 anywhere except a deliberately tapered
+tip will read as a hairline and fail the rubric's `taper` criterion
+(run_3 c17 lesson).
+
+**Min sample count**: 200 for atomic strokes, 160 OK for short
+hooks/segments. Below ~120 the Bézier looks polygonal.
+
+### §1.1 — 横 (heng, horizontal stroke)
+
+**To draw 横**: use `success_bank/code/heng.py`'s `draw(t, ox=0,
+oy=0, scale=1.0)`. The canonical endpoints are (-200, -3) →
+(+200, +3) — note the gentle ~6 px upward rise that gives the
+楷书 tilt. Width profile: entry press 16 → shaft 11 →
+closing press 19 (right end is heaviest, this is the 收笔).
+
+Established by c1 (rubric 10/10).
+
 
 ---
 
@@ -35,6 +55,13 @@ parts. Examples of entry shape:
 > ...
 
 are placeholders — actual rules emerge from real successes.)
+
+**§2.1 (verified c1)**: every Success Bank `draw()` function takes
+`(t, ox=0, oy=0, scale=1.0)`. Translation is by adding `(ox, oy)`
+to every coordinate; scale multiplies the coordinates (but does
+NOT scale the pensize — width is in pixel-units of the stroke, not
+the character). To use 横 inside a character, call `draw_heng(t,
+ox=<center_x>, oy=<center_y>)`.
 
 ---
 
@@ -91,3 +118,14 @@ run_4 splits each character into two phases:
 
 (Width-floor table and Bézier helper to be added once the first
 atomic-stroke recipes are mastered in run_4 cycle 1–2.)
+
+### §5.3 — Atomic strokes are SINGLE-PHASE
+
+(Established by c1 design.)
+
+For Phase 1 (atomic strokes) and Phase 2 (compound strokes), there
+is no GT (eval = `vision` only). The skeleton-vs-GT comparison is
+not applicable — the stroke IS its own composition. So these
+phases run a single brushwork pass and are scored by the vision
+rubric directly. The skeleton/brushwork split kicks in at Phase 3
+(characters).
