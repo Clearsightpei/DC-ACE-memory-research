@@ -109,3 +109,5 @@ prior entries.
 ## Cycle 17 — 十. heng+shu intersection.
 
 ## Cycle 18 — 八. 撇+捺 separated (gap-top).
+
+## Cycle 19 — 人. Same as 八 but 撇/捺 SHARE apex.
