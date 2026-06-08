@@ -1,0 +1,48 @@
+[
+  {
+    "index": 1,
+    "character": "三",
+    "pinyin": "san",
+    "visual_score": 0.6377,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.478,
+      "chamfer": 0.7048,
+      "chamfer_px": 10.49,
+      "proportion": 0.8228,
+      "ar_term": 0.8685,
+      "quad_term": 0.8783
+    },
+    "recognized_char": "三",
+    "ocr_confidence": 0.9994,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "# Top heng — short (scale 0.35), shifted left to center on -20.\n    draw_heng(t, ox=-20, oy=+90, scale=0.35)\n\n    # Middle heng — slightly longer (scale 0.38), centered on -25.\n    draw_heng(t, ox=-25, oy=-10, scale=0.38)\n\n    # Bottom heng — longest (scale 0.70), centered on +10.\n    draw_heng(t, ox=+10, oy=-120, scale=0.70)\n\n    screen.update()\n    canvas = screen.getcanvas()\n    canvas.postscript(file=\"01_三.eps\")\n\n    try:\n        from PIL import Image\n        img = Image.open(\"01_三.eps\")\n        img.load(scale=2)\n        img.save(\"01_三.png\", \"PNG\")\n    except Exception as e:\n        print(f\"PNG conversion fallback: {e}\")\n\n    screen.bye()\n\n\nif __name__ == \"__main__\":\n    main()",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.7826,
+    "ai_file": "01_三.png",
+    "gt_file": "01_三.png",
+    "eval_requested": "gt+ocr+vision",
+    "mastery_policy": "is_correct AND conf>=0.4 AND rubric>=7 no 0",
+    "calligraphy_rubric": {
+      "dunbi": 2,
+      "hudu": 2,
+      "taper": 2,
+      "proportion": 2,
+      "overall": 2,
+      "total": 10,
+      "max": 10,
+      "rationale": {
+        "dunbi": "All 3 weighted.",
+        "hudu": "Natural.",
+        "taper": "Inherited.",
+        "proportion": "short/med/long stack.",
+        "overall": "3-call composition of c1 横."
+      },
+      "scored_by": "orchestrator-vision",
+      "rubric_version": 1
+    }
+  }
+]
