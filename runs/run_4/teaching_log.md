@@ -56,3 +56,9 @@ prior entries.
 - Phase 1. Focus: 提.
 - Same family as 撇 (tapered-tip), shorter (~250 px).
 - Success Bank size before: 4.
+
+## Cycle 6 — 2026-06-07
+
+- Phase 1. Focus: 点. Last atomic.
+- Different family — short, teardrop-shaped, both ends thin.
+- Success Bank size before: 5.
