@@ -53,6 +53,25 @@ interface: shu.py imports `brushed_bezier` from heng.py rather than
 duplicating the helper. This is the canonical pattern for future
 entries.
 
+### §1.3 — 撇 (pie, diagonal sweep, 斜撇 variant)
+
+**To draw 撇**: use `success_bank/code/pie.py`'s `draw(...)`.
+Canonical endpoints head (+150, +200) → tail (-180, -180). Control
+points place the centerline above the straight head-to-tail line for
+a gentle concave-down arc. Width profile: head 18 → shaft 14 → 11
+→ tail 3.
+
+**General pattern for tapered-tip strokes (撇 / 提 / etc.):**
+1. Heavy weighted head (16–18 peak) over the first ~10–12% of `s`.
+2. Solid shaft (~11) over the middle ~76% — DON'T let it thin out
+   early, or the stroke reads as flimsy.
+3. Final 10–15% taper from shaft width down to pensize 3 (the floor
+   enforced by `brushed_bezier`'s `max(3, ...)`). A 12% taper window
+   reads smoother than a 5% window (c3 self-preview refinement
+   verified this).
+
+Established by c3 (rubric 10/10).
+
 
 ---
 
