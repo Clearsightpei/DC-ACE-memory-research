@@ -27,3 +27,14 @@ prior entries.
   inside compound characters than 悬针竖; pick the universal first.
 - Success Bank size before: 1 (横).
 
+## Cycle 3 — 2026-06-07
+
+- Educational phase: 1 (atomic strokes)
+- Focus: 撇 (pie, 斜撇 diagonal-sweep variant).
+- Prerequisites: none.
+- Eval: `vision`. Single-phase.
+- Why this focus: third atomic. First stroke with a TRUE taper-to-point
+  (vs the symmetric barbells of 横/竖) — introduces the "tail to pensize 3"
+  pattern needed for fine-tip strokes (also 提, eventually).
+- Success Bank size before: 2 (横, 竖).
+
