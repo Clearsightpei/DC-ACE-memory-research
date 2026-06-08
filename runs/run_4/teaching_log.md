@@ -86,3 +86,6 @@ prior entries.
 ## Cycle 11
 - Phase 2. Focus: 横撇.
 - Two segments: short heng + 撇-tail (taper to point). Composes c3 (撇 family) with corner-顿笔.
+
+## Cycle 12
+- Phase 2. Focus: 竖折. Bottom-left L frame for 山/凶/区.
