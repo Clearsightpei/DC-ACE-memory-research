@@ -115,3 +115,5 @@ prior entries.
 ## Cycle 20 — 入. 捺 dominant + 撇 partway down 捺.
 
 ## Cycle 21 — 大. heng + 撇 + 捺, limbs above heng + sweep past.
+
+## Cycle 22 — 又. 横撇 + 捺 crossing.
