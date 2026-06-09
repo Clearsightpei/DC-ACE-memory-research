@@ -42,3 +42,8 @@ also sees the GT directly in run_5.**
 | 下 | [code/xia.py](code/xia.py) | 9/10 (OCR none, vision PASSED — 竖 hangs from heng) | tag:character tag:3-strokes tag:heng+shu+dian tag:竖-hangs-from-heng | c4 |
 | 干 | [code/gan.py](code/gan.py) | 9/10 (OCR 干) | tag:character tag:3-strokes tag:heng+heng+shu tag:竖-pierces-heng | c4 |
 | 工 | [code/gong.py](code/gong.py) | 9/10 (OCR none, vision PASSED — 竖 spans between hengs) | tag:character tag:3-strokes tag:heng+shu+heng tag:竖-spans-between-hengs | c4 |
+| 撇 | [code/pie.py](code/pie.py) | (verified in 八/人/入 c5) | tag:atomic-stroke tag:撇 tag:斜撇 tag:tapered-tip tag:楷书 tag:PIL-renderer | c5 |
+| 捺 | [code/na.py](code/na.py) | (verified in 八/人/入 c5) | tag:atomic-stroke tag:捺 tag:斜捺 tag:flat-kick-tail tag:two-segment tag:楷书 tag:PIL-renderer | c5 |
+| 八 | [code/ba.py](code/ba.py) | 7/10 (OCR 八) | tag:character tag:2-strokes tag:撇捺-separated tag:component-of(只, 兵, 公) | c5 |
+| 人 | [code/ren.py](code/ren.py) | 7/10 (OCR 入 — RapidOCR confusion; vision PASSED) | tag:character tag:2-strokes tag:撇捺-shared-apex tag:component-of(从, 众, 介) | c5 |
+| 入 | [code/ru.py](code/ru.py) | 7/10 (OCR 入) | tag:character tag:2-strokes tag:捺-dominant tag:撇-attaches-below-apex tag:component-of(全, 内, 两) | c5 |

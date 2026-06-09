@@ -5,6 +5,6 @@ being worked on. Resets when a focus is mastered.
 
 ---
 
-(Empty — c4 promoted 3/3 including the c3 carry-over (下). The
-generalizable structural rule (竖 vs heng hanging/piercing/spanning)
-graduated to Principle Bank §2.2. Next cycle starts fresh.)
+(Empty — c5 promoted 3/3. The 撇+捺 structural distinction (separated /
+shared-apex / 捺-dominant) graduated to Principle Bank §2.3. Two new
+atomic primitives (撇, 捺) added to Success Bank.)

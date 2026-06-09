@@ -112,6 +112,29 @@ as 十-with-dot. The c4 attempt applied the hanging pattern correctly.
 When the brief asks for a character with both 横 and 竖, the Drawer must
 choose the pattern from the character's structure, not from defaults.
 
+### §2.3 — 撇+捺 structural relationships (verified c5)
+
+The three Chinese characters 八, 人, 入 are all composed of a 撇 and a
+捺, but the relative position of the two stroke heads determines which
+character the silhouette reads as. **This is the exact class that
+produced the run_4 false positives** (c20 入 promoted at visual 0.58).
+In run_5 the Drawer sees the GT and applies the right pattern:
+
+| pattern | head relationship | examples (verified) |
+|---|---|---|
+| **separated** (visible gap between 撇 head and 捺 head) | 撇 head is below and to the left; 捺 head is above and to the right; roughly 80–100px horizontal slot between them | 八 (c5) |
+| **shared apex** (撇 and 捺 emanate from the same point) | both stroke heads at exactly the same (x, y) | 人 (c5) |
+| **捺 dominant, 撇 attached** (撇 head is BELOW the 捺's apex) | 捺's head is the topmost point; 撇's head sits below the 捺's head and the 撇 attaches as a shorter secondary stroke | 入 (c5) |
+
+If the Drawer treats all three identically (or applies the shared-apex
+pattern to 入), the silhouettes collapse to ambiguous wedges that OCR
+maps to whichever character is closest in its small vocabulary — the
+exact run_4 false-positive mechanism.
+
+When the brief asks for a 撇+捺 character, the Drawer must look at the
+GT and identify which of the three patterns applies before placing any
+coordinates.
+
 ---
 
 ## §3 — Graphics-coordinate translation
