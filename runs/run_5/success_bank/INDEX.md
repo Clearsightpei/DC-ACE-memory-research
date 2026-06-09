@@ -35,3 +35,6 @@ also sees the GT directly in run_5.**
 | 一 | [code/yi.py](code/yi.py) | 7/10 (OCR none, vision PASSED) | tag:character tag:1-stroke tag:heng tag:component-of(二, 三, 王, 工, 干, 上, 下) | c2 |
 | 二 | [code/er.py](code/er.py) | 7/10 (OCR 二 conf 0.96) | tag:character tag:2-strokes tag:heng-stacked tag:component-of(三, 王, 工) | c2 |
 | 三 | [code/san.py](code/san.py) | 7/10 (OCR 三 conf 1.00) | tag:character tag:3-strokes tag:heng-stacked tag:component-of(王) | c2 |
+| 竖 | [code/shu.py](code/shu.py) | (verified in 十 c3, 9/10) | tag:atomic-stroke tag:shu tag:垂露竖 tag:楷书 tag:PIL-renderer | c3 |
+| 十 | [code/shi.py](code/shi.py) | 9/10 (OCR 十) | tag:character tag:2-strokes tag:heng+shu tag:component-of(古, 干, 平, 早, 卄) | c3 |
+| 上 | [code/shang.py](code/shang.py) | 7/10 (OCR 上) | tag:character tag:3-strokes tag:shu+heng tag:component-of(止, 让) | c3 |

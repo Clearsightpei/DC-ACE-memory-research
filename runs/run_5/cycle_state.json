@@ -1,12 +1,12 @@
 {
-  "cycle": 2,
+  "cycle": 3,
   "phase": 1,
-  "current_slate": ["一", "二", "三"],
-  "last_promoted": ["一", "二", "三"],
-  "last_carry_overs": [],
-  "last_finished_at": "2026-06-08T21:45:00",
-  "success_bank_size": 4,
+  "current_slate": ["十", "上", "下"],
+  "last_promoted": ["十", "上"],
+  "last_carry_overs": ["下"],
+  "last_finished_at": "2026-06-08T22:00:00",
+  "success_bank_size": 7,
   "batch_size": 3,
   "pass_signal": "Curator promotes ONLY if Claude-vision says the attempt PNG vs GT PNG is unambiguously the same character (100% confident). OCR logged but not sufficient. Calligraphy rubric >= 7 no 0.",
-  "notes": "c2: 一/二/三 carry-overs all PROMOTED at rubric 7/10. Width-profile fix from c1 sandbox successful. Success Bank: heng + 一 + 二 + 三. Principle Bank §1.1 横 width profile + §2.1 updated to PIL reuse interface."
+  "notes": "c3: 十 9/10 (highest), 上 7/10 PROMOTED. 下 carry-over: 竖 pierces through the heng instead of hanging below → reads as 十+dot."
 }
