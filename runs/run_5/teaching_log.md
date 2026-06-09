@@ -42,3 +42,12 @@ prior entries.
 - New picks: 干 (heng+heng+shu cross — three-stroke variant of 十), 工 (heng+shu+heng — 竖 spans between two hengs).
 - Why this slate: tests the three positional patterns of 竖 vs heng (piercing / hanging / spanning) in three characters. If all three pass, the structural distinction is solid and the next cycle can introduce 撇 with confidence.
 - Mastery audit of cycle 3: vision-checked all 3 attempts. 十 and 上 unambiguous; 下 ambiguous (reads as 十+dot, OCR confirmed). Promoted 十/上, carried over 下.
+
+## Cycle 5 — 2026-06-08
+
+- Phase: 1 (introducing 撇 + 捺 — the diagonal-sweep pair)
+- Slate: 八, 人, 入
+- Carry-overs: none (c4 promoted 3/3).
+- New picks: three structurally distinct 撇+捺 compositions. These are the exact characters that produced the run_4 false positives (入 c20 visual 0.58, "ambiguous slash"). run_5 design point: the Drawer now SEES each GT and the Curator gate is strict-vision identity, not OCR. This cycle is the explicit test of whether the architecture fix solves the run_4 problem.
+- Why this slate: 八 (gap between 撇 head and 捺 head), 人 (shared apex), 入 (捺 dominant + 撇 attaches as secondary). The structural distinctions are real and human-visible.
+- Mastery audit of cycle 4: vision-checked all 3 attempts. 下/干/工 all unambiguous; the structural fix from c3 Sandbox worked first try on 下. Promoted 3/3.
