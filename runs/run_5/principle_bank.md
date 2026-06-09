@@ -44,22 +44,54 @@ tip reads as a hairline (run_3 c17 lesson, verified across run_4).
 **Min sample count**: 200 for atomic strokes, 160 for short
 hooks/segments. Below ~120 the Bézier looks polygonal.
 
-(Per-stroke recipes — §1.1 onward — populate as the Drawer masters
-atomic strokes in run_5.)
+### §1.1 — 横 (heng) width profile (verified c2)
+
+**To draw a 楷书 横**: width profile is `entry-press 16 → shaft 11 →
+closing-press 22`, with the RIGHT END being the heaviest point of
+the stroke. The right closing-press (收笔) is what makes the stroke
+read as 楷书 rather than block-printing or thin cursive.
+
+**Wrong** (verified c1 failure): bell-curve `light → heavy → light`
+with the right end tapered thin. This reads as a calligraphic
+stroke but fails the `dunbi` (顿笔) criterion because the 收笔 is
+the opposite of a press — it's a release.
+
+**Right** (verified c2 success): right end is the visibly thickest
+point. A small angled foot at each end is OK but it must be at
+the same heavy width as the closing-press (not tapered down).
+
+See `success_bank/code/heng.py`'s `draw_heng(draw, ox, oy, length,
+scale=1.0)` for the canonical implementation. Reuse it whenever
+you need a 横 — do not re-derive the width profile.
+
+### §1.2+ — populate as more strokes master.
 
 ---
 
 ## §2 — Composition (reuse interface)
 
-### §2.1 — Translate/scale interface (carried from run_4)
+### §2.1 — Translate/scale interface (PIL-based in run_5)
 
 Every Success Bank `draw()` function takes
-`(t, ox=0, oy=0, scale=1.0)`. Translation adds `(ox, oy)` to every
-coordinate; scale multiplies coordinates but does NOT scale the
-pensize (width is in pixel-units of the stroke, not the character).
+`(pil_draw, ox=0, oy=0, scale=1.0)`. `pil_draw` is a
+`PIL.ImageDraw.Draw` object — run_5 standardized on PIL rendering
+in c2 because the turtle.PostScript → PIL pipeline was fragile on
+macOS. The math is unchanged from §1.0: cubic Bezier centerline +
+per-sample `max(3, w(s))` width floor.
 
-To use a primitive inside a character, call e.g. `draw_heng(t,
-ox=<center_x>, oy=<center_y>, scale=<s>)`.
+Translation adds `(ox, oy)` to every coordinate; scale multiplies
+coordinates but does NOT scale the pensize (width is in pixel-units
+of the stroke, not the character).
+
+The 横 primitive (`heng.py`) additionally takes a `length` parameter
+because the same stroke is reused at different horizontal extents
+across a character (e.g. 三's bottom 横 is longer than its top).
+
+To use a primitive inside a character, call e.g. `draw_heng(pil_draw,
+ox=<center_x>, oy=<center_y>, length=<px>, scale=<s>)`.
+
+To use a whole-character entry (e.g. 一/二/三), call its `draw(pil_draw,
+ox=0, oy=0, scale=1.0)`.
 
 ---
 

@@ -1,11 +1,11 @@
 # DC-ACE Dashboard — run_5 — last update: 2026-06-08
 
-- **Cycle**: 1
+- **Cycle**: 2
 - **Educational phase**: 1
-- **This cycle**: 0/3 promoted. All three (一/二/三) pass vision identity AND OCR, but rubric < 7 because dunbi (右端收笔) is the OPPOSITE of correct — right end tapers thin instead of pressing thick. Carry-overs: 一, 二, 三.
-- **Success Bank**: 0 entries
-- **Principle Bank**: §0 mimic-by-vision, §1.0 width floor, §2.1 reuse interface
-- **Sandbox**: cycle 1 brushwork feedback recorded for all three carry-overs.
-- **Trend**: first cycle. Strict gate held; bell-curve width profile rejected.
-- **Curator note**: this is the run_5 gate working as designed. 一/二/三 OCR'd correctly with high confidence — a run_4 Curator would have promoted them all. Holding the bar.
-- **Loop status**: ready for cycle 2 (carry-over batch).
+- **This cycle**: 3/3 PROMOTED (一, 二, 三). All three were c1 carry-overs; the width-profile fix from Sandbox worked first try.
+- **Success Bank**: 4 entries (横 primitive + 一, 二, 三 characters).
+- **Principle Bank**: §0 mimic-by-vision, §1.0 width floor, §1.1 横 width profile (verified c2), §2.1 PIL reuse interface (updated c2).
+- **Sandbox**: empty (reset on mastery).
+- **Trend**: c1 0/3 → c2 3/3 on the same slate. The strict gate produced a *real* refinement signal (vs. run_4 where it might have promoted c1).
+- **Curator note**: 一 OCR'd as none but Curator-vision identified it as unambiguous 一. This is the run_5 design point: OCR is logged, vision is the gate.
+- **Loop status**: ready for cycle 3 (new slate — Phase 1 continues).

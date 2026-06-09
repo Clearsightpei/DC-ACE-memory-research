@@ -31,5 +31,7 @@ also sees the GT directly in run_5.**
 
 | char | file | rubric | component tags | added in cycle |
 |------|------|--------|----------------|----------------|
-
-(Empty. First entry added when the Curator promotes a c1 task.)
+| 横 | [code/heng.py](code/heng.py) | 7/10 (PIL renderer) | tag:atomic-stroke tag:heng tag:楷书 tag:PIL-renderer | c2 |
+| 一 | [code/yi.py](code/yi.py) | 7/10 (OCR none, vision PASSED) | tag:character tag:1-stroke tag:heng tag:component-of(二, 三, 王, 工, 干, 上, 下) | c2 |
+| 二 | [code/er.py](code/er.py) | 7/10 (OCR 二 conf 0.96) | tag:character tag:2-strokes tag:heng-stacked tag:component-of(三, 王, 工) | c2 |
+| 三 | [code/san.py](code/san.py) | 7/10 (OCR 三 conf 1.00) | tag:character tag:3-strokes tag:heng-stacked tag:component-of(王) | c2 |
