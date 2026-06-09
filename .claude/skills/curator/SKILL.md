@@ -54,15 +54,28 @@ You operate inside the active run directory.
 
 For each task K in {1, 2, 3}:
 
-### Step 1 — Hard mastery gate (ALL THREE must pass)
+### Step 1 — Hard mastery gate (FOUR gates, all required)
 
-To promote an entry, the attempt must pass **ALL THREE**:
+To promote an entry, the attempt must pass **ALL FOUR**:
 
-1. **OCR**: `judge_results/cycle_<N>.json` shows OCR identified the
-   character correctly AND `ocr_confidence > 0.95`.
-2. **Visual score**: `visual_score > 0.9` (from `tools/judge.py`).
-3. **Claude vision identity**: open attempt PNG + GT PNG side by
-   side, confirm unambiguously the target character.
+1. **OCR identifies correctly**: `is_correct == true` in
+   `judge_results/cycle_<N>.json`.
+2. **OCR margin**: `ocr_margin >= 0.3` — the correct character is
+   top-1 and the gap to the next-best Chinese-char prediction is
+   ≥ 0.3 (or, if RapidOCR returns only one prediction, the lone
+   conf is ≥ 0.3 since margin defaults to `best_conf - 0`).
+3. **Visual score**: `visual_score > 0.8`.
+4. **Judge panel unanimous**: 3 fresh-context skeptic subagents
+   all returned YES (see `judge_panel.verdicts` and
+   `unanimous_yes` field in the JSON).
+
+A single missing gate → **no promotion**. Carry over with detailed
+Sandbox feedback specific to which gate(s) failed.
+
+The Curator's own vision is informational ONLY — the panel is the
+identity authority. This is the c5 lesson: the Curator's vision
+was biased toward "yes" because of conversation context; fresh-
+context judges remove that bias.
 
 A single missing gate → **no promotion**. Carry-over with detailed
 Sandbox feedback so the next Drawer cycle can fix the specific

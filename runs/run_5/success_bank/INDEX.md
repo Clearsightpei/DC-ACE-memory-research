@@ -2,17 +2,26 @@
 
 Curator-owned. **Only mastered code lives here.**
 
-## Hard mastery gate (run_5, tightened after c5 user review)
+## Hard mastery gate (4-component, after c5 + c8 reviews)
 
-To promote an entry to the Success Bank, the attempt must pass **ALL THREE** of:
+To promote an entry, the attempt must pass **ALL FOUR**:
 
-1. **OCR identifies the character correctly with confidence > 0.95** (RapidOCR output `(char, conf)`).
-2. **`visual_score > 0.9`** (Dice + Chamfer + proportion vs the GT, from `tools/judge.py`).
-3. **Claude vision identifies the character unambiguously as the target** with no plausible alternate reading.
+1. **OCR `is_correct == true`** (RapidOCR returns the target char).
+2. **OCR margin ≥ 0.3** (top-1 is correct AND gap to runner-up ≥ 0.3).
+3. **`visual_score > 0.8`** (`tools/judge.py` blended Dice+Chamfer+proportion).
+4. **Judge panel unanimous YES** — 3 fresh-context skeptic subagents per
+   task. Each sees only the attempt PNG, GT PNG, and target char; no
+   brief, no Drawer narrative, no Curator commentary. All 3 must say YES.
 
-A single missing gate → no promotion → carry-over with Sandbox feedback. The strict bar prevents foundation entries from polluting harder compositions downstream.
+The Curator's own vision is informational only. The panel removes the
+Curator confirmation-bias leak exposed at c5 (人 and 入 passed Curator
+vision but the renders had ugly disk-blob apexes). Independent judges
+with frozen scope = no shared bias.
 
-**Claude vision alone is NOT sufficient.** This was learned at c5: 人 and 入 passed my vision check but the renders were visually sloppy from a human standpoint (disk-blob apex, messy 撇/捺 crossing). The numeric gates (OCR conf > 0.95 + visual > 0.9) catch what a misguided vision check waves through.
+OCR conf < 0.95 was relaxed because of RapidOCR's vocabulary issues
+with isolated 1-stroke characters (e.g. 一 conf 0.43–0.79 even on
+clean renders). The margin-≥-0.3 rule still rejects truly ambiguous
+OCR outputs.
 
 ## How to use this bank (for the Drawer)
 
@@ -50,7 +59,11 @@ A single missing gate → no promotion → carry-over with Sandbox feedback. The
 
 ### Characters
 
-None yet under the new hard gate. Cycle 6+ will populate as renders pass all three gates.
+| char | file | gates | added in |
+|---|---|---|---|
+| 一 | [code/yi.py](code/yi.py) | OCR 一 m=0.79, v=0.85, panel 3/3 YES | c6 |
+| 二 | [code/er.py](code/er.py) | OCR 二 m=0.99, v=0.88, panel 3/3 YES | c6 |
+| 三 | [code/san.py](code/san.py) | OCR 三 m=1.00, v=0.88, panel 3/3 YES | c6 |
 
 ## Revoked entries
 

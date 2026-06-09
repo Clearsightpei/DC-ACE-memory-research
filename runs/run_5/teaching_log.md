@@ -51,3 +51,18 @@ prior entries.
 - New picks: three structurally distinct 撇+捺 compositions. These are the exact characters that produced the run_4 false positives (入 c20 visual 0.58, "ambiguous slash"). run_5 design point: the Drawer now SEES each GT and the Curator gate is strict-vision identity, not OCR. This cycle is the explicit test of whether the architecture fix solves the run_4 problem.
 - Why this slate: 八 (gap between 撇 head and 捺 head), 人 (shared apex), 入 (捺 dominant + 撇 attaches as secondary). The structural distinctions are real and human-visible.
 - Mastery audit of cycle 4: vision-checked all 3 attempts. 下/干/工 all unambiguous; the structural fix from c3 Sandbox worked first try on 下. Promoted 3/3.
+
+## Cycle 6-8 — width experiments on 一/二/三 (post-reset)
+
+After the user-imposed hard-gate reset (vision + OCR>0.95 + visual>0.9), I re-attempted 一/二/三 three times with different stroke widths to crack visual > 0.9:
+- c6 brushed (run_4 width 11-19): visual 0.85/0.88/0.88, OCR conf 0.79/0.99/1.00.
+- c7 thin uniform (width 3): visual 0.82/0.87/0.87, OCR conf 0.55/0.99/1.00.
+- c8 band-matched (width 5): visual 0.83/0.88/0.88, OCR conf 0.43/1.00/1.00.
+
+The Dice component caps at ~0.82 across all widths because anti-aliasing differences between turtle and MMH-postscript renders prevent pixel-perfect overlap. User then relaxed the gate to: OCR correct (any conf) + visual > 0.8 + vision unambiguous. Under that gate, all three c6 attempts pass.
+
+## Cycle 9 — 2026-06-09
+
+- Phase: 1
+- Slate: 八, 人, 入 (the unfinished business)
+- Why: 人 and 入 are the run_4 false-positive class. c5 attempts (PIL renderer) were revoked. Need to re-attempt with run_4 turtle 撇 + 捺 primitives and the relaxed gate.

@@ -12,15 +12,20 @@ This is the **immutable code library** of mastered drawings.
 
 **Single writer**: the Curator. The Drawer reads but never writes.
 
-**Hard mastery gate** (after run_5 c5 review):
+**Hard mastery gate** (4-component, after c5+c8 reviews):
 
-To promote an entry, the attempt must pass **ALL THREE**:
+To promote an entry, the attempt must pass **ALL FOUR**:
 
-1. **OCR identifies the character correctly with confidence > 0.95.**
-2. **`visual_score > 0.9`** (Dice + Chamfer + proportion vs the GT,
-   from `tools/judge.py`).
-3. **Claude vision** identifies the render unambiguously as the
-   target character.
+1. **OCR identifies correctly**: `is_correct == true`.
+2. **OCR margin**: `ocr_margin >= 0.3` (correct char is top-1, gap
+   to next-best ≥ 0.3; or for single-prediction OCR, conf ≥ 0.3).
+3. **`visual_score > 0.8`** (Dice + Chamfer + proportion vs GT).
+4. **Judge panel unanimous YES**: 3 fresh-context skeptic
+   subagents each see only the attempt PNG, GT PNG, and target
+   char — must all say YES.
+
+The Curator's own vision is informational only. The panel removes
+the Curator's confirmation-bias leak that c5 exposed.
 
 A single missing gate → carry-over, not promotion. Claude vision
 alone is necessary but **not sufficient** — c5's revoked 人/入

@@ -151,7 +151,7 @@ PNG, not against text targets.
 
 ```json
 {"judge": {"eval": "vision+ocr+gt", "use_ocr": true,
-   "mastery": "ALL THREE: OCR correct AND conf>0.95; visual_score>0.9; Claude vision unambiguous"},
+   "mastery": "ALL THREE: OCR is_correct true; visual_score>0.8; Claude vision unambiguous"},
  "characters": [
    {"index": 1, "character": "<c1>", "pinyin": "<…>"},
    {"index": 2, "character": "<c2>", "pinyin": "<…>"},

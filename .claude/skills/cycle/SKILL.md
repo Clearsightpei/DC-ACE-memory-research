@@ -185,7 +185,42 @@ rubric.
 Commit:
 ```bash
 git -C "$PROJECT_ROOT" add "$RUN_REL"
-git -C "$PROJECT_ROOT" commit -m "cycle ${N} judge: <K>/3 OCR-correct (vision identity pending)"
+git -C "$PROJECT_ROOT" commit -m "cycle ${N} judge: <K>/3 OCR-correct (judge panel pending)"
+```
+
+## 3.5. Judge Panel — 3 fresh-context skeptics per task
+
+For each task K in {1, 2, 3}, spawn **3 fresh `general-purpose`
+Agent subagents in parallel**. Each gets only:
+
+- The cycle number, the task index K, and the **target character `c`**.
+- Paths to `attempts/cycle_<N>/0K_<c>.png` and `ground_truths/cycle_<N>/0K_<c>.png`.
+- A frozen brief (verbatim): *"You are an independent skeptic. Open
+  both images. Answer one question with one word + one sentence: is
+  the attempt UNAMBIGUOUSLY the target character `<c>`? Reply with
+  YES or NO on line 1 and a single sentence reason on line 2. Bias
+  toward NO when in doubt — false-positive promotions contaminate
+  the success bank. You have no access to the Drawer's intent, the
+  brief, or prior commentary. Pure visual identity judgment only."*
+- Subagent type: `general-purpose`.
+- No other context, no project files, no Success Bank.
+
+Collect the 3 verdicts per task. Record them in
+`judge_results/cycle_<N>.json` under `judge_panel`:
+
+```json
+{ "index": K, "verdicts": ["YES", "YES", "NO"],
+  "reasons": ["sentence 1", "sentence 2", "sentence 3"],
+  "unanimous_yes": false }
+```
+
+**Spawning all 9 subagents (3 tasks × 3 judges) in a SINGLE message
+with parallel Agent tool calls is preferred** to keep wall-clock low.
+
+Commit:
+```bash
+git -C "$PROJECT_ROOT" add "$RUN_REL"
+git -C "$PROJECT_ROOT" commit -m "cycle ${N} judge panel: <K>/3 unanimous"
 ```
 
 ## 4. Curator phase (main thread plays this role)

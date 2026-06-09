@@ -15,6 +15,13 @@
     },
     "recognized_char": "一",
     "ocr_confidence": 0.7856,
+    "ocr_topk": [
+      [
+        "一",
+        0.7856
+      ]
+    ],
+    "ocr_margin": 0.7856,
     "is_correct": true,
     "gt_coordinates": {},
     "ai_coordinates": {},
@@ -25,7 +32,21 @@
     "ai_file": "01_一.png",
     "gt_file": "01_一.png",
     "eval_requested": "vision+ocr+gt",
-    "mastery_policy": "ALL THREE: OCR correct AND conf>0.95; visual_score>0.9; Claude vision unambiguous"
+    "mastery_policy": "ALL THREE: OCR correct AND conf>0.95; visual_score>0.9; Claude vision unambiguous",
+    "judge_panel": {
+      "target": "一",
+      "verdicts": [
+        "YES",
+        "YES",
+        "YES"
+      ],
+      "reasons": [
+        "single horizontal stroke with rounded ends",
+        "clean horizontal stroke with subtle end-weighting",
+        "horizontal stroke with subtle thickness variation"
+      ],
+      "unanimous_yes": true
+    }
   },
   {
     "index": 2,
@@ -43,6 +64,13 @@
     },
     "recognized_char": "二",
     "ocr_confidence": 0.9863,
+    "ocr_topk": [
+      [
+        "二",
+        0.9863
+      ]
+    ],
+    "ocr_margin": 0.9863,
     "is_correct": true,
     "gt_coordinates": {},
     "ai_coordinates": {},
@@ -53,7 +81,21 @@
     "ai_file": "02_二.png",
     "gt_file": "02_二.png",
     "eval_requested": "vision+ocr+gt",
-    "mastery_policy": "ALL THREE: OCR correct AND conf>0.95; visual_score>0.9; Claude vision unambiguous"
+    "mastery_policy": "ALL THREE: OCR correct AND conf>0.95; visual_score>0.9; Claude vision unambiguous",
+    "judge_panel": {
+      "target": "二",
+      "verdicts": [
+        "YES",
+        "YES",
+        "YES"
+      ],
+      "reasons": [
+        "two stacked horizontal strokes, lower longer",
+        "two stacked horizontal strokes, lower longer",
+        "upper short / lower long stacking"
+      ],
+      "unanimous_yes": true
+    }
   },
   {
     "index": 3,
@@ -71,6 +113,13 @@
     },
     "recognized_char": "三",
     "ocr_confidence": 0.9999,
+    "ocr_topk": [
+      [
+        "三",
+        0.9999
+      ]
+    ],
+    "ocr_margin": 0.9999,
     "is_correct": true,
     "gt_coordinates": {},
     "ai_coordinates": {},
@@ -81,6 +130,20 @@
     "ai_file": "03_三.png",
     "gt_file": "03_三.png",
     "eval_requested": "vision+ocr+gt",
-    "mastery_policy": "ALL THREE: OCR correct AND conf>0.95; visual_score>0.9; Claude vision unambiguous"
+    "mastery_policy": "ALL THREE: OCR correct AND conf>0.95; visual_score>0.9; Claude vision unambiguous",
+    "judge_panel": {
+      "target": "三",
+      "verdicts": [
+        "YES",
+        "YES",
+        "YES"
+      ],
+      "reasons": [
+        "three stacked horizontals, bottom longest",
+        "three distinct horizontals, bottom longest",
+        "three stacked horizontals, bottom longest"
+      ],
+      "unanimous_yes": true
+    }
   }
 ]
