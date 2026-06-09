@@ -1,0 +1,107 @@
+[
+  {
+    "index": 1,
+    "character": "八",
+    "pinyin": "ba",
+    "visual_score": 0.753,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.6411,
+      "chamfer": 0.7883,
+      "chamfer_px": 7.14,
+      "proportion": 0.9061,
+      "ar_term": 0.9105,
+      "quad_term": 0.9159
+    },
+    "recognized_char": "八",
+    "ocr_confidence": 0.9856,
+    "ocr_topk": [
+      [
+        "八",
+        0.9856
+      ]
+    ],
+    "ocr_margin": 0.9856,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8518,
+    "ai_file": "01_八.png",
+    "gt_file": "01_八.png",
+    "eval_requested": "vision+ocr+gt",
+    "mastery_policy": "ALL FOUR: OCR is_correct AND margin>=0.3; visual_score>0.8; panel unanimous YES"
+  },
+  {
+    "index": 2,
+    "character": "人",
+    "pinyin": "ren",
+    "visual_score": 0.4677,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.2633,
+      "chamfer": 0.5218,
+      "chamfer_px": 19.51,
+      "proportion": 0.7686,
+      "ar_term": 0.9198,
+      "quad_term": 0.8347
+    },
+    "recognized_char": "人",
+    "ocr_confidence": 0.7952,
+    "ocr_topk": [
+      [
+        "人",
+        0.7952
+      ]
+    ],
+    "ocr_margin": 0.7952,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.6806,
+    "ai_file": "02_人.png",
+    "gt_file": "02_人.png",
+    "eval_requested": "vision+ocr+gt",
+    "mastery_policy": "ALL FOUR: OCR is_correct AND margin>=0.3; visual_score>0.8; panel unanimous YES"
+  },
+  {
+    "index": 3,
+    "character": "入",
+    "pinyin": "ru",
+    "visual_score": 0.7573,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.6425,
+      "chamfer": 0.7819,
+      "chamfer_px": 7.38,
+      "proportion": 0.9377,
+      "ar_term": 0.975,
+      "quad_term": 0.9268
+    },
+    "recognized_char": "入",
+    "ocr_confidence": 0.9997,
+    "ocr_topk": [
+      [
+        "入",
+        0.9997
+      ]
+    ],
+    "ocr_margin": 0.9997,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8544,
+    "ai_file": "03_入.png",
+    "gt_file": "03_入.png",
+    "eval_requested": "vision+ocr+gt",
+    "mastery_policy": "ALL FOUR: OCR is_correct AND margin>=0.3; visual_score>0.8; panel unanimous YES"
+  }
+]
