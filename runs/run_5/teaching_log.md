@@ -33,3 +33,12 @@ prior entries.
 - New picks: 十/上/下 all combine the mastered 横 primitive with a new 竖 primitive. 十 is the canonical 横+竖 cross; 上 puts 竖 at the top (above the long base 横); 下 puts 竖 below (the top 横 is long).
 - Why this slate: leverages the c2-mastered heng + introduces a new primitive (竖) in three distinct positional contexts.
 - Mastery audit of cycle 2: vision-checked all 3 attempts. All unambiguously the target. Width-fix worked; promoted.
+
+## Cycle 4 — 2026-06-08
+
+- Phase: 1 (continuing)
+- Slate: 下 (carry), 干, 工
+- Carry-overs: 1 (下) — c3 attempt failed because the 竖 pierced above the top heng (read as 十-with-dot); Sandbox specifies the structural fix.
+- New picks: 干 (heng+heng+shu cross — three-stroke variant of 十), 工 (heng+shu+heng — 竖 spans between two hengs).
+- Why this slate: tests the three positional patterns of 竖 vs heng (piercing / hanging / spanning) in three characters. If all three pass, the structural distinction is solid and the next cycle can introduce 撇 with confidence.
+- Mastery audit of cycle 3: vision-checked all 3 attempts. 十 and 上 unambiguous; 下 ambiguous (reads as 十+dot, OCR confirmed). Promoted 十/上, carried over 下.
