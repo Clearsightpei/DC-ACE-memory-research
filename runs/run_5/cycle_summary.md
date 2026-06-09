@@ -1,7 +1,1 @@
-<!--
-Curator → Teacher channel. Overwritten each cycle by the Curator.
-1–3 sentences describing what kind of mistake (or success) happened,
-to inform the next batch.
-
-Empty until cycle 1 finishes.
--->
+Cycle 1 (run_5, 3 tasks: 一/二/三): 0/3 promoted. All three pass vision identity (unambiguously the target characters) and OCR (3/3 correct, conf 0.88–1.00), but brushwork fails the rubric dunbi criterion — the right-end is the *thinnest* point of each 横 instead of the heaviest 收笔. Carry over all three to cycle 2 with the corrected width profile (entry-press 16 → shaft 11 → closing-press 19) in the Sandbox.

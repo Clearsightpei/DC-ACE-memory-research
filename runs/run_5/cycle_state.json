@@ -1,11 +1,12 @@
 {
-  "cycle": 0,
+  "cycle": 1,
   "phase": 1,
-  "current_focus": null,
-  "last_outcome": null,
-  "last_finished_at": null,
+  "current_slate": ["一", "二", "三"],
+  "last_promoted": [],
+  "last_carry_overs": ["一", "二", "三"],
+  "last_finished_at": "2026-06-08T21:30:00",
   "success_bank_size": 0,
   "batch_size": 3,
   "pass_signal": "Curator promotes ONLY if Claude-vision says the attempt PNG vs GT PNG is unambiguously the same character (100% confident). OCR logged but not sufficient. Calligraphy rubric >= 7 no 0.",
-  "notes": "run_5: Drawer sees the GT. tools/ stays quarantined. 3 tasks/cycle. Strict vision identity gate replaces the run_4 OCR-pass gate to eliminate false positives."
+  "notes": "c1: 一/二/三 — vision identity PASSED, OCR 3/3, but rubric 6/10 each because dunbi inverted (right end taper thin, should press thick). All carry over to c2."
 }
