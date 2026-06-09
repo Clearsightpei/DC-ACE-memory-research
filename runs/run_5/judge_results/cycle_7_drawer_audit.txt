@@ -1,0 +1,5 @@
+14:Each task runs in its own subprocess so the turtle module state is fresh.
+18:import subprocess
+89:        # subprocess invocation: render the one task whose name was given
+94:    # parent: fan out one subprocess per task for clean turtle state
+96:        result = subprocess.run(
