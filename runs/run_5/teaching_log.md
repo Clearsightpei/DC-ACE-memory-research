@@ -24,3 +24,12 @@ prior entries.
 - New picks: none — devoting all 3 slots to fixing the brushwork before moving on. Quality over quantity.
 - Why this slate: the c1 attempt vs GT visual difference was tiny but the brushwork inversion is exactly the kind of false-positive class run_5 is designed to catch. Re-attempt with corrected width profile (entry 16 → shaft 11 → closing 19) and the same composition.
 - Mastery audit of cycle 1: vision-checked all 3 attempt PNGs vs GTs. All read as the target character; none passes the rubric gate.
+
+## Cycle 3 — 2026-06-08
+
+- Phase: 1 (continuing — introduce 竖)
+- Slate: 十, 上, 下
+- Carry-overs: none (cycle 2 promoted 3/3 — slate is all new picks).
+- New picks: 十/上/下 all combine the mastered 横 primitive with a new 竖 primitive. 十 is the canonical 横+竖 cross; 上 puts 竖 at the top (above the long base 横); 下 puts 竖 below (the top 横 is long).
+- Why this slate: leverages the c2-mastered heng + introduces a new primitive (竖) in three distinct positional contexts.
+- Mastery audit of cycle 2: vision-checked all 3 attempts. All unambiguously the target. Width-fix worked; promoted.
