@@ -1,158 +1,143 @@
-# Principle Bank (Part B of memory) — run_5
+# Principle Bank (Part B of memory) — run_5 (after c5 hard-gate reset)
 
 Curator-owned. Natural-language **positive rules** for producing a
 render that looks unambiguously like the target character. Never
 error logs. Never "don't do X". Always "to achieve Y, do Z".
 
-A principle is graduated INTO this bank from the Sandbox once it has
-worked on a real success.
+A principle is graduated INTO this bank from the Sandbox once it
+has worked on a real promotion.
 
 ---
 
-## §0 — How the Drawer works in run_5
+## §0 — How the Drawer works (after c5 hard-gate reset)
 
 The Drawer is dispatched as a fresh subagent and **is given the GT
-PNG to look at**. Its job is to *mimic the GT visually*: open the GT
-with Read, sketch a turtle program, render its own PNG, open that
-PNG too, and iterate until the two images read as the same
-character. Vision is the primary signal; numeric coordinates are a
-means, not the goal.
+PNG to look at**. Its job is to mimic the GT visually: open the GT,
+sketch a turtle program, render its own PNG, open that PNG too,
+and iterate until the render passes all three mastery gates.
 
-The Success Bank (when populated) provides reusable mastered code
-the Drawer may compose via translate/scale. The Principle Bank
-(this file) provides universal brushwork rules. The Sandbox holds
-Curator notes on whatever character is currently in progress.
+The Success Bank (carried over from run_4) provides exemplary
+turtle-based atomic and compound strokes — `heng.py`, `shu.py`,
+`pie.py`, `na.py`, `ti.py`, `dian.py`, plus 7 compound strokes.
+Reuse these via translate/scale rather than re-deriving brushwork.
 
-`tools/` remains quarantined during the Drawer's turn — the
-parameter-leak concern from run_2 is unchanged. Only `ground_truths/`
-is now visible.
+`tools/` remains quarantined during the Drawer's turn. Only
+`ground_truths/` is visible.
+
+## §0.1 — Mastery gate (HARD, tightened after c5 review)
+
+To promote an entry, the attempt must pass **ALL THREE**:
+
+1. OCR identifies the character correctly with conf > 0.95
+2. visual_score > 0.9 (from `tools/judge.py`)
+3. Claude vision identifies the render unambiguously as target
+
+Claude-vision alone is NOT sufficient. The c5 lesson: my vision
+check called 人/入 unambiguous, but the renders had ugly disk-blob
+apexes and messy 撇/捺 crossings that a human eye would call
+poorly written. The numeric gates (OCR + visual) catch what a
+misguided vision check waves through.
 
 ---
 
 ## §1 — Brushwork primitives
 
-### §1.0 — Universal brushwork rules (carried from run_4)
+### §1.0 — Universal brushwork rules (run_4 canonical)
 
 **To render any brushed stroke**: use a smooth cubic Bézier
-centerline with per-sample pensize. The canonical helper
-`brushed_bezier(t, P0, P1, P2, P3, w_profile, samples=220)` walks
+centerline with per-sample pensize. The canonical helper, kept as
+`brushed_bezier(t, P0, P1, P2, P3, w_profile, samples=220)`, walks
 `s ∈ [0, 1]` and calls `t.pensize(max(3, w_profile(s)))` then
 `t.goto(x, y)` at each sample. The `max(3, ...)` floor is
-non-negotiable — pensize < 3 anywhere except a deliberately tapered
-tip reads as a hairline (run_3 c17 lesson, verified across run_4).
+non-negotiable.
 
 **Min sample count**: 200 for atomic strokes, 160 for short
-hooks/segments. Below ~120 the Bézier looks polygonal.
+hooks/segments.
 
-### §1.1 — 横 (heng) width profile (verified c2)
+### §1.1 — 横 (heng) — see `success_bank/code/heng.py`
 
-**To draw a 楷书 横**: width profile is `entry-press 16 → shaft 11 →
-closing-press 22`, with the RIGHT END being the heaviest point of
-the stroke. The right closing-press (收笔) is what makes the stroke
-read as 楷书 rather than block-printing or thin cursive.
+Width profile: entry press 16 → 11 → shaft 11 → closing press 19.
+Endpoints (-200, -3) → (+200, +3), gentle ~6 px upward tilt.
 
-**Wrong** (verified c1 failure): bell-curve `light → heavy → light`
-with the right end tapered thin. This reads as a calligraphic
-stroke but fails the `dunbi` (顿笔) criterion because the 收笔 is
-the opposite of a press — it's a release.
+### §1.2 — 竖 (shu, 垂露) — see `success_bank/code/shu.py`
 
-**Right** (verified c2 success): right end is the visibly thickest
-point. A small angled foot at each end is OK but it must be at
-the same heavy width as the closing-press (not tapered down).
+Endpoints (0, +200) → (0, -200). Width profile: symmetric barbell
+— top press 16 → shaft 11 → bottom 垂露 press 18.
 
-See `success_bank/code/heng.py`'s `draw_heng(draw, ox, oy, length,
-scale=1.0)` for the canonical implementation. Reuse it whenever
-you need a 横 — do not re-derive the width profile.
+### §1.3 — 撇 (pie, 斜撇) — see `success_bank/code/pie.py`
 
-### §1.2+ — populate as more strokes master.
+Endpoints head (+150, +200) → tail (-180, -180). Control points
+place centerline above the chord (concave-down arc). Width profile
+head 18 → shaft 14 → 11 → tail 3.
 
----
+**General tapered-tip pattern (撇 / 提 / etc.):** heavy head ~10%
+(16–18 peak) → solid shaft ~76% (~11) → final 10–15% taper down to
+floor 3. A 12% taper window reads smoother than a 5% window
+(run_4 c3 verified).
 
-## §2 — Composition (reuse interface)
+### §1.4 — 捺 (na, 斜捺 with flat kick) — see `success_bank/code/na.py`
 
-### §2.1 — Translate/scale interface (PIL-based in run_5)
+Two-segment stitched stroke. Main sweep: head (-150, +200) → kick
+base (+170, -180); width 5 → 8 → 14 → 18. Flat kick: (+170,-180) →
+(+240,-172); width 18 → 16 (hold 25%) → 3 (release 75%).
 
-Every Success Bank `draw()` function takes
-`(pil_draw, ox=0, oy=0, scale=1.0)`. `pil_draw` is a
-`PIL.ImageDraw.Draw` object — run_5 standardized on PIL rendering
-in c2 because the turtle.PostScript → PIL pipeline was fragile on
-macOS. The math is unchanged from §1.0: cubic Bezier centerline +
-per-sample `max(3, w(s))` width floor.
+### §1.4b — 提 (ti) — see `success_bank/code/ti.py`
 
-Translation adds `(ox, oy)` to every coordinate; scale multiplies
-coordinates but does NOT scale the pensize (width is in pixel-units
-of the stroke, not the character).
+Endpoints (-100, -80) → (+150, +60). Width 14 → 11 → 9 → 3.
+Same tapered-tip family as 撇.
 
-The 横 primitive (`heng.py`) additionally takes a `length` parameter
-because the same stroke is reused at different horizontal extents
-across a character (e.g. 三's bottom 横 is longer than its top).
+### §1.5 — Two-segment stitched stroke pattern (run_4 c4)
 
-To use a primitive inside a character, call e.g. `draw_heng(pil_draw,
-ox=<center_x>, oy=<center_y>, length=<px>, scale=<s>)`.
+When a stroke has a distinct terminal feature (kick, hook, turn)
+with different width/direction than the main sweep, implement it as
+**two Bézier segments stitched at a junction**:
+- Segment A end's control toward Segment B's first control
+  direction (tangential junction — eliminates angular notch).
+- Segment A endpoint == Segment B start point.
+- Independent `w_profile` per segment.
 
-To use a whole-character entry (e.g. 一/二/三), call its `draw(pil_draw,
-ox=0, oy=0, scale=1.0)`.
-
-### §2.2 — 竖 vs 横 structural relationships (verified c3/c4)
-
-When composing a character with a 横 and a 竖, the **vertical position of
-the 竖's top entry-press relative to the 横's centerline** determines what
-the silhouette reads as. Three distinct patterns:
-
-| pattern | `oy_top` rule | examples (verified) |
-|---|---|---|
-| **piercing** (竖 crosses through heng) | `oy_top` is 50–100px ABOVE the heng's centerline | 十 (c3), 干 (c4) |
-| **hanging** (竖 hangs from heng) | `oy_top` is AT or just below the heng's centerline (no pierce) | 下 (c4) |
-| **spanning** (竖 stretches between two hengs) | `oy_top` at the upper heng's y, `length` = vertical gap | 工 (c4) |
-
-The c3 attempt of 下 failed because the Drawer applied the piercing pattern
-(treating 下 like 十) — the 竖 poked above the heng and the silhouette read
-as 十-with-dot. The c4 attempt applied the hanging pattern correctly.
-
-When the brief asks for a character with both 横 and 竖, the Drawer must
-choose the pattern from the character's structure, not from defaults.
-
-### §2.3 — 撇+捺 structural relationships (verified c5)
-
-The three Chinese characters 八, 人, 入 are all composed of a 撇 and a
-捺, but the relative position of the two stroke heads determines which
-character the silhouette reads as. **This is the exact class that
-produced the run_4 false positives** (c20 入 promoted at visual 0.58).
-In run_5 the Drawer sees the GT and applies the right pattern:
-
-| pattern | head relationship | examples (verified) |
-|---|---|---|
-| **separated** (visible gap between 撇 head and 捺 head) | 撇 head is below and to the left; 捺 head is above and to the right; roughly 80–100px horizontal slot between them | 八 (c5) |
-| **shared apex** (撇 and 捺 emanate from the same point) | both stroke heads at exactly the same (x, y) | 人 (c5) |
-| **捺 dominant, 撇 attached** (撇 head is BELOW the 捺's apex) | 捺's head is the topmost point; 撇's head sits below the 捺's head and the 撇 attaches as a shorter secondary stroke | 入 (c5) |
-
-If the Drawer treats all three identically (or applies the shared-apex
-pattern to 入), the silhouettes collapse to ambiguous wedges that OCR
-maps to whichever character is closest in its small vocabulary — the
-exact run_4 false-positive mechanism.
-
-When the brief asks for a 撇+捺 character, the Drawer must look at the
-GT and identify which of the three patterns applies before placing any
-coordinates.
+This is the basis for 横折, 竖钩, 横折钩, 竖弯钩, 横撇, 横折弯钩,
+竖折 — all of which are now in the Success Bank as compound entries.
 
 ---
 
-## §3 — Graphics-coordinate translation
+## §2 — Composition (translate, scale, position)
 
-`tools/list_chars.py` and `graphics.txt` provide canonical stroke
-skeletons in MakeMeAHanzi's coordinate system (1024×1024 canvas,
-math-convention y-up). The Drawer doesn't read graphics.txt
-directly (it's quarantined inside `tools/`); the GT PNG is the
-visible surface.
+### §2.1 — Translate/scale reuse interface (run_4 turtle)
 
-The Teacher generates the GT via `tools/make_char_gt.py` which
-encodes `tx = (x - 512) * scale; ty = (y - 512) * scale` with
-`scale = 0.4`. **No mirror, no flip.** The GT PNG is rendered on
-the same 800×600 canvas the Drawer uses.
+Every Success Bank `draw()` function takes `(t, ox=0, oy=0,
+scale=1.0)` where `t` is a `turtle.Turtle`. Translation adds
+`(ox, oy)` to every coordinate; scale multiplies coordinates but
+does NOT scale the pensize.
+
+To use a primitive inside a character, call e.g.
+`draw_heng(t, ox=<x>, oy=<y>, scale=<s>)`.
+
+(The PIL-renderer §2.1 from run_5 c2 is reverted with the c5 reset —
+mixed renderers across the Success Bank produce inconsistent
+compositions.)
 
 ---
 
-## §4 — Slot reserved for run_5-emergent rules
+## §3 — Slot reserved for run_5 character-composition rules
 
-(Empty. The Curator graduates a sandbox finding into a numbered §4.N
-entry when it has worked on a real Success Bank promotion.)
+(Empty. The run_5 c1-c5 attempts at §2.2 — 竖 vs 横 patterns — and
+§2.3 — 撇+捺 patterns — were not actually verified by promotions
+that met the hard gate. They will need to re-emerge under the new
+regime when a character actually passes OCR > 0.95 AND visual > 0.9
+AND vision.)
+
+---
+
+## §4 — Hard-gate operating notes
+
+- **A character that almost passes is still a fail.** Visual 0.89 is
+  not 0.9. Carry over with specific Sandbox feedback (which gate
+  failed, and by how much).
+- **OCR misread is real signal.** If RapidOCR returns the wrong
+  character or a low-conf result, the render IS ambiguous to that
+  reader — that's evidence the brushwork has a real visual problem,
+  not a RapidOCR vocab gap.
+- **The base must be perfect.** Foundation characters are reused
+  inside harder compositions; a sloppy 一 means every character
+  containing 一 inherits the sloppiness. Aim for perfection.

@@ -60,15 +60,22 @@ For each character `c` in the previous cycle's batch:
 3. Look at both. Answer:
    *Is the attempt unambiguously the target character `c`, with no
    plausible alternate reading?*
-4. If **YES** AND the Curator already promoted it → it stays mastered.
-5. If **NO** → it must carry over into this cycle (push it into the
-   3-task slate, no skipping).
-6. **Tie/uncertain → treat as NO.** Do not be lazy. A "looks
-   roughly right" render is not 100% confident.
+4. **All three gates must pass for the character to count as
+   mastered** (the run_5-c5-tightened gate):
+   - OCR identifies it correctly with conf > 0.95
+   - visual_score > 0.9
+   - Claude vision says unambiguous target
+5. If **all three pass** AND the Curator promoted it → mastered;
+   skip in this cycle.
+6. If **any gate failed** → it must carry over (push into the
+   slate, no skipping).
+7. **Tie/uncertain on the vision check → treat as fail.** Do not
+   be lazy. A "looks roughly right" render is not unambiguous.
 
-This check replaces the run_4 mastery gate. OCR / visual_score /
-rubric numbers may inform your judgment but are not sufficient on
-their own.
+OCR confidence and visual_score are first-class evidence, not
+informational. Run_5 c5 lesson: Claude-vision passed 人/入 renders
+that a human eye called sloppy; the numeric gates would have caught
+them.
 
 ### 2. Pick the 3-task slate
 
@@ -144,7 +151,7 @@ PNG, not against text targets.
 
 ```json
 {"judge": {"eval": "vision+ocr+gt", "use_ocr": true,
-   "mastery": "Curator-vision says attempt is unambiguously target; rubric>=7 no 0"},
+   "mastery": "ALL THREE: OCR correct AND conf>0.95; visual_score>0.9; Claude vision unambiguous"},
  "characters": [
    {"index": 1, "character": "<c1>", "pinyin": "<…>"},
    {"index": 2, "character": "<c2>", "pinyin": "<…>"},

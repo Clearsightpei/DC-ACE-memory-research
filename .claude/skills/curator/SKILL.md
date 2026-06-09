@@ -54,37 +54,37 @@ You operate inside the active run directory.
 
 For each task K in {1, 2, 3}:
 
-### Step 1 — Vision identity check (the strict gate)
+### Step 1 — Hard mastery gate (ALL THREE must pass)
 
-1. Open `attempts/cycle_<N>/0K_<c>.png` with Read.
-2. Open `ground_truths/cycle_<N>/0K_<c>.png` with Read.
-3. Look at both side by side. Answer the gate question literally:
-   > *Is the attempt unambiguously the target character `<c>`,
-   > with no plausible alternate reading?*
-4. **Promotion decision:**
-   - **Yes, unambiguously**: candidate for Success Bank.
-   - **Close but ambiguous** (could read as another char, or
-     missing a defining feature): **do not promote**. Carry over.
-   - **Clearly wrong**: do not promote. Carry over.
-5. **Bias against promotion.** When in doubt, the answer is "no".
-   This is the explicit lesson from run_4 (入 c20, 力 c23 false
-   positives). The cost of one extra cycle is small; the cost of a
-   bad Success Bank entry is large.
+To promote an entry, the attempt must pass **ALL THREE**:
 
-Do not lean on OCR. OCR can land on the right token for a render
-that a human reads as ambiguous; that is exactly what produced the
-run_4 false positives.
+1. **OCR**: `judge_results/cycle_<N>.json` shows OCR identified the
+   character correctly AND `ocr_confidence > 0.95`.
+2. **Visual score**: `visual_score > 0.9` (from `tools/judge.py`).
+3. **Claude vision identity**: open attempt PNG + GT PNG side by
+   side, confirm unambiguously the target character.
 
-### Step 2 — Calligraphy rubric (if step 1 said yes)
+A single missing gate → **no promotion**. Carry-over with detailed
+Sandbox feedback so the next Drawer cycle can fix the specific
+failure mode.
 
-If vision identity passed, score the rubric yourself by looking at
-the attempt PNG: `dunbi / hudu / taper / proportion / overall`
-(0–2 each, sum out of 10). **Promotion requires ≥ 7 with no
-criterion at 0.** Augment `judge_results/cycle_<N>.json` with the
-rubric.
+**Claude vision is NECESSARY but NOT SUFFICIENT.** Lesson from
+run_5 c5 user review: 人 and 入 passed Claude-vision but the
+renders were visually sloppy (disk-blob apex, messy 撇/捺 crossing).
+The numeric gates (OCR > 0.95 + visual > 0.9) catch the cases where
+Claude-vision was misguided. All three together is the real bar.
 
-If the rubric fails (e.g. dunbi=0 because the stroke ends in a
-hairline), it goes to Sandbox carry-over instead of Success Bank.
+OCR confusion classes (人/入, 大/empty, 又/入) require special care
+— even if vision says it's correct, an OCR misread or low conf is
+real evidence of an ambiguous render. Do not waive it.
+
+### Step 2 — Calligraphy rubric (informational only)
+
+If step 1's three-gate check passes, score the rubric yourself for
+the docstring metadata: `dunbi / hudu / taper / proportion / overall`
+(0–2 each). Record in the success_bank `<char>.py` docstring.
+**The rubric is no longer a promotion gate** — the three-gate check
+in Step 1 is the only promotion criterion. The rubric is metadata.
 
 ### Step 3 — Promote OR carry over
 

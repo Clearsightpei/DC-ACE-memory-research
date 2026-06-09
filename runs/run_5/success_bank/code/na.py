@@ -1,78 +1,96 @@
-"""捺 — atomic 捺 (na, right-diagonal sweep with flat closing kick) — 斜捺 variant.
+"""
+捺 (na) — atomic right-diagonal sweep with flat-kick tail, 斜捺 variant.
 
-Tags: tag:atomic-stroke tag:捺 tag:斜捺 tag:flat-kick-tail tag:two-segment tag:楷书 tag:PIL-renderer
-Component-of: 八, 人, 入, 大, 木, 火, 之 ... (any char with a 捺 stroke)
-Mastered: run_5 cycle 5 (verified inside 八/人/入 c5).
-Vision identity: PASSED.
+Tags: tag:atomic-stroke tag:捺 tag:斜捺 tag:flat-kick-tail tag:multi-segment
+Component-of: (to fill — appears in 人, 入, 八, 大, 木, 不, 个, 介, 仁, ...)
+Mastered: run_4 cycle 4, rubric 10/10
+  (dunbi=2, hudu=2, taper=2, proportion=2, overall=2)
 
-This is the two-segment stitched pattern (§1.5 reborn for PIL):
-- Segment A: main sweep, thin head (5) → 8 → 14 → 18 toward the tail.
-- Segment B: short flat kick (出锋), width 18 → hold 16 (25%) → release 3.
+The canonical 楷书 斜捺 — the right-diagonal companion to 撇, with the
+WIDTH PROFILE REVERSED (thin upper-left head → heavy lower-right tail)
+and a distinctive **flat-kick** at the end (the 顿笔 + 出锋 release
+that is 捺's diagnostic feature). Without the flat kick this stroke
+reads as a flipped 撇 — not 捺.
 
-The kick is its own brushed Bezier extending from the main-sweep tail roughly
-horizontally to the right (slight downward dip then leveling off).
+This entry establishes the **two-Bézier-segment stitched stroke**
+pattern: one main sweep + one short tail segment, joined tangentially
+so the junction doesn't read as a notch. Many compound strokes
+(横折, 竖钩, 横折钩, ...) will reuse this two-segment idea.
 
 Reuse interface:
-    from na import draw_na
-    draw_na(pil_draw, head_x=<upper_left_x>, head_y=<upper_left_y>,
-            tail_x=<lower_right_x>, tail_y=<lower_right_y>,
-            scale=1.0, kick_len_frac=0.22)
+    from na import draw as draw_na
+    draw_na(t)                          # head (-150,+200) → kick tip (+240,-172)
+    draw_na(t, ox=100, oy=0)             # shift right 100 (e.g. right 捺 of 人)
+    draw_na(t, ox=0, oy=0, scale=0.7)    # shorter 捺
 
-`kick_len_frac` is the kick length as a fraction of the main-sweep chord length.
+Width profile (reversed vs 撇):
+  Main sweep:   5 (head) → 8 → 14 → 18 (just before kick base)
+  Flat kick:    18 → 16 (press hold, 25%) → 3 (release, 75%)
+
+What this entry establishes:
+- The reversed width profile (thin entry, heavy exit) for thicken-as-it-goes strokes.
+- The two-segment stitched-stroke pattern with tangential junction control.
+- The 顿笔 + 出锋 (press-hold then release) micro-profile for 捺's tail.
+- Pairs with 撇 (c3) to unlock 人/八/入/大/木/不/个 in Phase 3.
 """
 
-from heng import brushed_bezier  # reuse §1.0 primitive
+import sys
+import os
+from typing import Callable
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from heng import brushed_bezier
 
 
-def w_profile_na_main(s):
-    """Thin head 5 → 8 → 14 → 18 (heavy toward the tail)."""
-    if s <= 0.25:
-        t = s / 0.25
-        return 5.0 + (8.0 - 5.0) * t
-    elif s <= 0.70:
-        t = (s - 0.25) / 0.45
-        return 8.0 + (14.0 - 8.0) * t
-    else:
-        t = (s - 0.70) / 0.30
-        return 14.0 + (18.0 - 14.0) * t
+def _w_na_main(s: float) -> float:
+    """Main sweep width: THIN head → HEAVY just-before-kick.
 
-
-def w_profile_na_kick(s):
-    """Press 18 → hold 16 (to 50%) → release to 3."""
-    if s <= 0.25:
-        return 18.0
-    elif s <= 0.50:
-        t = (s - 0.25) / 0.25
-        return 18.0 + (16.0 - 18.0) * t
-    else:
-        t = (s - 0.50) / 0.50
-        return 16.0 + (3.0 - 16.0) * t
-
-
-def draw_na(pil_draw, head_x, head_y, tail_x, tail_y, scale=1.0, kick_len_frac=0.22):
-    """Draw a 捺 with main sweep + flat closing kick.
-
-    Main sweep bows toward the lower-left side of the chord (gentle belly).
-    Kick extends from the main-sweep tail roughly horizontally to the right.
+    s ∈ [0, 1] from head (upper-left) to kick base (lower-right).
+      - Entry (0–10%):    5 → 8  (thin, almost from a point — opposite of 撇)
+      - Shaft (10–80%):   8 → 14
+      - Pre-kick (80–100%): 14 → 18 (heaviest right before the kick base)
     """
-    dx = tail_x - head_x
-    dy = tail_y - head_y
-    chord_len = (dx * dx + dy * dy) ** 0.5
-    bow = 0.08 * chord_len
-    # Perpendicular toward the "lower-left" side of the chord (negative math-y offset):
-    px_u = dy / chord_len
-    py_u = -dx / chord_len
-    P0 = (head_x, head_y)
-    P1 = (head_x + dx * 0.30 + px_u * bow * 0.5, head_y + dy * 0.30 + py_u * bow * 0.5)
-    P2 = (head_x + dx * 0.65 + px_u * bow, head_y + dy * 0.65 + py_u * bow)
-    P3 = (tail_x, tail_y)
-    brushed_bezier(pil_draw, P0, P1, P2, P3, w_profile_na_main, samples=260)
+    if s < 0.10:
+        return 5.0 + (s / 0.10) * 3.0
+    if s < 0.80:
+        return 8.0 + ((s - 0.10) / 0.70) * 6.0
+    return 14.0 + ((s - 0.80) / 0.20) * 4.0
 
-    # Flat kick: short segment extending from tail to the right.
-    kick_dx = chord_len * kick_len_frac
-    kick_dy = -chord_len * 0.02
-    K0 = (tail_x, tail_y)
-    K1 = (tail_x + kick_dx * 0.35, tail_y + kick_dy * 0.5)
-    K2 = (tail_x + kick_dx * 0.70, tail_y + kick_dy * 0.9)
-    K3 = (tail_x + kick_dx, tail_y + kick_dy)
-    brushed_bezier(pil_draw, K0, K1, K2, K3, w_profile_na_kick, samples=140)
+
+def _w_na_kick(s: float) -> float:
+    """Flat-kick width: heavy press (顿笔) → fine release (出锋).
+
+    s ∈ [0, 1] over the short ~70 px horizontal kick segment.
+      - Press hold (0–25%): 18 → 16  (the 顿笔)
+      - Release (25–100%):  16 → 3   (the 出锋)
+    """
+    if s < 0.25:
+        return 18.0 - (s / 0.25) * 2.0
+    return 16.0 - ((s - 0.25) / 0.75) * 13.0
+
+
+def draw(t, ox: float = 0.0, oy: float = 0.0, scale: float = 1.0):
+    """Draw 捺 as two stitched cubic Béziers (main sweep + flat kick).
+
+    Canonical endpoints (before transform):
+      Segment A (main sweep): (-150, +200) → (+170, -180)
+        — controls A1=(-60,+80), A2=(+90,-150) place the centerline
+        BELOW the straight head-to-tail line, giving a concave-up arc.
+        A2 is pulled toward horizontal-right so the sweep arrives
+        at the kick base tangentially (eliminates the junction notch).
+      Segment B (flat kick): (+170, -180) → (+240, -172)
+        — ~70 px horizontal release with tiny 8 px lift.
+    """
+    # Main sweep
+    A0 = (-150.0 * scale + ox, 200.0 * scale + oy)
+    A1 = (-60.0 * scale + ox, 80.0 * scale + oy)
+    A2 = (90.0 * scale + ox, -150.0 * scale + oy)
+    A3 = (170.0 * scale + ox, -180.0 * scale + oy)
+    brushed_bezier(t, A0, A1, A2, A3, _w_na_main, samples=240)
+
+    # Flat kick
+    B0 = (170.0 * scale + ox, -180.0 * scale + oy)
+    B1 = (195.0 * scale + ox, -180.0 * scale + oy)
+    B2 = (220.0 * scale + ox, -175.0 * scale + oy)
+    B3 = (240.0 * scale + ox, -172.0 * scale + oy)
+    brushed_bezier(t, B0, B1, B2, B3, _w_na_kick, samples=160)

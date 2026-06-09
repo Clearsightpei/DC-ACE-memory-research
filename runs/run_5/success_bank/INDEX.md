@@ -1,49 +1,79 @@
 # Success Bank — Index — run_5
 
-Curator-owned. **Only mastered code lives here.** An entry is added
-when the Curator decides — by Claude-vision comparison of the
-attempt PNG against the GT PNG — that the render is **unambiguously
-the target character** (100% confident). OCR is logged but is not
-sufficient evidence on its own.
+Curator-owned. **Only mastered code lives here.**
+
+## Hard mastery gate (run_5, tightened after c5 user review)
+
+To promote an entry to the Success Bank, the attempt must pass **ALL THREE** of:
+
+1. **OCR identifies the character correctly with confidence > 0.95** (RapidOCR output `(char, conf)`).
+2. **`visual_score > 0.9`** (Dice + Chamfer + proportion vs the GT, from `tools/judge.py`).
+3. **Claude vision identifies the character unambiguously as the target** with no plausible alternate reading.
+
+A single missing gate → no promotion → carry-over with Sandbox feedback. The strict bar prevents foundation entries from polluting harder compositions downstream.
+
+**Claude vision alone is NOT sufficient.** This was learned at c5: 人 and 入 passed my vision check but the renders were visually sloppy from a human standpoint (disk-blob apex, messy 撇/捺 crossing). The numeric gates (OCR conf > 0.95 + visual > 0.9) catch what a misguided vision check waves through.
 
 ## How to use this bank (for the Drawer)
 
-Two queries:
+1. **By character**: copy `code/<char>.py` verbatim, call `draw(t, ox, oy, scale)`.
+2. **By component tag**: grep this INDEX for tags.
 
-1. **By character**: looking up a whole character that's been
-   mastered — copy the code from `code/<char>.py` verbatim,
-   including all parameters.
-2. **By component tag**: grep this INDEX for the tag (e.g.
-   `tag:atomic-stroke`, `tag:heng`) and pull the cited entries.
+**Renderer**: all current entries use `turtle.Turtle` (carried over from run_4 cycle 1's canonical implementation). The PIL renderer experiment from run_5 c1-c5 is revoked — its entries are in `_revoked/` for history.
 
-**Never modify a Success Bank file by guessing.** If parameters
-need adjustment for a new context, follow the rules in
-`principle_bank.md` (translate/scale only).
+**Never modify** a Success Bank file once added (immutability rule).
+
+## Active entries (carried over from run_4 — these passed run_4's rubric at 10/10)
+
+### Atomic strokes
+
+| stroke | file | tags | mastered |
+|---|---|---|---|
+| 横 | [code/heng.py](code/heng.py) | tag:atomic-stroke tag:heng tag:楷书 tag:turtle-renderer | run_4 c1 (10/10) |
+| 竖 | [code/shu.py](code/shu.py) | tag:atomic-stroke tag:shu tag:垂露竖 tag:楷书 tag:turtle-renderer | run_4 c2 (10/10) |
+| 撇 | [code/pie.py](code/pie.py) | tag:atomic-stroke tag:撇 tag:斜撇 tag:tapered-tip tag:楷书 tag:turtle-renderer | run_4 c3 (10/10) |
+| 捺 | [code/na.py](code/na.py) | tag:atomic-stroke tag:捺 tag:斜捺 tag:flat-kick-tail tag:two-segment tag:楷书 tag:turtle-renderer | run_4 c4 (10/10) |
+| 提 | [code/ti.py](code/ti.py) | tag:atomic-stroke tag:提 tag:tapered-tip tag:楷书 tag:turtle-renderer | run_4 c5 (10/10) |
+| 点 | [code/dian.py](code/dian.py) | tag:atomic-stroke tag:点 tag:右点 tag:楷书 tag:turtle-renderer | run_4 c6 (10/10) |
+
+### Compound strokes
+
+| stroke | file | tags | mastered |
+|---|---|---|---|
+| 横折 | [code/heng_zhe.py](code/heng_zhe.py) | tag:compound-stroke tag:横折 tag:multi-segment tag:corner-顿笔 | run_4 c7 (10/10) |
+| 竖钩 | [code/shu_gou.py](code/shu_gou.py) | tag:compound-stroke tag:竖钩 tag:hook tag:multi-segment | run_4 c8 (10/10) |
+| 横折钩 | [code/heng_zhe_gou.py](code/heng_zhe_gou.py) | tag:compound-stroke tag:横折钩 tag:hook tag:multi-segment tag:corner-顿笔 | run_4 c9 (10/10) |
+| 竖弯钩 | [code/shu_wan_gou.py](code/shu_wan_gou.py) | tag:compound-stroke tag:竖弯钩 tag:hook tag:multi-segment tag:curved-middle | run_4 c10 (10/10) |
+| 横撇 | [code/heng_pie.py](code/heng_pie.py) | tag:compound-stroke tag:横撇 tag:tapered-tip tag:multi-segment tag:corner-顿笔 | run_4 c11 (10/10) |
+| 竖折 | [code/shu_zhe.py](code/shu_zhe.py) | tag:compound-stroke tag:竖折 tag:multi-segment tag:corner-顿笔 | run_4 c12 (10/10) |
+| 横折弯钩 | [code/heng_zhe_wan_gou.py](code/heng_zhe_wan_gou.py) | tag:compound-stroke tag:横折弯钩 tag:hook tag:multi-segment tag:corner-顿笔 tag:curved-middle | run_4 c13 (10/10) |
+
+### Characters
+
+None yet under the new hard gate. Cycle 6+ will populate as renders pass all three gates.
+
+## Revoked entries
+
+The following entries were promoted under run_5's old gate (Claude-vision alone) before the user-imposed hard gate was added. They did NOT pass `OCR > 0.95 AND visual > 0.9 AND vision`. Files preserved in `_revoked/` for historical reference; **DO NOT import them** in new Drawer cycles.
+
+Revoked: `yi/er/san/shi/shang/xia/gan/gong/ba/ren/ru` (characters), `heng_pil/shu_pil/pie_pil/na_pil/dian_pil` (PIL-renderer primitives — superseded by the run_4 turtle primitives above).
+
+The judge numbers that retroactively revoked them:
+
+| char | OCR result | OCR conf | visual_score | reason for revocation |
+|---|---|---|---|---|
+| 一 (c2) | none | — | 0.85 | OCR fail + visual < 0.9 |
+| 二 (c2) | 二 | 0.96 | 0.77 | visual < 0.9 |
+| 三 (c2) | 三 | 1.00 | 0.73 | visual < 0.9 |
+| 十 (c3) | 十 | high | 0.76 | visual < 0.9 |
+| 上 (c3) | 上 | high | 0.49 | visual < 0.9 |
+| 下 (c4) | none | — | 0.69 | OCR fail + visual < 0.9 |
+| 干 (c4) | 干 | high | 0.81 | visual < 0.9 |
+| 工 (c4) | none | — | 0.85 | OCR fail + visual < 0.9 |
+| 八 (c5) | 八 | high | 0.60 | visual < 0.9 |
+| 人 (c5) | 入 | — | 0.52 | OCR misidentified (it's the run_4 false-positive class) + visual < 0.9 |
+| 入 (c5) | 入 | high | 0.47 | visual < 0.9 |
 
 ## Visual index
 
-`visual/visual_index.png` — assembled grid of past wins,
-regenerated by the Curator when a new entry is added. The Drawer
-sees this card alongside the current task's GT PNG. **The Drawer
-also sees the GT directly in run_5.**
-
-## Entries
-
-| char | file | rubric | component tags | added in cycle |
-|------|------|--------|----------------|----------------|
-| 横 | [code/heng.py](code/heng.py) | 7/10 (PIL renderer) | tag:atomic-stroke tag:heng tag:楷书 tag:PIL-renderer | c2 |
-| 一 | [code/yi.py](code/yi.py) | 7/10 (OCR none, vision PASSED) | tag:character tag:1-stroke tag:heng tag:component-of(二, 三, 王, 工, 干, 上, 下) | c2 |
-| 二 | [code/er.py](code/er.py) | 7/10 (OCR 二 conf 0.96) | tag:character tag:2-strokes tag:heng-stacked tag:component-of(三, 王, 工) | c2 |
-| 三 | [code/san.py](code/san.py) | 7/10 (OCR 三 conf 1.00) | tag:character tag:3-strokes tag:heng-stacked tag:component-of(王) | c2 |
-| 竖 | [code/shu.py](code/shu.py) | (verified in 十 c3, 9/10) | tag:atomic-stroke tag:shu tag:垂露竖 tag:楷书 tag:PIL-renderer | c3 |
-| 十 | [code/shi.py](code/shi.py) | 9/10 (OCR 十) | tag:character tag:2-strokes tag:heng+shu tag:component-of(古, 干, 平, 早, 卄) | c3 |
-| 上 | [code/shang.py](code/shang.py) | 7/10 (OCR 上) | tag:character tag:3-strokes tag:shu+heng tag:component-of(止, 让) | c3 |
-| 点 | [code/dian.py](code/dian.py) | (verified in 下 c4, 9/10) | tag:atomic-stroke tag:点 tag:右点 tag:楷书 tag:PIL-renderer | c4 |
-| 下 | [code/xia.py](code/xia.py) | 9/10 (OCR none, vision PASSED — 竖 hangs from heng) | tag:character tag:3-strokes tag:heng+shu+dian tag:竖-hangs-from-heng | c4 |
-| 干 | [code/gan.py](code/gan.py) | 9/10 (OCR 干) | tag:character tag:3-strokes tag:heng+heng+shu tag:竖-pierces-heng | c4 |
-| 工 | [code/gong.py](code/gong.py) | 9/10 (OCR none, vision PASSED — 竖 spans between hengs) | tag:character tag:3-strokes tag:heng+shu+heng tag:竖-spans-between-hengs | c4 |
-| 撇 | [code/pie.py](code/pie.py) | (verified in 八/人/入 c5) | tag:atomic-stroke tag:撇 tag:斜撇 tag:tapered-tip tag:楷书 tag:PIL-renderer | c5 |
-| 捺 | [code/na.py](code/na.py) | (verified in 八/人/入 c5) | tag:atomic-stroke tag:捺 tag:斜捺 tag:flat-kick-tail tag:two-segment tag:楷书 tag:PIL-renderer | c5 |
-| 八 | [code/ba.py](code/ba.py) | 7/10 (OCR 八) | tag:character tag:2-strokes tag:撇捺-separated tag:component-of(只, 兵, 公) | c5 |
-| 人 | [code/ren.py](code/ren.py) | 7/10 (OCR 入 — RapidOCR confusion; vision PASSED) | tag:character tag:2-strokes tag:撇捺-shared-apex tag:component-of(从, 众, 介) | c5 |
-| 入 | [code/ru.py](code/ru.py) | 7/10 (OCR 入) | tag:character tag:2-strokes tag:捺-dominant tag:撇-attaches-below-apex tag:component-of(全, 内, 两) | c5 |
+`visual/visual_index.png` — regenerated by the Curator when entries are added. Currently shows the run_4-carried strokes.

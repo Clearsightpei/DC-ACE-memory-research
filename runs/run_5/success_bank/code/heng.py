@@ -1,115 +1,73 @@
-"""横 — atomic horizontal stroke (楷书 brushwork primitive).
+"""
+横 (heng) — atomic horizontal stroke.
 
-Tags: tag:atomic-stroke tag:heng tag:楷书 tag:PIL-renderer
-Component-of: 一, 二, 三 (and any character with a 横 stroke)
-Mastered: run_5 cycle 2, rubric 7/10 (dunbi=2 hudu=1 taper=1 proportion=2 overall=1)
-Vision identity: PASSED (curator confirmed each cycle-2 attempt unambiguously
-reads as the target character, no plausible alternate reading).
+Tags: tag:atomic-stroke tag:heng
+Component-of: (to be filled in as 横 appears inside mastered chars — 一, 二, 三, 十, 工, 王, ...)
+Mastered: run_4 cycle 1, rubric 10/10
+  (dunbi=2, hudu=2, taper=2, proportion=2, overall=2)
 
-Width profile: entry-press 16 → shaft 11 → closing-press 22 (right end is
-the HEAVIEST point of the stroke, per 楷书 收笔). The closing-press was
-empirically pushed from the c1-target value of 19 up to 22 to make the
-right-end visibly heavier than the left-end entry press.
+The canonical 楷书 horizontal stroke. Used as the top/middle/bottom
+bar in dozens of simple characters and as a constituent inside
+hundreds of compound ones. This is the first Phase-1 primitive
+mastered in run_4.
 
-Renderer: PIL (`draw.ellipse` per sample). The Drawer switched from
-turtle+PostScript because the PS export was fragile on macOS.
-Mathematically equivalent: same cubic Bezier centerline, same per-sample
-`max(3, w(s))` width floor, same 220-sample count.
+Reuse interface:
+    from heng import draw as draw_heng
+    draw_heng(t)                          # centered at origin
+    draw_heng(t, ox=0, oy=100)            # shift up 100 px (e.g. top heng of 二)
+    draw_heng(t, ox=0, oy=-100)           # shift down 100 px (e.g. bottom heng of 二)
+    draw_heng(t, ox=0, oy=0, scale=0.6)   # shrink to 60% (e.g. short top heng of 王)
 
-Reuse interface (run_5 PIL flavor):
-    from heng import draw_heng
-    draw_heng(pil_draw, ox=<center_x>, oy=<center_y>, length=<px>, scale=1.0)
+The function preserves all mastered parameters verbatim — DO NOT modify
+this file (Success Bank immutability rule). If a different profile is
+needed, create a new entry (e.g. heng_short.py) that supersedes.
 
-The `pil_draw` argument is a `PIL.ImageDraw.Draw` object. Coordinates use
-math-convention (y-up, origin canvas center); `to_px` translates to PIL
-pixel space.
+What this entry establishes for the project:
+- The brushed-Bézier-with-per-sample-pensize pattern (brushed_bezier helper).
+- The min-pensize-3 floor (run_3 c17 lesson).
+- The 楷书 weighted-entry / lighter-shaft / heavier-closing-press width profile.
+- The Success Bank's draw(t, ox=0, oy=0, scale=1.0) interface convention.
 """
 
-from PIL import ImageDraw  # noqa: F401  (declares the interface dep)
-
-CANVAS_W, CANVAS_H = 800, 600
+from typing import Callable
 
 
-def to_px(x, y):
-    return (x + CANVAS_W / 2.0, CANVAS_H / 2.0 - y)
+def _w_heng_canonical(s: float) -> float:
+    """Canonical 楷书 horizontal-stroke width profile.
 
-
-def bezier_point(s, P0, P1, P2, P3):
-    u = 1.0 - s
-    x = (u**3) * P0[0] + 3 * (u**2) * s * P1[0] + 3 * u * (s**2) * P2[0] + (s**3) * P3[0]
-    y = (u**3) * P0[1] + 3 * (u**2) * s * P1[1] + 3 * u * (s**2) * P2[1] + (s**3) * P3[1]
-    return x, y
-
-
-def w_profile_heng(s):
-    """entry press 16 → shaft 11 → closing press 22. Right end is heaviest."""
-    if s <= 0.10:
-        return 16.0
-    elif s <= 0.20:
-        t = (s - 0.10) / 0.10
-        return 16.0 + (11.0 - 16.0) * t
-    elif s <= 0.80:
-        return 11.0
-    elif s <= 0.95:
-        t = (s - 0.80) / 0.15
-        return 11.0 + (22.0 - 11.0) * t
-    else:
-        return 22.0
-
-
-def brushed_bezier(draw, P0, P1, P2, P3, w_profile, samples=220, color=(0, 0, 0)):
-    """Walk a cubic Bezier and stamp a filled disk at each sample.
-       Floor max(3, w) per §1.0 (run_5 invariant).
+    s ∈ [0, 1]. Returns pensize.
+      - Entry press (dunbi) 16 → 11 over the first 10%.
+      - Shaft  ~11           over the middle ~78%.
+      - Closing press 收笔   10.5 → 19 over the final 12%.
     """
+    if s < 0.10:
+        return 16.0 - (s / 0.10) * 5.0
+    if s < 0.88:
+        return 11.0 - ((s - 0.10) / 0.78) * 0.5
+    return 10.5 + ((s - 0.88) / 0.12) * 8.5
+
+
+def brushed_bezier(t, P0, P1, P2, P3, w_profile: Callable[[float], float], samples: int = 220):
+    """Cubic Bézier with per-sample pensize. Min pensize 3 floor enforced."""
+    t.penup(); t.goto(P0); t.pendown()
     for i in range(samples + 1):
         s = i / samples
-        w = max(3.0, w_profile(s))
-        r = w / 2.0
-        x, y = bezier_point(s, P0, P1, P2, P3)
-        px, py = to_px(x, y)
-        draw.ellipse([px - r, py - r, px + r, py + r], fill=color)
+        x = (1 - s) ** 3 * P0[0] + 3 * (1 - s) ** 2 * s * P1[0] + 3 * (1 - s) * s * s * P2[0] + s ** 3 * P3[0]
+        y = (1 - s) ** 3 * P0[1] + 3 * (1 - s) ** 2 * s * P1[1] + 3 * (1 - s) * s * s * P2[1] + s ** 3 * P3[1]
+        t.pensize(max(3, w_profile(s)))
+        t.goto(x, y)
+    t.penup()
 
 
-def draw_left_foot(draw, ox, oy, scale=1.0):
-    """Small angled foot at the LEFT entry of a 横 — slants up-right.
-       Drawn at constant entry-press width 16."""
-    flen = 14.0 * scale
-    P0 = (ox - flen * 0.6, oy - flen * 0.7)
-    P1 = (ox - flen * 0.4, oy - flen * 0.5)
-    P2 = (ox - flen * 0.2, oy - flen * 0.2)
-    P3 = (ox, oy)
-    brushed_bezier(draw, P0, P1, P2, P3, lambda s: 16.0, samples=80)
+def draw(t, ox: float = 0.0, oy: float = 0.0, scale: float = 1.0,
+         w_profile: Callable[[float], float] = _w_heng_canonical):
+    """Draw 横 with optional translate (ox, oy) and uniform scale.
 
-
-def draw_right_foot(draw, ox, oy, scale=1.0):
-    """Small angled foot at the RIGHT closing of a 横 — slants down-right.
-       Drawn at constant CLOSING-press width 22 — does NOT taper."""
-    flen = 14.0 * scale
-    P0 = (ox, oy)
-    P1 = (ox + flen * 0.2, oy - flen * 0.25)
-    P2 = (ox + flen * 0.4, oy - flen * 0.5)
-    P3 = (ox + flen * 0.6, oy - flen * 0.7)
-    brushed_bezier(draw, P0, P1, P2, P3, lambda s: 22.0, samples=80)
-
-
-def draw_heng(draw, ox, oy, length, scale=1.0):
-    """Draw a 楷书 横 centered at (ox, oy) spanning `length` pixels.
-
-    - left foot at entry-press width 16
-    - body Bezier with slight upward tilt and gentle bow
-    - right foot at closing-press width 22 (heaviest point)
+    Canonical endpoints (before transform):
+        P0 = (-200, -3),  P3 = (+200, +3)  (gentle ~6 px upward tilt)
     """
-    half = length / 2.0
-    tilt = 5.0 * scale
-    left_x, left_y = ox - half, oy
-    right_x, right_y = ox + half, oy + tilt
-
-    bow = 4.0 * scale
-    P0 = (left_x, left_y)
-    P1 = (left_x + length * 0.30, left_y + bow + tilt * 0.2)
-    P2 = (left_x + length * 0.70, right_y + bow * 0.5)
-    P3 = (right_x, right_y)
-
-    draw_left_foot(draw, left_x, left_y, scale)
-    brushed_bezier(draw, P0, P1, P2, P3, w_profile_heng, samples=220)
-    draw_right_foot(draw, right_x, right_y, scale)
+    P0 = (-200.0 * scale + ox, -3.0 * scale + oy)
+    P3 = (200.0 * scale + ox, 3.0 * scale + oy)
+    P1 = (P0[0] + (P3[0] - P0[0]) / 3.0, P0[1] + (P3[1] - P0[1]) / 3.0)
+    P2 = (P0[0] + 2.0 * (P3[0] - P0[0]) / 3.0, P0[1] + 2.0 * (P3[1] - P0[1]) / 3.0)
+    brushed_bezier(t, P0, P1, P2, P3, w_profile, samples=220)
