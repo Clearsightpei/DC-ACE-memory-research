@@ -93,6 +93,25 @@ ox=<center_x>, oy=<center_y>, length=<px>, scale=<s>)`.
 To use a whole-character entry (e.g. 一/二/三), call its `draw(pil_draw,
 ox=0, oy=0, scale=1.0)`.
 
+### §2.2 — 竖 vs 横 structural relationships (verified c3/c4)
+
+When composing a character with a 横 and a 竖, the **vertical position of
+the 竖's top entry-press relative to the 横's centerline** determines what
+the silhouette reads as. Three distinct patterns:
+
+| pattern | `oy_top` rule | examples (verified) |
+|---|---|---|
+| **piercing** (竖 crosses through heng) | `oy_top` is 50–100px ABOVE the heng's centerline | 十 (c3), 干 (c4) |
+| **hanging** (竖 hangs from heng) | `oy_top` is AT or just below the heng's centerline (no pierce) | 下 (c4) |
+| **spanning** (竖 stretches between two hengs) | `oy_top` at the upper heng's y, `length` = vertical gap | 工 (c4) |
+
+The c3 attempt of 下 failed because the Drawer applied the piercing pattern
+(treating 下 like 十) — the 竖 poked above the heng and the silhouette read
+as 十-with-dot. The c4 attempt applied the hanging pattern correctly.
+
+When the brief asks for a character with both 横 and 竖, the Drawer must
+choose the pattern from the character's structure, not from defaults.
+
 ---
 
 ## §3 — Graphics-coordinate translation

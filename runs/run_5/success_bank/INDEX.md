@@ -38,3 +38,7 @@ also sees the GT directly in run_5.**
 | 竖 | [code/shu.py](code/shu.py) | (verified in 十 c3, 9/10) | tag:atomic-stroke tag:shu tag:垂露竖 tag:楷书 tag:PIL-renderer | c3 |
 | 十 | [code/shi.py](code/shi.py) | 9/10 (OCR 十) | tag:character tag:2-strokes tag:heng+shu tag:component-of(古, 干, 平, 早, 卄) | c3 |
 | 上 | [code/shang.py](code/shang.py) | 7/10 (OCR 上) | tag:character tag:3-strokes tag:shu+heng tag:component-of(止, 让) | c3 |
+| 点 | [code/dian.py](code/dian.py) | (verified in 下 c4, 9/10) | tag:atomic-stroke tag:点 tag:右点 tag:楷书 tag:PIL-renderer | c4 |
+| 下 | [code/xia.py](code/xia.py) | 9/10 (OCR none, vision PASSED — 竖 hangs from heng) | tag:character tag:3-strokes tag:heng+shu+dian tag:竖-hangs-from-heng | c4 |
+| 干 | [code/gan.py](code/gan.py) | 9/10 (OCR 干) | tag:character tag:3-strokes tag:heng+heng+shu tag:竖-pierces-heng | c4 |
+| 工 | [code/gong.py](code/gong.py) | 9/10 (OCR none, vision PASSED — 竖 spans between hengs) | tag:character tag:3-strokes tag:heng+shu+heng tag:竖-spans-between-hengs | c4 |
