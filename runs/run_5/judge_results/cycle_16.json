@@ -1,0 +1,107 @@
+[
+  {
+    "index": 1,
+    "character": "人",
+    "pinyin": "ren",
+    "visual_score": 0.4834,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.3387,
+      "chamfer": 0.5349,
+      "chamfer_px": 18.77,
+      "proportion": 0.6698,
+      "ar_term": 0.7042,
+      "quad_term": 0.8079
+    },
+    "recognized_char": "人",
+    "ocr_confidence": 0.9821,
+    "ocr_topk": [
+      [
+        "人",
+        0.9821
+      ]
+    ],
+    "ocr_margin": 0.9821,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.69,
+    "ai_file": "01_人.png",
+    "gt_file": "01_人.png",
+    "eval_requested": "vision+ocr+gt",
+    "mastery_policy": "ALL FOUR: OCR is_correct AND margin>=0.3; visual_score>0.8; panel unanimous YES"
+  },
+  {
+    "index": 2,
+    "character": "大",
+    "pinyin": "da",
+    "visual_score": 0.5096,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.3824,
+      "chamfer": 0.5305,
+      "chamfer_px": 19.02,
+      "proportion": 0.7223,
+      "ar_term": 0.9362,
+      "quad_term": 0.7726
+    },
+    "recognized_char": "人",
+    "ocr_confidence": 0.4077,
+    "ocr_topk": [
+      [
+        "人",
+        0.4077
+      ]
+    ],
+    "ocr_margin": 0.0,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.3057,
+    "ai_file": "02_大.png",
+    "gt_file": "02_大.png",
+    "eval_requested": "vision+ocr+gt",
+    "mastery_policy": "ALL FOUR: OCR is_correct AND margin>=0.3; visual_score>0.8; panel unanimous YES"
+  },
+  {
+    "index": 3,
+    "character": "不",
+    "pinyin": "bu",
+    "visual_score": 0.7265,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.6179,
+      "chamfer": 0.7628,
+      "chamfer_px": 8.12,
+      "proportion": 0.8712,
+      "ar_term": 0.8948,
+      "quad_term": 0.9394
+    },
+    "recognized_char": "不",
+    "ocr_confidence": 0.9999,
+    "ocr_topk": [
+      [
+        "不",
+        0.9999
+      ]
+    ],
+    "ocr_margin": 0.9999,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8359,
+    "ai_file": "03_不.png",
+    "gt_file": "03_不.png",
+    "eval_requested": "vision+ocr+gt",
+    "mastery_policy": "ALL FOUR: OCR is_correct AND margin>=0.3; visual_score>0.8; panel unanimous YES"
+  }
+]
