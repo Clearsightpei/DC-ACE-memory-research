@@ -69,6 +69,8 @@ OCR outputs.
 | 工 | [code/gong.py](code/gong.py) | OCR 工 m=0.82, v=0.89, panel 3/3 YES | c11 |
 | 上 | [code/shang.py](code/shang.py) | OCR 上 m=1.00, v=0.90, panel 3/3 YES | c12 |
 | 下 | [code/xia.py](code/xia.py) | OCR 下 m=1.00, v=0.89, panel 3/3 YES | c12 |
+| 主 | [code/zhu.py](code/zhu.py) | OCR 主 m=1.00, v=0.86, panel 3/3 YES | c13 |
+| 生 | [code/sheng.py](code/sheng.py) | OCR 生 m=0.98, v=0.86, panel 3/3 YES | c13 |
 
 ## Revoked entries
 
