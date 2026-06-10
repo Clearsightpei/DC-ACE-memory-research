@@ -72,6 +72,8 @@ OCR outputs.
 | 主 | [code/zhu.py](code/zhu.py) | OCR 主 m=1.00, v=0.86, panel 3/3 YES | c13 |
 | 生 | [code/sheng.py](code/sheng.py) | OCR 生 m=0.98, v=0.86, panel 3/3 YES | c13 |
 | 木 | [code/mu.py](code/mu.py) | OCR 木 m=1.00, v=0.85, panel 3/3 YES | c14 |
+| 王 | [code/wang.py](code/wang.py) | OCR 王 m=0.97, v=0.89, panel 3/3 YES | c15 (c13 carry-over) |
+| 土 | [code/tu.py](code/tu.py) | OCR 土 m=0.94, v=0.88, panel 3/3 YES | c15 |
 
 ## Revoked entries
 

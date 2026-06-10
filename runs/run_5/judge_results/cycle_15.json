@@ -1,0 +1,127 @@
+[
+  {
+    "index": 1,
+    "character": "王",
+    "pinyin": "wang",
+    "visual_score": 0.8848,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.817,
+      "chamfer": 0.9234,
+      "chamfer_px": 2.39,
+      "proportion": 0.9433,
+      "ar_term": 0.9896,
+      "quad_term": 0.9123
+    },
+    "recognized_char": "王",
+    "ocr_confidence": 0.973,
+    "ocr_topk": [
+      [
+        "王",
+        0.973
+      ]
+    ],
+    "ocr_margin": 0.973,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.9309,
+    "ai_file": "01_王.png",
+    "gt_file": "01_王.png",
+    "eval_requested": "vision+ocr+gt",
+    "mastery_policy": "ALL FOUR: OCR is_correct AND margin>=0.3; visual_score>0.8; panel unanimous YES",
+    "judge_panel": {
+      "verdicts": [
+        "YES",
+        "YES",
+        "YES"
+      ],
+      "unanimous_yes": true
+    }
+  },
+  {
+    "index": 2,
+    "character": "土",
+    "pinyin": "tu",
+    "visual_score": 0.8759,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.8093,
+      "chamfer": 0.9203,
+      "chamfer_px": 2.49,
+      "proportion": 0.9202,
+      "ar_term": 0.9507,
+      "quad_term": 0.9532
+    },
+    "recognized_char": "土",
+    "ocr_confidence": 0.9386,
+    "ocr_topk": [
+      [
+        "土",
+        0.9386
+      ]
+    ],
+    "ocr_margin": 0.9386,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.9255,
+    "ai_file": "02_土.png",
+    "gt_file": "02_土.png",
+    "eval_requested": "vision+ocr+gt",
+    "mastery_policy": "ALL FOUR: OCR is_correct AND margin>=0.3; visual_score>0.8; panel unanimous YES",
+    "judge_panel": {
+      "verdicts": [
+        "YES",
+        "YES",
+        "YES"
+      ],
+      "unanimous_yes": true
+    }
+  },
+  {
+    "index": 3,
+    "character": "口",
+    "pinyin": "kou",
+    "visual_score": 0.6839,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.5546,
+      "chamfer": 0.7224,
+      "chamfer_px": 9.75,
+      "proportion": 0.8656,
+      "ar_term": 0.9017,
+      "quad_term": 0.9618
+    },
+    "recognized_char": "口",
+    "ocr_confidence": 0.991,
+    "ocr_topk": [
+      [
+        "口",
+        0.991
+      ]
+    ],
+    "ocr_margin": 0.991,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8104,
+    "ai_file": "03_口.png",
+    "gt_file": "03_口.png",
+    "eval_requested": "vision+ocr+gt",
+    "mastery_policy": "ALL FOUR: OCR is_correct AND margin>=0.3; visual_score>0.8; panel unanimous YES",
+    "judge_panel": {
+      "unanimous_yes": false,
+      "skipped": "visual<0.8"
+    }
+  }
+]
