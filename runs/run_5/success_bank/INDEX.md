@@ -64,6 +64,9 @@ OCR outputs.
 | 一 | [code/yi.py](code/yi.py) | OCR 一 m=0.79, v=0.85, panel 3/3 YES | c6 |
 | 二 | [code/er.py](code/er.py) | OCR 二 m=0.99, v=0.88, panel 3/3 YES | c6 |
 | 三 | [code/san.py](code/san.py) | OCR 三 m=1.00, v=0.88, panel 3/3 YES | c6 |
+| 十 | [code/shi.py](code/shi.py) | OCR 十 m=0.83, v=0.89, panel 3/3 YES | c11 |
+| 干 | [code/gan.py](code/gan.py) | OCR 干 m=0.98, v=0.89, panel 3/3 YES | c11 |
+| 工 | [code/gong.py](code/gong.py) | OCR 工 m=0.82, v=0.89, panel 3/3 YES | c11 |
 
 ## Revoked entries
 
