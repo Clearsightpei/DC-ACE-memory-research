@@ -74,6 +74,7 @@ OCR outputs.
 | 木 | [code/mu.py](code/mu.py) | OCR 木 m=1.00, v=0.85, panel 3/3 YES | c14 |
 | 王 | [code/wang.py](code/wang.py) | OCR 王 m=0.97, v=0.89, panel 3/3 YES | c15 (c13 carry-over) |
 | 土 | [code/tu.py](code/tu.py) | OCR 土 m=0.94, v=0.88, panel 3/3 YES | c15 |
+| 玉 | [code/yu.py](code/yu.py) | OCR 玉 m=0.97, v=0.83, panel 3/3 YES | c18 (composes 王) |
 
 ## Revoked entries
 
