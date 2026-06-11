@@ -80,6 +80,8 @@ OCR outputs.
 | 末 | [code/mo.py](code/mo.py) | OCR 末 m=1.00, v=0.82, panel 3/3 YES | c21 (c18+c20 carry, width fix) |
 | 卞 | [code/bian.py](code/bian.py) | OCR 卞 m=0.86, v=0.86, panel 3/3 YES | c21 (composes 下) |
 | 六 | [code/liu.py](code/liu.py) | OCR 六 m=0.97, v=0.82, panel 3/3 YES | c22 (c19 carry, shrunk pie+dian) |
+| 丰 | [code/feng.py](code/feng.py) | OCR 丰 m=1.00, v=0.86, panel 3/3 YES | c24 |
+| 丘 | [code/qiu.py](code/qiu.py) | OCR 丘 m=0.91, v=0.85, panel 3/3 YES | c24 |
 
 ## Revoked entries
 
