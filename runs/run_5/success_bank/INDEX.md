@@ -75,6 +75,8 @@ OCR outputs.
 | 王 | [code/wang.py](code/wang.py) | OCR 王 m=0.97, v=0.89, panel 3/3 YES | c15 (c13 carry-over) |
 | 土 | [code/tu.py](code/tu.py) | OCR 土 m=0.94, v=0.88, panel 3/3 YES | c15 |
 | 玉 | [code/yu.py](code/yu.py) | OCR 玉 m=0.97, v=0.83, panel 3/3 YES | c18 (composes 王) |
+| 未 | [code/wei.py](code/wei.py) | OCR 未 m=1.00, v=0.83, panel 3/3 YES | c20 (c18 carry-over fixed) |
+| 五 | [code/wu.py](code/wu.py) | OCR 五 m=0.99, v=0.86, panel 3/3 YES | c20 (c19 carry-over fixed) |
 
 ## Revoked entries
 

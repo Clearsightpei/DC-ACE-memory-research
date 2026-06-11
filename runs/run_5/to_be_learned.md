@@ -78,6 +78,13 @@ Append-only log of characters that have failed ≥ 2 cycles. Each entry decompos
 
 ---
 
+## 末 — cycle history: c18 (v=0.63), c20 (v=0.83 numerical PASS, panel 1/3 YES — top heng not visibly longer than middle)
+
+**c20 outcome**: Numerical gates passed (visual 0.83, OCR margin 1.00) BUT the judge panel caught a real flaw — 2 of 3 skeptics said the top heng was the same length as the middle heng, so the render reads as 木 rather than 末. **System working as designed: 100%-rule + panel skepticism caught a false positive that would have contaminated the bank.**
+
+**Plan for next cycle**: increase top heng scale to ~0.75 (from 0.62) so it's UNAMBIGUOUSLY longer than the middle heng (scale 0.45). The c20 attempt was 0.62 vs 0.45 — visually similar. Need the contrast to be ~70% wider, not ~38%.
+
+## (original c18 decomposition retained for record)
 ## 末 — cycle history: c18 (v=0.63)
 
 **Decomposition**:
