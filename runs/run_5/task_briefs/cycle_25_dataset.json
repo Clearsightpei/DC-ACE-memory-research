@@ -1,0 +1,7 @@
+{"judge": {"eval": "vision+ocr+gt", "use_ocr": true,
+   "mastery": "ALL FOUR: OCR is_correct AND margin>=0.3; visual_score>0.8; panel unanimous YES"},
+ "characters": [
+   {"index": 1, "character": "里", "pinyin": "li"},
+   {"index": 2, "character": "本", "pinyin": "ben"},
+   {"index": 3, "character": "天", "pinyin": "tian"}
+ ]}

@@ -1,0 +1,123 @@
+[
+  {
+    "index": 1,
+    "character": "里",
+    "pinyin": "li",
+    "visual_score": 0.8626,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.7927,
+      "chamfer": 0.8925,
+      "chamfer_px": 3.41,
+      "proportion": 0.9422,
+      "ar_term": 0.9136,
+      "quad_term": 0.9658
+    },
+    "recognized_char": "里",
+    "ocr_confidence": 0.995,
+    "ocr_topk": [
+      [
+        "里",
+        0.995
+      ]
+    ],
+    "ocr_margin": 0.995,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.9175,
+    "ai_file": "01_里.png",
+    "gt_file": "01_里.png",
+    "eval_requested": "vision+ocr+gt",
+    "mastery_policy": "ALL FOUR: OCR is_correct AND margin>=0.3; visual_score>0.8; panel unanimous YES",
+    "judge_panel": {
+      "verdicts": [
+        "YES",
+        "YES",
+        "YES"
+      ],
+      "unanimous_yes": true
+    }
+  },
+  {
+    "index": 2,
+    "character": "本",
+    "pinyin": "ben",
+    "visual_score": 0.761,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.6517,
+      "chamfer": 0.8002,
+      "chamfer_px": 6.69,
+      "proportion": 0.901,
+      "ar_term": 0.8607,
+      "quad_term": 0.972
+    },
+    "recognized_char": "本",
+    "ocr_confidence": 0.9356,
+    "ocr_topk": [
+      [
+        "本",
+        0.9356
+      ]
+    ],
+    "ocr_margin": 0.9356,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8566,
+    "ai_file": "02_本.png",
+    "gt_file": "02_本.png",
+    "eval_requested": "vision+ocr+gt",
+    "mastery_policy": "ALL FOUR: OCR is_correct AND margin>=0.3; visual_score>0.8; panel unanimous YES",
+    "judge_panel": {
+      "unanimous_yes": false,
+      "skipped": "visual<0.8"
+    }
+  },
+  {
+    "index": 3,
+    "character": "天",
+    "pinyin": "tian",
+    "visual_score": 0.7204,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.587,
+      "chamfer": 0.7523,
+      "chamfer_px": 8.54,
+      "proportion": 0.9233,
+      "ar_term": 0.944,
+      "quad_term": 0.9205
+    },
+    "recognized_char": "天",
+    "ocr_confidence": 0.6817,
+    "ocr_topk": [
+      [
+        "天",
+        0.6817
+      ]
+    ],
+    "ocr_margin": 0.6817,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8322,
+    "ai_file": "03_天.png",
+    "gt_file": "03_天.png",
+    "eval_requested": "vision+ocr+gt",
+    "mastery_policy": "ALL FOUR: OCR is_correct AND margin>=0.3; visual_score>0.8; panel unanimous YES",
+    "judge_panel": {
+      "unanimous_yes": false,
+      "skipped": "visual<0.8"
+    }
+  }
+]

@@ -82,6 +82,7 @@ OCR outputs.
 | 六 | [code/liu.py](code/liu.py) | OCR 六 m=0.97, v=0.82, panel 3/3 YES | c22 (c19 carry, shrunk pie+dian) |
 | 丰 | [code/feng.py](code/feng.py) | OCR 丰 m=1.00, v=0.86, panel 3/3 YES | c24 |
 | 丘 | [code/qiu.py](code/qiu.py) | OCR 丘 m=0.91, v=0.85, panel 3/3 YES | c24 |
+| 里 | [code/li.py](code/li.py) | OCR 里 m=1.00, v=0.86, panel 3/3 YES | c25 (c24 carry, added 土 middle heng) |
 
 ## Revoked entries
 
