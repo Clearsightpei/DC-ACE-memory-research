@@ -1,0 +1,123 @@
+[
+  {
+    "index": 1,
+    "character": "本",
+    "pinyin": "ben",
+    "visual_score": 0.7644,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.6564,
+      "chamfer": 0.803,
+      "chamfer_px": 6.58,
+      "proportion": 0.9033,
+      "ar_term": 0.8651,
+      "quad_term": 0.9747
+    },
+    "recognized_char": "本",
+    "ocr_confidence": 0.9315,
+    "ocr_topk": [
+      [
+        "本",
+        0.9315
+      ]
+    ],
+    "ocr_margin": 0.9315,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8587,
+    "ai_file": "01_本.png",
+    "gt_file": "01_本.png",
+    "eval_requested": "vision+ocr+gt",
+    "mastery_policy": "ALL FOUR: OCR is_correct AND margin>=0.3; visual_score>0.8; panel unanimous YES",
+    "judge_panel": {
+      "unanimous_yes": false,
+      "skipped": "visual<0.8"
+    }
+  },
+  {
+    "index": 2,
+    "character": "六",
+    "pinyin": "liu",
+    "visual_score": 0.8157,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.7175,
+      "chamfer": 0.8749,
+      "chamfer_px": 4.01,
+      "proportion": 0.8938,
+      "ar_term": 0.988,
+      "quad_term": 0.9549
+    },
+    "recognized_char": "六",
+    "ocr_confidence": 0.973,
+    "ocr_topk": [
+      [
+        "六",
+        0.973
+      ]
+    ],
+    "ocr_margin": 0.973,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8894,
+    "ai_file": "02_六.png",
+    "gt_file": "02_六.png",
+    "eval_requested": "vision+ocr+gt",
+    "mastery_policy": "ALL FOUR: OCR is_correct AND margin>=0.3; visual_score>0.8; panel unanimous YES",
+    "judge_panel": {
+      "verdicts": [
+        "YES",
+        "YES",
+        "YES"
+      ],
+      "unanimous_yes": true
+    }
+  },
+  {
+    "index": 3,
+    "character": "七",
+    "pinyin": "qi",
+    "visual_score": 0.7541,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.6444,
+      "chamfer": 0.8075,
+      "chamfer_px": 6.41,
+      "proportion": 0.8669,
+      "ar_term": 0.9962,
+      "quad_term": 0.9098
+    },
+    "recognized_char": "七",
+    "ocr_confidence": 0.9996,
+    "ocr_topk": [
+      [
+        "七",
+        0.9996
+      ]
+    ],
+    "ocr_margin": 0.9996,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8525,
+    "ai_file": "03_七.png",
+    "gt_file": "03_七.png",
+    "eval_requested": "vision+ocr+gt",
+    "mastery_policy": "ALL FOUR: OCR is_correct AND margin>=0.3; visual_score>0.8; panel unanimous YES",
+    "judge_panel": {
+      "unanimous_yes": false,
+      "skipped": "visual<0.8"
+    }
+  }
+]

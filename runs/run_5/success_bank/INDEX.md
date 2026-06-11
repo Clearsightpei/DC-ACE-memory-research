@@ -79,6 +79,7 @@ OCR outputs.
 | 五 | [code/wu.py](code/wu.py) | OCR 五 m=0.99, v=0.86, panel 3/3 YES | c20 (c19 carry-over fixed) |
 | 末 | [code/mo.py](code/mo.py) | OCR 末 m=1.00, v=0.82, panel 3/3 YES | c21 (c18+c20 carry, width fix) |
 | 卞 | [code/bian.py](code/bian.py) | OCR 卞 m=0.86, v=0.86, panel 3/3 YES | c21 (composes 下) |
+| 六 | [code/liu.py](code/liu.py) | OCR 六 m=0.97, v=0.82, panel 3/3 YES | c22 (c19 carry, shrunk pie+dian) |
 
 ## Revoked entries
 
