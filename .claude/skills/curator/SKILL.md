@@ -54,9 +54,11 @@ You operate inside the active run directory.
 
 For each task K in {1, 2, 3}:
 
-### Step 1 — Hard mastery gate (FOUR gates, all required)
+### Step 1 — Hard mastery gate (FOUR gates, all required) + 100% rule
 
-To promote an entry, the attempt must pass **ALL FOUR**:
+To promote an entry, the attempt must pass **ALL FOUR** AND you
+must be 100% certain it is the right character. Anything less than
+"all four gates green AND I have zero doubt" → no promotion.
 
 1. **OCR identifies correctly**: `is_correct == true` in
    `judge_results/cycle_<N>.json`.
@@ -70,7 +72,39 @@ To promote an entry, the attempt must pass **ALL FOUR**:
    `unanimous_yes` field in the JSON).
 
 A single missing gate → **no promotion**. Carry over with detailed
-Sandbox feedback specific to which gate(s) failed.
+Sandbox + `to_be_learned.md` feedback specific to which gate(s)
+failed. **Never skip a failure** — every carry-over goes into the
+NEXT cycle's slate so it gets a second/third/Nth chance.
+
+**100% rule**: "almost right", "close enough", "OCR confirmed so
+fine" → STOP and re-check. Contamination of a foundation entry
+propagates silently into every character that composes with it.
+The asymmetric cost favors strictness every time. See
+`feedback-success-bank-100-percent` memory.
+
+### Step 1.5 — Decomposition check on repeated failures
+
+After a 2nd consecutive carry-over on the same character, **before
+queueing the next retry**, append a decomposition to
+`<run_dir>/to_be_learned.md`:
+
+```markdown
+## <char> — cycle history: c<X>(reason), c<Y>(reason)
+
+Decomposition:
+- <component_1> — Success Bank? <yes/no>. Rendered correctly? <yes/no, detail>.
+- <component_2> — ...
+
+Root-cause hypothesis: <missing component | wrong composition | renderer ceiling>.
+Plan for next cycle: <specific change OR "park until X is mastered">.
+```
+
+If a component is **missing** from the bank: switch the next
+cycle's slate to that component (master the prerequisite first).
+If composition is **wrong**: include explicit positional fix in
+next brief. If it's a **renderer ceiling** (e.g. brushed diagonals
+vs thin GT): park the char and note the structural limit rather
+than churning more cycles. See `feedback-decompose-persistent-failures`.
 
 The Curator's own vision is informational ONLY — the panel is the
 identity authority. This is the c5 lesson: the Curator's vision
