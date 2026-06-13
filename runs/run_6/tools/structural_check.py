@@ -149,7 +149,8 @@ def component_endpoints(comp) -> Tuple[Tuple[float,float], Tuple[float,float]]:
 # ─── Top-level structural check ─────────────────────────────────────
 def check(brief_path: str, generated_py_path: str, attempt_png_path: str,
           mmh_stroke_count: int, anchors_per_stroke: List[Dict],
-          joints: Optional[List[Dict]] = None) -> Dict:
+          joints: Optional[List[Dict]] = None,
+          anchor_tolerance_px: float = 15.0) -> Dict:
     """Apply the structural gate to a single rendered task.
 
     Args:
@@ -236,11 +237,11 @@ def check(brief_path: str, generated_py_path: str, attempt_png_path: str,
             "from_declared": (round(from_xy[0],1), round(from_xy[1],1)),
             "from_observed": (round(best["obs_from"][0],1), round(best["obs_from"][1],1)),
             "from_dist_px": round(d_from, 1),
-            "from_pass": d_from <= 15,
+            "from_pass": d_from <= anchor_tolerance_px,
             "to_declared": (round(to_xy[0],1), round(to_xy[1],1)),
             "to_observed": (round(best["obs_to"][0],1), round(best["obs_to"][1],1)),
             "to_dist_px": round(d_to, 1),
-            "to_pass": d_to <= 15,
+            "to_pass": d_to <= anchor_tolerance_px,
         })
 
     anchors_all_pass = all(
