@@ -1,0 +1,40 @@
+[
+  {
+    "index": 1,
+    "character": "八",
+    "pinyin": "ba",
+    "visual_score": 0.565,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.3995,
+      "chamfer": 0.615,
+      "chamfer_px": 14.58,
+      "proportion": 0.7958,
+      "ar_term": 0.8643,
+      "quad_term": 0.881
+    },
+    "recognized_char": "八",
+    "ocr_confidence": 0.9928,
+    "ocr_topk": [
+      [
+        "八",
+        0.9928
+      ]
+    ],
+    "ocr_margin": 0.9928,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.739,
+    "ai_file": "01_八.png",
+    "gt_file": "01_八.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "structural_pass",
+    "judge_panel": {
+      "note": "stroke training; structural authoritative"
+    }
+  }
+]
