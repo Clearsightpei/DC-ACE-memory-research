@@ -1,0 +1,20 @@
+[
+  {
+    "character": "十",
+    "index": 1,
+    "structural_check": {
+      "mmh_stroke_count": 2,
+      "drawer_stroke_count": 2,
+      "stroke_count_pass": true,
+      "anchor_placements": [],
+      "joint_placements": [],
+      "structural_pass": false,
+      "fail_reasons": [
+        "only 1 connected components, need 2"
+      ]
+    },
+    "judge_panel": {
+      "note": "count+vision"
+    }
+  }
+]

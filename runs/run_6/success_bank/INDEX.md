@@ -42,6 +42,21 @@ The library is fully compositional: every entry calls only entries already in th
 
 (Empty otherwise — populated cycle by cycle.)
 
+| 十 | [code/shi.py](code/shi.py) | tag:character | c16 |
+| 干 | [code/gan.py](code/gan.py) | tag:character | c17 |
+| 工 | [code/gong.py](code/gong.py) | tag:character | c18 |
+| 上 | [code/shang.py](code/shang.py) | tag:character | c19 |
+| 下 | [code/xia.py](code/xia.py) | tag:character | c20 |
+| 大 | [code/da.py](code/da.py) | tag:character | c21 |
+| 木 | [code/mu.py](code/mu.py) | tag:character | c22 |
+| 王 | [code/wang.py](code/wang.py) | tag:character | c23 |
+| 主 | [code/zhu.py](code/zhu.py) | tag:character | c24 |
+| 不 | [code/bu.py](code/bu.py) | tag:character | c25 |
+| 中 | [code/zhong.py](code/zhong.py) | tag:character | c26 |
+| 日 | [code/ri.py](code/ri.py) | tag:character | c27 |
+| 月 | [code/yue.py](code/yue.py) | tag:character | c28 |
+| 田 | [code/tian.py](code/tian.py) | tag:character | c29 |
+| 里 | [code/li.py](code/li.py) | tag:character | c30 |
 | 三 | [code/san.py](code/san.py) | tag:character tag:3-strokes | c15 |
 | 二 | [code/er.py](code/er.py) | tag:character tag:2-strokes | c14 |
 

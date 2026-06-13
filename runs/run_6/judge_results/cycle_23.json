@@ -1,0 +1,20 @@
+[
+  {
+    "character": "王",
+    "index": 1,
+    "structural_check": {
+      "mmh_stroke_count": 4,
+      "drawer_stroke_count": 4,
+      "stroke_count_pass": true,
+      "anchor_placements": [],
+      "joint_placements": [],
+      "structural_pass": false,
+      "fail_reasons": [
+        "only 2 connected components, need 4"
+      ]
+    },
+    "judge_panel": {
+      "note": "count+vision"
+    }
+  }
+]
