@@ -28,6 +28,7 @@ The library is fully compositional: every entry calls only entries already in th
 | (anchor helper) | [code/_anchor.py](code/_anchor.py) | utility | run_6 init |
 | 竖 | [code/shu.py](code/shu.py) | tag:atomic-stroke tag:shu tag:垂露 | c2 (structural ✓, v=0.83) |
 | 横折 | [code/heng_zhe.py](code/heng_zhe.py) | tag:compound-stroke tag:heng_zhe | c13 (via 口) |
+| 横折提 | [code/heng_zhe_ti.py](code/heng_zhe_ti.py) | tag:compound-stroke tag:heng_zhe_ti tag:three-segment | c31 (isolated, panel 3/3 YES) |
 | 横折钩 | [code/heng_zhe_gou.py](code/heng_zhe_gou.py) | tag:compound-stroke tag:heng_zhe_gou tag:hook | c12 (via 力) |
 | 横撇 | [code/heng_pie.py](code/heng_pie.py) | tag:compound-stroke tag:heng_pie | c11 (via 又) |
 | 竖弯钩 | [code/shu_wan_gou.py](code/shu_wan_gou.py) | tag:compound-stroke tag:shu_wan_gou tag:hook | c10 (via 七) |
