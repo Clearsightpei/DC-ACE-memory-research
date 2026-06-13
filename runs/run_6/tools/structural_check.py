@@ -122,27 +122,28 @@ def find_components(mask):
 def component_endpoints(comp) -> Tuple[Tuple[float,float], Tuple[float,float]]:
     """Estimate a stroke component's two endpoints (in turtle coords).
 
-    Uses the bbox-corner pair that maximizes the diagonal distance,
-    informed by the centroid's offset from each corner. For horizontals
-    this returns the left and right of the bbox; for verticals the top
-    and bottom; for diagonals the two extreme corners.
+    Strategy: for each of the 4 bbox corners, find the dark pixel
+    closest to it. Of the 4 candidates the pair with the largest
+    pairwise distance wins. Works uniformly for horizontals, verticals,
+    and diagonals.
     """
     ymin, xmin, ymax, xmax = comp["bbox_pixel"]
-    # Pick endpoint pair: candidates are the four bbox corners as
-    # (cx, cy) pairs. Project all stroke pixels onto each line through
-    # opposite corners and choose the line whose projection covers the
-    # most variance. Simple heuristic: compare aspect ratio.
-    w = xmax - xmin
-    h = ymax - ymin
-    if w >= h:
-        # horizontal-ish: endpoints at (xmin, mid_y) and (xmax, mid_y)
-        # but use the actual stroke pixels at the extremes
-        mid_y = (ymin + ymax) // 2
-        return (pixel_to_xy(xmin, mid_y), pixel_to_xy(xmax, mid_y))
-    else:
-        # vertical-ish: endpoints at (mid_x, ymin) and (mid_x, ymax)
-        mid_x = (xmin + xmax) // 2
-        return (pixel_to_xy(mid_x, ymin), pixel_to_xy(mid_x, ymax))
+    corners = [(ymin, xmin), (ymin, xmax), (ymax, xmin), (ymax, xmax)]
+    candidates = []
+    for cy, cx in corners:
+        best = min(comp["pixels"], key=lambda p: (p[0]-cy)**2 + (p[1]-cx)**2)
+        candidates.append(best)  # (py, px)
+    best_pair = None
+    best_d2 = -1.0
+    for i in range(4):
+        for j in range(i+1, 4):
+            a = candidates[i]; b = candidates[j]
+            d2 = (a[0]-b[0])**2 + (a[1]-b[1])**2
+            if d2 > best_d2:
+                best_d2 = d2
+                best_pair = (a, b)
+    e1, e2 = best_pair
+    return (pixel_to_xy(e1[1], e1[0]), pixel_to_xy(e2[1], e2[0]))
 
 
 # ─── Top-level structural check ─────────────────────────────────────
