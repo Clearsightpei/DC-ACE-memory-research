@@ -95,8 +95,10 @@ def anchor_to_xy(anchor):
         cell, xf, yf = anchor
         if cell not in CELLS:
             raise ValueError(f"unknown cell {cell!r}; valid: {sorted(CELLS)}")
-        if not (0.0 <= xf <= 1.0 and 0.0 <= yf <= 1.0):
-            raise ValueError(f"x_frac and y_frac must be in [0,1], got ({xf}, {yf})")
+        # Allow fracs slightly outside [0,1] for strokes that extend past
+        # the 9-cell character region (e.g. 亅's hook tail).
+        if not (-0.3 <= xf <= 1.3 and -0.3 <= yf <= 1.3):
+            raise ValueError(f"x_frac and y_frac out of extended range [-0.3, 1.3]: ({xf}, {yf})")
         x_left, x_right, y_top, y_bot = CELLS[cell]
         tx = x_left + xf * (x_right - x_left)
         # y_frac=0 means top edge (larger y); y_frac=1 means bottom (smaller y)

@@ -27,6 +27,7 @@ The library is fully compositional: every entry calls only entries already in th
 |---|---|---|---|
 | (anchor helper) | [code/_anchor.py](code/_anchor.py) | utility | run_6 init |
 | 竖 | [code/shu.py](code/shu.py) | tag:atomic-stroke tag:shu tag:垂露 | c2 (structural ✓, v=0.83) |
+| 竖钩 | [code/shu_gou.py](code/shu_gou.py) | tag:compound-stroke tag:shu_gou tag:hook | c6 (via 亅, structural ✓) |
 | 捺 | [code/na.py](code/na.py) | tag:atomic-stroke tag:na tag:flat-kick | c5 (introduced via 八, structural ✓) |
 | 点 | [code/dian.py](code/dian.py) | tag:atomic-stroke tag:dian | c4 (structural ✓) |
 | 撇 | [code/pie.py](code/pie.py) | tag:atomic-stroke tag:pie tag:tapered-tip | c3 (structural ✓, from=9.8 to=5.1 px) |
