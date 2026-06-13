@@ -1,0 +1,40 @@
+[
+  {
+    "index": 1,
+    "character": "力",
+    "pinyin": "li",
+    "visual_score": 0.478,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.3247,
+      "chamfer": 0.5285,
+      "chamfer_px": 19.13,
+      "proportion": 0.6836,
+      "ar_term": 0.6755,
+      "quad_term": 0.8314
+    },
+    "recognized_char": "十",
+    "ocr_confidence": 0.3504,
+    "ocr_topk": [
+      [
+        "十",
+        0.3504
+      ]
+    ],
+    "ocr_margin": 0.0,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.2868,
+    "ai_file": "01_力.png",
+    "gt_file": "01_力.png",
+    "eval_requested": "structural",
+    "mastery_policy": "structural_pass",
+    "judge_panel": {
+      "note": "count+vision"
+    }
+  }
+]
