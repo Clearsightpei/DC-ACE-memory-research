@@ -1,0 +1,58 @@
+{
+  "judge": {
+    "eval": "structural",
+    "use_ocr": true,
+    "mastery": "structural_pass"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "三",
+      "pinyin": "",
+      "phase": "2",
+      "mmh_stroke_count": 3,
+      "anchors": [
+        {
+          "stroke": 1,
+          "from": [
+            "TL",
+            0.716,
+            0.928
+          ],
+          "to": [
+            "TR",
+            0.34,
+            0.78
+          ]
+        },
+        {
+          "stroke": 2,
+          "from": [
+            "ML",
+            0.776,
+            0.92
+          ],
+          "to": [
+            "MR",
+            0.252,
+            0.82
+          ]
+        },
+        {
+          "stroke": 3,
+          "from": [
+            "BL",
+            -0.04,
+            0.94
+          ],
+          "to": [
+            "BR",
+            1.272,
+            0.852
+          ]
+        }
+      ],
+      "joints": []
+    }
+  ]
+}

@@ -42,6 +42,7 @@ The library is fully compositional: every entry calls only entries already in th
 
 (Empty otherwise — populated cycle by cycle.)
 
+| 三 | [code/san.py](code/san.py) | tag:character tag:3-strokes | c15 |
 | 二 | [code/er.py](code/er.py) | tag:character tag:2-strokes | c14 |
 
 ## Carry-over reference

@@ -1,0 +1,94 @@
+{
+  "judge": {
+    "eval": "structural",
+    "use_ocr": true,
+    "mastery": "structural_pass"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "主",
+      "pinyin": "",
+      "phase": "2",
+      "mmh_stroke_count": 5,
+      "anchors": [
+        {
+          "stroke": 1,
+          "from": [
+            "TC",
+            0.24,
+            0.288
+          ],
+          "to": [
+            "TC",
+            0.744,
+            0.708
+          ]
+        },
+        {
+          "stroke": 2,
+          "from": [
+            "ML",
+            0.568,
+            0.38
+          ],
+          "to": [
+            "MR",
+            0.456,
+            0.148
+          ]
+        },
+        {
+          "stroke": 3,
+          "from": [
+            "BL",
+            0.664,
+            0.32
+          ],
+          "to": [
+            "BR",
+            0.236,
+            0.132
+          ]
+        },
+        {
+          "stroke": 4,
+          "from": [
+            "C",
+            0.38,
+            0.436
+          ],
+          "to": [
+            "BC",
+            0.42,
+            1.08
+          ]
+        },
+        {
+          "stroke": 5,
+          "from": [
+            "BL",
+            -0.076,
+            1.276
+          ],
+          "to": [
+            "BR",
+            1.26,
+            1.216
+          ]
+        }
+      ],
+      "joints": [
+        {
+          "cell": "C"
+        },
+        {
+          "cell": "BC"
+        },
+        {
+          "cell": "BC"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "judge": {
+    "eval": "structural",
+    "use_ocr": true,
+    "mastery": "structural_pass"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "干",
+      "pinyin": "",
+      "phase": "2",
+      "mmh_stroke_count": 3,
+      "anchors": [
+        {
+          "stroke": 1,
+          "from": [
+            "TL",
+            0.712,
+            0.58
+          ],
+          "to": [
+            "TR",
+            0.408,
+            0.396
+          ]
+        },
+        {
+          "stroke": 2,
+          "from": [
+            "ML",
+            -0.132,
+            0.76
+          ],
+          "to": [
+            "MR",
+            1.188,
+            0.62
+          ]
+        },
+        {
+          "stroke": 3,
+          "from": [
+            "TC",
+            0.312,
+            0.712
+          ],
+          "to": [
+            "BC",
+            0.476,
+            1.688
+          ]
+        }
+      ],
+      "joints": [
+        {
+          "cell": "TC"
+        },
+        {
+          "cell": "C"
+        }
+      ]
+    }
+  ]
+}

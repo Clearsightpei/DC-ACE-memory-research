@@ -1,0 +1,138 @@
+{
+  "judge": {
+    "eval": "structural",
+    "use_ocr": true,
+    "mastery": "structural_pass"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "里",
+      "pinyin": "",
+      "phase": "2",
+      "mmh_stroke_count": 7,
+      "anchors": [
+        {
+          "stroke": 1,
+          "from": [
+            "TL",
+            0.416,
+            0.684
+          ],
+          "to": [
+            "ML",
+            0.9,
+            1.0
+          ]
+        },
+        {
+          "stroke": 2,
+          "from": [
+            "TL",
+            0.62,
+            0.696
+          ],
+          "to": [
+            "MR",
+            0.14,
+            0.956
+          ]
+        },
+        {
+          "stroke": 3,
+          "from": [
+            "C",
+            0.044,
+            0.308
+          ],
+          "to": [
+            "C",
+            0.956,
+            0.204
+          ]
+        },
+        {
+          "stroke": 4,
+          "from": [
+            "ML",
+            0.972,
+            0.82
+          ],
+          "to": [
+            "C",
+            0.992,
+            0.716
+          ]
+        },
+        {
+          "stroke": 5,
+          "from": [
+            "TC",
+            0.296,
+            0.756
+          ],
+          "to": [
+            "BC",
+            0.364,
+            1.064
+          ]
+        },
+        {
+          "stroke": 6,
+          "from": [
+            "BL",
+            0.76,
+            0.52
+          ],
+          "to": [
+            "BR",
+            0.216,
+            0.396
+          ]
+        },
+        {
+          "stroke": 7,
+          "from": [
+            "BL",
+            -0.08,
+            1.28
+          ],
+          "to": [
+            "BR",
+            1.22,
+            1.16
+          ]
+        }
+      ],
+      "joints": [
+        {
+          "cell": "TL"
+        },
+        {
+          "cell": "ML"
+        },
+        {
+          "cell": "ML"
+        },
+        {
+          "cell": "MR"
+        },
+        {
+          "cell": "TC"
+        },
+        {
+          "cell": "C"
+        },
+        {
+          "cell": "C"
+        },
+        {
+          "cell": "BC"
+        },
+        {
+          "cell": "BC"
+        }
+      ]
+    }
+  ]
+}
