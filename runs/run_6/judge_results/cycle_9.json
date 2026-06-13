@@ -1,0 +1,35 @@
+[
+  {
+    "index": 1,
+    "character": "乚",
+    "pinyin": "shuzhe",
+    "visual_score": 0.4848,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.3519,
+      "chamfer": 0.4795,
+      "chamfer_px": 22.05,
+      "proportion": 0.7611,
+      "ar_term": 0.9316,
+      "quad_term": 0.8916
+    },
+    "recognized_char": "",
+    "ocr_confidence": 0.0,
+    "ocr_topk": [],
+    "ocr_margin": 0.0,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.2909,
+    "ai_file": "01_乚.png",
+    "gt_file": "01_乚.png",
+    "eval_requested": "structural",
+    "mastery_policy": "structural_pass",
+    "judge_panel": {
+      "note": "compound stroke; count+vision"
+    }
+  }
+]
