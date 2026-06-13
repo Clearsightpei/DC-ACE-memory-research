@@ -56,7 +56,6 @@ The library is fully compositional: every entry calls only entries already in th
 | 日 | [code/ri.py](code/ri.py) | tag:character | c27 |
 | 月 | [code/yue.py](code/yue.py) | tag:character | c28 |
 | 田 | [code/tian.py](code/tian.py) | tag:character | c29 |
-| 里 | [code/li.py](code/li.py) | tag:character | c30 |
 | 三 | [code/san.py](code/san.py) | tag:character tag:3-strokes | c15 |
 | 二 | [code/er.py](code/er.py) | tag:character tag:2-strokes | c14 |
 
