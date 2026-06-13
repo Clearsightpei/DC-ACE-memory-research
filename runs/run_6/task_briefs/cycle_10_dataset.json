@@ -1,0 +1,7 @@
+{"judge": {"eval": "structural", "use_ocr": true, "mastery": "structural_pass"},
+ "characters": [{"index": 1, "character": "七", "pinyin": "qi", "phase": "1.5", "mmh_stroke_count": 2,
+                 "anchors": [
+                   {"stroke": 1, "from": ["ML", 0.36, 0.91], "to": ["MR", 0.98, 0.7]},
+                   {"stroke": 2, "from": ["TC", 0.41, 0.55], "to": ["BR", 0.59, 0.41]}
+                 ],
+                 "joints": [{"stroke_a":1,"stroke_b":2,"cell":"C"}]}]}

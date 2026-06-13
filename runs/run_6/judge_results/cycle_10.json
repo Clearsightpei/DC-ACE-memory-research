@@ -1,0 +1,40 @@
+[
+  {
+    "index": 1,
+    "character": "七",
+    "pinyin": "qi",
+    "visual_score": 0.6872,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.571,
+      "chamfer": 0.7464,
+      "chamfer_px": 8.78,
+      "proportion": 0.8013,
+      "ar_term": 0.9129,
+      "quad_term": 0.7584
+    },
+    "recognized_char": "七",
+    "ocr_confidence": 0.7224,
+    "ocr_topk": [
+      [
+        "七",
+        0.7224
+      ]
+    ],
+    "ocr_margin": 0.7224,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8123,
+    "ai_file": "01_七.png",
+    "gt_file": "01_七.png",
+    "eval_requested": "structural",
+    "mastery_policy": "structural_pass",
+    "judge_panel": {
+      "note": "2-stroke; count+vision"
+    }
+  }
+]
