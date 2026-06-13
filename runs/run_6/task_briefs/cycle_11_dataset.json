@@ -1,0 +1,7 @@
+{"judge": {"eval": "structural", "use_ocr": true, "mastery": "structural_pass"},
+ "characters": [{"index": 1, "character": "又", "pinyin": "you", "phase": "1.5", "mmh_stroke_count": 2,
+                 "anchors": [
+                   {"stroke": 1, "from": ["ML", 0.52, 0.55], "to": ["BL", 0.03, 1.22]},
+                   {"stroke": 2, "from": ["ML", 0.54, 0.86], "to": ["BR", 1.35, 0.94]}
+                 ],
+                 "joints": [{"cell":"BC"}]}]}
