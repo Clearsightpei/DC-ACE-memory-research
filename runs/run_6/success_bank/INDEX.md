@@ -42,6 +42,8 @@ The library is fully compositional: every entry calls only entries already in th
 
 (Empty otherwise — populated cycle by cycle.)
 
+| 二 | [code/er.py](code/er.py) | tag:character tag:2-strokes | c14 |
+
 ## Carry-over reference
 
 Run_5's frozen Success Bank lives at `runs/run_5/success_bank/`. Run_6 does NOT import from it. The run_5 bank is a numeric-memory baseline for later comparison; run_6 starts fresh with structural memory.
