@@ -1,0 +1,37 @@
+[
+  {
+    "index": 1,
+    "character": "目",
+    "pinyin": "mu",
+    "visual_score": 0.6998,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.6462,
+      "chamfer": 0.7149,
+      "chamfer_px": 10.07,
+      "proportion": 0.7766,
+      "ar_term": 0.9554,
+      "quad_term": 0.8569
+    },
+    "recognized_char": "目",
+    "ocr_confidence": 0.4725,
+    "ocr_topk": [
+      [
+        "目",
+        0.4725
+      ]
+    ],
+    "ocr_margin": 0.4725,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8199,
+    "ai_file": "01_目.png",
+    "gt_file": "01_目.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "structural_pass AND judge_panel.unanimous_yes"
+  }
+]

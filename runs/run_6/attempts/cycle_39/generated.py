@@ -1,4 +1,4 @@
-"""Auto-composed: 口 — c32. MMH-derived anchors + bend corners."""
+"""Auto-composed: 五 — c39. MMH-derived anchors + bend corners."""
 import io, os, sys, turtle
 from PIL import Image
 WIDTH, HEIGHT = 800, 600
@@ -22,10 +22,11 @@ def reset(t):
 
 def task_01(t, screen):
     reset(t)
-    draw_shu(t, ('ML', 0.368, 0.212), ('BL', 0.844, 0.94))
-    draw_heng_zhe(t, ('ML', 0.668, 0.272), ('MR', 0.488, 0.312), ('BR', 0.096, 0.456))
-    draw_heng(t, ('BL', 0.928, 0.808), ('BR', 0.428, 0.652))
-    save_canvas_to_png(screen, os.path.join(OUT_DIR, "01_口.png"))
+    draw_heng(t, ('TL', 0.668, 0.772), ('TR', 0.464, 0.616))
+    draw_shu(t, ('TC', 0.292, 0.896), ('BL', 0.9, 0.876))
+    draw_heng_zhe(t, ('ML', 0.544, 0.808), ('MR', 0.192, 0.812), ('BC', 0.82, 0.832))
+    draw_heng(t, ('BL', -0.296, 1.076), ('BR', 1.3, 1.108))
+    save_canvas_to_png(screen, os.path.join(OUT_DIR, "01_五.png"))
 
 def main():
     screen = turtle.Screen(); screen.setup(WIDTH, HEIGHT); screen.bgcolor("white"); screen.tracer(0)

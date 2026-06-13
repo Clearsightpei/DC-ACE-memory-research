@@ -1,0 +1,86 @@
+{
+  "judge": {
+    "eval": "vision+ocr+gt+structural",
+    "use_ocr": true,
+    "mastery": "structural_pass AND judge_panel.unanimous_yes"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "口",
+      "pinyin": "kou",
+      "phase": "2",
+      "mmh_stroke_count": 3,
+      "anchors": [
+        {
+          "stroke": 1,
+          "primitive": "shu",
+          "from": [
+            "ML",
+            0.368,
+            0.212
+          ],
+          "to": [
+            "BL",
+            0.844,
+            0.94
+          ]
+        },
+        {
+          "stroke": 2,
+          "primitive": "heng_zhe",
+          "from": [
+            "ML",
+            0.668,
+            0.272
+          ],
+          "to": [
+            "BR",
+            0.096,
+            0.456
+          ]
+        },
+        {
+          "stroke": 3,
+          "primitive": "heng",
+          "from": [
+            "BL",
+            0.928,
+            0.808
+          ],
+          "to": [
+            "BR",
+            0.428,
+            0.652
+          ]
+        }
+      ],
+      "joints": [
+        {
+          "stroke_a": 2,
+          "frac_a": 0.122,
+          "stroke_b": 3,
+          "frac_b": 0.0,
+          "cell": "ML",
+          "dist_mmh": 38.3
+        },
+        {
+          "stroke_a": 2,
+          "frac_a": 0.967,
+          "stroke_b": 4,
+          "frac_b": 0.0,
+          "cell": "BL",
+          "dist_mmh": 32.1
+        },
+        {
+          "stroke_a": 3,
+          "frac_a": 1.0,
+          "stroke_b": 4,
+          "frac_b": 0.753,
+          "cell": "BR",
+          "dist_mmh": 36.4
+        }
+      ]
+    }
+  ]
+}

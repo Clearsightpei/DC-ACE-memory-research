@@ -157,6 +157,54 @@ attempts/cycle_<N>/generated.py and attempts/cycle_<N>/01_<char>.png
   obviously wrong. If it does, log the exception in `teaching_log.md`
   and write the joint spec manually with a comment explaining why.
 
+## Stroke quality alarm (run_6+)
+
+When composing a character brief, you reuse Success Bank stroke
+primitives. **Before** committing the brief, look at an existing
+isolated render of each primitive you're about to call (find a prior
+attempts/cycle_<K>/ where that primitive was the focus, or any
+mastered character that uses it heavily). Ask: does the rendered shape
+actually look like the named stroke?
+
+Specific failure modes to flag (these have happened):
+
+- **弯 not curved**: a stroke called `wan` (弯) renders nearly straight
+  — the curve isn't visible. In real characters this will fail to
+  read as the intended shape and OCR will reject the char.
+- **Hook too subtle** (钩 invisible): a hook stroke has tail thickness
+  ≤ entry thickness or hook displacement < 30 px. Will not register
+  as a hook in OCR or panel.
+- **提 descends instead of rising**: width profile or anchor direction
+  inverted. Looks like a 撇 or 捺.
+- **V-disconnect at sharp corners**: zhe-to-next-segment join where
+  both segments thin to a point at the corner instead of overlapping
+  with matched dunbi width.
+
+When you flag one of these, **DO NOT silently use the bad primitive**.
+Choose one:
+
+1. Block the cycle: write a one-paragraph alarm in `teaching_log.md`
+   under `### Stroke alarm — c<N>`, naming the primitive, the failure
+   mode, and the prior render path. Set the cycle focus to
+   "re-master <primitive>" instead of the original character. Curator
+   demotes the bad primitive (move its `.py` to `success_bank/
+   _quarantine_<primitive>_c<N>.py`, remove its row from INDEX.md).
+
+2. If the primitive is *good enough* for this specific character but
+   would fail in others, log it under `to_be_learned.md` as "renderer
+   ceiling — re-master before high-stakes reuse", and proceed with
+   the cycle. (Use this sparingly — option 1 is the default.)
+
+Symptom-to-primitive map (what to inspect when X looks off):
+
+| Character looks like | Inspect primitive |
+|---|---|
+| 弯钩/弯 part not curved | shu_wan_gou.py, heng_zhe_wan_gou.py |
+| Hooks invisible | shu_gou.py, heng_gou.py, heng_zhe_gou.py |
+| 撇/捺 too short | pie.py, na.py |
+| Top heng over-arcs | heng.py |
+| Compound-stroke corner disconnects | heng_zhe.py, shu_zhe.py |
+
 ## Return control
 
 Save edits and return. The orchestrator commits and dispatches the Drawer.

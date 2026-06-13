@@ -1,0 +1,56 @@
+{
+  "judge": {
+    "eval": "vision+ocr+gt+structural",
+    "use_ocr": true,
+    "mastery": "structural_pass AND judge_panel.unanimous_yes"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "七",
+      "pinyin": "qi",
+      "phase": "2",
+      "mmh_stroke_count": 2,
+      "anchors": [
+        {
+          "stroke": 1,
+          "primitive": "heng",
+          "from": [
+            "BL",
+            -0.144,
+            0.188
+          ],
+          "to": [
+            "MR",
+            0.98,
+            0.704
+          ]
+        },
+        {
+          "stroke": 2,
+          "primitive": "shu_wan_gou",
+          "from": [
+            "TL",
+            0.908,
+            0.548
+          ],
+          "to": [
+            "BR",
+            0.588,
+            1.1
+          ]
+        }
+      ],
+      "joints": [
+        {
+          "stroke_a": 2,
+          "frac_a": 0.398,
+          "stroke_b": 3,
+          "frac_b": 0.38,
+          "cell": "C",
+          "dist_mmh": 0.0
+        }
+      ]
+    }
+  ]
+}

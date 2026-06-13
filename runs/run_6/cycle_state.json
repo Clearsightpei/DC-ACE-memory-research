@@ -1,9 +1,9 @@
 {
-  "cycle": 30,
+  "cycle": 41,
   "phase": "2",
   "current_focus": null,
-  "last_outcome": "demoted",
-  "last_finished_at": "2026-06-12T17:30:00",
-  "success_bank_size": 29,
-  "notes": "c30 里 DEMOTED post-hoc — promoted in error despite structural_pass=false (1 component, need 7); render was a broken 生-like glyph, not 里. Violation of 100%-or-no-promote rule. Next phase: re-master all 26 standard compound strokes one per cycle (c31-c56), then redo 里 (c57)."
+  "last_outcome": "batch_partial",
+  "last_finished_at": "2026-06-12T22:00:00",
+  "success_bank_size": 31,
+  "notes": "c32-c41 batch (10 simple chars): only c34 又 PROMOTED (panel 3/3). 9 carry-overs all share one root cause — brush taper means MMH-median endpoints render as thin tips that don't visibly overlap at joints, so panel sees gaps at every join. Fix logged in to_be_learned.md (Brush-end-gap class) and judge_results/cycle_32_to_41_summary.md: anchor strokes at find_joints meeting-points rather than raw MMH first/last median points. c32 口 / c33 力 / c35 七 / c36 八 / c37 人 / c38 山 / c40 目 all blocked on this; c39 五 and c41 白 panel 2/3 (very close, same root cause). Bank: 31 entries (30 + 又)."
 }

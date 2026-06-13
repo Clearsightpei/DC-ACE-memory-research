@@ -1,0 +1,37 @@
+[
+  {
+    "index": 1,
+    "character": "口",
+    "pinyin": "kou",
+    "visual_score": 0.852,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.7758,
+      "chamfer": 0.8906,
+      "chamfer_px": 3.47,
+      "proportion": 0.927,
+      "ar_term": 0.9669,
+      "quad_term": 0.9718
+    },
+    "recognized_char": "口",
+    "ocr_confidence": 0.9507,
+    "ocr_topk": [
+      [
+        "口",
+        0.9507
+      ]
+    ],
+    "ocr_margin": 0.9507,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.9112,
+    "ai_file": "01_口.png",
+    "gt_file": "01_口.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "structural_pass AND judge_panel.unanimous_yes"
+  }
+]

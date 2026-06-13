@@ -1,0 +1,56 @@
+{
+  "judge": {
+    "eval": "vision+ocr+gt+structural",
+    "use_ocr": true,
+    "mastery": "structural_pass AND judge_panel.unanimous_yes"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "人",
+      "pinyin": "ren",
+      "phase": "2",
+      "mmh_stroke_count": 2,
+      "anchors": [
+        {
+          "stroke": 1,
+          "primitive": "pie",
+          "from": [
+            "TC",
+            0.384,
+            0.604
+          ],
+          "to": [
+            "BL",
+            -0.26,
+            1.168
+          ]
+        },
+        {
+          "stroke": 2,
+          "primitive": "na",
+          "from": [
+            "C",
+            0.348,
+            0.64
+          ],
+          "to": [
+            "BR",
+            1.3,
+            1.188
+          ]
+        }
+      ],
+      "joints": [
+        {
+          "stroke_a": 2,
+          "frac_a": 0.31,
+          "stroke_b": 3,
+          "frac_b": 0.027,
+          "cell": "C",
+          "dist_mmh": 51.2
+        }
+      ]
+    }
+  ]
+}

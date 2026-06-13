@@ -1,0 +1,130 @@
+{
+  "judge": {
+    "eval": "vision+ocr+gt+structural",
+    "use_ocr": true,
+    "mastery": "structural_pass AND judge_panel.unanimous_yes"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "目",
+      "pinyin": "mu",
+      "phase": "2",
+      "mmh_stroke_count": 5,
+      "anchors": [
+        {
+          "stroke": 1,
+          "primitive": "shu",
+          "from": [
+            "TL",
+            0.576,
+            0.656
+          ],
+          "to": [
+            "BL",
+            0.684,
+            1.244
+          ]
+        },
+        {
+          "stroke": 2,
+          "primitive": "heng_zhe",
+          "from": [
+            "TL",
+            0.804,
+            0.704
+          ],
+          "to": [
+            "BC",
+            0.872,
+            1.02
+          ]
+        },
+        {
+          "stroke": 3,
+          "primitive": "heng",
+          "from": [
+            "ML",
+            0.844,
+            0.556
+          ],
+          "to": [
+            "C",
+            0.764,
+            0.42
+          ]
+        },
+        {
+          "stroke": 4,
+          "primitive": "heng",
+          "from": [
+            "BL",
+            0.836,
+            0.18
+          ],
+          "to": [
+            "BC",
+            0.776,
+            0.072
+          ]
+        },
+        {
+          "stroke": 5,
+          "primitive": "heng",
+          "from": [
+            "BL",
+            0.792,
+            1.064
+          ],
+          "to": [
+            "BC",
+            0.956,
+            0.948
+          ]
+        }
+      ],
+      "joints": [
+        {
+          "stroke_a": 2,
+          "frac_a": 0.062,
+          "stroke_b": 3,
+          "frac_b": 0.0,
+          "cell": "TL",
+          "dist_mmh": 34.1
+        },
+        {
+          "stroke_a": 2,
+          "frac_a": 0.386,
+          "stroke_b": 4,
+          "frac_b": 0.0,
+          "cell": "ML",
+          "dist_mmh": 33.6
+        },
+        {
+          "stroke_a": 2,
+          "frac_a": 0.621,
+          "stroke_b": 5,
+          "frac_b": 0.0,
+          "cell": "BL",
+          "dist_mmh": 33.0
+        },
+        {
+          "stroke_a": 2,
+          "frac_a": 0.962,
+          "stroke_b": 6,
+          "frac_b": 0.0,
+          "cell": "BL",
+          "dist_mmh": 35.4
+        },
+        {
+          "stroke_a": 3,
+          "frac_a": 1.0,
+          "stroke_b": 6,
+          "frac_b": 0.829,
+          "cell": "BC",
+          "dist_mmh": 40.3
+        }
+      ]
+    }
+  ]
+}

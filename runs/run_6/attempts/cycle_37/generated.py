@@ -1,4 +1,4 @@
-"""Auto-composed: 口 — c32. MMH-derived anchors + bend corners."""
+"""Auto-composed: 人 — c37. MMH-derived anchors + bend corners."""
 import io, os, sys, turtle
 from PIL import Image
 WIDTH, HEIGHT = 800, 600
@@ -6,9 +6,8 @@ OUT_DIR = os.path.dirname(os.path.abspath(__file__))
 SB = os.path.join(OUT_DIR, '..', '..', 'success_bank', 'code')
 sys.path.insert(0, SB)
 from _anchor import anchor_to_xy
-from heng import draw_heng
-from heng_zhe import draw_heng_zhe
-from shu import draw_shu
+from na import draw_na
+from pie import draw_pie
 
 def save_canvas_to_png(screen, path):
     canvas = screen.getcanvas()
@@ -22,10 +21,9 @@ def reset(t):
 
 def task_01(t, screen):
     reset(t)
-    draw_shu(t, ('ML', 0.368, 0.212), ('BL', 0.844, 0.94))
-    draw_heng_zhe(t, ('ML', 0.668, 0.272), ('MR', 0.488, 0.312), ('BR', 0.096, 0.456))
-    draw_heng(t, ('BL', 0.928, 0.808), ('BR', 0.428, 0.652))
-    save_canvas_to_png(screen, os.path.join(OUT_DIR, "01_口.png"))
+    draw_pie(t, ('TC', 0.384, 0.604), ('BL', -0.26, 1.168))
+    draw_na(t, ('C', 0.348, 0.64), ('BR', 1.3, 1.188))
+    save_canvas_to_png(screen, os.path.join(OUT_DIR, "01_人.png"))
 
 def main():
     screen = turtle.Screen(); screen.setup(WIDTH, HEIGHT); screen.bgcolor("white"); screen.tracer(0)
