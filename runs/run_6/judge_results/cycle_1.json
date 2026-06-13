@@ -1,0 +1,40 @@
+[
+  {
+    "index": 1,
+    "character": "一",
+    "pinyin": "yi",
+    "visual_score": 0.8316,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.805,
+      "chamfer": 0.9223,
+      "chamfer_px": 2.43,
+      "proportion": 0.7035,
+      "ar_term": 0.6792,
+      "quad_term": 0.618
+    },
+    "recognized_char": "",
+    "ocr_confidence": 0.0,
+    "ocr_topk": [],
+    "ocr_margin": 0.0,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.499,
+    "ai_file": "01_一.png",
+    "gt_file": "01_一.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "structural_pass AND judge_panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "YES",
+        "YES",
+        "YES"
+      ],
+      "unanimous_yes": true
+    }
+  }
+]

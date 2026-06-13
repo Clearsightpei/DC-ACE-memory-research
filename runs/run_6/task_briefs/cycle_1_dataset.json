@@ -1,0 +1,20 @@
+{
+  "judge": {
+    "eval": "vision+ocr+gt+structural",
+    "use_ocr": true,
+    "mastery": "structural_pass AND judge_panel.unanimous_yes"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "一",
+      "pinyin": "yi",
+      "phase": "1",
+      "mmh_stroke_count": 1,
+      "anchors": [
+        {"stroke": 1, "from": ["V_left", "H_mid"], "to": ["V_right", "H_mid"]}
+      ],
+      "joints": []
+    }
+  ]
+}

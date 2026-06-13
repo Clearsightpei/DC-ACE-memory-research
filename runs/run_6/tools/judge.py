@@ -303,35 +303,36 @@ def _read_image_bytes(path: str) -> bytes:
 def recognize_character(
     ocr_engine: RapidOCR,
     image_path: str,
-) -> Tuple[str, float]:
+) -> Tuple[str, float, List[Tuple[str, float]]]:
     """Recognize a single Chinese character from a PNG using RapidOCR.
 
-    Preprocesses the image (crop, thicken, square, resize) then runs
-    recognition-only mode (no text detection, no classification).
-
-    Returns (recognized_char, confidence) where recognized_char is a
-    single Chinese character or "", and confidence is 0.0–1.0.
+    Returns (best_char, best_conf, topk) where:
+      - best_char/best_conf: highest-confidence Chinese-char prediction
+        (or "", 0.0 if none)
+      - topk: list of (char, conf) for ALL Chinese-char predictions
+        sorted by conf descending. Used by the Curator's OCR-margin gate.
     """
     try:
         preprocessed = _preprocess_for_ocr(image_path)
         result = ocr_engine(preprocessed, use_det=False, use_cls=False)
 
         if result is None or not hasattr(result, "txts") or not result.txts:
-            return "", 0.0
+            return "", 0.0, []
 
-        # Find the best result containing a Chinese character
-        best_char, best_score = "", 0.0
+        candidates = []
         for txt, score in zip(result.txts, result.scores):
-            chinese = re.findall(r'[\u4e00-\u9fff]', txt)
-            if chinese and score > best_score:
-                best_char = chinese[0]
-                best_score = score
+            for ch in re.findall(r'[\u4e00-\u9fff]', txt):
+                candidates.append((ch, float(score)))
+        candidates.sort(key=lambda cs: cs[1], reverse=True)
 
-        return best_char, best_score
+        if not candidates:
+            return "", 0.0, []
+        best_char, best_score = candidates[0]
+        return best_char, best_score, candidates
 
     except Exception as e:
         print(f"    [OCR] Error: {e}")
-        return "", 0.0
+        return "", 0.0, []
 
 
 # ─────────────────────────── DeepSeek Coordinate Extraction ──────────────
@@ -465,6 +466,8 @@ def judge_character(
         "visual_components": {},
         "recognized_char": "",
         "ocr_confidence": 0.0,
+        "ocr_topk": [],
+        "ocr_margin": 0.0,
         "is_correct": False,
         "gt_coordinates": {},
         "ai_coordinates": {},
@@ -499,9 +502,23 @@ def judge_character(
     ocr_conf = 0.0
     ocr_enabled = ocr_engine is not None
     if ocr_enabled:
-        recognized, ocr_conf = recognize_character(ocr_engine, ai_path)
+        recognized, ocr_conf, topk = recognize_character(ocr_engine, ai_path)
+    else:
+        topk = []
     result["recognized_char"] = recognized
     result["ocr_confidence"] = round(ocr_conf, 4)
+    result["ocr_topk"] = [(c, round(s, 4)) for c, s in topk[:5]]
+    # Margin = conf of correct prediction minus conf of next-best different char.
+    # If target is #1, margin = (conf_target - conf_runner_up). If target not in
+    # top-K, margin = 0.0. The Curator gate requires margin >= 0.3.
+    margin = 0.0
+    target_conf = next((s for c, s in topk if c == character), None)
+    if target_conf is not None and topk:
+        # next best prediction whose char != target
+        runner_up = next((s for c, s in topk if c != character), 0.0)
+        if topk[0][0] == character:
+            margin = float(target_conf - runner_up)
+    result["ocr_margin"] = round(margin, 4)
     result["is_correct"] = (recognized == character)
 
     correct_val = 1.0 if result["is_correct"] else 0.0
