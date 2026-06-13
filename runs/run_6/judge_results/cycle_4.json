@@ -1,0 +1,35 @@
+[
+  {
+    "index": 1,
+    "character": "丶",
+    "pinyin": "zhu",
+    "visual_score": 0.6986,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.5535,
+      "chamfer": 0.7672,
+      "chamfer_px": 7.95,
+      "proportion": 0.8514,
+      "ar_term": 0.8297,
+      "quad_term": 0.8897
+    },
+    "recognized_char": "",
+    "ocr_confidence": 0.0,
+    "ocr_topk": [],
+    "ocr_margin": 0.0,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.4192,
+    "ai_file": "01_丶.png",
+    "gt_file": "01_丶.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "structural_pass",
+    "judge_panel": {
+      "note": "atomic stroke; structural authoritative"
+    }
+  }
+]
