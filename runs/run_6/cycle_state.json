@@ -1,9 +1,9 @@
 {
-  "cycle": 41,
+  "cycle": 42,
   "phase": "2",
   "current_focus": null,
-  "last_outcome": "batch_partial",
-  "last_finished_at": "2026-06-12T22:00:00",
-  "success_bank_size": 31,
-  "notes": "c32-c41 batch (10 simple chars): only c34 又 PROMOTED (panel 3/3). 9 carry-overs all share one root cause — brush taper means MMH-median endpoints render as thin tips that don't visibly overlap at joints, so panel sees gaps at every join. Fix logged in to_be_learned.md (Brush-end-gap class) and judge_results/cycle_32_to_41_summary.md: anchor strokes at find_joints meeting-points rather than raw MMH first/last median points. c32 口 / c33 力 / c35 七 / c36 八 / c37 人 / c38 山 / c40 目 all blocked on this; c39 五 and c41 白 panel 2/3 (very close, same root cause). Bank: 31 entries (30 + 又)."
+  "last_outcome": "mastered",
+  "last_finished_at": "2026-06-13T00:00:00",
+  "success_bank_size": 32,
+  "notes": "c42 PROMOTED: 目 (restart of c40, panel 3/3). c40 FROZEN per 3-attempt rule (Drawer SKILL); attempt 3 was a regression (MMH-bend corner replaced the correct attempt-2 geometric L-corner), attempts/cycle_40/FROZEN.md documents the postmortem. Drawer SKILL.md gains the 3-attempt-freeze rule: after 3 overwrites in one cycle, freeze the cycle dir as evidence, do not promote, restart in a new cycle number. Bank: 32 entries (heng_zhe_ti, 又, 目 added this session; 口/力/七/八/人/山/五/白 still in to_be_learned for next session, brush-end-gap fix pending)."
 }

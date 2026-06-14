@@ -30,6 +30,7 @@ The library is fully compositional: every entry calls only entries already in th
 | 横折 | [code/heng_zhe.py](code/heng_zhe.py) | tag:compound-stroke tag:heng_zhe | c13 (via 口) |
 | 横折提 | [code/heng_zhe_ti.py](code/heng_zhe_ti.py) | tag:compound-stroke tag:heng_zhe_ti tag:three-segment | c31 (isolated, panel 3/3 YES) |
 | 又 | [code/you.py](code/you.py) | tag:character | c34 (panel 3/3 YES, MMH-direct anchors with bend-corner) |
+| 目 | [code/mu_eye.py](code/mu_eye.py) | tag:character | c42 (restart of c40, panel 3/3 YES with geometric L-corner) |
 | 横折钩 | [code/heng_zhe_gou.py](code/heng_zhe_gou.py) | tag:compound-stroke tag:heng_zhe_gou tag:hook | c12 (via 力) |
 | 横撇 | [code/heng_pie.py](code/heng_pie.py) | tag:compound-stroke tag:heng_pie | c11 (via 又) |
 | 竖弯钩 | [code/shu_wan_gou.py](code/shu_wan_gou.py) | tag:compound-stroke tag:shu_wan_gou tag:hook | c10 (via 七) |
