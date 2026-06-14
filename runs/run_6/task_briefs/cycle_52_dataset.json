@@ -1,0 +1,113 @@
+{
+  "judge": {
+    "eval": "vision+ocr+gt+structural",
+    "use_ocr": true,
+    "mastery": "panel.unanimous_yes"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "半",
+      "pinyin": "ban",
+      "phase": "2",
+      "mmh_stroke_count": 5,
+      "anchors": [
+        {
+          "stroke": 1,
+          "primitive": "dian",
+          "from": [
+            "TL",
+            0.604,
+            0.716
+          ],
+          "to": [
+            "C",
+            0.012,
+            0.108
+          ]
+        },
+        {
+          "stroke": 2,
+          "primitive": "pie",
+          "from": [
+            "TR",
+            0.308,
+            0.368
+          ],
+          "to": [
+            "TC",
+            0.908,
+            0.956
+          ]
+        },
+        {
+          "stroke": 3,
+          "primitive": "heng",
+          "from": [
+            "ML",
+            0.712,
+            0.528
+          ],
+          "to": [
+            "MR",
+            0.256,
+            0.38
+          ]
+        },
+        {
+          "stroke": 4,
+          "primitive": "heng",
+          "from": [
+            "BL",
+            -0.144,
+            0.26
+          ],
+          "to": [
+            "BR",
+            1.192,
+            0.116
+          ]
+        },
+        {
+          "stroke": 5,
+          "primitive": "shu",
+          "from": [
+            "TC",
+            0.264,
+            0.228
+          ],
+          "to": [
+            "BC",
+            0.48,
+            1.3
+          ]
+        }
+      ],
+      "joints": [
+        {
+          "stroke_a": 3,
+          "frac_a": 0.511,
+          "stroke_b": 5,
+          "frac_b": 0.378,
+          "cell": "C",
+          "meeting_canvas": [
+            -0.0,
+            2.3
+          ]
+        },
+        {
+          "stroke_a": 4,
+          "frac_a": 0.491,
+          "stroke_b": 5,
+          "frac_b": 0.553,
+          "cell": "BC",
+          "meeting_canvas": [
+            -0.6,
+            -63.0
+          ]
+        }
+      ],
+      "fix_applied": "joint-snap (head/tail snapped to joint meeting_canvas) + corner-by-type"
+    }
+  ]
+}

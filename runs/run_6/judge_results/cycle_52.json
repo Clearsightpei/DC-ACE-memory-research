@@ -1,0 +1,37 @@
+[
+  {
+    "index": 1,
+    "character": "半",
+    "pinyin": "ban",
+    "visual_score": 0.6758,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.552,
+      "chamfer": 0.7303,
+      "chamfer_px": 9.43,
+      "proportion": 0.8142,
+      "ar_term": 0.8673,
+      "quad_term": 0.9624
+    },
+    "recognized_char": "半",
+    "ocr_confidence": 0.9991,
+    "ocr_topk": [
+      [
+        "半",
+        0.9991
+      ]
+    ],
+    "ocr_margin": 0.9991,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8055,
+    "ai_file": "01_半.png",
+    "gt_file": "01_半.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes"
+  }
+]

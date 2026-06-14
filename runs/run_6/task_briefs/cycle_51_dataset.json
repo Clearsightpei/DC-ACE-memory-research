@@ -1,0 +1,187 @@
+{
+  "judge": {
+    "eval": "vision+ocr+gt+structural",
+    "use_ocr": true,
+    "mastery": "panel.unanimous_yes"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "自",
+      "pinyin": "zi",
+      "phase": "2",
+      "mmh_stroke_count": 6,
+      "anchors": [
+        {
+          "stroke": 1,
+          "primitive": "pie",
+          "from": [
+            "TC",
+            0.308,
+            0.224
+          ],
+          "to": [
+            "C",
+            0.144,
+            0.062
+          ]
+        },
+        {
+          "stroke": 2,
+          "primitive": "shu",
+          "from": [
+            "ML",
+            0.852,
+            0.136
+          ],
+          "to": [
+            "BL",
+            0.816,
+            1.214
+          ]
+        },
+        {
+          "stroke": 3,
+          "primitive": "heng_zhe",
+          "from": [
+            "ML",
+            0.852,
+            0.136
+          ],
+          "to": [
+            "BC",
+            0.898,
+            1.07
+          ],
+          "corner1": [
+            "C",
+            0.898,
+            0.136
+          ]
+        },
+        {
+          "stroke": 4,
+          "primitive": "heng",
+          "from": [
+            "ML",
+            0.859,
+            0.91
+          ],
+          "to": [
+            "C",
+            0.796,
+            0.704
+          ]
+        },
+        {
+          "stroke": 5,
+          "primitive": "heng",
+          "from": [
+            "BL",
+            0.852,
+            0.46
+          ],
+          "to": [
+            "BC",
+            0.812,
+            0.332
+          ]
+        },
+        {
+          "stroke": 6,
+          "primitive": "heng",
+          "from": [
+            "BL",
+            0.816,
+            1.214
+          ],
+          "to": [
+            "BR",
+            0.048,
+            1.048
+          ]
+        }
+      ],
+      "joints": [
+        {
+          "stroke_a": 1,
+          "frac_a": 1.0,
+          "stroke_b": 2,
+          "frac_b": 0.082,
+          "cell": "ML",
+          "meeting_canvas": [
+            -57.4,
+            39.8
+          ]
+        },
+        {
+          "stroke_a": 1,
+          "frac_a": 0.934,
+          "stroke_b": 3,
+          "frac_b": 0.067,
+          "cell": "C",
+          "meeting_canvas": [
+            -35.6,
+            43.8
+          ]
+        },
+        {
+          "stroke_a": 2,
+          "frac_a": 0.082,
+          "stroke_b": 3,
+          "frac_b": 0.0,
+          "cell": "ML",
+          "meeting_canvas": [
+            -64.8,
+            36.4
+          ]
+        },
+        {
+          "stroke_a": 2,
+          "frac_a": 0.432,
+          "stroke_b": 4,
+          "frac_b": 0.0,
+          "cell": "ML",
+          "meeting_canvas": [
+            -64.1,
+            -41.0
+          ]
+        },
+        {
+          "stroke_a": 2,
+          "frac_a": 0.652,
+          "stroke_b": 5,
+          "frac_b": 0.0,
+          "cell": "BL",
+          "meeting_canvas": [
+            -64.8,
+            -96.0
+          ]
+        },
+        {
+          "stroke_a": 2,
+          "frac_a": 1.0,
+          "stroke_b": 6,
+          "frac_b": 0.0,
+          "cell": "BL",
+          "meeting_canvas": [
+            -68.4,
+            -171.4
+          ]
+        },
+        {
+          "stroke_a": 3,
+          "frac_a": 1.0,
+          "stroke_b": 6,
+          "frac_b": 0.822,
+          "cell": "BC",
+          "meeting_canvas": [
+            39.8,
+            -157.0
+          ]
+        }
+      ],
+      "fix_applied": "joint-snap (head/tail snapped to joint meeting_canvas) + corner-by-type"
+    }
+  ]
+}

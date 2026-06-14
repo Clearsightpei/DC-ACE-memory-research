@@ -1,0 +1,126 @@
+{
+  "judge": {
+    "eval": "vision+ocr+gt+structural",
+    "use_ocr": true,
+    "mastery": "panel.unanimous_yes"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "五",
+      "pinyin": "wu",
+      "phase": "2",
+      "mmh_stroke_count": 4,
+      "anchors": [
+        {
+          "stroke": 1,
+          "primitive": "heng",
+          "from": [
+            "TL",
+            0.668,
+            0.772
+          ],
+          "to": [
+            "TR",
+            0.464,
+            0.616
+          ]
+        },
+        {
+          "stroke": 2,
+          "primitive": "shu",
+          "from": [
+            "TC",
+            0.237,
+            0.839
+          ],
+          "to": [
+            "BL",
+            0.893,
+            0.929
+          ]
+        },
+        {
+          "stroke": 3,
+          "primitive": "heng_zhe",
+          "from": [
+            "ML",
+            0.544,
+            0.808
+          ],
+          "to": [
+            "BC",
+            0.762,
+            0.877
+          ],
+          "corner1": [
+            "C",
+            0.762,
+            0.808
+          ]
+        },
+        {
+          "stroke": 4,
+          "primitive": "heng",
+          "from": [
+            "BL",
+            -0.296,
+            1.076
+          ],
+          "to": [
+            "BR",
+            1.3,
+            1.108
+          ]
+        }
+      ],
+      "joints": [
+        {
+          "stroke_a": 1,
+          "frac_a": 0.287,
+          "stroke_b": 2,
+          "frac_b": 0.0,
+          "cell": "TC",
+          "meeting_canvas": [
+            -26.3,
+            66.1
+          ]
+        },
+        {
+          "stroke_a": 2,
+          "frac_a": 0.435,
+          "stroke_b": 3,
+          "frac_b": 0.253,
+          "cell": "C",
+          "meeting_canvas": [
+            -24.7,
+            -25.6
+          ]
+        },
+        {
+          "stroke_a": 2,
+          "frac_a": 0.973,
+          "stroke_b": 4,
+          "frac_b": 0.314,
+          "cell": "BL",
+          "meeting_canvas": [
+            -60.7,
+            -142.9
+          ]
+        },
+        {
+          "stroke_a": 3,
+          "frac_a": 1.0,
+          "stroke_b": 4,
+          "frac_b": 0.552,
+          "cell": "BC",
+          "meeting_canvas": [
+            26.2,
+            -137.7
+          ]
+        }
+      ],
+      "fix_applied": "joint-snap (head/tail snapped to joint meeting_canvas) + corner-by-type"
+    }
+  ]
+}
