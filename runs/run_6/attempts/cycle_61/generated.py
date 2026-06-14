@@ -1,4 +1,4 @@
-"""米 (mi) — c61. Raw MMH + corner-by-type."""
+"""米 (mi) — c61 attempt-2-or-3. Top dot/pie tails lowered to ~heng_y+15 to anchor to cross"""
 import io, os, sys, turtle
 from PIL import Image
 WIDTH, HEIGHT = 800, 600
@@ -13,8 +13,7 @@ from pie import draw_pie
 from shu import draw_shu
 
 def save_canvas_to_png(screen, path):
-    canvas = screen.getcanvas()
-    ps = canvas.postscript(colormode="color")
+    canvas = screen.getcanvas(); ps = canvas.postscript(colormode="color")
     img = Image.open(io.BytesIO(ps.encode("utf-8")))
     img.load(scale=1); img.convert("RGBA").save(path, "PNG")
 
@@ -24,8 +23,8 @@ def reset(t):
 
 def task_01(t, screen):
     reset(t)
-    draw_dian(t, ('TL', 0.528, 0.896), ('ML', 0.964, 0.292))
-    draw_pie(t, ('TR', 0.228, 0.544), ('C', 0.812, 0.212))
+    draw_dian(t, ('TL', 0.528, 0.896), ('ML', 0.964, 0.658))
+    draw_pie(t, ('TR', 0.228, 0.544), ('C', 0.812, 0.658))
     draw_heng(t, ('ML', 0.108, 0.808), ('MR', 0.744, 0.608))
     draw_shu(t, ('TC', 0.264, 0.232), ('BC', 0.384, 1.3))
     draw_pie(t, ('C', 0.336, 0.848), ('BL', -0.06, 1.232))

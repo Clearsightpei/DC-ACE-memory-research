@@ -15,7 +15,7 @@
       "anchors": [
         {
           "stroke": 1,
-          "primitive": "heng",
+          "primitive": "shu_zhe",
           "from": [
             "ML",
             0.476,
@@ -24,6 +24,11 @@
           "to": [
             "MR",
             0.38,
+            0.576
+          ],
+          "corner1": [
+            "ML",
+            0.476,
             0.576
           ]
         },
@@ -57,7 +62,7 @@
         },
         {
           "stroke": 4,
-          "primitive": "heng",
+          "primitive": "shu_zhe",
           "from": [
             "BL",
             0.488,
@@ -66,6 +71,11 @@
           "to": [
             "BR",
             0.524,
+            1.02
+          ],
+          "corner1": [
+            "BL",
+            0.488,
             1.02
           ]
         },

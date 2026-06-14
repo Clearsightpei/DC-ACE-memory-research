@@ -1,4 +1,4 @@
-"""头 (tou) — c64 fix. raw MMH."""
+"""头 (tou) — c64 attempt-2-or-3. Top 2 dians lifted above pie apex; head_share override"""
 import io, os, sys, turtle
 from PIL import Image
 WIDTH, HEIGHT = 800, 600
@@ -11,8 +11,7 @@ from heng import draw_heng
 from pie import draw_pie
 
 def save_canvas_to_png(screen, path):
-    canvas = screen.getcanvas()
-    ps = canvas.postscript(colormode="color")
+    canvas = screen.getcanvas(); ps = canvas.postscript(colormode="color")
     img = Image.open(io.BytesIO(ps.encode("utf-8")))
     img.load(scale=1); img.convert("RGBA").save(path, "PNG")
 
@@ -22,8 +21,8 @@ def reset(t):
 
 def task_01(t, screen):
     reset(t)
-    draw_dian(t, ('TL', 0.768, 0.748), ('C', 0.196, 0.052))
-    draw_dian(t, ('ML', 0.5, 0.328), ('C', 0.004, 0.724))
+    draw_dian(t, ('TL', 0.768, -0.136), ('TC', 0.196, 0.168))
+    draw_dian(t, ('TL', 0.5, -0.228), ('TC', 0.004, 0.168))
     draw_heng(t, ('BL', -0.052, 0.26), ('BR', 1.044, 0.092))
     draw_pie(t, ('TC', 0.508, 0.468), ('BL', 0.148, 1.3))
     draw_dian(t, ('BC', 0.88, 0.612), ('BR', 0.684, 1.3))

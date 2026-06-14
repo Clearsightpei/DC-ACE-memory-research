@@ -1,4 +1,4 @@
-"""山 (shan) — c56 fix. shu_lift_22."""
+"""山 (shan) — c56 attempt-2-or-3. shu.to.y set to baseline_y so 垂露 droplet sits AT baseline"""
 import io, os, sys, turtle
 from PIL import Image
 WIDTH, HEIGHT = 800, 600
@@ -10,8 +10,7 @@ from shu import draw_shu
 from shu_zhe import draw_shu_zhe
 
 def save_canvas_to_png(screen, path):
-    canvas = screen.getcanvas()
-    ps = canvas.postscript(colormode="color")
+    canvas = screen.getcanvas(); ps = canvas.postscript(colormode="color")
     img = Image.open(io.BytesIO(ps.encode("utf-8")))
     img.load(scale=1); img.convert("RGBA").save(path, "PNG")
 
@@ -21,9 +20,9 @@ def reset(t):
 
 def task_01(t, screen):
     reset(t)
-    draw_shu(t, ('TC', 0.34, 0.556), ('BC', 0.424, 0.496))
+    draw_shu(t, ('TC', 0.34, 0.556), ('BC', 0.424, 0.6))
     draw_shu_zhe(t, ('ML', 0.236, 0.956), ('BL', 0.236, 0.6), ('BR', 0.604, 0.6))
-    draw_shu(t, ('MR', 0.692, 0.588), ('BR', 0.644, 1.1))
+    draw_shu(t, ('MR', 0.692, 0.588), ('BR', 0.644, 0.6))
     save_canvas_to_png(screen, os.path.join(OUT_DIR, "01_山.png"))
 
 def main():

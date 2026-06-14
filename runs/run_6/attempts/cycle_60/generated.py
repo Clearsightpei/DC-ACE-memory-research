@@ -1,4 +1,4 @@
-"""古 (gu) — c60. Raw MMH + corner-by-type."""
+"""古 (gu) — c60 attempt-2-or-3. Tangent-snap 古 bottom 口 corners (small-box compensation)"""
 import io, os, sys, turtle
 from PIL import Image
 WIDTH, HEIGHT = 800, 600
@@ -11,8 +11,7 @@ from heng_zhe import draw_heng_zhe
 from shu import draw_shu
 
 def save_canvas_to_png(screen, path):
-    canvas = screen.getcanvas()
-    ps = canvas.postscript(colormode="color")
+    canvas = screen.getcanvas(); ps = canvas.postscript(colormode="color")
     img = Image.open(io.BytesIO(ps.encode("utf-8")))
     img.load(scale=1); img.convert("RGBA").save(path, "PNG")
 
@@ -25,8 +24,8 @@ def task_01(t, screen):
     draw_heng(t, ('ML', -0.044, 0.56), ('MR', 1.184, 0.472))
     draw_shu(t, ('TC', 0.372, 0.28), ('BC', 0.26, 0.352))
     draw_shu(t, ('BL', 0.6, 0.42), ('BL', 0.968, 1.3))
-    draw_heng_zhe(t, ('BL', 0.892, 0.444), ('BC', 0.944, 0.444), ('BC', 0.944, 1.072))
-    draw_heng(t, ('BC', 0.048, 1.232), ('BR', 0.22, 1.24))
+    draw_heng_zhe(t, ('BL', 0.6, 0.444), ('BC', 0.944, 0.444), ('BC', 0.944, 1.072))
+    draw_heng(t, ('BL', 0.968, 1.232), ('BC', 0.944, 1.24))
     save_canvas_to_png(screen, os.path.join(OUT_DIR, "01_古.png"))
 
 def main():

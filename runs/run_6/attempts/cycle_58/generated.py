@@ -1,4 +1,4 @@
-"""个 (ge) — c58. Raw MMH + corner-by-type + apex_share_pie_na."""
+"""个 (ge) — c58 attempt-2-or-3. 3-way apex_share: pie+na+shu all start at apex_y"""
 import io, os, sys, turtle
 from PIL import Image
 WIDTH, HEIGHT = 800, 600
@@ -11,8 +11,7 @@ from pie import draw_pie
 from shu import draw_shu
 
 def save_canvas_to_png(screen, path):
-    canvas = screen.getcanvas()
-    ps = canvas.postscript(colormode="color")
+    canvas = screen.getcanvas(); ps = canvas.postscript(colormode="color")
     img = Image.open(io.BytesIO(ps.encode("utf-8")))
     img.load(scale=1); img.convert("RGBA").save(path, "PNG")
 
@@ -24,7 +23,7 @@ def task_01(t, screen):
     reset(t)
     draw_pie(t, ('TC', 0.364, 0.348), ('BL', -0.084, 0.296))
     draw_na(t, ('TC', 0.54, 0.348), ('MR', 1.3, 0.996))
-    draw_shu(t, ('C', 0.368, 0.572), ('BC', 0.512, 1.3))
+    draw_shu(t, ('TC', 0.368, 0.348), ('BC', 0.512, 1.3))
     save_canvas_to_png(screen, os.path.join(OUT_DIR, "01_个.png"))
 
 def main():

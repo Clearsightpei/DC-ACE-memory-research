@@ -45,9 +45,9 @@
           "stroke": 3,
           "primitive": "shu",
           "from": [
-            "C",
+            "TC",
             0.368,
-            0.572
+            0.348
           ],
           "to": [
             "BC",
