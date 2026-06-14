@@ -1,9 +1,9 @@
 {
-  "cycle": 52,
+  "cycle": 54,
   "phase": "2",
   "current_focus": null,
-  "last_outcome": "rejudge_2_promoted",
-  "last_finished_at": "2026-06-13T02:30:00",
-  "success_bank_size": 37,
-  "notes": "c43-c52 batch (8 carry-over redos + 2 new chars 自/半): 3 PROMOTED (五 c49, 白 c50, 半 c52 — all panel 3/3). 7 carry-overs split across 4 failure classes documented in to_be_learned.md: (1) brush-end-OVERSHOOT (口 c43, 山 c48): 垂露 droplet protrudes past joint; (2) mid-stroke-joint (力 c44): joint-snap only fires for head/tail; (3) 撇捺-apex (八 c46, 人 c47): MMH heights don't share apex; (4) other (七 c45 2/3 close — head above heng; 自 c51 1/3 — 3rd internal horizontal merged). Joint-snap fix VERIFIED working for char where head/tail join (白 corners closed cleanly). Bank: 32 → 35."
+  "last_outcome": "joint_taxonomy_validated",
+  "last_finished_at": "2026-06-13T04:00:00",
+  "success_bank_size": 39,
+  "notes": "Joint taxonomy infrastructure complete (per ~/.claude/plans/should-i-install-rapid-lexical-lantern.md). tools/classify_joints.py emits P/T/N classes from find_joints output (validated on 9 chars). Teacher/Drawer/Curator SKILLs updated: Drawer drops joint-snap (raw MMH endpoints always), Teacher emits per-joint class in brief, Curator panel template includes per-char class summary. MMH_ROLE.md documents the 5 jobs MMH does. c53 八 + c54 人 PROMOTED via apex_share override (max(s1.head.y, s2.head.y) shared between pie/na). Retro test confirmed c32 口's anchors match new no-snap derivation (snap WAS the c43-c52 regression source). Bank: 37 → 39. Still in to_be_learned for next session: 力 (proportion, Class P), 山 (shu overshoot), 自 (heng spacing)."
 }

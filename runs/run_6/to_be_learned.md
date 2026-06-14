@@ -66,12 +66,12 @@ Also: the 横折钩's hook (final 钩 segment) is too short / not pronounced eno
 
 **Fix to try**: for mid-stroke joints, the participating stroke should be ANCHORED at the joint position with its endpoint placed continuing-direction past it. Specifically for 力: pie's `from` should sit ON the heng_zhe_gou's heng-segment (the joint position), not at MMH's pie head. The pie tip extends down-left past the joint into empty space.
 
-### 撇捺-apex class
+### 撇捺-apex class — RESOLVED 2026-06-13 via apex_share override
 
-**八** (c46, 0/3): pie and na start at very different heights. MMH places them honestly — but visually they should share the apex for canonical 八.
-**人** (c47, 0/3): joint detector says na's head joins pie at frac 0.31 — but the meeting_canvas was only 4 px from raw MMH endpoint, so snap had no visible effect. Pie and na look disjoint.
+**八** (c46, c36 — 0/3): pie and na start at very different heights. → c53 PROMOTED with apex_share (lift pie.head.y to match na.head.y; strokes don't touch — correct 八).
+**人** (c47, c37 — 0/3): same root cause. → c54 PROMOTED with apex_share (lift na.head.y to match pie.head.y; strokes meet at apex — correct 人).
 
-**Fix to try**: for both 八/人, override pie+na heads to share a common apex anchor (e.g. `(TC, 0.5, 0.3)` for both), THEN let na's head OFFSET DOWN-RIGHT from that apex by ~30 px for 人 (joining the pie 30% down), or NOT touch at all for 八 (just splay outward from apex).
+**Mechanism encoded**: brief allows an `## Overrides — apex_share` clause. Drawer applies it after raw MMH extraction. Affected character family: 八 人 入 火 大 天 etc. (anywhere MMH's print form puts pie/na heads at structurally non-shared y).
 
 ### 七 (c45, 2/3 — close)
 

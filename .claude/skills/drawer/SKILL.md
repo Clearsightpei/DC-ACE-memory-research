@@ -130,15 +130,60 @@ For each declared stroke in the brief:
 - No subprocess, no os.system.
 - No reading prior cycles, no other runs.
 
-## Don't force-weld neighbor strokes
+## Joint policy — never override raw MMH endpoints
 
-Chinese characters are stroke compositions. Where two SEPARATE strokes meet at a corner (e.g. 口's top-left, where 竖's head meets 横折's head), a small natural gap of ~5-15 px is CORRECT — that's what calligraphy looks like.
+The brief lists joints with class labels (P / T / N). **You use raw MMH
+anchors regardless of class.** The class tells the Curator and panel
+what visual pattern to expect — it does NOT constrain your code.
 
-ONLY weld the two sides of a SAME-STROKE corner (e.g. 口's top-right, which is inside the 横折 primitive). Same-stroke corners are handled automatically inside the primitive code — you don't add code for them.
+- **Class P (Piercing)**: both strokes pass mid-through each other in
+  MMH. Just emit the raw `from`/`to` anchors. Brush sampling on both
+  Béziers welds the crossing automatically. Examples: 半's 竖 through 横,
+  中's piercing 竖, 又's X-crossing.
 
-For neighbor-stroke corners, use the brief's MMH-derived anchors as-is. Don't translate them to a shared point. If two anchors are close but not identical, leave them close — the resulting small visual gap is correct.
+- **Class N (Neighbor)**: stroke tips end near each other but not at
+  the same point. Emit raw `from`/`to` anchors. The resulting small
+  visual gap (canvas px = `dist_mmh × 0.4`, typically 5–15 px) IS the
+  correct calligraphic look. Do NOT snap to `meeting_canvas`. Examples:
+  口's 3 non-welded corners, 白's box corners.
 
-If the brief includes joint annotations like `NEIGHBOR (small-gap)`, trust them: don't try to "fix" the gap by snapping endpoints together.
+- **Class T (Tangent)**: rare — a tip touches another stroke's body
+  with `dist_mmh < 10`. ONLY in this case, snap the tip to
+  `meeting_canvas`. The brief calls this out explicitly when it occurs.
+
+Same-stroke internal corners (compound strokes' bends) are handled
+inside the primitive code — you don't anchor them.
+
+This policy reverses the c43-c52 mistake where joint-snap was applied
+to every joint, flattening MMH's natural variation. See
+`runs/run_6/MMH_ROLE.md` for the full diagnosis.
+
+## Apex-share clause (rare)
+
+If the brief has a section like:
+
+```markdown
+## Overrides
+- apex_share: s1.from.y = s2.from.y = max(s1.from.y, s2.from.y)
+```
+
+Apply it AFTER reading the raw MMH anchors and BEFORE emitting your
+`generated.py`. Example (人):
+
+```python
+# Raw MMH anchors
+s1_from = (-11.6, 89.6)    # 撇 head
+s2_from = (-15.2, -14.0)   # 捺 head
+# Apply apex_share override from brief:
+apex_y = max(s1_from[1], s2_from[1])
+s1_from = (s1_from[0], apex_y)
+s2_from = (s2_from[0], apex_y)
+```
+
+Apex-share exists because MMH's print form sometimes places stroke
+heads at structurally different positions than canonical handwriting
+expects (人 / 八 / 入 / 大 / 火 etc.). The brief is the source of truth
+for whether this override applies.
 
 ## Three-attempt freeze rule (FORCED — applies to the whole `/cycle`, not just Drawer self-preview)
 

@@ -157,43 +157,69 @@ attempts/cycle_<N>/generated.py and attempts/cycle_<N>/01_<char>.png
   obviously wrong. If it does, log the exception in `teaching_log.md`
   and write the joint spec manually with a comment explaining why.
 
-## Stroke-pedagogy rule — single-stroke vs neighbor joints (run_6+)
+## Joint classification — data-driven taxonomy (run_6+)
 
-**Core insight**: a Chinese character is a composition of STROKES, not a welded geometric shape. Most "corners" you see in a printed character are NOT one continuous line — they are two separate strokes that happen to **terminate near each other**. They have a small natural gap (typically 5–15 px on this canvas). This is correct calligraphy, not a defect.
+A Chinese character is a composition of STROKES. Where two strokes meet,
+the relationship is one of three classes — all derivable from MMH directly
+via `tools/classify_joints.classify`. **Every Phase-2+ brief must classify
+every joint** before the Drawer sees it. See `runs/run_6/MMH_ROLE.md`
+for the full rationale.
 
-A corner is "welded" (zero gap, continuous brush) ONLY when both sides of the corner are part of the **same MMH stroke**. Examples:
+| Class | Meaning | MMH rule | Drawer behavior | Expected visual |
+|---|---|---|---|---|
+| **P** | Piercing crossing | `dist_mmh < 5` AND both labels are `mid(…)` | Raw MMH endpoints; brush sampling welds the crossing naturally | Solid weld |
+| **T** | Tip-tangent | `dist_mmh < 10` AND at least one label is `head`/`tail` | Snap that tip to `meeting_canvas` | Visible contact at tip |
+| **N** | Neighbor | `10 ≤ dist_mmh < 90` | Raw MMH endpoints — **never snap** | Small natural gap (`dist_mmh × 0.4` canvas px) |
 
-| Character | Corner | Same-stroke? | Visual expectation |
-|---|---|---|---|
-| 口 | top-right | yes — both sides are inside 横折 | welded, no gap |
-| 口 | top-left | no — left side is 竖's head, top is 横折's head | small gap (~8 px) |
-| 口 | bottom-left | no — 竖's tail meets 下横's head | small gap |
-| 口 | bottom-right | no — 横折's tail meets 下横's tail | small gap |
-| 力 | top-right | yes — inside 横折钩 | welded |
-| 山 | bottom-left | no — 左竖's tail vs 竖折's head | small gap |
-| 田 | 4 outer corners | top-right welded (inside 横折), others gaps | mixed |
+Same-stroke internal corners (e.g. 横折's bend inside 口) are NOT joints;
+they come from `find_corners` and are handled inside the primitive code.
 
-### Brief format addition
-
-For every joint in the brief, classify it:
+### Brief format — required
 
 ```markdown
-## Joints
-- s1.tail ⇆ s3.head @ BL : NEIGHBOR (small-gap, ~8 px expected)
-- inside-s2 : SAME-STROKE corner (welded, 0-gap expected)
+## Joints (classified via tools/classify_joints)
+- s1.head     ⇆ s2.head     @ ML : N  (d=38.3, expect ~15 px gap)
+- s1.tail     ⇆ s3.head     @ BL : N  (d=32.1, expect ~13 px gap)
+- s2.tail     ⇆ s3.mid(0.75) @ BR : N  (d=36.4, expect ~15 px gap)
+## Internal corners (find_corners — informational)
+- s2 @ MR (横折 bend, welded by primitive)
 ```
 
-A joint is `SAME-STROKE` when both participants are the SAME stroke index (a compound stroke's internal corner). A joint is `NEIGHBOR` when the participants are two DIFFERENT MMH stroke indices.
+Generate this section programmatically — never hand-write it. Pattern:
 
-### Implication for Drawer
+```python
+from joint_detector import find_joints
+from classify_joints import classify, gap_canvas_px
+for j in find_joints(char):
+    cls = classify(j)
+    extra = f"expect ~{gap_canvas_px(j):.0f} px gap" if cls == 'N' else ""
+    ...
+```
 
-The Drawer should NOT try to force NEIGHBOR-joint endpoints to overlap. Use the raw MMH endpoint (or a `find_joints` meeting-point if it sits cleanly inside the gap region). Don't snap aggressively.
+### Crucial: do NOT use joints as anchor constraints
 
-### Implication for panel skeptics (Curator must include this in panel prompts)
+This was the c43–c52 regression. Joints are **labels for the panel and
+Curator** — they tell the verifier what visual pattern to expect. The
+Drawer's `from`/`to` anchors come from raw MMH endpoints only. The one
+exception is class T (which is rare; the brief should call it out
+explicitly when it occurs).
 
-Every panel-skeptic prompt MUST include this clarification block:
+### Apex-share override (for 撇捺-apex characters)
 
-> Chinese characters have natural small gaps (~5-15 px on this canvas) at corners where two separate strokes meet. These gaps are CORRECT calligraphy, not defects. Only judge NO if a gap is large enough to break character recognition — small gaps at neighbor-corners are normal. Welded corners (single-stroke compound bends like 横折's top-right of 口) should have zero gap; non-welded neighbor corners should have a small gap.
+MMH renders some characters' stroke heads at structurally different
+positions than handwritten canonical forms. Examples: 八, 人, 入, 火, 大.
+For these the Teacher may add an explicit override clause:
+
+```markdown
+## Overrides
+- apex_share: s1.from.y = s2.from.y = max(s1.from.y, s2.from.y)
+  (rationale: MMH's printed 人 has 撇/捺 heads at different y; canonical
+   handwritten 人 shares a single apex y)
+```
+
+The Drawer applies the override AFTER raw MMH extraction, BEFORE
+emitting `generated.py`. Use sparingly and only when MMH's raw
+placement reads visually wrong under the calligraphy-aware panel.
 
 ## Stroke quality alarm (run_6+)
 

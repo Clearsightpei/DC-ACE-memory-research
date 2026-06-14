@@ -32,6 +32,48 @@ render. Your job:
 - `task_briefs/cycle_<N>.md` — the anchor + joint spec the Drawer was
   given.
 
+## Panel skeptic prompt — REQUIRED template
+
+Before dispatching the 3 panel skeptics, BUILD the joint-class
+summary from `task_briefs/cycle_<N>_dataset.json`:
+
+```python
+import json
+from classify_joints import classify, gap_canvas_px
+ds = json.load(open(f'task_briefs/cycle_{N}_dataset.json'))
+joints = ds['characters'][0].get('joints', [])
+lines = []
+for j in joints:
+    cls = classify(j)
+    if cls == 'P':
+        lines.append(f"- s{j['stroke_a']}⇆s{j['stroke_b']} @ {j['cell']}: PIERCING — must read as a SOLID crossing")
+    elif cls == 'T':
+        lines.append(f"- s{j['stroke_a']}⇆s{j['stroke_b']} @ {j['cell']}: TANGENT — tip must touch")
+    elif cls == 'N':
+        lines.append(f"- s{j['stroke_a']}⇆s{j['stroke_b']} @ {j['cell']}: NEIGHBOR — expect ~{gap_canvas_px(j):.0f} px natural gap (correct calligraphy, NOT a defect)")
+joint_summary = "\n".join(lines) if lines else "(no joints; strokes do not touch)"
+```
+
+Then send EACH of the 3 skeptics a prompt that contains this block
+verbatim:
+
+> **Calligraphy-aware standard**: Chinese characters are stroke
+> compositions. Where two separate strokes meet at NEIGHBOR-class
+> joints, a small natural gap (typically 5–15 px on this 800x600
+> canvas) is CORRECT calligraphy, NOT a defect. Only PIERCING-class
+> joints (same-stroke continuations like 横折's internal bend, or
+> two strokes that cross THROUGH each other) require a welded look.
+>
+> **Per-joint expectations for this character (<char>)**:
+> {joint_summary}
+>
+> Reject only if a gap is large enough to break character recognition
+> OR a PIERCING joint does not read as solid.
+
+This makes the panel data-driven per character rather than relying on
+a generic disclaimer. The c32 口 / c35 七 rejudge proved that without
+per-class expectations, skeptics over-reject N-class gaps as defects.
+
 ## The 5-gate
 
 To promote: gates 3 AND 4 must pass. Gates 1, 2, 5 are informational.
