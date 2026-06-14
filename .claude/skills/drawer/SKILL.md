@@ -130,6 +130,16 @@ For each declared stroke in the brief:
 - No subprocess, no os.system.
 - No reading prior cycles, no other runs.
 
+## Don't force-weld neighbor strokes
+
+Chinese characters are stroke compositions. Where two SEPARATE strokes meet at a corner (e.g. 口's top-left, where 竖's head meets 横折's head), a small natural gap of ~5-15 px is CORRECT — that's what calligraphy looks like.
+
+ONLY weld the two sides of a SAME-STROKE corner (e.g. 口's top-right, which is inside the 横折 primitive). Same-stroke corners are handled automatically inside the primitive code — you don't add code for them.
+
+For neighbor-stroke corners, use the brief's MMH-derived anchors as-is. Don't translate them to a shared point. If two anchors are close but not identical, leave them close — the resulting small visual gap is correct.
+
+If the brief includes joint annotations like `NEIGHBOR (small-gap)`, trust them: don't try to "fix" the gap by snapping endpoints together.
+
 ## Three-attempt freeze rule (FORCED — applies to the whole `/cycle`, not just Drawer self-preview)
 
 Counting includes Teacher-side regenerations, Drawer self-preview iterations, and any Curator-requested re-renders — **anything that overwrites `attempts/cycle_<N>/generated.py` counts as one attempt**.

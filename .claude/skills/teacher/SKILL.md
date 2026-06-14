@@ -157,6 +157,44 @@ attempts/cycle_<N>/generated.py and attempts/cycle_<N>/01_<char>.png
   obviously wrong. If it does, log the exception in `teaching_log.md`
   and write the joint spec manually with a comment explaining why.
 
+## Stroke-pedagogy rule — single-stroke vs neighbor joints (run_6+)
+
+**Core insight**: a Chinese character is a composition of STROKES, not a welded geometric shape. Most "corners" you see in a printed character are NOT one continuous line — they are two separate strokes that happen to **terminate near each other**. They have a small natural gap (typically 5–15 px on this canvas). This is correct calligraphy, not a defect.
+
+A corner is "welded" (zero gap, continuous brush) ONLY when both sides of the corner are part of the **same MMH stroke**. Examples:
+
+| Character | Corner | Same-stroke? | Visual expectation |
+|---|---|---|---|
+| 口 | top-right | yes — both sides are inside 横折 | welded, no gap |
+| 口 | top-left | no — left side is 竖's head, top is 横折's head | small gap (~8 px) |
+| 口 | bottom-left | no — 竖's tail meets 下横's head | small gap |
+| 口 | bottom-right | no — 横折's tail meets 下横's tail | small gap |
+| 力 | top-right | yes — inside 横折钩 | welded |
+| 山 | bottom-left | no — 左竖's tail vs 竖折's head | small gap |
+| 田 | 4 outer corners | top-right welded (inside 横折), others gaps | mixed |
+
+### Brief format addition
+
+For every joint in the brief, classify it:
+
+```markdown
+## Joints
+- s1.tail ⇆ s3.head @ BL : NEIGHBOR (small-gap, ~8 px expected)
+- inside-s2 : SAME-STROKE corner (welded, 0-gap expected)
+```
+
+A joint is `SAME-STROKE` when both participants are the SAME stroke index (a compound stroke's internal corner). A joint is `NEIGHBOR` when the participants are two DIFFERENT MMH stroke indices.
+
+### Implication for Drawer
+
+The Drawer should NOT try to force NEIGHBOR-joint endpoints to overlap. Use the raw MMH endpoint (or a `find_joints` meeting-point if it sits cleanly inside the gap region). Don't snap aggressively.
+
+### Implication for panel skeptics (Curator must include this in panel prompts)
+
+Every panel-skeptic prompt MUST include this clarification block:
+
+> Chinese characters have natural small gaps (~5-15 px on this canvas) at corners where two separate strokes meet. These gaps are CORRECT calligraphy, not defects. Only judge NO if a gap is large enough to break character recognition — small gaps at neighbor-corners are normal. Welded corners (single-stroke compound bends like 横折's top-right of 口) should have zero gap; non-welded neighbor corners should have a small gap.
+
 ## Stroke quality alarm (run_6+)
 
 When composing a character brief, you reuse Success Bank stroke
