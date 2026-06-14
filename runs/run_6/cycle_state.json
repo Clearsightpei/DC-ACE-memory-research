@@ -1,9 +1,9 @@
 {
-  "cycle": 54,
+  "cycle": 64,
   "phase": "2",
   "current_focus": null,
-  "last_outcome": "joint_taxonomy_validated",
-  "last_finished_at": "2026-06-13T04:00:00",
-  "success_bank_size": 39,
-  "notes": "Joint taxonomy infrastructure complete (per ~/.claude/plans/should-i-install-rapid-lexical-lantern.md). tools/classify_joints.py emits P/T/N classes from find_joints output (validated on 9 chars). Teacher/Drawer/Curator SKILLs updated: Drawer drops joint-snap (raw MMH endpoints always), Teacher emits per-joint class in brief, Curator panel template includes per-char class summary. MMH_ROLE.md documents the 5 jobs MMH does. c53 八 + c54 人 PROMOTED via apex_share override (max(s1.head.y, s2.head.y) shared between pie/na). Retro test confirmed c32 口's anchors match new no-snap derivation (snap WAS the c43-c52 regression source). Bank: 37 → 39. Still in to_be_learned for next session: 力 (proportion, Class P), 山 (shu overshoot), 自 (heng spacing)."
+  "last_outcome": "batch_partial",
+  "last_finished_at": "2026-06-13T05:00:00",
+  "success_bank_size": 41,
+  "notes": "c55-c64 batch (3 carry-over redos + 7 new chars): 2 PROMOTED (牛 c59, 立 c62 — both panel 3/3 raw MMH). 8 carry-overs documented in to_be_learned.md across multiple modes: pie-too-high (力), shu-overshoot-still (山, +22 insufficient), pie-detach (自), shu-detach-from-apex (个, need 3-way apex_share), 古 needs component reuse (call draw_kou not re-derive), 米 close at 2/3 (top dots float), 出 MMH decomp doesn't match standard (needs shu_zhe not heng), 头 dot placement issue. Bank: 39 → 41."
 }

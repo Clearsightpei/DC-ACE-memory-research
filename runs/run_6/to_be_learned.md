@@ -66,6 +66,28 @@ Also: the 横折钩's hook (final 钩 segment) is too short / not pronounced eno
 
 **Fix to try**: for mid-stroke joints, the participating stroke should be ANCHORED at the joint position with its endpoint placed continuing-direction past it. Specifically for 力: pie's `from` should sit ON the heng_zhe_gou's heng-segment (the joint position), not at MMH's pie head. The pie tip extends down-left past the joint into empty space.
 
+### c55-c64 batch carry-overs (2026-06-13)
+
+Promoted: 牛 (c59) + 立 (c62). Bank 39 → 41.
+
+**力 c55 (1/3)**: same render as c33/c44 — P-joint character but the pie crosses ABOVE the 横折钩's heng segment (per MMH placement). Panel reads this as "撇 dominates, hook absent." Fix idea: shorten pie's `from.y` to sit ON the heng_zhe_gou's heng instead of above.
+
+**山 c56 (0/3)**: +22 px shu_lift insufficient — center + right shu still pierce below baseline. Fix: pull shu.to to ABOVE the baseline by ~35-40 px (so the 垂露 droplet lands AT baseline). Or use shu_short variant primitive.
+
+**自 c57 (2/3)**: NEAR. Pie sits detached above the box; internal hengs don't span full width. Fix: pull pie's tail closer to box's top-left, extend internal heng to.x to right edge.
+
+**个 c58 (0/3)**: apex_share for pie+na worked, but shu's head still at MMH position (canvas-y ~-7) — way below the apex (~73). Need **3-way apex_share**: lift shu.head.y to apex as well. (Or simpler: keep shu.head where it is but it's structurally wrong for 个 — shu should descend from apex.)
+
+**古 c60 (0/3)**: 口 part malformed. The 古 MMH 口 anchors differ from mastered 口 entry. Fix: 古 = 十 + 口 by COMPONENT REUSE (call draw_kou as a sub-character) instead of re-deriving anchors from MMH for the bottom box.
+
+**米 c61 (2/3)**: NEAR. Top dots float (5+6 strokes' heads not anchored at heng's mid).
+
+**出 c63 (0/3)**: MMH 出 decomp (heng+shu+shu+heng+shu) doesn't read as 出 — the typical 出 needs shu_zhe primitives, not heng. MMH may encode bends inside what looks like a heng. Fix: re-trace each MMH median; if y-range > 30, it's actually a bend stroke (shu_zhe / heng_zhe).
+
+**头 c64 (0/3)**: dot placement on pie body misreads as 失/矢. Per MMH the 2 top "dots" (s1, s2) sit near the pie path, but visually they should be ABOVE the heng. Fix: 头 may need apex_share variant or component override.
+
+---
+
 ### 撇捺-apex class — RESOLVED 2026-06-13 via apex_share override
 
 **八** (c46, c36 — 0/3): pie and na start at very different heights. → c53 PROMOTED with apex_share (lift pie.head.y to match na.head.y; strokes don't touch — correct 八).

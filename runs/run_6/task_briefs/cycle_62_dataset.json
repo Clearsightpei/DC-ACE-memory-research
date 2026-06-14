@@ -1,0 +1,101 @@
+{
+  "judge": {
+    "eval": "vision+ocr+gt+structural",
+    "use_ocr": true,
+    "mastery": "panel.unanimous_yes"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "立",
+      "pinyin": "li2",
+      "phase": "2",
+      "mmh_stroke_count": 5,
+      "override": null,
+      "anchors": [
+        {
+          "stroke": 1,
+          "primitive": "dian",
+          "from": [
+            "TC",
+            0.148,
+            0.46
+          ],
+          "to": [
+            "TC",
+            0.708,
+            0.792
+          ]
+        },
+        {
+          "stroke": 2,
+          "primitive": "heng",
+          "from": [
+            "ML",
+            0.552,
+            0.552
+          ],
+          "to": [
+            "MR",
+            0.456,
+            0.292
+          ]
+        },
+        {
+          "stroke": 3,
+          "primitive": "dian",
+          "from": [
+            "BL",
+            0.732,
+            0.008
+          ],
+          "to": [
+            "BC",
+            0.068,
+            0.556
+          ]
+        },
+        {
+          "stroke": 4,
+          "primitive": "pie",
+          "from": [
+            "C",
+            0.864,
+            0.704
+          ],
+          "to": [
+            "BC",
+            0.584,
+            0.912
+          ]
+        },
+        {
+          "stroke": 5,
+          "primitive": "heng",
+          "from": [
+            "BL",
+            -0.092,
+            1.184
+          ],
+          "to": [
+            "BR",
+            1.152,
+            1.16
+          ]
+        }
+      ],
+      "joints": [
+        {
+          "stroke_a": 4,
+          "label_a": "tail",
+          "stroke_b": 5,
+          "label_b": "mid(0.52)",
+          "cell": "BC",
+          "dist_mmh": 50.3,
+          "class": "N",
+          "expected_gap_px": 20
+        }
+      ]
+    }
+  ]
+}

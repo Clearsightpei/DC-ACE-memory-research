@@ -38,6 +38,8 @@ The library is fully compositional: every entry calls only entries already in th
 | 七 | [code/qi.py](code/qi.py) | tag:character | c35 (re-judged 3/3 YES with calligraphy-aware panel) |
 | 八 | [code/ba.py](code/ba.py) | tag:character | c53 (3/3 YES, apex_share override — strokes splay from shared apex y) |
 | 人 | [code/ren.py](code/ren.py) | tag:character | c54 (3/3 YES, apex_share override — strokes meet at apex) |
+| 牛 | [code/niu.py](code/niu.py) | tag:character | c59 (3/3 YES, raw MMH, 2 P + 1 N joints) |
+| 立 | [code/li_stand.py](code/li_stand.py) | tag:character | c62 (3/3 YES, raw MMH; file named li_stand to avoid clash with 力) |
 | 横折钩 | [code/heng_zhe_gou.py](code/heng_zhe_gou.py) | tag:compound-stroke tag:heng_zhe_gou tag:hook | c12 (via 力) |
 | 横撇 | [code/heng_pie.py](code/heng_pie.py) | tag:compound-stroke tag:heng_pie | c11 (via 又) |
 | 竖弯钩 | [code/shu_wan_gou.py](code/shu_wan_gou.py) | tag:compound-stroke tag:shu_wan_gou tag:hook | c10 (via 七) |
