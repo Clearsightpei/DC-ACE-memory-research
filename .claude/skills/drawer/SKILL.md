@@ -185,12 +185,12 @@ heads at structurally different positions than canonical handwriting
 expects (人 / 八 / 入 / 大 / 火 etc.). The brief is the source of truth
 for whether this override applies.
 
-## Three-attempt freeze rule (FORCED — applies to the whole `/cycle`, not just Drawer self-preview)
+## Two-attempt freeze rule (updated 2026-06-14) (FORCED — applies to the whole `/cycle`, not just Drawer self-preview)
 
 Counting includes Teacher-side regenerations, Drawer self-preview iterations, and any Curator-requested re-renders — **anything that overwrites `attempts/cycle_<N>/generated.py` counts as one attempt**.
 
-- **Attempts 1–3**: overwriting `attempts/cycle_<N>/generated.py` is allowed. The Drawer (or whoever is rendering this cycle) may iterate up to 3 times within the same cycle directory.
-- **After attempt 3, if the character is still wrong** (panel < 3/3, or any structural gate fails):
+- **Attempts 1–2**: overwriting `attempts/cycle_<N>/generated.py` is allowed. The Drawer (or whoever is rendering this cycle) may iterate up to 3 times within the same cycle directory.
+- **After attempt 2, if the character is still wrong** (panel < 3/3, or any structural gate fails):
   1. **FREEZE the cycle.** Do NOT overwrite `attempts/cycle_<N>/generated.py` again. The failed render stays as evidence.
   2. **Do NOT promote** to Success Bank. The Curator must record the freeze in `to_be_learned.md` with a one-paragraph postmortem (what was attempted in each of the 3 attempts, what specifically failed each time).
   3. **Start a brand new cycle** for the same character: next `cycle_state.json["cycle"]+1`. The Teacher writes a fresh brief for that new cycle with the lesson encoded ("attempt N: avoid X, try Y").
@@ -198,4 +198,4 @@ Counting includes Teacher-side regenerations, Drawer self-preview iterations, an
 
 This rule exists because covering up failed attempts loses the learning signal AND can introduce regressions (a previous-correct render gets replaced by a worse one — see c40 目, where attempt 2 was correct but attempt 3 was a regression that the panel then rejected; if attempts had been preserved, the regression would have been obvious).
 
-**Practical implication for the Drawer**: if the orchestrator hands you a cycle and `attempts/cycle_<N>/generated.py` already exists with 3 prior versions in git history, refuse to overwrite. Tell the orchestrator: "Cycle <N> has hit the 3-attempt freeze; start cycle <N+1> with a fresh brief."
+**Practical implication for the Drawer**: if the orchestrator hands you a cycle and `attempts/cycle_<N>/generated.py` already exists with 2 prior versions in git history, refuse to overwrite. Tell the orchestrator: "Cycle <N> has hit the 2-attempt freeze; start cycle <N+1> with a fresh brief."

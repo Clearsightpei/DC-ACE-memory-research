@@ -1,7 +1,7 @@
 {
-  "cycle": 94, "phase": "2", "current_focus": null,
-  "last_outcome": "ocr_pass_skeptic_no",
-  "last_finished_at": "2026-06-14T05:00:00",
-  "success_bank_size": 44,
-  "notes": "Batch c85-c94 complete. 10-12 stroke ramp produced 0 promotions. Most chars OCR-failed; 真 + 黑 OCR-passed but failed skeptic. Calibration corpus +10 PNGs (mostly negative class — clear FAILs)."
+  "cycle": 70, "phase": "2", "current_focus": null,
+  "last_outcome": "mastered",
+  "last_finished_at": "2026-06-14T01:30:00",
+  "success_bank_size": 42,
+  "notes": "Reset state: c71-c94 attempts purged (heng_zhe-corner brief bug investigated, success_bank clean). 京 demoted pending re-judge. 2-attempt rule active going forward. Next cycle: c71 (new run of 10)."
 }

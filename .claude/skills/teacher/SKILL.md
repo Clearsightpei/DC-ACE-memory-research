@@ -272,3 +272,17 @@ Symptom-to-primitive map (what to inspect when X looks off):
 ## Return control
 
 Save edits and return. The orchestrator commits and dispatches the Drawer.
+
+## Heng_zhe / heng_zhe_gou corner cell rule (CRITICAL — added 2026-06-14)
+
+When deriving heng_zhe (or heng_zhe_gou / shu_zhe / heng_zhe_ti) anchors for a new character brief, the **corner cell** MUST satisfy:
+- **corner.y (canvas) ≈ head.y (canvas)** — corner is in the same row band as the head
+- **corner.x (canvas) ≈ tail.x (canvas)** — corner is in the same column band as the tail
+
+Concretely: compute canvas coords for head and tail via `anchor_to_xy()`. The corner's cell is the one whose box contains the point `(tail_x, head_y)`. Then express the corner anchor as that cell's relative `(x_frac, y_frac)`.
+
+Bug example (c71 明, c75-c94 batch): for 日's heng_zhe with head TL(0.256, 0.756) = canvas (-124, +74) and tail BL(0.976, 0.444) = canvas (-52, +5), corner should be at canvas (-52, +74). That point is in **TL cell** (top-left, x ∈ [-150,-50], y ∈ [+50,+150]) — NOT BC, NOT C. The c71 brief erroneously wrote BC, which placed the corner at canvas (+47.6, -125.6) — bottom-center — producing a diagonal slash across the box.
+
+Pattern-match: when the brief's tail is in the LEFT column (TL/ML/BL family) and head is also LEFT-column, the corner stays in the LEFT column. Use TL for top-row heads, ML for mid-row heads, BL for bottom-row heads.
+
+If unsure: print `anchor_to_xy(head)`, `anchor_to_xy(tail)`, then `xy_to_cell(tail_x, head_y)` to get the corner's cell programmatically.
