@@ -43,3 +43,4 @@ prior entries.
 ## c75 — focus 金 (8-stroke, 人+王)
 ## c76 — focus 法 (8-stroke, 氵+去)
 ## c77 — focus 朋 (8-stroke, 月+月)
+## c78 — 美 (9-stroke)
