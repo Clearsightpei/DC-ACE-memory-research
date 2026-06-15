@@ -27,3 +27,6 @@ prior entries.
 
 ## Cycle 68 — 2026-06-14
 - Focus: 古 (3rd attempt). Strategy: shorten shu (s2) above box top via shu_lift_above_box.
+
+## Cycle 69 — 2026-06-14
+- Focus: 米 (3rd attempt). Strategy: pie_na_clamp (shorten s5/s6 tail extent).
