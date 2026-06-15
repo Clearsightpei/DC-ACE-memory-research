@@ -46,3 +46,4 @@ prior entries.
 ## c78 — 美 (9-stroke)
 ## c79 — 思 (9-stroke, 田+心)
 ## c80 — 看 (9-stroke, 手+目)
+## c81 — 高 (10-stroke, 亠+口+冂+口)
