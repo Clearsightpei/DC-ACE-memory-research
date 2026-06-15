@@ -11,7 +11,7 @@
       "pinyin": "guo",
       "phase": "2",
       "mmh_stroke_count": 8,
-      "override": "y_clamp",
+      "override": "y_clamp + dian_strengthen",
       "anchors": [
         {
           "stroke": 1,
@@ -106,14 +106,14 @@
           "stroke": 7,
           "primitive": "dian",
           "from": [
-            "BR",
-            0.08,
-            0.048
+            "MR",
+            0.6,
+            0.7
           ],
           "to": [
-            "BR",
-            0.432,
-            0.34
+            "MR",
+            0.85,
+            0.95
           ]
         },
         {

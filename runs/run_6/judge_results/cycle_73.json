@@ -1,0 +1,49 @@
+[
+  {
+    "index": 1,
+    "character": "国",
+    "pinyin": "guo",
+    "visual_score": 0.7467,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.6399,
+      "chamfer": 0.7984,
+      "chamfer_px": 6.75,
+      "proportion": 0.8571,
+      "ar_term": 0.8978,
+      "quad_term": 0.9548
+    },
+    "recognized_char": "国",
+    "ocr_confidence": 0.9994,
+    "ocr_topk": [
+      [
+        "国",
+        0.9994
+      ]
+    ],
+    "ocr_margin": 0.9994,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.848,
+    "ai_file": "01_国.png",
+    "gt_file": "01_国.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "reasons": [
+        "Dian repositioned to MR touches right wall, breaks box closure. Inner reads 王 not 玉."
+      ],
+      "unanimous_yes": false,
+      "yes_count": 0
+    }
+  }
+]

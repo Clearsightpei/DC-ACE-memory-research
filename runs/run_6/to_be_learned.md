@@ -144,3 +144,4 @@ Parked until shu primitive's dunbi blob is shortened or a `shu_short_dunbi` vari
 
 Parked: needs component-reuse brief format.
 ## c71 明 FROZEN — likely internal heng overshoot makes 月 read as 目/眸
+## c73 国 FROZEN — dian visibility vs box-touching tradeoff
