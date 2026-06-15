@@ -1,0 +1,51 @@
+[
+  {
+    "index": 1,
+    "character": "谁",
+    "pinyin": "shui",
+    "visual_score": 0.7337,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.6478,
+      "chamfer": 0.7683,
+      "chamfer_px": 7.91,
+      "proportion": 0.8365,
+      "ar_term": 0.9318,
+      "quad_term": 0.879
+    },
+    "recognized_char": "谁",
+    "ocr_confidence": 0.4191,
+    "ocr_topk": [
+      [
+        "谁",
+        0.4191
+      ]
+    ],
+    "ocr_margin": 0.4191,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8402,
+    "ai_file": "01_谁.png",
+    "gt_file": "01_谁.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "reasons": [
+        "讠 collapses to 凵+dot",
+        "讠 wrong shape",
+        "only 3 hengs in 隹"
+      ],
+      "unanimous_yes": false,
+      "yes_count": 0
+    }
+  }
+]
