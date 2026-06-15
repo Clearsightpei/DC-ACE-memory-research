@@ -1,0 +1,46 @@
+[
+  {
+    "index": 1,
+    "character": "京",
+    "pinyin": "jing",
+    "visual_score": 0.721,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.6263,
+      "chamfer": 0.7607,
+      "chamfer_px": 8.21,
+      "proportion": 0.8311,
+      "ar_term": 0.9214,
+      "quad_term": 0.9087
+    },
+    "recognized_char": "京",
+    "ocr_confidence": 0.972,
+    "ocr_topk": [
+      [
+        "京",
+        0.972
+      ]
+    ],
+    "ocr_margin": 0.972,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8326,
+    "ai_file": "01_京.png",
+    "gt_file": "01_京.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "NO"
+      ],
+      "reasons": [
+        "Middle component flattened skewed quadrilateral not 口; top heng overshoots character body; bottom strokes scatter as dots/dashes not 小."
+      ],
+      "unanimous_yes": false
+    }
+  }
+]
