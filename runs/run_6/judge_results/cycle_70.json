@@ -1,0 +1,37 @@
+[
+  {
+    "index": 1,
+    "character": "林",
+    "pinyin": "lin",
+    "visual_score": 0.8704,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.8079,
+      "chamfer": 0.9107,
+      "chamfer_px": 2.81,
+      "proportion": 0.9147,
+      "ar_term": 0.9736,
+      "quad_term": 0.9593
+    },
+    "recognized_char": "林",
+    "ocr_confidence": 0.6919,
+    "ocr_topk": [
+      [
+        "林",
+        0.6919
+      ]
+    ],
+    "ocr_margin": 0.6919,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.9223,
+    "ai_file": "01_林.png",
+    "gt_file": "01_林.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes"
+  }
+]
