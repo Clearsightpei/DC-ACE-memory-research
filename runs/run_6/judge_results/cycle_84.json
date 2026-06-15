@@ -1,0 +1,51 @@
+[
+  {
+    "index": 1,
+    "character": "笑",
+    "pinyin": "xiao",
+    "visual_score": 0.7814,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.678,
+      "chamfer": 0.797,
+      "chamfer_px": 6.81,
+      "proportion": 0.9571,
+      "ar_term": 0.9553,
+      "quad_term": 0.9764
+    },
+    "recognized_char": "笑",
+    "ocr_confidence": 1.0,
+    "ocr_topk": [
+      [
+        "笑",
+        1.0
+      ]
+    ],
+    "ocr_margin": 1.0,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8689,
+    "ai_file": "01_笑.png",
+    "gt_file": "01_笑.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "reasons": [
+        "⺮ top reads as 八+八",
+        "⺮ halves merged",
+        "bottom looks like 大 not 夭"
+      ],
+      "unanimous_yes": false,
+      "yes_count": 0
+    }
+  }
+]
