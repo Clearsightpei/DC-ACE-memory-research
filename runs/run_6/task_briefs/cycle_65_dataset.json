@@ -1,0 +1,43 @@
+{
+  "judge": {
+    "eval": "vision+ocr+gt+structural",
+    "use_ocr": true,
+    "mastery": "panel.unanimous_yes"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "力",
+      "pinyin": "li",
+      "phase": "2",
+      "mmh_stroke_count": 2,
+      "override": null,
+      "anchors": [
+        {
+          "stroke": 1,
+          "primitive": "heng_zhe_gou",
+          "from": ["ML", 0.364, 0.464],
+          "to": ["BC", 0.444, 0.996],
+          "corner1": ["C", 0.444, 0.464]
+        },
+        {
+          "stroke": 2,
+          "primitive": "pie",
+          "from": ["TC", 0.364, 0.368],
+          "to": ["BL", -0.04, 1.336]
+        }
+      ],
+      "joints": [
+        {
+          "stroke_a": 1,
+          "label_a": "mid(0.23)",
+          "stroke_b": 2,
+          "label_b": "mid(0.30)",
+          "cell": "C",
+          "dist_mmh": 0.0,
+          "class": "P"
+        }
+      ]
+    }
+  ]
+}
