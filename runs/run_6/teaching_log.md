@@ -54,3 +54,4 @@ prior entries.
 ## c86 — 黄 (11-stroke)
 ## c87 — 谁 (10-stroke, 讠+隹)
 ## c88 — 谈 (10-stroke, 讠+炎)
+## c89 — 黑 (12-stroke)
