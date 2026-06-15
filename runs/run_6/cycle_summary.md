@@ -1,13 +1,14 @@
-# Batch c81-c85 summary (10-stroke ramp, 2-attempt rule)
+# Batch c86-c90 summary (11-12 stroke ramp, 2-attempt rule)
 
-PROMOTED (0). FROZEN (5): 高 c81, 真 c82, 都 c83, 笑 c84, 部 c85.
+PROMOTED (0). FROZEN (5): 黄 c86, 谁 c87, 谈 c88, 黑 c89, 等 c90.
 Bank still 44.
 
-Common pattern: OCR is_correct=True for all 5, but panel skeptics see structural issues:
-- 高: missing 冂 mid-frame
-- 真: 8 dots detached, 十 vertical missing
-- 都: 日 has slash, 阝 ear not closed
-- 笑: ⺮ radical halves collapsed/merged
-- 部: 阝 ear loop too compressed
+11-12 stroke ramp — every char OCR=correct (except 谈 → 淡), but panel 0/3 unanimously NO on all 5.
 
-Diagnosis: 10-stroke chars stress MMH→primitive mapping more than 8-stroke. Many compound radicals (⺮, 阝) need primitives the success_bank doesn't have. OCR is permissive but panel is strict — gap widens at 10 strokes.
+Recurring failure modes at this difficulty:
+- Box/grid components (由 in 黄, 田/里 in 黑) render with diagonal slashes
+- Speech radical 讠 collapses (谁, 谈)
+- 隹 / 寺 / 寸 structures lack distinguishing hook/dot details
+- ⺮ bamboo radical renders as 八+八 instead of 个+个 (笑, 等)
+
+Calibration insight: at 11-12 strokes, the OCR-vs-panel gap is total — RapidOCR keeps accepting, panel keeps rejecting on structural detail. This is the regime where the deterministic structural judge would matter most.
