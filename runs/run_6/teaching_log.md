@@ -45,3 +45,4 @@ prior entries.
 ## c77 — focus 朋 (8-stroke, 月+月)
 ## c78 — 美 (9-stroke)
 ## c79 — 思 (9-stroke, 田+心)
+## c80 — 看 (9-stroke, 手+目)
