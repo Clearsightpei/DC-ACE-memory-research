@@ -17,3 +17,10 @@ prior entries.
 - Carry-over from cycle 57? YES — strategy: same anchors as c57 (got 2/3), but panel prompt explicitly disambiguates "3 horizontal strokes" (= 2 internal hengs + 1 box-closing bottom heng).
 - MMH stroke count: 6
 - Joints derived: 7 (all N-class)
+
+## Cycle 67 — 2026-06-14
+- Phase: 2
+- Focus: 个 (3rd attempt, carry-over from c58)
+- Strategy: shu_apex_lift override (shu.head y_frac 0.248 → 20 px above apex) so dunbi blob lands AT apex.
+- MMH stroke count: 3
+- Joints: 1 N-class
