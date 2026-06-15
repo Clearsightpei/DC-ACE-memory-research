@@ -127,3 +127,11 @@ The 竖弯钩's head extends above the heng (1 NO from panel). MMH's stroke 2 (s
 The `heng_zhe_gou.py` primitive's vertical+hook segment is under-tall — the shu terminates too far above the bottom of the box, leaving the hook visually disconnected from the heng segment. Anchors are correct per raw MMH, but the rendered shape reads as "horizontal-with-stub" rather than 横折钩. Affects: 力 办 为 协 务 (any char using heng_zhe_gou as a primary stroke).
 
 **Decision**: park until heng_zhe_gou is re-mastered (out of scope for the 80-char calibration run).
+
+---
+
+## c67 个 FROZEN — shu dunbi-blob below-centerline-extent ceiling
+
+3 cycles attempted (c45/c58/c67). All 0-1/3 panel. Root cause: shu primitive's dunbi blob extends ~25 px below the centerline head; even with apex_lift of 20 px the blob still sits below the apex. Affects compact chars where shu meets a high apex (个, plus potentially 不 in similar configurations).
+
+Parked until shu primitive's dunbi blob is shortened or a `shu_short_dunbi` variant is added.

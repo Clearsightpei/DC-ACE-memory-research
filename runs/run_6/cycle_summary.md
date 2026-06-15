@@ -1,3 +1,3 @@
-# Cycle 66 summary
+# Cycle 67 summary
 
-Focus: 自 (3rd attempt). Same anchors as c57 (which was 2/3); panel prompt explicitly disambiguated "2 internal hengs + 1 box-closing-bottom = 3 horizontal strokes total". Panel 3/3 YES → PROMOTED. Bank 41 → 42. Carry-over backlog: 个 c58→c67, 古 c60→c68, 米 c61→c69. Next focus: 个.
+Focus: 个 (3rd attempt). Strategy: shu_apex_lift override (y_frac 0.348→0.248, lift ~20 px). Outcome: panel 0/3 NO → FROZEN. Root cause: shu's dunbi blob still below apex even after 20 px lift (renderer ceiling, not anchor). Bank still 42. Next: 古 c68.

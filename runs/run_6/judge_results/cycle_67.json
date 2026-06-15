@@ -32,6 +32,20 @@
     "ai_file": "01_个.png",
     "gt_file": "01_个.png",
     "eval_requested": "vision+ocr+gt+structural",
-    "mastery_policy": "panel.unanimous_yes"
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "reasons": [
+        "Shu top detached below pie/na apex (~30 px gap).",
+        "Shu top detached; na reads as flat 横-like rather than descending from apex.",
+        "Shu top detached, sits as separate segment below apex."
+      ],
+      "unanimous_yes": false,
+      "yes_count": 0
+    }
   }
 ]
