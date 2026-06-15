@@ -1,0 +1,207 @@
+{
+  "judge": {
+    "eval": "vision+ocr+gt+structural",
+    "use_ocr": true,
+    "mastery": "panel.unanimous_yes"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "福",
+      "pinyin": "fu",
+      "phase": "2",
+      "mmh_stroke_count": 13,
+      "override": "y_clamp",
+      "anchors": [
+        {
+          "stroke": 1,
+          "primitive": "dian",
+          "from": [
+            "TL",
+            0.528,
+            0.284
+          ],
+          "to": [
+            "TC",
+            0.024,
+            0.644
+          ]
+        },
+        {
+          "stroke": 2,
+          "primitive": "shu",
+          "from": [
+            "ML",
+            -0.224,
+            0.452
+          ],
+          "to": [
+            "BL",
+            -0.3,
+            0.784
+          ]
+        },
+        {
+          "stroke": 3,
+          "primitive": "shu",
+          "from": [
+            "BL",
+            0.528,
+            0.064
+          ],
+          "to": [
+            "BL",
+            0.56,
+            1.3
+          ]
+        },
+        {
+          "stroke": 4,
+          "primitive": "pie",
+          "from": [
+            "ML",
+            0.792,
+            0.964
+          ],
+          "to": [
+            "BL",
+            0.996,
+            0.204
+          ]
+        },
+        {
+          "stroke": 5,
+          "primitive": "dian",
+          "from": [
+            "TC",
+            0.568,
+            0.588
+          ],
+          "to": [
+            "TR",
+            0.64,
+            0.452
+          ]
+        },
+        {
+          "stroke": 6,
+          "primitive": "heng",
+          "from": [
+            "C",
+            0.448,
+            0.072
+          ],
+          "to": [
+            "C",
+            0.708,
+            0.764
+          ]
+        },
+        {
+          "stroke": 7,
+          "primitive": "heng",
+          "from": [
+            "C",
+            0.68,
+            0.088
+          ],
+          "to": [
+            "MR",
+            0.36,
+            0.436
+          ]
+        },
+        {
+          "stroke": 8,
+          "primitive": "heng",
+          "from": [
+            "C",
+            0.776,
+            0.676
+          ],
+          "to": [
+            "MR",
+            0.6,
+            0.564
+          ]
+        },
+        {
+          "stroke": 9,
+          "primitive": "shu",
+          "from": [
+            "BC",
+            0.18,
+            0.028
+          ],
+          "to": [
+            "BC",
+            0.532,
+            1.288
+          ]
+        },
+        {
+          "stroke": 10,
+          "primitive": "heng_zhe",
+          "from": [
+            "BC",
+            0.396,
+            0.048
+          ],
+          "corner1": [
+            "BR",
+            0.744,
+            0.048
+          ],
+          "to": [
+            "BR",
+            0.744,
+            1.3
+          ]
+        },
+        {
+          "stroke": 11,
+          "primitive": "heng",
+          "from": [
+            "BC",
+            0.664,
+            0.652
+          ],
+          "to": [
+            "BR",
+            0.504,
+            0.536
+          ]
+        },
+        {
+          "stroke": 12,
+          "primitive": "heng",
+          "from": [
+            "BC",
+            0.984,
+            0.136
+          ],
+          "to": [
+            "BR",
+            0.032,
+            0.98
+          ]
+        },
+        {
+          "stroke": 13,
+          "primitive": "heng",
+          "from": [
+            "BC",
+            0.612,
+            1.18
+          ],
+          "to": [
+            "BR",
+            0.536,
+            1.02
+          ]
+        }
+      ],
+      "joints": []
+    }
+  ]
+}
