@@ -1,2 +1,2 @@
 # Sandbox
-(c76 法 FROZEN. Next c77.)
+(c77 朋 FROZEN. Next c78.)
