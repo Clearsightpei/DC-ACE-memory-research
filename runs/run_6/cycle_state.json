@@ -1,7 +1,7 @@
 {
-  "cycle": 68, "phase": "2", "current_focus": null,
-  "last_outcome": "frozen_3attempt",
-  "last_finished_at": "2026-06-14T01:10:00",
+  "cycle": 69, "phase": "2", "current_focus": null,
+  "last_outcome": "user_skip",
+  "last_finished_at": "2026-06-14T01:20:00",
   "success_bank_size": 42,
-  "notes": "c68 古 FROZEN — MMH 口 box anchors trace X-cross; needs component-reuse format. Carry-overs left: 米 c69 (last one)."
+  "notes": "c69 米 — brief was written + GT generated, but user attestation 'fine, continue to 70' before Drawer ran. No attempt PNG. Carry-over backlog cleared (all 5 of c65-c69 carry-overs processed: 1 promoted [自], 3 frozen [力 个 古], 1 skipped [米]). Next: c70 starts 8-9 stroke ramp."
 }
