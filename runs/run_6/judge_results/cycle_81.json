@@ -32,6 +32,16 @@
     "ai_file": "01_信.png",
     "gt_file": "01_信.png",
     "eval_requested": "vision+ocr+gt+structural",
-    "mastery_policy": "panel.unanimous_yes"
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "YES"
+      ],
+      "reasons": [
+        "亻 + 言, unambiguous 信."
+      ],
+      "unanimous_yes": true,
+      "yes_count": 1
+    }
   }
 ]

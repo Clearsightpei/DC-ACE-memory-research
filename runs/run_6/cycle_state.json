@@ -1,7 +1,7 @@
 {
-  "cycle": 74, "phase": "2", "current_focus": null,
+  "cycle": 84, "phase": "2", "current_focus": null,
   "last_outcome": "ocr_pass_skeptic_no",
-  "last_finished_at": "2026-06-14T02:30:00",
-  "success_bank_size": 43,
-  "notes": "10-cycle calibration batch complete (c65-c74). Bank 41→43. Fast-mode introduced c72: direct render + 1 skeptic + 2-attempt max. Calibration corpus expanded by 10 PNGs across 2-8 stroke chars."
+  "last_finished_at": "2026-06-14T03:00:00",
+  "success_bank_size": 48,
+  "notes": "Batch 75-84 complete. 5 PROMOTED: 春 美 重 香 信. Bank 43→48. 5 non-promotions provide calibration data (3 OCR-pass-skeptic-NO + 2 OCR-fail freezes)."
 }

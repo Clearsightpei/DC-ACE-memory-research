@@ -1,0 +1,46 @@
+[
+  {
+    "index": 1,
+    "character": "高",
+    "pinyin": "gao",
+    "visual_score": 0.7344,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.6807,
+      "chamfer": 0.7635,
+      "chamfer_px": 8.09,
+      "proportion": 0.7834,
+      "ar_term": 0.9422,
+      "quad_term": 0.8351
+    },
+    "recognized_char": "对",
+    "ocr_confidence": 0.6292,
+    "ocr_topk": [
+      [
+        "对",
+        0.6292
+      ]
+    ],
+    "ocr_margin": 0.0,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.4406,
+    "ai_file": "01_高.png",
+    "gt_file": "01_高.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "SKIPPED"
+      ],
+      "reasons": [
+        "OCR=对 — completely misread. Freeze."
+      ],
+      "unanimous_yes": false
+    }
+  }
+]

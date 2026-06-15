@@ -80,3 +80,4 @@ Run_5's frozen Success Bank lives at `runs/run_5/success_bank/`. Run_6 does NOT 
 | 美 | mei | 9 | c78 | 1/1 YES | 羊+大 |
 | 重 | zhong | 9 | c79 | 1/1 YES | 千+田+一 |
 | 香 | xiang | 9 | c80 | 1/1 YES | 禾+日 |
+| 信 | xin | 9 | c81 | 1/1 YES | 亻+言 |
