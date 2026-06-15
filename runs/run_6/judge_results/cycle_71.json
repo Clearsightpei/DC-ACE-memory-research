@@ -1,0 +1,49 @@
+[
+  {
+    "index": 1,
+    "character": "明",
+    "pinyin": "ming",
+    "visual_score": 0.6948,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.5798,
+      "chamfer": 0.7397,
+      "chamfer_px": 9.05,
+      "proportion": 0.8348,
+      "ar_term": 0.9849,
+      "quad_term": 0.8777
+    },
+    "recognized_char": "眸",
+    "ocr_confidence": 0.4714,
+    "ocr_topk": [
+      [
+        "眸",
+        0.4714
+      ]
+    ],
+    "ocr_margin": 0.0,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.4169,
+    "ai_file": "01_明.png",
+    "gt_file": "01_明.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "SKIPPED",
+        "SKIPPED",
+        "SKIPPED"
+      ],
+      "reasons": [
+        "Panel skipped — OCR misread as 眸 both attempts. 2-attempt freeze."
+      ],
+      "unanimous_yes": false,
+      "yes_count": 0
+    }
+  }
+]

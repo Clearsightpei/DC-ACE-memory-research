@@ -143,3 +143,4 @@ Parked until shu primitive's dunbi blob is shortened or a `shu_short_dunbi` vari
 3 attempts. Root: MMH's 古 box-section x_frac/y_frac when fed verbatim through cell_relative_for_xy produces an X-cross rather than a closed 口. Component reuse (calling draw_kou as sub-character) would fix it but requires Teacher SKILL extension to support `call_subcharacter()` syntax in briefs.
 
 Parked: needs component-reuse brief format.
+## c71 明 FROZEN — likely internal heng overshoot makes 月 read as 目/眸
