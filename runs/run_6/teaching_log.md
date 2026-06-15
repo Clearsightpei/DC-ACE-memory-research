@@ -30,3 +30,7 @@ prior entries.
 
 ## Cycle 69 — 2026-06-14
 - Focus: 米 (3rd attempt). Strategy: pie_na_clamp (shorten s5/s6 tail extent).
+
+## Cycle 70 — 2026-06-14
+- Focus: 林 (first 8-stroke curriculum char). Two 木 components, left-right symmetric.
+- Strategy: raw MMH with shu_clamp on s6 (tail out-of-canvas).
