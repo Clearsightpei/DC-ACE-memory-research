@@ -53,3 +53,4 @@ prior entries.
 ## c85 — 部 (10-stroke, 咅+阝)
 ## c86 — 黄 (11-stroke)
 ## c87 — 谁 (10-stroke, 讠+隹)
+## c88 — 谈 (10-stroke, 讠+炎)
