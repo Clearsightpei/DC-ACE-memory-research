@@ -1,3 +1,3 @@
-# Cycle 70 summary
+# Cycle 71 summary
 
-Focus: 林 (first 8-stroke curriculum char). Raw MMH anchors with shu_clamp. Panel 3/3 YES → PROMOTED. Bank 42→43. Visual 0.87, OCR 林 correct. Two 木 components rendered cleanly side-by-side. Next: c71 next 8-stroke char.
+Focus: 明 (first attempt). Brief had heng_zhe corner anchor in BC cell (wrong); 日's right wall dropped to bottom. OCR empty. Carry-over to c72 with corrected anchors. Bank still 43.

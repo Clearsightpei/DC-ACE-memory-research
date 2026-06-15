@@ -1,7 +1,7 @@
 {
-  "cycle": 70, "phase": "2", "current_focus": null,
-  "last_outcome": "mastered",
-  "last_finished_at": "2026-06-14T01:30:00",
+  "cycle": 71, "phase": "2", "current_focus": "明",
+  "last_outcome": "carry_over",
+  "last_finished_at": "2026-06-14T01:45:00",
   "success_bank_size": 43,
-  "notes": "c70 林 PROMOTED (3/3 panel) — first 8-stroke curriculum char. Calibration corpus growing."
+  "notes": "c71 明 brief-bug carry-over. Next: c72 明 retry with corrected heng_zhe corner anchor."
 }
