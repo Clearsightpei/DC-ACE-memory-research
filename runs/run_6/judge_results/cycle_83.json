@@ -1,0 +1,50 @@
+[
+  {
+    "index": 1,
+    "character": "都",
+    "pinyin": "du",
+    "visual_score": 0.7257,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.6407,
+      "chamfer": 0.764,
+      "chamfer_px": 8.07,
+      "proportion": 0.819,
+      "ar_term": 0.9387,
+      "quad_term": 0.9288
+    },
+    "recognized_char": "都",
+    "ocr_confidence": 0.9992,
+    "ocr_topk": [
+      [
+        "都",
+        0.9992
+      ]
+    ],
+    "ocr_margin": 0.9992,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8354,
+    "ai_file": "01_都.png",
+    "gt_file": "01_都.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "reasons": [
+        "diagonal pierces 日",
+        "阝 lacks ear loop"
+      ],
+      "unanimous_yes": false,
+      "yes_count": 0
+    }
+  }
+]
