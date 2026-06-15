@@ -1,0 +1,46 @@
+[
+  {
+    "index": 1,
+    "character": "朋",
+    "pinyin": "peng",
+    "visual_score": 0.6533,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.5477,
+      "chamfer": 0.6919,
+      "chamfer_px": 11.05,
+      "proportion": 0.7873,
+      "ar_term": 0.9325,
+      "quad_term": 0.9213
+    },
+    "recognized_char": "用",
+    "ocr_confidence": 0.1731,
+    "ocr_topk": [
+      [
+        "用",
+        0.1731
+      ]
+    ],
+    "ocr_margin": 0.0,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.392,
+    "ai_file": "01_朋.png",
+    "gt_file": "01_朋.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "SKIPPED"
+      ],
+      "reasons": [
+        "OCR returns 用 not 朋 (missing distinguishing pie). Skip panel, freeze."
+      ],
+      "unanimous_yes": false
+    }
+  }
+]
