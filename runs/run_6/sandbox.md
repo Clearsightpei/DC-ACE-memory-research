@@ -4,4 +4,4 @@ Curator-owned. Short-term scratch for the current focus. Resets when mastered.
 
 ---
 
-(Empty — c0 init. Next cycle starts on Phase 1, focus = 横.)
+(Empty — c65 力 FROZEN; next focus = next carry-over 自 c66.)

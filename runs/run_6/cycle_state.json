@@ -1,9 +1,9 @@
 {
-  "cycle": 64,
+  "cycle": 65,
   "phase": "2",
   "current_focus": null,
-  "last_outcome": "fix_round_2_3_frozen_0_promoted",
-  "last_finished_at": "2026-06-13T06:00:00",
+  "last_outcome": "frozen_3attempt",
+  "last_finished_at": "2026-06-14T00:00:00",
   "success_bank_size": 41,
-  "notes": "Second fix iteration on 8 c55-c64 carry-overs: 0 PROMOTED (all panel < 3/3). 3 cycles FROZEN per 3-attempt rule: c56 山 (uprights off-center even after baseline_y lift), c63 出 (MMH 出's stroke 1 and 4 aren't clean shu_zhe — they're U-shape strokes the primitive can't render), c64 头 (s2 dian lifted off-canvas). Each frozen cycle has FROZEN.md postmortem. 5 still in carry-over with 1 attempt left: c55 力 (primitive hook issue), c57 自 (2/3 NEAR — counting ambiguity), c58 个 (shu dunbi blob creates gap visual), c60 古 (shu pierces 口), c61 米 (lower pie/na too long). Bank still 41. Joint taxonomy + apex_share + per-class panel summary validated as infrastructure — these failures are character-specific edge cases."
+  "notes": "c65 力 3rd attempt FROZEN (panel 0/3). Heng_zhe_gou primitive ceiling — hook segment under-tall. Logged to to_be_learned.md. Next: 自 (c66, carry-over from c57). Calibration-corpus run."
 }

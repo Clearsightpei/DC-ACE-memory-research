@@ -121,3 +121,13 @@ Panel saw only 2 internal horizontals; MMH has 3. The 3rd horizontal is in the b
 - Mid-joint class: 力 — needs mid-joint anchor override.
 - 撇捺-apex: 八 人 — needs explicit apex sharing.
 - Other: 七 (clamp head Y), 自 (minimum heng spacing).
+
+---
+
+## c65 力 FROZEN — heng_zhe_gou primitive ceiling
+
+3 cycles attempted (c33, c44, c55→c65). All 0/3 panel. Root cause: primitive ceiling, not anchor placement.
+
+The `heng_zhe_gou.py` primitive's vertical+hook segment is under-tall — the shu terminates too far above the bottom of the box, leaving the hook visually disconnected from the heng segment. Anchors are correct per raw MMH, but the rendered shape reads as "horizontal-with-stub" rather than 横折钩. Affects: 力 办 为 协 务 (any char using heng_zhe_gou as a primary stroke).
+
+**Decision**: park until heng_zhe_gou is re-mastered (out of scope for the 80-char calibration run).
