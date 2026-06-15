@@ -135,3 +135,11 @@ The `heng_zhe_gou.py` primitive's vertical+hook segment is under-tall — the sh
 3 cycles attempted (c45/c58/c67). All 0-1/3 panel. Root cause: shu primitive's dunbi blob extends ~25 px below the centerline head; even with apex_lift of 20 px the blob still sits below the apex. Affects compact chars where shu meets a high apex (个, plus potentially 不 in similar configurations).
 
 Parked until shu primitive's dunbi blob is shortened or a `shu_short_dunbi` variant is added.
+
+---
+
+## c68 古 FROZEN — MMH 口 anchors do not transcribe to a valid box
+
+3 attempts. Root: MMH's 古 box-section x_frac/y_frac when fed verbatim through cell_relative_for_xy produces an X-cross rather than a closed 口. Component reuse (calling draw_kou as sub-character) would fix it but requires Teacher SKILL extension to support `call_subcharacter()` syntax in briefs.
+
+Parked: needs component-reuse brief format.

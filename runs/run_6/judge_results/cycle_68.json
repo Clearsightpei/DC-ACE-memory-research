@@ -1,0 +1,50 @@
+[
+  {
+    "index": 1,
+    "character": "古",
+    "pinyin": "gu",
+    "visual_score": 0.7718,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.6783,
+      "chamfer": 0.8049,
+      "chamfer_px": 6.51,
+      "proportion": 0.8926,
+      "ar_term": 0.9502,
+      "quad_term": 0.9642
+    },
+    "recognized_char": "女",
+    "ocr_confidence": 0.9486,
+    "ocr_topk": [
+      [
+        "女",
+        0.9486
+      ]
+    ],
+    "ocr_margin": 0.0,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.4631,
+    "ai_file": "01_古.png",
+    "gt_file": "01_古.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "SKIPPED",
+        "SKIPPED",
+        "SKIPPED"
+      ],
+      "reasons": [
+        "Panel skipped — OCR reads 女 not 古, is_correct=False. Brief had malformed box anchors (X-shape render, not 口). Drawer 1st preview iteration flagged the issue."
+      ],
+      "unanimous_yes": false,
+      "yes_count": 0,
+      "note": "Skipped due to OCR mismatch (女 vs 古, 0.95 conf)."
+    }
+  }
+]

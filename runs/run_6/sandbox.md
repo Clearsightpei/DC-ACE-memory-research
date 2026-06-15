@@ -1,2 +1,2 @@
-# Sandbox (Part C of memory) — run_6
-(Empty — c67 个 FROZEN; next focus = 古 c68 carry-over.)
+# Sandbox — run_6
+(Empty — c68 古 FROZEN; next focus = 米 c69 carry-over.)

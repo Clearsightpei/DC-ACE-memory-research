@@ -1,3 +1,3 @@
-# Cycle 67 summary
+# Cycle 68 summary
 
-Focus: 个 (3rd attempt). Strategy: shu_apex_lift override (y_frac 0.348→0.248, lift ~20 px). Outcome: panel 0/3 NO → FROZEN. Root cause: shu's dunbi blob still below apex even after 20 px lift (renderer ceiling, not anchor). Bank still 42. Next: 古 c68.
+Focus: 古 (3rd attempt). Strategy: shu_lift_above_box (fixed shu-piercing) + MMH-derived 口 box anchors. Outcome: OCR reads 女 not 古; box renders as X-cross. FROZEN per 3-attempt rule. Bank still 42. Next: 米 c69.
