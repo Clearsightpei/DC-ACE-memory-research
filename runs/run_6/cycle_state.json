@@ -1,9 +1,9 @@
 {
-  "cycle": 65,
+  "cycle": 66,
   "phase": "2",
   "current_focus": null,
-  "last_outcome": "frozen_3attempt",
-  "last_finished_at": "2026-06-14T00:00:00",
-  "success_bank_size": 41,
-  "notes": "c65 力 3rd attempt FROZEN (panel 0/3). Heng_zhe_gou primitive ceiling — hook segment under-tall. Logged to to_be_learned.md. Next: 自 (c66, carry-over from c57). Calibration-corpus run."
+  "last_outcome": "mastered",
+  "last_finished_at": "2026-06-14T00:30:00",
+  "success_bank_size": 42,
+  "notes": "c66 自 PROMOTED (3/3 panel) — panel prompt clarification fix worked (counting ambiguity resolved). Next: 个 c67 carry-over."
 }

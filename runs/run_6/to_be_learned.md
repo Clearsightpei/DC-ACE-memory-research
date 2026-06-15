@@ -73,7 +73,6 @@ Also: the 横折钩's hook (final 钩 segment) is too short / not pronounced eno
 **Still in carry-over (1 attempt left each)**:
 
 - **力 c55** (0/3 attempt 2): pie+heng_zhe_gou rendering issue. Lowering pie.from.y to heng level made the pie too short and panel reads as "撇 wrong direction". Anchor fix didn't help — issue is the heng_zhe_gou primitive's hook is invisible at this scale. Next attempt: use the original c33 anchors (raw MMH) and try paneling under stricter calligraphy-aware prompt with "力 has a long pie that exceeds the box" rule.
-- **自 c57** (2/3 attempt 2): NEAR. Pie pulled to box top-left works; internal hengs extended to box right wall. 2 YES, 1 NO (panel counted "3 internal hengs" not 2 — counting ambiguity, may be a panel-prompt clarification issue).
 - **个 c58** (1/3 attempt 2): 3-way apex_share applied (shu.head.y lifted to apex_y) but visual shows shu still detached. Issue: shu's dunbi head blob creates a visual gap even when centerline starts at apex. Next: lift shu.head.y ABOVE apex by ~20 px so the blob lands AT the apex.
 - **古 c60** (0/3 attempt 2): tangent-snap for 口 corners worked partially but the 十's shu (s2) pierces THROUGH the box top into the 口. Next: shorten s2.to.y to stop ABOVE the box top (y > s3.head.y).
 - **米 c61** (1/3 attempt 2): top dots lowered closer to heng. Now panel says lower pie+na are too long (extending past the box). Next: shorten s5.tail and s6.tail x-extent.
@@ -111,9 +110,6 @@ Promoted: 牛 (c59) + 立 (c62). Bank 39 → 41.
 
 The 竖弯钩's head extends above the heng (1 NO from panel). MMH's stroke 2 (shu_wan_gou) starts above where the heng crosses. Fix: clamp shu_wan_gou's head Y to be at or below the heng's Y.
 
-### 自 (c51, 1/3)
-
-Panel saw only 2 internal horizontals; MMH has 3. The 3rd horizontal is in the brief but rendered too close to one of the others — visually merged. Fix: enforce minimum spacing between consecutive internal hengs.
 
 ### Tally
 - Brush-end-gap class (prior batch): FIXED by joint-snap for chars where joints were head/tail (五 白 半 promoted, 目 already done via geometric corner).

@@ -1,3 +1,3 @@
-# Cycle 65 summary
+# Cycle 66 summary
 
-Focus: 力 (3rd attempt, carry-over from c55). Strategy: revert to raw MMH anchors and rely on calligraphy-aware panel. Outcome: panel 0/3 YES → FROZEN per 3-attempt rule. Root cause: heng_zhe_gou primitive's hook segment under-tall, not an anchor problem. Logged to to_be_learned.md as primitive-ceiling carry-over. Bank still 41. Next focus: 自 (next carry-over).
+Focus: 自 (3rd attempt). Same anchors as c57 (which was 2/3); panel prompt explicitly disambiguated "2 internal hengs + 1 box-closing-bottom = 3 horizontal strokes total". Panel 3/3 YES → PROMOTED. Bank 41 → 42. Carry-over backlog: 个 c58→c67, 古 c60→c68, 米 c61→c69. Next focus: 个.

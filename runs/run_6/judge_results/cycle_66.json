@@ -32,6 +32,20 @@
     "ai_file": "01_自.png",
     "gt_file": "01_自.png",
     "eval_requested": "vision+ocr+gt+structural",
-    "mastery_policy": "panel.unanimous_yes"
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "YES",
+        "YES",
+        "YES"
+      ],
+      "reasons": [
+        "Pie on top, closed 日-box with exactly 2 internal hengs plus box-closing bottom (3 horizontals total), unambiguous 自.",
+        "Closed 日-box with 2 internal horizontals + closing bottom, only small N-class corner gaps, unambiguous 自.",
+        "Pie on top, closed 日-box, 2 internal hengs + closing-bottom heng, unambiguous 自."
+      ],
+      "unanimous_yes": true,
+      "yes_count": 3
+    }
   }
 ]
