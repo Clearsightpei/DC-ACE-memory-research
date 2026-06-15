@@ -1,0 +1,51 @@
+[
+  {
+    "index": 1,
+    "character": "美",
+    "pinyin": "mei",
+    "visual_score": 0.7376,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.63,
+      "chamfer": 0.7673,
+      "chamfer_px": 7.95,
+      "proportion": 0.8932,
+      "ar_term": 0.9029,
+      "quad_term": 0.9266
+    },
+    "recognized_char": "美",
+    "ocr_confidence": 0.9995,
+    "ocr_topk": [
+      [
+        "美",
+        0.9995
+      ]
+    ],
+    "ocr_margin": 0.9995,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8425,
+    "ai_file": "01_美.png",
+    "gt_file": "01_美.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "reasons": [
+        "top dots merged into arc",
+        "middle 王 incomplete",
+        "pie/na bottom malformed"
+      ],
+      "unanimous_yes": false,
+      "yes_count": 0
+    }
+  }
+]
