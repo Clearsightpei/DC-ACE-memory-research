@@ -76,8 +76,3 @@ The library is fully compositional: every entry calls only entries already in th
 Run_5's frozen Success Bank lives at `runs/run_5/success_bank/`. Run_6 does NOT import from it. The run_5 bank is a numeric-memory baseline for later comparison; run_6 starts fresh with structural memory.
 | 自 | zi | 6 | c66 | 3/3 | pie + 日-box + 2 internal hengs |
 | 林 | lin | 8 | c70 | 3/3 | 木+木 left/right symmetric |
-| 春 | chun | 9 | c76 | 1/1 YES | 三+人+日 |
-| 美 | mei | 9 | c78 | 1/1 YES | 羊+大 |
-| 重 | zhong | 9 | c79 | 1/1 YES | 千+田+一 |
-| 香 | xiang | 9 | c80 | 1/1 YES | 禾+日 |
-| 信 | xin | 9 | c81 | 1/1 YES | 亻+言 |
