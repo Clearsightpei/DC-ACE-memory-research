@@ -36,3 +36,4 @@ prior entries.
 - Strategy: raw MMH with shu_clamp on s6 (tail out-of-canvas).
 ## Cycle 71 — 2026-06-14 — Focus: 明 (8-stroke, 日+月)
 ## Cycle 72 — 2026-06-14 — Focus: 明 retry (heng_zhe corner fix)
+## Cycle 71 — 2026-06-14 — Focus: 明 (re-run after c71-c94 purge, programmatic corner derivation)
