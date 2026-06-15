@@ -32,6 +32,20 @@
     "ai_file": "01_林.png",
     "gt_file": "01_林.png",
     "eval_requested": "vision+ocr+gt+structural",
-    "mastery_policy": "panel.unanimous_yes"
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "YES",
+        "YES",
+        "YES"
+      ],
+      "reasons": [
+        "Both 木 show heng crossing shu at mid with pie/na sweeping outward, unambiguous 林.",
+        "Both 木 show all 4 strokes; heng solidly crosses shu at mid, side-by-side.",
+        "Both 木 show 4 strokes correctly; heng crosses shu at mid-height."
+      ],
+      "unanimous_yes": true,
+      "yes_count": 3
+    }
   }
 ]

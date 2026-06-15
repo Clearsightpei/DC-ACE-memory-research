@@ -1,2 +1,2 @@
 # Sandbox — run_6
-(Empty — c68 古 FROZEN; next focus = 米 c69 carry-over.)
+(Empty — c70 林 PROMOTED. Next: c71 8-stroke ramp.)

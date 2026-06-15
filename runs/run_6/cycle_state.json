@@ -1,7 +1,7 @@
 {
-  "cycle": 69, "phase": "2", "current_focus": null,
-  "last_outcome": "user_skip",
-  "last_finished_at": "2026-06-14T01:20:00",
-  "success_bank_size": 42,
-  "notes": "c69 米 — brief was written + GT generated, but user attestation 'fine, continue to 70' before Drawer ran. No attempt PNG. Carry-over backlog cleared (all 5 of c65-c69 carry-overs processed: 1 promoted [自], 3 frozen [力 个 古], 1 skipped [米]). Next: c70 starts 8-9 stroke ramp."
+  "cycle": 70, "phase": "2", "current_focus": null,
+  "last_outcome": "mastered",
+  "last_finished_at": "2026-06-14T01:30:00",
+  "success_bank_size": 43,
+  "notes": "c70 林 PROMOTED (3/3 panel) — first 8-stroke curriculum char. Calibration corpus growing."
 }
