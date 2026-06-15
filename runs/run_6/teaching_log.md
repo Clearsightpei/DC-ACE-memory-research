@@ -39,3 +39,4 @@ prior entries.
 ## Cycle 71 — 2026-06-14 — Focus: 明 (re-run after c71-c94 purge, programmatic corner derivation)
 ## Cycle 72 — Focus: 京 (re-verify demoted jing_capital)
 ## Cycle 73 — Focus: 国 (8-stroke, 囗+玉)
+## c74 — focus 果 (8-stroke, 田+木)

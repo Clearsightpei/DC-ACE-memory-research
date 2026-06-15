@@ -1,0 +1,137 @@
+{
+  "judge": {
+    "eval": "vision+ocr+gt+structural",
+    "use_ocr": true,
+    "mastery": "panel.unanimous_yes"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "果",
+      "pinyin": "guo",
+      "phase": "2",
+      "mmh_stroke_count": 8,
+      "override": "shu_clamp",
+      "anchors": [
+        {
+          "stroke": 1,
+          "primitive": "shu",
+          "from": [
+            "TL",
+            0.48,
+            0.532
+          ],
+          "to": [
+            "ML",
+            0.856,
+            0.632
+          ]
+        },
+        {
+          "stroke": 2,
+          "primitive": "heng_zhe",
+          "from": [
+            "TL",
+            0.604,
+            0.508
+          ],
+          "corner1": [
+            "TC",
+            0.9,
+            0.508
+          ],
+          "to": [
+            "C",
+            0.9,
+            0.44
+          ]
+        },
+        {
+          "stroke": 3,
+          "primitive": "heng",
+          "from": [
+            "ML",
+            0.94,
+            0.056
+          ],
+          "to": [
+            "TC",
+            0.784,
+            0.944
+          ]
+        },
+        {
+          "stroke": 4,
+          "primitive": "heng",
+          "from": [
+            "ML",
+            0.936,
+            0.54
+          ],
+          "to": [
+            "C",
+            0.856,
+            0.356
+          ]
+        },
+        {
+          "stroke": 5,
+          "primitive": "heng",
+          "from": [
+            "BL",
+            0.068,
+            0.076
+          ],
+          "to": [
+            "MR",
+            0.808,
+            0.936
+          ]
+        },
+        {
+          "stroke": 6,
+          "primitive": "shu",
+          "from": [
+            "TC",
+            0.316,
+            0.576
+          ],
+          "to": [
+            "BC",
+            0.412,
+            1.3
+          ]
+        },
+        {
+          "stroke": 7,
+          "primitive": "pie",
+          "from": [
+            "BC",
+            0.296,
+            0.064
+          ],
+          "to": [
+            "BL",
+            -0.032,
+            1.256
+          ]
+        },
+        {
+          "stroke": 8,
+          "primitive": "na",
+          "from": [
+            "BC",
+            0.536,
+            0.048
+          ],
+          "to": [
+            "BR",
+            1.272,
+            1.188
+          ]
+        }
+      ],
+      "joints": []
+    }
+  ]
+}
