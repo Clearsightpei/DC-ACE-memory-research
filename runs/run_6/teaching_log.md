@@ -50,3 +50,4 @@ prior entries.
 ## c82 — 真 (10-stroke)
 ## c83 — 都 (10-stroke, 者+阝)
 ## c84 — 笑 (10-stroke, ⺮+夭)
+## c85 — 部 (10-stroke, 咅+阝)
