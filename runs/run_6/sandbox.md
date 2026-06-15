@@ -1,2 +1,2 @@
 # Sandbox — run_6
-(c73 国 FROZEN. Next: c74.)
+(c74 果 PROMOTED. Next: c75.)

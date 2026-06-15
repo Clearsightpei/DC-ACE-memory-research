@@ -77,3 +77,4 @@ Run_5's frozen Success Bank lives at `runs/run_5/success_bank/`. Run_6 does NOT 
 | 自 | zi | 6 | c66 | 3/3 | pie + 日-box + 2 internal hengs |
 | 林 | lin | 8 | c70 | 3/3 | 木+木 left/right symmetric |
 | 京 | jing_capital | 8 | c72 | 3/3 | re-verified with MMH-derived anchors after demotion |
+| 果 | guo_fruit | 8 | c74 | 3/3 | 田+木 |
