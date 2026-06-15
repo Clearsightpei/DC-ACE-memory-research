@@ -11,7 +11,7 @@
       "pinyin": "fa",
       "phase": "2",
       "mmh_stroke_count": 8,
-      "override": "y_clamp",
+      "override": "y_clamp + shu_shorten + mu_厶_close",
       "anchors": [
         {
           "stroke": 1,
@@ -80,7 +80,7 @@
           "to": [
             "C",
             0.756,
-            0.928
+            0.85
           ]
         },
         {
@@ -115,14 +115,14 @@
           "stroke": 8,
           "primitive": "heng",
           "from": [
-            "BR",
-            0.22,
-            0.52
+            "BC",
+            0.8,
+            0.7
           ],
           "to": [
             "BR",
-            0.752,
-            1.3
+            0.4,
+            0.95
           ]
         }
       ],

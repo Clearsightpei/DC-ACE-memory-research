@@ -1,0 +1,51 @@
+[
+  {
+    "index": 1,
+    "character": "法",
+    "pinyin": "fa",
+    "visual_score": 0.7879,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.7017,
+      "chamfer": 0.8158,
+      "chamfer_px": 6.11,
+      "proportion": 0.9047,
+      "ar_term": 0.9809,
+      "quad_term": 0.9618
+    },
+    "recognized_char": "法",
+    "ocr_confidence": 0.8903,
+    "ocr_topk": [
+      [
+        "法",
+        0.8903
+      ]
+    ],
+    "ocr_margin": 0.8903,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8728,
+    "ai_file": "01_法.png",
+    "gt_file": "01_法.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "NO",
+        "NO",
+        "NO"
+      ],
+      "reasons": [
+        "only 2 water dots not 3",
+        "reads as 共/艹 not 去",
+        "只有 2 个 dots, structure off"
+      ],
+      "unanimous_yes": false,
+      "yes_count": 0
+    }
+  }
+]
