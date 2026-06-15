@@ -1,0 +1,46 @@
+[
+  {
+    "index": 1,
+    "character": "美",
+    "pinyin": "mei",
+    "visual_score": 0.6655,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.5674,
+      "chamfer": 0.7287,
+      "chamfer_px": 9.49,
+      "proportion": 0.7354,
+      "ar_term": 0.7918,
+      "quad_term": 0.8304
+    },
+    "recognized_char": "美",
+    "ocr_confidence": 0.9956,
+    "ocr_topk": [
+      [
+        "美",
+        0.9956
+      ]
+    ],
+    "ocr_margin": 0.9956,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.7993,
+    "ai_file": "01_美.png",
+    "gt_file": "01_美.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "NO"
+      ],
+      "reasons": [
+        "Too many horizontals (4 vs 3); top 羊 lacks centered vertical."
+      ],
+      "unanimous_yes": false
+    }
+  }
+]

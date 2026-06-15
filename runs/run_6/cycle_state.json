@@ -1,7 +1,7 @@
 {
-  "cycle": 74, "phase": "2", "current_focus": null,
-  "last_outcome": "ocr_pass_skeptic_no",
-  "last_finished_at": "2026-06-14T01:30:00",
-  "success_bank_size": 43,
-  "notes": "c75-c84 deleted (slashed-box contamination). 5 promotions removed (春美重香信). Bank back to 43. Restarting c75 with box-rendering fix: vertical walls use same x_frac for head and tail."
+  "cycle": 84, "phase": "2", "current_focus": null,
+  "last_outcome": "ocr_fail",
+  "last_finished_at": "2026-06-14T04:00:00",
+  "success_bank_size": 44,
+  "notes": "c75-c84 REDONE with box-rendering fix (aligned corners for 口/日/目 structures). Bank 43→44 (only 京 promoted; other chars OCR-passed but skeptic flagged composition issues). The earlier contaminated batch (春美重香信) was demoted before redo."
 }

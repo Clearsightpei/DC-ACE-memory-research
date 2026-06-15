@@ -1,0 +1,46 @@
+[
+  {
+    "index": 1,
+    "character": "唐",
+    "pinyin": "tang",
+    "visual_score": 0.701,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.5859,
+      "chamfer": 0.7282,
+      "chamfer_px": 9.51,
+      "proportion": 0.8769,
+      "ar_term": 0.9229,
+      "quad_term": 0.8962
+    },
+    "recognized_char": "后",
+    "ocr_confidence": 0.4812,
+    "ocr_topk": [
+      [
+        "后",
+        0.4812
+      ]
+    ],
+    "ocr_margin": 0.0,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.4206,
+    "ai_file": "01_唐.png",
+    "gt_file": "01_唐.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "SKIPPED"
+      ],
+      "reasons": [
+        "OCR=后."
+      ],
+      "unanimous_yes": false
+    }
+  }
+]
