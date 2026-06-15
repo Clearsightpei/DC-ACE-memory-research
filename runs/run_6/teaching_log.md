@@ -48,3 +48,4 @@ prior entries.
 ## c80 — 看 (9-stroke, 手+目)
 ## c81 — 高 (10-stroke, 亠+口+冂+口)
 ## c82 — 真 (10-stroke)
+## c83 — 都 (10-stroke, 者+阝)
