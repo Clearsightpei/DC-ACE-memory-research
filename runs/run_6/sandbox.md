@@ -1,2 +1,2 @@
 # Sandbox — run_6
-(c74 果 PROMOTED. Next: c75.)
+(c75 金 FROZEN. Next: c76.)
