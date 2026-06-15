@@ -1,0 +1,95 @@
+{
+  "judge": {
+    "eval": "vision+ocr+gt+structural",
+    "use_ocr": true,
+    "mastery": "panel.unanimous_yes"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "古",
+      "pinyin": "gu",
+      "phase": "2",
+      "mmh_stroke_count": 5,
+      "override": "shu_lift_above_box",
+      "anchors": [
+        {
+          "stroke": 1,
+          "primitive": "heng",
+          "from": [
+            "ML",
+            -0.044,
+            0.56
+          ],
+          "to": [
+            "MR",
+            1.184,
+            0.472
+          ]
+        },
+        {
+          "stroke": 2,
+          "primitive": "shu",
+          "from": [
+            "TC",
+            0.372,
+            0.28
+          ],
+          "to": [
+            "BC",
+            0.26,
+            0.2
+          ]
+        },
+        {
+          "stroke": 3,
+          "primitive": "heng_zhe",
+          "from": [
+            "BL",
+            0.6,
+            0.42
+          ],
+          "corner1": [
+            "BC",
+            0.968,
+            0.42
+          ],
+          "to": [
+            "BL",
+            0.968,
+            1.464
+          ]
+        },
+        {
+          "stroke": 4,
+          "primitive": "shu",
+          "from": [
+            "BL",
+            0.892,
+            0.444
+          ],
+          "to": [
+            "BC",
+            0.944,
+            1.072
+          ]
+        },
+        {
+          "stroke": 5,
+          "primitive": "heng",
+          "from": [
+            "BC",
+            0.048,
+            1.232
+          ],
+          "to": [
+            "BR",
+            0.22,
+            1.24
+          ]
+        }
+      ],
+      "joints": []
+    }
+  ]
+}

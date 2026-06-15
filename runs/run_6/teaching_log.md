@@ -24,3 +24,6 @@ prior entries.
 - Strategy: shu_apex_lift override (shu.head y_frac 0.248 → 20 px above apex) so dunbi blob lands AT apex.
 - MMH stroke count: 3
 - Joints: 1 N-class
+
+## Cycle 68 — 2026-06-14
+- Focus: 古 (3rd attempt). Strategy: shorten shu (s2) above box top via shu_lift_above_box.
