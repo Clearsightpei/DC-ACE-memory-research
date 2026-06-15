@@ -51,3 +51,4 @@ prior entries.
 ## c83 — 都 (10-stroke, 者+阝)
 ## c84 — 笑 (10-stroke, ⺮+夭)
 ## c85 — 部 (10-stroke, 咅+阝)
+## c86 — 黄 (11-stroke)
