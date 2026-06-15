@@ -1,0 +1,49 @@
+[
+  {
+    "index": 1,
+    "character": "谈",
+    "pinyin": "tan",
+    "visual_score": 0.7163,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.6227,
+      "chamfer": 0.7292,
+      "chamfer_px": 9.47,
+      "proportion": 0.8779,
+      "ar_term": 0.9588,
+      "quad_term": 0.8946
+    },
+    "recognized_char": "淡",
+    "ocr_confidence": 0.5046,
+    "ocr_topk": [
+      [
+        "淡",
+        0.5046
+      ]
+    ],
+    "ocr_margin": 0.0,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.4298,
+    "ai_file": "01_谈.png",
+    "gt_file": "01_谈.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "SKIPPED",
+        "SKIPPED",
+        "SKIPPED"
+      ],
+      "reasons": [
+        "OCR=淡 (water radical confusion with speech radical)"
+      ],
+      "unanimous_yes": false,
+      "yes_count": 0
+    }
+  }
+]
