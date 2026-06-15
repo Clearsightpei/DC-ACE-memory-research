@@ -1,2 +1,2 @@
 # Sandbox — run_6
-(c71 明 FROZEN. Next: c72.)
+(c72 京 RE-PROMOTED. Bank 43. Next: c73.)
