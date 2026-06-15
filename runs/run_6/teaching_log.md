@@ -34,3 +34,4 @@ prior entries.
 ## Cycle 70 — 2026-06-14
 - Focus: 林 (first 8-stroke curriculum char). Two 木 components, left-right symmetric.
 - Strategy: raw MMH with shu_clamp on s6 (tail out-of-canvas).
+## Cycle 71 — 2026-06-14 — Focus: 明 (8-stroke, 日+月)
