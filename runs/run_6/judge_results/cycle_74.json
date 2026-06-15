@@ -1,0 +1,47 @@
+[
+  {
+    "index": 1,
+    "character": "雨",
+    "pinyin": "yu",
+    "visual_score": 0.6773,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.5759,
+      "chamfer": 0.7212,
+      "chamfer_px": 9.8,
+      "proportion": 0.7924,
+      "ar_term": 0.8747,
+      "quad_term": 0.9019
+    },
+    "recognized_char": "雨",
+    "ocr_confidence": 0.8978,
+    "ocr_topk": [
+      [
+        "雨",
+        0.8978
+      ]
+    ],
+    "ocr_margin": 0.8978,
+    "is_correct": true,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.8064,
+    "ai_file": "01_雨.png",
+    "gt_file": "01_雨.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "NO"
+      ],
+      "reasons": [
+        "Top heng disconnected from right vertical; middle vertical detached from top crossbar; dots rendered as slanted dashes not distinct dian."
+      ],
+      "unanimous_yes": false,
+      "yes_count": 0
+    }
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "judge": {
+    "eval": "vision+ocr+gt+structural",
+    "use_ocr": true,
+    "mastery": "panel.unanimous_yes"
+  },
+  "characters": [
+    {
+      "index": 1,
+      "character": "雨",
+      "pinyin": "yu",
+      "phase": "2",
+      "mmh_stroke_count": 8,
+      "anchors": [],
+      "joints": []
+    }
+  ]
+}

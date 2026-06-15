@@ -1,7 +1,7 @@
 {
-  "cycle": 71, "phase": "2", "current_focus": "明",
-  "last_outcome": "carry_over",
-  "last_finished_at": "2026-06-14T01:45:00",
+  "cycle": 74, "phase": "2", "current_focus": null,
+  "last_outcome": "ocr_pass_skeptic_no",
+  "last_finished_at": "2026-06-14T02:30:00",
   "success_bank_size": 43,
-  "notes": "c71 明 brief-bug carry-over. Next: c72 明 retry with corrected heng_zhe corner anchor."
+  "notes": "10-cycle calibration batch complete (c65-c74). Bank 41→43. Fast-mode introduced c72: direct render + 1 skeptic + 2-attempt max. Calibration corpus expanded by 10 PNGs across 2-8 stroke chars."
 }
