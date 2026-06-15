@@ -1,7 +1,7 @@
 {
-  "cycle": 84, "phase": "2", "current_focus": null,
-  "last_outcome": "ocr_fail",
-  "last_finished_at": "2026-06-14T04:00:00",
+  "cycle": 94, "phase": "2", "current_focus": null,
+  "last_outcome": "ocr_pass_skeptic_no",
+  "last_finished_at": "2026-06-14T05:00:00",
   "success_bank_size": 44,
-  "notes": "c75-c84 REDONE with box-rendering fix (aligned corners for 口/日/目 structures). Bank 43→44 (only 京 promoted; other chars OCR-passed but skeptic flagged composition issues). The earlier contaminated batch (春美重香信) was demoted before redo."
+  "notes": "Batch c85-c94 complete. 10-12 stroke ramp produced 0 promotions. Most chars OCR-failed; 真 + 黑 OCR-passed but failed skeptic. Calibration corpus +10 PNGs (mostly negative class — clear FAILs)."
 }

@@ -1,0 +1,46 @@
+[
+  {
+    "index": 1,
+    "character": "朝",
+    "pinyin": "chao",
+    "visual_score": 0.5323,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.3715,
+      "chamfer": 0.5072,
+      "chamfer_px": 20.36,
+      "proportion": 0.9038,
+      "ar_term": 0.9438,
+      "quad_term": 0.8682
+    },
+    "recognized_char": "自",
+    "ocr_confidence": 0.4715,
+    "ocr_topk": [
+      [
+        "自",
+        0.4715
+      ]
+    ],
+    "ocr_margin": 0.0,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.3194,
+    "ai_file": "01_朝.png",
+    "gt_file": "01_朝.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "SKIPPED"
+      ],
+      "reasons": [
+        "OCR=自"
+      ],
+      "unanimous_yes": false
+    }
+  }
+]

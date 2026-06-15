@@ -1,0 +1,41 @@
+[
+  {
+    "index": 1,
+    "character": "路",
+    "pinyin": "lu",
+    "visual_score": 0.4767,
+    "visual_components": {
+      "method": "composite",
+      "dice": 0.3081,
+      "chamfer": 0.4198,
+      "chamfer_px": 26.04,
+      "proportion": 0.9278,
+      "ar_term": 0.9108,
+      "quad_term": 0.9135
+    },
+    "recognized_char": "",
+    "ocr_confidence": 0.0,
+    "ocr_topk": [],
+    "ocr_margin": 0.0,
+    "is_correct": false,
+    "gt_coordinates": {},
+    "ai_coordinates": {},
+    "comparison_markdown": "",
+    "generated_code": "",
+    "scoring_mode": "blended_0.6_0.4",
+    "final_score": 0.286,
+    "ai_file": "01_路.png",
+    "gt_file": "01_路.png",
+    "eval_requested": "vision+ocr+gt+structural",
+    "mastery_policy": "panel.unanimous_yes",
+    "judge_panel": {
+      "verdicts": [
+        "SKIPPED"
+      ],
+      "reasons": [
+        "OCR empty"
+      ],
+      "unanimous_yes": false
+    }
+  }
+]

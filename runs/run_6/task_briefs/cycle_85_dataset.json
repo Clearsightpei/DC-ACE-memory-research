@@ -1,0 +1,1 @@
+{"judge": {"eval": "vision+ocr+gt+structural", "use_ocr": true, "mastery": "panel.unanimous_yes"}, "characters": [{"index": 1, "character": "真", "pinyin": "zhen", "phase": "2", "mmh_stroke_count": 10, "anchors": [], "joints": []}]}
