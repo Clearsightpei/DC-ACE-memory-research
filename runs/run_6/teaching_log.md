@@ -55,3 +55,4 @@ prior entries.
 ## c87 — 谁 (10-stroke, 讠+隹)
 ## c88 — 谈 (10-stroke, 讠+炎)
 ## c89 — 黑 (12-stroke)
+## c90 — 等 (12-stroke, ⺮+寺) — final
