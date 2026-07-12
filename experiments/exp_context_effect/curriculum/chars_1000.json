@@ -1,0 +1,7002 @@
+[
+  {
+    "idx": 1,
+    "character": "一",
+    "strokes": 1,
+    "tier": "common",
+    "seed_rank": 2
+  },
+  {
+    "idx": 2,
+    "character": "丨",
+    "strokes": 1,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 3,
+    "character": "乙",
+    "strokes": 1,
+    "tier": "common",
+    "seed_rank": 1722
+  },
+  {
+    "idx": 4,
+    "character": "丶",
+    "strokes": 1,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 5,
+    "character": "丿",
+    "strokes": 1,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 6,
+    "character": "乚",
+    "strokes": 1,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 7,
+    "character": "乛",
+    "strokes": 1,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 8,
+    "character": "亅",
+    "strokes": 1,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 9,
+    "character": "了",
+    "strokes": 2,
+    "tier": "common",
+    "seed_rank": 5
+  },
+  {
+    "idx": 10,
+    "character": "丩",
+    "strokes": 2,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 11,
+    "character": "人",
+    "strokes": 2,
+    "tier": "common",
+    "seed_rank": 6
+  },
+  {
+    "idx": 12,
+    "character": "丷",
+    "strokes": 2,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 13,
+    "character": "十",
+    "strokes": 2,
+    "tier": "common",
+    "seed_rank": 56
+  },
+  {
+    "idx": 14,
+    "character": "乂",
+    "strokes": 2,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 15,
+    "character": "二",
+    "strokes": 2,
+    "tier": "common",
+    "seed_rank": 72
+  },
+  {
+    "idx": 16,
+    "character": "乃",
+    "strokes": 2,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 17,
+    "character": "又",
+    "strokes": 2,
+    "tier": "common",
+    "seed_rank": 93
+  },
+  {
+    "idx": 18,
+    "character": "乜",
+    "strokes": 2,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 19,
+    "character": "儿",
+    "strokes": 2,
+    "tier": "common",
+    "seed_rank": 153
+  },
+  {
+    "idx": 20,
+    "character": "亠",
+    "strokes": 2,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 21,
+    "character": "几",
+    "strokes": 2,
+    "tier": "common",
+    "seed_rank": 172
+  },
+  {
+    "idx": 22,
+    "character": "亻",
+    "strokes": 2,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 23,
+    "character": "九",
+    "strokes": 2,
+    "tier": "common",
+    "seed_rank": 177
+  },
+  {
+    "idx": 24,
+    "character": "八",
+    "strokes": 2,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 25,
+    "character": "力",
+    "strokes": 2,
+    "tier": "common",
+    "seed_rank": 216
+  },
+  {
+    "idx": 26,
+    "character": "冂",
+    "strokes": 2,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 27,
+    "character": "七",
+    "strokes": 2,
+    "tier": "common",
+    "seed_rank": 247
+  },
+  {
+    "idx": 28,
+    "character": "冖",
+    "strokes": 2,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 29,
+    "character": "入",
+    "strokes": 2,
+    "tier": "common",
+    "seed_rank": 483
+  },
+  {
+    "idx": 30,
+    "character": "冫",
+    "strokes": 2,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 31,
+    "character": "厂",
+    "strokes": 2,
+    "tier": "common",
+    "seed_rank": 649
+  },
+  {
+    "idx": 32,
+    "character": "凵",
+    "strokes": 2,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 33,
+    "character": "刀",
+    "strokes": 2,
+    "tier": "common",
+    "seed_rank": 696
+  },
+  {
+    "idx": 34,
+    "character": "刁",
+    "strokes": 2,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 35,
+    "character": "丁",
+    "strokes": 2,
+    "tier": "common",
+    "seed_rank": 717
+  },
+  {
+    "idx": 36,
+    "character": "刂",
+    "strokes": 2,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 37,
+    "character": "勹",
+    "strokes": 2,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 38,
+    "character": "匕",
+    "strokes": 2,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 39,
+    "character": "之",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 13
+  },
+  {
+    "idx": 40,
+    "character": "丫",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 41,
+    "character": "大",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 14
+  },
+  {
+    "idx": 42,
+    "character": "丬",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 43,
+    "character": "个",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 17
+  },
+  {
+    "idx": 44,
+    "character": "丸",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 45,
+    "character": "上",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 19
+  },
+  {
+    "idx": 46,
+    "character": "久",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 47,
+    "character": "也",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 26
+  },
+  {
+    "idx": 48,
+    "character": "乇",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 49,
+    "character": "子",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 27
+  },
+  {
+    "idx": 50,
+    "character": "亍",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 51,
+    "character": "于",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 33
+  },
+  {
+    "idx": 52,
+    "character": "亡",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 53,
+    "character": "下",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 35
+  },
+  {
+    "idx": 54,
+    "character": "亼",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 55,
+    "character": "三",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 69
+  },
+  {
+    "idx": 56,
+    "character": "亾",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 57,
+    "character": "小",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 70
+  },
+  {
+    "idx": 58,
+    "character": "兀",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 59,
+    "character": "么",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 75
+  },
+  {
+    "idx": 60,
+    "character": "卂",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 61,
+    "character": "与",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 80
+  },
+  {
+    "idx": 62,
+    "character": "卄",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 63,
+    "character": "门",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 146
+  },
+  {
+    "idx": 64,
+    "character": "叉",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 65,
+    "character": "及",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 159
+  },
+  {
+    "idx": 66,
+    "character": "囗",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 67,
+    "character": "山",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 178
+  },
+  {
+    "idx": 68,
+    "character": "纟",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 69,
+    "character": "干",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 209
+  },
+  {
+    "idx": 70,
+    "character": "夂",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 71,
+    "character": "口",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 221
+  },
+  {
+    "idx": 72,
+    "character": "夊",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 73,
+    "character": "飞",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 229
+  },
+  {
+    "idx": 74,
+    "character": "孑",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 75,
+    "character": "千",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 278
+  },
+  {
+    "idx": 76,
+    "character": "孓",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 77,
+    "character": "习",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 291
+  },
+  {
+    "idx": 78,
+    "character": "艹",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 79,
+    "character": "已",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 322
+  },
+  {
+    "idx": 80,
+    "character": "宀",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 81,
+    "character": "女",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 364
+  },
+  {
+    "idx": 82,
+    "character": "尢",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 83,
+    "character": "才",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 426
+  },
+  {
+    "idx": 84,
+    "character": "屮",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 85,
+    "character": "马",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 460
+  },
+  {
+    "idx": 86,
+    "character": "巛",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 87,
+    "character": "工",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 487
+  },
+  {
+    "idx": 88,
+    "character": "川",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 89,
+    "character": "义",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 578
+  },
+  {
+    "idx": 90,
+    "character": "幺",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 91,
+    "character": "乡",
+    "strokes": 3,
+    "tier": "common",
+    "seed_rank": 605
+  },
+  {
+    "idx": 92,
+    "character": "廾",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 93,
+    "character": "弋",
+    "strokes": 3,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 94,
+    "character": "不",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 4
+  },
+  {
+    "idx": 95,
+    "character": "丹",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 96,
+    "character": "为",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 12
+  },
+  {
+    "idx": 97,
+    "character": "乌",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 98,
+    "character": "以",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 16
+  },
+  {
+    "idx": 99,
+    "character": "予",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 100,
+    "character": "中",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 18
+  },
+  {
+    "idx": 101,
+    "character": "亓",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 102,
+    "character": "天",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 59
+  },
+  {
+    "idx": 103,
+    "character": "亢",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 104,
+    "character": "方",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 63
+  },
+  {
+    "idx": 105,
+    "character": "仂",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 106,
+    "character": "日",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 67
+  },
+  {
+    "idx": 107,
+    "character": "仃",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 108,
+    "character": "无",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 73
+  },
+  {
+    "idx": 109,
+    "character": "仄",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 110,
+    "character": "分",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 88
+  },
+  {
+    "idx": 111,
+    "character": "仇",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 112,
+    "character": "心",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 90
+  },
+  {
+    "idx": 113,
+    "character": "仉",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 114,
+    "character": "见",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 95
+  },
+  {
+    "idx": 115,
+    "character": "仌",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 116,
+    "character": "公",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 99
+  },
+  {
+    "idx": 117,
+    "character": "仑",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 118,
+    "character": "从",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 100
+  },
+  {
+    "idx": 119,
+    "character": "仓",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 120,
+    "character": "气",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 102
+  },
+  {
+    "idx": 121,
+    "character": "內",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 122,
+    "character": "五",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 103
+  },
+  {
+    "idx": 123,
+    "character": "兮",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 124,
+    "character": "文",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 106
+  },
+  {
+    "idx": 125,
+    "character": "円",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 126,
+    "character": "长",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 107
+  },
+  {
+    "idx": 127,
+    "character": "冈",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 128,
+    "character": "太",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 108
+  },
+  {
+    "idx": 129,
+    "character": "龶",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 130,
+    "character": "切",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 112
+  },
+  {
+    "idx": 131,
+    "character": "冗",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 132,
+    "character": "内",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 137
+  },
+  {
+    "idx": 133,
+    "character": "冘",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 134,
+    "character": "化",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 139
+  },
+  {
+    "idx": 135,
+    "character": "刅",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 136,
+    "character": "比",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 160
+  },
+  {
+    "idx": 137,
+    "character": "刈",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 138,
+    "character": "水",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 163
+  },
+  {
+    "idx": 139,
+    "character": "礻",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 140,
+    "character": "反",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 185
+  },
+  {
+    "idx": 141,
+    "character": "办",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 142,
+    "character": "区",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 188
+  },
+  {
+    "idx": 143,
+    "character": "勻",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 144,
+    "character": "风",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 205
+  },
+  {
+    "idx": 145,
+    "character": "勿",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 146,
+    "character": "队",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 214
+  },
+  {
+    "idx": 147,
+    "character": "卅",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 148,
+    "character": "书",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 224
+  },
+  {
+    "idx": 149,
+    "character": "升",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 150,
+    "character": "引",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 226
+  },
+  {
+    "idx": 151,
+    "character": "卞",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 152,
+    "character": "元",
+    "strokes": 4,
+    "tier": "common",
+    "seed_rank": 234
+  },
+  {
+    "idx": 153,
+    "character": "卬",
+    "strokes": 4,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 154,
+    "character": "他",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 10
+  },
+  {
+    "idx": 155,
+    "character": "必",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 156,
+    "character": "们",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 20
+  },
+  {
+    "idx": 157,
+    "character": "甲",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 158,
+    "character": "出",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 30
+  },
+  {
+    "idx": 159,
+    "character": "申",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 160,
+    "character": "可",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 37
+  },
+  {
+    "idx": 161,
+    "character": "甴",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 162,
+    "character": "生",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 40
+  },
+  {
+    "idx": 163,
+    "character": "丱",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 164,
+    "character": "对",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 46
+  },
+  {
+    "idx": 165,
+    "character": "乍",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 166,
+    "character": "去",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 52
+  },
+  {
+    "idx": 167,
+    "character": "乎",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 168,
+    "character": "用",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 57
+  },
+  {
+    "idx": 169,
+    "character": "疋",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 170,
+    "character": "发",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 58
+  },
+  {
+    "idx": 171,
+    "character": "疒",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 172,
+    "character": "只",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 96
+  },
+  {
+    "idx": 173,
+    "character": "仔",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 174,
+    "character": "主",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 97
+  },
+  {
+    "idx": 175,
+    "character": "仕",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 176,
+    "character": "平",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 113
+  },
+  {
+    "idx": 177,
+    "character": "仗",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 178,
+    "character": "外",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 119
+  },
+  {
+    "idx": 179,
+    "character": "付",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 180,
+    "character": "打",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 121
+  },
+  {
+    "idx": 181,
+    "character": "仝",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 182,
+    "character": "正",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 122
+  },
+  {
+    "idx": 183,
+    "character": "仞",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 184,
+    "character": "业",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 123
+  },
+  {
+    "idx": 185,
+    "character": "仟",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 186,
+    "character": "本",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 124
+  },
+  {
+    "idx": 187,
+    "character": "仡",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 188,
+    "character": "边",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 127
+  },
+  {
+    "idx": 189,
+    "character": "仨",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 190,
+    "character": "加",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 131
+  },
+  {
+    "idx": 191,
+    "character": "仫",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 192,
+    "character": "代",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 136
+  },
+  {
+    "idx": 193,
+    "character": "癶",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 194,
+    "character": "世",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 142
+  },
+  {
+    "idx": 195,
+    "character": "皿",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 196,
+    "character": "东",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 155
+  },
+  {
+    "idx": 197,
+    "character": "矢",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 198,
+    "character": "立",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 158
+  },
+  {
+    "idx": 199,
+    "character": "兰",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 200,
+    "character": "市",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 169
+  },
+  {
+    "idx": 201,
+    "character": "冉",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 202,
+    "character": "术",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 179
+  },
+  {
+    "idx": 203,
+    "character": "冊",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 204,
+    "character": "由",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 194
+  },
+  {
+    "idx": 205,
+    "character": "冋",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 206,
+    "character": "白",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 202
+  },
+  {
+    "idx": 207,
+    "character": "册",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 208,
+    "character": "北",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 213
+  },
+  {
+    "idx": 209,
+    "character": "冎",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 210,
+    "character": "四",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 219
+  },
+  {
+    "idx": 211,
+    "character": "冯",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 212,
+    "character": "处",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 225
+  },
+  {
+    "idx": 213,
+    "character": "処",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 214,
+    "character": "记",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 277
+  },
+  {
+    "idx": 215,
+    "character": "凸",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 216,
+    "character": "失",
+    "strokes": 5,
+    "tier": "common",
+    "seed_rank": 342
+  },
+  {
+    "idx": 217,
+    "character": "凹",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 218,
+    "character": "刍",
+    "strokes": 5,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 219,
+    "character": "在",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 8
+  },
+  {
+    "idx": 220,
+    "character": "丢",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 221,
+    "character": "有",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 9
+  },
+  {
+    "idx": 222,
+    "character": "乑",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 223,
+    "character": "地",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 25
+  },
+  {
+    "idx": 224,
+    "character": "乓",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 225,
+    "character": "而",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 31
+  },
+  {
+    "idx": 226,
+    "character": "乔",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 227,
+    "character": "年",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 39
+  },
+  {
+    "idx": 228,
+    "character": "乩",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 229,
+    "character": "自",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 41
+  },
+  {
+    "idx": 230,
+    "character": "亘",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 231,
+    "character": "会",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 42
+  },
+  {
+    "idx": 232,
+    "character": "亙",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 233,
+    "character": "那",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 43
+  },
+  {
+    "idx": 234,
+    "character": "亚",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 235,
+    "character": "后",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 44
+  },
+  {
+    "idx": 236,
+    "character": "亥",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 237,
+    "character": "行",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 53
+  },
+  {
+    "idx": 238,
+    "character": "亦",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 239,
+    "character": "过",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 54
+  },
+  {
+    "idx": 240,
+    "character": "仰",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 241,
+    "character": "如",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 60
+  },
+  {
+    "idx": 242,
+    "character": "仲",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 243,
+    "character": "成",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 64
+  },
+  {
+    "idx": 244,
+    "character": "仳",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 245,
+    "character": "多",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 66
+  },
+  {
+    "idx": 246,
+    "character": "仵",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 247,
+    "character": "军",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 71
+  },
+  {
+    "idx": 248,
+    "character": "伄",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 249,
+    "character": "同",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 74
+  },
+  {
+    "idx": 250,
+    "character": "伉",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 251,
+    "character": "当",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 78
+  },
+  {
+    "idx": 252,
+    "character": "伊",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 253,
+    "character": "好",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 81
+  },
+  {
+    "idx": 254,
+    "character": "伎",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 255,
+    "character": "此",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 89
+  },
+  {
+    "idx": 256,
+    "character": "伐",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 257,
+    "character": "问",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 114
+  },
+  {
+    "idx": 258,
+    "character": "伕",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 259,
+    "character": "回",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 115
+  },
+  {
+    "idx": 260,
+    "character": "伙",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 261,
+    "character": "再",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 118
+  },
+  {
+    "idx": 262,
+    "character": "伛",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 263,
+    "character": "她",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 125
+  },
+  {
+    "idx": 264,
+    "character": "伢",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 265,
+    "character": "名",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 129
+  },
+  {
+    "idx": 266,
+    "character": "伥",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 267,
+    "character": "西",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 132
+  },
+  {
+    "idx": 268,
+    "character": "伦",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 269,
+    "character": "合",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 134
+  },
+  {
+    "idx": 270,
+    "character": "伧",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 271,
+    "character": "老",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 140
+  },
+  {
+    "idx": 272,
+    "character": "伪",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 273,
+    "character": "次",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 144
+  },
+  {
+    "idx": 274,
+    "character": "伫",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 275,
+    "character": "任",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 147
+  },
+  {
+    "idx": 276,
+    "character": "佤",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 277,
+    "character": "先",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 149
+  },
+  {
+    "idx": 278,
+    "character": "齐",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 279,
+    "character": "色",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 173
+  },
+  {
+    "idx": 280,
+    "character": "兆",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 281,
+    "character": "设",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 193
+  },
+  {
+    "idx": 282,
+    "character": "兇",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 283,
+    "character": "传",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 197
+  },
+  {
+    "idx": 284,
+    "character": "龹",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 285,
+    "character": "师",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 198
+  },
+  {
+    "idx": 286,
+    "character": "冱",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 287,
+    "character": "光",
+    "strokes": 6,
+    "tier": "common",
+    "seed_rank": 199
+  },
+  {
+    "idx": 288,
+    "character": "凫",
+    "strokes": 6,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 289,
+    "character": "我",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 7
+  },
+  {
+    "idx": 290,
+    "character": "甸",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 291,
+    "character": "这",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 11
+  },
+  {
+    "idx": 292,
+    "character": "甹",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 293,
+    "character": "来",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 15
+  },
+  {
+    "idx": 294,
+    "character": "町",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 295,
+    "character": "时",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 28
+  },
+  {
+    "idx": 296,
+    "character": "串",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 297,
+    "character": "你",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 38
+  },
+  {
+    "idx": 298,
+    "character": "丽",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 299,
+    "character": "里",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 50
+  },
+  {
+    "idx": 300,
+    "character": "乱",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 301,
+    "character": "作",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 62
+  },
+  {
+    "idx": 302,
+    "character": "疔",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 303,
+    "character": "进",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 84
+  },
+  {
+    "idx": 304,
+    "character": "疖",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 305,
+    "character": "还",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 87
+  },
+  {
+    "idx": 306,
+    "character": "亨",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 307,
+    "character": "没",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 98
+  },
+  {
+    "idx": 308,
+    "character": "亩",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 309,
+    "character": "两",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 109
+  },
+  {
+    "idx": 310,
+    "character": "伯",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 311,
+    "character": "身",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 126
+  },
+  {
+    "idx": 312,
+    "character": "伲",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 313,
+    "character": "位",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 143
+  },
+  {
+    "idx": 314,
+    "character": "伶",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 315,
+    "character": "声",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 156
+  },
+  {
+    "idx": 316,
+    "character": "伺",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 317,
+    "character": "员",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 161
+  },
+  {
+    "idx": 318,
+    "character": "伽",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 319,
+    "character": "听",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 165
+  },
+  {
+    "idx": 320,
+    "character": "伾",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 321,
+    "character": "把",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 167
+  },
+  {
+    "idx": 322,
+    "character": "佃",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 323,
+    "character": "形",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 171
+  },
+  {
+    "idx": 324,
+    "character": "但",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 325,
+    "character": "状",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 180
+  },
+  {
+    "idx": 326,
+    "character": "佇",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 327,
+    "character": "识",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 181
+  },
+  {
+    "idx": 328,
+    "character": "佈",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 329,
+    "character": "运",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 187
+  },
+  {
+    "idx": 330,
+    "character": "佉",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 331,
+    "character": "更",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 203
+  },
+  {
+    "idx": 332,
+    "character": "佐",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 333,
+    "character": "条",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 207
+  },
+  {
+    "idx": 334,
+    "character": "佔",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 335,
+    "character": "别",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 228
+  },
+  {
+    "idx": 336,
+    "character": "佗",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 337,
+    "character": "张",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 230
+  },
+  {
+    "idx": 338,
+    "character": "佘",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 339,
+    "character": "每",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 232
+  },
+  {
+    "idx": 340,
+    "character": "佚",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 341,
+    "character": "社",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 233
+  },
+  {
+    "idx": 342,
+    "character": "佛",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 343,
+    "character": "即",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 239
+  },
+  {
+    "idx": 344,
+    "character": "佝",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 345,
+    "character": "志",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 251
+  },
+  {
+    "idx": 346,
+    "character": "佞",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 347,
+    "character": "证",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 265
+  },
+  {
+    "idx": 348,
+    "character": "佟",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 349,
+    "character": "改",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 266
+  },
+  {
+    "idx": 350,
+    "character": "佣",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 351,
+    "character": "步",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 276
+  },
+  {
+    "idx": 352,
+    "character": "佥",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 353,
+    "character": "找",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 279
+  },
+  {
+    "idx": 354,
+    "character": "佧",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 355,
+    "character": "块",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 281
+  },
+  {
+    "idx": 356,
+    "character": "皃",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 357,
+    "character": "花",
+    "strokes": 7,
+    "tier": "common",
+    "seed_rank": 294
+  },
+  {
+    "idx": 358,
+    "character": "盯",
+    "strokes": 7,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 359,
+    "character": "的",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 1
+  },
+  {
+    "idx": 360,
+    "character": "並",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 361,
+    "character": "到",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 21
+  },
+  {
+    "idx": 362,
+    "character": "甾",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 363,
+    "character": "国",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 23
+  },
+  {
+    "idx": 364,
+    "character": "畀",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 365,
+    "character": "和",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 24
+  },
+  {
+    "idx": 366,
+    "character": "畅",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 367,
+    "character": "事",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 48
+  },
+  {
+    "idx": 368,
+    "character": "乖",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 369,
+    "character": "其",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 49
+  },
+  {
+    "idx": 370,
+    "character": "乶",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 371,
+    "character": "所",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 51
+  },
+  {
+    "idx": 372,
+    "character": "疌",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 373,
+    "character": "者",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 65
+  },
+  {
+    "idx": 374,
+    "character": "疙",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 375,
+    "character": "经",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 76
+  },
+  {
+    "idx": 376,
+    "character": "疚",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 377,
+    "character": "法",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 77
+  },
+  {
+    "idx": 378,
+    "character": "疝",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 379,
+    "character": "学",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 83
+  },
+  {
+    "idx": 380,
+    "character": "疟",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 381,
+    "character": "定",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 94
+  },
+  {
+    "idx": 382,
+    "character": "疠",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 383,
+    "character": "些",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 111
+  },
+  {
+    "idx": 384,
+    "character": "疡",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 385,
+    "character": "物",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 128
+  },
+  {
+    "idx": 386,
+    "character": "亞",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 387,
+    "character": "果",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 130
+  },
+  {
+    "idx": 388,
+    "character": "亟",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 389,
+    "character": "话",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 133
+  },
+  {
+    "idx": 390,
+    "character": "佬",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 391,
+    "character": "表",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 138
+  },
+  {
+    "idx": 392,
+    "character": "佯",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 393,
+    "character": "实",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 166
+  },
+  {
+    "idx": 394,
+    "character": "佰",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 395,
+    "character": "金",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 174
+  },
+  {
+    "idx": 396,
+    "character": "佴",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 397,
+    "character": "空",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 190
+  },
+  {
+    "idx": 398,
+    "character": "併",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 399,
+    "character": "往",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 196
+  },
+  {
+    "idx": 400,
+    "character": "佶",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 401,
+    "character": "取",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 200
+  },
+  {
+    "idx": 402,
+    "character": "佻",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 403,
+    "character": "放",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 231
+  },
+  {
+    "idx": 404,
+    "character": "佼",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 405,
+    "character": "治",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 241
+  },
+  {
+    "idx": 406,
+    "character": "佽",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 407,
+    "character": "规",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 244
+  },
+  {
+    "idx": 408,
+    "character": "佾",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 409,
+    "character": "油",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 256
+  },
+  {
+    "idx": 410,
+    "character": "侃",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 411,
+    "character": "受",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 258
+  },
+  {
+    "idx": 412,
+    "character": "來",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 413,
+    "character": "采",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 268
+  },
+  {
+    "idx": 414,
+    "character": "侈",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 415,
+    "character": "转",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 269
+  },
+  {
+    "idx": 416,
+    "character": "侉",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 417,
+    "character": "单",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 270
+  },
+  {
+    "idx": 418,
+    "character": "例",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 419,
+    "character": "知",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 275
+  },
+  {
+    "idx": 420,
+    "character": "侌",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 421,
+    "character": "或",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 280
+  },
+  {
+    "idx": 422,
+    "character": "侍",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 423,
+    "character": "苦",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 295
+  },
+  {
+    "idx": 424,
+    "character": "侑",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 425,
+    "character": "具",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 300
+  },
+  {
+    "idx": 426,
+    "character": "侔",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 427,
+    "character": "线",
+    "strokes": 8,
+    "tier": "common",
+    "seed_rank": 304
+  },
+  {
+    "idx": 428,
+    "character": "侖",
+    "strokes": 8,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 429,
+    "character": "是",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 3
+  },
+  {
+    "idx": 430,
+    "character": "畈",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 431,
+    "character": "说",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 22
+  },
+  {
+    "idx": 432,
+    "character": "畋",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 433,
+    "character": "要",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 32
+  },
+  {
+    "idx": 434,
+    "character": "畎",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 435,
+    "character": "看",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 82
+  },
+  {
+    "idx": 436,
+    "character": "畏",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 437,
+    "character": "种",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 85
+  },
+  {
+    "idx": 438,
+    "character": "畐",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 439,
+    "character": "将",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 86
+  },
+  {
+    "idx": 440,
+    "character": "畑",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 441,
+    "character": "前",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 91
+  },
+  {
+    "idx": 442,
+    "character": "乹",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 443,
+    "character": "面",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 92
+  },
+  {
+    "idx": 444,
+    "character": "疣",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 445,
+    "character": "点",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 105
+  },
+  {
+    "idx": 446,
+    "character": "疤",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 447,
+    "character": "信",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 116
+  },
+  {
+    "idx": 448,
+    "character": "疥",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 449,
+    "character": "美",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 117
+  },
+  {
+    "idx": 450,
+    "character": "疫",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 451,
+    "character": "给",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 141
+  },
+  {
+    "idx": 452,
+    "character": "疬",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 453,
+    "character": "度",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 145
+  },
+  {
+    "idx": 454,
+    "character": "疭",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 455,
+    "character": "相",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 168
+  },
+  {
+    "idx": 456,
+    "character": "疮",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 457,
+    "character": "思",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 176
+  },
+  {
+    "idx": 458,
+    "character": "癸",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 459,
+    "character": "带",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 183
+  },
+  {
+    "idx": 460,
+    "character": "皅",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 461,
+    "character": "亲",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 184
+  },
+  {
+    "idx": 462,
+    "character": "皈",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 463,
+    "character": "神",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 195
+  },
+  {
+    "idx": 464,
+    "character": "侯",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 465,
+    "character": "选",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 201
+  },
+  {
+    "idx": 466,
+    "character": "盃",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 467,
+    "character": "结",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 204
+  },
+  {
+    "idx": 468,
+    "character": "盅",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 469,
+    "character": "便",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 206
+  },
+  {
+    "idx": 470,
+    "character": "侶",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 471,
+    "character": "总",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 211
+  },
+  {
+    "idx": 472,
+    "character": "侷",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 473,
+    "character": "城",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 212
+  },
+  {
+    "idx": 474,
+    "character": "係",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 475,
+    "character": "战",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 235
+  },
+  {
+    "idx": 476,
+    "character": "俅",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 477,
+    "character": "南",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 238
+  },
+  {
+    "idx": 478,
+    "character": "俉",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 479,
+    "character": "保",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 240
+  },
+  {
+    "idx": 480,
+    "character": "俊",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 481,
+    "character": "济",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 254
+  },
+  {
+    "idx": 482,
+    "character": "俎",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 483,
+    "character": "草",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 284
+  },
+  {
+    "idx": 484,
+    "character": "俏",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 485,
+    "character": "怎",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 293
+  },
+  {
+    "idx": 486,
+    "character": "俐",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 487,
+    "character": "孩",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 297
+  },
+  {
+    "idx": 488,
+    "character": "俑",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 489,
+    "character": "指",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 302
+  },
+  {
+    "idx": 490,
+    "character": "俘",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 491,
+    "character": "除",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 305
+  },
+  {
+    "idx": 492,
+    "character": "俚",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 493,
+    "character": "适",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 309
+  },
+  {
+    "idx": 494,
+    "character": "俛",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 495,
+    "character": "复",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 310
+  },
+  {
+    "idx": 496,
+    "character": "俜",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 497,
+    "character": "响",
+    "strokes": 9,
+    "tier": "common",
+    "seed_rank": 314
+  },
+  {
+    "idx": 498,
+    "character": "俞",
+    "strokes": 9,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 499,
+    "character": "能",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 45
+  },
+  {
+    "idx": 500,
+    "character": "丵",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 501,
+    "character": "家",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 55
+  },
+  {
+    "idx": 502,
+    "character": "畚",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 503,
+    "character": "都",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 68
+  },
+  {
+    "idx": 504,
+    "character": "畛",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 505,
+    "character": "起",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 79
+  },
+  {
+    "idx": 506,
+    "character": "畜",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 507,
+    "character": "高",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 110
+  },
+  {
+    "idx": 508,
+    "character": "畝",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 509,
+    "character": "特",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 135
+  },
+  {
+    "idx": 510,
+    "character": "畟",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 511,
+    "character": "海",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 150
+  },
+  {
+    "idx": 512,
+    "character": "畢",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 513,
+    "character": "通",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 151
+  },
+  {
+    "idx": 514,
+    "character": "乘",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 515,
+    "character": "原",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 154
+  },
+  {
+    "idx": 516,
+    "character": "疰",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 517,
+    "character": "真",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 164
+  },
+  {
+    "idx": 518,
+    "character": "疱",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 519,
+    "character": "候",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 182
+  },
+  {
+    "idx": 520,
+    "character": "疳",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 521,
+    "character": "验",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 186
+  },
+  {
+    "idx": 522,
+    "character": "疴",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 523,
+    "character": "被",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 192
+  },
+  {
+    "idx": 524,
+    "character": "疸",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 525,
+    "character": "部",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 210
+  },
+  {
+    "idx": 526,
+    "character": "疹",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 527,
+    "character": "造",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 242
+  },
+  {
+    "idx": 528,
+    "character": "疽",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 529,
+    "character": "热",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 245
+  },
+  {
+    "idx": 530,
+    "character": "痂",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 531,
+    "character": "速",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 271
+  },
+  {
+    "idx": 532,
+    "character": "亳",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 533,
+    "character": "值",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 272
+  },
+  {
+    "idx": 534,
+    "character": "痃",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 535,
+    "character": "留",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 273
+  },
+  {
+    "idx": 536,
+    "character": "痄",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 537,
+    "character": "谁",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 283
+  },
+  {
+    "idx": 538,
+    "character": "症",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 539,
+    "character": "紧",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 288
+  },
+  {
+    "idx": 540,
+    "character": "痈",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 541,
+    "character": "爱",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 289
+  },
+  {
+    "idx": 542,
+    "character": "痉",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 543,
+    "character": "较",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 320
+  },
+  {
+    "idx": 544,
+    "character": "皋",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 545,
+    "character": "难",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 327
+  },
+  {
+    "idx": 546,
+    "character": "皰",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 547,
+    "character": "容",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 328
+  },
+  {
+    "idx": 548,
+    "character": "盍",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 549,
+    "character": "准",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 341
+  },
+  {
+    "idx": 550,
+    "character": "盎",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 551,
+    "character": "读",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 344
+  },
+  {
+    "idx": 552,
+    "character": "盏",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 553,
+    "character": "称",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 345
+  },
+  {
+    "idx": 554,
+    "character": "监",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 555,
+    "character": "般",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 380
+  },
+  {
+    "idx": 556,
+    "character": "俯",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 557,
+    "character": "圆",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 381
+  },
+  {
+    "idx": 558,
+    "character": "俳",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 559,
+    "character": "拿",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 392
+  },
+  {
+    "idx": 560,
+    "character": "俺",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 561,
+    "character": "晓",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 399
+  },
+  {
+    "idx": 562,
+    "character": "俾",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 563,
+    "character": "鸭",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 449
+  },
+  {
+    "idx": 564,
+    "character": "倀",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 565,
+    "character": "桃",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 456
+  },
+  {
+    "idx": 566,
+    "character": "眔",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 567,
+    "character": "桌",
+    "strokes": 10,
+    "tier": "common",
+    "seed_rank": 469
+  },
+  {
+    "idx": 568,
+    "character": "倆",
+    "strokes": 10,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 569,
+    "character": "得",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 36
+  },
+  {
+    "idx": 570,
+    "character": "畦",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 571,
+    "character": "着",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 47
+  },
+  {
+    "idx": 572,
+    "character": "畧",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 573,
+    "character": "理",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 104
+  },
+  {
+    "idx": 574,
+    "character": "異",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 575,
+    "character": "第",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 120
+  },
+  {
+    "idx": 576,
+    "character": "乾",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 577,
+    "character": "常",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 148
+  },
+  {
+    "idx": 578,
+    "character": "乿",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 579,
+    "character": "教",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 152
+  },
+  {
+    "idx": 580,
+    "character": "疵",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 581,
+    "character": "望",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 170
+  },
+  {
+    "idx": 582,
+    "character": "痊",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 583,
+    "character": "做",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 189
+  },
+  {
+    "idx": 584,
+    "character": "痍",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 585,
+    "character": "据",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 237
+  },
+  {
+    "idx": 586,
+    "character": "痒",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 587,
+    "character": "领",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 246
+  },
+  {
+    "idx": 588,
+    "character": "痔",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 589,
+    "character": "清",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 267
+  },
+  {
+    "idx": 590,
+    "character": "鳥",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 591,
+    "character": "脚",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 287
+  },
+  {
+    "idx": 592,
+    "character": "痖",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 593,
+    "character": "惊",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 296
+  },
+  {
+    "idx": 594,
+    "character": "皎",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 595,
+    "character": "象",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 298
+  },
+  {
+    "idx": 596,
+    "character": "皑",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 597,
+    "character": "族",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 307
+  },
+  {
+    "idx": 598,
+    "character": "皲",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 599,
+    "character": "够",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 315
+  },
+  {
+    "idx": 600,
+    "character": "盔",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 601,
+    "character": "脱",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 332
+  },
+  {
+    "idx": 602,
+    "character": "盛",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 603,
+    "character": "深",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 348
+  },
+  {
+    "idx": 604,
+    "character": "眥",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 605,
+    "character": "黄",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 351
+  },
+  {
+    "idx": 606,
+    "character": "眦",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 607,
+    "character": "绿",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 353
+  },
+  {
+    "idx": 608,
+    "character": "鸷",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 609,
+    "character": "章",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 376
+  },
+  {
+    "idx": 610,
+    "character": "鸸",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 611,
+    "character": "寄",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 394
+  },
+  {
+    "idx": 612,
+    "character": "鸹",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 613,
+    "character": "密",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 407
+  },
+  {
+    "idx": 614,
+    "character": "鸺",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 615,
+    "character": "假",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 415
+  },
+  {
+    "idx": 616,
+    "character": "鸻",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 617,
+    "character": "停",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 423
+  },
+  {
+    "idx": 618,
+    "character": "眭",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 619,
+    "character": "眼",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 431
+  },
+  {
+    "idx": 620,
+    "character": "鸾",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 621,
+    "character": "菜",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 446
+  },
+  {
+    "idx": 622,
+    "character": "眯",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 623,
+    "character": "猪",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 453
+  },
+  {
+    "idx": 624,
+    "character": "鸿",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 625,
+    "character": "梨",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 457
+  },
+  {
+    "idx": 626,
+    "character": "眳",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 627,
+    "character": "骑",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 459
+  },
+  {
+    "idx": 628,
+    "character": "眵",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 629,
+    "character": "情",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 488
+  },
+  {
+    "idx": 630,
+    "character": "眶",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 631,
+    "character": "排",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 495
+  },
+  {
+    "idx": 632,
+    "character": "眷",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 633,
+    "character": "接",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 519
+  },
+  {
+    "idx": 634,
+    "character": "眸",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 635,
+    "character": "随",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 522
+  },
+  {
+    "idx": 636,
+    "character": "眺",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 637,
+    "character": "商",
+    "strokes": 11,
+    "tier": "common",
+    "seed_rank": 532
+  },
+  {
+    "idx": 638,
+    "character": "眽",
+    "strokes": 11,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 639,
+    "character": "道",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 29
+  },
+  {
+    "idx": 640,
+    "character": "番",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 641,
+    "character": "就",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 34
+  },
+  {
+    "idx": 642,
+    "character": "畫",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 643,
+    "character": "然",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 61
+  },
+  {
+    "idx": 644,
+    "character": "畬",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 645,
+    "character": "提",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 157
+  },
+  {
+    "idx": 646,
+    "character": "鱿",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 647,
+    "character": "量",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 175
+  },
+  {
+    "idx": 648,
+    "character": "鲁",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 649,
+    "character": "程",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 222
+  },
+  {
+    "idx": 650,
+    "character": "畲",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 651,
+    "character": "联",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 259
+  },
+  {
+    "idx": 652,
+    "character": "鲂",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 653,
+    "character": "跑",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 282
+  },
+  {
+    "idx": 654,
+    "character": "鲃",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 655,
+    "character": "越",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 285
+  },
+  {
+    "idx": 656,
+    "character": "畴",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 657,
+    "character": "等",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 290
+  },
+  {
+    "idx": 658,
+    "character": "疏",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 659,
+    "character": "温",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 331
+  },
+  {
+    "idx": 660,
+    "character": "亵",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 661,
+    "character": "紫",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 354
+  },
+  {
+    "idx": 662,
+    "character": "痘",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 663,
+    "character": "黑",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 355
+  },
+  {
+    "idx": 664,
+    "character": "痙",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 665,
+    "character": "期",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 370
+  },
+  {
+    "idx": 666,
+    "character": "痞",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 667,
+    "character": "答",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 386
+  },
+  {
+    "idx": 668,
+    "character": "痢",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 669,
+    "character": "游",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 390
+  },
+  {
+    "idx": 670,
+    "character": "痣",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 671,
+    "character": "喊",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 397
+  },
+  {
+    "idx": 672,
+    "character": "痤",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 673,
+    "character": "喜",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 401
+  },
+  {
+    "idx": 674,
+    "character": "痦",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 675,
+    "character": "裤",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 441
+  },
+  {
+    "idx": 676,
+    "character": "痧",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 677,
+    "character": "帽",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 443
+  },
+  {
+    "idx": 678,
+    "character": "痨",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 679,
+    "character": "粥",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 445
+  },
+  {
+    "idx": 680,
+    "character": "痪",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 681,
+    "character": "窗",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 465
+  },
+  {
+    "idx": 682,
+    "character": "痫",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 683,
+    "character": "椅",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 468
+  },
+  {
+    "idx": 684,
+    "character": "痾",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 685,
+    "character": "确",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 481
+  },
+  {
+    "idx": 686,
+    "character": "發",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 687,
+    "character": "谢",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 505
+  },
+  {
+    "idx": 688,
+    "character": "皒",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 689,
+    "character": "普",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 561
+  },
+  {
+    "idx": 690,
+    "character": "皓",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 691,
+    "character": "遍",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 562
+  },
+  {
+    "idx": 692,
+    "character": "皕",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 693,
+    "character": "遇",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 573
+  },
+  {
+    "idx": 694,
+    "character": "皖",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 695,
+    "character": "集",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 596
+  },
+  {
+    "idx": 696,
+    "character": "皴",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 697,
+    "character": "辈",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 627
+  },
+  {
+    "idx": 698,
+    "character": "盜",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 699,
+    "character": "编",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 632
+  },
+  {
+    "idx": 700,
+    "character": "鹁",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 701,
+    "character": "曾",
+    "strokes": 12,
+    "tier": "common",
+    "seed_rank": 643
+  },
+  {
+    "idx": 702,
+    "character": "鹂",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 703,
+    "character": "鹃",
+    "strokes": 12,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 704,
+    "character": "想",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 101
+  },
+  {
+    "idx": 705,
+    "character": "鲅",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 706,
+    "character": "解",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 162
+  },
+  {
+    "idx": 707,
+    "character": "當",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 708,
+    "character": "数",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 191
+  },
+  {
+    "idx": 709,
+    "character": "鲆",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 710,
+    "character": "新",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 218
+  },
+  {
+    "idx": 711,
+    "character": "鲇",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 712,
+    "character": "蓝",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 352
+  },
+  {
+    "idx": 713,
+    "character": "畸",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 714,
+    "character": "跟",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 378
+  },
+  {
+    "idx": 715,
+    "character": "鲈",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 716,
+    "character": "像",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 379
+  },
+  {
+    "idx": 717,
+    "character": "畹",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 718,
+    "character": "错",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 414
+  },
+  {
+    "idx": 719,
+    "character": "畺",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 720,
+    "character": "楚",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 416
+  },
+  {
+    "idx": 721,
+    "character": "鲋",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 722,
+    "character": "简",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 419
+  },
+  {
+    "idx": 723,
+    "character": "鲍",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 724,
+    "character": "睛",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 432
+  },
+  {
+    "idx": 725,
+    "character": "鲎",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 726,
+    "character": "跳",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 477
+  },
+  {
+    "idx": 727,
+    "character": "鲐",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 728,
+    "character": "输",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 478
+  },
+  {
+    "idx": 729,
+    "character": "亂",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 730,
+    "character": "感",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 504
+  },
+  {
+    "idx": 731,
+    "character": "亶",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 732,
+    "character": "叠",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 563
+  },
+  {
+    "idx": 733,
+    "character": "鳧",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 734,
+    "character": "雾",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 609
+  },
+  {
+    "idx": 735,
+    "character": "鳩",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 736,
+    "character": "碑",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 625
+  },
+  {
+    "idx": 737,
+    "character": "痱",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 738,
+    "character": "触",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 671
+  },
+  {
+    "idx": 739,
+    "character": "痲",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 740,
+    "character": "辞",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 678
+  },
+  {
+    "idx": 741,
+    "character": "痴",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 742,
+    "character": "慈",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 679
+  },
+  {
+    "idx": 743,
+    "character": "痹",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 744,
+    "character": "殿",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 710
+  },
+  {
+    "idx": 745,
+    "character": "痺",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 746,
+    "character": "缝",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 772
+  },
+  {
+    "idx": 747,
+    "character": "痼",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 748,
+    "character": "福",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 779
+  },
+  {
+    "idx": 749,
+    "character": "痿",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 750,
+    "character": "搞",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 797
+  },
+  {
+    "idx": 751,
+    "character": "瘀",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 752,
+    "character": "鼓",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 825
+  },
+  {
+    "idx": 753,
+    "character": "瘁",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 754,
+    "character": "跪",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 846
+  },
+  {
+    "idx": 755,
+    "character": "瘃",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 756,
+    "character": "煌",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 894
+  },
+  {
+    "idx": 757,
+    "character": "瘅",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 758,
+    "character": "魂",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 901
+  },
+  {
+    "idx": 759,
+    "character": "瘐",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 760,
+    "character": "嫁",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 921
+  },
+  {
+    "idx": 761,
+    "character": "皙",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 762,
+    "character": "煎",
+    "strokes": 13,
+    "tier": "common",
+    "seed_rank": 926
+  },
+  {
+    "idx": 763,
+    "character": "盞",
+    "strokes": 13,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 764,
+    "character": "管",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 217
+  },
+  {
+    "idx": 765,
+    "character": "鲑",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 766,
+    "character": "需",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 299
+  },
+  {
+    "idx": 767,
+    "character": "鲒",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 768,
+    "character": "算",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 303
+  },
+  {
+    "idx": 769,
+    "character": "鲔",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 770,
+    "character": "境",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 346
+  },
+  {
+    "idx": 771,
+    "character": "鲕",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 772,
+    "character": "颗",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 384
+  },
+  {
+    "idx": 773,
+    "character": "鲗",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 774,
+    "character": "慢",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 411
+  },
+  {
+    "idx": 775,
+    "character": "鲙",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 776,
+    "character": "模",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 417
+  },
+  {
+    "idx": 777,
+    "character": "鲚",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 778,
+    "character": "鼻",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 433
+  },
+  {
+    "idx": 779,
+    "character": "鲛",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 780,
+    "character": "墙",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 463
+  },
+  {
+    "idx": 781,
+    "character": "鲜",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 782,
+    "character": "疑",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 511
+  },
+  {
+    "idx": 783,
+    "character": "鲞",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 784,
+    "character": "察",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 528
+  },
+  {
+    "idx": 785,
+    "character": "鲟",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 786,
+    "character": "缩",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 547
+  },
+  {
+    "idx": 787,
+    "character": "疐",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 788,
+    "character": "榜",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 629
+  },
+  {
+    "idx": 789,
+    "character": "鳳",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 790,
+    "character": "磁",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 677
+  },
+  {
+    "idx": 791,
+    "character": "鳴",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 792,
+    "character": "端",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 726
+  },
+  {
+    "idx": 793,
+    "character": "鳶",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 794,
+    "character": "锻",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 730
+  },
+  {
+    "idx": 795,
+    "character": "瘊",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 796,
+    "character": "寡",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 831
+  },
+  {
+    "idx": 797,
+    "character": "瘋",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 798,
+    "character": "裹",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 850
+  },
+  {
+    "idx": 799,
+    "character": "瘌",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 800,
+    "character": "豪",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 856
+  },
+  {
+    "idx": 801,
+    "character": "瘓",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 802,
+    "character": "褐",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 866
+  },
+  {
+    "idx": 803,
+    "character": "瘕",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 804,
+    "character": "截",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 956
+  },
+  {
+    "idx": 805,
+    "character": "瘗",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 806,
+    "character": "竭",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 957
+  },
+  {
+    "idx": 807,
+    "character": "瘘",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 808,
+    "character": "精",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 974
+  },
+  {
+    "idx": 809,
+    "character": "瘙",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 810,
+    "character": "静",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 980
+  },
+  {
+    "idx": 811,
+    "character": "瘟",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 812,
+    "character": "蜡",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 1044
+  },
+  {
+    "idx": 813,
+    "character": "瘥",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 814,
+    "character": "辣",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 1045
+  },
+  {
+    "idx": 815,
+    "character": "瘦",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 816,
+    "character": "璃",
+    "strokes": 14,
+    "tier": "common",
+    "seed_rank": 1067
+  },
+  {
+    "idx": 817,
+    "character": "瘧",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 818,
+    "character": "瘩",
+    "strokes": 14,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 819,
+    "character": "题",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 223
+  },
+  {
+    "idx": 820,
+    "character": "畾",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 821,
+    "character": "增",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 252
+  },
+  {
+    "idx": 822,
+    "character": "畿",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 823,
+    "character": "影",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 313
+  },
+  {
+    "idx": 824,
+    "character": "鲠",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 825,
+    "character": "懂",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 398
+  },
+  {
+    "idx": 826,
+    "character": "鲡",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 827,
+    "character": "糊",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 418
+  },
+  {
+    "idx": 828,
+    "character": "鲢",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 829,
+    "character": "鞋",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 442
+  },
+  {
+    "idx": 830,
+    "character": "鲣",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 831,
+    "character": "潮",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 656
+  },
+  {
+    "idx": 832,
+    "character": "鲥",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 833,
+    "character": "聪",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 681
+  },
+  {
+    "idx": 834,
+    "character": "鲦",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 835,
+    "character": "稻",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 700
+  },
+  {
+    "idx": 836,
+    "character": "鲧",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 837,
+    "character": "德",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 701
+  },
+  {
+    "idx": 838,
+    "character": "鲩",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 839,
+    "character": "墩",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 733
+  },
+  {
+    "idx": 840,
+    "character": "鲫",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 841,
+    "character": "橄",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 794
+  },
+  {
+    "idx": 842,
+    "character": "鴂",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 843,
+    "character": "稿",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 798
+  },
+  {
+    "idx": 844,
+    "character": "鴆",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 845,
+    "character": "鹤",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 867
+  },
+  {
+    "idx": 846,
+    "character": "鴇",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 847,
+    "character": "横",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 870
+  },
+  {
+    "idx": 848,
+    "character": "鴈",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 849,
+    "character": "蝴",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 880
+  },
+  {
+    "idx": 850,
+    "character": "鴉",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 851,
+    "character": "箭",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 934
+  },
+  {
+    "idx": 852,
+    "character": "鴔",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 853,
+    "character": "僵",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 937
+  },
+  {
+    "idx": 854,
+    "character": "瘛",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 855,
+    "character": "蕉",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 944
+  },
+  {
+    "idx": 856,
+    "character": "瘜",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 857,
+    "character": "靠",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 1012
+  },
+  {
+    "idx": 858,
+    "character": "瘠",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 859,
+    "character": "磊",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 1061
+  },
+  {
+    "idx": 860,
+    "character": "瘡",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 861,
+    "character": "鲤",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 1070
+  },
+  {
+    "idx": 862,
+    "character": "瘢",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 863,
+    "character": "凛",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 1096
+  },
+  {
+    "idx": 864,
+    "character": "瘤",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 865,
+    "character": "履",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 1122
+  },
+  {
+    "idx": 866,
+    "character": "瘪",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 867,
+    "character": "瞒",
+    "strokes": 15,
+    "tier": "common",
+    "seed_rank": 1143
+  },
+  {
+    "idx": 868,
+    "character": "瘼",
+    "strokes": 15,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 869,
+    "character": "器",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 249
+  },
+  {
+    "idx": 870,
+    "character": "鲭",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 871,
+    "character": "整",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 311
+  },
+  {
+    "idx": 872,
+    "character": "鲮",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 873,
+    "character": "嘴",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 434
+  },
+  {
+    "idx": 874,
+    "character": "鲯",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 875,
+    "character": "橙",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 458
+  },
+  {
+    "idx": 876,
+    "character": "鲰",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 877,
+    "character": "壁",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 464
+  },
+  {
+    "idx": 878,
+    "character": "鲱",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 879,
+    "character": "激",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 506
+  },
+  {
+    "idx": 880,
+    "character": "鲲",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 881,
+    "character": "赞",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 513
+  },
+  {
+    "idx": 882,
+    "character": "鲳",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 883,
+    "character": "避",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 631
+  },
+  {
+    "idx": 884,
+    "character": "鲴",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 885,
+    "character": "辨",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 635
+  },
+  {
+    "idx": 886,
+    "character": "鲵",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 887,
+    "character": "辩",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 636
+  },
+  {
+    "idx": 888,
+    "character": "鲶",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 889,
+    "character": "雕",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 714
+  },
+  {
+    "idx": 890,
+    "character": "鲷",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 891,
+    "character": "糕",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 796
+  },
+  {
+    "idx": 892,
+    "character": "鲸",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 893,
+    "character": "衡",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 871
+  },
+  {
+    "idx": 894,
+    "character": "鲺",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 895,
+    "character": "缴",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 947
+  },
+  {
+    "idx": 896,
+    "character": "鲻",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 897,
+    "character": "镜",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 981
+  },
+  {
+    "idx": 898,
+    "character": "鴒",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 899,
+    "character": "橘",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 989
+  },
+  {
+    "idx": 900,
+    "character": "鴕",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 901,
+    "character": "篮",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 1047
+  },
+  {
+    "idx": 902,
+    "character": "鴛",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 903,
+    "character": "懒",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 1050
+  },
+  {
+    "idx": 904,
+    "character": "鴞",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 905,
+    "character": "擂",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 1060
+  },
+  {
+    "idx": 906,
+    "character": "鴟",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 907,
+    "character": "磨",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 1185
+  },
+  {
+    "idx": 908,
+    "character": "鴣",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 909,
+    "character": "凝",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 1220
+  },
+  {
+    "idx": 910,
+    "character": "鴦",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 911,
+    "character": "瞥",
+    "strokes": 16,
+    "tier": "common",
+    "seed_rank": 1263
+  },
+  {
+    "idx": 912,
+    "character": "鴨",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 913,
+    "character": "瘭",
+    "strokes": 16,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 914,
+    "character": "霜",
+    "strokes": 17,
+    "tier": "common",
+    "seed_rank": 612
+  },
+  {
+    "idx": 915,
+    "character": "疃",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 916,
+    "character": "鳄",
+    "strokes": 17,
+    "tier": "common",
+    "seed_rank": 740
+  },
+  {
+    "idx": 917,
+    "character": "鲼",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 918,
+    "character": "繁",
+    "strokes": 17,
+    "tier": "common",
+    "seed_rank": 747
+  },
+  {
+    "idx": 919,
+    "character": "鲽",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 920,
+    "character": "鞠",
+    "strokes": 17,
+    "tier": "common",
+    "seed_rank": 985
+  },
+  {
+    "idx": 921,
+    "character": "鳀",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 922,
+    "character": "爵",
+    "strokes": 17,
+    "tier": "common",
+    "seed_rank": 1000
+  },
+  {
+    "idx": 923,
+    "character": "鳃",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 924,
+    "character": "瞧",
+    "strokes": 17,
+    "tier": "common",
+    "seed_rank": 1320
+  },
+  {
+    "idx": 925,
+    "character": "鳅",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 926,
+    "character": "穗",
+    "strokes": 17,
+    "tier": "common",
+    "seed_rank": 1472
+  },
+  {
+    "idx": 927,
+    "character": "鳆",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 928,
+    "character": "臀",
+    "strokes": 17,
+    "tier": "common",
+    "seed_rank": 1539
+  },
+  {
+    "idx": 929,
+    "character": "鳇",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 930,
+    "character": "霞",
+    "strokes": 17,
+    "tier": "common",
+    "seed_rank": 1606
+  },
+  {
+    "idx": 931,
+    "character": "鳊",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 932,
+    "character": "翼",
+    "strokes": 17,
+    "tier": "common",
+    "seed_rank": 1730
+  },
+  {
+    "idx": 933,
+    "character": "鳋",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 934,
+    "character": "赢",
+    "strokes": 17,
+    "tier": "common",
+    "seed_rank": 1743
+  },
+  {
+    "idx": 935,
+    "character": "鴯",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 936,
+    "character": "藏",
+    "strokes": 17,
+    "tier": "common",
+    "seed_rank": 1809
+  },
+  {
+    "idx": 937,
+    "character": "鴰",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 938,
+    "character": "糟",
+    "strokes": 17,
+    "tier": "common",
+    "seed_rank": 1811
+  },
+  {
+    "idx": 939,
+    "character": "鴴",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 940,
+    "character": "骤",
+    "strokes": 17,
+    "tier": "common",
+    "seed_rank": 1892
+  },
+  {
+    "idx": 941,
+    "character": "鴻",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 942,
+    "character": "鴿",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 943,
+    "character": "鵂",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 944,
+    "character": "療",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 945,
+    "character": "癆",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 946,
+    "character": "癇",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 947,
+    "character": "癉",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 948,
+    "character": "癌",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 949,
+    "character": "癍",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 950,
+    "character": "皤",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 951,
+    "character": "盪",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 952,
+    "character": "鹩",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 953,
+    "character": "鹪",
+    "strokes": 17,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 954,
+    "character": "鹰",
+    "strokes": 18,
+    "tier": "common",
+    "seed_rank": 1738
+  },
+  {
+    "idx": 955,
+    "character": "鳌",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 956,
+    "character": "鬃",
+    "strokes": 18,
+    "tier": "common",
+    "seed_rank": 1922
+  },
+  {
+    "idx": 957,
+    "character": "鳍",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 958,
+    "character": "鳎",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 959,
+    "character": "鳏",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 960,
+    "character": "鳐",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 961,
+    "character": "鳑",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 962,
+    "character": "鵑",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 963,
+    "character": "鵒",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 964,
+    "character": "鵓",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 965,
+    "character": "鵜",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 966,
+    "character": "鵝",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 967,
+    "character": "鵠",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 968,
+    "character": "癒",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 969,
+    "character": "癔",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 970,
+    "character": "癖",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 971,
+    "character": "癘",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 972,
+    "character": "癜",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 973,
+    "character": "癞",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 974,
+    "character": "皦",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 975,
+    "character": "鹭",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 976,
+    "character": "鹮",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 977,
+    "character": "鹱",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 978,
+    "character": "瞻",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 979,
+    "character": "瞼",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 980,
+    "character": "瞽",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 981,
+    "character": "瞿",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 982,
+    "character": "黟",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 983,
+    "character": "黠",
+    "strokes": 18,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 984,
+    "character": "蹲",
+    "strokes": 19,
+    "tier": "common",
+    "seed_rank": 735
+  },
+  {
+    "idx": 985,
+    "character": "疆",
+    "strokes": 19,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 986,
+    "character": "警",
+    "strokes": 19,
+    "tier": "common",
+    "seed_rank": 977
+  },
+  {
+    "idx": 987,
+    "character": "疇",
+    "strokes": 19,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 988,
+    "character": "攀",
+    "strokes": 19,
+    "tier": "common",
+    "seed_rank": 1239
+  },
+  {
+    "idx": 989,
+    "character": "鳓",
+    "strokes": 19,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 990,
+    "character": "攒",
+    "strokes": 19,
+    "tier": "common",
+    "seed_rank": 1806
+  },
+  {
+    "idx": 991,
+    "character": "鳔",
+    "strokes": 19,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 992,
+    "character": "鳕",
+    "strokes": 19,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 993,
+    "character": "鳖",
+    "strokes": 19,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 994,
+    "character": "鳗",
+    "strokes": 19,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 995,
+    "character": "鳘",
+    "strokes": 19,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 996,
+    "character": "鳙",
+    "strokes": 19,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 997,
+    "character": "鵡",
+    "strokes": 19,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 998,
+    "character": "鵪",
+    "strokes": 19,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 999,
+    "character": "鵬",
+    "strokes": 19,
+    "tier": "rare",
+    "seed_rank": null
+  },
+  {
+    "idx": 1000,
+    "character": "癟",
+    "strokes": 19,
+    "tier": "rare",
+    "seed_rank": null
+  }
+]

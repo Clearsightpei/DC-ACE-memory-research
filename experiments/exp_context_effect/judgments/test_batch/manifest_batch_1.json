@@ -1,0 +1,81 @@
+{
+  "batch_id": "test",
+  "shuffle_seed": 42,
+  "items": [
+    {
+      "id": "test_stroke_shu",
+      "phase": "stroke",
+      "target_label": "竖 (shù)",
+      "target_description": "垂直笔画，从上到下。一条从上向下的直线。",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/judgments/test_batch/fake_attempts/stroke_shu/attempt_G1.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/judgments/test_batch/fake_attempts/stroke_shu/attempt_G2.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/judgments/test_batch/fake_attempts/stroke_shu/attempt_G3.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/judgments/test_batch/fake_attempts/stroke_shu/attempt_G4.png"
+        }
+      ]
+    },
+    {
+      "id": "test_radical_ren",
+      "phase": "radical",
+      "target_label": "亻 (人字旁, rén-zì-páng)",
+      "target_description": "单人旁，由一撇一竖组成。左边一撇，右边一竖，撇的尾部与竖的起始处相接。",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/judgments/test_batch/fake_attempts/radical_ren/attempt_G1.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/judgments/test_batch/fake_attempts/radical_ren/attempt_G2.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/judgments/test_batch/fake_attempts/radical_ren/attempt_G3.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/judgments/test_batch/fake_attempts/radical_ren/attempt_G4.png"
+        }
+      ]
+    },
+    {
+      "id": "test_character_yi",
+      "phase": "character",
+      "target_label": "一 (yī, 'one')",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/judgments/test_batch/gt/character_yi.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/judgments/test_batch/fake_attempts/character_yi/attempt_G1.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/judgments/test_batch/fake_attempts/character_yi/attempt_G2.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/judgments/test_batch/fake_attempts/character_yi/attempt_G3.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/judgments/test_batch/fake_attempts/character_yi/attempt_G4.png"
+        }
+      ]
+    }
+  ]
+}
