@@ -1,0 +1,71 @@
+{"item_id":"p2_radical_001_丨","attempt_n":0,"curator_verdict":"PASS","reason":"Uniform vertical, correct proportion, verdict clean."}
+{"item_id":"p2_radical_002_亅","attempt_n":0,"curator_verdict":"PASS","reason":"竖 + up-left hook flick present; hook length reads clearly."}
+{"item_id":"p2_radical_003_丿","attempt_n":0,"curator_verdict":"PASS","reason":"Bowed 撇 with thick→thin taper and correct upper-right → lower-left throw."}
+{"item_id":"p2_radical_004_乛","attempt_n":0,"curator_verdict":"PASS","reason":"横 + downward hook tail visible; overall silhouette matches GT."}
+{"item_id":"p2_radical_005_一","attempt_n":0,"curator_verdict":"PASS","reason":"Uniform 横 with 顿 presses at both ends; slight tilt within tolerance."}
+{"item_id":"p2_radical_006_乙","attempt_n":0,"curator_verdict":"PASS","reason":"4-beat Z with hook flick reads as 乙 unambiguously."}
+{"item_id":"p2_radical_007_乚","attempt_n":0,"curator_verdict":"PASS","reason":"竖 → smooth arc → 横 → hook; tangent-continuous arc primitive worked."}
+{"item_id":"p2_radical_008_丶","attempt_n":0,"curator_verdict":"PASS","reason":"Teardrop dot with thin-to-thick taper; correct size and placement."}
+{"item_id":"p2_radical_009_八","attempt_n":0,"curator_verdict":"PASS","reason":"Left 撇 + right 捺 with clear V-splay from a common top; both taper correctly."}
+{"item_id":"p2_radical_010_勹","attempt_n":0,"curator_verdict":"PASS","reason":"撇 outer + 横折钩 inner with clean joint at top-left and up-left hook."}
+{"item_id":"p2_radical_011_匕","attempt_n":0,"curator_verdict":"KEEP-GOING","reason":"Top stroke rendered as a near-horizontal bar rather than top-right-to-bottom-left 撇; reads as 七 not 匕. Hook also drawn near-vertical instead of angled up-left."}
+{"item_id":"p2_radical_012_冫","attempt_n":0,"curator_verdict":"PASS","reason":"Two dots stacked left side, upper is 点 and lower is 提; correct 冫 signature."}
+{"item_id":"p2_radical_013_卜","attempt_n":0,"curator_verdict":"PASS","reason":"Straight 竖 + short 点 attached mid-right; reads clearly."}
+{"item_id":"p2_radical_014_厂","attempt_n":0,"curator_verdict":"KEEP-GOING","reason":"横 and 撇 do not share a joint — the 撇 starts inset RIGHT of the 横's left endpoint, leaving a broken corner. Reads as two disconnected strokes."}
+{"item_id":"p2_radical_015_刀","attempt_n":0,"curator_verdict":"KEEP-GOING","reason":"Extra ink artifact from hook geometry inside the 横折钩, and the 撇 does not cross through the top-横 as canonical 刀 requires."}
+{"item_id":"p2_radical_016_刂","attempt_n":0,"curator_verdict":"KEEP-GOING","reason":"Right stroke lacks a clear up-left hook flick — reads as two verticals rather than 竖 + 竖钩. Marginal by silhouette."}
+{"item_id":"p2_radical_017_儿","attempt_n":0,"curator_verdict":"PASS","reason":"撇 (left, taper) + 竖弯钩 (right, curve+hook) both present and clearly distinguishable."}
+{"item_id":"p2_radical_018_二","attempt_n":0,"curator_verdict":"PASS","reason":"Two stacked 横 with upper shorter than lower; correct 二 proportion."}
+{"item_id":"p2_radical_019_匚","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Clean bracket: 横+竖+横 with shared corners; three-stroke silhouette clear."}
+{"item_id":"p2_radical_020_阝","attempt_n":0,"batch":"B1","curator_verdict":"KEEP-GOING","reason":"Ear-lobe rendered as two disconnected humps (script-3), 竖 starts below the ear rather than continuing from the hook base."}
+{"item_id":"p2_radical_021_丷","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Two 点 with correct opposite slants; clean teardrops."}
+{"item_id":"p2_radical_022_几","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"撇 + 横折弯钩 both present; small stray dot below but silhouette dominates."}
+{"item_id":"p2_radical_023_卩","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Right D-loop + long left 竖; classic 卩 silhouette."}
+{"item_id":"p2_radical_024_冂","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Two verticals + top 横 with terminal hook on right — canonical 冂."}
+{"item_id":"p2_radical_025_力","attempt_n":0,"batch":"B1","curator_verdict":"KEEP-GOING","reason":"撇 rendered as tiny dot near bottom; reads as 几 with stray. Missing full crossing 撇."}
+{"item_id":"p2_radical_026_冖","attempt_n":0,"batch":"B1","curator_verdict":"KEEP-GOING","reason":"Roof reads as horizontal with tiny arrow tail; missing the small left-down flick that gives 冖 its cover-signature."}
+{"item_id":"p2_radical_027_凵","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Clean U-shape; three-stroke bracket."}
+{"item_id":"p2_radical_028_人","attempt_n":0,"batch":"B1","curator_verdict":"KEEP-GOING","reason":"Both legs ruler-straight tapers meeting at apex; right leg has no 捺 press-foot. Reads ambiguously with 入."}
+{"item_id":"p2_radical_029_亻","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"撇 + 竖 with 撇 crossing near top of 竖; person-radical silhouette."}
+{"item_id":"p2_radical_030_入","attempt_n":0,"batch":"B1","curator_verdict":"KEEP-GOING","reason":"Both strokes meet at single apex — 人 topology. Missing the 捺-overhang that distinguishes 入 from 人."}
+{"item_id":"p2_radical_031_十","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Clean cross; equal-length 横 and 竖."}
+{"item_id":"p2_radical_032_厶","attempt_n":0,"batch":"B1","curator_verdict":"KEEP-GOING","reason":"Incomplete triangle with stray tail; closing 点 fused into 撇折's tail rather than drawn separately."}
+{"item_id":"p2_radical_033_亠","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Top dot + 横 below; correct 亠 lid-shape."}
+{"item_id":"p2_radical_034_匸","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Clean C-bracket, top open."}
+{"item_id":"p2_radical_035_讠","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Dot + 横折提 combo visible; speech-radical silhouette."}
+{"item_id":"p2_radical_036_廴","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Z-turn with long swooping bottom; classic 廴 stride."}
+{"item_id":"p2_radical_037_又","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"横+撇+捺 with crossing near center; reads clearly as 又."}
+{"item_id":"p2_radical_038_㔾","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Vertical + top D-shape (dropped-knot form)."}
+{"item_id":"p2_radical_039_艹","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Two verticals crossed by a horizontal; grass-radical silhouette."}
+{"item_id":"p2_radical_040_屮","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"十 with two upright side-notches; sprout-shape reads correctly."}
+{"item_id":"p2_radical_041_彳","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"撇 + short 撇 + 竖 stacked on left; step-radical."}
+{"item_id":"p2_radical_042_巛","attempt_n":0,"batch":"B1","curator_verdict":"KEEP-GOING","reason":"Three parallel curved 撇; missing the ㄑ zig-zag wave that gives 巛 its river signature."}
+{"item_id":"p2_radical_043_川","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"撇 + 竖 + 竖 with proper spacing; river-radical."}
+{"item_id":"p2_radical_044_辶","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Top 点 + Z-turn + long bottom swoop; walk-radical complete."}
+{"item_id":"p2_radical_045_寸","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"十 with 丶 in lower-left slot; correct 寸 composition."}
+{"item_id":"p2_radical_046_大","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"横 + 撇 + 捺 with both legs having correct taper/press."}
+{"item_id":"p2_radical_047_飞","attempt_n":0,"batch":"B1","curator_verdict":"KEEP-GOING","reason":"Terminal hook flicks DOWN instead of up-and-left; missing the small internal 点."}
+{"item_id":"p2_radical_048_干","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Two horizontals + vertical; top slightly shorter than bottom as canonical 干 requires."}
+{"item_id":"p2_radical_049_工","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Symmetric H-lying-down; both horizontals well-matched."}
+{"item_id":"p2_radical_050_弓","attempt_n":0,"batch":"B1","curator_verdict":"KEEP-GOING","reason":"Three disconnected horizontals + bottom hook; missing the 折-shoulder connections on the right edge."}
+{"item_id":"p2_radical_051_廾","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Two verticals crossed by horizontal, left leg tapered; classic 廾."}
+{"item_id":"p2_radical_052_广","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Small dot + 厂 shape; shelter-radical silhouette."}
+{"item_id":"p2_radical_053_己","attempt_n":0,"batch":"B1","curator_verdict":"KEEP-GOING","reason":"Boxy 巳-shape; bottom lacks the sweeping 竖弯钩 that opens the base rightward."}
+{"item_id":"p2_radical_054_彐","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Mirror-E shape open to the left; three horizontals + right-side closure."}
+{"item_id":"p2_radical_055_彑","attempt_n":0,"batch":"B1","curator_verdict":"KEEP-GOING","reason":"工-like shape on 一; missing the small downward-chevron hat above the 彐 body."}
+{"item_id":"p2_radical_056_巾","attempt_n":0,"batch":"B1","curator_verdict":"KEEP-GOING","reason":"Center 竖 too short below the 冂 base; silhouette reads sparse rather than as a hanging cloth."}
+{"item_id":"p2_radical_057_口","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Clean rectangle; four-sided box."}
+{"item_id":"p2_radical_058_马","attempt_n":0,"batch":"B1","curator_verdict":"KEEP-GOING","reason":"Bottom 横 disconnected from body; zig-zag body reads as slash rather than 折-body."}
+{"item_id":"p2_radical_059_门","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Dot + 竖 + 横折钩 all present; door silhouette clear despite small top gap."}
+{"item_id":"p2_radical_060_宀","attempt_n":0,"batch":"B1","curator_verdict":"KEEP-GOING","reason":"Roof + dot present but the terminal flicks the WRONG direction (rightward instead of down-left)."}
+{"item_id":"p2_radical_061_女","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Three-stroke crossed structure with 横 running through; reads as 女."}
+{"item_id":"p2_radical_062_犭","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"撇 + 弯钩 + 撇 stack; dog-radical silhouette."}
+{"item_id":"p2_radical_063_山","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Three verticals on horizontal base with middle vertical tallest; mountain-radical."}
+{"item_id":"p2_radical_064_彡","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"Three parallel 撇 with consistent taper; hair-radical."}
+{"item_id":"p2_radical_065_尸","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"厂 + inside 横 + downward tail; corpse-radical silhouette."}
+{"item_id":"p2_radical_066_饣","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"撇 + 横钩 + 竖弯钩 combo; food-radical (simplified) silhouette."}
+{"item_id":"p2_radical_067_士","attempt_n":0,"batch":"B1","curator_verdict":"KEEP-GOING","reason":"Top 横 appears SHORTER than bottom, reading as 土 rather than 士. Length ratio inverted."}
+{"item_id":"p2_radical_068_扌","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"横 + 竖钩 + 提 three-stroke hand-radical; clean."}
+{"item_id":"p2_radical_014_厂","attempt_n":1,"batch":"B1","curator_verdict":"PASS","reason":"Retry: shared top-left corner between 横 and 撇 as fixed; classic 厂 corner silhouette. Graduate."}
+{"item_id":"p2_radical_011_匕","attempt_n":1,"batch":"B1","curator_verdict":"KEEP-GOING","reason":"Retry: 撇 direction now correct (upper-right→lower-left) but the 竖弯钩's terminal hook flick is missing entirely — L-shape ends flat."}
+{"item_id":"p2_radical_015_刀","attempt_n":1,"batch":"B1","curator_verdict":"KEEP-GOING","reason":"Retry: 撇 crosses through top 横 as fixed, but a stray ink artifact remains below the main body — same hook-tail overshoot as first attempt."}

@@ -1,0 +1,506 @@
+{
+  "batch_id": 1,
+  "shuffle_seed": 43,
+  "items": [
+    {
+      "id": "p1_stroke_01_横",
+      "phase": "stroke",
+      "target_label": "横",
+      "target_description": "水平笔画，从左到右",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_01_横/01_横.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_01_横/01_横.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_01_横/01_横.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_01_横/01_横.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_02_竖",
+      "phase": "stroke",
+      "target_label": "竖",
+      "target_description": "垂直笔画，从上到下",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_02_竖/01_竖.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_02_竖/01_竖.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_02_竖/01_竖.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_02_竖/01_竖.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_03_撇",
+      "phase": "stroke",
+      "target_label": "撇",
+      "target_description": "撇画，从右上向左下",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_03_撇/01_撇.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_03_撇/01_撇.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_03_撇/01_撇.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_03_撇/01_撇.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_04_捺",
+      "phase": "stroke",
+      "target_label": "捺",
+      "target_description": "捺画，从左上向右下",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_04_捺/01_捺.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_04_捺/01_捺.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_04_捺/01_捺.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_04_捺/01_捺.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_05_点",
+      "phase": "stroke",
+      "target_label": "点",
+      "target_description": "点画，短小的斜点",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_05_点/01_点.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_05_点/01_点.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_05_点/01_点.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_05_点/01_点.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_06_提",
+      "phase": "stroke",
+      "target_label": "提",
+      "target_description": "提画，从左下向右上",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_06_提/01_提.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_06_提/01_提.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_06_提/01_提.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_06_提/01_提.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_07_弯钩",
+      "phase": "stroke",
+      "target_label": "弯钩",
+      "target_description": "弯钩，弧线加末尾的钩",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_07_弯钩/01_弯钩.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_07_弯钩/01_弯钩.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_07_弯钩/01_弯钩.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_07_弯钩/01_弯钩.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_08_卧钩",
+      "phase": "stroke",
+      "target_label": "卧钩",
+      "target_description": "卧钩，横躺的弯钩",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_08_卧钩/01_卧钩.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_08_卧钩/01_卧钩.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_08_卧钩/01_卧钩.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_08_卧钩/01_卧钩.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_09_横撇",
+      "phase": "stroke",
+      "target_label": "横撇",
+      "target_description": "横然后转向左下",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_09_横撇/01_横撇.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_09_横撇/01_横撇.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_09_横撇/01_横撇.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_09_横撇/01_横撇.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_10_横钩",
+      "phase": "stroke",
+      "target_label": "横钩",
+      "target_description": "横然后末尾勾一下",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_10_横钩/01_横钩.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_10_横钩/01_横钩.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_10_横钩/01_横钩.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_10_横钩/01_横钩.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_11_横折",
+      "phase": "stroke",
+      "target_label": "横折",
+      "target_description": "横然后转90°向下",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_11_横折/01_横折.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_11_横折/01_横折.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_11_横折/01_横折.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_11_横折/01_横折.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_12_竖提",
+      "phase": "stroke",
+      "target_label": "竖提",
+      "target_description": "竖然后向右上提起",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_12_竖提/01_竖提.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_12_竖提/01_竖提.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_12_竖提/01_竖提.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_12_竖提/01_竖提.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_13_竖弯",
+      "phase": "stroke",
+      "target_label": "竖弯",
+      "target_description": "竖然后向右横",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_13_竖弯/01_竖弯.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_13_竖弯/01_竖弯.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_13_竖弯/01_竖弯.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_13_竖弯/01_竖弯.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_14_竖钩",
+      "phase": "stroke",
+      "target_label": "竖钩",
+      "target_description": "竖然后末尾勾一下",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_14_竖钩/01_竖钩.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_14_竖钩/01_竖钩.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_14_竖钩/01_竖钩.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_14_竖钩/01_竖钩.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_15_竖折",
+      "phase": "stroke",
+      "target_label": "竖折",
+      "target_description": "竖然后转向右",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_15_竖折/01_竖折.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_15_竖折/01_竖折.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_15_竖折/01_竖折.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_15_竖折/01_竖折.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_16_斜钩",
+      "phase": "stroke",
+      "target_label": "斜钩",
+      "target_description": "从左上向右下带钩",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_16_斜钩/01_斜钩.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_16_斜钩/01_斜钩.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_16_斜钩/01_斜钩.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_16_斜钩/01_斜钩.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_17_撇点",
+      "phase": "stroke",
+      "target_label": "撇点",
+      "target_description": "撇然后转向右下点",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_17_撇点/01_撇点.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_17_撇点/01_撇点.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_17_撇点/01_撇点.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_17_撇点/01_撇点.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_18_撇折",
+      "phase": "stroke",
+      "target_label": "撇折",
+      "target_description": "撇然后转向右横",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_18_撇折/01_撇折.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_18_撇折/01_撇折.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_18_撇折/01_撇折.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_18_撇折/01_撇折.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_19_横斜钩",
+      "phase": "stroke",
+      "target_label": "横斜钩",
+      "target_description": "横加斜加钩",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_19_横斜钩/01_横斜钩.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_19_横斜钩/01_横斜钩.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_19_横斜钩/01_横斜钩.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_19_横斜钩/01_横斜钩.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_20_橫折提",
+      "phase": "stroke",
+      "target_label": "橫折提",
+      "target_description": "横折加提",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_20_橫折提/01_橫折提.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_20_橫折提/01_橫折提.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_20_橫折提/01_橫折提.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_20_橫折提/01_橫折提.png"
+        }
+      ]
+    }
+  ]
+}

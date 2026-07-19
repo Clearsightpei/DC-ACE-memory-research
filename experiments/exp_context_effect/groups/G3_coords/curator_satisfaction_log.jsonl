@@ -1,0 +1,70 @@
+{"item_id":"p2_radical_001_丨","attempt_n":0,"batch":"bootstrap","curator_verdict":"PASS","reason":"clean vertical stroke, slight taper at top acceptable, correct proportions"}
+{"item_id":"p2_radical_002_亅","attempt_n":0,"batch":"bootstrap","curator_verdict":"PASS","reason":"vertical with small leftward hook at bottom, structure reads correctly"}
+{"item_id":"p2_radical_003_丿","attempt_n":0,"batch":"bootstrap","curator_verdict":"PASS","reason":"leftward diagonal pie with proper taper from thick head to thin tail"}
+{"item_id":"p2_radical_004_乛","attempt_n":0,"batch":"bootstrap","curator_verdict":"KEEP-GOING","reason":"horizontal reads okay but the hook is a small stub/blob rather than a clean downward turn"}
+{"item_id":"p2_radical_005_一","attempt_n":0,"batch":"bootstrap","curator_verdict":"PASS","reason":"clean single horizontal stroke, correct thickness and position"}
+{"item_id":"p2_radical_006_乙","attempt_n":0,"batch":"bootstrap","curator_verdict":"PASS","reason":"cursive Z-like shape with horizontal top, diagonal middle, and hook bottom, all connected"}
+{"item_id":"p2_radical_007_乚","attempt_n":0,"batch":"bootstrap","curator_verdict":"PASS","reason":"vertical bending into horizontal with terminal hook, structure legible"}
+{"item_id":"p2_radical_008_丶","attempt_n":0,"batch":"bootstrap","curator_verdict":"PASS","reason":"tapered dot stroke with proper direction and weight distribution"}
+{"item_id":"p2_radical_009_八","attempt_n":0,"batch":"bootstrap","curator_verdict":"PASS","reason":"two diverging strokes (pie left, na right), correct V-open-at-top shape"}
+{"item_id":"p2_radical_010_勹","attempt_n":0,"batch":"bootstrap","curator_verdict":"KEEP-GOING","reason":"pie stroke crosses through the horizontal-fold-hook instead of meeting it at the corner; components disjoint"}
+{"item_id":"p2_radical_011_匕","attempt_n":0,"batch":"bootstrap","curator_verdict":"KEEP-GOING","reason":"top pie stroke floats disconnected from the bottom shu-wan-gou; two components don't meet"}
+{"item_id":"p2_radical_012_冫","attempt_n":0,"batch":"bootstrap","curator_verdict":"PASS","reason":"two ice-dots stacked diagonally, correct shape and spacing"}
+{"item_id":"p2_radical_013_卜","attempt_n":0,"batch":"bootstrap","curator_verdict":"PASS","reason":"vertical shu on left with dian-dot on right at mid-height, correct structure"}
+{"item_id":"p2_radical_014_厂","attempt_n":0,"batch":"bootstrap","curator_verdict":"KEEP-GOING","reason":"corner is rounded like an L rather than a sharp horizontal-then-pie; the descending stroke curves instead of running straight-diagonal"}
+{"item_id":"p2_radical_015_刀","attempt_n":0,"batch":"bootstrap","curator_verdict":"KEEP-GOING","reason":"pie stroke doesn't meet the horizontal-fold corner cleanly; right vertical-hook looks detached from the top horizontal"}
+{"item_id":"p2_radical_016_刂","attempt_n":0,"batch":"bootstrap","curator_verdict":"PASS","reason":"short vertical on left and taller shu-gou on right, both readable as the 刂 radical"}
+{"item_id":"p2_radical_017_儿","attempt_n":0,"batch":"bootstrap","curator_verdict":"PASS","reason":"left pie and right shu-wan-gou, both strokes clean and correctly positioned"}
+{"item_id":"p2_radical_018_二","attempt_n":0,"batch":"bootstrap","curator_verdict":"PASS","reason":"two horizontal strokes, top shorter than bottom, correct proportions"}
+{"item_id":"p2_radical_019_匚","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"heng top + inlined 竖折 form a clean bracket; corners weld and proportions match GT"}
+{"item_id":"p2_radical_020_阝","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"ear loop reads as an irregular blob rather than the double-bump 3 shape; shu descender ok"}
+{"item_id":"p2_radical_021_丷","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"mirror-dot bezier renders as thin diagonal ticks rather than two solid dots slanting inward"}
+{"item_id":"p2_radical_022_几","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"inlined 撇 + inlined 横折弯钩 both read cleanly; weld at top-center"}
+{"item_id":"p2_radical_023_卩","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"tall shu + compact top-right 横折钩 D-shape; proportions match GT"}
+{"item_id":"p2_radical_024_冂","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"open frame with sharp corners instead of the rounded elbow; heng too flat, right shu too rigid"}
+{"item_id":"p2_radical_025_力","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"横折钩 and 撇 read as disconnected; forced primitive-scaling flattened the hook"}
+{"item_id":"p2_radical_026_冖","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"wide flat 横 + small right-corner hook; roof reads correctly"}
+{"item_id":"p2_radical_027_凵","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"open U-shape with two verticals + bottom horizontal; proportions match GT"}
+{"item_id":"p2_radical_028_人","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"pie+na primitives at 0.9 scale — heads visibly offset from apex, not kissing"}
+{"item_id":"p2_radical_029_亻","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"left pie + right short shu; shu head touches pie shaft midway (correct 亻 form)"}
+{"item_id":"p2_radical_030_入","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"na head at wrong point on pie shaft; primitive geometry can't place na to start mid-pie"}
+{"item_id":"p2_radical_031_十","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"crossed heng+shu at canvas center with correct arm asymmetry (lower longer); TR4 exemplar"}
+{"item_id":"p2_radical_032_厶","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"terminal curl too small to render cleanly; reads as blob"}
+{"item_id":"p2_radical_033_亠","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"dian top + long flat heng below; simple and correct"}
+{"item_id":"p2_radical_034_匸","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"bracket 匸 (similar to 匚 but no left vertical closing); heng + inlined 竖折"}
+{"item_id":"p2_radical_035_讠","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"横折提 corners visibly detached; three segments read as separate strokes not one compound"}
+{"item_id":"p2_radical_036_廴","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"long sweeping 弯钩 tail lost — primitive couldn't produce the sweeping curve"}
+{"item_id":"p2_radical_037_又","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"pie + na-like heng_pie meet at upper apex; both strokes read cleanly"}
+{"item_id":"p2_radical_038_㔾","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"corner too sharp; primitive force-fit lost the rounded elbow of the small hook"}
+{"item_id":"p2_radical_039_艹","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"heng + two short verticals in classic grass-radical arrangement; proportions match"}
+{"item_id":"p2_radical_040_屮","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"two shu calls at incompatible scales (0.95 and 0.32) — arms read as different characters visually"}
+{"item_id":"p2_radical_041_彳","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"stacked pie at wrong slope; primitive's diagonal too steep for compressed-form 彳"}
+{"item_id":"p2_radical_042_巛","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"three wavy verticals rendered as three straight shu; wave shape absent"}
+{"item_id":"p2_radical_043_川","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"inlined 撇 + 2 shu at proper spacing; three verticals read as 川"}
+{"item_id":"p2_radical_044_辶","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"dian + inlined 横折折撇 + inlined 平捺; walking radical is recognizable"}
+{"item_id":"p2_radical_045_寸","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"heng + shu_gou + dian; classic 寸 form with hook flick"}
+{"item_id":"p2_radical_046_大","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"pie/na heads sit too high off the heng; crossing geometry visibly wrong"}
+{"item_id":"p2_radical_047_飞","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"distinctive top hook lost — force-fit heng_gou flattened the curl"}
+{"item_id":"p2_radical_048_干","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"two heng + shu; top heng shorter than bottom, shu centered — correct 干 form"}
+{"item_id":"p2_radical_049_工","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"heng + shu + heng; I-beam shape with matched horizontals"}
+{"item_id":"p2_radical_050_弓","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"bow silhouette absent — force-fit primitives couldn't produce the double-curl outline"}
+{"item_id":"p2_radical_051_廾","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"heng + two verticals splaying outward at bottom; correct 廾 form"}
+{"item_id":"p2_radical_052_广","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"dian + horizontal + descending pie form a clean roof-with-slope"}
+{"item_id":"p2_radical_053_己","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"terminal curl-up absent — force-fit primitives stopped flat instead of curling"}
+{"item_id":"p2_radical_054_彐","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"three inlined tapered horizontals in E-comb form; correct 彐"}
+{"item_id":"p2_radical_055_彑","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"same family as 彐 but arms at wrong proportion; primitive-based approach didn't match GT"}
+{"item_id":"p2_radical_056_巾","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"frame proportions off vs internal shu; three primitives at wrong relative widths"}
+{"item_id":"p2_radical_057_口","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"clean small box with heng_zhe corner + closing bottom heng; proportions match"}
+{"item_id":"p2_radical_058_马","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"box + bottom curl — curl absent because no matching primitive and inline was not attempted"}
+{"item_id":"p2_radical_059_门","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"door-frame hook flattened by compressed heng_zhe_gou; three strokes read as boxed rather than 门"}
+{"item_id":"p2_radical_060_宀","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"dian chimney + heng_gou roof + inlined short left vertical form a recognizable roof radical"}
+{"item_id":"p2_radical_061_女","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"crossing 撇+横 didn't read as 女; heng and pie stacked without correct crossing point"}
+{"item_id":"p2_radical_062_犭","attempt_n":0,"batch":"B1","curator_verdict":"FAIL","reason":"animal-radical curl absent — no matching primitive and inline was not attempted"}
+{"item_id":"p2_radical_063_山","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"middle shu tallest + inlined 竖折 for left + short right shu; mountain shape reads correctly"}
+{"item_id":"p2_radical_064_彡","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"three pie strokes at descending scale; correct 彡 arrangement"}
+{"item_id":"p2_radical_065_尸","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"inlined heng_zhe_gou + heng + pie form the correct 尸 shape"}
+{"item_id":"p2_radical_066_饣","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"pie + 横钩 + shu_ti form the food-side radical; proportions correct"}
+{"item_id":"p2_radical_067_士","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"top heng wider + shu + bottom heng shorter — correct 士 form (opposite of 土)"}
+{"item_id":"p2_radical_068_扌","attempt_n":0,"batch":"B1","curator_verdict":"PASS","reason":"short heng + long shu_gou + rising ti crossing the shaft — correct hand radical"}
+{"item_id":"p2_radical_014_厂","attempt_n":1,"batch":"B1_retry","curator_verdict":"PASS","reason":"retry-1: widened heng + inlined nearly-vertical 丿 with soft tail scoop — 厂 shape now reads correctly, graduated to bank"}
+{"item_id":"p2_radical_015_刀","attempt_n":1,"batch":"B1_retry","curator_verdict":"FAIL","reason":"retry-1: crossing improved but hook reads as slightly detached from shaft (P9 violation)"}

@@ -1,0 +1,722 @@
+{
+  "p1_stroke_01_横__att0": {
+    "verdict": "PASS",
+    "actual_group": "G3",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_01_横",
+    "target_label": "横",
+    "judged_at": "2026-07-12T17:48:20"
+  },
+  "p1_stroke_01_横__att1": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_01_横",
+    "target_label": "横",
+    "judged_at": "2026-07-12T17:48:25"
+  },
+  "p1_stroke_01_横__att2": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_01_横",
+    "target_label": "横",
+    "judged_at": "2026-07-12T17:48:25"
+  },
+  "p1_stroke_01_横__att3": {
+    "verdict": "PASS",
+    "actual_group": "G1",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_01_横",
+    "target_label": "横",
+    "judged_at": "2026-07-12T17:48:26"
+  },
+  "p1_stroke_02_竖__att0": {
+    "verdict": "PASS",
+    "actual_group": "G3",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_02_竖",
+    "target_label": "竖",
+    "judged_at": "2026-07-12T17:48:27"
+  },
+  "p1_stroke_02_竖__att1": {
+    "verdict": "PASS",
+    "actual_group": "G1",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_02_竖",
+    "target_label": "竖",
+    "judged_at": "2026-07-12T17:48:28"
+  },
+  "p1_stroke_02_竖__att2": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_02_竖",
+    "target_label": "竖",
+    "judged_at": "2026-07-12T17:48:29"
+  },
+  "p1_stroke_02_竖__att3": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_02_竖",
+    "target_label": "竖",
+    "judged_at": "2026-07-12T17:48:30"
+  },
+  "p1_stroke_03_撇__att0": {
+    "verdict": "PASS",
+    "actual_group": "G1",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_03_撇",
+    "target_label": "撇",
+    "judged_at": "2026-07-12T17:48:31"
+  },
+  "p1_stroke_03_撇__att1": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_03_撇",
+    "target_label": "撇",
+    "judged_at": "2026-07-12T17:48:31"
+  },
+  "p1_stroke_03_撇__att2": {
+    "verdict": "PASS",
+    "actual_group": "G3",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_03_撇",
+    "target_label": "撇",
+    "judged_at": "2026-07-12T17:48:33"
+  },
+  "p1_stroke_03_撇__att3": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_03_撇",
+    "target_label": "撇",
+    "judged_at": "2026-07-12T17:48:36"
+  },
+  "p1_stroke_04_捺__att0": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_04_捺",
+    "target_label": "捺",
+    "judged_at": "2026-07-12T17:48:36"
+  },
+  "p1_stroke_04_捺__att1": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_04_捺",
+    "target_label": "捺",
+    "judged_at": "2026-07-12T17:48:39"
+  },
+  "p1_stroke_04_捺__att2": {
+    "verdict": "PASS",
+    "actual_group": "G3",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_04_捺",
+    "target_label": "捺",
+    "judged_at": "2026-07-12T17:48:40"
+  },
+  "p1_stroke_04_捺__att3": {
+    "verdict": "PASS",
+    "actual_group": "G1",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_04_捺",
+    "target_label": "捺",
+    "judged_at": "2026-07-12T17:48:41"
+  },
+  "p1_stroke_05_点__att0": {
+    "verdict": "PASS",
+    "actual_group": "G1",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_05_点",
+    "target_label": "点",
+    "judged_at": "2026-07-12T17:48:42"
+  },
+  "p1_stroke_05_点__att1": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_05_点",
+    "target_label": "点",
+    "judged_at": "2026-07-12T17:48:43"
+  },
+  "p1_stroke_05_点__att2": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_05_点",
+    "target_label": "点",
+    "judged_at": "2026-07-12T17:48:43"
+  },
+  "p1_stroke_05_点__att3": {
+    "verdict": "PASS",
+    "actual_group": "G3",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_05_点",
+    "target_label": "点",
+    "judged_at": "2026-07-12T17:48:44"
+  },
+  "p1_stroke_06_提__att0": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_06_提",
+    "target_label": "提",
+    "judged_at": "2026-07-12T17:48:45"
+  },
+  "p1_stroke_06_提__att1": {
+    "verdict": "PASS",
+    "actual_group": "G3",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_06_提",
+    "target_label": "提",
+    "judged_at": "2026-07-12T17:48:45"
+  },
+  "p1_stroke_06_提__att2": {
+    "verdict": "PASS",
+    "actual_group": "G1",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_06_提",
+    "target_label": "提",
+    "judged_at": "2026-07-12T17:48:46"
+  },
+  "p1_stroke_06_提__att3": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_06_提",
+    "target_label": "提",
+    "judged_at": "2026-07-12T17:48:47"
+  },
+  "p1_stroke_07_弯钩__att0": {
+    "verdict": "PASS",
+    "actual_group": "G3",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_07_弯钩",
+    "target_label": "弯钩",
+    "judged_at": "2026-07-12T17:48:52"
+  },
+  "p1_stroke_07_弯钩__att1": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_07_弯钩",
+    "target_label": "弯钩",
+    "judged_at": "2026-07-12T17:48:53"
+  },
+  "p1_stroke_07_弯钩__att2": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_07_弯钩",
+    "target_label": "弯钩",
+    "judged_at": "2026-07-12T17:48:54"
+  },
+  "p1_stroke_07_弯钩__att3": {
+    "verdict": "PASS",
+    "actual_group": "G1",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_07_弯钩",
+    "target_label": "弯钩",
+    "judged_at": "2026-07-12T17:48:55"
+  },
+  "p1_stroke_08_卧钩__att0": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_08_卧钩",
+    "target_label": "卧钩",
+    "judged_at": "2026-07-12T17:49:16"
+  },
+  "p1_stroke_08_卧钩__att1": {
+    "verdict": "PASS",
+    "actual_group": "G3",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_08_卧钩",
+    "target_label": "卧钩",
+    "judged_at": "2026-07-12T17:49:18"
+  },
+  "p1_stroke_08_卧钩__att2": {
+    "verdict": "PASS",
+    "actual_group": "G1",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_08_卧钩",
+    "target_label": "卧钩",
+    "judged_at": "2026-07-12T17:49:21"
+  },
+  "p1_stroke_08_卧钩__att3": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_08_卧钩",
+    "target_label": "卧钩",
+    "judged_at": "2026-07-12T17:49:22"
+  },
+  "p1_stroke_09_横撇__att0": {
+    "verdict": "PASS",
+    "actual_group": "G3",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_09_横撇",
+    "target_label": "横撇",
+    "judged_at": "2026-07-12T17:49:25"
+  },
+  "p1_stroke_09_横撇__att1": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_09_横撇",
+    "target_label": "横撇",
+    "judged_at": "2026-07-12T17:49:26"
+  },
+  "p1_stroke_09_横撇__att2": {
+    "verdict": "PASS",
+    "actual_group": "G1",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_09_横撇",
+    "target_label": "横撇",
+    "judged_at": "2026-07-12T17:49:26"
+  },
+  "p1_stroke_09_横撇__att3": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_09_横撇",
+    "target_label": "横撇",
+    "judged_at": "2026-07-12T17:49:27"
+  },
+  "p1_stroke_10_横钩__att0": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_10_横钩",
+    "target_label": "横钩",
+    "judged_at": "2026-07-12T17:49:28"
+  },
+  "p1_stroke_10_横钩__att1": {
+    "verdict": "FAIL",
+    "actual_group": "G1",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_10_横钩",
+    "target_label": "横钩",
+    "judged_at": "2026-07-12T17:49:36"
+  },
+  "p1_stroke_10_横钩__att2": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_10_横钩",
+    "target_label": "横钩",
+    "judged_at": "2026-07-12T17:49:38"
+  },
+  "p1_stroke_10_横钩__att3": {
+    "verdict": "PASS",
+    "actual_group": "G3",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_10_横钩",
+    "target_label": "横钩",
+    "judged_at": "2026-07-12T17:49:39"
+  },
+  "p1_stroke_11_横折__att0": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_11_横折",
+    "target_label": "横折",
+    "judged_at": "2026-07-12T17:49:40"
+  },
+  "p1_stroke_11_横折__att1": {
+    "verdict": "PASS",
+    "actual_group": "G3",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_11_横折",
+    "target_label": "横折",
+    "judged_at": "2026-07-12T17:49:41"
+  },
+  "p1_stroke_11_横折__att2": {
+    "verdict": "PASS",
+    "actual_group": "G1",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_11_横折",
+    "target_label": "横折",
+    "judged_at": "2026-07-12T17:49:41"
+  },
+  "p1_stroke_11_横折__att3": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_11_横折",
+    "target_label": "横折",
+    "judged_at": "2026-07-12T17:49:43"
+  },
+  "p1_stroke_12_竖提__att0": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_12_竖提",
+    "target_label": "竖提",
+    "judged_at": "2026-07-12T17:49:44"
+  },
+  "p1_stroke_12_竖提__att1": {
+    "verdict": "PASS",
+    "actual_group": "G3",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_12_竖提",
+    "target_label": "竖提",
+    "judged_at": "2026-07-12T17:49:44"
+  },
+  "p1_stroke_12_竖提__att2": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_12_竖提",
+    "target_label": "竖提",
+    "judged_at": "2026-07-12T17:49:45"
+  },
+  "p1_stroke_12_竖提__att3": {
+    "verdict": "PASS",
+    "actual_group": "G1",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_12_竖提",
+    "target_label": "竖提",
+    "judged_at": "2026-07-12T17:49:45"
+  },
+  "p1_stroke_13_竖弯__att0": {
+    "verdict": "PASS",
+    "actual_group": "G1",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_13_竖弯",
+    "target_label": "竖弯",
+    "judged_at": "2026-07-12T17:49:47"
+  },
+  "p1_stroke_13_竖弯__att1": {
+    "verdict": "PASS",
+    "actual_group": "G3",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_13_竖弯",
+    "target_label": "竖弯",
+    "judged_at": "2026-07-12T17:50:56"
+  },
+  "p1_stroke_13_竖弯__att2": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_13_竖弯",
+    "target_label": "竖弯",
+    "judged_at": "2026-07-12T17:50:56"
+  },
+  "p1_stroke_13_竖弯__att3": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_13_竖弯",
+    "target_label": "竖弯",
+    "judged_at": "2026-07-12T17:50:57"
+  },
+  "p1_stroke_14_竖钩__att0": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_14_竖钩",
+    "target_label": "竖钩",
+    "judged_at": "2026-07-12T17:50:57"
+  },
+  "p1_stroke_14_竖钩__att1": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_14_竖钩",
+    "target_label": "竖钩",
+    "judged_at": "2026-07-12T17:50:58"
+  },
+  "p1_stroke_14_竖钩__att2": {
+    "verdict": "FAIL",
+    "actual_group": "G3",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_14_竖钩",
+    "target_label": "竖钩",
+    "judged_at": "2026-07-12T17:50:59"
+  },
+  "p1_stroke_14_竖钩__att3": {
+    "verdict": "PASS",
+    "actual_group": "G1",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_14_竖钩",
+    "target_label": "竖钩",
+    "judged_at": "2026-07-12T17:50:59"
+  },
+  "p1_stroke_15_竖折__att0": {
+    "verdict": "PASS",
+    "actual_group": "G3",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_15_竖折",
+    "target_label": "竖折",
+    "judged_at": "2026-07-12T17:51:00"
+  },
+  "p1_stroke_15_竖折__att1": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_15_竖折",
+    "target_label": "竖折",
+    "judged_at": "2026-07-12T17:51:01"
+  },
+  "p1_stroke_15_竖折__att2": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_15_竖折",
+    "target_label": "竖折",
+    "judged_at": "2026-07-12T17:51:01"
+  },
+  "p1_stroke_15_竖折__att3": {
+    "verdict": "PASS",
+    "actual_group": "G1",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_15_竖折",
+    "target_label": "竖折",
+    "judged_at": "2026-07-12T17:51:02"
+  },
+  "p1_stroke_16_斜钩__att0": {
+    "verdict": "PASS",
+    "actual_group": "G1",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_16_斜钩",
+    "target_label": "斜钩",
+    "judged_at": "2026-07-12T17:51:06"
+  },
+  "p1_stroke_16_斜钩__att1": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_16_斜钩",
+    "target_label": "斜钩",
+    "judged_at": "2026-07-12T17:51:07"
+  },
+  "p1_stroke_16_斜钩__att2": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_16_斜钩",
+    "target_label": "斜钩",
+    "judged_at": "2026-07-12T17:51:08"
+  },
+  "p1_stroke_16_斜钩__att3": {
+    "verdict": "FAIL",
+    "actual_group": "G3",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_16_斜钩",
+    "target_label": "斜钩",
+    "judged_at": "2026-07-12T17:51:09"
+  },
+  "p1_stroke_17_撇点__att0": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_17_撇点",
+    "target_label": "撇点",
+    "judged_at": "2026-07-12T17:51:12"
+  },
+  "p1_stroke_17_撇点__att1": {
+    "verdict": "PASS",
+    "actual_group": "G3",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_17_撇点",
+    "target_label": "撇点",
+    "judged_at": "2026-07-12T17:51:57"
+  },
+  "p1_stroke_17_撇点__att2": {
+    "verdict": "FAIL",
+    "actual_group": "G1",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_17_撇点",
+    "target_label": "撇点",
+    "judged_at": "2026-07-12T17:52:04"
+  },
+  "p1_stroke_17_撇点__att3": {
+    "verdict": "FAIL",
+    "actual_group": "G2",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_17_撇点",
+    "target_label": "撇点",
+    "judged_at": "2026-07-12T17:52:06"
+  },
+  "p1_stroke_18_撇折__att0": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_18_撇折",
+    "target_label": "撇折",
+    "judged_at": "2026-07-12T17:52:13"
+  },
+  "p1_stroke_18_撇折__att1": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_18_撇折",
+    "target_label": "撇折",
+    "judged_at": "2026-07-12T17:52:15"
+  },
+  "p1_stroke_18_撇折__att2": {
+    "verdict": "PASS",
+    "actual_group": "G1",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_18_撇折",
+    "target_label": "撇折",
+    "judged_at": "2026-07-12T17:52:15"
+  },
+  "p1_stroke_18_撇折__att3": {
+    "verdict": "PASS",
+    "actual_group": "G3",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_18_撇折",
+    "target_label": "撇折",
+    "judged_at": "2026-07-12T17:52:16"
+  },
+  "p1_stroke_19_横斜钩__att0": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_19_横斜钩",
+    "target_label": "横斜钩",
+    "judged_at": "2026-07-12T17:52:18"
+  },
+  "p1_stroke_19_横斜钩__att1": {
+    "verdict": "PASS",
+    "actual_group": "G1",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_19_横斜钩",
+    "target_label": "横斜钩",
+    "judged_at": "2026-07-12T17:52:20"
+  },
+  "p1_stroke_19_横斜钩__att2": {
+    "verdict": "FAIL",
+    "actual_group": "G4",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_19_横斜钩",
+    "target_label": "横斜钩",
+    "judged_at": "2026-07-12T17:52:21"
+  },
+  "p1_stroke_19_横斜钩__att3": {
+    "verdict": "FAIL",
+    "actual_group": "G3",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_19_横斜钩",
+    "target_label": "横斜钩",
+    "judged_at": "2026-07-12T17:52:30"
+  },
+  "p1_stroke_20_橫折提__att0": {
+    "verdict": "PASS",
+    "actual_group": "G2",
+    "shown_position": 0,
+    "phase": "stroke",
+    "item_id": "p1_stroke_20_橫折提",
+    "target_label": "橫折提",
+    "judged_at": "2026-07-12T17:52:42"
+  },
+  "p1_stroke_20_橫折提__att1": {
+    "verdict": "PASS",
+    "actual_group": "G4",
+    "shown_position": 1,
+    "phase": "stroke",
+    "item_id": "p1_stroke_20_橫折提",
+    "target_label": "橫折提",
+    "judged_at": "2026-07-12T17:52:42"
+  },
+  "p1_stroke_20_橫折提__att2": {
+    "verdict": "PASS",
+    "actual_group": "G3",
+    "shown_position": 2,
+    "phase": "stroke",
+    "item_id": "p1_stroke_20_橫折提",
+    "target_label": "橫折提",
+    "judged_at": "2026-07-12T17:52:43"
+  },
+  "p1_stroke_20_橫折提__att3": {
+    "verdict": "FAIL",
+    "actual_group": "G1",
+    "shown_position": 3,
+    "phase": "stroke",
+    "item_id": "p1_stroke_20_橫折提",
+    "target_label": "橫折提",
+    "judged_at": "2026-07-12T17:52:44"
+  }
+}

@@ -1,0 +1,306 @@
+{
+  "batch_id": 2,
+  "shuffle_seed": 44,
+  "items": [
+    {
+      "id": "p1_stroke_21_横折弯",
+      "phase": "stroke",
+      "target_label": "横折弯",
+      "target_description": "横折加弯",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_21_横折弯/01_横折弯.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_21_横折弯/01_横折弯.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_21_横折弯/01_横折弯.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_21_横折弯/01_横折弯.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_22_横折钩",
+      "phase": "stroke",
+      "target_label": "横折钩",
+      "target_description": "横折加钩",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_22_横折钩/01_横折钩.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_22_横折钩/01_横折钩.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_22_横折钩/01_横折钩.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_22_横折钩/01_横折钩.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_23_竖弯钩",
+      "phase": "stroke",
+      "target_label": "竖弯钩",
+      "target_description": "竖弯加钩",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_23_竖弯钩/01_竖弯钩.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_23_竖弯钩/01_竖弯钩.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_23_竖弯钩/01_竖弯钩.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_23_竖弯钩/01_竖弯钩.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_24_横撇弯钩",
+      "phase": "stroke",
+      "target_label": "横撇弯钩",
+      "target_description": "横加撇加弯加钩",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_24_横撇弯钩/01_横撇弯钩.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_24_横撇弯钩/01_横撇弯钩.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_24_横撇弯钩/01_横撇弯钩.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_24_横撇弯钩/01_横撇弯钩.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_25_横折弯钩",
+      "phase": "stroke",
+      "target_label": "横折弯钩",
+      "target_description": "横折加弯加钩",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_25_横折弯钩/01_横折弯钩.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_25_横折弯钩/01_横折弯钩.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_25_横折弯钩/01_横折弯钩.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_25_横折弯钩/01_横折弯钩.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_26_横折折",
+      "phase": "stroke",
+      "target_label": "横折折",
+      "target_description": "横折加横折",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_26_横折折/01_横折折.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_26_横折折/01_横折折.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_26_横折折/01_横折折.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_26_横折折/01_横折折.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_27_竖折撇",
+      "phase": "stroke",
+      "target_label": "竖折撇",
+      "target_description": "竖折加撇",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_27_竖折撇/01_竖折撇.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_27_竖折撇/01_竖折撇.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_27_竖折撇/01_竖折撇.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_27_竖折撇/01_竖折撇.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_28_竖折折",
+      "phase": "stroke",
+      "target_label": "竖折折",
+      "target_description": "竖折加折",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_28_竖折折/01_竖折折.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_28_竖折折/01_竖折折.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_28_竖折折/01_竖折折.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_28_竖折折/01_竖折折.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_29_横折折撇",
+      "phase": "stroke",
+      "target_label": "横折折撇",
+      "target_description": "横折折加撇",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_29_横折折撇/01_横折折撇.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_29_横折折撇/01_横折折撇.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_29_横折折撇/01_横折折撇.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_29_横折折撇/01_横折折撇.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_30_横折折折",
+      "phase": "stroke",
+      "target_label": "横折折折",
+      "target_description": "横折折折",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_30_横折折折/01_横折折折.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_30_横折折折/01_横折折折.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_30_横折折折/01_横折折折.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_30_横折折折/01_横折折折.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_31_竖折折钩",
+      "phase": "stroke",
+      "target_label": "竖折折钩",
+      "target_description": "竖折折加钩",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_31_竖折折钩/01_竖折折钩.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_31_竖折折钩/01_竖折折钩.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_31_竖折折钩/01_竖折折钩.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_31_竖折折钩/01_竖折折钩.png"
+        }
+      ]
+    },
+    {
+      "id": "p1_stroke_32_横折折折钩",
+      "phase": "stroke",
+      "target_label": "横折折折钩",
+      "target_description": "横折折折加钩",
+      "target_png": null,
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_32_横折折折钩/01_横折折折钩.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_32_横折折折钩/01_横折折折钩.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_32_横折折折钩/01_横折折折钩.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p1_stroke_32_横折折折钩/01_横折折折钩.png"
+        }
+      ]
+    }
+  ]
+}

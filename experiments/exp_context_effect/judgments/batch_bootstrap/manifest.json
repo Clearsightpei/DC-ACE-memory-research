@@ -1,0 +1,457 @@
+{
+  "batch_id": "bootstrap_pre-B1",
+  "shuffle_seed": 52,
+  "items": [
+    {
+      "id": "p2_radical_001_丨",
+      "phase": "radical",
+      "target_label": "丨 (1画)",
+      "target_description": "1画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/丨.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_001_丨/01_丨.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_001_丨/01_丨.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_001_丨/01_丨.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_001_丨/01_丨.png"
+        }
+      ]
+    },
+    {
+      "id": "p2_radical_002_亅",
+      "phase": "radical",
+      "target_label": "亅 (1画)",
+      "target_description": "1画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/亅.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_002_亅/01_亅.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_002_亅/01_亅.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_002_亅/01_亅.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_002_亅/01_亅.png"
+        }
+      ]
+    },
+    {
+      "id": "p2_radical_003_丿",
+      "phase": "radical",
+      "target_label": "丿 (1画)",
+      "target_description": "1画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/丿.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_003_丿/01_丿.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_003_丿/01_丿.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_003_丿/01_丿.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_003_丿/01_丿.png"
+        }
+      ]
+    },
+    {
+      "id": "p2_radical_004_乛",
+      "phase": "radical",
+      "target_label": "乛 (1画)",
+      "target_description": "1画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/乛.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_004_乛/01_乛.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_004_乛/01_乛.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_004_乛/01_乛.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_004_乛/01_乛.png"
+        }
+      ]
+    },
+    {
+      "id": "p2_radical_005_一",
+      "phase": "radical",
+      "target_label": "一 (1画)",
+      "target_description": "1画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/一.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_005_一/01_一.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_005_一/01_一.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_005_一/01_一.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_005_一/01_一.png"
+        }
+      ]
+    },
+    {
+      "id": "p2_radical_006_乙",
+      "phase": "radical",
+      "target_label": "乙 (1画)",
+      "target_description": "1画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/乙.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_006_乙/01_乙.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_006_乙/01_乙.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_006_乙/01_乙.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_006_乙/01_乙.png"
+        }
+      ]
+    },
+    {
+      "id": "p2_radical_007_乚",
+      "phase": "radical",
+      "target_label": "乚 (1画)",
+      "target_description": "1画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/乚.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_007_乚/01_乚.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_007_乚/01_乚.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_007_乚/01_乚.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_007_乚/01_乚.png"
+        }
+      ]
+    },
+    {
+      "id": "p2_radical_008_丶",
+      "phase": "radical",
+      "target_label": "丶 (1画)",
+      "target_description": "1画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/丶.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_008_丶/01_丶.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_008_丶/01_丶.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_008_丶/01_丶.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_008_丶/01_丶.png"
+        }
+      ]
+    },
+    {
+      "id": "p2_radical_009_八",
+      "phase": "radical",
+      "target_label": "八 (2画)",
+      "target_description": "2画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/八.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_009_八/01_八.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_009_八/01_八.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_009_八/01_八.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_009_八/01_八.png"
+        }
+      ]
+    },
+    {
+      "id": "p2_radical_010_勹",
+      "phase": "radical",
+      "target_label": "勹 (2画)",
+      "target_description": "2画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/勹.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_010_勹/01_勹.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_010_勹/01_勹.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_010_勹/01_勹.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_010_勹/01_勹.png"
+        }
+      ]
+    },
+    {
+      "id": "p2_radical_011_匕",
+      "phase": "radical",
+      "target_label": "匕 (2画)",
+      "target_description": "2画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/匕.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_011_匕/01_匕.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_011_匕/01_匕.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_011_匕/01_匕.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_011_匕/01_匕.png"
+        }
+      ]
+    },
+    {
+      "id": "p2_radical_012_冫",
+      "phase": "radical",
+      "target_label": "冫 (2画)",
+      "target_description": "2画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/冫.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_012_冫/01_冫.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_012_冫/01_冫.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_012_冫/01_冫.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_012_冫/01_冫.png"
+        }
+      ]
+    },
+    {
+      "id": "p2_radical_013_卜",
+      "phase": "radical",
+      "target_label": "卜 (2画)",
+      "target_description": "2画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/卜.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_013_卜/01_卜.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_013_卜/01_卜.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_013_卜/01_卜.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_013_卜/01_卜.png"
+        }
+      ]
+    },
+    {
+      "id": "p2_radical_014_厂",
+      "phase": "radical",
+      "target_label": "厂 (2画)",
+      "target_description": "2画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/厂.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_014_厂/01_厂.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_014_厂/01_厂.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_014_厂/01_厂.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_014_厂/01_厂.png"
+        }
+      ]
+    },
+    {
+      "id": "p2_radical_015_刀",
+      "phase": "radical",
+      "target_label": "刀 (2画)",
+      "target_description": "2画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/刀.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_015_刀/01_刀.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_015_刀/01_刀.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_015_刀/01_刀.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_015_刀/01_刀.png"
+        }
+      ]
+    },
+    {
+      "id": "p2_radical_016_刂",
+      "phase": "radical",
+      "target_label": "刂 (2画)",
+      "target_description": "2画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/刂.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_016_刂/01_刂.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_016_刂/01_刂.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_016_刂/01_刂.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_016_刂/01_刂.png"
+        }
+      ]
+    },
+    {
+      "id": "p2_radical_017_儿",
+      "phase": "radical",
+      "target_label": "儿 (2画)",
+      "target_description": "2画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/儿.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_017_儿/01_儿.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_017_儿/01_儿.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_017_儿/01_儿.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_017_儿/01_儿.png"
+        }
+      ]
+    },
+    {
+      "id": "p2_radical_018_二",
+      "phase": "radical",
+      "target_label": "二 (2画)",
+      "target_description": "2画部首",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase2/二.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_018_二/01_二.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_018_二/01_二.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_018_二/01_二.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p2_radical_018_二/01_二.png"
+        }
+      ]
+    }
+  ],
+  "note": "Bootstrap batch — 18 items (positions 33-50) to reach the 50-item boundary. Phase 2 first cycle after v6 restart, GT-supported, revisions allowed."
+}

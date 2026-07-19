@@ -1,0 +1,122 @@
+[
+  {
+    "item_id": "p1_stroke_21_横折弯",
+    "target_label": "横折弯",
+    "verdict": "FAIL",
+    "phase": "stroke"
+  },
+  {
+    "item_id": "p1_stroke_22_横折钩",
+    "target_label": "横折钩",
+    "verdict": "PASS",
+    "phase": "stroke"
+  },
+  {
+    "item_id": "p1_stroke_23_竖弯钩",
+    "target_label": "竖弯钩",
+    "verdict": "FAIL",
+    "phase": "stroke"
+  },
+  {
+    "item_id": "p1_stroke_24_横撇弯钩",
+    "target_label": "横撇弯钩",
+    "verdict": "FAIL",
+    "phase": "stroke"
+  },
+  {
+    "item_id": "p1_stroke_25_横折弯钩",
+    "target_label": "横折弯钩",
+    "verdict": "PASS",
+    "phase": "stroke"
+  },
+  {
+    "item_id": "p1_stroke_26_横折折",
+    "target_label": "横折折",
+    "verdict": "FAIL",
+    "phase": "stroke"
+  },
+  {
+    "item_id": "p1_stroke_27_竖折撇",
+    "target_label": "竖折撇",
+    "verdict": "PASS",
+    "phase": "stroke"
+  },
+  {
+    "item_id": "p1_stroke_28_竖折折",
+    "target_label": "竖折折",
+    "verdict": "PASS",
+    "phase": "stroke"
+  },
+  {
+    "item_id": "p1_stroke_29_横折折撇",
+    "target_label": "横折折撇",
+    "verdict": "PASS",
+    "phase": "stroke"
+  },
+  {
+    "item_id": "p1_stroke_30_横折折折",
+    "target_label": "横折折折",
+    "verdict": "PASS",
+    "phase": "stroke"
+  },
+  {
+    "item_id": "p1_stroke_31_竖折折钩",
+    "target_label": "竖折折钩",
+    "verdict": "PASS",
+    "phase": "stroke"
+  },
+  {
+    "item_id": "p1_stroke_32_横折折折钩",
+    "target_label": "横折折折钩",
+    "verdict": "FAIL",
+    "phase": "stroke"
+  },
+  {
+    "item_id": "p2_radical_001_丨",
+    "target_label": "丨 (1画)",
+    "verdict": "PASS",
+    "phase": "radical"
+  },
+  {
+    "item_id": "p2_radical_002_亅",
+    "target_label": "亅 (1画)",
+    "verdict": "PASS",
+    "phase": "radical"
+  },
+  {
+    "item_id": "p2_radical_003_丿",
+    "target_label": "丿 (1画)",
+    "verdict": "FAIL",
+    "phase": "radical"
+  },
+  {
+    "item_id": "p2_radical_004_乛",
+    "target_label": "乛 (1画)",
+    "verdict": "FAIL",
+    "phase": "radical"
+  },
+  {
+    "item_id": "p2_radical_005_一",
+    "target_label": "一 (1画)",
+    "verdict": "PASS",
+    "phase": "radical"
+  },
+  {
+    "item_id": "p2_radical_006_乙",
+    "target_label": "乙 (1画)",
+    "verdict": "PASS",
+    "phase": "radical"
+  },
+  {
+    "item_id": "p2_radical_007_乚",
+    "target_label": "乚 (1画)",
+    "verdict": "PASS",
+    "phase": "radical"
+  },
+  {
+    "item_id": "p2_radical_008_丶",
+    "target_label": "丶 (1画)",
+    "verdict": "PASS",
+    "phase": "radical"
+  }
+]
