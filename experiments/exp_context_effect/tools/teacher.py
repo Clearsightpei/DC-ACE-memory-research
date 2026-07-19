@@ -96,7 +96,7 @@ RADICALS_BY_STROKES = {
     1: list("丨亅丿乛一乙乚丶"),
     2: list("八勹匕冫卜厂刀刂儿二匚阝丷几卩冂力冖凵人亻入十厶亠匸讠廴又㔾"),
     3: list("艹屮彳巛川辶寸大飞干工弓廾广己彐彑巾口马门宀女犭山彡尸饣士扌氵纟巳土囗兀夕小忄幺弋尢夂子丬夊"),
-    4: list("贝比灬长车歹斗厄方风父戈卝户火旡见斤耂毛木肀牛牜爿片攴攵气欠犬日氏礻手殳水瓦尣王韦文毋心牙爻曰月爫支止爪无"),
+    4: list("贝比灬长车歹斗厄方风父戈户火旡见斤耂毛木肀牛爿片攴攵气欠犬日氏礻手殳水瓦尣王韦文毋心牙爻曰月爫支止爪无"),
 }
 
 
@@ -127,12 +127,16 @@ def load_curriculum():
     rn = 1
     for sc in sorted(RADICALS_BY_STROKES):
         for ch in RADICALS_BY_STROKES[sc]:
+            gt_png = os.path.join(EXP, "gt", "phase2", f"{ch}.png")
             radicals.append({
                 "id": f"p2_radical_{rn:03d}_{ch}",
                 "phase": "radical",
                 "target_label": f"{ch} ({sc}画)",
                 "target_description": f"{sc}画部首",
-                "target_png": None,
+                # v6 (Phase-2 restart): radicals now have GT PNGs like characters,
+                # from MMH graphics.txt via tools/render_all_radical_gt.py.
+                # File exists on disk for all 135 curriculum radicals.
+                "target_png": gt_png if os.path.exists(gt_png) else None,
                 "character_or_shape": ch,
             })
             rn += 1
@@ -203,11 +207,19 @@ class Teacher:
         self.state.global_position += 1
 
     def should_scan_errata(self) -> bool:
-        """True on 20-item boundaries (i.e. after items 20, 40, 60, ...)."""
+        """True on 25-item boundaries (v6): after items 25, 50, 75, 100, ...
+
+        This produces TWO errata scans per 50-item batch:
+        - Scan A at the START of the batch (last cycle's boundary, e.g. pos 50 → scan before dispatching 51-100)
+        - Scan B at the MIDDLE of the batch (e.g. pos 75 → scan between items 51-75 and 76-100)
+
+        Per-item cooldown enforced separately: an item retried once must
+        wait 50 more curriculum items before another retry.
+        """
         pos = self.state.global_position
         if pos == 0 or pos == self.state.last_errata_scan_position:
             return False
-        return pos % 20 == 0
+        return pos % 25 == 0
 
     def mark_errata_scanned(self):
         self.state.last_errata_scan_position = self.state.global_position

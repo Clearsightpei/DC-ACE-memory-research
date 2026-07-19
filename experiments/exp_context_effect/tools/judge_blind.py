@@ -8,10 +8,10 @@ human cannot infer which group produced which attempt. The true group is
 recorded in the label file (for post-hoc analysis) but never shown in the UI.
 
 Display rules:
-  - Phase "stroke" and "radical": show target LABEL + text DESCRIPTION only.
-    No target PNG. AI's attempt PNG below.
-  - Phase "character": show target PNG (GT from graphics.txt) alongside
-    attempt PNG.
+  - Phase "stroke": show target LABEL + text DESCRIPTION only.
+    No target PNG (strokes have no GT). AI's attempt PNG below.
+  - Phase "radical" and "character": show target PNG (GT) alongside
+    attempt PNG. Radicals gained MMH GTs in v6 (135/137 available).
 
 Labels persist to <batch_dir>/labels.json after every keypress.
 Resumable — reopens on the first unjudged attempt.
@@ -136,7 +136,7 @@ class JudgeApp:
     def show_current(self):
         if self.idx >= len(self.flat):
             self.header.config(text="✓ All judged in this batch")
-            self.desc.config(text="Press q to quit.")
+            self.desc.config(text="Press b to review/change previous labels, or q to quit.")
             self.target_lbl.config(image="", text="")
             self.attempt_lbl.config(image="", text="")
             self._refresh_status()
@@ -146,12 +146,12 @@ class JudgeApp:
         self.header.config(text=f"Target: {item['target_label']}")
         self.desc.config(text=item.get("target_description") or "")
 
-        # target: only for characters
-        if item["phase"] == "character" and item.get("target_png") and os.path.exists(item["target_png"]):
+        # target: for radicals and characters (Phase 2+ has GT); strokes have none
+        if item["phase"] in ("radical", "character") and item.get("target_png") and os.path.exists(item["target_png"]):
             self._show_png(self.target_lbl, item["target_png"])
             self.target_frame.grid()
         else:
-            # strokes / radicals: hide target frame, only label shown
+            # strokes (Phase 1) or missing GT: hide target frame, only label shown
             self.target_lbl.config(image="", text="(judge by label + description)")
 
         # attempt
@@ -188,17 +188,22 @@ class JudgeApp:
         k = event.keysym.lower()
         if k == "q":
             self.root.destroy()
-        elif self.idx >= len(self.flat):
-            return  # ignore keys after done except q
-        elif k == "p":
+            return
+        # `b` (back) always works, even after finishing — lets you review
+        # or change a prior verdict.
+        if k == "b":
+            self.idx = max(0, self.idx - 1)
+            self.show_current()
+            return
+        # Once we're past the end, only q and b are meaningful.
+        if self.idx >= len(self.flat):
+            return
+        if k == "p":
             self._record("PASS"); self.idx += 1; self.show_current()
         elif k == "f":
             self._record("FAIL"); self.idx += 1; self.show_current()
         elif k == "s":
             self._record("SKIP"); self.idx += 1; self.show_current()
-        elif k == "b":
-            self.idx = max(0, self.idx - 1)
-            self.show_current()
 
 
 def main():

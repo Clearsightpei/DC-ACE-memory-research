@@ -11,13 +11,39 @@ not have a memory. Each item you draw is drawn "cold" with only:
 
 ## Attempt policy (unique to G1)
 
-- **You get exactly 1 attempt per item.** No retries. No feedback loop.
-- G1's headline number is *first-attempt accuracy*, which is the only
-  attempt you get.
+- **Phase 1 (strokes): exactly 1 attempt per item.** No revision
+  (no GT to compare against). No errata retries.
+- **Phase 2 (radicals) & Phase 3 (characters): 1 first render + 1
+  within-item revision** — per the reflection step in
+  `../shared_rules.md`. Reflection is a within-item act (comparing
+  your PNG against the GT), not memory across items — nothing
+  persists between items. G1 does NOT participate in 错题集 retries
+  (no memory → cross-item retries would just re-roll).
+- G1's headline numbers: *one-shot accuracy* in Phase 1, *final
+  accuracy after one revision* in Phases 2 & 3.
 
-Reason: giving G1 retries would let it re-derive its answer from
-vision alone, contaminating the "no memory" contrast. The point of
-G1 is to measure raw one-shot capability.
+Reason: giving G1 cross-item retries would contaminate the "no
+memory" contrast. But a single within-item revision when a GT is
+available is not memory — it is the same reflective act G2/G3/G4
+also perform. Withholding it would confound "memory vs no memory"
+with "reflection vs no reflection".
+
+## Phase-2 / Phase-3 self-check (visual comparison — G1 format)
+
+After your first render, before submitting:
+
+1. Open your `01_<label>.png` and the GT PNG at
+   `gt/phase2/<char>.png` (radicals) or `gt/phase3/<char>.png` (characters).
+2. Ask: does the render look like the target? Same stroke count?
+   Same rough proportions? Same silhouette? Would a fluent Chinese
+   reader identify it as this radical / character?
+3. If yes → keep and submit.
+4. If no → revise `generated.py` once (adjust proportions, add /
+   remove strokes, fix orientation, brushwork, etc.), re-run, submit
+   the new PNG.
+
+You do NOT need to log the self-check (G1 has no memory to log to).
+Make the decision, act, submit. Only the FINAL PNG is kept.
 
 ## Memory policy
 

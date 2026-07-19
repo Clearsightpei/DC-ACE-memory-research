@@ -1,7 +1,11 @@
 # Experiment: Context Effect on Agent Learning
 
-*Version: v3 (draft, open — designed to be updated as we learn).
-Location: `experiments/exp_context_effect/`. Predecessor: `runs/run_6/`.*
+*Version: v7 — 2026-07-18. **Memory self-evolution unlocked at position
+150** for G2/G3/G4 after all-group score collapse in B2 (bootstrap→B1→B2
+trajectory of ~75% → ~63% → ~38%). Rationale in the v7 changelog. Prior
+v6 (2026-07-16) restarted Phase 2 from position 32 under a GT-supported
+protocol; that state is preserved. Location:
+`experiments/exp_context_effect/`. Predecessor: `runs/run_6/`.*
 
 ## Central hypothesis
 
@@ -106,29 +110,110 @@ This is the whole point of giving the Drawer vision and the 错题集: the
 AI must figure out what went wrong on its own. Human is the reference
 signal, not the teacher.
 
-### G1 exception (unchanged)
+### Phase-3 reflection — one within-item revision, all groups
 
-- G1 gets exactly 1 attempt per item. No retries even through the
-  错题集 (G1 has no memory to "improve" between attempts, so the
-  errata concept doesn't apply).
+Character items (Phase 3) get one within-item reflection round before
+submitting. All four groups do this uniformly, each in its own format:
+
+| Group | Self-check format |
+|---|---|
+| G1 | Visual: PNG vs GT — same silhouette, stroke count, would a reader identify it? |
+| G2 | Visual, may note observations in `drawer_memory.md` (never item-mastery claims) |
+| G3 | Visual, may note observations in `sandbox.md` / `principle_bank.md` |
+| G4 | **Visual + structural**: MMH-derived expected stroke count, endpoint anchors, and P/T/N joint classes (see below). Logged as `SELF_CHECK = {...}` dict at the top of `generated.py` |
+
+**Rules** (uniform across groups):
+- Maximum **one revision** → two render passes total, then submit.
+- Only the **final** `generated.py` + PNG are kept. First draft is not
+  saved.
+- Self-check does NOT gate submission — human is still the only judge.
+- Phase-1 (strokes) and Phase-2 (radicals) have NO reflection step —
+  no GT to reflect against; single render only.
+
+**Why reflection is uniform**: the experiment's stated IV is memory
+format. If G4 had a hard structural gate but G1/G2/G3 did not, we
+would conflate memory format with verification apparatus (see
+[Predecessor: run_6](#predecessor-run_6) — run_6 outperformed because
+format and gate were paired). Reflection is offered symmetrically so
+memory format remains the only variable.
+
+### G4 Phase-3 augmentation: MMH-derived joint expectations
+
+For Phase 3 characters only, the dispatcher injects an "MMH-derived
+structural expectations" block into G4's Drawer prompt, produced by
+[`tools/mmh_joints.py`](tools/mmh_joints.py). This wraps run_6's
+`joint_detector` + `classify_joints` and translates output into G4's
+300×300 PIL 米字格 coordinates. The block lists:
+
+- Expected stroke count (must match MMH exactly)
+- Per-stroke head/tail anchors in `(cell, x_frac, y_frac)` form
+- Every joint with expected **P** (piercing, welded) / **T** (tangent,
+  tip touches) / **N** (neighbor, small natural gap — do NOT weld)
+  class + expected pixel gap
+
+G4 self-checks against these expectations before its (optional)
+revision. G1/G2/G3 do not receive this block — their self-check is
+purely visual, in each group's native format.
+
+### Drawer memory-write rules
+
+To prevent premature mastery contamination:
+
+- **NEVER write to `success_bank/code/*.py` (G3/G4) during drawing** —
+  Success Bank entries are only added by the Curator AFTER human PASS.
+- **NEVER write "I mastered X" entries to `drawer_memory.md` (G2)
+  during drawing** — same rule.
+- Drawers MAY freely write **during drawing** to:
+  - `sandbox.md` (short-term scratch AND persistent free-form memory —
+    G3/G4 sandbox is analogous to G2's drawer_memory.md, persists
+    across items)
+  - `principle_bank.md` (general observations, techniques, meta-rules)
+  - G2's `drawer_memory.md` may hold general observations (not
+    item-mastery claims)
+
+Violating Success Bank protection = experimental rule violation,
+logged as such in the paper.
+
+### G1 exception (partial)
+
+- G1 gets exactly 1 attempt per item in **Phases 1 & 2** — no retries
+  through the 错题集 (G1 has no memory to improve between attempts).
+- **Phase 3**: G1 gets the same one within-item revision as
+  G2/G3/G4 — this is a *within-item* act (visual comparison of PNG
+  vs GT), NOT memory across items. Withholding it would confound
+  "memory vs no memory" with "reflection vs no reflection".
 - Fresh sub-agent per item — session context is discarded between
   items to prevent accidental "session memory."
 
-### G4 curator role — split into two sub-agents
+### G4 curator role — merged single agent
 
-G4's curator does two logically distinct jobs. For efficiency and clean
-responsibility separation, we run them as **two sub-agents**:
+G4's curator is a **single sub-agent per attempt** that combines what
+run_6 split into three roles (structural checker + 3 panel skeptics):
 
-- **Diagnostician sub-agent** — reads attempt + GT + memory, uses the
-  run_6-style structural check (stroke count, anchor placement, joint
-  taxonomy) + panel-skeptic vision judgment to identify what went
-  wrong. Emits a fix hypothesis.
-- **Memory Writer sub-agent** — on human PASS, writes the mastered
-  entry into the Success Bank with 米字格 anchors + P/T/N joint spec.
+1. **Structural check**: does the render's stroke count match MMH?
+   Do declared anchors land in the right cells (within tolerance)?
+   Do the joint classes look right visually?
+2. **Panel-skeptic check**: viewing the attempt alone, would a fluent
+   reader identify it as the target item? Would you accept it under
+   calligraphic norms?
+3. Emit a single PASS/FAIL verdict with a one-sentence reason to
+   `curator_satisfaction_log.jsonl`. **This is NOT the gate** — the
+   human's verdict is the gate. The curator's verdict is logged for
+   post-hoc calibration analysis (agreement rate with human).
 
-This split keeps each call focused; the Diagnostician has a well-defined
-"find the bug" task, and the Writer has a well-defined "encode the
-success" task.
+On **human PASS**: writes `success_bank/code/<item>.py` with 米字格
+anchors + joint spec, appends INDEX, updates principle_bank.
+
+On **human FAIL**: writes structural + panel diagnosis to sandbox +
+errata; adds to 错题集.
+
+### Curator satisfaction log — kept for calibration
+
+Each per-item curator call also appends one JSON line to
+`curator_satisfaction_log.jsonl`: `{item_id, verdict, curator_agrees,
+reason, batch}`. Reintroduced (originally removed in v3) because it
+gives us free calibration data — how often does each group's curator
+agree with the human? Useful post-hoc, not gating.
 
 ## Batch judgment — you're not sitting at the terminal
 
@@ -319,8 +404,16 @@ Total: 12 snapshots per group × 4 groups = 48 snapshots.
 
 ### G4 — Grid-bank (米字格)
 
-- Curator split into **Diagnostician + Memory Writer** sub-agents.
-- Three-bank memory using 米字格 anchors + P/T/N joint spec.
+- **Single merged curator sub-agent** (structural check + panel skeptic
+  in one call). Previous v3 spec split this into Diagnostician +
+  Memory Writer; consolidated in v4 for efficiency after batch 1-2
+  showed the split doubled cost with no measurable quality gain.
+- Three-bank memory using 米字格 anchors + P/T/N joint spec on 300×300
+  PIL canvas (y grows DOWN — see
+  [groups/G4_grid/success_bank/code/_anchor.py](groups/G4_grid/success_bank/code/_anchor.py)).
+- Phase 3 gets MMH-derived structural expectations injected into every
+  Drawer brief; Drawer runs a mandatory dual (visual + structural)
+  self-check with one optional revision.
 - Full brief in [protocol/G4_grid/rules.md](protocol/G4_grid/rules.md).
 
 ## Sub-agent framing (verbatim in every brief)
@@ -390,12 +483,14 @@ experiments/exp_context_effect/
 └── tools/
     ├── build_curriculum.py         ← ✓ built + used to generate chars_1000.json
     ├── frequency_seed.py           ← ✓ 1938 common Chinese chars
-    ├── make_gt_300.py              ← ✓ 300×300 GT renderer
-    ├── judge_blind.py              ← ✓ blind batch judgment UI (smoke-tested)
-    ├── make_test_batch.py          ← ✓ generates smoke-test batch
-    ├── run_group.py                ← TBD — main orchestrator
-    ├── teacher.py                  ← TBD — curriculum position counter
-    └── snapshot.py                 ← TBD — freeze/thaw memory
+    ├── make_gt_300.py              ← ✓ 300×300 GT renderer (single char)
+    ├── render_all_gt.py            ← ✓ bulk-render all Phase-3 GTs (subprocess-per-char)
+    ├── judge_blind.py              ← ✓ blind batch judgment UI, resumable, back-key-after-finish
+    ├── make_test_batch.py          ← ✓ smoke-test batch generator
+    ├── teacher.py                  ← ✓ curriculum position counter + batch manifest builder
+    ├── dispatcher.py               ← ✓ builds per-attempt Drawer + Curator prompts (G4 phase-3 auto-injects MMH joints)
+    ├── mmh_joints.py               ← ✓ wraps run_6 joint_detector + classify_joints for G4 Phase-3 (300×300 PIL coord translation)
+    └── snapshot.py                 ← ✓ freezes memory + errata + retry_log per group at milestones
 ```
 
 ## Version history
@@ -419,3 +514,148 @@ experiments/exp_context_effect/
   - **Character curriculum: 47%:53% common/rare mix** per stroke bucket
     (validates memory-compounding on common + OOD-transfer on rare).
   - Frequency seed expanded to 1938 chars for the common/rare partition.
+- v4 — 2026-07-14 — Mid-run consolidation after 3 batches (position 60):
+  - **Reintroduced `curator_satisfaction_log.jsonl`** (v3 had removed
+    it) — kept as a passive calibration artifact, not gating anything.
+    Every batch 1-3 curator agreed with the human on 100% of verdicts
+    in early data, so the calibration is worth logging cheaply.
+  - **G4 curator collapsed back to single merged sub-agent** — the v3
+    Diagnostician/Writer split doubled cost with no measurable quality
+    gain in batches 1-2.
+  - **Drawer memory-write rules** made explicit and hardened:
+    Drawers may NEVER write to Success Bank (G3/G4) or write
+    item-mastery claims to `drawer_memory.md` (G2) during drawing.
+    Only Curator writes those, post human PASS. Sandboxes and
+    principle banks remain freely writable during drawing.
+  - **G3/G4 sandbox reframed as persistent free-form memory** (not
+    just short-term scratch) — analogous to G2's `drawer_memory.md`
+    for observations that don't fit the Success Bank / Principle Bank
+    schemas.
+  - **Phase-3 reflection step added**: for character items only, all
+    four groups (including G1) get one within-item revision after a
+    self-check. G1/G2/G3 use visual comparison; G4 uses **visual +
+    structural** (MMH-derived stroke count, endpoint anchors, P/T/N
+    joint classes). Max 2 render passes per item. Only the final PNG
+    is kept. Self-check does NOT gate submission — human is still
+    the only judge.
+  - **G4 Phase-3 auto-injection**: dispatcher appends an
+    "MMH-derived structural expectations" block to every G4 character
+    prompt, using [`tools/mmh_joints.py`](tools/mmh_joints.py) which
+    wraps run_6's `joint_detector` + `classify_joints` and translates
+    to G4's 300×300 PIL y-down coordinate system. Activates
+    automatically at position 170.
+  - **Snapshot cadence adjusted**: first snapshot taken at position
+    40 (post-batch-2 curator processing) rather than 50, to freeze
+    the exact memory state going into batch 3. Subsequent snapshots
+    follow the original "then every 100" cadence.
+  - **Rendering standardized on PIL** (drawers may still use turtle,
+    but PIL preferred — batch 1's turtle+postscript blur was a
+    documented failure mode for hooks/strokes at 300×300).
+  - **Radicals count corrected**: 137 (not 138) — 4画 bucket was 53
+    not 54.
+- v5 — 2026-07-15 — Mid-run behavioral fix after batch 4 diagnostic
+  (position 100, cumulative through 80 items: G1 60% / G2 63% / G3 63% /
+  G4 57%). Memory groups' advantage had collapsed to +3 points over
+  G1 (and G4 was BELOW G1). Root cause diagnosed as **memory groups
+  reflexively calling bank primitives with default parameters and
+  forcing bank recipes onto items that didn't fit** (亻, 讠, 廴 all
+  failing across memory groups where G1 succeeded). Two fixes plus
+  one one-time correction:
+  - **Transformation principles added to G3 and G4 principle_banks**
+    (TR1-TR7 for G3, TR1-TR8 for G4). Explicit rules for how to
+    move / scale / re-anchor a bank primitive when reusing it as a
+    component — the piece run_6 had that we were missing. Rationale:
+    run_6's format worked because it had explicit transformation
+    rules; ours had only default-parameter calls.
+  - **"Bank is supplementary, never mandatory" clause** added to
+    `shared_rules.md`, and echoed once in each memory group's
+    `rules.md` (single sentence in step 1, no workflow restructuring).
+    Bank use is per-stroke, not per-item; if nothing in the bank fits
+    without extreme transformation, draw fresh the way G1 does.
+    Forcing an ill-fitting primitive is worse than clean fresh
+    derivation.
+  - **One-time errata refresh** at position 100 (after batch 5
+    curators). Every item currently in errata for G2/G3/G4 gets one
+    mandatory retry attempt under the new principles. Rationale
+    ([shared_rules.md](protocol/shared_rules.md) "One-time errata
+    refresh" section): every existing errata item accumulated under
+    the OLD assumptions (bank-mandatory, no transformation rules).
+    Those items deserve one clean shot under the NEW principles
+    before being judged against permanent failure. After this pass,
+    the normal 20-item scan cadence resumes with no special
+    treatment. G1 not affected (no memory → no principles to refresh
+    against).
+- v7 — 2026-07-18 — **Memory self-evolution unlocked at position 150**
+  after B2 completion revealed an all-group score collapse (bootstrap
+  → B1 → B2 trajectory: G1 83%→60%→38%, G2 83%→70%→40%, G3 78%→54%→34%,
+  G4 67%→70%→40%; cumulative through 118 items: G1 54% / G2 59% / G3 49% /
+  G4 57%). Diagnosis (curator + user): the principle banks had filled
+  with *meta-cognitive* rules ("call primitives deliberately", "inline-
+  fresh test") rather than *contextual form/position knowledge* ("in
+  left-radical position, 竖 shortens to 60-70% and shifts right; 撇 in
+  top-left of a 3画 radical has angle ~75°"). Curators generalized
+  failures at the wrong abstraction layer; success banks stored frozen
+  concrete instances that didn't transfer. Deeper root cause:
+  **memory format and structure were externally prescribed**, which
+  contradicts the research question about *emergent* memory. Fix:
+  - **Self-evolution permission for G2, G3, G4.** Curators may create
+    new memory files with new schemas, restructure existing files,
+    retire unhelpful entries. Drawers auto-discover memory via each
+    group's `memory_index.md` (or explore the group directory) rather
+    than a hardcoded list in `rules.md`.
+  - **Core format constraints preserved**:
+    - G2 free-form markdown (unchanged constraint — G2 was always free)
+    - G3 memory unit remains callable Python functions (removing this =
+      G3 becomes G2)
+    - G4 memory unit remains 米字格 anchors `(cell, x_frac, y_frac)` +
+      P/T/N/S joint classification (removing this = G4 becomes G3)
+  - **Evolution log**: every structural change appended to
+    `groups/G<X>/evolution.md` with `(timestamp, files_changed,
+    rationale, expected_help_for)`.
+  - **G1 unchanged** (control).
+  - **Snapshot 0150 taken** for all groups as the pre-unlock baseline.
+    Post-unlock scores compared against snapshot_0150 accuracy.
+  - **Comparison design remains valid**: G1 vs (G2/G3/G4) tests "any
+    memory permission"; G2 vs G3 vs G4 tests "starting-format
+    influence on self-evolved memory"; pre-vs-post-unlock same-group
+    tests "does self-evolution beat externally-prescribed memory."
+- v6 — 2026-07-16 — **Phase 2 full restart** after v5's errata refresh
+  results showed a hard structural ceiling (best group only 25% on 125
+  errata retries, 25 items convergently unsolvable). Discovered that
+  **135 of 137 radicals actually have MMH GT PNGs available** — Phase 2
+  was running label-only for the wrong reason. Decision: restart
+  Phase 2 with the same GT-supported protocol as Phase 3.
+  - **Curriculum change**: 2 radicals without MMH data (卝, 牜) removed
+    from the 4画 bucket. Total items: 32 + **135** + 1000 = **1167**
+    (was 1169).
+  - **Phase 2 now GT-supported**: all 135 radicals get a GT PNG at
+    `gt/phase2/<char>.png` (rendered by
+    `tools/render_all_radical_gt.py`). Same reflection + revision
+    protocol as Phase 3.
+  - **G1 participates in Phase 2 revision** (GT available → revision
+    has meaningful info, same rationale as Phase 3).
+  - **G4 auto-injects MMH joint expectations for Phase 2** too (not
+    just Phase 3) — dispatcher updated.
+  - **Batch size 20 → 50**. User judges every 50 items.
+  - **错题集 scan cadence 20 → 25** (twice per 50-item batch: at start
+    and midpoint).
+  - **Cooldown 20 → 50 items** between retries of the same item.
+  - **Retry framing rewritten**: "Balance, not minimalism." Explicit
+    (a) prospective-use + (b) retrospective-learning criteria.
+    Acknowledges the G4-scan-#3-attempted-only-2-of-18
+    over-conservative failure mode. Curator now also tracks per-scan
+    retry pass rate for the paper.
+  - **State reset from position 100 to 32** (end of Phase 1). All
+    Phase-2 attempts deleted (272 dirs), all retry_attempts deleted
+    (135 dirs), Phase-2 judgment folders removed, batch_002 stripped
+    to keep only stroke portion. All Phase-2 additions to memory
+    files (drawer_memory, principle_bank, sandbox) stripped;
+    Phase-1 mastery + TR1-TR8 + "bank is supplementary" clause
+    preserved. Success Banks reset to Phase-1 primitives only
+    (G3: 25 stroke primitives; G4: 26 stroke primitives + `_anchor.py`
+    helper). Errata truncated to stroke-only. Retry_log truncated to
+    p1_stroke entries. curator_satisfaction_log cleared.
+  - **Snapshot cadence reset**: snapshot_060 and snapshot_100 deleted.
+    New baseline `snapshot_032` taken (clean end-of-Phase-1 state).
+    Going forward: snapshot every 100 curriculum items (132, 232,
+    332, ...).

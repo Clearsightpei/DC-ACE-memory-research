@@ -36,11 +36,12 @@ import numpy as np
 from PIL import Image
 from scipy import ndimage
 from skimage.morphology import skeletonize
+from skimage.draw import line as sk_line
 
 # Add tools dir to path so we can use the existing anchor/cell helper
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from anchor import xy_to_cell, CELLS
-from joint_detector import find_joints
+from joint_detector import find_joints, get_medians, mmh_to_canvas
 from classify_joints import classify
 
 
@@ -55,6 +56,9 @@ GT_RECALL_THRESHOLD = 0.20      # min fraction of dilated-GT covered by render
 GT_PRECISION_THRESHOLD = 0.40   # min fraction of render inside dilated-GT
 ANCHOR_INK_RADIUS = 25          # px — declared anchor must have ink within
 ANCHOR_MIN_COVERAGE = 0.75      # fraction of anchors that must have ink nearby
+TRACE_TOLERANCE_PX = 12         # dilation radius for "stroke path has ink"
+TRACE_PER_STROKE_MIN = 0.50     # min fraction of one stroke's path covered
+TRACE_FRAC_STROKES = 0.80       # min fraction of strokes with sufficient trace
 
 
 # ─── Image / topology primitives ───────────────────────────────────────
@@ -174,6 +178,53 @@ def anchor_coverage(binary, declared_anchors, radius=ANCHOR_INK_RADIUS,
             missing_anchors.append(a)
     total = len(declared_anchors)
     return covered / total if total else 1.0, total, missing_anchors
+
+
+def canvas_math_to_pixel(canvas_x, canvas_y, w=800, h=600):
+    """Math-coords (origin center, y-up) -> image pixel (origin top-left, y-down)."""
+    return int(round(canvas_x + w / 2)), int(round(h / 2 - canvas_y))
+
+
+def rasterize_stroke_path(canvas_pts, canvas_w=800, canvas_h=600):
+    """Given a polyline of canvas math-coord points, return a binary mask
+    of the line connecting them (one-pixel-wide skeleton)."""
+    mask = np.zeros((canvas_h, canvas_w), dtype=np.uint8)
+    if not canvas_pts:
+        return mask
+    px = [canvas_math_to_pixel(x, y, canvas_w, canvas_h) for x, y in canvas_pts]
+    for (x0, y0), (x1, y1) in zip(px[:-1], px[1:]):
+        x0 = np.clip(x0, 0, canvas_w - 1)
+        y0 = np.clip(y0, 0, canvas_h - 1)
+        x1 = np.clip(x1, 0, canvas_w - 1)
+        y1 = np.clip(y1, 0, canvas_h - 1)
+        rr, cc = sk_line(int(y0), int(x0), int(y1), int(x1))
+        rr = np.clip(rr, 0, canvas_h - 1)
+        cc = np.clip(cc, 0, canvas_w - 1)
+        mask[rr, cc] = 1
+    return mask
+
+
+def stroke_trace_coverage(render_binary, char, tolerance=TRACE_TOLERANCE_PX):
+    """For each MMH stroke of `char`, compute the fraction of its expected
+    path that has ink within `tolerance` px in the render.
+
+    Returns: list of per-stroke coverages (one float per stroke), plus the
+    aggregate fraction-of-strokes-well-covered.
+    """
+    medians = get_medians(char)
+    h, w = render_binary.shape
+    dilated = ndimage.binary_dilation(render_binary.astype(bool), iterations=tolerance)
+    coverages = []
+    for stroke in medians:
+        canvas_pts = [mmh_to_canvas(*p) for p in stroke]
+        path = rasterize_stroke_path(canvas_pts, canvas_w=w, canvas_h=h)
+        path_total = int(path.sum())
+        if path_total == 0:
+            coverages.append(1.0)  # degenerate — count as covered
+            continue
+        covered = int(np.logical_and(path > 0, dilated).sum())
+        coverages.append(covered / path_total)
+    return coverages
 
 
 def cells_having_ink(binary, min_pixels=30, canvas_w=800, canvas_h=600):

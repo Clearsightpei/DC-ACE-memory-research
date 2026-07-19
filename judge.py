@@ -7,12 +7,14 @@ Evaluates AI-generated Chinese character PNGs against ground truth using:
   - DeepSeek-OCR (both images) → coordinates of GT and AI strokes
 
 Outputs per character:
-    1. visual_score       — OpenCV phase correlation (0.0 to 1.0)
-    2. recognized_char    — What RapidOCR reads from the AI image
-    3. ocr_confidence     — RapidOCR recognition confidence (0.0 to 1.0)
-    4. is_correct         — Boolean: Python comparison (recognized == target)
-    5. gt_coordinates     — Stroke coordinates extracted from GT image
-    6. ai_coordinates     — Stroke coordinates extracted from AI image
+    1. visual_score        — OpenCV phase correlation (0.0 to 1.0)
+    2. recognized_char     — What RapidOCR reads from the AI image
+    3. ocr_confidence      — RapidOCR recognition confidence (0.0 to 1.0)
+    4. is_correct          — Boolean: Python comparison (recognized == target)
+    5. gt_coordinates      — Stroke coordinates extracted from GT image
+    6. ai_coordinates      — Stroke coordinates extracted from AI image
+    7. comparison_markdown — Holistic markdown comparison of GT vs AI
+                             (stroke counts, relative positions, sizes, errors)
 
 Usage:
     python judge.py \
@@ -239,6 +241,61 @@ def extract_coordinates(
         return {}
 
 
+# ─────────────────────────── DeepSeek Comparison Markdown ────────────────
+
+_COMPARE_OPTS = {
+    "temperature": 0,
+    "num_predict": 600,
+}
+
+
+def extract_comparison_markdown(
+    client: ollama.Client,
+    gt_path: str,
+    ai_path: str,
+    target_char: str,
+    model: str = "deepseek-ocr",
+) -> str:
+    """Compare GT and AI images side-by-side, returning a markdown report.
+
+    Sends both images in one chat turn (Ollama supports multi-image
+    messages). Returns a short markdown string covering:
+      - stroke count comparison
+      - relative stroke positions (top/middle/bottom, left/right)
+      - overall size and proportion differences
+      - the most prominent visual error (if any)
+
+    Returns "" on any failure — never raises.
+    """
+    try:
+        gt_data = _read_image_bytes(gt_path)
+        ai_data = _read_image_bytes(ai_path)
+        prompt = (
+            f'Compare two images of the Chinese character "{target_char}". '
+            'Image 1 is the ground truth. Image 2 is an AI attempt. '
+            'Write a short markdown report with these sections:\n'
+            '## Stroke count\n## Relative positions\n## Size & proportion\n## Main error\n'
+            'Each section: 1–2 sentences. Total under 200 words. '
+            'If image 2 is blank or unrelated, say so plainly.'
+        )
+        resp = client.chat(
+            model=model,
+            messages=[{
+                "role": "user",
+                "content": prompt,
+                "images": [gt_data, ai_data],
+            }],
+            options=_COMPARE_OPTS,
+        )
+        raw = resp["message"]["content"].strip()
+        # Strip <think> blocks emitted by R1-style models.
+        raw = re.sub(r"<think>.*?</think>", "", raw, flags=re.DOTALL).strip()
+        return raw
+    except Exception as e:
+        print(f"    [COMPARE] Error: {e}")
+        return ""
+
+
 # ─────────────────────────── Per-Character Judge ──────────────────────────
 
 def judge_character(
@@ -257,6 +314,7 @@ def judge_character(
       2. RapidOCR (local, rec-only) → recognized_char + ocr_confidence
       3. Python == comparison → is_correct
       4. DeepSeek-OCR → coordinates for GT and AI images
+      5. DeepSeek-OCR → comparison_markdown (GT vs AI side-by-side report)
     """
 
     ai_path = find_png_by_index(ai_png_dir, index)
@@ -272,6 +330,7 @@ def judge_character(
         "is_correct": False,
         "gt_coordinates": {},
         "ai_coordinates": {},
+        "comparison_markdown": "",
         "generated_code": generated_code,
         "final_score": 0.0,
     }
@@ -312,6 +371,12 @@ def judge_character(
         )
         result["ai_coordinates"] = extract_coordinates(
             vision_client, ai_path, "AI", model=vision_model
+        )
+
+    # ── Phase 4: Comparison markdown (GT vs AI, holistic) ─────────────
+    if vision_client is not None:
+        result["comparison_markdown"] = extract_comparison_markdown(
+            vision_client, gt_path, ai_path, character, model=vision_model
         )
 
     # ── Console output ────────────────────────────────────────────────

@@ -1,12 +1,34 @@
 # CLAUDE.md — DC-ACE: Emergent Memory Run
 
-This project is a research observation, not a controlled comparison.
-A repeating Claude-driven loop trains itself to draw Chinese characters
-with Python `turtle`. We watch what kind of memory **emerges** from
-its own outputs over many cycles. We do **not** prescribe a memory
-schema or compare strategies.
+This project is a research observation of emergent memory in AI agents,
+using Chinese-character drawing as an OOD proxy task. Two experiment
+frameworks live here:
 
-## The loop
+**Active work: `experiments/exp_context_effect/` (v7 as of 2026-07-18)** — a
+controlled 4-group comparison: G1 (no memory / control), G2 (free-form
+markdown), G3 (code-based coord bank), G4 (米字格 grid bank). Batches of
+50 items × 4 groups → blind human judgment → per-group curators →
+errata scan → next batch. Uses `tools/print_drawer_prompt.py` +
+`tools/dispatcher.py` to build per-item drawer prompts; workflow.js
+scripts orchestrate parallel drawer subagents.
+
+At **position 150** (2026-07-18), memory self-evolution was unlocked for
+G2/G3/G4 after all-group score collapse in B2. Curators may now create
+new memory files, restructure existing ones, and retire unhelpful
+entries; drawers auto-discover memory via each group's `memory_index.md`
+rather than a hardcoded list. Core format constraints preserved
+(G3: callable Python functions; G4: 米字格 anchors + P/T/N/S joints).
+See `experiments/exp_context_effect/README.md` v7 changelog for
+rationale and `groups/G<X>/evolution.md` for the emergence record.
+
+**Legacy work: `runs/run_*/`** — earlier single-group `/cycle`-based
+runs (the framework described below). Preserved as historical
+experimental record. `run_1/` and `run_6/` have POSTMORTEM.md files.
+Not being actively extended.
+
+---
+
+## The loop (legacy `runs/run_*` framework — historical)
 
 A repeating cycle, fired every 10 minutes by Claude Code's `/loop`:
 

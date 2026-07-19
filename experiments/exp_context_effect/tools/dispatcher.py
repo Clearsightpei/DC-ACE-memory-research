@@ -52,19 +52,47 @@ def _attempt_path(group: str, item: dict) -> str:
 
 
 def _memory_snapshot_lines(group: str) -> str:
-    """Describe the group's memory locations so the Drawer knows what to read."""
+    """Describe the group's memory ENTRY POINT.
+
+    v7 change (position 150): memory files are no longer hardcoded here.
+    The curator maintains `memory_index.md` describing what memory exists
+    and when to consult each file. Drawers read that index first and
+    follow its pointers. This is part of the memory-self-evolution
+    protocol — curators can restructure files freely, and the drawer's
+    entry point stays stable (memory_index.md) even as the underlying
+    structure changes.
+    """
     root = GROUP_DIRS[group]
     if group == "G1":
         return "(G1 has no memory — you have no files to read.)"
+    # G2, G3, G4 — always enter through memory_index.md
+    index_path = os.path.join(root, "memory_index.md")
+    if os.path.exists(index_path):
+        return (
+            f"- **Entry point (READ FIRST)**: {index_path}\n"
+            f"  This index describes what memory files exist and when to\n"
+            f"  consult each. Follow its pointers to specific files, or\n"
+            f"  explore `{root}/` freely if you need to find something\n"
+            f"  not listed. The curator maintains this index and may\n"
+            f"  restructure memory across cycles (see the group's\n"
+            f"  `evolution.md` for structural change history).\n"
+            f"- Errata (错题集): {root}/errata.md"
+        )
+    # Fallback if memory_index.md not yet created — behave like pre-v7
     if group == "G2":
-        return f"- Memory file to read (and let the Curator update): {root}/drawer_memory.md\n" \
-               f"- Errata (错题集): {root}/errata.md"
-    # G3, G4
+        return (
+            f"- Memory file to read (and let the Curator update): {root}/drawer_memory.md\n"
+            f"- Errata (错题集): {root}/errata.md\n"
+            f"- (Note: memory_index.md not yet created; curator should\n"
+            f"  create it on next cycle per v7 protocol.)"
+        )
     return (
         f"- Success bank: {root}/success_bank/INDEX.md and {root}/success_bank/code/\n"
         f"- Principle bank: {root}/principle_bank.md\n"
         f"- Sandbox (short-term scratch): {root}/sandbox.md\n"
-        f"- Errata (错题集): {root}/errata.md"
+        f"- Errata (错题集): {root}/errata.md\n"
+        f"- (Note: memory_index.md not yet created; curator should\n"
+        f"  create it on next cycle per v7 protocol.)"
     )
 
 
@@ -86,7 +114,10 @@ def build_drawer_prompt(group: str, item: dict) -> str:
     if item.get("target_png") and os.path.exists(item["target_png"]):
         item_block += f"- **target GT PNG (may read)**: {item['target_png']}\n"
     else:
-        item_block += f"- **target GT PNG**: NONE — for strokes and radicals you draw based on the label + description.\n"
+        # Phase 1 (strokes) has no GT — infer from label + description.
+        # v6+: Phase 2 radicals now have GT (135/137 in MMH; 卝, 牜 excluded).
+        # If we still reach here on a radical, it's one of the excluded ones.
+        item_block += f"- **target GT PNG**: NONE — infer from label + description alone (Phase 1 stroke, or a radical without MMH data).\n"
 
     item_block += f"""
 ## Output
@@ -106,6 +137,25 @@ Read them before you draw. Use whatever entries help. Do NOT read any
 other group's files.
 """
 
+    # G4 augmentation: inject MMH-derived joint expectations.
+    # v6+: fires for phase == 'character' AND phase == 'radical' (radicals now
+    # have MMH GT). Skips gracefully if the specific radical isn't in MMH
+    # (e.g. 卝, 牜 — but those were removed from the curriculum).
+    # Failure to import mmh_joints is soft — omit the block rather than break.
+    joint_block = ""
+    if group == "G4" and item.get("phase") in ("character", "radical"):
+        try:
+            try:
+                from tools.mmh_joints import render_joint_brief_block
+            except ImportError:
+                import sys as _sys
+                _sys.path.insert(0, HERE)
+                from mmh_joints import render_joint_brief_block
+            char = item.get("character_or_shape") or item.get("target_label", "").split()[0]
+            joint_block = "\n\n" + render_joint_brief_block(char) + "\n"
+        except Exception as e:
+            joint_block = f"\n\n## MMH joint block: unavailable ({e})\n"
+
     return (
         "# YOU ARE THE DRAWER SUB-AGENT\n\n"
         + f"Group: **{group}**\n\n"
@@ -113,6 +163,7 @@ other group's files.
         + "## GROUP RULES\n\n" + group_rules + "\n\n"
         + memory_block + "\n"
         + item_block
+        + joint_block
     )
 
 

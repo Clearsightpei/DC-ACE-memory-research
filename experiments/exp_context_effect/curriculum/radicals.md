@@ -33,17 +33,17 @@ memory as a "reuse" record.
 
 艹 屮 彳 巛 川 辶 寸 大 飞 干 工 弓 廾 广 己 彐 彑 巾 口 马 门 宀 女 犭 山 彡 尸 饣 士 扌 氵 纟 巳 土 囗 兀 夕 小 忄 幺 弋 尢 夂 子 丬 夊
 
-## 4画 (53 radicals)
+## 4画 (51 radicals — 卝 and 牜 removed per Phase-2 restart, no MMH GT available)
 
-贝 比 灬 长 车 歹 斗 厄 方 风 父 戈 卝 户 火 旡 见 斤 耂 毛 木 肀 牛 牜 爿 片 攴 攵 气 欠 犬 日 氏 礻 手 殳 水 瓦 尣 王 韦 文 毋 心 牙 爻 曰 月 爫 支 止 爪 无
+贝 比 灬 长 车 歹 斗 厄 方 风 父 戈 户 火 旡 见 斤 耂 毛 木 肀 牛 爿 片 攴 攵 气 欠 犬 日 氏 礻 手 殳 水 瓦 尣 王 韦 文 毋 心 牙 爻 曰 月 爫 支 止 爪 无
 
 ## Totals
 
 - 1画: 8
 - 2画: 30
 - 3画: 46
-- 4画: 53
-- **Total: 137 radicals**
+- 4画: 51 (was 53; 卝 and 牜 removed — not in MMH graphics.txt)
+- **Total: 135 radicals**
 
 ## GT rendering for radicals
 
