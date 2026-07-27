@@ -1,287 +1,37 @@
-# Principle Bank — G3 (coord-bank)
+# Principle Bank — G3 (coord-bank) — SPLIT AND MOVED
 
-General rules learned across items. Coord-format only — no anchors,
-no cells, no joint specs.
+*This file was split on 2026-07-18 (v7 self-evolution) into three
+focused files. Drawers should read those instead of this stub.*
 
-## RESET NOTE (Phase-2 restart, 2026-07-16)
+## Where to find what
 
-This bank has been reset to preserve only the transformation rules
-(TR1-TR7) and the Phase-1 principles (P1-P10) that were validated on
-strokes and radicals. All Phase-2 diagnostic sections, batch-specific
-statistics, and Phase-2-only principles (P11-P15) have been stripped.
-The reset was performed at Phase-2 restart to give the coord-format
-Drawer a clean slate: transformation rules + stroke-level structural
-knowledge, without the accumulated recipe-crafting hypotheses that
-were tuned to the pre-restart curriculum.
+- **Meta-rules** (how to use the bank; TR1-TR7; retired TR8-TR9):
+  → `principles_meta.md`
+- **Stroke-family observations** (P1-P11; width profiles; math
+  convention; hook directions):
+  → `principles_stroke_family.md`
+- **Stroke × context form lookup** (concrete angle/taper/bow numbers
+  per stroke per position — NEW file):
+  → `form_catalog.md`
 
-## BANK IS SUPPLEMENTARY
+## Why the split
 
-The Success Bank is a SUPPLEMENTARY resource, not a primary source of
-truth. For any character or radical drawing task, ground truth (GT)
-and the current brief take priority over bank recipes. Consult the
-bank when a primitive shape genuinely matches the target; otherwise
-derive coords fresh. Never call a bank primitive without deliberate
-placement (see TR1-TR7 below).
+`principle_bank.md` grew to 287 lines during B1 with an accumulation
+of meta-cognitive TR-rules ("call primitives deliberately", "budget
+your reach", "INLINE-FRESH TEST"). B2's pass rate (34%) fell BELOW
+G1's no-memory control (38%) despite drawer compliance with those
+rules. Root cause: rules told the drawer *when* to reach for the
+bank, but the underlying issue was that the bank could not express
+the *variation in stroke form* that different compositions require.
 
-## CRITICAL — TRANSFORMATION RULES (read FIRST every cycle)
+The split makes it obvious that the missing knowledge is
+context-form (form_catalog.md, the new file) — not more meta-rules.
+See `evolution.md` @ position 150 for the full rationale.
 
-**The reason bank primitives keep failing on new radicals is not that
-the primitives are wrong — it's that Drawers are calling them with
-DEFAULT parameters and expecting them to fit a new composition.
-Every primitive in the bank is designed for STANDALONE use. To use it
-as a component you MUST transform it.**
+## Change log
 
-### TR1. Every primitive call must be a deliberate placement, not a default call
-
-Wrong:
-```python
-from shu import draw_shu
-draw_shu(t)  # default position, default scale, hope it fits
-```
-
-Right:
-```python
-from shu import draw_shu
-# For 亻: 竖 is right-half, offset right of the 撇, shorter than standalone
-draw_shu(t, ox=+18, oy=-8, scale=0.75)
-```
-
-Before calling ANY primitive from the bank, decide three numbers:
-1. **Where** should its origin land (`ox, oy`)?
-2. **How big** should it be relative to its standalone size (`scale`)?
-3. **How** should its endpoints meet any adjacent stroke (shared pixels)?
-
-If you can't answer all three, don't call the primitive — inline the
-recipe.
-
-### TR2. Radical-position scaling defaults
-
-Component role → scale (relative to standalone bank default of 1.0):
-- **Left/right radical position** (e.g. 亻 in 你, 女 in 好): scale = 0.55–0.75
-- **Top radical position** (e.g. 艹 in 花, 宀 in 家): scale = 0.75–0.90 (wider than tall)
-- **Bottom radical position** (e.g. 大 in 天): scale = 0.75–0.90
-- **Enclosing radical** (e.g. 门 in 问, 匚 in 匹): scale = 0.90–1.0 (occupies most of canvas)
-- **Full-standalone**: scale = 1.0
-
-### TR3. Origin (ox, oy) is picked to place the STROKE'S CENTER OF MASS
-
-`(ox, oy)` in every G3 primitive is the CANVAS-COORD offset from the
-primitive's own internal origin (usually its geometric center). To
-place a component:
-- Compute the target center pixel `(cx, cy)` where the component should
-  end up (in PIL 300×300 coords, or math coords, whichever the
-  primitive uses).
-- Pass `ox = cx - primitive_default_cx`, `oy = cy - primitive_default_cy`.
-- For a 竖 component in 亻's right slot: target center ≈ (180, 175).
-  If shu's default center is (150, 150), pass `ox=+30, oy=+25`.
-
-### TR4. When two primitives must share a joint pixel, compute it FIRST
-
-For 十 (crossing): the joint is at canvas center (150, 150). Draw
-`draw_heng(t, ox=0, oy=0, scale=0.9)` and `draw_shu(t, ox=0, oy=0,
-scale=0.9)` — the SAME `(ox, oy)` because they both cross through the
-canvas center. Do NOT pass different `(ox, oy)` to horizontally-
-crossed primitives.
-
-For 亻 (touching at 撇's tail): compute the tail pixel of `draw_pie`
-with the chosen `(ox, oy, scale)`, then set `draw_shu`'s `(ox, oy)`
-so its head lands within 3 px of that tail. **Compute the pixel
-explicitly in comments before the render call.**
-
-### TR5. If a primitive doesn't have the right transform for a new
-composition, INLINE the recipe — do not stretch the primitive with
-extreme (ox, oy) or scale values
-
-Signs to inline instead of reuse:
-- `scale < 0.4` (primitive was tuned for full-size; shrinking too far
-  breaks brushwork proportions).
-- Endpoint anchors of the transformed primitive would fall outside
-  their bank-tuned expected cells (e.g. 竖's tail lands above its
-  head).
-- The component needs different width taper than the standalone
-  primitive provides.
-
-When inlining: copy the primitive's core coord math into your
-`generated.py`, then adjust the numeric endpoints to fit the new
-composition. This preserves the shape idiom while allowing per-item
-tuning.
-
-### TR6. Never call a bank primitive without recording the transform in a comment
-
-```python
-# 亻 = pie (left slot, scale 0.7) + shu (right slot, scale 0.75, tail 2px from pie tail)
-# pie: default center (150,150) → target center (105,155); ox=-45, oy=+5, scale=0.7
-draw_pie(t, ox=-45, oy=+5, scale=0.7)
-# shu: default center (150,150) → target center (185,175); ox=+35, oy=+25, scale=0.75
-draw_shu(t, ox=+35, oy=+25, scale=0.75)
-```
-
-Comments serve two purposes: force yourself to derive the transform
-explicitly (not by muscle memory), and give the Curator diagnostic
-signal on FAIL (which transform was wrong).
-
-### TR8. INLINE-FRESH TEST (added B1, after 2 consecutive underperforming batches)
-
-**G3 has now underperformed the no-memory G1 control on 2 batches in a
-row (bootstrap 78% vs 84%; B1 54% vs 60%). Diagnostic: G3 drawers
-reflexively reach for `draw_pie` / `draw_na` / `draw_shu` / `draw_heng`
-even when the target composition needs stroke geometry the primitive
-was not tuned for.** The primitive is designed for STANDALONE use and
-force-fitting it via (ox, oy, scale) preserves the WRONG shape.
-
-**Before every primitive call, apply the INLINE-FRESH TEST:**
-
-Ask "if I had no bank, how would G1 draw this stroke fresh from a
-tapered-bezier / tapered-line recipe, given the target's shape in this
-specific composition?" Compare that mental G1 stroke to what the
-primitive at your chosen (ox, oy, scale) would emit.
-
-The primitive is the right tool ONLY when:
-1. The stroke's shape (curvature, taper, aspect ratio) matches the
-   primitive's standalone shape after simple uniform scaling — no need
-   to bend, flatten, tilt, or truncate.
-2. The stroke's role is COSMETICALLY identical to standalone use — same
-   endpoint conventions, same width profile, same overall silhouette.
-3. Your (ox, oy) is a pure translation of the primitive's canonical
-   placement, not a re-anchor to a different landmark.
-
-Otherwise **inline fresh** — copy the tapered-bezier / tapered-line
-recipe from an existing bank primitive into `generated.py`, adjust the
-numeric endpoints and control points for THIS composition, and skip
-the import entirely.
-
-**Documented B1 failure modes where inline-fresh would have helped:**
-
-- **人, 入, 大**: force-fit `pie` + `na` primitives. Both primitives are
-  tuned as WIDE diagonal sweeps for standalone. In 人/入/大 the strokes
-  need MORE VERTICAL character (人, 入) or CROSSING geometry (大 needs
-  pie head above heng and na head above heng, with both sweeping OUT
-  from a near-central meeting point). The primitive's default chord
-  angle fought the target. Inline-fresh: bezier from a chosen apex
-  through a specific belly control point to a chosen tail.
-- **廴, 彳, 巛, 弓, 己, 巾, 马, 门, 女, 犭**: multi-stroke radicals with
-  characteristic curls/turns not present in any single-primitive form.
-  Force-fitting `heng_zhe` / `shu_wan` / `heng_pie_wan_gou` at
-  compressed scales flattened the distinctive curl. Inline-fresh: a
-  single bezier per composite curl.
-
-**Rule of thumb:** if you find yourself reaching for TWO primitives at
-`scale < 0.55` each to build one radical, STOP — inline the whole
-thing as ONE stroke or TWO fresh strokes with hand-picked endpoints.
-Two-shrunk-primitives is the failure signature.
-
-### TR9. When bank size ≥ 40 primitives, budget your reach
-
-At 66+ bank entries after B1, the temptation to "there must be a
-primitive for this" grows with the bank. Do NOT scan the bank looking
-for a fit — decide the target's shape FIRST (as G1 would), then check
-if a primitive matches. Bank-first thinking is the mechanism behind
-G3's underperformance.
-
-### TR7. Every composition passes an eyeball sanity check BEFORE render
-
-Before running `python3 generated.py`, mentally simulate:
-1. Where does each stroke start and end in canvas pixels?
-2. Do any two strokes that SHOULD meet share a pixel (weld) or land
-   within their expected small gap (N-class, ~10-15 px)?
-3. Does the composition fit within the 300×300 canvas with ~10 px
-   margin on all sides?
-
-If any answer is uncertain, adjust `(ox, oy, scale)` before rendering.
-Rendering, seeing failure, then adjusting wastes a scan window.
-
----
-
-## P1. Hook (钩) direction matters more than length
-
-- 竖钩's hook flicks UP-AND-LEFT from the shaft's base.
-- 弯钩's hook flicks UP-AND-LEFT from the arc's bottom.
-- 卧钩's hook flicks UP-AND-LEFT from the arc's rightmost point.
-- 斜钩's hook rises nearly VERTICALLY (slightly leftward) from the
-  tail.
-- 横斜钩's hook flicks UP-AND-LEFT from the diagonal's bottom-right end.
-- A blob or downward spike at the tail = failure. The hook must be a
-  visibly tapered short line pointing UP (with a slight leftward lean
-  in most cases), joining smoothly with the previous segment.
-
-## P2. Prefer PIL ImageDraw over turtle+PostScript
-
-Turtle scripts that use `canvas.postscript()` and then PIL-resize can
-blur or lose fine features (especially small hooks). Every attempt in
-batch 1 that used direct PIL succeeded on stroke shape; the two that
-used turtle (弯钩, 横斜钩) were mixed — 弯钩 passed only because its
-hook is longer, 横斜钩 lost its hook entirely.
-
-## P3. Tapered lines beat rectangular polygons
-
-Stroke shafts drawn as tapered `line` segments (or stamped-circle
-sequences with a width ramp) read as calligraphic ink. Shafts drawn as
-polygons (rectangles or trapezoids) with separate ellipse caps read as
-mechanical shapes (see 竖钩 failure). Rule: no matter the stroke, model
-the ink as a spine + a width profile, never as a hollow polygon.
-
-## P4. Width profiles are stroke-specific
-
-Empirically-passing width profiles from batch 1:
-- 横: uniform ~12 px.
-- 竖: uniform ~12 px.
-- 撇: thick head (~10) -> needle tip (~1), monotonic taper.
-- 捺: thin head (~2) -> belly (~18 at u=0.7) -> tapered foot (~3).
-- 点: thin head (~3) -> heavy rounded tail (~14). Opposite of 撇.
-- 提: thick pressed head (~16 for first 10%) -> needle tip (~1).
-- 弯钩 arc body: 6 -> 10 (u=0.55) -> 5. Hook: 5 -> 2.
-- 卧钩 body: 3 -> 11 (thickens down-right). Hook: 10 -> 3.
-
-## P5. Coord math convention that works in this bank
-
-Origin at canvas center, +y up (math convention). Every primitive
-converts internally via `_to_pixel(ox, oy) -> (cx+ox, cy-oy)`. This
-matches the storage format in the rules and stays consistent when
-primitives are composed with offsets.
-
-## P6. Compound strokes = concatenated tapered segments + a corner blob
-
-For 横折, 竖折, 撇折, 横撇, 横钩, 竖提, 横斜钩, 撇点, 橫折提:
-- Two-or-three straight (or shallowly curved) tapered segments joined
-  at a common corner point.
-- A small filled ellipse at the corner (顿笔) hides the miter and gives
-  a brush-turn feel.
-- Keep segment endpoints numerically identical at the join so the ink
-  is continuous.
-
-## P7. Radicals ARE strokes when shape matches — reuse the primitive
-
-When a 1-画 radical is orthographically identical to a mastered
-stroke (e.g. 丨↔shu, 一↔heng, 丶↔dian, 乛↔heng_gou), calling the
-bank primitive with `(ox=0, oy=0, scale=1.0)` is the correct first
-move — do NOT re-derive coords. The caveat: verify visual match to
-GT first. If the radical form has a shallower slope, thicker head,
-or softer curl than the mastered stroke (see P10 for the 丿 case),
-the primitive is the wrong tool and you should build a variant.
-
-## P8. Multi-fold zig-zag strokes fail without curved final segments
-
-Pure-orthogonal (straight-line + right-angle) drawings of 横折折,
-横折弯, 竖折折钩, 横折折折钩 tend to fail. Passes come from
-introducing a curved segment somewhere. Rule: any label containing
-弯 requires a real quarter-circle arc, not a right-angle plus a
-horizontal. Any 折折钩 (two folds ending in a hook) needs the
-terminal shaft to end below the horizontal so the hook has room to
-flick upward — do not stop the final vertical at the corner's own
-y-level.
-
-## P9. Hook belongs on the SHAFT, not on the corner
-
-竖折折钩 failed because the hook flick sprouted from the second corner
-blob rather than the end of the second vertical shaft. The hook must
-share pixels with the last few px of the shaft; if the shaft is too
-short, extend it before adding the hook, otherwise the hook reads as
-a floating triangle stuck to a lollipop.
-
-## P10. 撇 vs. 丿 vs. diagonal: pie primitive is TOO diagonal for 丿
-
-The 撇 (pie) primitive passed as a stroke but FAILED as the 丿 radical
-because 丿 in radical form has a shallower slope, thicker head, and
-softer curl — it reads as a "gentle scoop" rather than a diagonal
-sweep. When a radical is nominally the same stroke, check curvature
-and slope against the target label, not just the stroke name.
+- **2026-07-18** (position 150) — split into three files; retired
+  TR8 and TR9 (documented in `principles_meta.md`); created
+  `form_catalog.md` for stroke × context lookup.
+- **2026-07-16** (Phase-2 restart) — reset to TR1-TR7 + P1-P10.
+- **Various B1 additions** — TR8, TR9, P11 (reverted / migrated).

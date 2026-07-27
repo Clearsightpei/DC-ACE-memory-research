@@ -1,8 +1,8 @@
 {
-  "global_position": 150,
-  "phase": "radical",
+  "global_position": 400,
+  "phase": "character",
   "phase_position": 0,
-  "last_errata_scan_position": 100,
-  "batches_created": 3,
+  "last_errata_scan_position": 350,
+  "batches_created": 8,
   "total_items": 1167
 }

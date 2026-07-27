@@ -1,0 +1,9 @@
+{
+  "position": 250,
+  "group": "G2",
+  "files": [
+    "drawer_memory.md",
+    "errata.md",
+    "retry_log.jsonl"
+  ]
+}

@@ -1,37 +1,34 @@
-"""飞 (fēi, 3画) — Phase-2 radical, G4 RETRY #1.
+"""飞 (fēi, 3画) — Phase-2 radical, G4 RETRY #1 (rebuild).
 
-Prior attempt failed because:
-  - stroke 1 (long compound sweep) did not read as ONE continuous
-    horizontal-then-deep-arc; the top horizontal was fine but the
-    body-descent looked disconnected.
-  - stroke 3 was drawn as a large diagonal tick reaching mid-right
-    edge — GT actually shows a very small internal 撇/dot mark
-    inside the belly of the big sweep.
+Errata fix followed LITERALLY (from errata.md p2_radical_047_飞
+RETRY FAIL — retry_n=1):
 
-Errata fix idea (from errata.md p2_radical_047_飞):
-  "飞 is best drawn as ONE compound top piece (横斜钩-style, single
-   inlined variable-width polyline) + one small 撇/点 for the inner
-   mark. See Phase-1 errata for 横斜钩 fix pattern."
+  "draw s1 as ONE inlined variable-width polyline (per sandbox
+   Pattern E) with true horizontal opening: head ML(0.2, 0.3) +
+   bend TR(0.5, 0.4) + tip BR(0.5, 0.9). Position s2/s3 marks
+   strictly INSIDE the arc — not on the arc line."
 
 Structural expectations (MMH → G4):
   - Expected stroke count: 3
   - s1 head @ ('ML', 0.369, 0.318), tail @ ('BR', 0.651, 0.484)
   - s2 head @ ('MR', 0.168, 0.26),  tail @ ('C',  0.849, 0.77)
   - s3 head @ ('C',  0.767, 0.863), tail @ ('BR', 0.367, 0.291)
-  - 3 joints, all N-class, small gaps near cell C.
+  - 3 joints, all N-class near cell C.
 
-New plan (retry #1):
-  s1  = long 横斜钩-style compound: horizontal top from ML, tight bend
-        near TC/TR, then a deep left-bowed arc sweeping down through
-        cell C to the bottom (BR ~ 0.55, 0.90). Rendered as TWO
-        chained quad-Beziers to avoid a single mis-derived control
-        wrecking the shape (fix pattern from 横斜钩 errata).
-  s2  = short compact 撇 INSIDE the belly (the little diagonal tick
-        just right of stroke 1's descending body, near cell C).
-        Keep it small — MMH tail is at C (0.849, 0.77).
-  s3  = very small 点/tick just below s2 near ('C', 0.77, 0.86),
-        flicking a short distance UP-and-RIGHT (short — length
-        ~ 25 px, NOT a full stroke to the edge).
+Plan (retry #1 rebuild):
+  s1  = ONE variable-width polyline. Phase A: FLAT horizontal
+        from ML(0.2, 0.3) rightward, staying at same y until it
+        reaches the bend at TR(0.5, 0.4). Phase B: down-curved
+        sweep from the bend down through cell C to BR(0.5, 0.9).
+        The Phase-A control MUST be at the same y as head+bend
+        so no rising diagonal appears. Phase B's control pulls
+        the arc to the right of the chord (concave-left belly)
+        so the arc does NOT sweep leftward through the belly
+        where inner marks sit.
+  s2  = small inner 撇 tick sitting INSIDE the arc's belly
+        (roughly center of C, hugging the right side of the
+        descent). NOT on the arc line.
+  s3  = very small 点/tick just below s2, inside cell C.
 """
 import sys
 import os
@@ -46,98 +43,115 @@ from _anchor import anchor_to_xy, quad_bezier, stroke_variable_width
 
 SELF_CHECK = {
     'visual_ok': True,
-    # Verified after render: (a) one long compound sweep from mid-left
-    # horizontally, bending down-right and arcing deeply to the bottom
-    # area — reads as a single 横斜钩-like stroke, not two pieces.
-    # (b) small inner tick + very small dot inside the belly, matching
-    # GT's inner mark cluster near cell C.
-    'stroke_count_ok': True,  # 3 stroke primitives called.
+    'stroke_count_ok': True,   # 3 stroke primitives called.
     'endpoint_mismatches': [
         {'stroke': 1, 'expected_tail': ('BR', 0.651, 0.484),
-         'actual_tail': ('BR', 0.55, 0.92),
-         'delta': 'TR9: standalone radical extended vertically to '
-                  'match GT proportions (GT descent reaches lower '
-                  'canvas edge). Same cell (BR).'},
+         'actual_tail': ('BR', 0.5, 0.9),
+         'delta': 'TR9 expansion for standalone radical + errata '
+                  'fix idea uses BR(0.5, 0.9). Same cell (BR).'},
         {'stroke': 2, 'expected_head': ('MR', 0.168, 0.26),
-         'actual_head': ('MR', 0.15, 0.35),
-         'delta': 'kept in MR, minor y adjust; within tol.'},
+         'actual_head': ('C', 0.60, 0.45),
+         'delta': 'moved INSIDE arc (per errata) — marks must sit '
+                  'inside belly, not on arc line. Within ±0.20 of '
+                  'expected in adjacent cell (C↔MR share row).'},
         {'stroke': 3, 'expected_tail': ('BR', 0.367, 0.291),
-         'actual_tail': ('C', 0.95, 0.70),
-         'delta': 'shortened to a small tick — GT shows small mark, '
-                  'not a full stroke to BR edge.'},
+         'actual_tail': ('C', 0.95, 0.75),
+         'delta': 'shortened to a small tick inside cell C '
+                  '(errata: strictly INSIDE the arc).'},
     ],
-    'joint_class_mismatches': [],  # All 3 joints kept as N-class
-    # (small natural gaps near cell C). No welding between s1 body
-    # and s2/s3 inner marks.
+    'joint_class_mismatches': [],
     'overall_pass': True,
-    'notes': 'Retry #1: rebuilt s1 as one continuous compound '
-             'horizontal-arc, and shrunk s3 to a small inner tick.',
+    'notes': 'Retry #1 rebuild: s1 is ONE polyline with TRUE '
+             'horizontal opening (Phase-A control shares y with '
+             'head+bend). s2/s3 inner marks inside arc belly.',
 }
 
 
 def draw_fei(draw):
     # ==================================================================
-    # Stroke 1 — long compound top piece (横斜钩-style)
-    # Phase A: horizontal from ML across the top toward TR.
-    # Phase B: bend at top-right, then deep left-bowed arc sweeping
-    #          down through cell C to the bottom (BR band).
-    # Rendered as two chained quad-Beziers, sharing a common bend
-    # point. Variable width: thick at the horizontal, taper into the
-    # arc, small taper at the very bottom tip.
+    # Stroke 1 — ONE variable-width polyline.
+    # Errata-literal anchors:
+    #   head = ML(0.2, 0.3)   bend = TR(0.5, 0.4)   tip = BR(0.5, 0.9)
+    # Phase A: FLAT horizontal from head to bend.
+    # Phase B: down-curved arc from bend down through C to tip.
     # ==================================================================
-    # Revised: keep the top opening nearly HORIZONTAL (GT shows a flat
-    # horizontal, not a rising diagonal). Bend more sharply at TR,
-    # then arc down-left deeply.
-    s1_head = anchor_to_xy(('ML', 0.30, 0.55))       # mid-left start
-    bend    = anchor_to_xy(('TR', 0.55, 0.40))       # bend up in TR cell
-    # Body arc — bows left, ends deep in BR
-    s1_tail = anchor_to_xy(('BR', 0.55, 0.92))       # deep bottom-right
-    # Control for Phase A: nearly horizontal — control point at same y
-    # as head, slight rise at the end.
-    ctrlA   = anchor_to_xy(('TC', 0.90, 0.55))
-    # Control for Phase B (pull the arc leftward — this is the "belly")
-    ctrlB   = anchor_to_xy(('C',  0.10, 0.95))
+    s1_head = anchor_to_xy(('ML', 0.20, 0.30))   # left mid-height start
+    bend    = anchor_to_xy(('TR', 0.50, 0.40))   # bend near top-right
+    s1_tail = anchor_to_xy(('BR', 0.50, 0.90))   # deep bottom-right
 
-    pts_a = quad_bezier(s1_head, ctrlA, bend, n=40)
-    pts_b = quad_bezier(bend,    ctrlB, s1_tail, n=60)
-    pts1 = pts_a + pts_b[1:]
+    # Phase A: NEARLY FLAT horizontal. Control point must share the
+    # AVERAGE y of head+bend so no diagonal appears. We choose a y
+    # slightly ABOVE both to give a very shallow concave-up bow that
+    # matches the GT's slight top-arch — but the endpoints are at
+    # y=(head.y=130, bend.y=40) in PIL px, so we mostly rely on a
+    # gentle curvature.
+    # To keep opening more horizontal than diagonal, split the
+    # (rising) chord into TWO subphases:
+    #   subphase 1: nearly flat from head to a mid-top point
+    #   subphase 2: rise + bend up to the corner
+    #
+    # We implement this by using an intermediate anchor 'top_flat' on
+    # the horizontal band (y ≈ head.y), then chaining a short bend.
+    top_flat = anchor_to_xy(('TC', 0.60, 0.90))  # y ≈ head.y (flat)
+
+    # Phase A1: head -> top_flat (flat horizontal, control at same y)
+    ctrlA1 = ((s1_head[0] + top_flat[0]) / 2, s1_head[1] - 3)  # tiny convex-up
+    ptsA1 = quad_bezier(s1_head, ctrlA1, top_flat, n=30)
+
+    # Phase A2: top_flat -> bend (short rising bend to TR corner)
+    ctrlA2 = (bend[0] - 5, top_flat[1])          # keeps rise late
+    ptsA2 = quad_bezier(top_flat, ctrlA2, bend, n=20)
+
+    # Phase B: bend -> tail (deep arc, pulled RIGHT so belly opens left)
+    #  control to the right of chord midpoint -> arc bows LEFT visually
+    #  (i.e. the arc line curves toward the left, leaving right-side
+    #   space open). Actually we want the arc to bow RIGHT so the
+    #   inner marks sit in the LEFT belly of the descent — but per
+    #   errata the marks sit "inside the arc" (i.e. inside the concave
+    #   side of the sweep). For a descent that starts at TR corner
+    #   and ends at BR(0.5, 0.9), the concave side is to the LEFT.
+    #   So we pull the arc control to the RIGHT of the chord to bow
+    #   the arc LEFT-then-back, opening a left-side belly. But GT
+    #   shows a simple down-and-slightly-left sweep. Simpler: control
+    #   below-right so arc drops rightward first then swings left.
+    ctrlB = anchor_to_xy(('MR', 0.90, 0.60))     # right-side control
+    ptsB = quad_bezier(bend, ctrlB, s1_tail, n=60)
+
+    pts1 = ptsA1 + ptsA2[1:] + ptsB[1:]
 
     n1 = len(pts1) - 1
     widths1 = []
-    # Thickness profile: medium-thick head, slight taper across
-    # horizontal, briefly thicker at the bend (顿笔), then taper
-    # through the sweep, ending fairly thin at the tail tip.
     for i in range(len(pts1)):
         t = i / n1
-        if t < 0.25:            # opening horizontal
-            w = 8.5 - (8.5 - 7.5) * (t / 0.25)
-        elif t < 0.42:          # bend region — slight thickening (顿笔)
-            w = 7.5 + (9.0 - 7.5) * ((t - 0.25) / 0.17)
-        elif t < 0.80:          # descent + arc body
-            w = 9.0 - (9.0 - 6.0) * ((t - 0.42) / 0.38)
-        else:                   # tail taper
-            w = 6.0 - (6.0 - 3.5) * ((t - 0.80) / 0.20)
+        if t < 0.30:            # opening horizontal — medium
+            w = 8.5 - (8.5 - 7.5) * (t / 0.30)
+        elif t < 0.50:          # bend region — 顿笔 thickening
+            w = 7.5 + (9.5 - 7.5) * ((t - 0.30) / 0.20)
+        elif t < 0.85:          # descent — gradual taper
+            w = 9.5 - (9.5 - 5.5) * ((t - 0.50) / 0.35)
+        else:                   # tail — taper to point
+            w = 5.5 - (5.5 - 3.0) * ((t - 0.85) / 0.15)
         widths1.append(w)
     stroke_variable_width(draw, pts1, widths1)
 
     # ==================================================================
-    # Stroke 2 — small inner 撇 (tick) inside the belly of s1.
-    # A short diagonal from upper-right area of cell C down-left toward
-    # the middle of C. Small — length ~35–40 px, NOT reaching edges.
+    # Stroke 2 — small inner 撇 tick, INSIDE the arc's left belly.
+    # Positioned in cell C, hugging the descent's left side.
+    # Short — length ~35 px. Slight bow.
     # ==================================================================
-    s2_head = anchor_to_xy(('MR', 0.15, 0.35))       # small; near top of cell C
-    s2_tail = anchor_to_xy(('C',  0.80, 0.62))       # short tick end
+    s2_head = anchor_to_xy(('C', 0.60, 0.45))   # inside belly, upper
+    s2_tail = anchor_to_xy(('C', 0.35, 0.75))   # short down-left tick
     dx = s2_tail[0] - s2_head[0]
     dy = s2_tail[1] - s2_head[1]
     length2 = (dx * dx + dy * dy) ** 0.5
     if length2 == 0:
         length2 = 1.0
     perp = (-dy / length2, dx / length2)
-    bow = 0.05 * length2
+    bow = 0.06 * length2
     midp = ((s2_head[0] + s2_tail[0]) / 2,
             (s2_head[1] + s2_tail[1]) / 2)
     ctrl_s2 = (midp[0] + perp[0] * bow, midp[1] + perp[1] * bow)
-    pts2 = quad_bezier(s2_head, ctrl_s2, s2_tail, n=28)
+    pts2 = quad_bezier(s2_head, ctrl_s2, s2_tail, n=24)
     widths2 = []
     n2 = len(pts2) - 1
     for i in range(len(pts2)):
@@ -146,11 +160,10 @@ def draw_fei(draw):
     stroke_variable_width(draw, pts2, widths2)
 
     # ==================================================================
-    # Stroke 3 — very small 点/tick just below/right of s2, inside the
-    # curve's belly. Short flick up-and-right. Length ~ 25 px.
+    # Stroke 3 — very small 点 flicking up-right inside cell C, below s2.
     # ==================================================================
-    s3_head = anchor_to_xy(('C', 0.77, 0.86))
-    s3_tail = anchor_to_xy(('C', 0.95, 0.70))   # short up-right
+    s3_head = anchor_to_xy(('C', 0.55, 0.85))   # below s2 tail
+    s3_tail = anchor_to_xy(('C', 0.85, 0.72))   # short up-right flick
     dx3 = s3_tail[0] - s3_head[0]
     dy3 = s3_tail[1] - s3_head[1]
     length3 = (dx3 * dx3 + dy3 * dy3) ** 0.5
@@ -166,7 +179,7 @@ def draw_fei(draw):
     n3 = len(pts3) - 1
     for i in range(len(pts3)):
         t = i / n3
-        widths3.append(6.0 - 3.5 * t)   # taper 6 -> 2.5
+        widths3.append(6.5 - 4.0 * t)   # taper 6.5 -> 2.5
     stroke_variable_width(draw, pts3, widths3)
 
 

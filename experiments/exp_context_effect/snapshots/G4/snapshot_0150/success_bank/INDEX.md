@@ -155,8 +155,64 @@ retry-fail items (丿 刀) stay in `errata.md` with updated diagnoses.
 2 retry: p2_radical_003_丿 (retry_1), p2_radical_015_刀 (retry_1).
 See `errata.md`.
 
-## Bank size
+## Batch B2 (Phase-2 radicals 069–118; 20 main pass + 2 retry pass)
 
-**77 primitives** (26 Phase-1 + 12 Phase-2 bootstrap + 35 B1 main
-promotions + 4 B1 retry promotions) + `_anchor.py` helper = **78
-files** in `code/`.
+Human PASS on 20/50 main items and 2/9 retries (彐 门). Score
+collapsed to 40% main + 22% retry vs B1's 70% + 67%. Diagnosis: many
+FAILs are MMH-verbatim renders that ignored TR9 (under-span) or drew
+strokes with tilted rows (TR8 rule 5/6 violation). Memory
+self-evolution activated in response — principle_bank split into
+three files; new `form_catalog.md` created.
+
+### Main-batch promotions (20 files)
+
+| pos | item_id | Radical | File | Composition | Joints |
+|-----|---------|---------|------|-------------|--------|
+| 101 | p2_radical_069_氵 | 氵 (shuǐ, 3画) | `shui.py` | 点 + 点 + 提 (inlined ti helper) | S (all separate) |
+| 103 | p2_radical_071_巳 | 巳 (sì, 3画) | `si.py` | 横折 + 横 + 竖弯钩 | 3 × N |
+| 104 | p2_radical_072_土 | 土 (tǔ, 3画) | `tu.py` | 短横 + 竖 + 长横 (bottom-longer) | P + N |
+| 105 | p2_radical_073_囗 | 囗 (wéi, 3画) | `wei_enclose.py` | shu + heng_zhe + heng (enclosing) | 3 × N |
+| 106 | p2_radical_074_兀 | 兀 (wù, 3画) | `wu_lame.py` | 横 + 撇 + 竖弯 | 2 × N |
+| 108 | p2_radical_076_小 | 小 (xiǎo, 3画) | `xiao.py` | 竖钩 + 撇 + 点 | none (S) |
+| 109 | p2_radical_077_忄 | 忄 (shù xīn, 3画) | `xin_side.py` | dot(left, inline) + dot(right) + 竖(inline curl-press) | N |
+| 110 | p2_radical_078_幺 | 幺 (yāo, 3画) | `yao_small.py` | 撇折 + 撇折 (stacked) + 点 | 2 × N |
+| 111 | p2_radical_079_弋 | 弋 (yì, 3画) | `yi_arrow.py` | 短横 + 斜钩 + 点 | P at C (welded) |
+| 112 | p2_radical_080_尢 | 尢 (yóu, 3画) | `you.py` | 横 + 撇 + 竖弯钩 | P + N |
+| 115 | p2_radical_083_丬 | 丬 (pán, 3画) | `pan.py` | 撇 + 提 + 竖 | N |
+| 119 | p2_radical_087_灬 | 灬 (huǒ, 4画) | `huo_four.py` | 4 × 点 (narrow, mirror-outer pair) | none (S) |
+| 121 | p2_radical_089_车 | 车 (chē, 4画) | `che.py` | 横 + 撇折(inlined) + 横 + 竖 | 3 × P |
+| 127 | p2_radical_095_父 | 父 (fù, 4画) | `fu.py` | 撇 + 点 + 撇 + 捺 (X-cross) | P at BC |
+| 135 | p2_radical_103_毛 | 毛 (máo, 4画) | `mao.py` | 撇 + 横 + 横 + 竖弯钩 | N + T + P |
+| 136 | p2_radical_104_木 | 木 (mù, 4画) | `mu.py` | 横 + 竖 + 撇 + 捺 | P + N connections |
+| 138 | p2_radical_106_牛 | 牛 (niú, 4画) | `niu.py` | 撇 + 短横 + 长横 + 竖 | N + 2 × P |
+| 140 | p2_radical_108_片 | 片 (piàn, 4画) | `pian_slice.py` | inline curved pie + shu + heng + heng_zhe | 3 × N |
+| 142 | p2_radical_110_攵 | 攵 (pū, 4画) | `pu.py` | 撇 + 横 + 撇 + 捺 (BC-override X-weld) | 3 × N + P at BC |
+| 145 | p2_radical_113_犬 | 犬 (quǎn, 4画) | `quan.py` | 大 (heng+pie+na) + upper-right dot | P + 2 × N |
+
+Note: `pian_slice.py` chosen to avoid collision with `pian.py` (丷).
+Namespace collision was also latent between `si.py` (巳) and the
+existing `si_private.py` (厶) — used a different pinyin gloss.
+
+### Retry promotions (2 files, from B1 failures)
+
+| item_id | Radical | File | Fix vs B1 | Joints |
+|---------|---------|------|-----------|--------|
+| p2_radical_054_彐 | 彐 (jì, 3画) | `xue_broom.py` | every 横's endpoints in same cell row (TR8 rule 5) — no 100 px diagonal tilt | 2 × N |
+| p2_radical_059_门 | 门 (mén, 3画) | `men.py` | enclosing-radical TR2/TR9 layout enforced; 3 strokes coherent as one enclosure | none |
+
+### B2 fails NOT in bank (37 items = 30 main + 7 retry)
+
+30 main: p2_radical_070_纟, 075_夕, 081_夂, 082_子, 084_夊, 085_贝,
+086_比, 088_长, 090_歹, 091_斗, 092_厄, 093_方, 094_风, 096_戈,
+097_户, 098_火, 099_旡, 100_见, 101_斤, 102_耂, 105_肀, 107_爿,
+109_攴, 111_气, 112_欠, 114_日, 115_氏, 116_礻, 117_手, 118_殳.
+
+7 retry (retry_n=1, cool-down 50 items): p2_radical_024_冂, 038_㔾,
+047_飞, 050_弓, 053_己, 058_马, 062_犭.
+
+See `errata.md` for per-item diagnoses.
+
+## Bank size (post-B2)
+
+**99 primitives** (77 through B1 + 20 B2 main + 2 B2 retry) +
+`_anchor.py` helper = **100 files** in `code/`.

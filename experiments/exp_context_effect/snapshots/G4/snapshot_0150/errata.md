@@ -535,14 +535,371 @@ X rather than 女's characteristic top-cross-body-cross-arm.
 ('C', 0.30, 0.85); s2 撇 crossing s1 near the center; s3 horizontal arm at
 y_frac ≈ 0.60 spanning wide. All 3 joints P-welded per MMH.
 
-## p2_radical_062_犭 (FAIL, drawer knew — overall_pass=False)
-**Attempt**: 3 strokes. Drawer's SELF_CHECK explicitly set overall_pass=
-False after noting s1×s2 didn't visibly cross (21.6 px gap) and s2⇆s3
-N-joint gapped 61.9 px. Sandbox already documents the two structural
-lessons (P-cross needs shared pixel, N-joint on curved spine needs
-derived anchor).
-**SELF_CHECK vs human**: AGREE (both said fail). Positive calibration case.
-**Fix**: implement sandbox's derived-anchor pattern — compute the pixel
-midpoint of s2's bowed body first, then set s3.head anchor by inverting
-anchor_to_xy so it lands ON that pixel. For s1×s2, pick a shared P_cross
-point and construct both chords to pass through it.
+## Batch B2 — retry outcomes (B1 failures)
+
+## p2_radical_054_彐 (RETRY PASS) — graduated to Success Bank (`xue_broom.py`)
+Fix that worked: every 横's endpoints in the SAME cell row (TR8 rule 5).
+Prior failure: s3 head in BL (row=2) + tail in C (row=1) → 100 px tilt.
+
+## p2_radical_059_门 (RETRY PASS) — graduated to Success Bank (`men.py`)
+Fix that worked: enclosing-radical layout enforced (TR2). All three
+strokes clamped into a coherent central-column enclosure; s1 dot as a
+lid above s2 head; s3 top bar continues at s2 head y.
+
+## p2_radical_024_冂 (RETRY FAIL — retry_n=1)
+**Retry-1 attempt**: TR9-expanded — s1 shu TL(0.10,0.25)→BL(0.10,0.95);
+s2 heng_zhe TL(0.15,0.10)→TR(0.90,0.10)→BR(0.90,0.95).
+**Failure mode**: frame nearly square (280×285 px), too tall vs 冂
+canonical proportion. s1 head at y=25 drops below s2 top-bar left
+endpoint at y=10 — left corner has visible overshoot.
+**Fix**: align s1 head y with s2 top-bar y (both at 15); reduce frame
+width to ~230 for canonical proportion. Cool-down 50 items.
+
+## p2_radical_038_㔾 (RETRY FAIL — retry_n=1)
+**Retry-1 attempt**: s1 rebuilt as tiny 横+短撇 fold in upper-left; s2
+big 竖弯钩 bowl with belly BL(0.80, 0.98).
+**Failure mode**: s2 quad_bezier belly control makes body bulge
+down-left then swing up-right — J-shape belly at bottom-left, not
+smooth vertical→right sweep. s1 tail sits INSIDE the s2 belly area.
+**Fix**: rewrite s2 as strict 竖弯钩 sequence (straight vertical descent
+→ rounded corner → rightward sweep → up-flick). Reuse `wan_gou.py`
++ `shu_wan_gou.py` recipe with tighter belly.x = head.x. Place s1
+CLEARLY above s2 head with ≥15 px gap. Cool-down 50 items.
+
+## p2_radical_047_飞 (RETRY FAIL — retry_n=1)
+**Retry-1 attempt**: s1 as two chained quad_bezier; s2 short 撇; s3 tiny
+tick.
+**Failure mode**: s1 "horizontal" opening rises 115 px over 225 px x
+→ reads as diagonal not horizontal. Second control pulls arc deep
+into lower-left, sweeping through mid-canvas and overlapping the
+inner marks.
+**Fix**: draw s1 as ONE inlined variable-width polyline (per sandbox
+Pattern E) with true horizontal opening: head ML(0.2, 0.3) + bend
+TR(0.5, 0.4) + tip BR(0.5, 0.9). Position s2/s3 marks strictly INSIDE
+the arc — not on the arc line. Cool-down 50 items.
+
+## p2_radical_050_弓 (RETRY FAIL — retry_n=1)
+**Retry-1 attempt**: 3-tier separation attempted with s1 横折 top, s2
+short 横 mid, s3 竖折折钩 bottom.
+**Failure mode**: s1 "drop" segment goes DOWN-LEFT from corner
+(255,40) to tail (175,130) instead of straight down (TR8 rule 6
+violation — column mismatch). s3 loop inverted/reversed.
+**Fix**: rewrite EVERY 横折 as {heng, straight down-drop sharing
+corner.x with tail.x}. Redo s3 as `shu_zhe_zhe_gou.py` composed:
+descend vertically → 横 sweep left → up-flick. Cool-down 50 items.
+
+## p2_radical_053_己 (RETRY FAIL — retry_n=1)
+**Retry-1 attempt**: s1 横折 upper, s2 short 横 mid, s3 竖弯钩 with
+corner in BL rather than BC.
+**Failure mode**: s1 head and s3 head both at ~(85, 80) — overlapping
+strokes at top-left corner. s1 tail at (180, 130) is 130 px above s3
+corner at (90, 240); the three tiers look disconnected even with s2.
+**Fix**: enforce s1.tail y aligned with s2 body region; use
+`heng_zhe.py` with straight down drop; the three vertical tiers must
+touch at intended endpoints (share anchor tuples per TR4).
+Cool-down 50 items.
+
+## p2_radical_058_马 (RETRY FAIL — retry_n=1)
+**Retry-1 attempt**: S1 compact top 横折; S2 竖折折钩 with first leg
+slanting LEFT then heng right; S3 long bottom 横.
+**Failure mode**: S1 top piece only ~75 px wide / 55 px tall — too
+small vs GT proportion. S2's first leg slants left-down instead of
+vertical, top-box asymmetric. S3 bottom heng shares y=250 with S2
+hook_pt → passes through S2 body, visual overlap.
+**Fix**: enlarge top-box; straighten S2 first leg to strict vertical
+(column-share per TR8); separate S3 heng from S2 hook_pt by ≥25 px in
+y. Reuse `shu_zhe_zhe_gou.py`. Cool-down 50 items.
+
+## p2_radical_062_犭 (RETRY FAIL — retry_n=1)
+**Retry-1 attempt**: derived-anchor pattern applied per sandbox lesson:
+s2 bowed pie; s1 endpoints DERIVED to pass through P_cross on spine at
+t=0.28; s3 belly head DERIVED from spine at t=0.48. Structural asserts
+pass (best_p<3, n_gap~8).
+**Failure mode**: s3 tail at BC(0.15, 0.85)=(115, 285) — hooks
+DOWN-RIGHT via MR belly, whereas 犭's belly should hook DOWN-LEFT
+(mirror-of-犬). Belly bulges right when it should sweep left.
+**Fix**: reposition s3 tail to BL (not BC) so belly hooks correctly;
+reverse belly control so shape looks like 犬-radical's 弯 downstroke
+(mirror-flipped). Cool-down 50 items.
+
+---
+
+# Batch B2 — main-item FAILs (30 items)
+
+Format: item, human FAIL diagnosis, SELF_CHECK calibration, fix idea.
+
+## p2_radical_070_纟 (FAIL)
+**Attempt**: two draw_pie_zhe stacked + one draw_ti. All anchors kept
+in tall isolated bands.
+**Failure mode**: Both 撇折 use tall pie segments in isolation rather
+than compact stacked 幺 units — reads as scattered zigzags. s3 提 far
+right, disconnected from folds.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: compact both 撇折 (~<60 px each), stack tightly along x=0.35
+with pivots in same column; s3 提 head directly under s2 tail,
+sweeping up-right. Model after `yao_small.py` (幺).
+
+## p2_radical_075_夕 (FAIL)
+**Attempt**: draw_pie + draw_heng_pie + draw_dian. s2 corner at
+C(0.85, 0.40).
+**Failure mode**: s2 heng too long relative to pie sweep; GT has short
+heng shoulder then large pie sweep.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: shorten s2 heng (corner at C(0.55, 0.35)); lengthen pie tip.
+
+## p2_radical_081_夂 (FAIL)
+**Attempt**: draw_pie s1 tiny + draw_pie s2 (head TC(0.85, 0.75)) +
+draw_na s3 with P-cross near C.
+**Failure mode**: s2 head BELOW s1 tail; s3 starts INSIDE pie body →
+cross reads as overlap not proper X.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: s2 head TC(0.35, 0.10) → BL(0.10, 0.90); s3 head attaches ON
+s2 body mid, sweeps to BR corner.
+
+## p2_radical_082_子 (FAIL)
+**Attempt**: draw_heng_pie top curl + draw_wan_gou centered + draw_heng
+middle.
+**Failure mode**: 弯钩 body too centered/vertical without characteristic
+子 belly curve; top curl (s1 head at TL(0.55, 0.55)) sits too low.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: raise s1 head to TL(0.55, 0.20); s2 belly x further right in
+C; hook_pt further left so tip sweeps well up-left.
+
+## p2_radical_084_夊 (FAIL — drawer flagged overall_pass=False)
+**Attempt**: s1 straight vertical (should be curled), s2 too vertical,
+s3 disconnected (~102 px from s1). Drawer honestly flagged.
+**SELF_CHECK vs human**: AGREE (positive calibration).
+**Fix**: draw s1 as small ク-shape at top-center; s2 head just below
+s1 tail with N-gap ~15 px; s3 head T-welds s1 body at (~90, 150).
+
+## p2_radical_085_贝 (FAIL)
+**Attempt**: MMH-verbatim: draw_shu left + draw_heng_zhe top+right +
+draw_pie inner + draw_dian right.
+**Failure mode**: TR9 not applied — frame compressed to upper-middle
+(y=79 to 232). Long BL pie + tiny 点 read as disjoint pieces.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: TR9 span expansion — frame TL(0.2, 0.15) → BL(0.2, 0.60);
+shorten s3 pie so it exits just below frame; enlarge s4 dot.
+
+## p2_radical_086_比 (FAIL)
+**Attempt**: MMH raw anchors — draw_ti + draw_shu + draw_pie +
+draw_shu_wan_gou. J1 26.9px vs expected 14.9; J2 33.6px vs 17.2.
+**Failure mode**: MMH under-spans → 比 doesn't split into two
+symmetric halves. s4 up-flick tiny (blob hook).
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: TR9 — left half x∈[0.1, 0.5], right half x∈[0.55, 0.95];
+ensure s4 has visible vertical descent and clear hook flick.
+
+## p2_radical_088_长 (FAIL)
+**Attempt**: s3 drawn as curved zigzag (quad_bezier TC→C→BL), s1 短撇
+at TR (should be upper-left).
+**Failure mode**: s3 should be strict 竖提 (straight vertical + 提
+flick), not curved. s1 in wrong quadrant.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: s3 = straight 竖 TC→BC + short 提 flick. Reuse `shu_ti.py`.
+Move s1 to TC(0.55, 0.20) → ML(0.65, 0.40).
+
+## p2_radical_090_歹 (FAIL — drawer flagged overall_pass=False)
+**Attempt**: s3 drawn as straight pie DOWN-RIGHT, s4 tiny dot.
+**Failure mode**: s3 should be 横撇 (short heng + pie down-LEFT), not
+straight pie down-right. Interior 夕 structure absent.
+**SELF_CHECK vs human**: AGREE (positive calibration).
+**Fix**: replace s3 with `heng_pie.py` (short heng + pie down-left);
+s4 as proper 点 inside the wedge below s3.
+
+## p2_radical_091_斗 (FAIL)
+**Attempt**: two 点 in upper-left corner; long 竖 TC→BC; horizontal at
+y=175.
+**Failure mode**: two dots should flank vertical near top of 十 cross,
+not stack in upper-left corner. Horizontal too low.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: dots flank vertical at y=100–120 (ML(0.6, 0.4) and C(0.1, 0.2));
+raise 横 y so 竖 crosses at mid.
+
+## p2_radical_092_厄 (FAIL)
+**Attempt**: 厂 frame + inner 横折 at C(0.00, 0.15)→C(0.95, 0.15)→C(0.95,
+0.95) + shu_wan_gou hook.
+**Failure mode**: inner 㔾 placed entirely in C — should be in MR
+(lower-right) inside 厂 enclosure. Hook flick only ~20 px (blob).
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: inner 㔾 in MR cell; s4 belly extending down; enlarge hook
+flick to ~40 px upward.
+
+## p2_radical_093_方 (FAIL)
+**Attempt**: dot + heng + 横折钩 in MR/BR only + pie.
+**Failure mode**: 横折钩 body descends only 20 px — compressed to right
+column, no visible vertical drop.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: extend 横折钩 vertical (corner MR(0.65, 0.55), tail BR(0.65,
+0.75), tip BC(0.65, 0.55)); ensure visible descent + up-left hook.
+
+## p2_radical_094_风 (FAIL)
+**Attempt**: pie left wall + custom 横斜钩 + inner 撇/捺 crossing.
+**Failure mode**: 横斜钩 hook_pt at BR(0.55, 0.40) → right descent
+only slight slant, not full-height enclosing wall. s4 essentially
+straight 10-px bar (should be 捺).
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: push hook_pt down to BR(0.50, 0.80); s4 as proper 捺
+(peak_width toward tail); enlarge enclosure x∈[70, 280], y∈[100, 260].
+
+## p2_radical_096_戈 (FAIL)
+**Attempt**: xie_gou main + tilted 短横 + pie + dot upper-right.
+**Failure mode**: s1 短横 strongly TILTED (rise ~35 px over 120 px) —
+TR8 rule 5 violation. s3 pie starts INSIDE xie_gou body.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: flatten s1 (ML(0.5, 0.55) → C(0.75, 0.45), both in M-row);
+s3 crosses s2 at true mid; move dot higher and right (TR(0.5, 0.3)).
+
+## p2_radical_097_户 (FAIL)
+**Attempt**: dot + heng + custom inline 横折-like right bump + pie.
+**Failure mode**: s3 as tiny inline bump doesn't look like 户's
+characteristic 尸-portion. s2 and s4 share the same head anchor (should
+have 15 px gap).
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: replace s3 with proper 横折 spanning wider to form full 尸
+shape; separate s4 head from s2 head by ~15 px.
+
+## p2_radical_098_火 (FAIL)
+**Attempt**: dot + short right pie + main pie + na. J1 gap ~55 px.
+**Failure mode**: MMH-verbatim s3 and s4 heads ~70 px apart — no shared
+apex for 人-base. Reads as scattered strokes, not compact 人 + upper
+dots.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: s3 head and s4 head SHARE apex point near TC(0.5, 0.5); s3
+sweeps down-left, s4 down-right symmetrically. Reuse `ren.py` pattern
++ two upper dots.
+
+## p2_radical_099_旡 (FAIL)
+**Attempt**: tiny top 横 + diagonal middle 横 + pie + custom
+shu_wan_gou.
+**Failure mode**: s1 top 横 tiny (~10 px wide). s2 noticeably tilted.
+s3 pie starts at mid-canvas (should be near top). All strokes fail
+TR8 rule 5.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: enlarge s1 (spanning TC→TR at y=0.5); s3 head at TC(0.6, 0.1)
+so pie starts near top and crosses mid 横.
+
+## p2_radical_100_见 (FAIL)
+**Attempt**: small eye-box (y=20–155) + two legs (pie down-left,
+shu_wan_gou down-right, heads 25 px apart).
+**Failure mode**: box compressed to upper half. Legs don't splay from
+opposite bottom corners.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: enlarge box y∈[20, 180]; move s3 head to left edge of box
+(ML(0.9, 0.7)); s4 head to right edge.
+
+## p2_radical_101_斤 (FAIL)
+**Attempt**: MMH-verbatim two pie + tilted heng + shu right of center.
+**Failure mode**: TR9 not applied — everything crammed right of center.
+Character asymmetric.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: TR9 span expansion — s1 short pie at top-center only; s2 main
+pie TC(0.9, 0.3) → BL(0.3, 0.9); s3 flat horizontal ML→MR; s4 竖 at
+x=0.7 spanning M→B rows.
+
+## p2_radical_102_耂 (FAIL)
+**Attempt**: short top 横 + short 竖 (~100 px) + long 横 + long pie.
+**Failure mode**: s2 vertical too short (100 px) relative to 220-px
+horizontal below. 十 cross undersized.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: lengthen s2 vertical to y∈[30, 180]; extend s1 top 横 wider
+than 竖's x-travel.
+
+## p2_radical_105_肀 (FAIL)
+**Attempt**: custom 2-fat_line top piece + two horizontals + long 竖
+at x=145.
+**Failure mode**: top piece a small bump, not 聿-top 横折 shape. Spine
+竖 not centered on horizontals ([20, 285]).
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: replace s1 with proper 横折 primitive; align spine 竖 x with
+horizontals' mid (~150).
+
+## p2_radical_107_爿 (FAIL)
+**Attempt**: custom curved variable-width strokes — s1 upper-left
+bump, s2 slanted "vertical" TC(0.85, 0.55)→BR(0.05, 1.0), s3 提, s4
+horizontal.
+**Failure mode**: s2 drifts 80 px in x — TR8 rule 6 violation. s4
+horizontal when MMH s4 is a descender (wrong stroke class).
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: straighten s2 to constant x; s4 as descender not horizontal;
+shorten s3 提 span.
+
+## p2_radical_109_攴 (FAIL — drawer flagged overall_pass=False)
+**Attempt**: shu top + short heng + 又 (pie + na). s4 head close to
+s3 head → inverted-V (Λ) not X.
+**SELF_CHECK vs human**: AGREE (positive calibration).
+**Fix**: s4 head UPPER-RIGHT of s3 head (e.g. C(0.20, 0.50) → BR(0.85,
+0.95)) so 撇 and 捺 cross around BC. Extend 卜 竖 further down.
+
+## p2_radical_111_气 (FAIL)
+**Attempt**: pie + two short heng + custom compound 横折弯钩 with 4
+quad_bezier segments. J1, J2 gaps 48–84 px.
+**Failure mode**: s4 top-heng at same y=155 as s3 → visually overlap.
+Three horizontal-like elements stack awkwardly.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: s4 top-heng at y=0.35 (C or ML row); extend descent to canvas
+bottom; separate s2/s3 to distinct rows (y=0.35 and y=0.55).
+
+## p2_radical_112_欠 (FAIL)
+**Attempt**: MMH-verbatim tiny top pie + heng_gou + pie + na cross
+low.
+**Failure mode**: MMH under-spans — s1 tiny 20-px sweep upper-left;
+base X-cross squished lower-left; hook flick 30 px.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: TR9 — s1 full top span; wider s2 horizontal; enlarge hook
+flick; center X-base symmetrically.
+
+## p2_radical_114_日 (FAIL)
+**Attempt**: fat_line frame + middle 横 ML(0.85, 0.65)→C(0.50, 0.65)
++ bottom 横 BL(0.85, 0.90)→BC(0.50, 0.90).
+**Failure mode**: middle 横 only 65 px wide (frame is ~200) — doesn't
+reach right wall. 日 requires middle bar touching both walls.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: extend s3 tail to C or MR so it reaches right wall (x=250);
+same for s4 tail.
+
+## p2_radical_115_氏 (FAIL)
+**Attempt**: pie s1 + custom variable-width s2 sweeping RIGHT +
+draw_ti s3 + xie_gou s4.
+**Failure mode**: MMH s2 sweeps down-and-RIGHT (contra canonical 撇
+which is down-LEFT). 提 flick into 斜钩 body — congested middle.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: override MMH — s2 should sweep down-LEFT (head TR(0.5, 0.2) →
+tail BL(0.5, 0.9)); reposition 提 outside the tangle.
+
+## p2_radical_116_礻 (FAIL)
+**Attempt**: dot + heng_pie + shu C(0.55, 0.55)→BC(0.50, 0.95) + dot.
+**Failure mode**: stem starts INSIDE the 横撇 sweep area; stem only
+~140 px tall — reads as short bump under top piece.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: extend stem upward (head at C(0.55, 0.35)); shorten 横撇
+horizontal so corner sits closer to center; two 点 flank stem
+symmetrically.
+
+## p2_radical_117_手 (FAIL)
+**Attempt**: MMH-verbatim top pie + two tilted heng + custom 竖钩 with
+head TC(0.389, 0.92)→hook_pt BC(0.09, 0.85) (drifts 30 px left).
+**Failure mode**: 竖钩 body not vertical (TR8 rule 6 violation).
+Horizontals tilted UP. All compressed.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: straighten 竖钩 (head.x = hook_pt.x = 139); TR9 span-expand
+horizontals; reduce tilt.
+
+## p2_radical_118_殳 (FAIL)
+**Attempt**: custom curved s1 DOWN-RIGHT + s2 up-right + pie + na cross
+at bottom.
+**Failure mode**: s1 wrong direction (should sweep down-LEFT). s2
+resembles hyphen, not 几-hook. X-cross disconnected from top.
+**SELF_CHECK vs human**: DISAGREE.
+**Fix**: s1 as short 撇 down-left; s2 as real 横折弯 hooking down-right
+then turning; ensure top piece welds/attaches to 又 top.
+
+---
+
+# Bootstrap-era item still in errata (retry cool-downs)
+
+## p2_radical_062_犭 — see "Batch B2 — retry outcomes" section above
+Bootstrap-era diagnosis (P-cross needs shared pixel, N-joint on curved
+spine needs derived anchor) rolled into B2 retry entry at retry_n=1.
+The derived-anchor pattern was applied but belly direction was wrong
+(bulges right when it should sweep left mirror-of-犬).

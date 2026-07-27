@@ -1,8 +1,111 @@
 # G3 memory index — entry point for the drawer
 
+## v8 UPDATE (2026-07-25 @ position 350 — populated by B6 curator @ 2026-07-26)
+
+A free-form file **`drawer_memory.md`** now exists alongside the code
+bank (same shape as G2's `drawer_memory.md`). Under v8 the code bank +
+principles are **REFERENCE ONLY** — no strict requirement to call or
+comply. If GT contradicts a bank primitive or a helper's abstraction,
+**trust GT** (B5 丷-graduation lesson).
+
+### Read order under v8 (B6 curator recommendation)
+
+Do all of these BEFORE writing any code. Skip any that clearly don't
+apply.
+
+1. **Look at the GT PNG.** Decompose into strokes. Note position/role
+   of each. Ask "how would G1 draw this fresh?"
+2. **Check `errata.md`** for this item or close cousins (e.g. its
+   radical, its sibling in the char↔radical table).
+3. **Read `drawer_memory.md`** — free-form composition playbooks,
+   L-R scale tables, sibling-pair notes, "trust GT" posture.
+4. **Consult `form_catalog.md`** for stroke×context numbers if a
+   specific stroke is uncertain.
+5. **Scan `success_bank/INDEX.md`** for an identity alias or a
+   close-enough starting scaffold. **You are NOT required to use one.**
+   Under v8, if no bank entry fits without extreme transformation,
+   inline fresh.
+6. **`principles_stroke_family.md`** (P1-P12) and **`principles_meta.md`**
+   (TR1-TR7) LAST, only if a specific question remains. REFERENCE.
+
+### v8 signature freedom
+
+Bank primitives have `(t, ox=0, oy=0, scale=1.0)` because that's how
+they were written. **You are not bound to that signature when writing
+your `generated.py`.** If your composition needs an angle, a curve, a
+taper, or an aspect knob — put it in your function or hand-render
+inline. The unit constraint (callable Python) is still G3's identity;
+the parameter vocabulary is your choice.
+
+> **B5 update (2026-07-24)**: helper hypothesis FALSIFIED. Retrieval was
+> fixed (17/17 retries used checklist + helpers) but only 1 retry PASSed
+> (丷, by REJECTING the recommended helper). If your recommended helper
+> conflicts with what you SEE in the GT, prefer GT. See evolution.md
+> 2026-07-24 for the honest reckoning.
+
 *Maintained by the curator. Drawer reads this file first every cycle,
-then follows the pointers below (or explores the group directory
-freely if you need to find something not listed).*
+then follows the pointers below. Reorganised 2026-07-18 (v7 evolution,
+position 150) — read order changed: form-catalog and adaptive helpers
+come FIRST; frozen bank primitives second; meta-rules last.
+Reorganised again 2026-07-22 (v7 second-pass, position 200) — worked
+composition examples added to form_catalog; joint/weld helpers added
+to `_shared_helpers.py`.
+Reorganised again 2026-07-23 (v7 THIRD-pass, position 250) —
+RETRY-TIME CHECKLIST added (retries were bypassing memory entirely
+in B2/B3/B4); char↔radical cross-transfer table added (multiple B4
+chars PASSed while their radicals stayed in errata).
+B5 (2026-07-24) falsified the helper-composition hypothesis: retrieval
+was fixed but only 1/17 retries PASSed. The RETRY-TIME CHECKLIST is
+kept as a research signal but its promotion power is proven limited —
+the head curator's evolution.md 2026-07-24 entry decides B6 direction.*
+
+## RETRY-TIME CHECKLIST (READ FIRST if this is a retry attempt)
+
+**Evidence from B2, B3, B4**: on retry attempts, drawers imported the
+composition helpers 0/8, 7/13, 0/8 times respectively — and even in
+B3's 7/13 the helpers didn't rescue the composition. Main attempts
+DO use helpers (24% import rate). The retry channel is where memory
+retrieval is broken.
+
+**If your prompt indicates this is a retry** (item_id ends in
+`__retry_N`), before writing ANY code write a header comment in
+`generated.py` answering these three questions:
+
+```python
+# RETRY MEMORY CHECKLIST (B4→B5 v7 evolution)
+# Q1 (errata): Look up this item in errata.md. What is the fix idea?
+#   <ANSWER>
+# Q2 (form_catalog): Search form_catalog.md for rows matching the
+#   stroke(s) that caused the fail. Which rows are relevant?
+#   <ANSWER>
+# Q3 (helpers): Does the fail category match any of these helpers?
+#   - X-crossing / apex-kiss / cross-shaft weld → `kiss_apex`, `pie_point`
+#   - Mirror-dot pair (忄, 丷, 火, 犬 side dot) → `mirror_dian_pair`
+#   - Per-stroke form (angle/taper/bow) → `variant_pie/na/dian`
+#   - Uniform thin lines (MMH GT) → thin widths per P12, NOT calligraphic
+#   <ANSWER — name the helper you'll import, or explain why none apply>
+```
+
+Only after writing these three ANSWERS may you proceed to code.
+Curator will grep for `# Q1` `# Q2` `# Q3` in every retry attempt to
+verify compliance. This is not a bureaucratic hurdle — it is the
+only observable signal that memory was consulted at all.
+
+## Char ↔ Radical cross-transfer (B4 addition)
+
+When a Phase-3 char PASSes but the corresponding Phase-2 radical is
+in errata, the char's recipe is a valid retry candidate for the
+radical. Do NOT block a Phase-3 char attempt on a radical FAIL.
+
+| Item | Char status | Radical status | Recipe transfer |
+|------|-------------|----------------|-----------------|
+| 兀 | PASS (wu_char.py) — heng 0.85 + er_ren 0.95, moderate widths | FAIL retry_2 — calligraphic 10px legs vs GT's thin ~4px | Back-port wu_char widths to radical retry |
+| 门 | PASS (men_char.py) — inline dian + 竖 + 横折钩 for tall aspect | FAIL retry_2 — different inline recipe | Back-port men_char inline recipe |
+| 子 | PASS (zi_char.py) + GRAD retry_1 | GRADUATED — same recipe works both | Aligned |
+| 尢 | FAIL | FAIL retry_2 — same fail as 兀 family | Await wu recipe transfer |
+| 夂 / 夊 | FAIL char + FAIL radical | Both same fail mode (apex-kiss composition) | Neither has PASSing template — both need kiss_apex |
+
+## Core format constraint (fixed — do not violate)
 
 ## Core format constraint (fixed — do not violate)
 
@@ -10,68 +113,120 @@ G3's memory unit is **callable Python functions**. The Success Bank
 contains `.py` files defining functions of the form:
 ```python
 def draw_<item>(t, ox=0, oy=0, scale=1.0):
-    ...  # calls to sub-primitives OR inline PIL / turtle rendering
+    ...  # calls to sub-primitives OR inline PIL rendering
 ```
 You may design new function signatures (adaptive width, taper args,
 etc.), but you may not abandon the callable-function unit. See
 `../protocol/G3_coords/rules.md` for the full constraint.
 
+## Read order when drawing (v7)
+
+**1. Look at target GT first.** Decompose into strokes. Note
+position/role of each stroke (top / left / crossing / envelope / etc.).
+
+**2. For each stroke, consult `form_catalog.md`** (NEW file).
+Indexed by stroke × context (e.g. "撇 in 大-family crossing arm",
+"点 in 灬 leftmost 左点"). Gives concrete head / tail / bow_perp /
+w_head / w_tail numbers from prior PASSes. This is the primary
+retrieval aid.
+
+**3. Choose a rendering approach in this priority order**:
+   - **If the target is a Phase-3 character AND a Phase-2 radical with
+     the same shape exists in the bank** → try IDENTITY alias first
+     (see form_catalog's "Character-vs-radical scaling" table). Many
+     B3 PASSes were 1-line aliases.
+   - If two strokes MUST share a pixel (X-crossing, weld, kiss) →
+     use `kiss_apex` / `pie_point` from `_shared_helpers.py` to
+     compute the exact shared pixel BEFORE calling the variants.
+     See form_catalog "X-crossing family" worked example.
+   - If the target has a mirror-dot pair (忄, 丷, 火, side dots) →
+     use `mirror_dian_pair` — do NOT hand-tune each dot separately
+     (B3 evidence: hand-tuning breaks the mirror).
+   - If `form_catalog.md` has a matching row → use the adaptive
+     helper `variant_pie` / `variant_na` / `variant_dian` in
+     `_shared_helpers.py` with the catalog numbers. **Copy widths
+     and bow_perp; re-derive head/tail positions against YOUR
+     character's proportions** (do not copy positions wholesale).
+   - Else if `success_bank/INDEX.md` has a mastered item whose SHAPE
+     matches after uniform scale → use the bank primitive with
+     deliberate `(ox, oy, scale)` per TR1-TR3 in `principles_meta.md`.
+   - Else → derive fresh. If the fresh recipe passes judgment,
+     the Curator will add its numbers to `form_catalog.md` for reuse.
+
+**4. Check `errata.md`** if you've seen this item before — the fix
+idea may already be there.
+
+**5. Consult `principles_stroke_family.md`** for width profiles
+(P4), hook conventions (P1), math convention (P5), and P11 (the
+form-variant lesson from B2).
+
+**6. Consult `principles_meta.md`** LAST for TR1-TR7 (how to
+transform primitives). TR8 and TR9 are RETIRED — do not follow them.
+
 ## What memory G3 currently holds
 
-- **`success_bank/INDEX.md`** — the master list of mastered items:
-  which items are in the bank, which file, mastery batch/position.
+### New in v7 (2026-07-18)
+- **`form_catalog.md`** — stroke × context lookup with concrete
+  numbers from prior PASSes. THE primary retrieval aid. Grows every
+  time a PASS reveals a new form variant. **Second-pass (2026-07-22):
+  added worked composition examples for X-crossing / mirror-dot /
+  radical-alias families, plus retrieval-discipline notes.**
+- **`success_bank/code/_shared_helpers.py`** — adaptive helpers
+  (`variant_pie`, `variant_na`, `variant_dian`, `tapered_bezier`,
+  `tapered_line`, `to_px`). Callable Python primitives that expose
+  angle/taper/width knobs the frozen `(ox, oy, scale)` signature
+  hides. **Second-pass (2026-07-22): added joint/weld helpers
+  `pie_point`, `kiss_apex`, `mirror_dian_pair` to make composition
+  geometry explicit.**
+- **`principles_meta.md`** — meta-rules (TR1-TR7).
+- **`principles_stroke_family.md`** — stroke-family knowledge (P1-P11).
+- **`principle_bank.md`** — stub, split into the three files above.
 
-- **`success_bank/code/`** — one `.py` file per mastered item.
-  Currently ~67 files (25 Phase-1 stroke primitives from before v6
-  restart + Phase-2 radicals mastered in bootstrap and B1). Each
-  function is intended for compositional reuse (call from a
-  higher-level item's rendering).
-
-- **`principle_bank.md`** — general rules learned across items.
-  Currently contains:
-  - Transformation rules TR1-TR9 (meta-cognitive: how to reuse a
-    primitive as a component)
-  - Phase-1 principles P1-P10 (stroke-family observations)
-  - "Bank is supplementary" clause
-  - TR8 "INLINE-FRESH TEST" (added at B1, response to G3
-    underperformance)
-
-- **`sandbox.md`** — persistent free-form scratch. Interim
-  hypotheses, failure notes not yet a principle.
-
-- **`errata.md`** — the 错题集. Failed items with per-item diagnosis,
-  fix ideas, retry_n counter.
-
+### Persistent
+- **`success_bank/INDEX.md`** — master list of mastered items
+  (now **140 entries** after B4's 27 PASSes + 1 retry graduate).
+- **`success_bank/code/`** — frozen concrete bank entries. Each is a
+  `draw_<item>` function you may call at deliberate `(ox, oy, scale)`.
+- **`sandbox.md`** — persistent free-form scratch; per-batch
+  diagnostic notes.
+- **`errata.md`** — 错题集; failed items with per-item diagnosis and
+  fix idea.
 - **`scans/`** — per-position errata scan decisions.
-
 - **`retry_log.jsonl`** — append-only retry log.
-
 - **`curator_satisfaction_log.jsonl`** — per-attempt "would-I-stop?"
-  verdicts (calibration data).
-
+  verdicts.
 - **`evolution.md`** — append-only log of structural changes to
-  memory organization (created v7).
+  memory organization (v7).
 
-## When to consult what
+## When to consult what — quick lookup
 
-- **Drawing an item**: check `success_bank/INDEX.md` first to see
-  if there's a bank primitive for this or a closely related item.
-  If yes, read that `.py` file and consider reuse (TR1-TR8
-  transformation rules apply — DO NOT call with default parameters).
-- **Deciding whether to use the bank at all**: read the "Bank is
-  supplementary" section and TR8 "INLINE-FRESH TEST" in
-  `principle_bank.md`. If forcing a primitive would require extreme
-  transformation, inline fresh.
-- **You've seen this exact item fail before**: check `errata.md` for
-  the diagnosis and fix idea.
-- **General stroke-family knowledge**: `principle_bank.md` P1-P10.
+- **Drawing a new radical / character**: form_catalog → adaptive
+  helper → INDEX (frozen primitive if fit) → derive fresh.
+- **Similar item failed before**: errata.md.
+- **Uncertain about width / hook direction**: principles_stroke_family
+  P1, P4.
+- **Uncertain about (ox, oy, scale) derivation**: principles_meta
+  TR1-TR7.
 
 ## Change history
 
 See `evolution.md` for the append-only log of structural changes.
-
----
-
-*v7 initial version — created at position 150 as part of the memory
-self-evolution unlock. Curator: update this index whenever you add,
-remove, or restructure memory files.*
+Latest: position 350 (2026-07-26, B6 curator) — v8 first-pass consumed:
+`drawer_memory.md` populated (composition playbooks + L-R scale table
++ trust-GT posture); memory_index.md read order rewritten to place
+drawer_memory.md at step 3 (before form_catalog); INDEX grew by 23
+B6 PASSes (rows 162–184).
+Prior: position 300 (2026-07-24) — v7 fourth-pass (retry mechanism
+killed; P-HELPER-SKEPTIC principle added).
+Prior: position 250 (2026-07-23) — v7 third-pass consumed:
+RETRY-TIME CHECKLIST added to this file (retry channel had 0% helper
+adoption in B2/B4, 7/13 in B3 but 0 passes — retrieval is the gap);
+char↔radical cross-transfer table added (兀/门/子 pattern showed
+chars pass while radicals fail with different recipes); INDEX grew
+by 27 B4 PASSes + 1 retry graduation (子, now bank #122).
+Prior: position 200 (2026-07-22) — kiss_apex/pie_point/mirror_dian_pair
+helpers added to `_shared_helpers.py`; worked composition examples
+added to `form_catalog.md`.
+Prior: position 150 (2026-07-18) — v7 unlock consumed: form_catalog
+created; principle_bank split into 3 files; TR8, TR9 retired; adaptive
+helpers added to `_shared_helpers.py`.

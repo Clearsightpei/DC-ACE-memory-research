@@ -72,3 +72,301 @@
 {"item_id": "p2_radical_017_儿", "attempt_n": 1, "batch": "B1_retry", "curator_verdict": "PASS", "reason": "canonical 竖弯钩 recipe with bend at bottom and up-tick tip"}
 {"item_id": "p2_radical_003_丿", "attempt_n": 1, "batch": "B1_retry", "curator_verdict": "FAIL", "reason": "did not apply errata's literal TR/BL anti-diagonal fix; stroke still lives too low"}
 {"item_id": "p2_radical_015_刀", "attempt_n": 1, "batch": "B1_retry", "curator_verdict": "FAIL", "reason": "T-weld correct but top 横 too long, vertical descender compressed; reads as pinwheel"}
+{"item_id": "p2_radical_069_氵", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "3 separated ink clusters left-of-center; upper dots + rising 提 read cleanly"}
+{"item_id": "p2_radical_070_纟", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "撇折 units too tall/isolated; not the compact stacked loops 纟 requires"}
+{"item_id": "p2_radical_071_巳", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "top bracket + mid bar + outer 竖弯钩 bowl composition reads as 巳"}
+{"item_id": "p2_radical_072_土", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "士-like 十 with bottom-longer 横 correctly identifies 土"}
+{"item_id": "p2_radical_073_囗", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "TR9-expanded enclosure with open corners reads as 囗"}
+{"item_id": "p2_radical_074_兀", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "top 横 + 撇 left leg + curved right leg silhouette matches 兀"}
+{"item_id": "p2_radical_075_夕", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "s2 横撇 heng too long; s1 above s2 head unnaturally"}
+{"item_id": "p2_radical_076_小", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "central 竖钩 spine flanked by 撇 and 点 with up-left hook flick"}
+{"item_id": "p2_radical_077_忄", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "left dot bowing right + right dot + center spine reads as 忄"}
+{"item_id": "p2_radical_078_幺", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "two stacked 撇折 loops with dot below matches 幺 silhouette"}
+{"item_id": "p2_radical_079_弋", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "斜钩 body + short 提 P-welded at C + upper-right dot reads as 弋"}
+{"item_id": "p2_radical_080_尢", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "top 横 + 撇 + 竖弯钩 with visible hook flick — 尢 recognizable"}
+{"item_id": "p2_radical_081_夂", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "s2 head below s1 tail; s3 originates inside s2 body — cross is overlap not X"}
+{"item_id": "p2_radical_082_子", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "弯钩 too centered/vertical; top curl too low"}
+{"item_id": "p2_radical_083_丬", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "left-爿 composition with pie + 提 + short 竖 reads correctly"}
+{"item_id": "p2_radical_084_夊", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "s1 rendered as straight vertical; s3 disconnected 102 px from s1 (drawer also flagged)"}
+{"item_id": "p2_radical_085_贝", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "MMH-verbatim compresses frame to upper-middle; disjoint pieces"}
+{"item_id": "p2_radical_086_比", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "MMH under-span → no symmetric split; hook flick tiny (blob)"}
+{"item_id": "p2_radical_087_灬", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "4 slender dots along B-row with correct mirror-pair slant"}
+{"item_id": "p2_radical_088_长", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "s3 drawn as curved zigzag not 竖提; s1 in wrong quadrant"}
+{"item_id": "p2_radical_089_车", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "3 horizontal-bar tiers + spine with welded elbow reads as 车"}
+{"item_id": "p2_radical_090_歹", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "interior 夕 structure absent (s3 straight pie down-right, not 横撇); drawer flagged"}
+{"item_id": "p2_radical_091_斗", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "two dots in upper-left corner not flanking vertical; horizontal too low"}
+{"item_id": "p2_radical_092_厄", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "inner 㔾 in wrong cell (C not MR); hook flick blob-like"}
+{"item_id": "p2_radical_093_方", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "横折钩 vertical descent only 20 px — compressed to right column"}
+{"item_id": "p2_radical_094_风", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "横斜钩 right descent too short; s4 essentially a 10-px straight bar"}
+{"item_id": "p2_radical_095_父", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "cleaned X-crossing with two upper marks above — 父 silhouette clear"}
+{"item_id": "p2_radical_096_戈", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "s1 短横 strongly tilted; s3 pie starts inside 斜钩 body"}
+{"item_id": "p2_radical_097_户", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "s3 custom bump doesn't read as 尸; s2 and s4 share head anchor"}
+{"item_id": "p2_radical_098_火", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "s3/s4 heads 70 px apart — no shared apex; scattered strokes not 人-base"}
+{"item_id": "p2_radical_099_旡", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "s1 tiny 10-px 横; s2 tilted; s3 starts mid-canvas"}
+{"item_id": "p2_radical_100_见", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "box compressed to upper half; legs don't splay from opposite corners"}
+{"item_id": "p2_radical_101_斤", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "MMH-verbatim crams strokes right of center; asymmetric"}
+{"item_id": "p2_radical_102_耂", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "s2 vertical too short vs the wide 横 below; 十 cross undersized"}
+{"item_id": "p2_radical_103_毛", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "top 撇 + two horizontals + 竖弯钩 with rightward curve and up-flick — 毛 reads"}
+{"item_id": "p2_radical_104_木", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "canonical 十 with symmetric arms; TR9-expanded 横; concave-right 撇"}
+{"item_id": "p2_radical_105_肀", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "top piece a bump not 聿 top; spine misaligned with horizontals"}
+{"item_id": "p2_radical_106_牛", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "top short 撇 + short + long horizontals + spine (through both) — 牛 recognizable"}
+{"item_id": "p2_radical_107_爿", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "s2 drifts 80 px in x (TR8 rule 6 violation); s4 wrong stroke class (horizontal not descender)"}
+{"item_id": "p2_radical_108_片", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "top pie + right vertical + horizontals + right descender past canvas — 片 silhouette"}
+{"item_id": "p2_radical_109_攴", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "s4 head close to s3 head → inverted-V not X (drawer flagged)"}
+{"item_id": "p2_radical_110_攵", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "P-weld override to BC/BC produces true X-crossing at bottom — 攵 reads"}
+{"item_id": "p2_radical_111_气", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "s4 top-heng at same y as s3 → visual overlap; three horizontals stack awkwardly"}
+{"item_id": "p2_radical_112_欠", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "MMH-verbatim under-spans; s1 tiny sweep; base X squished"}
+{"item_id": "p2_radical_113_犬", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "PASS", "reason": "TR9-expanded 大 base with clear X below heng + upper-right dot — 犬 reads"}
+{"item_id": "p2_radical_114_日", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "middle 横 only 65 px wide — doesn't reach right wall"}
+{"item_id": "p2_radical_115_氏", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "MMH s2 sweeps down-right (should be down-left canonical 撇); 提 congests middle"}
+{"item_id": "p2_radical_116_礻", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "stem starts inside 横撇 area; stem short (~140 px)"}
+{"item_id": "p2_radical_117_手", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "竖钩 body drifts 30 px left (not vertical); horizontals tilted up"}
+{"item_id": "p2_radical_118_殳", "attempt_n": 1, "batch": "B2_main", "curator_verdict": "FAIL", "reason": "s1 wrong direction (down-right not down-left); s2 hyphen-like not 几-hook; X-cross disconnected"}
+{"item_id": "p2_radical_024_冂", "attempt_n": 2, "batch": "B2_retry", "curator_verdict": "PASS", "reason": "TR9 expansion produced full-canvas open-bottom frame; minor left-corner mismatch"}
+{"item_id": "p2_radical_038_㔾", "attempt_n": 2, "batch": "B2_retry", "curator_verdict": "FAIL", "reason": "s2 belly bulges bottom-left as J-shape; s1 fold floats inside bowl"}
+{"item_id": "p2_radical_047_飞", "attempt_n": 2, "batch": "B2_retry", "curator_verdict": "FAIL", "reason": "top 横 rises 115 px over 225 px — reads as diagonal; arc overlaps inner marks"}
+{"item_id": "p2_radical_050_弓", "attempt_n": 2, "batch": "B2_retry", "curator_verdict": "FAIL", "reason": "s1 drop goes down-left not straight down; s3 loop inverted"}
+{"item_id": "p2_radical_053_己", "attempt_n": 2, "batch": "B2_retry", "curator_verdict": "FAIL", "reason": "s1 and s3 heads overlap at top-left; 3 tiers not connected"}
+{"item_id": "p2_radical_054_彐", "attempt_n": 2, "batch": "B2_retry", "curator_verdict": "PASS", "reason": "same-row 横 endpoints fix eliminated the diagonal tilt; three tiers align"}
+{"item_id": "p2_radical_058_马", "attempt_n": 2, "batch": "B2_retry", "curator_verdict": "FAIL", "reason": "top-box too small; S2 first leg slants left-down not vertical; S3 heng overlaps S2 hook_pt"}
+{"item_id": "p2_radical_059_门", "attempt_n": 2, "batch": "B2_retry", "curator_verdict": "PASS", "reason": "enclosing-radical layout enforced; three strokes coherent as one enclosure"}
+{"item_id": "p2_radical_062_犭", "attempt_n": 2, "batch": "B2_retry", "curator_verdict": "FAIL", "reason": "derived-anchor pattern applied but s3 belly hooks down-right (should mirror 犬's down-left)"}
+{"item_id": "p2_radical_121_尣", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "4-stroke standalone lame-radical; 2 upper marks + long left leg pie + right 竖弯 leg; TR9-appropriate span"}
+{"item_id": "p2_radical_122_王", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "3 same-row 横 + centered 竖 spine; P-weld at mid, N-neighbors top/bottom — canonical 王"}
+{"item_id": "p2_radical_123_韦", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "top+mid 横 + bottom hook-heng + centered 竖; three P welds via spine; readable 韦"}
+{"item_id": "p2_radical_126_心", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "wo_gou body + 3 dots (left pie, mid dot, right dot); heart silhouette matches GT"}
+{"item_id": "p2_radical_128_爻", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "two stacked 乂 X-crossings via shared-pixel P (fu.py pattern) — reads as 爻"}
+{"item_id": "p2_radical_129_曰", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "TR9-expanded 口-frame + short inner middle 横 not reaching right wall — 曰 distinct from 日"}
+{"item_id": "p2_radical_133_止", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "center 竖 + short 横 right + short 竖 left + long bottom 横; every 横/竖 shares row/col (TR8 rules 5/6)"}
+{"item_id": "p3_char_0001_一", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "single horizontal M-row span; canonical 一"}
+{"item_id": "p3_char_0002_丨", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "single vertical C-column span; canonical 丨"}
+{"item_id": "p3_char_0003_乙", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "single inlined 横折弯钩 sweep; reads as 乙"}
+{"item_id": "p3_char_0004_丶", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "single dot (dian); canonical 丶"}
+{"item_id": "p3_char_0006_乚", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "竖弯钩 with wide bottom reach — canonical 乚"}
+{"item_id": "p3_char_0008_亅", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "single 竖钩 straight body up-left tip; canonical 亅"}
+{"item_id": "p3_char_0009_了", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "横撇 top + 弯钩 descender; N-gap at pivot; canonical 了"}
+{"item_id": "p3_char_0010_丩", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "2-stroke hook-cross composition; joint atlas cited (P-cross); reads as 丩"}
+{"item_id": "p3_char_0012_丷", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "two upper dots splayed apart — canonical 丷"}
+{"item_id": "p3_char_0013_十", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "same-row 横 + same-col 竖 P-cross at C; canonical 十"}
+{"item_id": "p3_char_0014_乂", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "撇 + 捺 X-cross with shared-pixel P at C; canonical 乂"}
+{"item_id": "p3_char_0015_二", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "two same-row horizontals stacked with clear gap; canonical 二"}
+{"item_id": "p3_char_0017_又", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "横撇 + 捺 crossing at BC (P) — canonical 又"}
+{"item_id": "p3_char_0019_儿", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "撇 left leg + 竖弯钩 right leg with straight-body-then-hook — canonical 儿"}
+{"item_id": "p3_char_0020_亠", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "top dot + horizontal underneath; canonical 亠"}
+{"item_id": "p3_char_0022_亻", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "撇 + 竖 with N-neighbor at chord mid; canonical 亻 side-radical"}
+{"item_id": "p3_char_0024_八", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "撇 + 捺 splayed apart (S-class, no joint) — canonical 八"}
+{"item_id": "p3_char_0027_七", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "rising 横 + 竖弯钩 with shared-pixel P at C; canonical 七"}
+{"item_id": "p3_char_0029_入", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "撇 + 捺 with T-weld at apex (using draw_ru); canonical 入"}
+{"item_id": "p3_char_0030_冫", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "two ice-drop dots on left column; canonical 冫"}
+{"item_id": "p3_char_0031_厂", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "横 + 撇 with MMH-native N-gap (NOT welded as bootstrap errata suggested); clean-GT reveals gap"}
+{"item_id": "p3_char_0033_刀", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "PASS", "reason": "横折钩 + 撇 with small N-gap at head; canonical 刀 proportions"}
+{"item_id": "p2_radical_119_水", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "3-drop 水 structure lost — likely fragmentation or wrong stroke class"}
+{"item_id": "p2_radical_120_瓦", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "tile-shape composition displaced or wrong compound decomposition"}
+{"item_id": "p2_radical_124_文", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "top piece + 亠 + X composition — likely 撇+捺 X apex not shared; form_catalog cited but rendering off"}
+{"item_id": "p2_radical_125_毋", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "enclosure + internal strokes displaced; TR9 span likely under-applied"}
+{"item_id": "p2_radical_127_牙", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "4-stroke fang/tooth composition — component-placement error typical"}
+{"item_id": "p2_radical_130_月", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "enclosing 月 frame likely under-spans TR9 or inner bars misaligned (similar to 日 first pass)"}
+{"item_id": "p2_radical_131_爫", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "claw radical — 4 pie-like short strokes; likely displaced or wrong slant"}
+{"item_id": "p2_radical_132_支", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "十 top + 又 base composition — form_catalog cited but base X likely fragmented"}
+{"item_id": "p2_radical_134_爪", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "claw radical variant — similar to 爫; displaced pie strokes"}
+{"item_id": "p2_radical_135_无", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "无 = 一 + 尢-shape — likely bottom 竖弯钩 leg misaligned or 横 tilted"}
+{"item_id": "p3_char_0005_丿", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "MMH-verbatim under-span (TR9 not applied) — same failure mode as p2_003 bootstrap and B1 retry"}
+{"item_id": "p3_char_0007_乛", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "横钩 too short/compressed; standalone MMH under-spans; TR9 not applied"}
+{"item_id": "p3_char_0011_人", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "撇+捺 N-gap 36 px (>25 TR10 limit); apex weld not achieved (drawer flagged partial)"}
+{"item_id": "p3_char_0016_乃", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "横折折撇 single-bezier can't render two bends; single-quad chord too diagonal"}
+{"item_id": "p3_char_0018_乜", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "2-stroke 乜 composition; likely 竖弯钩 body direction wrong or top piece detached"}
+{"item_id": "p3_char_0021_几", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "撇+横折弯钩; top gap tension between TR10 and visible-N — drawer flagged"}
+{"item_id": "p3_char_0023_九", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "撇 + 横折弯钩; body direction or hook angle wrong"}
+{"item_id": "p3_char_0025_力", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "same failure family as B1 p2_025_力 main — 撇 placement or top-bar span off"}
+{"item_id": "p3_char_0026_冂", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "enclosure TR9 not applied — same failure as p2_024 bootstrap; drawer didn't cite errata"}
+{"item_id": "p3_char_0028_冖", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "horizontal cover — likely too short or corner missing"}
+{"item_id": "p3_char_0032_凵", "attempt_n": 1, "batch": "B3_main", "curator_verdict": "FAIL", "reason": "凵 bracket — 3-stroke composition likely misjoined; joint_atlas cited but N-gaps off"}
+{"item_id": "p2_radical_025_力", "attempt_n": 2, "batch": "B3_retry", "curator_verdict": "PASS", "reason": "MMH-literal head at TC(0.4,0.671) — 撇 pierces through 横折钩 descent (P at C); canonical 力"}
+{"item_id": "p2_radical_061_女", "attempt_n": 2, "batch": "B3_retry", "curator_verdict": "PASS", "reason": "撇点 head lifted to TC(0.35,0.20), pivot pushed to C(0.30,0.85); wide 横 crosses both diagonals — canonical 女"}
+{"item_id": "p2_radical_114_日", "attempt_n": 2, "batch": "B3_retry", "curator_verdict": "PASS", "reason": "middle+bottom 横 extended wall-to-wall (ML→MR / BL→BR); enclosure closed properly"}
+{"item_id": "p2_radical_003_丿", "attempt_n": 3, "batch": "B3_retry", "curator_verdict": "FAIL", "reason": "TR9 anti-diagonal span still not applied; drawer keeps soft-interpreting errata"}
+{"item_id": "p2_radical_015_刀", "attempt_n": 3, "batch": "B3_retry", "curator_verdict": "FAIL", "reason": "proportion issue: horizontal or descender balance still off; joint welded correctly but not the pattern"}
+{"item_id": "p2_radical_024_冂", "attempt_n": 3, "batch": "B3_retry", "curator_verdict": "FAIL", "reason": "frame proportion still not canonical; corner overshoot persists"}
+{"item_id": "p2_radical_047_飞", "attempt_n": 3, "batch": "B3_retry", "curator_verdict": "FAIL", "reason": "top compound piece still not ONE polyline per errata — chained beziers persist"}
+{"item_id": "p2_radical_050_弓", "attempt_n": 3, "batch": "B3_retry", "curator_verdict": "FAIL", "reason": "3-tier separation still failing; middle-tier joins not clean"}
+{"item_id": "p2_radical_053_己", "attempt_n": 3, "batch": "B3_retry", "curator_verdict": "FAIL", "reason": "3-tier same failure; s3 shape and joins still off"}
+{"item_id": "p2_radical_058_马", "attempt_n": 3, "batch": "B3_retry", "curator_verdict": "FAIL", "reason": "top-box/spine proportion still off; suggested shu_zhe_zhe_gou not fully leveraged"}
+{"item_id": "p3_char_0034_刁", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "2 strokes heng_pie_wan_gou + ti, joints NONE per MMH, checklist cited."}
+{"item_id": "p3_char_0036_刂", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "reused dao_side.py with explicit overrides per TR1; shu_gou straight-body invariant honored."}
+{"item_id": "p3_char_0037_勹", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "2 strokes heng_zhe_gou + pie, clean composition per bank primitive defaults."}
+{"item_id": "p3_char_0040_丫", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes; inline tapered branches to fit MMH's UL→LR direction (TR6 inline)."}
+{"item_id": "p3_char_0041_大", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "reused da.py — X-crossing with shared-pixel P at C."}
+{"item_id": "p3_char_0042_丬", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes dian + shu + heng with clean N-gaps."}
+{"item_id": "p3_char_0043_个", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes; shared apex P for pie+na, shu drops below apex with N-gap."}
+{"item_id": "p3_char_0045_上", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes; both horizontals P-welded to central shu at C."}
+{"item_id": "p3_char_0048_乇", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes; shu_wan_gou bottom curve reads correctly."}
+{"item_id": "p3_char_0049_子", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes; wan_gou belly asymmetric per errata fix baked into zi_char.py."}
+{"item_id": "p3_char_0050_亍", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes; N at TC, P at C — clean 亍 form."}
+{"item_id": "p3_char_0051_于", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes; shu_gou straight-body override via head==belly trick."}
+{"item_id": "p3_char_0052_亡", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes; dian above, short heng, shu_zhe base."}
+{"item_id": "p3_char_0053_下", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes; heng + shu + dian in canonical 下 layout."}
+{"item_id": "p3_char_0054_亼", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes; apex kept ~22 px N per TR10 (not welded)."}
+{"item_id": "p3_char_0055_三", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 × heng in T/M/B rows, all same-row per TR8 rule 5."}
+{"item_id": "p3_char_0057_小", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "reused xiao.py — TR9-expanded standalone."}
+{"item_id": "p3_char_0062_卄", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes; horizontal row-shared, verticals col-shared, two P at heng."}
+{"item_id": "p3_char_0063_门", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "reused men.py — enclosing-radical TR2/TR9 layout."}
+{"item_id": "p3_char_0066_囗", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "reused wei_enclose.py — 3 N corners, full-grid span."}
+{"item_id": "p3_char_0067_山", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "reused shan.py — MMH-anchored 3-stroke shan pattern."}
+{"item_id": "p3_char_0068_纟", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes; 2 pie_zhe stacked + ti, per yao_small pattern (drawer honestly flagged residual + revised)."}
+{"item_id": "p3_char_0069_干", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "reused gan.py — N at TC, P at C."}
+{"item_id": "p3_char_0071_口", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "reused kou.py — 3-N-corner enclosure with _shorten helper."}
+{"item_id": "p3_char_0074_孑", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes; heng_pie + wan_gou + ti with P-cross at C."}
+{"item_id": "p3_char_0075_千", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes; natural P at C from crossing, N at TC from close-but-not-touching."}
+{"item_id": "p3_char_0077_习", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes; heng_zhe_gou + interior dian + ti, no joints."}
+{"item_id": "p3_char_0078_艹", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes; horizontal + 2 verticals column-shared piercing horizontal (TR8 rule 6)."}
+{"item_id": "p3_char_0079_已", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "3 strokes; inline 竖弯钩-rising hook UP-right, distinct from 己."}
+{"item_id": "p3_char_0080_宀", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "reused mian.py — dian + heng + heng_gou cover."}
+{"item_id": "p3_char_0082_尢", "attempt_n": 1, "batch": "B4", "curator_verdict": "PASS", "reason": "reused you.py — 竖弯钩 with softer belly y~0.98."}
+{"item_id": "p3_char_0035_丁", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "shu_gou body likely drifted from column-C; TR8 rule 6 not enforced."}
+{"item_id": "p3_char_0038_匕", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "bi.py reused but Phase-3 char needs stronger belly + TR9 span."}
+{"item_id": "p3_char_0039_之", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "revised curve too aggressive (0.30); ping_na primitive should have been used."}
+{"item_id": "p3_char_0044_丸", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "shu_wan_gou body direction wrong; belly should hook out right, not just descend."}
+{"item_id": "p3_char_0046_久", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "X-apex not shared-pixel (fragmentation, same failure family as 火/攴)."}
+{"item_id": "p3_char_0047_也", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "s3 curve missing up-flick hook; should be proper shu_wan_gou."}
+{"item_id": "p3_char_0056_亾", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "亡+人 composition read as two disjoint pieces; T-weld at base missed."}
+{"item_id": "p3_char_0058_兀", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "wu_lame.py primitive doesn't match 兀 canonical (兀 = 一 + 儿); wrong bank pick."}
+{"item_id": "p3_char_0059_么", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "should use yao_small.py loop pattern; scattered strokes instead."}
+{"item_id": "p3_char_0060_卂", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "should be ONE continuous compound stroke per Pattern E; fragmented into pieces."}
+{"item_id": "p3_char_0061_与", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "compound spine misjoined; should reuse heng_zhe_zhe_zhe_gou.py."}
+{"item_id": "p3_char_0064_叉", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "P-weld apex not shared-pixel; 点 placed too high (should be in crotch)."}
+{"item_id": "p3_char_0065_及", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "s2 decomposed into 3 sub-segments; should use compound heng_zhe_zhe_zhe.py."}
+{"item_id": "p3_char_0070_夂", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "N-gap ≈57 px flagged in own notes but overall_pass=True (rubber-stamp); derived-anchor not applied."}
+{"item_id": "p3_char_0072_夊", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "same as 070_夂 — ク near-straight, T-weld to s1 body missed."}
+{"item_id": "p3_char_0073_飞", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "chronic — chained beziers again despite errata; single polyline not used."}
+{"item_id": "p3_char_0076_孓", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "提 direction wrong; should be top-right extension not standard rising ti."}
+{"item_id": "p3_char_0081_女", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "nv.py reused but Phase-3 char needs slightly straighter pie + fuller horizontal span."}
+{"item_id": "p3_char_0083_才", "attempt_n": 1, "batch": "B4", "curator_verdict": "FAIL", "reason": "撇 head placement too high; should T-weld to 竖钩 body at C with strong down-left curve."}
+{"item_id": "p2_radical_039_艹", "attempt_n": 2, "batch": "B4_retry", "curator_verdict": "PASS", "reason": "checklist worked — errata fix (2 straight 竖 piercing heng) applied literally; graduated cao_grass_radical.py."}
+{"item_id": "p3_char_0025_力", "attempt_n": 2, "batch": "B4_retry", "curator_verdict": "PASS", "reason": "checklist worked — drawer cited just-promoted li.py from B3; graduated li_char.py. Directly validates B3 mandatory-checklist hypothesis."}
+{"item_id": "p3_char_0028_冖", "attempt_n": 2, "batch": "B4_retry", "curator_verdict": "PASS", "reason": "checklist worked — heng_gou_cover.py surfaced via bank grep; graduated mi_cover_char.py."}
+{"item_id": "p3_char_0032_凵", "attempt_n": 2, "batch": "B4_retry", "curator_verdict": "PASS", "reason": "form_catalog + joint_atlas both cited; TR8 rules 5+6 applied for verticals and bottom heng; graduated kan_open.py."}
+{"item_id": "p2_radical_070_纟", "attempt_n": 3, "batch": "B4_retry", "curator_verdict": "FAIL", "reason": "loops still merged into one staircase; distinct y-band separation not enforced."}
+{"item_id": "p2_radical_081_夂", "attempt_n": 3, "batch": "B4_retry", "curator_verdict": "FAIL", "reason": "s3 head still inside pie body; derived-anchor on curved body still not applied (chronic)."}
+{"item_id": "p2_radical_082_子", "attempt_n": 3, "batch": "B4_retry", "curator_verdict": "FAIL", "reason": "弯钩 body too vertical/centered; asymmetric-belly fix applied only partially."}
+{"item_id": "p2_radical_084_夊", "attempt_n": 3, "batch": "B4_retry", "curator_verdict": "FAIL", "reason": "ク top still near-straight; T-weld between s3 head and s1 body still 60+ px off."}
+{"item_id": "p3_char_0084_屮", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "shu + heng + shu; TR8 column-share; canonical form_catalog entry."}
+{"item_id": "p3_char_0087_工", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "H-shape; two heng row-locked (T/B), center shu column-locked."}
+{"item_id": "p3_char_0088_川", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "3 verticals with 0.25 x_frac spacing; S-joints only, all clean."}
+{"item_id": "p3_char_0089_义", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "top dot + pie/na apex-shared at C (shared-pixel P per joint_atlas)."}
+{"item_id": "p3_char_0090_幺", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "yao_small.py loop pattern reused correctly; closing dot in place."}
+{"item_id": "p3_char_0092_廾", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "middle heng + slanted pie + right shu; two P at heng."}
+{"item_id": "p3_char_0093_弋", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "xie_gou body + short heng + upper dot; xie_gou.py reused with override anchors."}
+{"item_id": "p3_char_0094_不", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "top heng full-span + pie + shu centered + right dot; canonical 不 silhouette."}
+{"item_id": "p3_char_0095_丹", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "pie left + heng_zhe_gou frame + inner dot + middle heng wall-to-wall."}
+{"item_id": "p3_char_0100_中", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "enclosing box + centered vertical piercing; P-cross at C; shu extends above and below frame."}
+{"item_id": "p3_char_0102_天", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "short top heng + long mid heng + pie/na apex-shared; canonical 天 base."}
+{"item_id": "p3_char_0105_仂", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "亻 (ren_side.py) + 力 (li.py); component composition, both column-shared."}
+{"item_id": "p3_char_0106_日", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "closed frame + middle heng wall-to-wall + bottom heng; ri.py-adjacent."}
+{"item_id": "p3_char_0107_仃", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "亻 left + 丁 right (heng + shu_gou); T-weld at right heng."}
+{"item_id": "p3_char_0108_无", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "short top heng + long mid heng + long pie + 竖弯钩; P-cross at C emerges naturally."}
+{"item_id": "p3_char_0109_仄", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "厂 (chang.py) top + 人 (ren.py) inside; component composition."}
+{"item_id": "p3_char_0112_心", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "wo_gou base + 3 dots (bottom + upper-left + upper-mid)."}
+{"item_id": "p3_char_0115_仌", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "从-like stacked (two pie+na pairs); two apex P-welds; clean silhouette."}
+{"item_id": "p3_char_0116_公", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "八 top (pie+na apex) + 厶 bottom (private)."}
+{"item_id": "p3_char_0117_仑", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "亼 top (pie+na apex-shared with ~22 px N) + 匕 bottom."}
+{"item_id": "p3_char_0124_文", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "top dot + mid heng + pie/na apex-shared at BC (shared-pixel P)."}
+{"item_id": "p3_char_0126_长", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "short pie + heng + 竖提 spine (shu_ti.py) + na sweep."}
+{"item_id": "p3_char_0127_冈", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "冂 frame + inner 义 (pie + dot); enclosing pattern; TR9 span applied."}
+{"item_id": "p3_char_0128_太", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "大 base (heng + pie + na apex-shared) + tucked dot in na body."}
+{"item_id": "p3_char_0129_龶", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "3 heng stacked + centered shu piercing all; multi-P via column-share."}
+{"item_id": "p3_char_0131_冗", "attempt_n": 1, "batch": "B5", "curator_verdict": "PASS", "reason": "冖 (mi_cover_char.py) top + 几-like bottom; enclosing + legs."}
+{"item_id": "p3_char_0085_马", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "same chronic 马 pattern; top-box proportion off, spine leans, bottom heng overlaps hook_pt zone. Supplant with chronic/ma_horse.py in future."}
+{"item_id": "p3_char_0086_巛", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "3 parallel curves too vertical; reads as commas not flowing 巛. Curve too shallow."}
+{"item_id": "p3_char_0091_乡", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "3 folds run together vertically; distinct 3-tier stagger missing."}
+{"item_id": "p3_char_0096_为", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "横折钩 descent too short; inner 点 scattered."}
+{"item_id": "p3_char_0097_乌", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "compound descender lacks canonical proportion; middle bar disconnected."}
+{"item_id": "p3_char_0098_以", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "right 人 apex not shared-pixel; left 㠯 misjoined."}
+{"item_id": "p3_char_0099_予", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "予 split into 4 pieces; needs 3-stroke compound spine like 子 + crossbar."}
+{"item_id": "p3_char_0101_亓", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "shu spacing too close; top 二 heng short. TR2 top-radical span not applied."}
+{"item_id": "p3_char_0103_亢", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "竖弯钩 hook flick direction wrong; dot too high."}
+{"item_id": "p3_char_0104_方", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "revised once (added belly) — made it worse; 横折钩 primitive contract broken; descent still short."}
+{"item_id": "p3_char_0110_分", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "八 apex splayed; 刀 base compressed."}
+{"item_id": "p3_char_0111_仇", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "九 body slants where it should curve; primitive-pick or override wrong."}
+{"item_id": "p3_char_0113_仉", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "几 top gap fused (weld against joint_atlas 几-family exception)."}
+{"item_id": "p3_char_0114_见", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "eye-box enlarged per errata but s4 head positioned inside box mid instead of right wall."}
+{"item_id": "p3_char_0118_从", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "two 人 bunched; apex-shares not both P-welded."}
+{"item_id": "p3_char_0119_仓", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "bottom 巴-like piece as scattered strokes; no enclosing frame feel."}
+{"item_id": "p3_char_0120_气", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "horizontals overlap; compound spine chained beziers (same as p2_111)."}
+{"item_id": "p3_char_0121_內", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "frame under-spanned; 入 apex not shared-pixel."}
+{"item_id": "p3_char_0122_五", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "slanted s2 doesn't cross s3 at P (shared-pixel not enforced); reads as two disconnected halves."}
+{"item_id": "p3_char_0123_兮", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "八 wide and dropped low; hook body compressed."}
+{"item_id": "p3_char_0125_円", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "frame too tall; middle shu disconnected from top bar."}
+{"item_id": "p3_char_0130_切", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "七 and 刀 both compressed; lopsided silhouette despite one revision."}
+{"item_id": "p3_char_0132_内", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "frame under-spanned; inner apex not shared-pixel despite revision."}
+{"item_id": "p3_char_0133_冘", "attempt_n": 1, "batch": "B5", "curator_verdict": "FAIL", "reason": "冖 cover misjoined; 儿 legs splayed too far."}
+{"item_id": "p2_radical_003_丿", "attempt_n": 4, "batch": "B5_retry", "curator_verdict": "FAIL_SUPPLANTED", "reason": "Willful override: quoted anti-diagonal fix then wrote different anchors. Replaced by chronic/pie_radical.py."}
+{"item_id": "p2_radical_015_刀", "attempt_n": 3, "batch": "B5_retry", "curator_verdict": "FAIL_SUPPLANTED", "reason": "T-weld held but proportion still off. Replaced by chronic/dao_char.py."}
+{"item_id": "p2_radical_024_冂", "attempt_n": 3, "batch": "B5_retry", "curator_verdict": "FAIL_SUPPLANTED", "reason": "Frame proportion still non-canonical. Replaced by chronic/jiong_frame.py."}
+{"item_id": "p2_radical_050_弓", "attempt_n": 3, "batch": "B5_retry", "curator_verdict": "FAIL_SUPPLANTED", "reason": "3-tier bottom bowl misjoined; stock primitive incompatible. Replaced by chronic/gong_bow.py."}
+{"item_id": "p2_radical_058_马", "attempt_n": 3, "batch": "B5_retry", "curator_verdict": "FAIL_SUPPLANTED", "reason": "Mechanically perfect (9 asserts, TR8/TR9/hook up-left all satisfied) but panel FAIL. Ceiling proof. Replaced by chronic/ma_horse.py."}
+{"item_id": "p2_radical_088_长", "attempt_n": 2, "batch": "B5_retry", "curator_verdict": "FAIL", "reason": "s3 curved zigzag again, not strict 竖提. Retry_n advances to 2."}
+{"item_id": "p2_radical_093_方", "attempt_n": 2, "batch": "B5_retry", "curator_verdict": "FAIL", "reason": "drawer added local belly to 横折钩. Retry_n advances to 2."}
+{"item_id": "p2_radical_100_见", "attempt_n": 2, "batch": "B5_retry", "curator_verdict": "FAIL", "reason": "s4 head inside box mid instead of right wall. Retry_n advances to 2."}
+{"item_id": "p2_radical_111_气", "attempt_n": 2, "batch": "B5_retry", "curator_verdict": "FAIL", "reason": "horizontals overlap; compound spine chained beziers. Retry_n advances to 2."}
+{"item_id": "p2_radical_124_文", "attempt_n": 2, "batch": "B5_retry", "curator_verdict": "FAIL", "reason": "apex P not shared-pixel. Retry_n advances to 2."}
+{"item_id": "p2_radical_135_无", "attempt_n": 2, "batch": "B5_retry", "curator_verdict": "FAIL", "reason": "尢-base direction wrong; top 一 tilted. Retry_n advances to 2."}
+{"item_id": "p3_char_0134_化", "attempt_key": "p3_char_0134_化__att0", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "亻+匕 clean; bi.py-like anchor plan works"}
+{"item_id": "p3_char_0135_刅", "attempt_key": "p3_char_0135_刅__att0", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "reads as X + dot; 刀 body absent, no heng-zhe-gou visible"}
+{"item_id": "p3_char_0136_比", "attempt_key": "p3_char_0136_比__att3", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "匕 pieces disintegrated; drawer did not reuse bi.py; att3 = retry exhaustion"}
+{"item_id": "p3_char_0137_刈", "attempt_key": "p3_char_0137_刈__att1", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "乂+刂 balanced; joints crisp"}
+{"item_id": "p3_char_0138_水", "attempt_key": "p3_char_0138_水__att0", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "lost the right-side 捺 stroke; only spine + left drops rendered"}
+{"item_id": "p3_char_0139_礻", "attempt_key": "p3_char_0139_礻__att0", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "top dot absent; stem short; only 3 strokes visible instead of 4"}
+{"item_id": "p3_char_0140_反", "attempt_key": "p3_char_0140_反__att1", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "top 厂 tilted, missing 又 X-cross at base; two disjoint pieces"}
+{"item_id": "p3_char_0141_办", "attempt_key": "p3_char_0141_办__att3", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "components scattered — no unified 力+两点 shape (att3 = retry exhaustion)"}
+{"item_id": "p3_char_0142_区", "attempt_key": "p3_char_0142_区__att1", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "inner X ok-ish but 匚 top-right corner detached; frame not closed"}
+{"item_id": "p3_char_0143_勻", "attempt_key": "p3_char_0143_勻__att3", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "outer 勹 reads as \"7\"; inner 二 shifted right instead of centered"}
+{"item_id": "p3_char_0144_风", "attempt_key": "p3_char_0144_风__att1", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "几-frame under-spanned; inner X-mark disconnected"}
+{"item_id": "p3_char_0145_勿", "attempt_key": "p3_char_0145_勿__att2", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "勹 + 3 pie inside; att2 = revised once and landed"}
+{"item_id": "p3_char_0146_队", "attempt_key": "p3_char_0146_队__att3", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "left 阝 unrecognizable — became a small hook + short heng; right 人 too tall"}
+{"item_id": "p3_char_0147_卅", "attempt_key": "p3_char_0147_卅__att0", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "3 col-shared shu piercing heng; TR8 rule 6 clean"}
+{"item_id": "p3_char_0148_书", "attempt_key": "p3_char_0148_书__att2", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "lost the curved compound spine; became a 十 + tiny hook + dot"}
+{"item_id": "p3_char_0149_升", "attempt_key": "p3_char_0149_升__att0", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "compound top 撇折 + wide heng + shu; proportions balanced"}
+{"item_id": "p3_char_0150_引", "attempt_key": "p3_char_0150_引__att0", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "left 弓 collapsed to zigzag; chronic/gong_bow.py NOT called despite comment mention"}
+{"item_id": "p3_char_0151_卞", "attempt_key": "p3_char_0151_卞__att2", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "亠 + 卜 stacked; att2 = revised once"}
+{"item_id": "p3_char_0152_元", "attempt_key": "p3_char_0152_元__att3", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "一 + 儿 base; er_legs pattern effective; att3"}
+{"item_id": "p3_char_0153_卬", "attempt_key": "p3_char_0153_卬__att2", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "left half 卩-mirror missing; right 卩 stretched vertically"}
+{"item_id": "p3_char_0154_他", "attempt_key": "p3_char_0154_他__att1", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "亻 + 也 (both readable); att1"}
+{"item_id": "p3_char_0155_必", "attempt_key": "p3_char_0155_必__att1", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "dots scattered outside body; strokes read as 心 with extra tail"}
+{"item_id": "p3_char_0156_们", "attempt_key": "p3_char_0156_们__att0", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "亻 ok but 门 right side collapsed to two verticals; chronic/jiong_frame.py NOT called"}
+{"item_id": "p3_char_0157_甲", "attempt_key": "p3_char_0157_甲__att1", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "frame + spine + inner heng; canonical proportion; att1"}
+{"item_id": "p3_char_0158_出", "attempt_key": "p3_char_0158_出__att1", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "山 tier structure lost — reads as 廿 with extra vertical; wrong stroke count"}
+{"item_id": "p3_char_0159_申", "attempt_key": "p3_char_0159_申__att2", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "田-frame + spine crosses cleanly; att2"}
+{"item_id": "p3_char_0160_可", "attempt_key": "p3_char_0160_可__att0", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "一 + 口 side + 亅 hook; balanced"}
+{"item_id": "p3_char_0161_甴", "attempt_key": "p3_char_0161_甴__att3", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "frame + inner cross; att3 = revised"}
+{"item_id": "p3_char_0162_生", "attempt_key": "p3_char_0162_生__att3", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "3 heng + spine + top pie; balanced; att3"}
+{"item_id": "p3_char_0163_丱", "attempt_key": "p3_char_0163_丱__att1", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "4 strokes fine but symmetry broken; two 中-halves offset"}
+{"item_id": "p3_char_0164_对", "attempt_key": "p3_char_0164_对__att3", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "又 became disconnected sticks; 寸 dot missing; unrecognizable"}
+{"item_id": "p3_char_0165_乍", "attempt_key": "p3_char_0165_乍__att2", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "compound top curl + descender + 2 heng; att2"}
+{"item_id": "p3_char_0166_去", "attempt_key": "p3_char_0166_去__att2", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "top 土 crammed; bottom 厶 opens the wrong way (right instead of left)"}
+{"item_id": "p3_char_0167_乎", "attempt_key": "p3_char_0167_乎__att1", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "3 heng-family + shu_gou; att1"}
+{"item_id": "p3_char_0168_用", "attempt_key": "p3_char_0168_用__att2", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "frame under-spanned; inner 二 too close to bottom; jiong_frame not called"}
+{"item_id": "p3_char_0169_疋", "attempt_key": "p3_char_0169_疋__att2", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "top 一 + 龰-body proportions off; base 人-cross fragmented"}
+{"item_id": "p3_char_0170_发", "attempt_key": "p3_char_0170_发__att1", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "no 又 base at all — top pieces only; wrong stroke count"}
+{"item_id": "p3_char_0171_疒", "attempt_key": "p3_char_0171_疒__att1", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "广 frame + 2 inner dots; att1"}
+{"item_id": "p3_char_0172_只", "attempt_key": "p3_char_0172_只__att1", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "口 top + 八 legs; att1"}
+{"item_id": "p3_char_0173_仔", "attempt_key": "p3_char_0173_仔__att2", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "亻+子 clean; att2 = revised"}
+{"item_id": "p3_char_0174_主", "attempt_key": "p3_char_0174_主__att2", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "3 heng + spine + top dot; att2"}
+{"item_id": "p3_char_0175_仕", "attempt_key": "p3_char_0175_仕__att0", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "亻+士 pattern reused"}
+{"item_id": "p3_char_0176_平", "attempt_key": "p3_char_0176_平__att3", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "一 + 干 base symmetric; att3"}
+{"item_id": "p3_char_0177_仗", "attempt_key": "p3_char_0177_仗__att3", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "亻 ok; 丈 base heng too short + 捺 direction wrong"}
+{"item_id": "p3_char_0178_外", "attempt_key": "p3_char_0178_外__att3", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "夕 + 卜 balanced; att3"}
+{"item_id": "p3_char_0179_付", "attempt_key": "p3_char_0179_付__att0", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "亻+寸 reusable"}
+{"item_id": "p3_char_0180_打", "attempt_key": "p3_char_0180_打__att0", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "扌+丁 clean"}
+{"item_id": "p3_char_0181_仝", "attempt_key": "p3_char_0181_仝__att2", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "人 top + 工 base; att2"}
+{"item_id": "p3_char_0182_正", "attempt_key": "p3_char_0182_正__att2", "batch": "B6", "curator_verdict": "PASS", "human_verdict": "PASS", "reason": "一 + 止 base; att2"}
+{"item_id": "p3_char_0183_仞", "attempt_key": "p3_char_0183_仞__att1", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "亻 ok; 刃 has wrong hook direction and misplaced dot"}
+{"item_id": "p2_radical_086_比__retry_1__G4", "attempt_key": "p2_radical_086_比__retry_1__G4__att0", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "split into 卜+匕 sub-units; left half became a \"H\" shape; bi.py override not applied"}
+{"item_id": "p2_radical_094_风__retry_1__G4", "attempt_key": "p2_radical_094_风__retry_1__G4__att0", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "几-frame TR10 exception ignored; inner marks scattered"}
+{"item_id": "p2_radical_116_礻__retry_1__G4", "attempt_key": "p2_radical_116_礻__retry_1__G4__att0", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "stem still short; bottom dots absent; overall_pass false but submitted"}
+{"item_id": "p2_radical_119_水__retry_1__G4", "attempt_key": "p2_radical_119_水__retry_1__G4__att0", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "still missing right 捺; only 3 strokes rendered"}
+{"item_id": "p2_radical_045_寸__retry_1__G4", "attempt_key": "p2_radical_045_寸__retry_1__G4__att0", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "点 tucked wrong (upper-right instead of crotch); errata fix mispositioned"}
+{"item_id": "p2_radical_075_夕__retry_1__G4", "attempt_key": "p2_radical_075_夕__retry_1__G4__att0", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "heng shoulder still too long; pie sweep too short"}
+{"item_id": "p2_radical_088_长__retry_3__G4", "attempt_key": "p2_radical_088_长__retry_3__G4__att0", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "3 strokes merged into blob; canonical needed — SUPPLANT candidate"}
+{"item_id": "p2_radical_124_文__retry_2__G4", "attempt_key": "p2_radical_124_文__retry_2__G4__att0", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "apex P still fragmented; APEX tuple pattern not applied literally"}
+{"item_id": "p2_radical_081_夂__retry_3__G4", "attempt_key": "p2_radical_081_夂__retry_3__G4__att0", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "X-cross topology still wrong; derived-anchor pattern not applied — SUPPLANT candidate"}
+{"item_id": "p2_radical_084_夊__retry_3__G4", "attempt_key": "p2_radical_084_夊__retry_3__G4__att0", "batch": "B6", "curator_verdict": "FAIL", "human_verdict": "FAIL", "reason": "ク top piece still near-straight; T-weld off by 60px — SUPPLANT candidate"}

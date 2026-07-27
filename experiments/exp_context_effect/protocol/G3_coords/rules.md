@@ -58,37 +58,63 @@ NOT reset. You may freely append, edit, or reorganize.
 Distinct from the Success Bank (item-level mastery, locked until
 human PASS) and from the Principle Bank (generalized rules).
 
-## Coordinate storage format (MANDATORY)
+## Coordinate storage format (v8 UNLOCKED, 2026-07-25)
 
-Every Success Bank entry is a Python function that emits turtle calls
-using **numeric offset coordinates**:
+The **storage unit** is a callable Python function. That is the only
+mandatory constraint for G3 — it's what makes G3 distinct from G2
+(free-form markdown) and G4 (grid anchors).
+
+**Function signature is your choice.** Encode whatever knobs the
+composition needs. `(ox, oy, scale)` is a starting example, not a
+limit. If a stroke class needs `angle`, `curve_bow`, `taper_start`,
+`taper_end`, `aspect`, orientation flags, or anything else — put those
+in the signature. Curators are explicitly encouraged to grow the
+signature vocabulary as observed variants demand.
+
+Example (starter):
 
 ```python
-# success_bank/code/yi.py — 一 (yi, "one")
+# success_bank/code/yi.py — 一 (yi, "one") — the simple case
 from heng import draw_heng
 
 def draw_yi(t, ox=0, oy=0, scale=1.0):
     draw_heng(t, ox=ox + -3 * scale, oy=oy + -21 * scale, scale=0.480 * scale)
 ```
 
-- `(ox, oy, scale)` = origin and scale for compositional use.
-- Every stroke gets its own `(ox_delta, oy_delta, scale_delta)`
-  tuple.
-- Numbers are chosen by the curator from what worked in the render.
-- **No米字格 notation, no cell names, no anchor tuples, no joint
-  lists.** Just numbers.
+Example (richer signature, when needed):
+
+```python
+# success_bank/code/pie_variant.py — a 撇 with tunable angle/curve/taper
+def draw_pie(t, head, tail, angle_deg=None, bow_perp=0.10,
+             taper_head_w=10, taper_tail_w=2):
+    """head, tail = (x, y). angle_deg overrides implied angle if given."""
+    ...
+```
+
+**Everything in the Success Bank and Principle Bank is REFERENCE
+ONLY.** Nothing is strictly required. If the drawer thinks a stroke
+needs adjusting — angle, curvature, taper, aspect, orientation,
+proportion, anything — it adjusts. Bank primitives are examples of
+what worked before, not templates to instantiate.
+
+**No 米字格 anchors, no cell names, no joint-class labels.** Those
+belong to G4. G3's differentiator is code-as-storage.
 
 ## Drawer role
 
-1. **Read `principle_bank.md` FIRST — pay especially close attention
-   to the top-of-file TRANSFORMATION RULES section (TR1-TR7)**.
-   Then read `success_bank/INDEX.md`, `sandbox.md`, and any relevant
-   `success_bank/code/*.py` files. **Every primitive you reuse from
-   the bank must have `(ox, oy, scale)` deliberately chosen for THIS
-   composition — never call with defaults.** Bank use is
-   supplementary (per `../shared_rules.md`) — if no primitive fits
-   without extreme transformation, inline the stroke fresh or draw
-   the whole item fresh the way G1 would.
+1. **Read `memory_index.md` FIRST** — the curator maintains it as
+   your entry point. It describes what memory files exist and when
+   to consult each. Follow its pointers to specific files (e.g.
+   `drawer_memory.md`, `principle_bank.md` or its split children,
+   `form_catalog.md`, `success_bank/INDEX.md`, individual bank
+   `.py` files), or explore the group directory freely.
+
+   **v8 reminder**: bank primitives and principles are all
+   REFERENCE ONLY. You are not required to call any bank function
+   or follow any principle. If a stroke needs a different angle,
+   taper, curve, or orientation than what the bank has — write it
+   fresh. If the memory disagrees with the GT — trust the GT. The
+   memory is what worked before, not what must work now.
 2. Look at the GT PNG (characters only; strokes/radicals have none).
 3. Write **only** `attempts/<item_id>/generated.py` and its output
    PNG. Do NOT create or modify anything under `success_bank/code/`.
@@ -149,6 +175,24 @@ logged to `retry_log.jsonl`.
 - You may NEVER add per-cell structural checks.
 
 Your format is coordinates only. This is the point of the group.
+
+## Free-form memory grant (v8, unlocked at position 350)
+
+G3 now has a `groups/G3_coords/drawer_memory.md` file — same shape
+as G2's. Curator may write anything there: prose observations,
+tables, natural-language principles, sibling-pair notes, whatever.
+Drawer reads it via `memory_index.md`.
+
+**The architecture is now**:
+- G2 = free-form markdown only.
+- G3 = free-form markdown + code bank (functions as reference).
+- G4 = free-form markdown + grid bank (anchors as reference).
+
+G3 strictly *dominates* G2 in access: everything G2 has, plus a
+code-based bank as additional reference. If G3 leads G2 in scores,
+the code bank adds value beyond what free-form can express. If G3
+matches G2, the code bank is neutral. If G3 loses to G2, the code
+bank is a distraction. The comparison is now clean.
 
 ## Memory self-evolution (v7, unlocked at position 150)
 

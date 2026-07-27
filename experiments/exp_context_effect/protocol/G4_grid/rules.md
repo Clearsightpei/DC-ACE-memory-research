@@ -46,12 +46,27 @@ NOT reset. You may freely append, edit, or reorganize.
 Distinct from the Success Bank (item-level mastery, locked until
 human PASS) and from the Principle Bank (generalized rules).
 
-## 米字格 anchor notation (MANDATORY)
+## 米字格 anchor notation (v8 UNLOCKED, 2026-07-25)
 
-The character region is divided into **9 cells** (`TL`, `TC`, `TR`,
-`ML`, `C`, `MR`, `BL`, `BC`, `BR`). Every stroke's endpoints are
-recorded as `(cell, x_frac, y_frac)` — cell name plus within-cell
-position. Example:
+The **storage convention** for bank entries is 米字格 anchors +
+P/T/N/S joint spec. That is what makes G4 distinct from G3 (numeric
+coords) and G2 (free-form markdown).
+
+**But everything in the bank and principles is REFERENCE ONLY.**
+Nothing is strictly required. If the drawer decides the character
+needs a stroke placed off-grid, at a different orientation, or with
+a joint class the atlas doesn't cover — it draws that way. Bank
+entries are what worked before, not what must work now. The 米字格
+vocabulary is offered as a shared reasoning aid, not enforced as a
+gate on every drawing.
+
+Curator note: when writing a *new* bank entry, use 米字格 anchors +
+joint spec — that keeps the bank internally consistent so it's still
+useful as reference. But drawer attempts are free to depart.
+
+Cell layout: character region divided into **9 cells** (`TL`, `TC`,
+`TR`, `ML`, `C`, `MR`, `BL`, `BC`, `BR`). Endpoints as
+`(cell, x_frac, y_frac)`. Example:
 
 ```python
 # success_bank/code/kou.py — 口 (kou, "mouth")
@@ -91,16 +106,21 @@ separate section in each `.py`. Example:
 
 ## Drawer role
 
-1. **Read `principle_bank.md` FIRST — pay especially close attention
-   to the top-of-file TRANSFORMATION RULES section (TR1-TR8)**.
-   Then read `success_bank/INDEX.md`, `sandbox.md`, and relevant
-   `success_bank/code/*.py`. **Every primitive you reuse from the
-   bank must have OVERRIDING anchor tuples chosen for THIS
-   composition — never call primitives with their default anchors.**
-   Bank use is supplementary (per `../shared_rules.md`) — if no
-   primitive fits without extreme transformation, inline the stroke
-   fresh (still in 米字格 anchor form) or draw the whole item fresh
-   the way G1 would.
+1. **Read `memory_index.md` FIRST** — the curator maintains it as
+   your entry point. It describes what memory files exist and when
+   to consult each. Follow its pointers — do NOT try to read every
+   memory file. G4's evolved memory has grown large; reading
+   everything exceeds the drawer session budget (this was the B6
+   stall failure). Trust the index to route you.
+
+   **v8 reminder**: bank primitives + principles + form_catalog +
+   joint_atlas are all REFERENCE ONLY. You are not required to call
+   any bank function, follow any principle, or use any joint class.
+   If a stroke needs a different orientation, off-grid placement, or
+   any adjustment — write it fresh. If memory disagrees with GT,
+   trust the GT. The bank's 米字格 convention is offered as a shared
+   reasoning aid; your attempt is not scored against convention
+   compliance.
 2. Look at the GT PNG (characters only; strokes/radicals have none).
 3. Write **only** `attempts/<item_id>/generated.py` and its output
    PNG. Do NOT create or modify anything under `success_bank/code/`.
@@ -189,6 +209,37 @@ Standard rules — see `../shared_rules.md`.
 - You must declare joint classes for multi-stroke items.
 - Your Success Bank entries must be compositional: complex characters
   reuse component characters/radicals from the bank where possible.
+
+## Free-form memory grant + prune permission (v8, unlocked at position 350)
+
+G4 now has a `groups/G4_grid/drawer_memory.md` file — same shape as
+G2's. Curator may write anything there: prose observations, tables,
+natural-language principles, whatever. Drawer reads it via
+`memory_index.md`.
+
+**Prune permission**: given the B6 capacity-ceiling incident (6/16
+retries stalled unable to complete due to memory-navigation
+overhead), the curator is now explicitly permitted to:
+- **Prune uncited memory entries** — grep the last 3 batches of
+  `attempts/*/generated.py` for citations; remove entries that
+  never fire. Log removals to `evolution.md`.
+- **Promote retry_n≥2 fails to canonical hand-written primitives**
+  — extending the existing chronic-cluster mechanism (successful in
+  B5). Any item failing 2+ retries can become a canonical primitive
+  in `success_bank/code/chronic/` that drawers call directly,
+  bypassing the retrieval-application gap.
+- **Consolidate memory files** — merge under-used topic files if
+  they're causing retrieval spread.
+
+**The architecture is now**:
+- G2 = free-form markdown only.
+- G3 = free-form markdown + code bank (functions as reference).
+- G4 = free-form markdown + grid bank (anchors as reference).
+
+G4 strictly *dominates* G2 in access. Comparison test: if G4 leads,
+the grid vocabulary + joint spec adds value beyond free-form. If G4
+matches G2, the grid vocabulary is redundant. If G4 loses, the grid
+vocabulary is a distraction even when optional.
 
 ## Memory self-evolution (v7, unlocked at position 150)
 

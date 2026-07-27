@@ -238,3 +238,184 @@ Fix strategies per item live in `sandbox.md` — most (18/23) call for
 inline-fresh per TR8. Retry priority for next scan window: 大, 人, 入
 (prerequisites for many upcoming characters); 门 (prerequisite for
 问/间); 女 (prerequisite for 好/妈).
+
+---
+
+# Batch B2 retries (positions 101–150, retry_n=1 → 2) — ALL FAILED
+
+The 8 items retried in B2 (人, 入, 大, 女, 犭, 己, 㔾, 丷) all failed
+their retry_1 attempt. TR8 INLINE-FRESH TEST — the principle added at
+end of B1 explicitly to save these items — did NOT rescue them.
+Increment retry_n to 2 for each. See `sandbox.md` "Batch B2
+diagnostic" for the root-cause hypothesis (rigid `(ox, oy, scale)`
+signature can't vary angle/taper/curvature) and `evolution.md` for
+the memory restructuring done in response.
+
+- **p2_radical_021_丷 (bā_top)** — retry_1 FAIL, retry_n=2
+- **p2_radical_028_人 (rén)** — retry_1 FAIL, retry_n=2
+- **p2_radical_030_入 (rù)** — retry_1 FAIL, retry_n=2
+- **p2_radical_038_㔾 (jié_variant)** — retry_1 FAIL, retry_n=2
+- **p2_radical_046_大 (dà)** — retry_1 FAIL, retry_n=2
+- **p2_radical_053_己 (jǐ)** — retry_1 FAIL, retry_n=2
+- **p2_radical_061_女 (nǚ)** — retry_1 FAIL, retry_n=2
+- **p2_radical_062_犭 (quǎn)** — retry_1 FAIL, retry_n=2
+
+All 8 remain in errata with cooldown-50 before next retry eligible.
+
+---
+
+# Batch B2 new fails (main curriculum, 33 items) — 2026-07-18
+
+Batch B2 pass rate = 17/50 = 34% — worst run yet (G1 no-memory: 38%).
+Per-item diagnosis kept concise; the deep root cause is analysed in
+`sandbox.md` §"Batch B2 diagnostic — signature restriction hypothesis".
+
+Fix idea common across most: use the new adaptive `variant_pie /
+variant_na / variant_dian` helpers in `_shared_helpers.py` (v7
+addition) with hand-tuned angle / taper / curvature per composition,
+instead of force-fitting frozen bank primitives. See `form_catalog.md`
+for the stroke × context lookup that indexes when each variant applies.
+
+## p2_radical_074_兀 (wù) — FAIL
+Two legs (撇 + 竖弯钩) rendered with primitives; leg widths mismatched
+and the 竖弯钩 base sweep too flat. Fix: inline both legs with matched
+widths via `variant_pie` + inline bezier for curve+hook.
+
+## p2_radical_077_忄 (heart-side) — FAIL
+Mirrored dot pair; the mirrored right dot didn't match left dot's
+weight. Fix: use `variant_dian` for BOTH dots with same w_head/w_tail,
+swap head/tail positions for the mirror.
+
+## p2_radical_078_幺 (yāo) — FAIL
+Small compound with 撇折 + dian; angles wrong at the fold. Fix: inline
+the whole compound as one continuous polyline with hand-picked corner.
+
+## p2_radical_079_弋 (yì) — FAIL
+斜钩 with cross dot; the 斜钩 lost its belly. `variant_na` with tuned
+belly_u could work; or inline a bezier with strong perpendicular bow.
+
+## p2_radical_080_尢 (yóu) — FAIL
+横 + short pie + 竖弯钩 with leg forms different from 兀. Same as 074.
+
+## p2_radical_081_夂 (zhǐ) — FAIL
+Two crossing 撇/捺-like strokes; apex geometry lost. Fix: inline both,
+sharing an apex pixel (like 父/木).
+
+## p2_radical_082_子 (zǐ) — FAIL
+横撇 primitive at scale + wan_gou primitive; the wan_gou hook came out
+detached. Fix: inline whole 弯钩 fresh with matched taper.
+
+## p2_radical_083_丬 (piece-left) — FAIL
+Short upper 撇/点 misplaced; primitive dian too heavy. Fix:
+`variant_dian` with w_tail ≈ 5 at compact position.
+
+## p2_radical_084_夊 (suī) — FAIL
+Same family as 夂; apex geometry lost.
+
+## p2_radical_085_贝 (bèi) — FAIL
+Box + two inner strokes; box aspect wrong (used kou at natural aspect
+but 贝 is taller than wide, like 日). Fix: inline as tall rectangle
+(reuse `ri.py` template), then add two inner strokes.
+
+## p2_radical_086_比 (bǐ) — FAIL
+Two 匕-like components; each 匕 needs specific 撇-into-shu junction that
+primitives can't express. Inline both compounds.
+
+## p2_radical_088_长 (zhǎng) — FAIL
+5-stroke complex radical with distinctive 竖提 + long swept 捺. Force-fit
+lost the long 捺 sweep. Fix: inline 捺 with `variant_na`, bow_perp≈+12.
+
+## p2_radical_089_车 (chē) — FAIL
+4-stroke cab shape; the small "cab" atop needs specific 撇折 that wasn't
+in bank. Inline the cab as one continuous polyline.
+
+## p2_radical_091_斗 (dǒu) — FAIL
+2 dots + 横 + 竖. Dots misaligned with each other. Fix: `variant_dian`
+for both with symmetric placement.
+
+## p2_radical_093_方 (fāng) — FAIL
+点 + 横 + 横折钩 + 撇. The 横折钩 corner was too sharp; 撇 slope wrong.
+Fix: inline 横折钩 with rounded corner + `variant_pie` for 撇.
+
+## p2_radical_094_风 (fēng) — FAIL
+Distinctive curved envelope (横折弯钩) + inner strokes. Envelope
+misshapen. Fix: inline envelope as one bezier polyline.
+
+## p2_radical_096_戈 (gē) — FAIL
+斜钩 dominant + 撇 + 点. 斜钩 lost its bow. Same as 弋.
+
+## p2_radical_097_户 (hù) — FAIL
+Similar to 尸 but with dian on top. Bank `shi_radical` template close.
+Fix: prepend a dian at correct position on 尸 layout.
+
+## p2_radical_098_火 (huǒ) — FAIL
+2 side dots + central 人-shape (pie + na). Pie/na apex-kiss failed
+same as 人/入 (which are in errata already). Fix: inline both with
+shared apex pixel — validated in `fu.py` (父) recipe.
+
+## p2_radical_099_旡 (jì_lack) — FAIL
+Compact 4-stroke; proportions wrong.
+
+## p2_radical_100_见 (jiàn) — FAIL
+Box top + two bottom-descender strokes. Box shu/heng_zhe proportions
+off, 撇 head not welded to box floor. Fix: inline the box (like ri.py
+but square), then hand-place the two descenders welding to bottom.
+
+## p2_radical_101_斤 (jīn) — FAIL
+撇 + 撇 + 横 + 竖. Two 撇s at different angles.
+
+## p2_radical_105_肀 (yù) — FAIL
+Similar to 手 with 横 + shu + shu_gou. Alignment wrong.
+
+## p2_radical_107_爿 (piece-full) — FAIL
+Mirror of 丬 but taller. Same signature failure.
+
+## p2_radical_108_片 (piàn) — FAIL
+Similar to 爿 with box on right. Compound challenging.
+
+## p2_radical_109_攴 (pū) — FAIL
+Compound; 又-like bottom + 卜-like top. Layout wrong.
+
+## p2_radical_110_攵 (variant of 攴) — FAIL
+Similar to 攴.
+
+## p2_radical_111_气 (qì) — FAIL
+横撇 + inner 乙-like sweep. Complex curl.
+
+## p2_radical_112_欠 (qiàn) — FAIL
+Similar to 火 but with 横钩 across top. Force-fit 横钩 too wide
+(primitive's x-span is fixed at 190px regardless of scale). Fix:
+inline 横钩 with configurable span.
+
+## p2_radical_113_犬 (quǎn) — FAIL
+Literally 大 + dian. Since 大 is in errata and 犬 fails too, both need
+the inline-crossing-X recipe (see fu.py 父 PASS as template).
+
+## p2_radical_115_氏 (shì) — FAIL
+4 inline strokes; 斜钩 arc wrong direction.
+
+## p2_radical_117_手 (shǒu) — FAIL
+Similar to 扌 (which is in bank) but with additional 撇 at top.
+扌 (shou_pang) works, but the added top 撇 changes proportions.
+Fix: start from shou_pang recipe, prepend a `variant_pie` at top.
+
+## p2_radical_118_殳 (shū) — FAIL
+Compound with 几-like top + 又-like bottom. Complex.
+
+## Retry priority for next scan (positions 150+)
+
+**Highest priority** (retrospective — new form_catalog/variant_helpers
+directly address the failure mode):
+- 犬 (113): use `fu.py` X-crossing template + dian
+- 火 (098): same as 犬
+- 手 (117): extend shou_pang with top pie
+
+**High priority** (prospective — prerequisites for common Phase-3):
+- 见 (100): needed for many 觉/规/视 compounds
+- 车 (089): common radical
+- 方 (093): common radical
+- 长 (088): common radical
+
+**Skip until further insight**: 幺 078, 弋 079, 旡 099, 攴 109,
+攵 110, 气 111, 殳 118, 长 088-if-inline-fails — these have no
+clear new lever.

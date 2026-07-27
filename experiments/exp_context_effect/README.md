@@ -1,11 +1,24 @@
 # Experiment: Context Effect on Agent Learning
 
-*Version: v7 — 2026-07-18. **Memory self-evolution unlocked at position
-150** for G2/G3/G4 after all-group score collapse in B2 (bootstrap→B1→B2
-trajectory of ~75% → ~63% → ~38%). Rationale in the v7 changelog. Prior
-v6 (2026-07-16) restarted Phase 2 from position 32 under a GT-supported
-protocol; that state is preserved. Location:
+*Version: v8 — 2026-07-25. **Format ceilings unlocked at position 350**
+after B6 exposed two structural failure modes: G3's callable-Python
+signatures were treated as a fixed 3-knob (`ox, oy, scale`) convention
+by evolved curators (format ceiling), and G4's evolved memory grew large
+enough that retry drawer subagents stalled inside the workflow attempt
+budget (capacity ceiling — 6/16 G4 retries in B6 never wrote a PNG).
+v8: banks reframed as reference-only, G3/G4 gain G2-style free-form
+`drawer_memory.md`, curators may prune, terminal freezes lifted. Prior
+v7 (2026-07-18) unlocked memory self-evolution at position 150; v6
+(2026-07-16) restarted Phase 2 from position 32 under GT-supported
+protocol. All prior state preserved via snapshots. Location:
 `experiments/exp_context_effect/`. Predecessor: `runs/run_6/`.*
+
+**Human interventions to memory structure are logged in
+[INTERVENTIONS.md](INTERVENTIONS.md).** From v8 forward, every human
+change that alters memory format, retrieval rules, or bank constraints
+is recorded there with rationale, expected impact, and boundary
+snapshot — so analysis can cleanly attribute what came from AI
+self-evolution vs. what came from human unlock.
 
 ## Central hypothesis
 
@@ -585,6 +598,62 @@ experiments/exp_context_effect/
     the normal 20-item scan cadence resumes with no special
     treatment. G1 not affected (no memory → no principles to refresh
     against).
+- v8 — 2026-07-25 — **Format ceilings unlocked at position 350** after
+  B6 exposed two distinct structural failure modes across the two
+  structured-memory groups. See [INTERVENTIONS.md](INTERVENTIONS.md)
+  §v8 for full rationale and expected-impact discussion.
+  - **G3 format ceiling** — after v7 self-evolution, G3's callable-
+    Python bank had accumulated ~150 primitives all following the
+    initial-example signature `def draw_<x>(t, ox=0, oy=0, scale=1.0)`.
+    Curators had added richer helpers (`variant_pie`, `kiss_apex`,
+    etc.), but drawers didn't reach for them — the `(ox, oy, scale)`
+    convention had ossified. When a stroke needed a different angle,
+    curvature, or taper (e.g. the 撇 in 人 vs 亻 vs 大), no primitive
+    could express the variant; drawers fell back to inlining, losing
+    the memory benefit. G3's B5 curator honestly named this as a
+    "structural ceiling of callable-Python format" and killed the
+    retry mechanism. Terminal freezes on 人/入/大 followed. **This
+    was an unintended ossification, not the format's real limit** —
+    signatures were always meant to be arbitrary.
+  - **G4 capacity ceiling** — G4's evolved memory (form_catalog ~600
+    lines, joint_atlas ~120 lines, principles_meta, chronic/, MMH
+    auto-injection, MANDATORY LOOKUP CHECKLIST + 140+ bank files +
+    ~1500-line errata) reached a size where retry drawer subagents
+    literally could not complete a turn: **6/16 G4 retries in B6
+    stalled on 6+ workflow attempts with no PNG written**. Not
+    because memory was wrong, but because navigating it exceeded the
+    drawer session budget. Main attempts (less to reconcile) still
+    completed 50/50.
+  - **The 刀→力 orientation observation** — a shared failure mode
+    the human noticed across all 4 groups but has *not* been named
+    to the curators. All groups repeatedly draw 刀 as 力 (same
+    strokes, wrong relative position) and similar sibling-position
+    confusions. Whether curators discover this failure mode on their
+    own becomes a direct test of AI self-diagnostic capability under
+    the v8 unlock.
+  - **v8 changes**:
+    - G3 and G4 rules: bank + principles are **reference only**.
+      Nothing strictly required. Drawer may adjust strokes freely.
+      Function signatures / anchor conventions are examples, not
+      cages.
+    - G3 and G4 gain a free-form `drawer_memory.md` — same file
+      shape as G2's. Structured bank remains as *additional*
+      reference on top of the free-form file. So the architecture
+      now is: G2 = free-form only; G3 = free-form + code bank;
+      G4 = free-form + grid bank. G3/G4 strictly dominate G2 in
+      access. If they don't lead, their extra structure is a
+      distraction.
+    - G4 curator explicitly permitted to prune uncited memory and
+      to promote retry_n≥2 fails to canonical primitives (like the
+      chronic-cluster escape hatch, extended).
+    - G3 terminal freezes (人/入/大) lifted for one more attempt
+      under the unlocked convention.
+  - **Snapshot 0350** = v8 boundary. Pre-v8 (positions 33-350) vs
+    post-v8 (351+) is the natural analysis split.
+  - **Deliberately NOT changed**: no shared-rules addition for
+    position/orientation checking. Human noticed 刀→力 problem but
+    chose not to hint the AI. Test remains: can AI curators
+    diagnose relative-position failures from vision alone.
 - v7 — 2026-07-18 — **Memory self-evolution unlocked at position 150**
   after B2 completion revealed an all-group score collapse (bootstrap
   → B1 → B2 trajectory: G1 83%→60%→38%, G2 83%→70%→40%, G3 78%→54%→34%,

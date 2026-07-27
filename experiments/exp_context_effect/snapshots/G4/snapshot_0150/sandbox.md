@@ -316,6 +316,114 @@ Two lessons for future 歹-family (残, 死, 列, 歼):
    move, but re-examine whether the intended shape is really a full 撇
    or a compound turn.
 
+## Batch B2 (positions 101-150) — G4 curator diagnosis
+
+**G4 batch score: 20/50 main PASSes (40%) + 2/9 retry PASSes (22%)** —
+collapse from B1's 70% / 67%. Cumulative through 150 items: G4 57%.
+
+### Root-cause meta-analysis of the 30 main FAILs
+
+Categorized by primary defect (some items exhibit two):
+
+1. **MMH-verbatim under-span (TR9 not applied)** — 10 items:
+   085_贝, 086_比, 088_长 (partial), 091_斗, 094_风, 099_旡, 100_见,
+   101_斤, 112_欠, 117_手.
+   These attempts trusted MMH stroke-median anchors literally. For
+   standalone radicals whose components appear in larger characters
+   in MMH, this compresses the shape to a corner. TR9 exists exactly
+   for this; the drawer didn't apply it. **Emergent rule already in
+   `principles_meta.md` TR9 — the failure mode is "drawer didn't
+   read the rule," not "rule missing."** After the memory split,
+   TR9 sits in a shorter TR list; drawers should hit it sooner.
+
+2. **Tilted "horizontal" or drifting "vertical" (TR8 rule 5/6)** — 4
+   items: 088_长 (partial), 096_戈, 107_爿, 117_手.
+   Same-row/same-column invariant violated → stroke renders as
+   diagonal. Rule already merged into TR8; drawers missed it.
+
+3. **Wrong stroke class or wrong compound decomposition** — 5 items:
+   088_长 (used curved zigzag for 竖提), 090_歹 (used straight pie
+   for 横撇), 107_爿 (used horizontal for descender), 115_氏 (MMH
+   direction wrong), 118_殳 (s1 down-right instead of down-left).
+   These are per-context stroke-form errors — the new
+   `form_catalog.md` is aimed here.
+
+4. **Component-placement error** — 8 items: 075_夕 (heng too long),
+   081_夂 (s2 head below s1), 082_子 (top curl too low), 092_厄
+   (inner 㔾 wrong cell), 093_方 (横折钩 compressed to right column),
+   097_户 (s2/s4 share head), 105_肀 (spine misaligned), 116_礻
+   (stem starts inside 横撇 area).
+   These are structural — the joint class is right but the WHOLE
+   composition is displaced. Recurring theme from B1 Pattern C.
+
+5. **Fragmentation (X-cross fails, apex not shared)** — 3 items:
+   098_火 (s3/s4 heads 70 px apart), 109_攴 (Λ not X), 111_气 (three
+   horizontals stack).
+   The lesson from bootstrap 犭 and B2 攴 is: X-crossings need a
+   SHARED PIXEL, not close anchors. `joint_atlas.md`'s "P — shared
+   pixel, not just close anchors" section is aimed here.
+
+### Root-cause meta-analysis of the 7 retry FAILs
+
+- **冂**: TR9 applied (good) but frame too tall + s1/s2 y misalignment.
+  This is progress — the retry got the SPAN right, just missed a
+  proportion detail.
+- **㔾**: s2 belly geometry wrong (J-shape).
+- **飞**: chained bezier top piece rises 115 px — reads as diagonal.
+  Should have been ONE inlined variable-width polyline per sandbox
+  Pattern E; drawer used two segments.
+- **弓, 己**: 3-tier separation missed on details — s1 drop went
+  down-left in 弓; s1/s3 heads overlap in 己.
+- **马**: top-box too small; S2 first leg slants.
+- **犭**: derived-anchor pattern applied CORRECTLY (P-cross works,
+  N-derive works) but belly direction wrong (hooks down-right when
+  it should mirror-of-犬 down-left). Progress on the geometric
+  mechanics, still a form/context error.
+
+### Curator vs drawer SELF_CHECK calibration on B2
+
+- **Drawer honestly flagged FAIL** (positive calibration cases):
+  084_夊, 090_歹, 109_攴 — all 3 correctly self-diagnosed.
+- **Drawer rubber-stamped PASS but human FAILed** (self-deception):
+  27 of the 30 main FAILs had drawer overall_pass=True. Rubber-
+  stamping remains rampant. TR11 (retired) tried to prevent this;
+  the retirement rationale is preserved in `principles_meta.md`.
+  The replacement discipline is honest submit-and-flag when a
+  defect is visible.
+
+### Self-evolution decision applied at position 150
+
+Split principle_bank into `principles_meta.md` (TR meta-rules),
+`joint_atlas.md` (P/T/N/S mechanics), and NEW `form_catalog.md`
+(stroke × context anchor patterns). Retired TR11. See
+`evolution.md` for the full rationale. The B2 collapse — 40% vs 70%
+— gave the concrete signal that the old 429-line principle_bank was
+crowding out actionable knowledge. Expected effect: drawers spend
+less context on meta and more on retrieving the specific
+"how does 撇 look when it's the left arm of 大" pattern from
+`form_catalog.md` before rendering.
+
+### Sandbox rules updates for B3 (positions 151+)
+
+1. **When your target is a MULTI-STROKE radical, consult
+   `form_catalog.md` FIRST** (before Success Bank INDEX). Find the
+   stroke class × context match. If it's not there, you may be the
+   first to draw this context — proceed carefully.
+2. **MMH-verbatim is a starting POINT, not a target.** Always ask:
+   "does this MMH anchor set produce a stroke that FILLS my role in
+   the composition?" If component (Phase 3), verbatim likely fine.
+   If standalone (Phase 2), likely under-spans. Apply TR9.
+3. **X-crossings**: EVERY 撇+捺 or 撇+撇 X requires a shared-pixel
+   apex, not just anchor proximity. Compute the intersection point;
+   share it explicitly.
+4. **Long compound strokes = ONE inlined variable-width polyline.**
+   飞's second retry FAILed by chaining two bezier segments. Applies
+   to 飞, 弓 outer, 马 spine, 廴, 辶.
+5. **Honest submit-and-flag beats rubber-stamp PASS.** Positive
+   calibration cases (夊, 歹, 攴 in B2 + 彐, 犭 in B1) all correctly
+   self-diagnosed — no penalty for honesty, and it makes curator
+   diagnosis faster.
+
 ## p2_radical_109_攴 (2026-07-18)
 
 Rendered 攴 as 卜 (shu + short heng tick) + 又 (pie + na). After one

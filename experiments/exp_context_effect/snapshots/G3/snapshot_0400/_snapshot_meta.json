@@ -1,0 +1,11 @@
+{
+  "position": 400,
+  "group": "G3",
+  "files": [
+    "success_bank",
+    "principle_bank.md",
+    "sandbox.md",
+    "errata.md",
+    "retry_log.jsonl"
+  ]
+}

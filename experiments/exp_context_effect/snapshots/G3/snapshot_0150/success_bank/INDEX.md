@@ -87,8 +87,26 @@ coord format.
 | 65 | 士 (shi_male) | shi_male.py | 3 (heng + shu + heng, upper heng wider) | p2_radical_067_士 (B1, pos 99) |
 | 66 | 扌 (shou_pang) | shou_pang.py | 3 (heng + shu_gou + ti) | p2_radical_068_扌 (B1, pos 100) |
 | 67 | 厂 (chang) | chang.py | 2 (heng + inlined nearly-vertical 丿) | p2_radical_014_厂 (B1 retry-1 graduation, pos 46) |
+| 68 | 氵 (san_dian_shui) | san_dian_shui.py | 3 (dian + dian + ti) | p2_radical_069_氵 (B2, pos 101) |
+| 69 | 纟 (si_zi_pang) | si_zi_pang.py | 3 (inlined 2× 撇折 hooks + long 提) | p2_radical_070_纟 (B2, pos 102) |
+| 70 | 巳 (si) | si.py | 3 (fully inlined 横折 + 横 + 竖弯钩, PIL px) | p2_radical_071_巳 (B2, pos 104) |
+| 71 | 土 (tu) | tu.py | 3 (heng + shu + heng, bottom heng wider) | p2_radical_072_土 (B2, pos 103) |
+| 72 | 囗 (wei_radical) | wei_radical.py | 3 (shu + heng_zhe + heng, enclosing scale) | p2_radical_073_囗 (B2, pos 105) |
+| 73 | 夕 (xi) | xi.py | 3 (inline 撇 + inline 横折撇 2-arc + dian) | p2_radical_075_夕 (B2, pos 107) |
+| 74 | 小 (xiao) | xiao.py | 3 (shu_gou + inline left pie + dian) | p2_radical_076_小 (B2, pos 108) |
+| 75 | 灬 (huo_bottom) | huo_bottom.py | 4 (4 inline dots, PIL px) | p2_radical_087_灬 (B2, pos 119) |
+| 76 | 歹 (dai) | dai.py | 4 (inline top-heng + short pie + 横撇 composite + dian) | p2_radical_090_歹 (B2, pos 122) |
+| 77 | 厄 (e) | e.py | 4 (chang envelope + inline 横折 + inline 竖弯钩) | p2_radical_092_厄 (B2, pos 124) |
+| 78 | 父 (fu) | fu.py | 4 (inline short 撇 + short 点 + big 撇 + big 捺 crossing) | p2_radical_095_父 (B2, pos 127) |
+| 79 | 耂 (lao_radical) | lao_radical.py | 4 (inline 2 hengs + short shu + long sweeping pie) | p2_radical_102_耂 (B2, pos 134) |
+| 80 | 毛 (mao) | mao.py | 4 (inline 撇 + 2 hengs + shu_wan_gou) | p2_radical_103_毛 (B2, pos 135) |
+| 81 | 木 (mu) | mu.py | 4 (inline heng + shu + pie + na crossing) | p2_radical_104_木 (B2, pos 136) |
+| 82 | 牛 (niu) | niu.py | 4 (pie + 2 hengs + shu, all bank) | p2_radical_106_牛 (B2, pos 138) |
+| 83 | 日 (ri) | ri.py | 4 (fully inline tall rectangle — kou doesn't fit aspect) | p2_radical_114_日 (B2, pos 146) |
+| 84 | 礻 (shi_ceremony_pang) | shi_ceremony_pang.py | 4 (inline dian + 横撇 + shu + right dian) | p2_radical_116_礻 (B2, pos 148) |
 
-**Total: 67 primitives.**
+**Total: 84 primitives** (v7 curator note: `_shared_helpers.py` also
+lives in `code/` but is a helper module, not a mastered item).
 
 ## Batch B1 (2026-07-18, positions 51–100 judged + 2 retries)
 
@@ -145,3 +163,21 @@ Notes:
   not 米字格 anchors.
 - Phase-2 radicals have been removed pending re-derivation in the
   Phase-2 restart.
+
+## Batch B2 (2026-07-18, positions 101–150 judged + 8 retries)
+
+17 main-curriculum PASSes recorded above (bank entries 68–84). No
+retry graduations — all 8 retries FAILed. 33 main-curriculum FAILs
+added to errata.md. Overall pass rate 17/50 = **34%**, worst yet
+(bootstrap 78%, B1 54%, B2 34%) and worse than G1 no-memory (38%).
+See `sandbox.md` "Batch B2 diagnostic" and `evolution.md` for the
+v7 memory self-evolution taken in response.
+
+**v7 addition**: `_shared_helpers.py` module in `code/` provides
+common `tapered_bezier` / `tapered_line` helpers and NEW adaptive
+primitives `variant_pie`, `variant_na`, `variant_dian` — these expose
+angle / taper / width knobs that the frozen `(ox, oy, scale)`
+signature cannot vary. Future B3+ bank entries should prefer these
+adaptive helpers when a stroke's form differs from the standalone
+primitive by more than uniform scaling. See `principles_stroke_family.md`
+P11 and `form_catalog.md`.

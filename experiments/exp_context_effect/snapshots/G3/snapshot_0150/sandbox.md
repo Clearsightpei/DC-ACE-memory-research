@@ -315,3 +315,129 @@ cross-junctions (刀's crossed pie) the drawer must inline. When the
 target's silhouette contains a smooth curve that a straight-line
 `heng` + right-angle `heng_zhe_gou` combination cannot approximate,
 INLINE a bezier — do not force the composition.
+
+## Batch B2 diagnostic — signature restriction hypothesis (2026-07-18)
+
+**G3 collapsed to 34% in B2 (17/50). Bootstrap → B1 → B2: 78% → 54%
+→ 34%. Cumulative 49% through 118 items — WORST of the four groups.
+All 8 retries failed (retry_1s for 人, 入, 大, 女, 犭, 己, 㔾, 丷).**
+
+### Diagnosis (root cause, not the symptom)
+
+TR8 INLINE-FRESH TEST was added at end of B1 to force drawers away
+from primitive-reflex. Drawers largely complied in B2 (most B2
+attempts contain "inline-fresh" comments and reason explicitly about
+whether primitives fit). Yet the pass rate DROPPED further.
+
+The failure is no longer "drawer force-fit a bad primitive". The
+failure is that even when the drawer inlines fresh:
+
+1. Each inlined stroke is a one-off hand-tuned bezier the drawer
+   invented from scratch — no bank memory helps.
+2. When a bank primitive IS a shape match (e.g. `dian` for 忄's left
+   dot), it can't produce the mirrored right dot because the signature
+   `(ox, oy, scale)` supports only uniform rescaling — not angle
+   reflection, taper variation, or curvature bow.
+3. The `principle_bank.md` TR1-TR9 rules are all META ("call
+   primitives deliberately") — they tell the drawer *when* to reach
+   for the bank but not *what stroke form fits where*.
+4. Success Bank entries are frozen concrete instances (e.g. `kou.py`
+   only draws 口 at one exact aspect ratio). When 日 needs a tall
+   version, the drawer has no way to derive it from the frozen
+   instance — it has to inline from scratch.
+
+**User diagnosis** (verbatim from Curator brief): "The problem isn't
+they don't know the strokes, but rather how to change them into the
+proper form or put them into the correct position. There are many
+types of 点, 撇, they all look different and have different angles.
+Memory is restricting them too much."
+
+This confirms the signature-restriction hypothesis. The right response
+is not another meta-cognitive rule (TR10 would just add noise). It is
+to add EXPRESSIVE POWER to the memory format itself, within G3's
+callable-Python constraint.
+
+### v7 memory restructuring (see evolution.md 2026-07-18 @ position 150)
+
+Curator response for B2 → B3 transition:
+
+1. **Split `principle_bank.md`** by knowledge type:
+   - `principles_meta.md` — TR1-TR7 (retire TR8-TR9, which fired but
+     didn't help)
+   - `principles_stroke_family.md` — P1-P11 (P11 new: adaptive-signature
+     rationale)
+   - `form_catalog.md` — NEW: stroke × context lookup (e.g.
+     "撇 in left-radical position: length 60-90px, angle 70-85° from
+     horizontal, w_head 8, w_tail 1, bow_perp -4 to -8")
+2. **Add adaptive helpers** in `success_bank/code/_shared_helpers.py`:
+   `variant_pie(t, head, tail, bow_perp, w_head, w_tail)`,
+   `variant_na(...)`, `variant_dian(...)`. These expose the knobs the
+   `(ox, oy, scale)` signature hides. Callable Python — G3 core
+   constraint preserved.
+3. **Retire TR8 / TR9** — TR8 was added at end of B1 to save the
+   primitive-reflex fails. In B2 drawers complied but the fails
+   continued (root cause was deeper: signature restriction). TR9
+   "budget your reach" never fired usefully. Both removed with a
+   documented rationale in `evolution.md` so we can compare B3 with
+   and without.
+4. **Reshape `memory_index.md`** to point drawers at
+   `form_catalog.md` FIRST for stroke-in-context lookup, then the
+   variant helpers, then the frozen bank entries, then the meta rules
+   last. Reverses the previous read order (which put meta first).
+
+### Watch for B3 (positions 151–200)
+
+- Fail count: does splitting principle_bank + adaptive helpers reduce
+  fails from 33/50 to <20/50?
+- Look at whether drawers actually invoke `variant_pie` /
+  `variant_dian` (grep new B3 attempts for import lines).
+- If B3 still 30%+ fail: the constraint may be even deeper — perhaps
+  bank entries should be parameterised by context tags (top / bottom /
+  left / right / enclosing) at storage time, not just at call time.
+
+### Signature-restriction fails in B2 (specifically primitives-with-
+### uniform-rescale-only)
+
+- 077_忄: mirrored dot needed reflection, not scale.
+- 083_丬: dian at compact position too heavy (default weight profile).
+- 100_见: box needed non-uniform aspect (tall).
+- 112_欠: 横钩 primitive's x-span fixed at 190px regardless of scale.
+- 098_火: pie/na apex-kiss needs shared apex pixel (primitive can't).
+- 113_犬: same as 火 (犬 = 大 + dian).
+- 117_手: extension of 扌 needs an added top 撇 that shou_pang can't
+  express.
+- 088_长: 捺 sweep needs bow_perp that primitive can't vary.
+
+These 8 fails are ALL signature-restriction, not knowledge gaps.
+Fixing the signature (adaptive helpers) directly addresses them.
+
+### B2 fails where problem is DEEPER than signature (composition
+### structure lost)
+
+- 094_风: envelope curvature must be one continuous bezier — no
+  helper alone fixes; need a composed helper (`variant_envelope`
+  possibly, future work).
+- 091_斗: two dots' relative placement is an alignment problem,
+  not a per-dot form problem — needs composition memory (also future).
+
+## Meta note (v7 memory evolution first use)
+
+This is the first time G3's curator has used the v7 self-evolution
+unlock. Chose to split principle_bank + add adaptive helpers rather
+than radically restructure (e.g. converting Success Bank to markdown)
+because:
+- The callable-Python constraint is the point of G3 as a group.
+- Adaptive helpers work WITHIN the callable-Python constraint — they
+  add expressive knobs without changing the storage unit.
+- Splitting principle_bank is a low-risk cleanup that reduces
+  retrieval noise (287-line wall of meta-rules → 3 focused files).
+- form_catalog.md is a NEW file type — its usefulness will be
+  measurable at B3 judgment (do drawers cite it? does citing it
+  correlate with PASS?).
+
+If B3 still underperforms G1, the next lever will be more radical:
+either (a) auto-generate form_catalog entries from every PASS as a
+context-tagged parameterised recipe, or (b) reorganise bank
+subdirectories by position role (`code/left_position/`,
+`code/top_position/`, etc.) so drawers can find "the 撇 that fits
+here" by directory walk rather than name guess.

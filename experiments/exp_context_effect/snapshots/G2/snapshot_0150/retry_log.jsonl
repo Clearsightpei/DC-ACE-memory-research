@@ -26,3 +26,13 @@
 {"item_id":"p2_radical_053_己","batch":"B2","scan_position":100,"retry_n":1,"action":"pending","reason":"(a) STRONG: pos 071 巳 direct sibling of 己 (己/已/巳 differ only by 横-attachment); 099 旡 echoes shape. (b) principle 5 draw-the-flick fixes 竖弯钩 tail."}
 {"item_id":"p2_radical_058_马","batch":"B2","scan_position":100,"retry_n":1,"action":"pending","reason":"(b) STRONG: new principle 8 (bottom stroke runs THROUGH) was added specifically for 马's failure mode. (a) 100 见 has similar pattern."}
 {"item_id":"p2_radical_067_士","batch":"B2","scan_position":100,"retry_n":1,"action":"pending","reason":"(a) STRONG: pos 072 土 is length-ratio mirror of 士. (b) principle 6 length-ratio table in memory."}
+{"item_id":"p2_radical_025_力","batch":"B2","scan_position":150,"retry_n":1,"action":"PASS","reason":"Curator verdict: retry PASS. Fix: 撇 as full body-crossing diagonal with visible top above 横折钩. Graduated from errata."}
+{"item_id":"p2_radical_028_人","batch":"B2","scan_position":150,"retry_n":1,"action":"PASS","reason":"Curator verdict: retry PASS. Fix: proper 捺 with broad terminal foot. Graduated from errata."}
+{"item_id":"p2_radical_011_匕","batch":"B2","scan_position":150,"retry_n":3,"action":"FAIL","reason":"撇 tip doesn't cross through 竖 body — lands to left without crossing signature."}
+{"item_id":"p2_radical_015_刀","batch":"B2","scan_position":150,"retry_n":3,"action":"FAIL","reason":"撇 starts inside 横折钩, doesn't poke above 横 line."}
+{"item_id":"p2_radical_030_入","batch":"B2","scan_position":150,"retry_n":1,"action":"FAIL","reason":"Overhang present but too subtle (~10 px); need 30+ px vertical offset."}
+{"item_id":"p2_radical_047_飞","batch":"B2","scan_position":150,"retry_n":1,"action":"FAIL","reason":"Primary compound cleaner but inside 点 missing and terminal hook indecisive."}
+{"item_id":"p2_radical_048_干","batch":"B2","scan_position":150,"retry_n":2,"action":"FAIL","reason":"Ratio correct but top 横 too high; 竖 doesn't extend below bottom 横."}
+{"item_id":"p2_radical_053_己","batch":"B2","scan_position":150,"retry_n":1,"action":"FAIL","reason":"Middle 横 touches left wall — glyph now reads as 已."}
+{"item_id":"p2_radical_058_马","batch":"B2","scan_position":150,"retry_n":1,"action":"FAIL","reason":"Bottom 横 connected but zig-zag body cramped (~80 px)."}
+{"item_id":"p2_radical_067_士","batch":"B2","scan_position":150,"retry_n":1,"action":"FAIL","reason":"Ratio swapped but too subtle (140/120); needs stronger contrast."}

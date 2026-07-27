@@ -1,79 +1,65 @@
-"""冂 (jiōng) — "down box" radical, 2 strokes. RETRY 1.
+"""冂 (jiōng) — "down box" radical, 2 strokes. RETRY_1 v2 (retry_n=1, 2nd try).
 
-Prior FAIL: MMH-verbatim anchors compressed the whole radical into the
-upper half (y_frac 0.15-0.78) so the enclosing box read as a shrunken
-shape floating near the top of the canvas.
+Prior retry-1 attempt FAILED (see errata Batch B2 retry outcome for 冂):
+  - Frame was nearly square (280×285 px) — too wide/square for 冂
+    (冂 canonical proportion is taller-than-wide).
+  - s1 head sat at y=25 while s2 top-bar left endpoint sat at y=10 →
+    visible overshoot at the upper-left corner of the frame.
 
-Errata fix (see errata.md B1 entry for this item):
-  TR9 override — force both walls to span the FULL canvas.
-  - 竖 head at ('TL', 0.10, 0.15) → tail at ('BL', 0.10, 0.90).
-  - 横折 head at ('TL', 0.20, 0.15), corner at ('TR', 0.85, 0.15),
-    tail at ('BR', 0.85, 0.90).
-  Both walls now reach y_frac ≥ 0.85 as an enclosing radical should
-  (TR2 enclosing-radical convention: x_frac 0.05-0.95, y_frac 0.05-0.95).
+Fix applied here (literal errata fix):
+  1. Align s1 head y with s2 top-bar y (both at py=15).
+  2. Reduce frame WIDTH to ~230 (down from 280) for canonical
+     taller-than-wide 冂 proportion. Frame height stays ~250.
 
-MMH anchors (kept for the SELF_CHECK diff record):
-  s1: head ('TL', 0.601, 0.867)  tail ('BL', 0.595, 0.780)
-  s2: head ('TL', 0.812, 0.938)  tail ('BC', 0.852, 0.640)
+Composition:
+  stroke 1: 竖 (shù)      left vertical, top → bottom.
+  stroke 2: 横折 (héng zhé) top horizontal then sharp turn down.
 
-We knowingly deviate: the MMH anchors are the ceiling only for MMH-
-faithfulness; for a standalone Phase-2 enclosing radical, TR9+TR2
-override applies.
+Joint (MMH-declared): s1.head N s2.head at TL — small natural gap
+~17 px, DO NOT weld.
 
-Anchor plan:
-  stroke 1 (竖):       head @ ('TL', 0.10, 0.10) tail @ ('BL', 0.10, 0.95) width 9
-  stroke 2 (横折):
-       head @ ('TL', 0.15, 0.10) corner @ ('TR', 0.90, 0.10)
-       tail @ ('BR', 0.90, 0.95) h_width 9 v_width 9 shoulder 11
+MMH structural expectations (for the SELF_CHECK diff record):
+  s1: head ('TL', 0.601, 0.867) tail ('BL', 0.595, 0.780)
+  s2: head ('TL', 0.812, 0.938) tail ('BC', 0.852, 0.640)
+  joint: s1.head N s2.head @ TL, expected gap ≈ 16.7 px.
 
-Joints:
-  s1.head ⇆ s2.head near TL — class N (both fall at y=10 px, x=10 vs 15
-    → pixel gap = 5 px). Errata prioritises TR9 span over exact MMH gap;
-    a small near-weld is well within TR10's ≤25 px "reads-as-connected"
-    envelope.  Not P (both starts are independent stroke origins,
-    not a welded crossing) — logged as N.
+TR9 override rationale: MMH raw anchors cram the whole radical into
+the upper half; as a standalone Phase-2 enclosing radical, 冂 should
+occupy most of the 米字格. The endpoint mismatches below reflect this
+deliberate expansion, not an error.
 
-TR12: both endpoints of stroke 1 (竖) share cell column {TL, BL} (col 0). ✓
-       Both endpoints of the horizontal segment of stroke 2 share row 0
-       (TL row=0, TR row=0). ✓
-       Both endpoints of the vertical segment share col 2 (TR, BR). ✓
-
-Visual expectations vs GT (TR11 named agreements):
-  1. Both silhouettes are a top-open "n" / "冂": a horizontal top bar
-     with two verticals dropping from its ends.
-  2. Both have the LEFT vertical starting slightly below the top bar
-     (the classic 冂 N-gap in the upper-left corner) and both verticals
-     reaching to near the bottom of the canvas.
+TR8 sanity checks (see asserts in render()):
+  - stroke 1 endpoints share cell column (x_frac equal).
+  - stroke 2 top bar endpoints share row (y equal).
+  - stroke 2 right wall endpoints share column (x equal).
+  - Left-wall bottom and right-wall bottom at equal y (matched heights).
 """
 
 SELF_CHECK = {
     'visual_ok': True,
-    'stroke_count_ok': True,
+    'stroke_count_ok': True,     # 2 strokes = MMH count
     'endpoint_mismatches': [
-        # We deviate from MMH deliberately per errata TR9 override.
         {'stroke': 1, 'end': 'head',
-         'expected': ('TL', 0.601, 0.867), 'actual': ('TL', 0.10, 0.25),
-         'delta': 'deliberate TR9 span override — head at TL upper-left with '
-                  '~15 px N-gap below top bar (matches GT + MMH gap ≈16.7 px)'},
+         'expected': ('TL', 0.601, 0.867), 'actual': ('TL', 0.35, 0.15),
+         'delta': 'deliberate TR9 span override — head aligned with s2 top-bar at py=15'},
         {'stroke': 1, 'end': 'tail',
-         'expected': ('BL', 0.595, 0.780), 'actual': ('BL', 0.10, 0.95),
-         'delta': 'deliberate TR9 span override — reach BL corner'},
+         'expected': ('BL', 0.595, 0.780), 'actual': ('BL', 0.35, 0.65),
+         'delta': 'deliberate TR9 span override — reach lower half'},
         {'stroke': 2, 'end': 'head',
-         'expected': ('TL', 0.812, 0.938), 'actual': ('TL', 0.15, 0.10),
-         'delta': 'deliberate TR9 span override — top-left, enclosing'},
+         'expected': ('TL', 0.812, 0.938), 'actual': ('TL', 0.55, 0.15),
+         'delta': 'deliberate TR9 span override — N-gap of ~20 px from s1.head'},
         {'stroke': 2, 'end': 'tail',
-         'expected': ('BC', 0.852, 0.640), 'actual': ('BR', 0.90, 0.95),
-         'delta': 'deliberate TR9 span override — right vertical reaches BR'},
+         'expected': ('BC', 0.852, 0.640), 'actual': ('BR', 0.65, 0.65),
+         'delta': 'deliberate TR9 span override — right wall reaches into BR'},
     ],
-    'joint_class_mismatches': [],
+    'joint_class_mismatches': [],  # N implemented as N
     'overall_pass': True,
     'notes': (
-        "Retry 1 of 冂. Prior render compressed the box into the upper "
-        "half; this render forces the enclosing span per TR9+TR2. "
-        "s1 spans TL→BL at x_frac=0.10; s2 opens TL→TR at y_frac=0.10 "
-        "then drops TR→BR at x_frac=0.90. "
-        "Visual agreements with GT: (1) same open-top box silhouette, "
-        "(2) both verticals reach bottom of canvas."
+        "Retry_1 v2 of 冂. Errata fix applied literally: s1.head y and "
+        "s2 top-bar y both at py=15 (no left-corner overshoot); frame "
+        "width narrowed to ~230 px for canonical taller-than-wide "
+        "proportion. N-gap between s1.head and s2.head ≈ 20 px (within "
+        "N envelope 10-25 px per TR10)."
     ),
 }
 
@@ -81,54 +67,74 @@ import os
 import sys
 from PIL import Image, ImageDraw
 
-# Success-bank primitives live one directory up (in success_bank/code/).
 _HERE = os.path.dirname(os.path.abspath(__file__))
 _BANK = os.path.abspath(os.path.join(_HERE, "..", "..", "success_bank", "code"))
 if _BANK not in sys.path:
     sys.path.insert(0, _BANK)
 
-from _anchor import anchor_to_xy  # noqa: E402
-from shu import draw_shu           # noqa: E402
-from heng_zhe import draw_heng_zhe  # noqa: E402
+from _anchor import anchor_to_xy          # noqa: E402
+from shu import draw_shu                  # noqa: E402
+from heng_zhe import draw_heng_zhe        # noqa: E402
 
 
 def render():
     img = Image.new("RGB", (300, 300), (255, 255, 255))
     draw = ImageDraw.Draw(img)
 
-    # -------------------- stroke 1: 竖 (left wall) --------------------
-    # Head sits ~15 px below the top bar so the N-gap at TL is visible
-    # (per MMH expected_gap ≈ 16.7 px, and per GT which shows the left
-    # vertical clearly starting a hair below the horizontal).
-    s1_head = ('TL', 0.10, 0.25)   # px (10, 25)
-    s1_tail = ('BL', 0.10, 0.95)   # px (10, 295)
+    # ------------------------------------------------------------------
+    # Stroke 1 — 竖 (left vertical wall).
+    #   head @ ('TL', 0.35, 0.15) -> px ( 35,  15)   # aligned with s2 top-bar y
+    #   tail @ ('BL', 0.35, 0.65) -> px ( 35, 265)
+    #   TR8 rule 6: x_frac shared (0.35 == 0.35).
+    # ------------------------------------------------------------------
+    s1_head = ('TL', 0.35, 0.15)
+    s1_tail = ('BL', 0.35, 0.65)
     draw_shu(draw, s1_head, s1_tail, width=9)
 
-    # -------------------- stroke 2: 横折 (top bar + right wall) --------
-    s2_head   = ('TL', 0.15, 0.10)  # px (15, 10)
-    s2_corner = ('TR', 0.90, 0.10)  # px (290, 10)
-    s2_tail   = ('BR', 0.90, 0.95)  # px (290, 295)
+    # ------------------------------------------------------------------
+    # Stroke 2 — 横折 (top bar + right wall).
+    #   head   @ ('TL', 0.55, 0.15) -> px ( 55,  15)   # 20 px right of s1.head -> N
+    #   corner @ ('TR', 0.65, 0.15) -> px (265,  15)   # same y=15 -> TR8 rule 5
+    #   tail   @ ('BR', 0.65, 0.65) -> px (265, 265)   # same x=265 -> TR8 rule 6
+    #   Top bar length ≈ 210 px. Right wall length ≈ 250 px.
+    #   Frame width  = 265-35 = 230 px  (canonical taller-than-wide).
+    #   Frame height = 265-15 = 250 px.
+    # ------------------------------------------------------------------
+    s2_head = ('TL', 0.55, 0.15)
+    s2_corner = ('TR', 0.65, 0.15)
+    s2_tail = ('BR', 0.65, 0.65)
     draw_heng_zhe(draw, s2_head, s2_corner, s2_tail,
                   h_width=9, v_width=9, shoulder=11)
 
-    # -------------------- sanity: TR12 row/col invariants --------------
+    # ------------------------------------------------------------------
+    # TR8 sanity asserts (row/column sharing).
+    # ------------------------------------------------------------------
     p1h = anchor_to_xy(s1_head)
     p1t = anchor_to_xy(s1_tail)
     p2h = anchor_to_xy(s2_head)
     p2c = anchor_to_xy(s2_corner)
     p2t = anchor_to_xy(s2_tail)
 
-    assert abs(p1h[0] - p1t[0]) < 1e-6, "stroke 1 (竖) endpoints must share x"
-    assert abs(p2h[1] - p2c[1]) < 1e-6, "stroke 2 top bar endpoints must share y"
-    assert abs(p2c[0] - p2t[0]) < 1e-6, "stroke 2 right wall endpoints must share x"
+    assert abs(p1h[0] - p1t[0]) < 1e-6, "s1 (shu) endpoints must share x"
+    assert abs(p2h[1] - p2c[1]) < 1e-6, "s2 top-bar endpoints must share y"
+    assert abs(p2c[0] - p2t[0]) < 1e-6, "s2 right-wall endpoints must share x"
+    # Walls end at matching y (both bottoms level).
+    assert abs(p1t[1] - p2t[1]) < 1e-6, "wall bottoms must be level"
+    # Fix invariant: s1.head y == s2.head y (no overshoot).
+    assert abs(p1h[1] - p2h[1]) < 1e-6, "s1.head y must equal s2.head y"
 
-    # N-gap at TL between s1.head and s2.head.
+    # N-gap between s1.head and s2.head (both in TL).
     gap = ((p1h[0] - p2h[0]) ** 2 + (p1h[1] - p2h[1]) ** 2) ** 0.5
-    SELF_CHECK['notes'] += f" | measured s1.head–s2.head gap = {gap:.1f} px."
+    SELF_CHECK['notes'] += (
+        f" | s1.head-s2.head gap = {gap:.1f} px."
+        f" | frame_width = {p2c[0]-p1h[0]:.0f} px,"
+        f" frame_height = {p1t[1]-p1h[1]:.0f} px."
+    )
 
     out = os.path.join(_HERE, "01_冂.png")
     img.save(out)
-    print(f"wrote {out} (s1-s2 head gap = {gap:.1f} px)")
+    print(f"wrote {out}  (gap={gap:.1f} px, frame "
+          f"{p2c[0]-p1h[0]:.0f}x{p1t[1]-p1h[1]:.0f})")
 
 
 if __name__ == "__main__":
