@@ -1,0 +1,1542 @@
+{
+  "batch_id": 12,
+  "shuffle_seed": 61,
+  "items": [
+    {
+      "id": "p3_char_0384_疡",
+      "phase": "character",
+      "target_label": "疡",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/疡.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0384_疡/01_疡.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0384_疡/01_疡.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0384_疡/01_疡.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0384_疡/01_疡.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0385_物",
+      "phase": "character",
+      "target_label": "物",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/物.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0385_物/01_物.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0385_物/01_物.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0385_物/01_物.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0385_物/01_物.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0386_亞",
+      "phase": "character",
+      "target_label": "亞",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/亞.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0386_亞/01_亞.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0386_亞/01_亞.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0386_亞/01_亞.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0386_亞/01_亞.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0387_果",
+      "phase": "character",
+      "target_label": "果",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/果.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0387_果/01_果.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0387_果/01_果.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0387_果/01_果.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0387_果/01_果.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0388_亟",
+      "phase": "character",
+      "target_label": "亟",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/亟.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0388_亟/01_亟.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0388_亟/01_亟.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0388_亟/01_亟.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0388_亟/01_亟.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0389_话",
+      "phase": "character",
+      "target_label": "话",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/话.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0389_话/01_话.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0389_话/01_话.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0389_话/01_话.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0389_话/01_话.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0390_佬",
+      "phase": "character",
+      "target_label": "佬",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/佬.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0390_佬/01_佬.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0390_佬/01_佬.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0390_佬/01_佬.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0390_佬/01_佬.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0391_表",
+      "phase": "character",
+      "target_label": "表",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/表.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0391_表/01_表.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0391_表/01_表.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0391_表/01_表.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0391_表/01_表.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0392_佯",
+      "phase": "character",
+      "target_label": "佯",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/佯.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0392_佯/01_佯.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0392_佯/01_佯.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0392_佯/01_佯.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0392_佯/01_佯.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0393_实",
+      "phase": "character",
+      "target_label": "实",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/实.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0393_实/01_实.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0393_实/01_实.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0393_实/01_实.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0393_实/01_实.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0394_佰",
+      "phase": "character",
+      "target_label": "佰",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/佰.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0394_佰/01_佰.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0394_佰/01_佰.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0394_佰/01_佰.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0394_佰/01_佰.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0395_金",
+      "phase": "character",
+      "target_label": "金",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/金.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0395_金/01_金.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0395_金/01_金.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0395_金/01_金.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0395_金/01_金.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0396_佴",
+      "phase": "character",
+      "target_label": "佴",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/佴.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0396_佴/01_佴.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0396_佴/01_佴.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0396_佴/01_佴.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0396_佴/01_佴.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0397_空",
+      "phase": "character",
+      "target_label": "空",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/空.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0397_空/01_空.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0397_空/01_空.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0397_空/01_空.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0397_空/01_空.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0398_併",
+      "phase": "character",
+      "target_label": "併",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/併.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0398_併/01_併.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0398_併/01_併.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0398_併/01_併.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0398_併/01_併.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0399_往",
+      "phase": "character",
+      "target_label": "往",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/往.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0399_往/01_往.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0399_往/01_往.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0399_往/01_往.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0399_往/01_往.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0400_佶",
+      "phase": "character",
+      "target_label": "佶",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/佶.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0400_佶/01_佶.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0400_佶/01_佶.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0400_佶/01_佶.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0400_佶/01_佶.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0401_取",
+      "phase": "character",
+      "target_label": "取",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/取.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0401_取/01_取.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0401_取/01_取.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0401_取/01_取.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0401_取/01_取.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0402_佻",
+      "phase": "character",
+      "target_label": "佻",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/佻.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0402_佻/01_佻.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0402_佻/01_佻.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0402_佻/01_佻.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0402_佻/01_佻.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0403_放",
+      "phase": "character",
+      "target_label": "放",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/放.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0403_放/01_放.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0403_放/01_放.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0403_放/01_放.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0403_放/01_放.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0404_佼",
+      "phase": "character",
+      "target_label": "佼",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/佼.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0404_佼/01_佼.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0404_佼/01_佼.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0404_佼/01_佼.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0404_佼/01_佼.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0405_治",
+      "phase": "character",
+      "target_label": "治",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/治.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0405_治/01_治.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0405_治/01_治.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0405_治/01_治.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0405_治/01_治.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0406_佽",
+      "phase": "character",
+      "target_label": "佽",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/佽.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0406_佽/01_佽.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0406_佽/01_佽.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0406_佽/01_佽.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0406_佽/01_佽.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0407_规",
+      "phase": "character",
+      "target_label": "规",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/规.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0407_规/01_规.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0407_规/01_规.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0407_规/01_规.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0407_规/01_规.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0408_佾",
+      "phase": "character",
+      "target_label": "佾",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/佾.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0408_佾/01_佾.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0408_佾/01_佾.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0408_佾/01_佾.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0408_佾/01_佾.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0409_油",
+      "phase": "character",
+      "target_label": "油",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/油.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0409_油/01_油.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0409_油/01_油.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0409_油/01_油.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0409_油/01_油.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0410_侃",
+      "phase": "character",
+      "target_label": "侃",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/侃.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0410_侃/01_侃.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0410_侃/01_侃.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0410_侃/01_侃.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0410_侃/01_侃.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0411_受",
+      "phase": "character",
+      "target_label": "受",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/受.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0411_受/01_受.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0411_受/01_受.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0411_受/01_受.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0411_受/01_受.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0412_來",
+      "phase": "character",
+      "target_label": "來",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/來.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0412_來/01_來.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0412_來/01_來.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0412_來/01_來.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0412_來/01_來.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0413_采",
+      "phase": "character",
+      "target_label": "采",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/采.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0413_采/01_采.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0413_采/01_采.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0413_采/01_采.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0413_采/01_采.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0414_侈",
+      "phase": "character",
+      "target_label": "侈",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/侈.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0414_侈/01_侈.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0414_侈/01_侈.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0414_侈/01_侈.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0414_侈/01_侈.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0415_转",
+      "phase": "character",
+      "target_label": "转",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/转.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0415_转/01_转.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0415_转/01_转.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0415_转/01_转.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0415_转/01_转.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0416_侉",
+      "phase": "character",
+      "target_label": "侉",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/侉.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0416_侉/01_侉.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0416_侉/01_侉.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0416_侉/01_侉.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0416_侉/01_侉.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0417_单",
+      "phase": "character",
+      "target_label": "单",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/单.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0417_单/01_单.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0417_单/01_单.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0417_单/01_单.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0417_单/01_单.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0418_例",
+      "phase": "character",
+      "target_label": "例",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/例.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0418_例/01_例.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0418_例/01_例.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0418_例/01_例.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0418_例/01_例.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0419_知",
+      "phase": "character",
+      "target_label": "知",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/知.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0419_知/01_知.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0419_知/01_知.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0419_知/01_知.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0419_知/01_知.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0420_侌",
+      "phase": "character",
+      "target_label": "侌",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/侌.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0420_侌/01_侌.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0420_侌/01_侌.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0420_侌/01_侌.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0420_侌/01_侌.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0421_或",
+      "phase": "character",
+      "target_label": "或",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/或.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0421_或/01_或.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0421_或/01_或.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0421_或/01_或.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0421_或/01_或.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0422_侍",
+      "phase": "character",
+      "target_label": "侍",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/侍.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0422_侍/01_侍.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0422_侍/01_侍.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0422_侍/01_侍.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0422_侍/01_侍.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0423_苦",
+      "phase": "character",
+      "target_label": "苦",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/苦.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0423_苦/01_苦.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0423_苦/01_苦.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0423_苦/01_苦.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0423_苦/01_苦.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0424_侑",
+      "phase": "character",
+      "target_label": "侑",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/侑.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0424_侑/01_侑.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0424_侑/01_侑.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0424_侑/01_侑.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0424_侑/01_侑.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0425_具",
+      "phase": "character",
+      "target_label": "具",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/具.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0425_具/01_具.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0425_具/01_具.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0425_具/01_具.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0425_具/01_具.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0426_侔",
+      "phase": "character",
+      "target_label": "侔",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/侔.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0426_侔/01_侔.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0426_侔/01_侔.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0426_侔/01_侔.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0426_侔/01_侔.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0427_线",
+      "phase": "character",
+      "target_label": "线",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/线.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0427_线/01_线.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0427_线/01_线.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0427_线/01_线.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0427_线/01_线.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0428_侖",
+      "phase": "character",
+      "target_label": "侖",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/侖.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0428_侖/01_侖.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0428_侖/01_侖.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0428_侖/01_侖.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0428_侖/01_侖.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0429_是",
+      "phase": "character",
+      "target_label": "是",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/是.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0429_是/01_是.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0429_是/01_是.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0429_是/01_是.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0429_是/01_是.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0430_畈",
+      "phase": "character",
+      "target_label": "畈",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/畈.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0430_畈/01_畈.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0430_畈/01_畈.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0430_畈/01_畈.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0430_畈/01_畈.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0431_说",
+      "phase": "character",
+      "target_label": "说",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/说.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0431_说/01_说.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0431_说/01_说.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0431_说/01_说.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0431_说/01_说.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0432_畋",
+      "phase": "character",
+      "target_label": "畋",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/畋.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0432_畋/01_畋.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0432_畋/01_畋.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0432_畋/01_畋.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0432_畋/01_畋.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0433_要",
+      "phase": "character",
+      "target_label": "要",
+      "target_description": null,
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/要.png",
+      "attempts": [
+        {
+          "group": "G1",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0433_要/01_要.png"
+        },
+        {
+          "group": "G2",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0433_要/01_要.png"
+        },
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0433_要/01_要.png"
+        },
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0433_要/01_要.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0304_疖__retry_2__G3",
+      "phase": "character",
+      "target_label": "疖 (retry #2)",
+      "target_description": "retry 2",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/疖.png",
+      "attempts": [
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0304_疖__retry_2/01_疖.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0306_亨__retry_2__G3",
+      "phase": "character",
+      "target_label": "亨 (retry #2)",
+      "target_description": "retry 2",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/亨.png",
+      "attempts": [
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0306_亨__retry_2/01_亨.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0315_声__retry_2__G3",
+      "phase": "character",
+      "target_label": "声 (retry #2)",
+      "target_description": "retry 2",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/声.png",
+      "attempts": [
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0315_声__retry_2/01_声.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0197_矢__retry_4__G3",
+      "phase": "character",
+      "target_label": "矢 (retry #4)",
+      "target_description": "retry 4",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/矢.png",
+      "attempts": [
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0197_矢__retry_4/01_矢.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0216_失__retry_4__G3",
+      "phase": "character",
+      "target_label": "失 (retry #4)",
+      "target_description": "retry 4",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/失.png",
+      "attempts": [
+        {
+          "group": "G3",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0216_失__retry_4/01_失.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0193_癶__retry_4__G4",
+      "phase": "character",
+      "target_label": "癶 (retry #4)",
+      "target_description": "retry 4",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/癶.png",
+      "attempts": [
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0193_癶__retry_4/01_癶.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0213_処__retry_4__G4",
+      "phase": "character",
+      "target_label": "処 (retry #4)",
+      "target_description": "retry 4",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/処.png",
+      "attempts": [
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0213_処__retry_4/01_処.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0228_乩__retry_4__G4",
+      "phase": "character",
+      "target_label": "乩 (retry #4)",
+      "target_description": "retry 4",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/乩.png",
+      "attempts": [
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0228_乩__retry_4/01_乩.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0233_那__retry_4__G4",
+      "phase": "character",
+      "target_label": "那 (retry #4)",
+      "target_description": "retry 4",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/那.png",
+      "attempts": [
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0233_那__retry_4/01_那.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0340_佚__retry_1__G4",
+      "phase": "character",
+      "target_label": "佚 (retry #1)",
+      "target_description": "retry 1",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/佚.png",
+      "attempts": [
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0340_佚__retry_1/01_佚.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0341_社__retry_1__G4",
+      "phase": "character",
+      "target_label": "社 (retry #1)",
+      "target_description": "retry 1",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/社.png",
+      "attempts": [
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0341_社__retry_1/01_社.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0342_佛__retry_1__G4",
+      "phase": "character",
+      "target_label": "佛 (retry #1)",
+      "target_description": "retry 1",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/佛.png",
+      "attempts": [
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0342_佛__retry_1/01_佛.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0343_即__retry_1__G4",
+      "phase": "character",
+      "target_label": "即 (retry #1)",
+      "target_description": "retry 1",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/即.png",
+      "attempts": [
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0343_即__retry_1/01_即.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0349_改__retry_1__G4",
+      "phase": "character",
+      "target_label": "改 (retry #1)",
+      "target_description": "retry 1",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/改.png",
+      "attempts": [
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0349_改__retry_1/01_改.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0361_到__retry_1__G4",
+      "phase": "character",
+      "target_label": "到 (retry #1)",
+      "target_description": "retry 1",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/到.png",
+      "attempts": [
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0361_到__retry_1/01_到.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0367_事__retry_1__G4",
+      "phase": "character",
+      "target_label": "事 (retry #1)",
+      "target_description": "retry 1",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/事.png",
+      "attempts": [
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0367_事__retry_1/01_事.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0371_所__retry_1__G4",
+      "phase": "character",
+      "target_label": "所 (retry #1)",
+      "target_description": "retry 1",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/所.png",
+      "attempts": [
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0371_所__retry_1/01_所.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0379_学__retry_1__G4",
+      "phase": "character",
+      "target_label": "学 (retry #1)",
+      "target_description": "retry 1",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/学.png",
+      "attempts": [
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0379_学__retry_1/01_学.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0236_亥__retry_3__G4",
+      "phase": "character",
+      "target_label": "亥 (retry #3)",
+      "target_description": "retry 3",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/亥.png",
+      "attempts": [
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0236_亥__retry_3/01_亥.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0238_亦__retry_3__G4",
+      "phase": "character",
+      "target_label": "亦 (retry #3)",
+      "target_description": "retry 3",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/亦.png",
+      "attempts": [
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0238_亦__retry_3/01_亦.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0331_更__retry_2__G4",
+      "phase": "character",
+      "target_label": "更 (retry #2)",
+      "target_description": "retry 2",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/更.png",
+      "attempts": [
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0331_更__retry_2/01_更.png"
+        }
+      ]
+    },
+    {
+      "id": "p3_char_0284_龹__retry_2__G4",
+      "phase": "character",
+      "target_label": "龹 (retry #2)",
+      "target_description": "retry 2",
+      "target_png": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/龹.png",
+      "attempts": [
+        {
+          "group": "G4",
+          "path": "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0284_龹__retry_2/01_龹.png"
+        }
+      ]
+    }
+  ]
+}

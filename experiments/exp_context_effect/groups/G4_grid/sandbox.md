@@ -784,3 +784,259 @@ cycle-level tooling change per position-250 note).
    form_catalog. Defer to position 350 after seeing B6 chronic
    results — if canonical works, the same recipe (curator
    hand-writes from GT) generalizes to main-batch chronics.
+
+---
+
+## B10 postmortem (position 550)
+
+**Batch result**: 19/50 mains (38%), 6/16 retries (38%). 13 A total
+(10 mains + 3 retries). BANK_DEVIATION channel went live: 13 uses in
+B10 (up from 0 in B9), 8 on PASS/A items and 4 on FAIL items.
+
+### Positive signal: BANK_DEVIATION works
+
+The channel produces A/PASS when the drawer's judgment about primitive
+mismatch is correct (8/13 = 62% deviation-to-success rate — higher
+than the batch average). The A verdicts on 佟, 者, 花, 佔, 皃 are all
+BANK_DEVIATION items where the drawer inlined base primitives with
+MMH-verbatim anchors after judging that the compound bank primitive's
+standalone-scale defaults wouldn't fit the slot the compound-char
+places its sub-component in.
+
+### Negative signal: BANK_DEVIATION on FAIL items
+
+4 of 13 deviations landed on FAIL (改, 乩, 那, 张(C)). Diagnosis:
+sound skip-reasoning does NOT guarantee good inline execution. Skipping
+a bank primitive means the drawer takes on the compositional work
+themselves — and errors in that work (己 vs 已 topology, X-cross apex
+sharing, 阝 ear shape) are the FAIL causes, not the skip itself.
+
+### Variant promotion decision (defer)
+
+Curator DECIDED NOT to promote any new bank variants from the 8
+successful deviations this batch. Rationale:
+
+1. Each successful deviation is a SINGLE data point per fresh_component
+   name. Would need 2+ passing attempts before variant is justified.
+2. The A-recipe already codifies "inline base primitives when slot
+   compression is needed". A new `cao_grass_top.py` variant would
+   itself be a compound-primitive that future compositions with a
+   different slot placement would need to deviate from.
+3. Bank size (~125 files) is not the bottleneck; per-attempt
+   inline-vs-import decision quality is. Adding variants without
+   changing that quality risk bank bloat.
+
+Re-evaluate B11+ if fresh_component names repeat (e.g., if
+`cao_grass_top_for_X` recurs 2+ times passing).
+
+### Chronic X-cross cluster: TERMINAL_FROZEN candidates after B11
+
+癶, 処, 乩, 那 all at retry_3 FAIL post-B10. The CROSS_ANCHOR fix
+from B7r文 was insufficient for these — X-cross inside a compound
+char is a different problem (需要 apex sharing PLUS other component
+integration). If B11 retry with a fresh tactic fails, mark
+TERMINAL_FROZEN and either (a) write `chronic/x_cross_composite.py`
+by hand, or (b) accept these as out-of-distribution failures.
+
+### Refined cross-cutting guidance for B11
+
+1. **Encourage BANK_DEVIATION on slot-compressed compound chars** —
+   the channel works; the drawer just needs to trust their read.
+2. **Repeat fresh_component names surface variants** — curator
+   audits fresh_component labels across B10+B11 for recurrence.
+3. **X-cross final tactic**: try `stroke_variable_width` for pie+na
+   as one continuous polyline through the apex (not two separate
+   Beziers meeting at CROSS_ANCHOR). If that fails, TERMINAL_FROZEN.
+
+## B11 postmortem (position 600)
+
+**Batch result**: 31/50 mains (62%; 17 A + 14 PASS) — best G4 batch
+on record and highest A-rate (34%). Retries 3/17 = 18%.
+BANK_DEVIATION channel: 29/50 uses on mains, 21/29 → A/PASS (72%
+success). Cumulative through B11: 51%, 37 A's, 6.7% A rate.
+
+### The `ren_side_far_left` recurrence — deferred variant
+
+fresh_component name `ren_side_far_left` (or spelling variant)
+appeared on 8 B11 A/PASS attempts — plus 2 B10 A's (佟, 佔). This
+crosses the v13 "2+ passing attempts before variant is justified"
+threshold by wide margin.
+
+**Decision: DEFER variant promotion, codify as NAMED PATTERN in
+drawer_memory.md instead.**
+
+Rationale: A variant primitive `ren_side_far_left.py` with fixed
+default anchors would face the same problem it's trying to solve.
+Each new far-left 亻 has slightly different MMH anchors (pie tail y
+ranges 0.87-1.00 across the 8 recurrences; pie head x ranges 0.80-
+0.95). If a drawer calls the variant with its defaults, MMH won't
+match and they'll partial-override → hits the p3_char_0252_伊 anti-
+pattern the deviation was trying to avoid. If a drawer calls the
+variant with per-item MMH anchors, it's functionally identical to
+inline pie+shu.
+
+The winning tactic is the DISCIPLINE of MMH-verbatim inline, not the
+identity of the calling function. Codifying as a named pattern in
+drawer_memory.md preserves the discipline. Same reasoning applies to
+shui/yi_side/cao_grass_top/kou_bc_compressed/mian_top_band/ji_gather_top/
+nv_bottom_slot recurrences.
+
+### The 8 C's — deviation reasoning right, execution slipped
+
+5 of 8 C's had sound BANK_DEVIATION reasoning (佻, 佾, 例, 或, 说). The
+FAILURE mode wasn't the skip — it was the interior/right-half sub-part
+whose MMH anchors underspecified detail (兆's inner-column spacing;
+月's inner heng placement; 兑's 3-part stack proportions; 戈's hook
+angle after corner; 兑's 八 dot heights).
+
+This adds a NEW lesson to B12: BANK_DEVIATION alone is insufficient
+for compound chars with unusual sub-structure. The drawer needs to
+add explicit sub-part y-band / x-band assertions AFTER committing to
+inline. Documented in drawer_memory.md B11 addendum.
+
+### X-cross TERMINAL_FROZEN (4 items)
+
+癶, 処, 乩, 那 all reached retry_4 without PASS. Per B10 plan and
+evidence-of-exhaustion (4 mechanisms tried across 4 retries per
+item), all frozen. If a future curator wants to unfreeze, they need
+to hand-write `chronic/x_cross_composite.py` with per-character
+baked-in composite anchors.
+
+### Escalation path for 10 retry_1 items → retry_2
+
+The 10 non-frozen retry FAILs/C from B11 (佚, 社, 佛, 即, 改, 到, 事,
+所, 学, 亥) all get one more shot in B12 with the B11 errata fix
+ideas encoded per-item. If retry_2 fails on any, that specific item
+moves to retry_3 consideration one batch later.
+
+---
+
+## B12 postmortem (position 650)
+
+**Batch outcome**: 20/50 mains (40%; 8 A + 12 PASS + 10 C + 20 FAIL);
+5/14 retries (36%; 0 A, 5 PASS via literal-errata mechanism).
+Regression from B11 best-batch (62%) — expected reversion. A-rate
+still highest of all groups. Cumulative through B12: ~50% success,
+~45 A's, ~7.5% A rate.
+
+**G5 format-effect isolation** (informational only, no G4 action):
+G5 (G3 memory format + MMH dispatcher injection) ran at 34%/2 A;
+G4 at 40%/8 A. Format contributes +6 PASS-points and 4× A rate at
+MMH parity. `fat_line`-per-endpoint-width primitive is doing what
+G3's PIL-uniform-line cannot. **Do NOT modify G4 format** based on
+this — just an isolation result confirming the grid vocabulary +
+per-endpoint-width primitive is load-bearing.
+
+**Post-v14-rollback context**: Earlier B12v1 disabled MMH for G4,
+collapsed to 16%, was rolled back same-day, all B12v1 attempts
+deleted. Current B12 is the re-run with MMH restored. Nothing about
+G4's memory changed across the rollback. Curator satisfaction log
+entries for B12 correspond to the re-run attempts.
+
+### Key signals
+
+1. **Right-half is the failure surface (new).** In B12 the 亻+X-with-
+   unusual-right cluster produced 6 FAILs. The 亻 far-left inline
+   was correct in every case; the failure was in the right sub-radical
+   (夸, 局, 系, 求, 吾, 夋 — all with no bank primitive AND MMH gives
+   endpoints only, not curve/hook/taper). BANK_DEVIATION reasoning
+   correct, execution insufficient. Rule for B13+: 亻-far-left inline
+   is necessary-not-sufficient; add explicit per-stroke width/curve
+   for the right half.
+
+2. **ren_side_far_left DEGRADED (2/9 in B12 vs 8/8 in B11).** Same
+   caveat: the tactic is still correct for the 亻 slot. The failure
+   surface migrated. Do NOT retreat from named-pattern.
+
+3. **Literal-errata retry mechanism is strong (5/5).** All 5 B12
+   retry PASSes were C→PASS at retry_1 via literal errata application
+   (物, 佾, 例, 或, 畋). The 8 retry FAILs were mostly cases where
+   errata was directional ("proportions off", "3-tier collapsed") not
+   literal.
+
+4. **信 A used ren_side directly (first time this batch).** Rule:
+   MMH-standard-column 亻 → use ren_side default anchors. MMH-far-
+   left-column 亻 → inline pie+shu MMH-verbatim. Read MMH first,
+   then pick.
+
+5. **疒 cluster emerging (6 items, 0 PASS).** Candidate for canonical
+   `chronic/ne_sick.py` if B13 疒 items also FAIL. Not promoting this
+   batch (evidence-driven deferral).
+
+6. **X-cross cluster grew: 亥 → TERMINAL_FROZEN at R4.** Cluster
+   now 5 items (癶/処/乩/那/亥). Next mechanism attempt would be
+   `chronic/x_cross_composite.py` per-character baked-composite.
+
+### Non-signals / stable
+
+- A-recipe (B9 5-point + B10/B11 points 6-8) unchanged.
+- v13 BANK_DEVIATION channel still healthy (33/50 mains B12; too many
+  to enumerate here — see attempts/*/generated.py scan).
+- Chronic-mandatory-import: 6th null batch. Confirmed retired.
+- Variant promotion: continue named-pattern codification. B12 added
+  `kou_top_band_compressed_for_*` and strengthened `shui_far_left`
+  and `cao_top_band` to 3-batch precedent.
+
+---
+
+## B13 key signals (2026-08-05, position 700)
+
+**Post-B13 update**: 18/50 mains (36%; 6 A + 12 PASS + 11 C + 21 FAIL);
+retries 5/14 (36%; 3 A + 2 PASS). Cumulative ~48% mains success,
+~51 A total (7.8% A rate). Regression from B11's 62% best-batch
+continues to settle around 36-40% baseline.
+
+### Key signals (B13)
+
+1. **A-recipe unchanged (0 new mechanism).** All 6 A's followed B9-B12
+   recipe verbatim: explicit decomposition + MMH-verbatim + SELF_CHECK
+   + base primitives + N-joint gaps + BANK_DEVIATION-when-slot-embedded
+   + chronic-full-canvas awareness. No new principle discovered this
+   batch. The recipe is stable.
+
+2. **疒 cluster mechanism WORKS.** B12 6/6 FAIL → B13 6/8 non-FAIL
+   (1 A + 1 PASS + 4 C + 2 FAIL). Inline 5-stroke top-left frame with
+   MMH-verbatim endpoints + per-character interior slot handling
+   reaches A quality (疽). **NO `chronic/ne_sick.py` promotion** —
+   codified as named pattern `ne_sick_top_left_frame_for_*` instead.
+   Same rationale as ren_side_far_left: baked defaults would defeat
+   MMH-verbatim discipline.
+
+3. **Right-half is still the primary failure surface (2nd batch).**
+   Cluster A (7 B13 FAILs): 亻+X-with-unusual-right pattern continues
+   dominant. `ren_side_far_left` slot handling correct in every case;
+   right sub-radical fails on curve/hook/taper (MMH gives endpoints
+   only). Same as B12. Awaiting form_catalog per-stroke-class taper
+   upgrade to give drawers a fallback beyond MMH.
+
+4. **X-cross cluster grew to 6.** 佚 R3 FAIL → TERMINAL_FROZEN.
+   Cluster: 癶, 処, 乩, 那, 亥, 佚. All exhausted retry ladder.
+   Mechanism candidate: `chronic/x_cross_composite.py` (per-char baked
+   composites). Not attempting until enough evidence to design.
+
+5. **新 candidate cluster: 礻-compound.** 社 R3 FAIL → TERMINAL_FROZEN.
+   礻 dot-LAST defensive rule works; failure is 土 slouching into 礻
+   slot. Also flagging 神 (C in B13 R1). If 2+ more 礻-compounds hit
+   R2+ FAIL, consider `chronic/shi_altar_compound.py` (礻 as left-column
+   radical with slot-width parameter).
+
+6. **Literal-errata retry mechanism confirmed strong (5/14 R1 grads).**
+   All 5 R1 graduations (畎A, 将A, 度A, 亲PASS, 说PASS) applied
+   LITERAL geometry fix from B12 errata. 6 R1/R2 FAILs had directional
+   errata or were chronic. Rule for B14: only queue retries with
+   LITERAL errata.
+
+7. **Format effect at MMH parity WIDENED.** B12: G4 +6 pts PASS, 4x
+   A vs G5. B13: G4 +22 pts PASS, 6x A vs G5. Cumulative G4 A rate
+   7.8% vs G5 3.0%. Confirms continuing current mechanism.
+
+### Non-signals / stable
+
+- A-recipe unchanged from B11.
+- Chronic-mandatory-import: 7th null batch. Retired confirmed.
+- Named-pattern codification remains the response to slot-embedded
+  recurrences. `ne_sick_top_left_frame_for_*` added to registry.
+- Bank size stable at ~125 files. No prune/promotion this batch.
+- Memory index and file layout unchanged.
+- Solo-wins observation (Obs-01): 3 G1 solo-A in B13 (俜, 畟, 热) —
+  logged to root OBSERVATIONS.md; no G4 action.

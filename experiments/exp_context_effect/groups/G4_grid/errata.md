@@ -1835,3 +1835,1163 @@ them into readable radicals is where B6 breaks.
 
 Under v8 rule "any retry_n≥2 fail may be promoted to canonical", 比
 and 124_文 also qualify at retry_n=2.
+
+---
+
+# Batch B7 (positions 184-233) — 25 main FAILs + retry outcomes
+
+**Context**: BEST G4 batch on mains yet (25/50 = 50%). B7 retries all
+FAILed under the v8 prompt (12/12 FAIL), but the SAME 12 items re-run
+under the v9 visual-diff prompt produced 2 PASSes (比, 文). See
+`evolution.md` position-400 for the v9-prompt rationale and evidence.
+
+## Retry PASSes graduated
+
+### p2_radical_086_比 (RERUN PASS at retry_n=1 v9) — GRADUATED
+Fix that worked: MMH-verbatim anchors + explicit LEFT/RIGHT half
+decomposition. The v8-prompt retry drew halves too far apart (x=55
+and x=250). v9 rerun surfaced this via visual diff, then trusted MMH
+anchors verbatim (which are properly centered at x∈[55,145] and
+x∈[145,265]). No chronic 匕-mirror primitive was needed — direct
+draw_heng + draw_shu_ti + draw_pie + draw_shu_wan_gou at MMH anchors.
+Removed from active errata.
+
+### p2_radical_124_文 (RERUN PASS at retry_n=2 v9) — GRADUATED
+Fix that worked: shared `CROSS_ANCHOR = ('BC', 0.385, 0.225)` passed
+as the MID (not head) for both 撇 and 捺, so the P-weld is pixel-
+shared BELOW the heng. Prior retry_2 apex was `('C', 0.50, 0.55)`
+right ON the heng, which forced the 人 shape. Visual-diff prompt made
+the drawer read prior PNG and see this topology bug. Removed from
+active errata.
+
+## Both-fail retries (v8 AND v9) — CANONICAL escalation
+
+### p2_radical_088_长 (retry_n=3 SATURATED, v9 rerun FAIL) — CANONICAL NEXT
+Fourth attempt failed. v9 visual diff did not help. Under v8/v9 policy,
+promote to `chronic/chang_long.py` in B8. Freeze retry_n at 3.
+
+### p2_radical_081_夂 (retry_n=3 SATURATED, v9 FAIL) — CANONICAL NEXT
+X-cross topology fault persists after visual diff. Promote to
+`chronic/zhi_dive.py` in B8. Note: this is now the SAME topology-bug
+pattern as B7r 文 PASS — a `CROSS_ANCHOR` mid-tuple approach may work
+as the canonical anchor plan.
+
+### p2_radical_084_夊 (retry_n=3 SATURATED, v9 FAIL) — CANONICAL NEXT
+ク top piece still near-straight; T-weld off ~60 px. Promote to
+`chronic/sui_slow.py` in B8.
+
+### p2_radical_119_水 (retry_n=2, v9 FAIL) — CANONICAL NEXT (5th chronic)
+Stroke-count assertion STILL not applied — right 捺 still missing.
+This is a mechanism failure not a rendering one. Promote to
+`chronic/shui_water.py` in B8 with a hard 4-stroke plan baked in.
+
+### p2_radical_116_礻 (retry_n=2, v9 FAIL) — CANONICAL NEXT
+Chronic stem-too-short + bottom-dots-missing pattern. Promote to
+`chronic/shi_altar.py` in B8.
+
+### p2_radical_094_风 (retry_n=2, v9 FAIL) — CANONICAL CANDIDATE
+几-family frame under-spanned again. Promote to `chronic/feng_wind.py`
+if it fails a 4th time; for B8, one more retry with explicit-frame-span
+literal fix in errata.
+
+### p2_radical_135_无 (retry_n=3, v9 FAIL) — CANONICAL NEXT
+Fragmented top piece + curve. Promote to `chronic/wu_none.py`.
+
+### p2_radical_111_气 (retry_n=3, v9 FAIL) — CANONICAL NEXT
+Stroke stacking overlap. Promote to `chronic/qi_air.py`.
+
+### p2_radical_045_寸 (retry_n=2, v9 FAIL)
+Dot still misplaced (upper-right instead of crotch). Cool-down 50 items.
+If retry_n=3 fails → canonical.
+
+### p2_radical_075_夕 (retry_n=2, v9 FAIL)
+Heng shoulder still too long. Cool-down 50 items. If retry_n=3 fails →
+canonical.
+
+## Main FAILs (25) — one-line diagnoses
+
+### p3_char_0187_仡 (FAIL)
+亻 fine; 乞 right-half fragmented. No bank primitive for 乞. Fix: hand
+compose 乞 = 𠂉 top + 乙-family hook; keep in right half x∈[0.55, 0.95].
+
+### p3_char_0188_边 (FAIL)
+辶 walk-radical present but 力 sub-part misplaced inside the 辶
+enclosure. Fix: call `li.py` for 力 inside x∈[0.30, 0.65] first, then
+draw 辶 sweeping around it.
+
+### p3_char_0191_仫 (FAIL)
+亻 fine; 么 right-half unrecognizable. Fix: call `yao_small.py`
+(promoted at B2 for radical 幺) but note the char 么 has an added
+initial 撇 above the 幺 body.
+
+### p3_char_0193_癶 (FAIL)
+Opposing-legs radical. X-cross topology failure — legs read as
+disconnected. Fix: use CROSS_ANCHOR pattern (see drawer_memory.md v9
+addendum): both inner strokes routed through a shared BC pixel.
+
+### p3_char_0196_东 (FAIL)
+Compound top + 木-base. Top piece not aligned with 木 spine. Fix:
+column-share spine — top's centerline x == 木 spine x.
+
+### p3_char_0200_市 (FAIL)
+亠 top + 巾 base. 巾 frame too narrow. Fix: 巾 body width = 60% of
+canvas, spine centered.
+
+### p3_char_0203_冊 (FAIL)
+Two 冂 frames side-by-side. Neither imported `chronic/jiong_frame.py`.
+Fix (LITERAL): `from chronic.jiong_frame import draw_jiong_frame`;
+call twice with left_offset_x=-40 and right_offset_x=+40 (assuming
+chronic supports offset; if not, add support).
+
+### p3_char_0205_冋 (FAIL)
+冂 frame + inner 口. Frame not called from chronic (comment said "MMH
+narrower than chronic"). Fix: override — trust chronic width; inner
+口 via `kou.py` at C x∈[0.30, 0.70].
+
+### p3_char_0207_册 (FAIL)
+Same as 冊 (0203). Two-frame layout failing without chronic import.
+Fix: same as 0203.
+
+### p3_char_0209_冎 (FAIL)
+冂 frame + inner cross. Frame not imported. Fix: `chronic/jiong_frame`
++ inner heng + inner shu shared at C.
+
+### p3_char_0211_冯 (FAIL)
+冫 + 马. `chronic/ma_horse.py` not called ("full-canvas primitive
+can't host right-half"). Fix: modify chronic/ma_horse to accept an
+offset_x/scale param and call it scaled to x∈[0.30, 0.95].
+
+### p3_char_0212_处 (FAIL)
+处 = 夂 + 卜. X-cross topology on 夂 head. Fix: CROSS_ANCHOR pattern.
+
+### p3_char_0213_処 (FAIL)
+処 = 几 + 夂 variant. Compound composition off. Fix: use `ji.py` (几)
++ inner 夂 with CROSS_ANCHOR pattern.
+
+### p3_char_0214_记 (FAIL)
+讠 + 己. `yan_speech.py` fine on left; 己 right-half not in bank and
+fragmented. Fix: hand compose 己 as 3-tier per B1 errata fix.
+
+### p3_char_0216_失 (FAIL)
+Top 丿 + 天. 丿 not welded to 天's top heng. Fix: T-weld the pie head
+to heng's top edge.
+
+### p3_char_0217_凹 (FAIL)
+Concave frame. Highly irregular shape. Fix: 5-stroke plan with left
+wall + top-U + right wall + bottom heng; enforce concavity via
+computed offsets.
+
+### p3_char_0218_刍 (FAIL)
+⺈ + 彐 stack. Compositional coherence lost. Fix: reuse
+`xue_broom.py` (彐 mastered) for bottom; hand compose ⺈ (short 撇 +
+横折) on top.
+
+### p3_char_0220_丢 (FAIL)
+丿 + 去. 去 = 土 + 厶. Sub-parts not composed via bank. Fix: pie +
+`tu.py` (土) + `si_private.py` (厶).
+
+### p3_char_0221_有 (FAIL)
+𠂇 + 月. 月 frame fragmented. Fix: hand 𠂇 (pie + heng crossing) +
+inline 月 frame (jiong-like but taller, with 2 inner heng).
+
+### p3_char_0225_而 (FAIL)
+Frame + 4 legs. Frame proportion off; legs stagger. Fix: TR9-span
+frame + 4 legs column-shared at x∈{0.20, 0.40, 0.60, 0.80}.
+
+### p3_char_0228_乩 (FAIL)
+占 + 乚. X-cross-like right side. Fix: CROSS_ANCHOR pattern on the
+乚 hook + 占's descending stroke.
+
+### p3_char_0230_亘 (FAIL)
+一 top + 日 middle + 一 bottom (bracketed stack). Middle collapsed.
+Fix: enforce y-alignment of top/bottom heng; middle 日 fits in
+y∈[0.30, 0.70].
+
+### p3_char_0231_会 (FAIL)
+人 top + 云 base. 人 apex not welded; 云 base fragmented. Fix:
+`ren.py` (人 mastered) with shared APEX tuple + inline 云 base.
+
+### p3_char_0232_亙 (FAIL)
+Same family as 亘 (0230). Same fix.
+
+### p3_char_0233_那 (FAIL)
+compound-left + 阝-right. 阝-right primitive `fu_right.py` should
+have been imported. Fix: `from fu_right import draw_fu_right` +
+compose left-half of 那.
+
+
+---
+
+# B8 (positions 401-450) — 30 main FAILs + 7 retry FAILs
+
+**Batch summary**: 20/50 = 40% mains (down from B7's 50%); 0/7 retries.
+Item pool shifted heavily to 亻+X compositional pattern (25 of 50 items
+share the 亻 left-radical prefix), producing a synthesis-heavy failure
+mode. Chronic import rate on B8 mains: 0/50 imports; 19/50 comment
+mentions. Same citation-without-import pathology as B6/B7. The 7 retry
+FAILs share a distinct root cause described below.
+
+## Retry FAILs (7) — TERMINAL_FROZEN — root cause: canonical file gap
+
+At position 400, the previous curator QUEUED 7 canonical primitives
+(chang_long.py, zhi_dive.py, sui_slow.py, shui_water.py, shi_altar.py,
+wu_none.py, qi_air.py) — see scans/scan_position_400.md — but **never
+hand-wrote the primitive files**. The `success_bank/code/chronic/`
+directory still contains only the original 5 files (dao_char,
+gong_bow, jiong_frame, ma_horse, pie_radical).
+
+Retry drawers for 长/夂/夊/水/礻/无/气 had no new primitive to import.
+Each fell back to v9 visual-diff + MMH-verbatim + inlined base
+primitives (pie, shu, na, heng). Zero PASSes. This is NOT the "AI
+cannot follow its own memory pointer" pathology — it is the more
+basic "curator queued a canonical promotion and forgot to deliver
+the file" pathology. Root cause: curator's own compliance failure at
+the previous cycle boundary.
+
+Actions:
+- All 7 items marked TERMINAL_FROZEN.
+- Removed from B9 retry queue.
+- Historical note: to re-attempt, a future curator would need to
+  hand-write the 7 canonical primitives (not just queue them) and
+  update `drawer_memory.md`'s chronic-imports section to list them.
+- Rationale for freeze: after 4 batches of escalation (v7 discipline
+  → v8 slim + snippets → v9 visual-diff → v10 trajectory-view) plus
+  a queued-but-undelivered canonical promotion, marginal ROI on
+  another attempt with the SAME memory state is near zero.
+
+---
+
+## Main FAILs (30) — per-item diagnosis
+
+### p3_char_0236_亥 (亥, 6画)
+7 draw calls (over-count by 1). All N-joints — no welding at the
+X-cross. Fix: 6 strokes only (亠 + X-cross-below); CROSS_ANCHOR
+pattern at ('C', 0.5, 0.55) for the pie+na X in the middle.
+
+### p3_char_0237_行 (行, 6画)
+Imports pie/heng/shu; 8 draw calls. 彳 left needs `chi_step.py`
+(exists in bank — not imported). Fix: `from chi_step import
+draw_chi_step` for left half; right 亍 as heng+heng+shu-hook.
+
+### p3_char_0238_亦 (亦, 6画)
+Only 2 draw_calls — most strokes must be inlined or missed. N-gap
+at C preserved but body underdrawn. Fix: use dedicated primitives
+for each stroke; 亠 top + X-cross-below + flanking dots (4 strokes
+in the bottom band).
+
+### p3_char_0239_过 (过, 6画)
+Zero bank draw calls (all inline PIL). 辶 走之 is very hard to inline;
+should use compound-heng-fold-fold-fold pattern. Fix: promote a
+`zou_zhi.py` primitive (走之 as: top-dot + horizontal-fold-fold +
+long swooping na). Meanwhile: hand-derive 寸 (inline) + 辶 (careful
+compound).
+
+### p3_char_0240_仰 (仰, 6画)
+Only 3 draws (needs 6). Imports ren_side + pie/shu/heng. Right side
+卬 dropped strokes. Fix: 6-stroke plan: 亻 (2 via ren_side) + 卬 (4
+strokes: 撇 + 竖折 + 竖 + hook).
+
+### p3_char_0241_如 (如, 6画)
+Imports nv + kou; only 2 draw calls. Left 女 too compressed; right
+口 not sitting right. Fix: enforce 女 fills x∈[0.05, 0.45], 口 fills
+x∈[0.50, 0.95], y∈[0.30, 0.75]. Both primitives OK — placement wrong.
+
+### p3_char_0242_仲 (仲, 6画)
+Imports ren_side only; 1 draw call. Right 中 inlined but likely off.
+Fix: also import mastered 口 (`kou`) for the 中-frame; add shu
+through center.
+
+### p3_char_0243_成 (成, 6画)
+Zero draw_calls (all inline). Note claims P-joints welded at C and
+BC. Fix: use `xie_gou` for the ヽ + hook cluster; use `heng` for the
+short top-heng; explicit CROSS_ANCHOR for the pie+na inside.
+
+### p3_char_0247_军 (军, 6画)
+2 draw calls; note says "冖 top + 车 body". Body severely under-
+drawn. Fix: use `mi_cover` for 冖 top; hand 车 as heng+shu+heng-shu-
+zhe with center vertical.
+
+### p3_char_0248_伄 (伄, 6画)
+Zero draws. Right 刁-like part missed. Fix: 亻 + 刁 (compound
+heng-zhe with dot). Consider promoting `diao.py` (刁 primitive).
+
+### p3_char_0249_同 (同, 6画)
+冂 mentioned in notes as "chronic" but 0 imports (`chronic/jiong_frame`
+missed AGAIN). Fix mandatory: `from chronic.jiong_frame import
+draw_jiong_frame` — do not inline.
+
+### p3_char_0250_伉 (伉, 6画)
+Imports pie/shu/heng/dian; 7 draws. Right 亢 top-dot dropped.
+Fix: enforce 6 strokes; top-dot LAST (defensive from drawer_memory
+"top-dot dropped" note).
+
+### p3_char_0252_伊 (伊, 6画)
+Zero draws; explicit note "does not import ren_side because default
+anchors sit in TC/C/BC — this item wants TL/ML/BL". This IS an
+anchor-override problem the never-tune-anchors rule addresses. Fix:
+use ren_side WITH the offset feature OR add a `ren_side_TL.py`
+variant.
+
+### p3_char_0253_好 (好, 6画)
+Imports pie_dian, pie, heng, heng_pie, wan_gou; 8 draws. Left 女
+did not use `nv.py`. Right 子 fragmented. Fix: import nv + zi (both
+mastered).
+
+### p3_char_0254_伎 (伎, 6画)
+Imports pie/shu/heng/na; 8 draws. Right 支 topology off. Fix: 支 =
+十 top + 又 bottom; use `you_again.py` for the 又 half.
+
+### p3_char_0258_伕 (伕, 6画)
+10 draws (over-count). Right 夫 has extra strokes. Fix: 夫 = 二 +
+人 = heng + heng + pie + na (4 strokes); total with 亻 = 6.
+
+### p3_char_0263_她 (她, 6画)
+Imports nv + heng_zhe_gou + shu + shu_wan_gou; 4 draws. Right 也
+loose. Fix: 也 = heng-zhe-gou + shu-wan-gou + inner shu = 3 strokes;
+composition should be 3 (nv) + 3 (also) = 6.
+
+### p3_char_0264_伢 (伢, 6画)
+Imports pie/shu/heng/shu_gou; 10 draws (over-count). Right 牙 has
+X-cross. Fix: CROSS_ANCHOR at pie+shu-gou intersection.
+
+### p3_char_0265_名 (名, 6画)
+Zero draws. Note: "名 = 夕 + 口. Long s2 diagonal". Fix: import
+`kou.py` (mastered) for the bottom-right 口; 夕 = pie + heng-zhe-
+gou + inner dian (3 strokes).
+
+### p3_char_0266_伥 (伥, 6画)
+Zero draws. Note explicitly says "长 half rendered fresh (no chronic
+promoted yet)". This IS the retry-terminal cluster leaking into
+mains. Fix: N/A unless chang_long.py is actually written.
+
+### p3_char_0267_西 (西, 6画)
+Zero draws. Note: "6 strokes: heng, shu(left), heng-zhe(top+right),
+inner-pie...". Fix: 西 = top-heng + LEFT-shu + RIGHT-heng-zhe +
+inner two-pies (or 儿-like) + closing-heng at bottom. Frame closure
+often missed.
+
+### p3_char_0270_伧 (伧, 6画)
+Zero draws. Right 仑 = 人 apex + 匕 base. Fix: `ren.py` (mastered)
++ `bi.py` (mastered).
+
+### p3_char_0272_伪 (伪, 6画)
+Imports pie/shu/dian/heng_zhe_gou; 6 draws. Right 为 has 4-stroke
+compound including the outer 撇 + inner dot-cluster. Structure
+matches the note but panel rejected — likely stroke-weight or dot
+placement. Fix: rebalance for panel visual weight; place inner dots
+higher.
+
+### p3_char_0273_次 (次, 6画)
+Zero draws. Note: "6 N-joints natural gaps". Fix: right 欠 needs
+hard structure — use `pie` + `heng_gou` + `pie` + `na` for the 4
+strokes; import when available.
+
+### p3_char_0274_伫 (伫, 6画)
+Imports pie/shu/dian/heng; 6 draws. Right 宁 collapsed. Fix: import
+`mian.py` (宀 roof) for the top; 亍 base as heng+dian+shu-gou.
+
+### p3_char_0276_佤 (佤, 6画)
+Zero draws. Note: 5-stroke 瓦. Fix: 瓦 requires compound heng-zhe-
+wan-gou; either promote `wa.py` primitive or hand-craft with a single
+`stroke_variable_width` for the compound.
+
+### p3_char_0279_色 (色, 6画)
+Only 2 draws. Note: "s2 & s3 rendered as 2-segment". Fix: 色 = 刀
+top + 巴 base; use `chronic/dao_char.py` for the 刀 top (mandatory
+import per drawer_memory).
+
+### p3_char_0280_兆 (兆, 6画)
+Zero draws. Fix: 兆 = 儿-widened base + 2 flanking dot-groups; use
+`er_legs.py` for the base; place 2 pie+dian clusters left and right.
+
+### p3_char_0281_设 (设, 6画)
+Zero draws. Note: "讠 + 殳; s5-s6 P joint welded". Fix: promote a
+`yan_side.py` primitive for 讠 (currently missing bank entry — this
+is a B9 prereq); 殳 as compound.
+
+### p3_char_0283_传 (传, 6画)
+Zero draws, no notes. Fix: 传 = 亻 + 专. import ren_side; 专 as
+heng+heng+shu-zhe-hook+dian.
+
+---
+
+## Cross-batch pattern from B8 mains
+
+**Bank import rate cratered**: only 6 of 30 FAILs import ANY bank
+primitive; 4 of 20 PASSes do. The v8/v9 mechanism to lift bank
+reuse has not held; drawers overwhelmingly prefer to inline via
+`_anchor + fat_line` primitives when the target is a 6-stroke char.
+The passing 20 are simple enough (亚, 后, 多, 此, 伐, 问, 回, 再,
+问, 齐, ...) that inlining works. The failing 30 are compositional
+6-stroke chars where inlining a compound right-half from scratch
+loses coherence.
+
+This suggests the "high-value component" shortlist in
+`drawer_memory.md` is not reaching drawers, OR drawers are reading
+it and rejecting it because they perceive per-item MMH anchors as
+authoritative over primitive-default anchors. Ongoing investigation.
+
+---
+
+## Batch 9 (positions 451-500) — 30 main FAILs
+
+Landmark batch: G4 posted 10 A verdicts on mains + 1 A on retry (亚) +
+10 PASSes on mains + 5 PASSes on retries = 26/66 successful (39%).
+Retry recovery jumped from 0/22 in B7/B8 combined to 5/16 in B9.
+
+BANK_DEVIATION channel usage this batch: 0/66. The v13 channel is
+available but no drawer invoked it. Chronic-import rate on mains
+containing 丿/刀/冂/弓/马 as sub-components (rough scan: 两/甸/丽/甹/冱,
+~5 candidates): 0/5. Comment mention only in `p3_char_0324_但`.
+Three negative batches on the chronic-mandatory-import mechanism
+(B7=0, B8=0, B9=0) — mechanism is dead.
+
+### p3_char_0284_龹 (龹, 12画)
+Complex compound rarely-used char. Drawer produced fragmented sub-parts;
+top 龹 outer shape has no bank primitive. Fix idea: split into 半+豕
+form; hand-derive using `_anchor + fat_line` per MMH.
+
+### p3_char_0285_师 (师, 6画)
+师 = 丿 + 巾-form + top curl. FAIL mode: top short pie + heng combo
+misaligned; right 巾 baseline too shallow. Fix: use MMH-verbatim; s1
+short pie at TL; ensure s3 竖 anchors align with the top-heng right
+end.
+
+### p3_char_0286_冱 (冱, 6画)
+冫 + 互. 冫 dots misplaced (too close together). Fix: import base 冫
+dot pattern; 互 as heng+heng-zhe-heng+heng per MMH.
+
+### p3_char_0288_凫 (凫, 8画)
+凫 = 鸟-simplified top + 几 base. Right side of 几 tail under-extended.
+Fix: hand-derive top 鸟-like using MMH; 几 base with wide MR anchor.
+
+### p3_char_0290_甸 (甸, 7画)
+勹 outer + 田 inner. 田 grid misaligned. Fix: import base `bao_char.py`
+for 勹 outer, then 田 as tight 4-stroke box in inner cell. (chronic
+component candidate: none — 勹 is not chronic.)
+
+### p3_char_0292_甹 (甹, 9画)
+甹 = 由 + 丂. Rare char; sub-parts fragmented. Fix: hand-derive using
+MMH literally; consider promoting a `you_from.py` for 由 pattern.
+
+### p3_char_0295_时 (时, 7画)
+日 + 寸. Right 寸 dot floats too far. Fix: import `ri.py` for 日 left;
+hand 寸 = heng + shu-gou + dian, anchor dot near shu-gou body.
+
+### p3_char_0296_串 (串, 7画)
+Two 口 vertically stacked on 竖. FAIL: upper and lower 口 too far apart;
+central 竖 misaligned. Fix: enforce s1(shu) at ('C',0.5,0.05)→('BC',0.5,0.95),
+then two 口 boxes centered on it at y∈[0.15,0.45] and y∈[0.55,0.85].
+
+### p3_char_0297_你 (你, 7画)
+亻 + 尔. Right 尔 fragmented. Fix: import `ren_side.py` for 亻;
+hand 尔 = pie + shu-gou + 2 dots per MMH.
+
+### p3_char_0298_丽 (丽, 7画)
+一 + 冂 + 冂. Two 冂 frames side by side under top heng. Chronic
+`jiong_frame` NOT imported (comment-only in prior batches). Fix:
+MANDATORY `from chronic.jiong_frame import draw_jiong_frame`; call
+TWICE with offset_x for left/right positioning.
+
+### p3_char_0302_疔 (疔, 7画)
+疒 outer + 丁 inner. 疒 left column strokes disconnected. Fix: promote
+a `chuang_sick.py` primitive for 疒 (5 strokes: dot+heng+pie+dot+dot);
+inner 丁 = heng + shu-gou.
+
+### p3_char_0303_进 (进, 7画)
+辶 + 井. Both parts inline; 辶 sweep too short, 井 crossed wrong. Fix:
+use `chuo_walk.py` for 辶 (mastered radical primitive); hand 井 as
+2 heng + 2 shu-pie crossing in center.
+
+### p3_char_0306_亨 (亨, 7画)
+亠 + 口 + 了. Top 亠 dot+heng OK; middle 口 too large; bottom 了 hook
+missing. Fix: import `tou.py` for 亠 top; `kou.py` for middle 口
+(constrain x∈[0.30,0.70], y∈[0.30,0.55]); hand 了 = short heng-gou +
+shu-gou with hook.
+
+### p3_char_0307_没 (没, 7画)
+氵 + 殳. 氵 3-dots row misaligned; 殳 top 几-form fragmented. Fix:
+promote a `shui_side.py` (氵 3-dot column primitive); hand 殳.
+
+### p3_char_0309_两 (两, 7画)
+一 + 冂 + 人 + 人. Chronic `jiong_frame` NOT imported (0/5 chronic
+candidates imported this batch). Fix: MANDATORY jiong_frame import
+for the 冂; two inner 人 as pie+na pairs.
+
+### p3_char_0311_身 (身, 7画)
+Single compound char with 撇+竖折+3-hengs+pie. Under-drawn; missing
+right pie tail. Fix: MMH-verbatim all 7 strokes; s7 pie must extend
+from mid-right to bottom-right (x∈[0.55,0.95]).
+
+### p3_char_0312_伲 (伲, 7画)
+亻 + 尼. 尼 = 尸 + 匕. Fix: import `ren_side` + `shi_corpse.py` (户 form)
++ `bi.py` for 匕 tail.
+
+### p3_char_0314_伶 (伶, 7画)
+亻 + 令. 令 = 人 + 一 + 卩-simplified. Fix: import `ren_side`; hand 令
+per MMH (5 strokes).
+
+### p3_char_0315_声 (声, 7画)
+士 + 尸. Fix: import `shi_scholar.py` for 士 top; `shi_corpse.py` for
+尸 wrapper.
+
+### p3_char_0316_伺 (伺, 7画)
+亻 + 司. 司 outer sweep + inner 一+口 all inline. Fix: import
+`ren_side`; hand 司 as heng-zhe-gou wrapper + inner heng+kou.
+
+### p3_char_0317_员 (员, 7画)
+口 + 贝. Top 口 too wide; bottom 贝 4-stroke box + 2 legs fragmented.
+Fix: import `kou.py` for both (constrain top 口 x∈[0.30,0.70],
+y∈[0.05,0.30]).
+
+### p3_char_0318_伽 (伽, 7画)
+亻 + 加. 加 = 力 + 口. Fix: import `ren_side` + `li.py` + `kou.py`.
+
+### p3_char_0319_听 (听, 7画)
+口 + 斤. 口 too tall; 斤 pie under-slanted. Fix: import `kou.py`;
+hand 斤 = short pie + heng-zhe + heng + shu.
+
+### p3_char_0321_把 (把, 7画)
+扌 + 巴. Fix: import `shou_side.py` (mastered); hand 巴 as heng-zhe +
+shu + heng + shu-wan-gou.
+
+### p3_char_0325_状 (状, 7画)
+丬 + 犬. 丬 left column bad; 犬 X-cross topology bug — pie/na apex not
+shared. Fix: hand 丬 (dot+heng+heng+shu); use X-cross CROSS_ANCHOR
+snippet for 犬's pie+na.
+
+### p3_char_0326_佇 (佇, 7画)
+亻 + 宁-simplified. Fix: import `ren_side` + `mian.py` for top; inner
+丁 as heng+shu-gou.
+
+### p3_char_0328_佈 (佈, 7画)
+亻 + 布. 布 = 丿 + 十 + 冂-like frame. Fix: import `ren_side`; hand 布
+per MMH; consider chronic `jiong_frame` for frame.
+
+### p3_char_0329_运 (运, 7画)
+辶 + 云. Fix: use `chuo_walk.py`; hand 云 = 二 + 厶 per MMH.
+
+### p3_char_0331_更 (更, 7画)
+一 + 曰 + 又/攴-tail. Under-drawn; bottom tail missing. Fix: MMH-
+verbatim all 7 strokes; ensure bottom pie tail reaches BR.
+
+### p3_char_0333_条 (条, 7画)
+夂-like top + 木 base. 夂 top is TERMINAL_FROZEN canonical — inline
+per MMH; base 木 as heng+shu+pie+na. Fix: enforce top+base vertical
+alignment.
+
+---
+
+## Cross-batch pattern from B9 mains
+
+**Bank-import rate**: ~11 of 50 mains import a named bank primitive
+beyond `_anchor`. All 10 A-verdict items either import a primitive
+correctly OR inline via MMH-verbatim anchors with an explicit
+decomposition comment + SELF_CHECK block declaring stroke count +
+joint class. **The A-recipe is not "import more"; it is "trust MMH
+literally and structure the code with an explicit decomposition
+comment naming the sub-radicals."**
+
+**BANK_DEVIATION channel (v13, new)**: 0/66 usage. Drawers did not
+signal any deviations. This may mean (a) drawers didn't read the v13
+addendum, or (b) all deviations that happened were considered
+implicit under "trust GT over memory". Insufficient signal to
+promote any variants this batch.
+
+**Chronic-mandatory-import mechanism**: 0/5 imports across chronic-
+candidate mains. This is the 3rd negative batch (B7=0, B8=0, B9=0).
+The mechanism as currently implemented (comment snippet in
+`drawer_memory.md` + INDEX pointer) is dead. Either escalate to
+dispatcher-level pre-check, or retire the mandate.
+
+---
+
+# Batch B10 — main-item FAILs (19 items)
+
+Format: item — diagnosis, SELF_CHECK calibration, fix idea. All at
+retry_1 in B11 queue unless noted.
+
+## p3_char_0340_佚 (FAIL)
+**Composition**: 亻 + 失. **Diagnosis**: right-side 失 (pie+heng+pie+na
+X-cross) came out with na tail too short — X-cross apex not shared
+between s3 pie-mid and s4 na-mid. **Fix**: apply CROSS_ANCHOR pattern
+from B7r 文 to 失's inner X-cross; place apex at ML(0.85, 0.55).
+
+## p3_char_0341_社 (FAIL)
+**Composition**: 礻 + 土. **Diagnosis**: 礻 top-dot dropped; 礻 4-stroke
+count came out as 3. **Fix**: assert 礻 stroke count = 4; render top
+dot LAST (defensive). 土 uses tu.py with anchors overridden right.
+
+## p3_char_0342_佛 (FAIL)
+**Composition**: 亻 + 弗. **Diagnosis**: 弗's 2-arch topology collapsed
+— the two vertical strokes of 弗 sit too close, no visible bracket
+opening. **Fix**: separate 弗's s3 and s5 verticals by ≥45 px in x;
+enforce column-share within each vertical.
+
+## p3_char_0343_即 (FAIL)
+**Composition**: 皀 + 卩. **Diagnosis**: 卩 right-side rendered as
+misplaced 阝; the 横折钩 top too tall, 竖 body too far right.
+**Fix**: 卩 as 2 strokes (short 横折钩 top + straight 竖 body), heights
+in y∈[0.15, 0.85].
+
+## p3_char_0346_佞 (FAIL)
+**Composition**: 亻 + 妄 (亡 + 女). **Diagnosis**: 女 bottom sub-part
+had X-cross variant fail; 撇点 pivot too low. **Fix**: 女 uses nv.py
+pattern; 亡 stack above with N-gap.
+
+## p3_char_0349_改 (FAIL — BANK_DEVIATION sound-reasoning FAIL)
+**Composition**: 己 + 攵. **Diagnosis**: BANK_DEVIATION skipped
+yi_already.py with sound reasoning (改's left is 己 not 已, and left-
+third compressed). But fresh 己 inline had wrong topology — bottom
+hook curled RIGHT (己 way) then over-extended making it look like 已.
+**Fix**: 己 canonical = top 横折 + short 横 + 竖弯钩 with UP-hook (tip.y
+< hook_pt.y). Enforce hook direction assert.
+
+## p3_char_0355_块 (FAIL)
+**Composition**: 土 + 夬. **Diagnosis**: 夬's 4-stroke topology
+collapsed; 撇+捺 crossed with na tail too short. **Fix**: apply 大-like
+pattern for 夬 base (heng + pie + na) with X-cross apex sharing.
+
+## p3_char_0361_到 (FAIL)
+**Composition**: 至 + 刂. **Diagnosis**: 至 base 4 hengs stacked
+without vertical spine correctly piercing; 刂 right too tall.
+**Fix**: 至 = 一 (top) + 厶 + 一 + 一 with center 竖 P-welded; 刂 from
+dao_side.py or inline paired verticals.
+
+## p3_char_0366_畅 (FAIL)
+**Composition**: 申 + 昜. **Diagnosis**: 申 left too wide (took ~60%
+canvas); 昜 right compressed and fragmented (top-日 collapsed).
+**Fix**: 申 in x∈[0.05, 0.42]; 昜 in x∈[0.48, 0.95] with top-日 and
+bottom-勿 both readable.
+
+## p3_char_0367_事 (FAIL)
+**Composition**: single-component 8-stroke. **Diagnosis**: 事's spine
+竖钩 (long central pierce) misplaced — head too high, hook flick too
+tiny. Middle 横 stack overlapped. **Fix**: spine head at TC(0.5, 0.15),
+hook_pt at BC(0.5, 0.85), tip flicking up-left with visible ~30 px
+flick.
+
+## p3_char_0370_乶 (FAIL)
+**Composition**: 甫 + 乙 (Korean hanja). **Diagnosis**: 甫 top piece
+rendered as 8 fragmented strokes without clear vertical spine; 乙
+bottom hook fine but disconnected from 甫. **Fix**: 甫 spine = single
+straight 竖 through center; two horizontal crossbars; explicit inner
+horizontal.
+
+## p3_char_0371_所 (FAIL — BANK_DEVIATION sound-reasoning FAIL)
+**Composition**: 户 + 斤. **Diagnosis**: BANK_DEVIATION skipped jin.py
+with sound reasoning (斤 defaults sit at TL/TR band, MMH places it in
+TR/MR/BR). But 户 top-dot and 长撇 collapsed into single stroke; 斤
+horizontal misplaced. **Fix**: 户 with explicit 4-stroke count (dot +
+heng + 竖折 + pie); 斤 with column-shared vertical.
+
+## p3_char_0372_疌 (FAIL)
+**Composition**: 疋 top + 又 bottom variant. **Diagnosis**: complex
+9-stroke topology; strokes fragmented. **Fix**: split into 疋 (top,
+5) + 又-like (bottom, 4); enforce vertical spine through both.
+
+## p3_char_0374_疙 (FAIL)
+**Composition**: 疒 + 乞. **Diagnosis**: 疒 frame OK; 乞 inside too
+tall — the 乞 bottom hook extends beyond 疒 wall. **Fix**: 乞 confined
+to interior y∈[0.30, 0.85]; hook flick clean up-left.
+
+## p3_char_0375_经 (FAIL — BANK_DEVIATION sound-reasoning FAIL)
+**Composition**: 纟 + 圣. **Diagnosis**: BANK_DEVIATION skipped
+si_silk.py with sound reasoning (needs left-column compression). But
+inlined 纟 came out as 3 disconnected pie_zhe fragments — the tight
+stacking was lost. **Fix**: si_silk pattern but with hard x-clamp to
+column x∈[0.05, 0.30]; keep stack tight (each pie_zhe height ~35 px).
+
+## p3_char_0376_疚 (FAIL)
+**Composition**: 疒 + 久. **Diagnosis**: 久 bottom X-cross collapsed
+(pie + na apex not shared). **Fix**: apply CROSS_ANCHOR pattern for
+久's pie+na inside 疒 enclosure.
+
+## p3_char_0379_学 (FAIL)
+**Composition**: 覀-like top + 子 bottom. **Diagnosis**: top piece
+came out as scattered dots; 子 body OK but disconnected. **Fix**: top
+= 3 dots + wide 冖 cover; 子 sits directly under center with T-weld
+to 冖.
+
+## p3_char_0380_疟 (FAIL)
+**Composition**: 疒 + 虐. **Diagnosis**: 疒 OK; 虐 inside too complex
+(6 strokes fragmented). **Fix**: 虐 = 虍 top (4 strokes) + short bottom
+piece; enforce column discipline.
+
+## p3_char_0382_疠 (FAIL)
+**Composition**: 疒 + 万. **Diagnosis**: 万 inside came out as scattered
+2 strokes without clear 横+shape structure. **Fix**: 万 = short heng +
+横折钩 with proper hook; inside 疒 interior.
+
+---
+
+# Batch B10 — retry outcomes (v13 prompt)
+
+## Retry PASSes (6, graduated)
+
+- p3_char_0296_串 (retry_1 PASS): stacked 口 alignment fixed via
+  column-shared x.
+- p3_char_0301_作 (retry_1 A): main also PASSed; retry copied A-recipe
+  verbatim.
+- p3_char_0321_把 (retry_1 PASS): BANK_DEVIATION skipped shou_side (扌
+  far-left MMH); inline heng + shu_gou + ti with MMH anchors.
+- p3_char_0323_形 (retry_1 PASS): 彡 3-stroke discipline; pie curves
+  respected.
+- p3_char_0324_但 (retry_1 A): trajectory diff surfaced pie bow
+  weakness; strengthened midx offset.
+- p3_char_0325_状 (retry_1 A): 犬 X-cross via CROSS_ANCHOR; 丬 recomposed
+  as dot+ti+shu (MMH 3-stroke count, ignoring stale 4-stroke errata).
+
+## Retry FAILs (10) — B11 queue candidates
+
+- **X-cross chronic cluster (SATURATION post-B11)**: p3_char_0193_癶
+  (retry_3 FAIL), p3_char_0213_処 (retry_3 FAIL), p3_char_0228_乩
+  (retry_3 FAIL), p3_char_0233_那 (retry_3 FAIL). If B11 retry fails,
+  mark TERMINAL_FROZEN. Consider `chronic/x_cross_composite.py`.
+- p3_char_0236_亥 (retry_2 FAIL): X-cross adjacent; apex sharing
+  incomplete. Try single-polyline pie+na through apex.
+- p3_char_0238_亦 (retry_2 C): closer to PASS; upper 亠 fine, 小-body
+  legs slightly off. One more retry recommended.
+- p3_char_0284_龹 (retry_1 FAIL): compound 龹-top not decomposed
+  cleanly. Try full inline with explicit stroke-count assert.
+- p3_char_0289_我 (retry_1 C): 戈 X-cross apex off. CROSS_ANCHOR retry.
+- p3_char_0311_身 (retry_1 C): 身 interior 撇 too vertical; MMH-verbatim.
+- p3_char_0331_更 (retry_1 FAIL): 曰 + 攴 stack collapsed. Retry with
+  clear vertical alignment.
+
+---
+
+# X-cross topology family — deep documentation (post-B10)
+
+The chars 癶, 亥, 亦, 処, 乩, 那 all contain an X-cross topology (two
+strokes — typically pie + na, or pie + 竖 — meeting at an apex that
+should be pixel-shared). Under all G4 mechanisms tried (v8-v13), the
+X-cross fails in ~90% of attempts UNLESS the X-cross is isolated (as
+in 文 B7r rerun).
+
+**Why it fails in compound context**:
+1. MMH gives head anchors for both strokes but not the shared apex.
+2. The drawer computes pie tail and na tail from MMH endpoints;
+   these do not naturally coincide.
+3. When the X-cross sits inside a compound char (那 = 冄 + 阝, 癶 =
+   two 癶-legs) the drawer's attention is split across compositional
+   layout AND apex sharing; the apex loses.
+
+**Mechanisms tried**:
+- B7r: `CROSS_ANCHOR = (cell, x, y)` shared between pie-mid and na-mid.
+  WORKS for isolated (文). PARTIAL for compound (处 passed at retry_2,
+  但 X-cross in 犬 at retry_1 A). FAILS for embedded X-cross in
+  complex compound (癶, 那).
+- Single-Bezier through apex: attempted for 那 retry_3, cleaner-looking
+  but 阝-right's ear shape lost.
+
+**B11 tactic to try**: `stroke_variable_width` for pie+na as ONE
+continuous polyline through the apex (not two separate Beziers meeting
+at CROSS_ANCHOR). Point sequence: pie-head → apex → na-tail, with
+tapered widths at both ends and thick-mid at apex. Single polyline
+guarantees pixel-shared apex.
+
+**If B11 fails**: mark 癶, 処, 乩, 那 TERMINAL_FROZEN. Write
+`chronic/x_cross_composite.py` by hand with baked-in composite anchors
+per specific character; call from dispatched compound-char attempts.
+
+---
+
+# B11 (positions 384–433, scan 600) — best batch on record
+
+**Summary**: 17 A + 14 PASS + 8 C + 11 FAIL on 50 mains = 31/50 = 62%
+success (A-rate 34% — best single-batch A rate). Retries 3/17 = 18%
+(3 PASS: 亦, 龹, 更). Cumulative through B11: 51% success, 37 A's,
+6.7% A rate. BANK_DEVIATION channel: 29/50 uses on mains (up from B10's
+13/50); dev→A/PASS 21/29 = 72% (dev→success beats no-dev's 48%).
+
+## B11 A mains (17)
+
+| item | id | Composition | BANK_DEVIATION? |
+|------|----|-------------|-----------------|
+| 果 | 0387 | 木-inside-田 stack | no dev — base primitives |
+| 佯 | 0392 | 亻 + 羊 | DEV: yi_side_farleft |
+| 佰 | 0394 | 亻 + 百 | no dev |
+| 金 | 0395 | 人-cap + 王-like base | no dev |
+| 佴 | 0396 | 亻 + 耳 | DEV: ren_side_farleft |
+| 空 | 0397 | 宀 + 八 + 工 | no dev |
+| 併 | 0398 | 亻 + 并 | DEV: ren_side_farleft |
+| 往 | 0399 | 彳 + 主 | DEV: chi_step_farleft |
+| 佶 | 0400 | 亻 + 吉 | DEV: ren_side_farleft + kou/ji-right-half |
+| 取 | 0401 | 耳 + 又 | no dev |
+| 佽 | 0406 | 亻 + 次 | DEV: ren_side_farleft |
+| 规 | 0407 | 夫 + 见 | no dev |
+| 來 | 0412 | 木 + 两 flanking dots + 人-legs | DEV: skipped da/ren |
+| 采 | 0413 | 爫 + 木 | no dev |
+| 侈 | 0414 | 亻 + 多 | DEV: ren_side_farleft |
+| 具 | 0425 | 目/貝 stack | no dev |
+| 是 | 0429 | 日 top + 疋-legs base | DEV: skipped ri + zhi_stop |
+
+The A pattern is now stable across B9/B10/B11: MMH-verbatim + explicit
+decomposition + N-joint discipline + inline base primitives when the
+compound-primitive default anchor set doesn't match the slot MMH puts
+the component in.
+
+## B11 C mains (8) — borderline, panel could-recognize but not accept
+
+| item | id | Composition | Diagnosis |
+|------|----|-------------|-----------|
+| 物 | 0385 | 牜 + 勿 | no bank for 牜 or 勿; 勿-flag proportion off; recognizable but flag angle wrong |
+| 佻 | 0402 | 亻 + 兆 | DEV: ren_side_farleft correct; 兆's two 竖弯钩 splayed apart, mid-gap larger than GT |
+| 佾 | 0408 | 亻 + 八 + 月 | DEV: ren_side_farleft correct; 月 BC/BR compression didn't preserve inner heng spacing |
+| 受 | 0411 | 爫 + 冖 + 又 | 3-tier stack proportions off; middle 冖 too wide, 又 X-cross weak |
+| 例 | 0418 | 亻 + 歹 + 刂 | DEV: ren_side_farleft correct; 歹 interior 撇 + 点 too far apart from left 一; 刂 tight but readable |
+| 或 | 0421 | 戈 + 口 + 一 | DEV: kou_compressed; 戈 hook-angle off-target; 斜钩 tail flick under-extended |
+| 说 | 0431 | 讠 + 兑 | DEV: skipped yan_speech + kou + er_legs; 兑 3-part stack proportions off (八 top too tall) |
+| 畋 | 0432 | 田 + 攵 | no dev; 攵 pie/heng/pie/na composition — inner-cross fork looks like 又 not 攵 |
+
+Fix ideas for retry (queued B12):
+- **物** retry_1: verbatim MMH but explicit BANK_DEVIATION note that 勿
+  flag needs curve=0.15 (not 0.08); 牜 = 丿 + 二 + 竖 (4 strokes) with
+  cross-heng at s2 head under top 丿.
+- **佻** retry_1: pull 兆's two 竖弯钩 heads to inner-column x=0.30
+  (not TR); the two "wings" should mirror across s5 center vertical.
+- **佾** retry_1: 月 (BC/BR slot) needs inner heng at y=0.72 and y=0.82;
+  the two inner hengs are what distinguishes 月 from 冂.
+- **受** retry_1: 3-tier layout, y-bands: 爫 top y∈[0.05,0.30]; 冖 middle
+  y∈[0.35,0.50]; 又 bottom y∈[0.55,0.95] with X-cross apex at (C, 0.5, 0.75).
+- **例** retry_1: 歹 = 一 (top) + 夕 (bottom = pie + horizontal + point);
+  the interior mark is the horizontal-plus-point, not two more pies.
+- **或** retry_1: 戈 hook-angle: 斜钩's tail should flick UP-RIGHT after
+  the corner (not straight-out); add explicit `hook_up_after_corner=True`
+  parameter or inline.
+- **说** retry_1: 兑 = 八 (compact, 2 tiny dots) + 口 (compressed mid) +
+  儿 (bottom legs). Ensure 八's dots are ~15 px each, not tall pies.
+- **畋** retry_1: 攵 = 短横 (top) + 长撇 + 短撇 + 长捺 — 4 strokes; the
+  short 撇 is INSIDE the long 撇's belly, not below it.
+
+## B11 FAIL mains (11)
+
+| item | id | Diagnosis | Fix idea |
+|------|----|-----------|----------|
+| 疡 | 0384 | 疒 + 昜; 疒 top dot missing, interior 昜 splayed | 疒 top dot LAST; 昜 = 日 + 一 + 勿 stacked |
+| 亞 | 0386 | 亠 top too tall; interior 亚-bars misaligned | y-band discipline: 亠 y∈[0,0.15]; interior y∈[0.2,0.9] |
+| 亟 | 0388 | 3-way sandwich with 又 middle; middle 又 wrong topology | 亟 = 一 + 又+口 + 又 + 一 (7 strokes not 8) — recount |
+| 表 | 0391 | 三 top + 衣 bottom; 衣 legs collapsed | 衣 = 亠 + 长撇 + 短撇 + 竖提 + 长捺 |
+| 放 | 0403 | 方 + 攵; 方's 横折钩 body drifted | 方's 横折钩 needs shu head at (TC, 0.5, 0.15) column-aligned |
+| 转 | 0415 | 车 + 专; DEV correctly noted che.py issue, but 专's top-heng too short | 专 = 一 + 长横 + 撇折 + 点 (4 strokes) |
+| 侉 | 0416 | 亻 + 夸; 大 in 夸's top too small | 夸 = 大 (top) + 亏 (bottom); 大 needs y∈[0.1,0.5] |
+| 侌 | 0420 | 今 + 云; both no-bank; 今's 人-cap + 亅 collapsed | 今 = 亼(人-cap+一) + 亅 |
+| 侔 | 0426 | 亻 + 牟; 牟 = 厶 + 牛; 厶+牛 topology broken | 牟 = 厶 (top) + 牛 (bottom, 4 strokes) with heng crossing shu |
+| 线 | 0427 | 纟 + 戋; DEV skipped si_silk sound; 戋's斜钩 hook lost | 戋 = 一 + 戈 (with double heng) |
+| 畈 | 0430 | 田 + 反; 反's X-cross apex missing | 反 = 厂 + 又 (X-cross); apex weld at (C, 0.5, 0.7) |
+
+## B11 retries (17) — outcomes
+
+**PASS (3)**: 亦 (retry_3), 龹 (retry_2), 更 (retry_2). All used
+trajectory-diff step 0 + MMH-verbatim + inline base primitives.
+
+**TERMINAL_FROZEN (4)** — X-cross cluster after retry_4:
+- 癶 (retry_4, C) — X-cross apex still splits; single-polyline tactic
+  yielded closer read but 2 separate 癶-legs never share pixel.
+- 処 (retry_4, FAIL) — 冬 top + 几 base with interior cross; escalation
+  ladder exhausted.
+- 乩 (retry_4, C) — 卜 + 乚 + hook; borderline recognizable but three
+  mechanisms tried across 4 retries, no PASS.
+- 那 (retry_4, FAIL) — 阝-right ear shape lost across all attempts.
+
+Per B10 plan and evidence-of-exhaustion, all 4 marked TERMINAL_FROZEN
+in `retry_log.jsonl`. Future curator may unfreeze if they hand-write
+`chronic/x_cross_composite.py` per specific character.
+
+**FAIL / C retry_1s to escalate (10)**: 佚, 社, 佛, 即, 改(C), 到(C),
+事, 所, 学; also 亥 (retry_3, C — borderline; ONE more shot before
+FREEZE candidacy). Diagnoses embedded in `retry_log.jsonl` reasons.
+
+---
+
+# B12 (positions 434–483, scan 650) — regression to mean; right-half failure surface
+
+**Summary**: 20/50 mains (40%; 8 A + 12 PASS + 10 C + 20 FAIL);
+5/14 retries (36%; 0 A, 5 PASS via literal-errata, 1 C, 8 FAIL).
+Regression from B11 62% expected; A rate 16% still leads groups.
+G5 comparison at parity: G4 40%/8 A vs G5 34%/2 A → format
+(fat_line per endpoint) contributes +6 PASS and 4× A.
+亥 retry_4 FAIL → TERMINAL_FROZEN (X-cross cluster now 5:
+癶/処/乩/那/亥).
+
+## B12 A mains (8)
+
+| item | id | Composition | BANK_DEVIATION? |
+|------|----|-------------|-----------------|
+| 看 | 0435 | 手 (top, 4) + 目 (bottom, 5) | no dev — base primitives (no 手 primitive) |
+| 种 | 0437 | 禾 + 中 | no dev — no compound available |
+| 点 | 0445 | 占 + 灬 (4 dots) | no dev — base primitives |
+| 信 | 0447 | 亻 + 言 | no dev — used ren_side + kou directly (MMH placed 亻 standard-column) |
+| 美 | 0449 | 羊-top + 大-bottom | no compound for 美; base primitives |
+| 相 | 0455 | 木 + 目 | DEV: skipped ri (right-half compressed → `ri_right_half_for_compound`) |
+| 保 | 0479 | 亻 + 呆 (口+木) | DEV: skipped ren_side + kou (far-left / top-band → `ren_side_far_left_for_保` + `kou_top_band_compressed_for_呆`) |
+| 济 | 0481 | 氵 + 齐 | DEV: skipped shui (far-left → `shui_far_left_for_济`) |
+
+**Pattern**: 6 of 8 A used base-primitive inline. 2 used compound
+primitives (信 with ren_side default; 相/保/济 with slot-embedded
+BANK_DEVIATION). **信 A is notable**: first B12 A that used ren_side
+directly because MMH placed 亻 in standard column — not far-left.
+Rule: MMH-standard → use compound default. MMH-far-left → inline
+MMH-verbatim.
+
+## B12 C mains (10) — borderline recognizable, retry queue
+
+| item | id | Composition | Diagnosis | B13 fix idea |
+|------|----|-------------|-----------|--------------|
+| 畎 | 0434 | 田 + 犬 | DEV skipped quan (犬 slot); 犬 inline lost coherence — pie sweep too shallow, 大-base insufficient | 犬 = 大 (3 strokes) + 丶; inline 大 with heng-wide + pie-long + na-long + top-right 丶 in x∈[0.55, 1.0] |
+| 畏 | 0436 | 田-top compressed + 长 legs bottom | no dev; 田 top read as 曰 (too tall); bottom 撇/捺 too weak | 田 y∈[0.02, 0.40]; bottom 长: heng wide + shu spine + 撇/捺 legs at y∈[0.55, 1.0] |
+| 将 | 0439 | 爿 + 夕 + 寸 | DEV skipped jiang_side + pan; scaled 爿 too narrow; 寸 tail hook missing | 爿 = 4-stroke L-frame in x∈[0.0, 0.32]; 夕 top-right; 寸 = 一 + 竖钩 + 丶 bottom-right |
+| 疤 | 0446 | 疒 + 巴 | 疒 top-frame OK but 巴 (bottom-right slot) 竖弯钩 tail too shallow | 巴 = 3-stroke box + 竖弯钩 tail extending down; tail y∈[0.65, 1.0] |
+| 疥 | 0448 | 疒 + 介 | 疒 top-frame OK but 介 (people-cap + 丨/丶) legs collapsed | 介 = 人 (2-stroke cap) + 丨 (mid vertical) + 丶 (right slant); slot x∈[0.30, 0.90], y∈[0.40, 0.90] |
+| 度 | 0453 | 广 + 廿 + 又 | DEV skipped you_again (又 slot); 又's X-cross apex misplaced | 又 in bottom-left slot NOT bottom-center; X-cross apex at (BC, 0.35, 0.65); 廿 mid-band |
+| 癸 | 0458 | 癶 + 天 | X-cross cluster (TERMINAL_FROZEN candidate); 癶 top splayed | Skip retry — X-cross cluster; consider TERMINAL_FROZEN |
+| 亲 | 0461 | 立 + 木 | DEV skipped mu (木 bottom-slot); 木 too small, 立 vertical off-axis | 立 y∈[0.0, 0.55]; 木 y∈[0.55, 1.0]; 竖 aligned to shared central axis; 撇/捺 short |
+| 神 | 0463 | 礻 + 申 | DEV: 礻 no primitive; 申 right slot; central shu didn't span full height | 礻 left column x∈[0, 0.35], dot LAST; 申 right two-thirds; central shu y∈[0.05, 1.0] |
+| 便 | 0469 | 亻 + 更 | DEV: ren_side_far_left correct; 更 right-half strokes lost coherence | 更 = 一 + 曰 (compressed) + 长 legs; per-stroke widths explicit |
+
+## B12 FAIL mains (20)
+
+**Cluster A — 亻+X-with-unusual-right (6)**: 侯 (侯 侯-right), 侷
+(局 局-right, 尸+口+勺), 係 (系 unusual), 俅 (求 unusual), 俉 (吾 =
+五+口), 俊 (夋). All correctly BANK_DEVIATION-skipped ren_side for
+far-left; failure was in the right sub-radical (no bank primitive,
+MMH gives endpoints only). Fix idea: needs canonical primitives for
+each right-half; not queuing individual retries for B13.
+
+**Cluster B — 疒 (4 FAIL + 2 C = 6 items)**: 疣 (疒+尤), 疫 (疒+殳),
+疬 (疒+力), 疮 (疒+仓); 疤 C, 疥 C (queued for retry). Top-frame
+renders but interior loses cohesion. **Candidate for canonical
+`chronic/ne_sick.py`** if B13 retries also FAIL.
+
+**Cluster C — 皿-bottom (2)**: 皅 (白+巴), 皈 (白+反). White+X-cross
+composite. Not X-cross cluster proper but similar interior integration
+issue.
+
+**Cluster D — 3-tier / unusual (8)**:
+- 畑 (田+火): 火 X-cross not sitting right
+- 前 (兰+刂+月): 3-way stack proportions off
+- 乹 (乾-simplified): unusual char, no bank
+- 给 (纟+合): 纟 slot OK; 合 3-part stack collapsed
+- 思 (田+心): DEV: xin_bottom_slot correct; 心 bottom-3rd slot too small
+- 带 (廿+冖+巾): 3-tier stack; 冖 middle drifted
+- 城 (土+成): DEV: tu skipped for 提-bottom (土-left variant); 成's 戈 hook off
+- 俊 also here
+
+## B12 retries (14) — outcomes
+
+**PASS (5) — literal-errata mechanism, all C→PASS at retry_1**:
+- **物** R1 PASS: errata "勿 flag curve=0.15" applied literally.
+- **佾** R1 PASS: errata "月 inner heng at y=0.72 and 0.82" applied literally.
+- **例** R1 PASS: errata "歹 = 一 + 夕 (pie+horizontal+point)" applied literally.
+- **或** R1 PASS: errata "戈 hook up-right after corner" applied literally.
+- **畋** R1 PASS: errata "攵 = 短横+长撇+短撇+长捺, short pie INSIDE long pie's belly" applied literally.
+
+**C (1) — one more shot**:
+- **说** R1 C: 讠 clean-L OK, 兑 3-part stack still off (八 too tall). Queue R2.
+
+**FAIL (8)**:
+- **佻** R1 FAIL: 兆's mid-gap still splayed. Queue R2.
+- **受** R1 FAIL: 3-tier proportions still off despite y-band discipline. Chronic; defer.
+- **佚** R2 FAIL: 失 X-cross apex still weak. **R3 FINAL**.
+- **社** R2 FAIL: 礻 improved; 土 out-of-slot. **R3 FINAL**.
+- **即** R2 FAIL: 皀 spine still off. Defer (皀 no primitive).
+- **亥** R4 FAIL: X-cross apex shared-pixel attempt didn't take. **TERMINAL_FROZEN**. Cluster now 5 (癶/処/乩/那/亥).
+- **转** R1 FAIL: 车/专 no primitives; 专's 撇折 shape lost. Defer.
+- **侉** R1 FAIL: 夸's 大 too small, 亏 hook shu off. Queue R2.
+
+## B13 retry queue (14 items)
+
+**9 C-mains → retry_1** with literal fix from above table:
+畎, 畏, 将, 疤, 疥, 度, 亲, 神, 便.
+
+**3 retry escalations → retry_2**: 说 R2, 佻 R2, 侉 R2.
+
+**2 final-chance → retry_3 (TERMINAL_FROZEN if B13 fails)**: 佚 R3, 社 R3.
+
+**Not queued** (defer / freeze):
+- 亥 R4 → TERMINAL_FROZEN executed this batch.
+- 癸 C → X-cross cluster candidate; skip retry.
+- 前, 乹, 疣, 疫, 疬, 疮, 皅, 皈, 侯, 侷, 係, 俅, 俉, 俊, 城, 畑,
+  给, 思, 带, 480_俊 (B12 FAIL mains) — deferred pending canonical
+  primitives (疒, 皿, 土-左) or new mechanism.
+- 佛, 事, 所, 学, 改, 到 (B11 retry_1 stragglers) — deferred again.
+- 即 R3, 转 R2, 受 R2 — chronic; defer pending mechanism.
+
+---
+
+## B13 mains — outcome table (2026-08-05, position 700)
+
+**Summary**: 18/50 mains (36%; 6 A + 12 PASS + 11 C + 21 FAIL).
+Regression vs B11 62% best-batch confirmed; settling around 36-40%.
+G5 (G3-memory + MMH) recorded 18% / 1 A — **format effect at MMH
+parity widened** (G4 delivers ~2x PASS rate and 6x A rate vs MMH-only).
+
+**A verdicts (6)**: 俐 (0486), 俚 (0492), 适 (0493), 都 (0503),
+特 (0509), 疽 (0528).
+
+**Common thread across all 6 A's** (extends B9 5-point / B10-B11
+8-point A-recipe with NO new principle — recipe holds):
+- explicit decomposition docstring naming every sub-radical + count
+- MMH-verbatim endpoints
+- SELF_CHECK block declaring stroke_count_ok + joint classes
+- base primitives (`_anchor + fat_line/quad_bezier`) inline; compound
+  bank primitives only when defaults match MMH within ±0.15
+- N-joint natural gaps preserved
+
+**BANK_DEVIATION notes among the 6 A's**:
+- 俐: skipped ren_side + dao_side → `ren_side_far_left_for_3radical`
+  + `dao_side_tight_pair_for_3radical` (3-radical slot compression)
+- 俚: skipped ren_side → `ren_side_far_left_for_俚` (recurring pattern)
+- 适: **used** chuo_walk directly (bank primitive fit MMH within ±0.05)
+- 都: skipped ri + fu_right → `ri_bl_compressed_for_都` +
+  `fu_right_narrow_column_for_都` (3-part composition)
+- 特: no BANK_DEVIATION — bank primitives fit
+- 疽: **inline 疒 from scratch** — no bank primitive, MMH-verbatim
+  drove all 10 strokes
+
+**Recipe unchanged (0 new mechanism found this batch).** The B9-B12
+recipe continues to deliver A-quality when applied with discipline.
+
+### C-mains (11) — per-item diagnosis + retry_1 fix idea
+
+| item | verdict | diagnosis | retry_1 fix idea |
+|------|---------|-----------|------------------|
+| 怎 (0485) | C | 乍 top / 心 bottom: 心's 3 dots collapsed onto one horizontal | 心 = 卧钩 (main body) + LEFT-INSIDE dot + RIGHT dot; keep left dot at (BC, 0.30, 0.55); right dot at (BR, 0.35, 0.55) |
+| 499_能 | C | 4-part 厶+月+匕+匕: right two 匕 stack too tall | stack the two 匕 at y∈[0.10,0.50] and y∈[0.55,0.95] with clear midline gap |
+| 514_乘 | C | Standalone char; interior 3-legs of 禾 fragmented | s5-s7 (禾's 撇 + 竖 + 捺) verbatim MMH; ensure 撇 tail hits BL(0.20,0.85), 捺 tail BR(0.85,0.85) |
+| 516_疰 | C | 疒 frame OK; 主 interior top dot dropped | draw 主's top dot LAST; keep 主 in slot x∈[0.35,0.85] y∈[0.30,0.95] |
+| 519_候 | C | 亻+侯 right-half fragmented (same B12 cluster A pattern) | 侯 = 亠 + 二 + 天 stack; enforce y-bands 0.05-0.30, 0.35-0.55, 0.55-1.0 |
+| 522_疴 | C | 疒 frame OK; 可 hook missing right-side flick | 可's 竖钩 explicit: shu_gou from (C, 0.65, 0.50) → (BR, 0.35, 0.90) with hook tip (BR, 0.15, 0.70) |
+| 525_部 | C | 立+口+阝: left-column stack collapsed | 立 in y∈[0.05,0.35]; 口 in y∈[0.40,0.90] x∈[0.05,0.45]; 阝 right x∈[0.55,0.95] |
+| 526_疹 | C | 疒 frame OK; 彡 (3 pies) too parallel-flat | 彡 pies at increasing angle: p1 (C,0.4,0.5)→(BC,0.4,0.7), p2 (C,0.6,0.6)→(BC,0.5,0.8), p3 (C,0.75,0.7)→(BC,0.65,0.95) |
+| 529_热 | C | 执+灬: 灬 4 dots collapsed to line (B10 huo_four issue) | use huo_four.py primitive if available; else 4 dots at (BL,0.15,0.85), (BL,0.40,0.90), (BL,0.65,0.90), (BR,0.15,0.85) with clear spacing |
+| 530_痂 | C | 疒 frame + 加 fit but 力 flag too narrow | 力's heng_zhe_gou wider: horizontal (C,0.45,0.60)→(BC,0.85,0.65); hook (BC,0.85,0.65)→(BC,0.70,0.85) |
+| 531_速 | C | 束 body + 辶: 辶 imported chuo_walk OK; 束 interior 口 dropped | s3-s4 render 口: shu (C,0.35,0.30)→(BC,0.30,0.50), heng_zhe (C,0.65,0.30)→(BC,0.75,0.55) |
+
+### FAIL mains (21) — cluster diagnosis
+
+**Cluster A — 亻+X-with-unusual-right (7 items)**: 俑 (甬), 俘 (孚),
+俜 (甹), 俛 (免), 俞 (亼+舟-like), 除 (阝-left+余; 除 counts here for the
+阝-left slot inline), 495_复 (𠂉+日+夂). 亻 far-left inline is done
+correctly in every case (`ren_side_far_left` pattern holds); the FAIL
+is in the right sub-radical where no bank primitive exists and MMH
+gives endpoints without curve/hook/taper detail. **Same failure
+surface as B12** — dominant cluster continues.
+
+**Cluster B — 3-tier / 田-top-bottom (5 items)**: 502_畚, 506_畜,
+508_畝, 510_畟, 515_原. All have 3+ vertical bands stacking; middle
+band collapses. Rule: enforce y-band assertions for each layer
+before rendering.
+
+**Cluster C — 疒-interior FAIL (2 items)**: 518_疱, 520_疳.
+See "疒 cluster follow-up" section below — this is the KEY finding
+of B13.
+
+**Cluster D — enclosing/wrapping compounds (4 items)**: 501_家 (宀
++豕), 511_海 (氵+每), 523_被 (衤+皮), 521_验 (马-left compressed +
+佥). Composition-scale mismatch; interior slot too crowded.
+
+**Cluster E — standalone-complex (3 items)**: 498_俞, 513_通 (辶+甬),
+532_亳. Not radical-radical decomposition — single tall stack whose
+MMH endpoints don't guide interior curve enough.
+
+### 疒 cluster follow-up (KEY B13 FINDING)
+
+**B12 疒 items** (6 total: 疣 疫 疬 疮 疤 疥): **0 PASS**, 4 FAIL + 2 C.
+Flagged as candidate for `chronic/ne_sick.py` pending B13 confirmation.
+
+**B13 疒 items** (8 total): 疰 疱 疳 疴 疸 疹 疽 痂.
+- **1 A**: 疽 (0528)
+- **1 PASS**: 疸 (0524)
+- **4 C**: 疰, 疴, 疹, 痂
+- **2 FAIL**: 疱, 疳
+
+**Non-FAIL rate: 6/8 = 75%** (vs B12's 33%). A-verdict on 疽 confirms
+the 5-stroke inline frame CAN reach reference quality with MMH-verbatim
++ base primitives. Two C-mains have identifiable, per-item interior
+fixes (see errata table above).
+
+**Curator decision: DO NOT promote `chronic/ne_sick.py` yet.** Rationale:
+- The improvement is evidence the current mechanism (inline + MMH-
+  verbatim) works when the interior slot is well-modeled per-character.
+- A canonical baked frame with fixed slot parameters would reintroduce
+  exactly the standalone-scale problem `ren_side_far_left` avoids by
+  staying per-item MMH-verbatim.
+- The 2 FAILs (疱=包 with 5-stroke 巳 inner; 疳=甘 with 2-vertical grid)
+  are interior-composition issues, not frame issues.
+- Codify `ne_sick_top_left_frame_for_*` as a **named pattern** (like
+  `ren_side_far_left_for_*`), NOT a variant primitive.
+
+**Named pattern registration**: `ne_sick_top_left_frame_for_*`
+(new codification). Precedent: 6 B13 疒 items successfully inlined
+the 5-stroke frame (dot + top-heng + long-pie + inner-dot + inner-ti);
+inner-slot handling per-character.
+
+### Retry outcomes (14)
+
+**A (3)** — strong recovery, all R1 via literal errata:
+- **畎 R1 A**: 犬 = 大 + 丶 with 大 upper y-band applied literally.
+- **将 R1 A**: 爿 as 4-stroke L-frame x∈[0.0, 0.32] literal.
+- **度 R1 A**: 又 X-cross apex at (BC, 0.35, 0.65) bottom-left slot literal.
+
+**PASS (2)**:
+- **亲 R1 PASS**: 木 y∈[0.55, 1.0] + central 竖 shared axis literal.
+- **说 R2 PASS**: 兑 3-part stack literal; 八 top ~15px each — worked
+  on R2 via literal fix, not R1's directional.
+
+**C (3)**:
+- **疤 R1 C**: 疒 frame OK; 巴's 竖弯钩 tail y-band OK but too narrow.
+- **疥 R1 C**: 疒 + 介 done per literal; 介's 撇/捺 legs slightly off angle.
+- **便 R1 C**: 亻 far-left OK; 更 right-half stroke widths applied but
+  still too uniform. Retry mechanism plateaued.
+
+**FAIL (6)**:
+- **畏 R1 FAIL**: 田 y-band applied but 长 legs collapsed to short.
+- **神 R1 FAIL**: 礻 dot placed LAST OK; 申 central shu spans full
+  height OK; but 申's inner heng/shu proportions off. Errata was
+  directional not literal.
+- **佻 R2 FAIL**: 兆's heads pulled to x=0.28-0.32 but center-column
+  spacing collapsed. 3rd attempt would be R3 — chronic.
+- **侉 R2 FAIL**: 大+亏 y-band applied but 亏's hooked-shu still weak.
+  Chronic; freeze at R2 unless mechanism changes.
+- **佚 R3 FAIL** → **TERMINAL_FROZEN**. X-cross apex in 失 chronic.
+  Cluster now 6: 癶, 処, 乩, 那, 亥, 佚.
+- **社 R3 FAIL** → **TERMINAL_FROZEN**. 礻 defensive dot works; 土
+  right-half slot MMH-verbatim done but 土 still slouches into 礻 slot.
+  礻-compound cluster candidate for future canonical work.
+
+**Literal-errata retry mechanism confirmed strong (5/14 R1
+graduations)**. All A/PASS retries applied a LITERAL geometry fix.
+The 6 FAILs mostly had directional errata (proportions off, still
+weak) — not literal — reaffirming B12 finding.
+
+## B14 retry queue (12 items)
+
+**5 C-mains → retry_1** (with literal fix from B13 errata table):
+1. **怎** (0485): 心 = 卧钩 + LEFT-INSIDE dot + RIGHT dot (literal 3-part).
+2. **能** (0499): stack two right 匕 at y∈[0.10,0.50] and y∈[0.55,0.95].
+3. **乘** (0514): 禾 s5-s7 verbatim MMH; 撇 tail (BL,0.20,0.85), 捺 tail (BR,0.85,0.85).
+4. **候** (0519): 侯 = 亠+二+天 stack; y-bands 0.05-0.30, 0.35-0.55, 0.55-1.0.
+5. **热** (0529): 灬 4 dots at (BL,0.15,0.85), (BL,0.40,0.90), (BL,0.65,0.90), (BR,0.15,0.85).
+
+**5 C疒-cluster → retry_1** (literal interior fix, testing named-pattern discipline):
+6. **疰** (0516): 主 top dot LAST; 主 in slot x∈[0.35,0.85] y∈[0.30,0.95].
+7. **疴** (0522): 可's 竖钩 (C,0.65,0.50)→(BR,0.35,0.90) hook (BR,0.15,0.70).
+8. **疹** (0526): 彡 pies at graduated angle (spec above).
+9. **痂** (0530): 力 heng_zhe_gou wider — H:(C,0.45,0.60)→(BC,0.85,0.65); hook to (BC,0.70,0.85).
+10. **速** (0531): 束's interior 口 explicit (spec above).
+
+**2 retry escalations → retry_2**:
+11. **疤** (retry_2): 巴 竖弯钩 tail wider y∈[0.60,1.0], corner at (BR,0.80,0.60).
+12. **疥** (retry_2): 介 legs (BL,0.55,0.85) + (BC,0.15,0.85) with pie/dot pair explicit angle.
+
+**Deferred / not queued**:
+- **便, 神** (C, directional errata plateau) — defer 1 batch.
+- **佻 R3, 侉 R3, 畏 R2** — chronic; defer pending mechanism.
+- **All 21 FAIL mains**: defer to future batch. Cluster A (亻+X unusual-right)
+  needs a right-half taper table (form_catalog extension); Cluster B
+  (3-tier) needs y-band assertion mechanism; Cluster E (standalone-
+  complex) needs mechanism (no clean primitive fits).
+- **佚, 社**: TERMINAL_FROZEN (R3 executed this batch).
+- **B12/B11 unresolved (佛, 事, 所, 学, 改, 到, 即, 转, 受)**: continue defer.

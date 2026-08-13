@@ -1279,3 +1279,997 @@ v8's format unlock:
 **Format ceiling — skip**:
 - 书, 引, 发, 丱, 乎, 出, 刅 — hooks/cursive/scale collapses that don't
   admit a stable inline recipe.
+
+
+---
+
+## B7 fails (positions 351–400) — main-curriculum
+
+### p3_char_0184_业
+5-stroke top-heavy char; two side pies + two side verticals + bottom heng. Drawer rendered but proportions collapse (2/3 judges NO). Fix: verify the two verticals actually touch bottom heng and side pies form clear ∨ opening.
+
+### p3_char_0187_仡
+亻+乞 compound. Right 乞 (乙+heng+short pie) is not in bank; drawer hand-rendered but 乙 hook shape failed. Fix: inline 乙 as one continuous heng→shu→sweep-right stroke, not 3 segments.
+
+### p3_char_0190_加
+力+口 L-R. Drawer inlined 力 (横折钩 + 撇) with draw_kou. Composition read but 力's hook geometry was off (hook tail didn't kick left). Fix: 横折钩 needs clear left-flick at hook end.
+
+### p3_char_0191_仫
+亻+幺. 幺 (small pie + 撇折 + 点) rendered as unconnected loops. Fix: 幺 top-loop must close cleanly; the 折 mid-stroke needs a sharp elbow.
+
+### p3_char_0192_代
+亻+弋. 弋's 斜钩 (diagonal-shu-hook) is the defining stroke and drawer's arc + hook combination was too gentle. Fix: 斜钩 must have a distinct upward hook flick at the bottom-right terminus.
+
+### p3_char_0193_癶
+Bilateral radical: mirror halves. Drawer attempted but left half's long 撇 and right half's long 捺 didn't converge at the correct apex point. Fix: use kiss_apex (or hand-compute) for the shared upper-center pixel; mirror-halve symmetry matters.
+
+### p3_char_0194_世
+5-stroke horizontal-and-vertical grid. Drawer inlined top heng + 3 shus + wrap-around bottom. Fix: the rightmost vertical must turn INTO the bottom heng as a 竖折; drawing 4 disconnected strokes fails the topology.
+
+### p3_char_0196_东
+Cursive/simplified char. Drawer's inline decomposition (5 short strokes) didn't reproduce GT's crossing 十 + 小 layout. Fix: 东 = short top pie + long heng + central shu-gou + two side dots — recompose.
+
+### p3_char_0197_矢
+Arrow: top pie + top heng + heng + long pie + long na. Drawer produced 大-family X-crossing at bottom; symmetric X apex issue similar to 大. Fix: apex needs to sit ON the middle heng, not above.
+
+### p3_char_0198_立
+5-stroke stack: top dot + heng + heng + two side legs. Drawer got the stack but bottom heng landed too high; dots/legs proportion off. Fix: bottom heng at y≈240; legs at y=180..235 span.
+
+### p3_char_0201_冉
+5-stroke frame with 横折钩 + interior shu + hengs. Drawer's inline 横折钩 hook was too small. Fix: 冉's 横折钩 has a distinct tall right-shu descending, not a tiny elbow.
+
+### p3_char_0203_冊
+Twin-frame + crossbar. Drawer used two 冂 frames but the crossbar didn't align through both frames at same y. Fix: single long heng passing through both frames at y≈150.
+
+### p3_char_0204_由
+Box + protruding central shu (below only). Drawer rendered box + shu but shu didn't clearly protrude below box. Fix: shu extends from y=90 through box to y=270 (well below box floor y=210).
+
+### p3_char_0208_北
+Two-halves L-R. Drawer adapted bi_char but swapped top stroke; result reads scattered. Fix: 北 left = 短横+竖+提 (三-stack tilted), right = 撇+竖弯钩 (人-legged); use bi_char verbatim with correct signs.
+
+### p3_char_0209_冎
+Complex 冋-like frame with interior verticals + hook. Drawer inlined but the 横折钩 got flattened. Fix: reduce interior clutter — 冎 is essentially 冋 + short interior 竖.
+
+### p3_char_0211_冯
+冫+马 L-R. Drawer inlined thin 马 (3 strokes) but 马's 竖折折钩 shape is too complex for pure line segments. Fix: 马 needs a proper 3-corner turn — inline as polyline with 4 corners not 3.
+
+### p3_char_0212_处
+5-stroke: 夂-top + 卜. Drawer's 夂 was correct but 卜 (bottom-right dot pair) landed inside the 夂 envelope. Fix: 卜 sits BELOW the 夂 envelope, dot to the right of a small central shu.
+
+### p3_char_0213_処
+処 = 几+夂 (几 outside, 夂 inside). Drawer inlined but the 几 envelope's top-left corner was open. Fix: 几 top must be one continuous 横折弯钩; left leg starts from that horizontal.
+
+### p3_char_0214_记
+讠+己. Drawer had no bank; hand-rendered but 己's 竖弯钩 body was too small. Fix: 己 fills right 60% width; its 竖弯钩 sweeps wide.
+
+### p3_char_0216_失
+5-stroke similar to 矢 but with different top. Drawer used pie + heng + heng + pie + na; bottom X apex same failure as 矢. Fix: same as 矢 — apex on middle heng.
+
+### p3_char_0217_凹
+Rectangular notch. Drawer used continuous outline with 8 segments (v8 signature freedom). Read but proportions collapsed. Fix: the notch depth ≈ half box height; use exact GT coords y=100..160 for notch bottom.
+
+### p3_char_0218_刍
+5-stroke: small pie + curved top 横折 + interior 横 + long 横. Drawer's 折 was too gentle. Fix: 折 needs a sharp right-angle elbow, not a curve.
+
+### p3_char_0219_在
+6-stroke: 横+撇+竖+士. Drawer rendered but 士 bottom-right component too small. Fix: 士 (3 strokes) is 30% of char width, sits in lower-right; heng-shu-heng stack with clear widths.
+
+### p3_char_0220_丢
+6-stroke: 千-top + 一 + 厶. Drawer's 厶 (bottom loop) was open. Fix: 厶 must close on itself — inline as curved bezier ending at start.
+
+### p3_char_0222_乑
+Three-人 radial: heng-hook + central shu + long left pie + bottom-right 人 (pie+na). Drawer positions off; reads as 4 scattered marks. Fix: this is 众-like — central shu is the spine, pies fan out symmetrically.
+
+### p3_char_0223_地
+土+也. Drawer's 也 rendered as scattered strokes (right rectangle + divider + hook), not as one 竖弯钩 envelope. Fix: 也 = 横 + 竖 + 竖弯钩 where the 竖弯钩 forms the whole right envelope (per drawer_memory 亻+也 recipe).
+
+### p3_char_0224_乓
+丘+丿-like. Drawer's top-丘 rendered but bottom-right 丿 sweep was too short. Fix: bottom-right stroke is a long 撇 or 捺 (乓 has 撇 sweep-out-lower-right).
+
+### p3_char_0225_而
+6-stroke: heng + heng-zhe + 3 interior shus. Drawer rendered but interior shus didn't visually connect to top frame. Fix: shus start ON the underside of the top heng-zhe, not floating below.
+
+### p3_char_0226_乔
+6-stroke: 夭-top + 小-bottom. Drawer's top 夭 pie+na crossing failed like 大. Fix: 夭 apex through top heng; bottom 小 needs 3 clear separated strokes.
+
+### p3_char_0227_年
+6-stroke with multiple hengs on a central shu. Drawer stacked hengs OK but the central shu didn't extend clearly through all hengs. Fix: shu from y=60 to y=260 passing through 3 hengs.
+
+### p3_char_0229_自
+6-stroke: 撇 + shu + heng-zhe + 3 interior hengs. Drawer's interior hengs were unevenly spaced. Fix: 3 interior hengs at y=140, 175, 210 (equal spacing).
+
+### p3_char_0231_会
+6-stroke: 人-roof + 云-body. Drawer's roof pie+na crossing failed at apex; 云 body was tiny. Fix: roof pie+na is wide (spans full width); 云 sits under it at 60% scale.
+
+### p3_char_0232_亙
+亘 variant. Drawer's middle 日-like body was rectangular but not curved. Fix: 亙 middle body is a rounded oval, not a rectangle — use bezier for the 亙-belly.
+
+### p3_char_0233_那
+7-stroke L-R: 冄-like left + 阝 right. Drawer's left was too tall vs right. Fix: L-R at 0.55/0.55; right 阝 is compact 2-stroke.
+
+
+## B7r fails (v9 reruns that still FAILed)
+
+### p2_radical_028_人__retry_5__G3__rerun
+V9 rerun FAIL despite correct visual diagnosis (apex gap + uniform weight + straight legs). Hand-render still short. Two-stroke X-crossing calligraphy is beyond callable-Python line-primitive expressiveness. Terminal-freeze AGAIN.
+
+### p2_radical_030_入__retry_5__G3__rerun
+V9 rerun FAIL. Drawer correctly identified topology (捺 emerges from side of 撇, not apex) but hand-render didn't reproduce hood. Terminal-freeze AGAIN.
+
+### p2_radical_011_匕__retry_4__G3__rerun
+V9 rerun FAIL. Drawer diagnosed 撇 crossing + upward hook + top horizontal missing; render addressed some but hook + horizontal alignment still off.
+
+### p3_char_0154_他__retry_1__G3__rerun
+V9 rerun FAIL. Drawer correctly rejected rectangle-collapse of 也 but hand-rendered 也 still reads as compound of small strokes rather than one envelope. 也 sub-recipe unsolved.
+
+### p3_char_0173_仔__retry_1__G3__rerun
+V9 rerun FAIL. Drawer correctly rejected liao_char's shoulder-blob and used inline thin ink but 子's 横 width + 亻 shu length still off. Bank #122 zi_char never actually invoked — try it verbatim on next retry.
+
+### p3_char_0176_平__retry_1__G3__rerun
+V9 rerun FAIL. Drawer correctly identified top-tent vs 丷-pair issue but the reconstruction still didn't cleanly render 丷 + short heng + main heng + shu descending only below main heng.
+
+### p3_char_0134_化__retry_1__G3__rerun
+V9 rerun FAIL. Drawer diagnosed 亻 shu disconnected + 匕 too small; render extended 匕 but hook still degenerate. 匕 sub-radical unsolved → 化 blocked.
+
+
+
+## Batch B8 (2026-07-27, positions 401–450) — 41 main FAILs
+
+Compact per-item diagnosis. Full attempt PNGs at
+`attempts/p3_char_02XX_<char>/01_<char>.png`. Common patterns discussed
+in the "Fail-mode clusters" section immediately after this list; drawer
+should read the cluster analysis before per-item.
+
+### p3_char_0234_亚 (yà)
+Symmetric 6-stroke block. Attempt has correct top/bottom heng but the
+inner "vertical + wing + vertical" is muddled — the pair of arms reads
+as two verticals rather than the mirror slant. Inline PIL, no bank.
+
+### p3_char_0235_后 (hòu)
+Attempt has 厂 top + 口 bottom but the middle 一 (heng) is missing or
+merged with the upper 撇, leaving the wrong 5-stroke silhouette.
+
+### p3_char_0236_亥 (hài)
+6-stroke top-down: 亠 top + 幺 middle-like + 人-swirl bottom. Attempt
+reads as a stack of 3 disconnected pieces; the diagonal cross-strokes
+in the middle collapse into parallel diagonals.
+
+### p3_char_0237_行 (xíng)
+Left 彳 + right 亍. Attempt renders both halves too thin and too
+similar; the right 亍's short-heng-over-long-heng-over-shu-gou is
+compressed into a single vertical, losing the double-heng signal.
+
+### p3_char_0238_亦 (yì)
+Top 亠 + bottom 4-arm splay. Attempt gets 亠 but the 4-arm splay
+reads as 亅+丶+丶+丿 rather than the wider mirror arms + inner shu +
+dot. Arm-length ratios wrong.
+
+### p3_char_0240_仰 (yǎng)
+亻 + 卬 (right). Attempt reuses ren_pang left; right 卬 inline is
+missing its distinctive top-hook flick — reads as a plain 卩.
+
+### p3_char_0241_如 (rú)
+女 (left, inline) + 口 (right). 女's 撇点 fold is too shallow; the
+right 口 is centered too low. Reads as ambiguous compound.
+
+### p3_char_0243_成 (chéng)
+7-stroke with 戈-body + 丿 + interior 一. Attempt renders 戈's 斜钩
+as a near-straight diagonal with a stubby hook; the interior 一 is
+missing. Format ceiling on 斜钩 arc.
+
+### p3_char_0244_仳 (pǐ)
+亻 + 比 (right). Right 比 inline reads as two blocks side-by-side
+rather than the mirrored 匕+匕 pair. 匕 sub-radical remains unsolved
+(see TERMINAL_FREEZE).
+
+### p3_char_0246_仵 (wǔ)
+亻 + 午 (right). 午's top 撇 too long, second 一 too short; the
+overall right-side proportion reads as 千 not 午.
+
+### p3_char_0247_军 (jūn)
+宀 top + 车 bottom. 车 body inline is over-simplified — the interior
+crossbar geometry (two 横 crossed by one 竖) reads as a single tic-tac.
+
+### p3_char_0248_伄 (diào)
+亻 + 弔 (right). 弔's 弓 body inline is degenerate — the three
+horizontal loops don't render as three tiers, and the central 竖 (or
+弔's 丨) doesn't pierce cleanly.
+
+### p3_char_0251_当 (dāng)
+Simplified 5-stroke with 小 top + 彐-like body. Attempt's top 3 dots
+read as symmetric but GT has the middle dot LONGER/skewed. Bottom
+彐-frame proportion wrong.
+
+### p3_char_0252_伊 (yī)
+亻 + 尹 (right). Right 尹 inline is short one horizontal — reads as
+彐 not 尹. Extra 撇 missing.
+
+### p3_char_0253_好 (hǎo)
+女 + 子. Both sub-radicals inline; drawer noted "shorten dot bounce"
+in comments but the 女's 撇点 fold still doesn't read as a V; and 子's
+shu-hook is too weak. Same failure mode as B7's 妃/她 fails.
+
+### p3_char_0254_伎 (jì)
+亻 + 支 (right). 支's top 十 + bottom 又 inline compress into a plus
++ triangle; 又's 撇/捺 spread too wide.
+
+### p3_char_0255_此 (cǐ)
+止 (left) + 匕 (right). 匕 unsolved → right side of 此 fails
+identically to 仳/比. Left 止 is passable but the pair reads as
+disconnected halves rather than L-R composition.
+
+### p3_char_0256_伐 (fá)
+亻 + 戈 (right). Same 斜钩 arc issue as 成 — the diagonal is straight
+and the hook is stubby.
+
+### p3_char_0258_伕 (fū)
+亻 + 夫 (right). 夫's X-crossing (top 一 + long 一 + 撇 + 捺 crossing)
+sits in the same format-ceiling family as 大/矢/失/乔. Attempt
+inlines but 撇 and 捺 don't kiss visibly.
+
+### p3_char_0260_伙 (huǒ)
+亻 + 火 (right). 火's mirror-dot + big X inline reads as 4 straight
+diagonals; the fire silhouette is lost.
+
+### p3_char_0261_再 (zài)
+6-stroke box with top-heng crossing + interior 冂 + long central shu.
+Attempt has the wrong proportions — top heng too short, box too tall,
+central shu doesn't protrude below.
+
+### p3_char_0263_她 (tā)
+女 + 也. 也 sub-radical unsolved (same as 他 v9 rerun fail); the
+right side reads as scribble of 3 arcs. 女 passable.
+
+### p3_char_0264_伢 (yá)
+亻 + 牙 (right). 牙 inline is degenerate — the 竖-with-hook + 二 +
+short-撇 topology doesn't emerge; reads as a hash mark.
+
+### p3_char_0265_名 (míng)
+夕 top + 口 bottom. dxi bank primitive used at compressed scale; the
+attempt has 夕 too tall AND 口 too small — total silhouette reads as
+2-stack rather than 名's fluid dxi-over-kou.
+
+### p3_char_0266_伥 (chāng)
+亻 + 长 (right). 长's 斜钩 + 捺 + interior strokes inline — the
+右 side reads as an over-thin cross rather than 长's characteristic
+sweeping bottom.
+
+### p3_char_0267_西 (xī)
+6-stroke with top 一 + 冂 body + interior 儿-like. Attempt collapses
+the interior into two diagonals; the top 一 sits AT the frame instead
+of ABOVE.
+
+### p3_char_0268_伦 (lún)
+亻 + 仑 (right). 仑's 人-top + 匕-body inline is doubly-affected by
+the X-crossing AND 匕-hook ceiling issues.
+
+### p3_char_0269_合 (hé)
+Top 人 (or 亼) + 一 + 口. Attempt reads as 合 but the 人-roof kiss is
+missing (apex-kiss format ceiling); the roof looks like two disjoint
+diagonals. See TERMINAL_FREEZE cluster.
+
+### p3_char_0270_伧 (cāng)
+亻 + 仓 (right). 仓's inline top-人 + 巳-like body — same apex-kiss
+ceiling.
+
+### p3_char_0271_老 (lǎo)
+耂 top + 匕 bottom. 匕 unsolved. Even though耂 (bank lao_radical) is
+mastered, the drawer chose to inline it fresh for "thin uniform" per
+P12 and the fresh render didn't match the bank's mastered geometry.
+
+### p3_char_0272_伪 (wěi)
+亻 + 为 (right). 为 inline's four-part structure (top-dot + top-撇 +
+mid-envelope + bottom-dot) is compressed and reads as scribble.
+
+### p3_char_0273_次 (cì)
+冫 (left, bank san_dian_shui-like) + 欠 (right). 欠's top 撇 + 横钩 +
+撇 + 捺 has the same apex-kiss ceiling as 人-family.
+
+### p3_char_0274_伫 (zhù)
+亻 + 宁 (right). 宁 inline: 宀 top + 丁 bottom. 宀-top's cross-shape
+lid doesn't render cleanly; 丁's shu-gou too thin.
+
+### p3_char_0275_任 (rèn)
+亻 + 壬 (right). 壬 inline three-tier hengs + shu reads as 王 (missing
+the 撇 top).
+
+### p3_char_0276_佤 (wǎ)
+亻 + 瓦 (right). 瓦's compound hooks + envelope + interior dot inline
+— the two hooks don't disambiguate cleanly.
+
+### p3_char_0277_先 (xiān)
+6-stroke with 土-like top + 儿 bottom. Attempt fails at 儿's
+er_ren-kiss geometry (see xiong_char PASS for the recipe of REJECTING
+er_ren bank and rendering thin) — same cluster.
+
+### p3_char_0278_齐 (qí)
+Simplified: 亠 top + 4-diagonal splay bottom. Attempt's bottom four
+diagonals don't converge upward — reads as 4 parallel lines.
+
+### p3_char_0279_色 (sè)
+Top 刀-like curl + 巴 bottom. 巴 inline's continuous envelope +
+interior hengs is degenerate; the curl top reads as two dots.
+
+### p3_char_0280_兆 (zhào)
+Mirror-symmetric 4-arm splay + interior verticals. Same mirror-arm
+problem as 亦/齐/亦: the mirror pair doesn't render as mirror.
+
+### p3_char_0281_设 (shè)
+讠 (left) + 殳 (right). Both sides inline. 讠's dot + heng-shu-ti
+compresses; 殳's top 几-like + 又 bottom compresses. Reads as scribble.
+
+### p3_char_0283_传 (chuán)
+亻 + 专 (right). 专's compound zig-zag + interior + 寸-bottom is a
+5-stroke right side that doesn't decompose cleanly; the interior
+horizontal is missing.
+
+## Fail-mode clusters — B8
+
+Of 41 main fails:
+- **19 are 亻 + right-component** (仰, 仳, 仵, 伄, 伊, 伎, 伐, 伕, 伙,
+  伢, 伥, 伦, 伧, 伪, 伫, 任, 佤, 传, 伧). The 亻 left is well-handled
+  (bank ren_pang at compressed scale) — the failure is always in
+  the RIGHT component. Root causes vary:
+    - Right needs a sub-radical not in bank (匕, 也, 牙, 尹, 弔, 支,
+      戈-arc, 长-arc, 瓦, 为, 壬 — 11 items).
+    - Right needs X-crossing / apex-kiss (夫, 火, 欠, 大-family — 4 items).
+    - Right is bank-mastered but drawer inlined fresh unnecessarily
+      (仝-like 亻+bank patterns — 2 items).
+
+- **6 are X-crossing / apex-kiss family** (成, 伐, 合, 次, 伧, 伙 — plus
+  the 4 亻-family items above). Continues the 大/矢/失/乔/会 pattern
+  observed in B7. `xiong_char` PASS (B8 entry #212) shows the recipe
+  (thin inline + reject bank er_ren) DOES work on the 兇 case but the
+  strokes need to sit in a specific 儿-context to read.
+
+- **5 are mirror-symmetric splay** (亚, 亦, 齐, 兆 + 亦 counted twice).
+  4-arm outward mirror splay. No bank support; inline attempts always
+  degenerate to "4 parallel diagonals."
+
+- **4 are frame-with-interior** (再, 西, 军, 色). Wrong interior
+  aspect ratio — the frame is right, the interior element is placed
+  at wrong scale/offset. `hui_char` PASS (回, entry #210) shows the
+  recipe works when both frame AND interior have bank mastered
+  aliases; fails when either must be inlined fresh.
+
+- **3 are unsolved-sub-radical** (她, 好, 亥). Compound needs 也 or
+  子's inline recipe; sub-radicals still don't render.
+
+- **4 miscellaneous** (亚, 后, 亥, 251_当). Frame/proportion.
+
+The dominant pattern is **compound with an unsolved right-side
+sub-radical**. This confirms drawer_memory's B7 note that "右 side
+sub-radicals not in bank" is the primary B8 content gap. Adding bank
+entries for 匕 / 也 / 尹 / 牙 / 支 / 戈-arc would unblock ~15 of B8's
+fails on a hypothetical B8-rerun. Under v10 trajectory-view, drawers
+that see multiple failed 亻-family attempts may triangulate the right
+side better; but the sub-radical itself remains the ceiling.
+
+## Batch B9 (2026-07-30, positions 451–500) — 36 main FAILs, 0 A
+
+**B9 pass rate: 14/50 = 28% (down from B8's 18%; still well below G4's
+40% and 11 A verdicts on the same batch).** Item-pool composition
+remains 亻-family heavy (positions 451–500 stay in the 伊/伍-band of
+Phase-3 characters) plus a run of 7-stroke compound chars.
+
+### Cluster A — 亻 + right-component (still the dominant fail mode)
+
+12 of 36 fails follow the exact same pattern noted in B8: bank
+`ren_pang` (L side) works fine; the RIGHT sub-radical is not in bank
+and inline rendering degenerates. New in B9:
+
+### p3_char_0297_你 (nǐ) — 亻 + 尔
+尔 = the 3-stroke arrow + 小 bottom. Inline reads as scribble; the
+top pie/heng joint doesn't disambiguate from 你 vs 尓 vs 尒.
+
+### p3_char_0312_伲 (ní) — 亻 + 尼
+尼 has no bank primitive; the 尸 top (bank shi_radical) + 匕-bottom
+composition fails on the 匕 (匕 is TERMINAL_FROZEN).
+
+### p3_char_0313_位 (wèi) — 亻 + 立
+立's top dian + 3-line body renders correctly BUT the panel does not
+accept the character — likely 亻+立 spacing plus dian orientation.
+
+### p3_char_0314_伶 (líng) — 亻 + 令
+令 = 人 top (X-crossing) + 冫-like middle + 亅 hook. Top X-crossing
+alone is enough to fail (same format ceiling as 大/夭/矢).
+
+### p3_char_0316_伺 (sì) — 亻 + 司
+司 has 3-stroke enclosure + interior — no bank; inline enclosure
++ inner 一+口 degenerates.
+
+### p3_char_0318_伽 (jiā) — 亻 + 加
+加 = 力 + 口 side-by-side. 力 (bank #NA — TERMINAL) + kou identity fails
+because 力's hook doesn't compose cleanly with kou's box at reduced
+scale.
+
+### p3_char_0320_伾 (pī) — 亻 + 丕
+丕 = 一 + 不 (with double-crossing 撇+捺). Inline sinks into 大-family
+X-crossing failure.
+
+### p3_char_0328_佈 (bù) — 亻 + 布
+布 = 𠂉 (short pie + heng) + 巾. 巾 has no bank; inline 冂+shu fails
+on the enclosure aspect.
+
+### p3_char_0330_佉 (qū) — 亻 + 去
+去 = 土 top + 厶 bottom (bank tu.py + 厶 is TERMINAL). 厶 unsolved
+sub-radical.
+
+### Cluster B — enclosure + interior with un-mastered interior
+
+### p3_char_0298_丽 (lì) — top 一 + 2 mirrored small boxes (冂+内-dot ×2)
+Mirror-symmetric enclosure pair. Same 4-arm mirror problem as
+亚/齐/兆 in B8 (mirror pair doesn't render as mirror).
+
+### p3_char_0309_两 (liǎng) — top 一 + envelope 冂 + interior 从
+从 (twin 人) inside 冂 needs X-crossing rendering ×2. Format ceiling.
+
+### p3_char_0317_员 (yuán) — 口 top + 贝 bottom
+贝 unsolved sub-radical; bottom's box + splay reads as 见 rather than 贝.
+
+### Cluster C — cursive envelope with hook (unsolved family)
+
+### p3_char_0311_身 (shēn) — narrow-tilted body + top 撇 + big descender 撇
+Body-with-tilted-verticals unsolved; the big descending 撇 sweeps
+beyond canvas.
+
+### p3_char_0300_乱 (luàn) — 舌 + 乚 (shu_wan_gou)
+舌 top's 千-like + kou-bottom composition doesn't read; 乚 works.
+
+### p3_char_0288_凫 (fú) — 乌 top + 几 bottom
+乌 unsolved (cursive envelope + interior dot). Bank ji_char below
+works; top does not.
+
+### p3_char_0319_听 (tīng) — 口 + 斤
+斤 unsolved sub-radical. Bank kou on left; inline 斤 on right degenerates.
+
+### p3_char_0321_把 (bǎ) — 扌 + 巴
+巴 unsolved. Bank shou_pang works; 巴 inline continuous envelope +
+interior heng ambiguous vs 已/己/巳.
+
+### p3_char_0323_形 (xíng) — 开 + 彡
+开 has no bank; inline reads as 二+两-shu. Bank shan_radical works
+on the right.
+
+### p3_char_0325_状 (zhuàng) — 丬 (left) + 犬 (right)
+Both unsolved. 丬 TERMINAL; 犬 has 大-family X-crossing + dot.
+
+### p3_char_0327_识 (shí) — 讠 + 只
+讠 TERMINAL; 只 = 口+八 works partially but 讠 sinks it.
+
+### p3_char_0331_更 (gèng) — top 一 + 曰-box (with mid bar) + 撇 + 捺
+Bottom X-crossing (撇+捺 from box corners) — same 大 family. Inline
+fresh; 撇/捺 don't meet cleanly at box base.
+
+### p3_char_0333_条 (tiáo) — 夂 top + 木 bottom
+夂 unsolved (TERMINAL). 木 works on bottom but 夂 top is scribble.
+
+### Cluster D — miscellaneous first-time fails
+
+### p3_char_0284_龹 (yǎn) — rare char: 丷+两hengs+shu+八 stacked
+No decomposition maps to bank; inline fresh degenerates on the
+stacked geometry.
+
+### p3_char_0285_师 (shī) — 帅-like left + 帀 right
+Left is compound short heng + long pie-shu; right is 一+巾. Both
+un-mastered. Reads as scribble.
+
+### p3_char_0286_冱 (hù) — 冫 + 互
+互 unsolved compound (two hengs + zigzag). 冫 (bank bing) works.
+
+### p3_char_0289_我 (wǒ) — 7-stroke cursive with 戈-arc
+Same 斜钩 arc problem as 成/伐/戈-family in B8. Format ceiling.
+
+### p3_char_0292_甹 (pīng) — 由 top + 亏-like bottom
+由 top box shape not directly in bank (shen_extend closest); bottom
+亏-like reads as 与.
+
+### p3_char_0293_来 (lái) — top heng + 丷 + long heng + shu + pie + na
+Bottom X-crossing (撇+捺) — same 大 family format ceiling.
+Additionally 丷 dots require the mirror-dot recipe.
+
+### p3_char_0295_时 (shí) — 日 (bank ri) + 寸 (bank cun)
+BOTH sides have bank aliases. This should have PASSed as an identity
+composition (like 佃 or 但). Diagnosis: drawer inlined 寸 instead of
+calling `cun.draw_cun`; the fresh 寸 rendered without hook. **Bank-
+composition retrieval failure — not a format ceiling.** Retry candidate
+for B10.
+
+### p3_char_0296_串 (chuàn) — 2 stacked 口 + long central 竖
+Bank kou ×2 + central shu — SHOULD have worked. Diagnosis: drawer
+made the boxes too small (0.42 scale) and the shu doesn't visibly
+protrude above/below. Retry candidate for B10.
+
+### p3_char_0304_疖 (jiē) — 疒 + 卩
+Bank ne_sick (疒) OK; 卩 (bank jie_radical) not called — drawer inlined.
+Retry candidate.
+
+### p3_char_0305_还 (hái) — 辶 + 不
+Bank zou_zhi OK; 不 has 大-family X-crossing bottom. Format ceiling
+on 不.
+
+### p3_char_0306_亨 (hēng) — 亠+口+了
+亠 (bank tou_char) + kou + 了 (bank liao). All bank but stacked
+proportions off — kou too wide, 了 too small. Retry candidate.
+
+### p3_char_0307_没 (mò) — 氵 + 殳
+殳 unsolved compound (几 top + 又 bottom). 氵 (bank san_dian_shui) OK.
+
+### p3_char_0315_声 (shēng) — 士 top + 尸 bottom
+Bank shi_male (士) + shi_radical (尸). Stacked composition SHOULD
+have worked; drawer's proportions cramped the 尸 hook. Retry candidate.
+
+### p3_char_0329_运 (yùn) — 辶 + 云
+Bank zou_zhi OK; 云 inline fresh (二 + 厶). 厶 sub-radical unsolved
+(TERMINAL) — 云 always fails when 厶 needed.
+
+## Fail-mode clusters — B9
+
+Of 36 main fails:
+- **12 亻 + unsolved-right** (你, 伲, 位, 伶, 伺, 伽, 伾, 佈, 佉,
+  伪-family). Same B8 pattern.
+- **6 X-crossing / apex-kiss family** (伶, 伾, 我, 来, 更, 305_还-bottom).
+  大 recipe still not transferring at scale.
+- **6 unsolved sub-radicals holding compounds hostage** (厶, 巴, 匕, 讠,
+  丬, 夂, 斤, 巴, 巾) — no protocol path to master these; they gate
+  ~30% of Phase-3.
+- **5 bank-composition-retrieval failures** (295_时, 296_串, 304_疖,
+  306_亨, 315_声) — items whose ALL parts had bank aliases but drawer
+  still inlined. These are the highest-value B10 retry candidates:
+  under v10 trajectory-view, the correct bank-call pattern should
+  surface.
+- **4 mirror-symmetric splay / bilateral X** (298_丽, 293_来, 309_两,
+  289_我). New B9 problem: 丽 requires a mirror-box pair (like 亚's
+  mirror-arm pair from B8).
+- **3 misc first-time compounds** (龹, 甹, 285_师).
+
+**Dominant B9 mode: sub-radical gate + composition-retrieval leak.**
+The gate items (12 sub-radicals TERMINAL) cannot be unblocked without
+a new mechanism. The composition-retrieval items (5) are the retryable
+lever for B10.
+
+## G3 vs G4 gap on B9 — code-format ceiling diagnosis
+
+G4 posted 40% (20/50) with 11 A verdicts on identical B9 items. G3
+posted 28% (14/50) with 0 A. The differential structural feature:
+
+- G4 memory unit: **米字格 grid anchors + P/T/N/S joint specs** — a
+  calligraphic-structure grammar operating at the STROKE-JOINT layer.
+- G3 memory unit: **callable Python functions rendering via PIL line
+  primitives** — a pixel-drawing grammar operating at the LINE layer.
+
+The G4 anchor+joint grammar encodes where two strokes meet (weld
+type, apex position, cell alignment) in a way judges can pattern-match
+to calligraphic conventions. G3's PIL line/bezier code has no
+vocabulary for "these two strokes should share a pixel at a
+30-degree joint" other than hand-computed geometry. Even when the
+drawer computes it correctly, PIL rasterisation smooths joints as
+straight-line intersections rather than modulated ink meetings —
+which reads as "machine-drawn" and never earns an A verdict.
+
+**Conclusion: G3's code-format IS hiding calligraphic quality.** The
+drawers frequently produce structurally correct characters (28% pass
+rate demonstrates this) but the rendering is stuck at "reads as the
+character, does not read as calligraphy." The 0-A verdict count is
+not a diagnosis-ceiling — it is a rendering-vocabulary ceiling.
+
+Actionable in drawer_memory.md: acknowledge the ceiling and orient
+G3's remaining effort toward what IS still winnable at the
+structural-recognition layer:
+- Identity-alias composition (bank-part + bank-part with copy-paste
+  scale table) — 佃/但/伯/佐-style. Highest hit rate.
+- Envelope + bank-mastered interior (回, 甸-style). Second-highest.
+- 亻 + bank-right-radical (仲, 伉-style). Third-highest.
+
+Give up chasing A verdicts on genuinely cursive items (X-crossing,
+mirror-splay, cursive envelopes) — pursue them ONLY if the composition
+lets us stack bank aliases. Retry channel should prioritize
+composition-retrieval failures (295_时, 296_串, 306_亨, 315_声)
+which have the highest retry ROI.
+
+---
+
+## B10 additions (2026-07-31, position 500)
+
+### FAIL (main channel, 33 items)
+
+- **p3_char_0336_佗** — 亻 + 它 (它 unmastered). Right reads as boxy;
+  needs 宀 top + 匕-like bottom hook. Fix: import bao_gai_tou for 宀.
+- **p3_char_0337_张** — 弓 + 长. 长 X-crossing format ceiling.
+- **p3_char_0338_佘** — 亠 + 尔-like bottom. Both unmastered as stack.
+- **p3_char_0339_每** — 母 X-crossing (dots+X). Format ceiling.
+- **p3_char_0340_佚** — 亻 + 失. 失 X-crossing (retry_3 also failed).
+- **p3_char_0342_佛** — 亻 + 弗. 弗 (two-shu-with-弓-fragment) unmastered.
+- **p3_char_0343_即** — BANK_DEVIATION on jie_radical (weight). Left 皀
+  proportions off. Fix idea: 皀-left thin ~4px matches deviation intent.
+- **p3_char_0344_佝** — 亻 + 句. 句 (勹+口) — 勹 bank exists but
+  interior placement drifted.
+- **p3_char_0345_志** — **C**. See sandbox B10 diagnostic. Retry candidate
+  with tightened 卧钩 + 3 dots inside concavity.
+- **p3_char_0346_佞** — 亻 + 妟-like. Multi-radical right, no clear
+  decomp. Content gap.
+- **p3_char_0347_证** — BANK_DEVIATION (讠 and 正 both terminal errata).
+  Both unmastered; deviation was forced but couldn't succeed.
+- **p3_char_0348_佟** — 亻 + 冬. 冬 (folded-envelope + 2 dots) unmastered.
+- **p3_char_0349_改** — BANK_DEVIATION (己 vs bank 巳; 攵 unmastered).
+  Both sub-radicals unmastered. Fresh render legible but too spread.
+- **p3_char_0351_步** — 止 + 少. Cursive 少 bottom unmastered.
+- **p3_char_0352_佥** — 亽 + 从 stacked. Multi-radical stack unmastered.
+- **p3_char_0353_找** — BANK_DEVIATION (弋 vs 戈). 戈 X-crossing +
+  bezier-arc format ceiling.
+- **p3_char_0355_块** — 土 + 夬. 夬 X-crossing.
+- **p3_char_0358_盯** — **C**. BANK_DEVIATION (both ri and ding_char
+  don't fit L-R slot geometry). Retry candidate with 目 widened to 28%.
+- **p3_char_0360_並** — 立-family with double stack. Unmastered.
+- **p3_char_0361_到** — 至 + 刂. 至 (multi-heng stack + 土) unmastered
+  as compound.
+- **p3_char_0362_甾** — **C**. BANK_DEVIATION (chuan straight vs 巛 curly).
+  Retry candidate with curled scoop tails + 15px gap.
+- **p3_char_0365_和** — **C**. Non-deviation. 禾 pie/na spread too wide;
+  口 too small. Retry candidate.
+- **p3_char_0366_畅** — 申 + 昜. Multi-radical right unmastered.
+- **p3_char_0367_事** — Multi-part stack (一+口+彐+丨with hook). Frame
+  proportions drift.
+- **p3_char_0368_乖** — 禾-variant + mirror strokes. Cursive; unmastered.
+- **p3_char_0369_其** — 甘 + 二 stack. Frame proportions drift.
+- **p3_char_0370_乶** — BANK_DEVIATION (Korean-ideographic 甫 nested over
+  乙). Unusual glyph; no bank support.
+- **p3_char_0371_所** — Uses shi_radical bank; 斤-right proportions off.
+- **p3_char_0372_疌** — BANK_DEVIATION (no direct match; 聿 not in bank).
+  Content gap.
+- **p3_char_0374_疙** — BANK_DEVIATION (qi_ji is 亓 not 乞). 乞 unmastered.
+- **p3_char_0375_经** — 纟 + 圣. 纟 (silk radical) unmastered; 圣 (又+土)
+  stack unmastered.
+- **p3_char_0376_疚** — 疒 + 久. 久 (dented X) unmastered.
+- **p3_char_0377_法** — **C**. Non-deviation. 氵 too small; 厶 as separate
+  strokes. Retry candidate.
+- **p3_char_0379_学** — BANK_DEVIATION (zi_char needs vertical shift).
+  ⺌ + 冖 + 子 stack proportions drift.
+- **p3_char_0380_疟** — 疒 + 虐-fragment. 虐 unmastered.
+- **p3_char_0381_定** — BANK_DEVIATION (bao_gai_tou coord-system mix).
+  疋 unmastered.
+- **p3_char_0382_疠** — 疒 + 万. 万 unmastered as compound bottom.
+- **p3_char_0383_些** — 此 + 二. 此 (止+匕) unmastered as compound.
+
+### FAIL (retry channel, 5 items)
+
+- **p3_char_0304_疖** (retry_1) — B9 leak candidate. Even with bank
+  ne_sick + jie_radical, narrow-column proportions drift. B11:
+  add explicit "疒 in left 40%, 卩 in right 40%, both thin" hint.
+- **p3_char_0306_亨** (retry_1) — B9 leak candidate. 3-stack proportions
+  (亠 small / 口 medium / 了 large) hard to encode without joint specs.
+  B11: try again with explicit y-band hints per component.
+- **p3_char_0315_声** (retry_1) — B9 leak candidate. 士 + 尸 envelope
+  proportion drift.
+- **p3_char_0197_矢** (retry_3) — X-crossing family. TERMINAL_FREEZE
+  watch at retry_5 (B12). B11 retry_4: da_char recipe as template.
+- **p3_char_0216_失** (retry_3) — X-crossing family. TERMINAL_FREEZE
+  watch at retry_5 (B12). B11 retry_4: da_char recipe as template.
+
+### PASS (bank additions — see success_bank/INDEX.md rows 213–226)
+
+12 mains + 2 retries promoted. 3 v13 BANK_DEVIATION variants promoted
+(rows 227–229). All original primitives untouched.
+
+## Batch B11 (2026-08-03, positions 551–600 judged + 5 retries)
+
+### TERMINAL_FROZEN at B11 (retry_4 hit C, no PASS)
+
+Per shared_rules.md terminal-freeze rule (retry exhausted with progressive
+format unlocks; C at last-chance retry proves format-ceiling structural).
+X-crossing format ceiling family, joins B5's 人/入/大 and B8's 匕.
+
+- **p3_char_0197_矢** — X-crossing (dai-family, apex-in-heng geometry).
+  Retry trajectory: R1 FAIL, R2 FAIL, R3 FAIL (v9 visual-diff), R4 **C**
+  (v13 explicit-bank-call with da_char template). C means readable but
+  not panel PASS. Diagnosis: PIL line-segments produce the crossing pixel
+  but not the joint modulation the panel expects. Move OUT of active
+  retry pool.
+
+- **p3_char_0216_失** — X-crossing (matched fate to 矢). Same trajectory.
+  Move OUT of active retry pool.
+
+### FAIL (main channel, 32 items)
+
+- **p3_char_0384_疡** — 疒 + 昜. Multi-radical right unmastered.
+- **p3_char_0385_物** — **C**. See sandbox B11 diagnostic. Retry candidate
+  with sharpened ti and parallel 勿 arms.
+- **p3_char_0386_亞** — BANK_DEVIATION (no 亞 primitive). Mirror-envelope
+  4-arm splay format ceiling.
+- **p3_char_0388_亟** — Multi-component compound with bumpy interior.
+  Content gap.
+- **p3_char_0390_佬** — 亻 + 老-bottom. BANK_DEVIATION on ren_pang for
+  joint-scale mismatch. 老-bottom unmastered.
+- **p3_char_0392_佯** — 亻 + 羊. BANK_DEVIATION on ren_pang. 羊 unmastered.
+- **p3_char_0393_实** — 宀 + 头-body. BANK_DEVIATION on bao_gai_tou + da_char.
+  Fresh render legible but proportions drift.
+- **p3_char_0394_佰** — 亻 + 百. Bank primitives only; drift in 百-body.
+- **p3_char_0395_金** — 5-stroke roof + 王-body. Multi-radical, roof
+  proportion drift.
+- **p3_char_0396_佴** — 亻 + 耳. 耳 unmastered as bank; inline drifts.
+- **p3_char_0398_併** — 亻 + 并. 并 (双 4-stroke) unmastered.
+- **p3_char_0401_取** — BANK_DEVIATION (耳 not in bank; inlined). 又 bank
+  used. Fresh 耳 legible but composition drift.
+- **p3_char_0402_佻** — BANK_DEVIATION (no 兆 primitive). 兆 mirror-splay
+  format ceiling.
+- **p3_char_0403_放** — BANK_DEVIATION (方 and 攵 both in errata). Both
+  unmastered.
+- **p3_char_0404_佼** — 亻 + 交. 交 X-crossing family fail.
+- **p3_char_0405_治** — 氵 + 台 = 厶 + 口. No 厶 bank; inline drifts.
+- **p3_char_0406_佽** — 亻 + 次 = 冫+欠. BANK_DEVIATION (no 欠/次).
+  Fresh legible but 欠 stroke sequence off.
+- **p3_char_0407_规** — 夫 + 见. BANK_DEVIATION (no 夫 or 见). Both
+  unmastered as bank; inline drifts.
+- **p3_char_0408_佾** — **C**. See sandbox B11 diagnostic. Retry candidate
+  with shrunk ba (0.55 scale) and compressed 月.
+- **p3_char_0410_侃** — 亻 + 冂-with-儿. BANK_DEVIATION (no 侃-family).
+  Frame-with-pillars format ceiling.
+- **p3_char_0411_受** — **C**. See sandbox B11 diagnostic. Retry candidate
+  with compressed 爫 and lowered 冖.
+- **p3_char_0412_來** — Non-deviation. 木 base + 从 top. 从 X-crossing.
+- **p3_char_0415_转** — BANK_DEVIATION (no 车 or 专). Both novel; fresh
+  fails.
+- **p3_char_0416_侉** — BANK_DEVIATION (no 夸). Fresh 夸 legible but
+  proportion drift.
+- **p3_char_0417_单** — Bank 単-family bank exists but proportions off.
+- **p3_char_0418_例** — 亻 + 列 = 歹+刂. 歹 in bank, 刂 in bank; composition
+  drift.
+- **p3_char_0420_侌** — BANK_DEVIATION (no 今 or 云 in bank; hui_char
+  unrelated). Novel top+bottom stack fails.
+- **p3_char_0421_或** — Non-deviation. 戈 X-crossing fail.
+- **p3_char_0426_侔** — 亻 + 牟. 牟 unmastered.
+- **p3_char_0427_线** — BANK_DEVIATION (si_zi_pang has baked coords,
+  cannot slot into L-R). Fresh 纟 legible but 戋 (long 斜钩) format
+  ceiling.
+- **p3_char_0428_侖** — BANK_DEVIATION (ji_meet_char turtle math-coord;
+  need PIL px). Compact 亼-over-frame drift.
+- **p3_char_0429_是** — BANK_DEVIATION (ri.py canvas-fill; 是 needs
+  compressed 日). Fresh 日 OK but 疋 hanging bottom drifts.
+- **p3_char_0430_畈** — BANK_DEVIATION (no 田/反 for L-R). Frame drift.
+- **p3_char_0431_说** — **C**. BANK_DEVIATION (讠 TERMINAL + no 兑). See
+  sandbox B11 diagnostic. Retry candidate with compressed 讠 and
+  er_ren_for_bottom_stack for 儿.
+- **p3_char_0432_畋** — BANK_DEVIATION (田 baked to canvas; 攵 novel).
+  Fresh 田 compressed OK, 攵 fails.
+- **p3_char_0433_要** — Non-deviation. 西 top + 女 bottom. 女 unmastered.
+
+### FAIL (retry channel, 3 items — 疖/亨/声 continuing; NOT terminal)
+
+- **p3_char_0304_疖** (retry_2, FAIL) — B9 leak candidate, B10 R1 FAIL
+  with bank ne_sick+jie_radical, B11 R2 FAIL again. Narrow-column
+  proportion drift persists per P-DEV2. B12 R3: explicit y-band hint
+  (疒 in y=60-240 left 40%, 卩 in y=90-200 right 40%). Last try.
+- **p3_char_0306_亨** (retry_2, FAIL) — B9 leak, B10 R1 FAIL, B11 R2 FAIL.
+  3-stack proportions still drift. B12 R3: explicit y-band hint
+  (亠 y=40-90, 口 y=100-170, 了 y=180-280). Last try.
+- **p3_char_0315_声** (retry_2, FAIL) — B9 leak, B10 R1 FAIL, B11 R2 FAIL.
+  士+尸 envelope proportion drift. B12 R3: explicit column-width hint.
+  Last try.
+
+### PASS (bank additions — see success_bank/INDEX.md rows 230-247)
+
+14 mains promoted (no retry graduates). 4 v13 BANK_DEVIATION variants
+promoted (rows 244-247). All original primitives untouched.
+
+## B12 additions (2026-08-04, position 601)
+
+### A (main curriculum, 1 item — ★★★ FIRST-EVER A FOR G3 ★★★)
+
+- **p3_char_0434_畎** — 畎 (quǎn), 9 strokes = 田 (5) + 犬 (4). L-R
+  composition. Verdict provenance: judgments/batch_B12/labels.json att1
+  → G3 → A. Recipe: BANK_DEVIATION (skipped bi_field_over_ji + da_char);
+  fresh `quan_tian_for_LR_left` + `quan_dog_for_LR_right`. Explicit
+  x-slot decomposition + shared-pixel cross-apex + thin uniform ink.
+  Codified as **P-DEV4** compression pathway. Promoted rows 248-250.
+
+### PASS (main curriculum, 6 items)
+
+- **p3_char_0447_信** — 亻 + 言 (inline yan_speech_inline). PASS.
+- **p3_char_0448_疥** — bank ne_sick + inline 介. PASS.
+- **p3_char_0455_相** — bank mu + inline 目 (3-inner-heng). PASS.
+- **p3_char_0457_思** — BANK_DEVIATION inline 田-top + inline 心-bottom.
+  PASS.
+- **p3_char_0465_选** — BANK_DEVIATION inline 辶-compact + inline 先.
+  PASS.
+- **p3_char_0479_保** — bank ren_pang + bank kou + bank mu (3-bank
+  identity-alias). PASS.
+
+### C (main curriculum, 14 items — retry candidates for B13)
+
+- **p3_char_0437_种** — 禾+中. BANK_DEVIATION (skipped mu). Fix: promote
+  a compressed 禾-left variant if a second cousin appears; for now
+  inline with slant-heng-top + shu + na-becoming-dian left-radical
+  form.
+- **p3_char_0438_畐** — 一+口+田 vertical stack (no dev). Proportion
+  drift on middle 口 too small. Fix: bump 口 to same width as 田 below.
+- **p3_char_0441_前** — BANK_DEVIATION (skipped yue + dao_pang). 前 has
+  fused 月+刂 bottom. Fix: try inline with slightly wider 月-with-刂
+  attached at right shu.
+- **p3_char_0445_点** — BANK_DEVIATION (skipped zhan_char baked-into-
+  亻+占). Fix: inline 占 (卜 over 口) + explicit 4-dot 灬 bottom band
+  at y=240-275.
+- **p3_char_0451_给** — 纟+合. BANK_DEVIATION (si_zi_pang baked). Fix:
+  compressed inline 纟 (2-scoops-tapered + 提) at x=40-100 + bank kou
+  inside 合 recipe on right. **RANK 3 retry candidate.**
+- **p3_char_0463_神** — 礻+申. BANK_DEVIATION (shen_extend canvas-abs).
+  Fix: inline compressed 申 in right slot; adapt jia_first's shu-below
+  topology to shu-through. **RANK 5 retry candidate.**
+- **p3_char_0466_盃** — 不+皿 stack. BANK_DEVIATION (bu_char and
+  min_dish both fail slot). Fix: promote inline compressed 皿-bottom;
+  4-vertical grid at y=180-260. **RANK 6 retry candidate.**
+- **p3_char_0467_结** — 纟+吉. BANK_DEVIATION (si_zi_pang). Fix: same
+  纟 fix as 给 + bank shi_male (士) + bank kou vertical for 吉.
+  **RANK 4 retry candidate.**
+- **p3_char_0468_盅** — 中+皿. BANK_DEVIATION (min_dish module-level).
+  Fix: same 皿-bottom variant as 盃.
+- **p3_char_0470_侶** — 亻+呂 (口+口 stack). Fix: bank ren_pang + 2
+  stacked bank kou at kou_scale ≈ 0.55, tighter vertical gap.
+  **RANK 7 retry candidate.**
+- **p3_char_0474_係** — 亻+系 (7-stroke 系). Fix: bank ren_pang +
+  inline 系 with top-scoop + 幺-body carefully rendered. **RANK 8
+  retry candidate.**
+- **p3_char_0475_战** — 占+戈 (right X-crossing). 戈 is X-crossing
+  family. Might be P-DEV4-eligible if compressed enough. Try in
+  B13 as ambitious A candidate.
+- **p3_char_0482_俎** — 仌+且. BANK_DEVIATION (bing_ren math-coords).
+  Fix: inline compressed 仌 + bank ri-like for 且.
+- **p3_char_0483_草** — 艹+早 (no dev). 早 = 日+十. Fix: bank cao_zi_tou
+  + bank ri + bank shi_male-lookalike (十).
+
+### FAIL (main curriculum, 31 items — abbreviated per cluster in sandbox)
+
+- **p3_char_0435_看** — 手+目. 手 unmastered.
+- **p3_char_0436_畏** — 田+ﾋ-hooked. Novel bottom.
+- **p3_char_0439_将** — 爿+夕+寸. Multi-piece.
+- **p3_char_0440_畑** — 火+田 L-R. 火 unmastered as left.
+- **p3_char_0442_乹** — 乾-variant. Complex.
+- **p3_char_0443_面** — 3-段 stack. P-DEV2 fail.
+- **p3_char_0444_疣** — 疒+尤. Interior novel.
+- **p3_char_0446_疤** — 疒+巴. Interior novel.
+- **p3_char_0449_美** — 羊+大 stack. 羊 unmastered + X-crossing bottom.
+- **p3_char_0450_疫** — 疒+殳. Interior novel.
+- **p3_char_0452_疬** — 疒+力. Interior novel.
+- **p3_char_0453_度** — 广+又+又. 3-piece.
+- **p3_char_0454_疭** — 疒+从. Interior X-crossing.
+- **p3_char_0456_疮** — 疒+仓. Interior novel.
+- **p3_char_0458_癸** — 癶+天. Novel top + X-crossing.
+- **p3_char_0459_带** — 共-top + cloth-bottom. Novel body.
+- **p3_char_0460_皅** — 白+巴. 巴 novel.
+- **p3_char_0461_亲** — 立+木-hanging. Composition drift.
+- **p3_char_0462_皈** — 白+反. 反 novel.
+- **p3_char_0464_侯** — 亻+侯-body. Body novel.
+- **p3_char_0469_便** — 亻+更. 更 novel.
+- **p3_char_0471_总** — 忄+悤. Novel top.
+- **p3_char_0472_侷** — 亻+局. 局 novel.
+- **p3_char_0473_城** — 土+成. 成 X-crossing.
+- **p3_char_0476_俅** — 亻+求. 求 novel.
+- **p3_char_0477_南** — 十+冉-body. Body novel.
+- **p3_char_0478_俉** — 亻+吾. 吾 = 五+口, 五 novel.
+- **p3_char_0480_俊** — 亻+夋. 夋 novel.
+- **p3_char_0481_济** — 氵+齐. 齐 X-crossing bottom.
+
+### FAIL / TERMINAL_FROZEN (retry channel, 3 items)
+
+- **p3_char_0304_疖** (retry_3 → **C**) — B9 leak. Trajectory
+  main→R1→R2→R3: FAIL→FAIL→FAIL→C. All hints applied (BANK_DEVIATION
+  + Q1/Q2/Q3 + TRAJECTORY DIFF + explicit y-bands + column widths).
+  Envelope OK, 卩 finally legible; panel: not-quite-PASS. **TERMINAL_FROZEN.**
+  Joins terminal pool with 人/入/大/矢/失/匕. Recipe preserved in
+  attempts/p3_char_0304_疖__retry_3/.
+- **p3_char_0306_亨** (retry_3 → **FAIL**) — B9 leak. FAIL→FAIL→FAIL→FAIL.
+  y-band hints applied but 了-hook curl still non-discriminable from
+  子/子-like tails. **TERMINAL_FROZEN.**
+- **p3_char_0315_声** (retry_3 → **FAIL**) — B9 leak. FAIL→FAIL→FAIL→FAIL.
+  士 middle 竖 rendered outside discriminable region despite explicit
+  fix-promise. **TERMINAL_FROZEN.**
+
+Terminal-freeze pool after B12: **人, 入, 大, 匕, 矢, 失, 疖, 亨, 声**
+(9 items). Composition-retrieval-leak hypothesis fully falsified —
+retrieval channel works but format ceiling holds for narrow-column,
+3-stack, and stacked-envelope compositions.
+
+## B13 additions (2026-08-05, position ~651)
+
+### PASS (main curriculum, 10 items)
+
+- **p3_char_0489_指** — 扌+旨. BANK_DEVIATION (skipped shou_pang turtle);
+  inline `zhi_finger_inline`. PASS. Not promoted.
+- **p3_char_0492_俚** — 亻+里. BANK_DEVIATION (skipped ren_pang turtle);
+  inline `ren_pang_pil_for_LR_left`. PASS. **PROMOTED row 251.**
+- **p3_char_0493_适** — 辶+舌. BANK_DEVIATION (skipped zou_zhi turtle +
+  hua_speak pointer); inline `shi_go_char_inline` (envelope + interior).
+  PASS. Envelope portion **PROMOTED row 252** (`zou_zhi_thin_pil_envelope`).
+- **p3_char_0497_响** — 口+向. No BANK_DEVIATION. Bank-clean. PASS.
+- **p3_char_0507_高** — 亠+口+冂+口 tower. BANK_DEVIATION (skipped
+  tou_radical + kou for sizing); inline. PASS. Not promoted (whole-char).
+- **p3_char_0515_原** — 厂+白+小. BANK_DEVIATION (skipped chang +
+  bai_char_for_top_stack for weight mismatch); inline. PASS. Not promoted.
+- **p3_char_0516_疰** — 疒+主. No BANK_DEVIATION. `ne_sick` + inline 主. PASS.
+- **p3_char_0522_疴** — 疒+可. No BANK_DEVIATION. `ne_sick` + inline 可. PASS.
+- **p3_char_0524_疸** — 疒+旦. No BANK_DEVIATION. `ne_sick` + inline 旦. PASS.
+- **p3_char_0530_痂** — 疒+加. No BANK_DEVIATION (no bank for 加).
+  `ne_sick` + inline 加. PASS.
+
+### C (main curriculum, 11 items — retry candidates for B14)
+
+- **p3_char_0484_俏** — 亻+肖. Mixed coord systems (ren_pang turtle + PIL
+  right). Fix: use new `ren_pang_pil_for_LR_left` + inline PIL 肖 uniformly.
+- **p3_char_0486_俐** — 亻+利 (3-column 亻|禾|刂). BANK_DEVIATION.
+  Fix: tighter 3-column layout + new `ren_pang_pil_for_LR_left`.
+- **p3_char_0499_能** — 厶+匕 top / 月+匕 bottom. BANK_DEVIATION
+  (yue_for_neng_BL). Near-miss. Fix: thinner ink; sharper bottom-匕 curl.
+  **RANK 1 retry candidate.**
+- **p3_char_0503_都** — 者+阝 L-R. BANK_DEVIATION. Fix: adapt 阝 from 那.
+  **RANK 4 retry candidate.**
+- **p3_char_0504_畛** — 田+㐱 L-R. BANK_DEVIATION (skipped shan_radical).
+  Uses new `quan_tian_for_LR_left`. Fix: 㐱 needs explicit 人-apex + 3
+  cascading pies with clearer separation.
+- **p3_char_0506_畜** — 亠+幺+田 3-stack. BANK_DEVIATION. Fix: explicit
+  y-bands per piece (P-DEV2 rule for 3+-stacks).
+- **p3_char_0510_畟** — 田-over-夊 (splayed base). BANK_DEVIATION
+  (sui_bottom_for_ji fresh). Fix: 夊 splay-arm needs longer 捺 crossing right.
+- **p3_char_0525_部** — 咅+阝 L-R. BANK_DEVIATION. Fix: same 阝 recipe as 都.
+  **RANK 6 retry candidate.**
+- **p3_char_0526_疹** — 疒+㐱. No BANK_DEVIATION (envelope OK). Fix:
+  interior 㐱 needs apex-kissed 人-top + 3 cascading pies clearer.
+  **RANK 3 retry candidate.**
+- **p3_char_0528_疽** — 疒+且. No BANK_DEVIATION (envelope OK). Fix:
+  interior 且 as compact 5-stroke rectangle in belly slot.
+  **RANK 2 retry candidate.**
+- **p3_char_0532_亳** — 亠+口+冖+乇 4-stack. BANK_DEVIATION. Fix: explicit
+  y-band per piece. **RANK 5 retry candidate.**
+
+### FAIL (main curriculum, 29 items — abbreviated)
+
+- **p3_char_0485_怎** — 乍+心 stack. Novel bottom, cluttered.
+- **p3_char_0487_孩** — 子+亥 L-R. 亥 novel.
+- **p3_char_0488_俑** — 亻+甬. 甬 novel.
+- **p3_char_0490_俘** — 亻+孚. 孚 novel.
+- **p3_char_0491_除** — 阝+余. 除 topology drift.
+- **p3_char_0494_俛** — 亻+免. 免 novel.
+- **p3_char_0495_复** — top+日+夊 3-stack. Content-gap.
+- **p3_char_0496_俜** — 亻+甹. 甹 novel.
+- **p3_char_0498_俞** — 亼+一+月/刂 3-stack. Novel top.
+- **p3_char_0500_丵** — dense vertical char. Novel body.
+- **p3_char_0501_家** — 宀+豕. 豕 novel.
+- **p3_char_0502_畚** — 亠+ム+田 3-stack. Content-gap.
+- **p3_char_0505_起** — 走+己. 走 novel.
+- **p3_char_0508_畝** — 亩+攵 (or 畝 archaic). 攵 novel (same fail as 畋).
+- **p3_char_0509_特** — 牜+寺. 牜 unmastered.
+- **p3_char_0511_海** — 氵+每. 每 novel.
+- **p3_char_0512_畢** — 田+華-bottom. Novel bottom.
+- **p3_char_0513_通** — 辶+甬. 甬 novel — sibling for `zou_zhi_thin_pil_envelope`.
+- **p3_char_0514_乘** — dense stack. Novel body.
+- **p3_char_0517_真** — dense hengs stack. Novel body.
+- **p3_char_0518_疱** — 疒+包. 包 novel.
+- **p3_char_0519_候** — 亻+侯-body. Novel body.
+- **p3_char_0520_疳** — 疒+甘. 甘 novel-simple.
+- **p3_char_0521_验** — 马+佥. 马 unmastered.
+- **p3_char_0523_被** — 衤+皮. Both novel.
+- **p3_char_0527_造** — 辶+告. 告 novel (sibling for `zou_zhi_thin_pil_envelope`).
+- **p3_char_0529_热** — 执+灬 U-D. Novel top.
+- **p3_char_0531_速** — 辶+束. 束 novel (sibling for `zou_zhi_thin_pil_envelope`).
+- **p3_char_0533_值** — 亻+直. 直 novel-simple.
+
+### Retry channel (8 R1s → 1 PASS, 3 C, 4 FAIL)
+
+- **p3_char_0466_盃__retry_1** — **PASS** (recovery). Recipe: 不 + inline
+  compressed 皿-bottom. Not variant-promoted (single instance).
+- **p3_char_0463_神__retry_1** — **C**. 礻+申. Interior 申 still not
+  quite right. R2 candidate (defer to B15).
+- **p3_char_0470_侶__retry_1** — **C**. 亻+呂. Bank ren_pang + 2 stacked
+  kou; slot alignment off. R2 candidate.
+- **p3_char_0474_係__retry_1** — **C**. 亻+系. Interior 系 top-scoop off.
+  R2 candidate.
+- **p3_char_0430_畈__retry_1** — **FAIL**. 田 clean via new bank primitive,
+  but 反 collapsed to a curl. **Variant post-mortem in sandbox.md** —
+  led to P-DEV5 (sibling-slot verification rule).
+- **p3_char_0432_畋__retry_1** — **FAIL**. Same story: 田 clean, 攵 broken.
+  Both 反 and 攵 are content-gap X-crossing family with no bank recipe.
+  Not queued for R2 per P-DEV5.
+- **p3_char_0451_给__retry_1** — **FAIL**. 纟 still not decoded.
+- **p3_char_0467_结__retry_1** — **FAIL**. Same 纟 issue.
+
+Terminal-freeze pool after B13: **人, 入, 大, 匕, 矢, 失, 疖, 亨, 声**
+(9 items, unchanged from B12; 畈/畋 not frozen — content-gap, not
+format-ceiling; they may re-enter the queue once a 反/攵 recipe exists).

@@ -211,7 +211,67 @@ transform primitives). TR8 and TR9 are RETIRED — do not follow them.
 ## Change history
 
 See `evolution.md` for the append-only log of structural changes.
-Latest: position 350 (2026-07-26, B6 curator) — v8 first-pass consumed:
+Latest: **position ~651 (2026-08-05, B13 curator) — 2 PIL-native envelope
+variants promoted + P-DEV5 (sibling-slot verification).** New bank
+primitives: `ren_pang_pil_for_LR_left.py` (canonical 亻 for LR-left,
+PIL px, motivating context 俚; template for ~40 remaining 亻-chars) and
+`zou_zhi_thin_pil_envelope.py` (canonical 辶 envelope, PIL px MMH-thin,
+motivating context 适; template for ~30 remaining 辶-chars). Both fully
+parameterized. Added P-DEV5 codifying that variant "reuse targets" are
+speculative until the sibling slot has a bank primitive or documented
+recipe (motivating case: B12's `quan_tian_for_LR_left` was promoted
+with 畈/畋 as reuse targets; both R1'd on B13 and FAILED because 反/攵
+have no bank recipe — the 田 rendered cleanly but the sibling collapsed).
+B13 main pass rate 20% (10/50, up from B12's 14% — normal band). Retry
+1/8 (盃 recovery). ★ FIRST batch G3 (20%) beat G5 (18%) on PASS —
+research signal that crystallized bank envelopes (疒/辶/亻) can
+compensate for MMH absence. INDEX now at row 252. Terminal-freeze pool
+unchanged (9 items). pass_index.md now 270 rows (269 PASS + 1 A) after
+tool rebuild — B13's 10 new mains added; 盃 R1 recovery PNG not picked
+up by tool (retry attempt dir naming quirk, non-blocking).
+Prior: **position 601 (2026-08-04, B12 curator) — ★★★ FIRST-EVER A
+VERDICT ★★★ after 600 items / 12 batches / 4 format unlocks:
+`p3_char_0434_畎` broke through as A via L-R-slot compression of the
+X-crossing 犬 radical. 2 variants promoted (rows 249-250):
+`quan_tian_for_LR_left.py` (compressed 田 for LR-left; templates for
+略/畔/畝/畦/畯/畈/畋) and `quan_dog_for_LR_right.py` (犬 with explicit
+shared-pixel cross-apex; template for 猷 + P-DEV4 pathway). Composite
+wrapper at row 248 (`quan_char.py`). Added **P-DEV4** (X-crossing
+compression pathway) to principle_bank.md — the FIRST documented
+A-verdict pathway for the format-ceiling family; narrow (does NOT
+unfreeze standalone 大/矢/失). B12 main pass rate: 14% (7/50 = 1A + 6
+PASS; below G1 control ~20%; diagnosis: item-pool spike + noise +
+slower bank growth, monitor B13). Retry 0/3 → **3 TERMINAL_FROZEN**
+(疖/亨/声 all R3 last-try). Terminal-freeze pool now: 人/入/大/匕/矢/失/
+疖/亨/声. INDEX now at row 250. Language update: from "0 A across 550
+items" to "1 A in 600 items (0.17%), via P-DEV4 pathway; full-canvas
+X-crossing ceiling unchanged".
+Prior: position 550 (2026-08-03, B11 curator) — zero A CONFIRMED
+across 11 consecutive batches (0/550 items). v13 channel producing
+steady variant flow: 4 new variants promoted (rows 244-247):
+`zhu_master_for_LR_right.py` (from 往; template for 住/注/柱/驻),
+`you_frame_up.py` (from 油; 由-frame with shu-up, new shape family),
+`tu_cun_stacked_for_LR_right.py` (from 侍; template for 待/恃/詩/峙),
+`you_have_for_LR_right.py` (from 侑; template for 郁/洧). All original
+primitives untouched. Added P-DEV3 (variant-promotion signal) to
+principle_bank.md. TERMINAL_FROZEN 矢/失 at R4 C (X-crossing format
+ceiling). Main pass rate 14/50 = 28%. Retry 0/5. INDEX now at row 247.
+Prior: position 500 (2026-07-31, B10 curator) — v13 BANK_DEVIATION
+channel first exercised (16 deviations, 3 promoted as variants:
+`bai_char_compressed_for_LR.py`, `bai_char_for_top_stack.py`,
+`er_ren_for_bottom_stack.py`; original primitives untouched). Two
+retry graduations from B9 leak-fix (时, 串). Zero A verdicts confirmed
+across 500 items. Added P-DEV1 (when to deviate) and P-DEV2
+(retrieval-leak fix scope) to principle_bank.md. INDEX rows now
+213–229 (14 B10 PASSes + 3 variants).
+Prior: position 400 (2026-07-27, B7 curator) — v9 visual-diff prompt
+proved out on retry channel: 3/10 v9 reruns PASS (大, 主, 疒) vs 0/10
+under v8 wording. The three graduations share a `VISUAL DIFF` +
+`REJECT baked-in helper` recipe now codified in drawer_memory.md.
+INDEX grew by 19 (rows 185–203). Main pass rate 16/50 = 32% — B7 hit
+the cursive/complex-char density band; new X-crossing observation
+(矢/失/乔/会 all fail same as 大) added to drawer_memory.md.
+Prior: position 350 (2026-07-26, B6 curator) — v8 first-pass consumed:
 `drawer_memory.md` populated (composition playbooks + L-R scale table
 + trust-GT posture); memory_index.md read order rewritten to place
 drawer_memory.md at step 3 (before form_catalog); INDEX grew by 23

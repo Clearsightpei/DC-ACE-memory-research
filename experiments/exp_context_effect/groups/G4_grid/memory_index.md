@@ -104,4 +104,46 @@ See `evolution.md` for the append-only log of structural changes.
 promoted 5 chronic primitives. Position 350 v8 unlock: added
 drawer_memory.md, slimmed mandatory checklist from 6 files → 3 files,
 made bank/principles REFERENCE ONLY, granted prune + canonical-promotion
-permissions.*
+permissions. Position 400 (B7): v9 visual-diff prompt tested on 12
+retries (2 PASS: 比, 文); prune round 2 removed 10 more thin wrappers;
+7 canonical promotions QUEUED for B8 (长, 夂, 夊, 水, 礻, 无, 气).
+Position 450 (B8): 20/50 mains (40%); 0/7 retries. The 7 canonical
+files queued at position 400 were NEVER hand-written — retries had no
+target for import, all TERMINAL_FROZEN. Bank-import rate on B8 mains
+collapsed to <20%; drawers overwhelmingly inline via `_anchor +
+fat_line`. See `evolution.md` position-450 and `drawer_memory.md` B8
+addendum. Position 500 (B9): 30/50 mains (60%), 5/16 retries. 11 A
+verdicts (landmark). B9 A-recipe codified (5 points). v13
+BANK_DEVIATION added but zero usage in B9. Position 550 (B10): 19/50
+mains (38%; 10 A + 9 PASS), 6/16 retries (38%; 3 A + 3 PASS). 13 A
+total. BANK_DEVIATION channel WENT LIVE (13 uses; 8 on PASS/A). No
+new bank variants promoted this batch — evidence-driven deferral until
+fresh_component names repeat 2+ times. See `drawer_memory.md` B10
+addendum + `evolution.md` position-550. X-cross cluster (癶, 処, 乩,
+那) TERMINAL_FROZEN candidates after B11. Position 600 (B11): 31/50
+mains (62%; 17 A + 14 PASS) — BEST BATCH. 3/17 retries (18%).
+BANK_DEVIATION 29/50 uses; 72% deviation-to-success. `ren_side_far_left`
+recurred 8× (10× incl. B10); variant promotion DEFERRED — codified as
+NAMED PATTERN in drawer_memory.md instead (fixed defaults would reintroduce
+the anti-pattern). X-cross cluster (癶, 処, 乩, 那) TERMINAL_FROZEN
+executed. See `drawer_memory.md` B11 addendum + `evolution.md` position-600.
+Position 650 (B12): 20/50 mains (40%; 8 A + 12 PASS), 5/14 retries
+(36%; 0 A, 5 PASS via literal-errata). Regression from B11 best-batch
+expected. G5 comparison isolated the format effect (G4 +6 PASS, 4×
+A rate vs G3+MMH at parity). 亥 R4 FAIL → TERMINAL_FROZEN (X-cross
+cluster now 5: 癶/処/乩/那/亥). No new bank variants promoted; named-
+pattern discipline continues. 疒 cluster (6 items, 0 PASS) flagged as
+candidate for canonical primitive if B13 also fails. `ren_side_far_left`
+DEGRADED from B11 8/8 → B12 2/9 because the failure surface migrated
+to the right sub-radical (亻 slot inline still correct). Post-B12v1
+rollback context: B12 was re-run after a same-day MMH-disabled
+experiment collapsed to 16%; nothing about G4 memory changed. See
+`drawer_memory.md` B12 addendum + `evolution.md` position-650.*
+
+## v9 addendum for retries
+
+If your item is a **retry** (`__retry_<N>` in item_id), your FIRST
+step is a mandatory VISUAL DIFF Step 0: open the prior failed PNG
+and the GT side-by-side, and write a prose block at the top of your
+`generated.py` naming concrete gaps. See `drawer_memory.md` v9
+addendum for the pattern and the two B7r PASS examples (比, 文).

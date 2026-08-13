@@ -593,3 +593,59 @@ can inherit.*
 *This catalog grows entry-by-entry as the curator observes new
 context/form pairs. Additions should ground each entry in an
 observed GT (not memorized recipes).*
+
+## B10 additions (curator @ pos 550)
+
+### 疒 as compound-left-wrap (sickness radical) — 5 strokes, NOT 3
+
+疒 is NOT 广. B7's 疔 fail and B10's 疙/疟/疠 FAILs + 疚/疝 C's all
+rendered it as 广 (3 strokes: 丶 + 一 + 丿), which drops the interior
+冫 identity bit.
+
+Correct 5-stroke inventory:
+
+1. **丶 top-dot** at the crown (small teardrop, ~x=110, y=45 at 300×300).
+2. **一 short horizontal** running rightward from top area of the dot
+   toward ~x=175, y=65. Short, ~50-60 px.
+3. **丿 long down-left 撇** starting from the right end of the 一
+   (~x=175, y=65), sweeping down-and-left to a tail at ~x=60, y=245.
+   Bezier belly bows outward (control point pulled down-left of chord
+   midpoint).
+4. **丶 inner dot** (upper of the 冫 pair) sitting INSIDE the wedge
+   formed by the 一 and the 丿, upper-left region. Anchor ~x=105,
+   y=110. Small teardrop, slants down-right (top narrower).
+5. **提 inner rising tick** (lower of the 冫 pair) below the inner
+   dot. Anchor start ~x=90, y=160, tip ~x=140, y=140. Thick→thin,
+   rising ~25° above horizontal.
+
+The compound's right-side radical (乞 in 疙, 虐 in 疟, 万 in 疠, 久
+in 疚, 山 in 疝, 疋 in 疌 as second layer) sits inside the wedge to
+the right of the 冫 pair, spanning roughly x=140-260, y=90-250.
+
+**Retrieval trigger**: any target character containing 疒 (病 症 疙
+疟 疠 疚 疝 疔 疖 疋(as component under 疒 wedge) etc.). Do NOT
+default to 广 body.
+
+### 勺-wrap (as in 的, 匀, 勺 itself)
+
+Rendered as **3 primitives**, not as an oval loop:
+
+1. **丿 short down-left 撇** starting at top-left of the wrap.
+2. **横折钩** — the semi-circular wrap. 横 running rightward from the
+   撇 tip, shoulder-dab, 竖 curving down-and-inward, hook flicking
+   UP-and-LEFT at the bottom-left endpoint (INTO the wrap interior).
+3. **丶 inner dot** sitting inside the wrap, upper-center.
+
+B10's 的 C rendered the wrap as a single loose ellipse — this loses
+the hook flick and the inner dot, dropping the character's identity.
+
+## B10 additions — sibling-pair table extensions
+
+| pair | signature bit |
+|------|--------------|
+| 疒 vs 广 | 疒: 3-stroke 广 outline + INTERIOR 冫 pair (丶+提) inside upper-left wedge; 广: no interior 冫 |
+| 氵 vs 冫 vs 三点 | 氵: 丶+丶+**提** (bottom is rising, not down-teardrop); 冫: 丶+丶 (only 2 marks); three plain dots stacked reads as neither |
+| 勺 vs 匀 | 勺: 3-primitive wrap (撇+横折钩+丶); 匀: wrap + interior 二 (two horizontal 一) instead of single 丶 |
+| 定 vs 元/兄 | 定: 宀 lid + 疋 body (5-stroke 疋 = 一+丨+龰-like: 横 above then 3-way splay); 元/兄: 亠/口 + 儿 legs (only 2 leg-strokes) |
+| 学 vs 半 | 学: 3 top ticks + 冖 + 子 (with **hook**+横 signature); 半: 丷 + 半-body (无 hook) |
+

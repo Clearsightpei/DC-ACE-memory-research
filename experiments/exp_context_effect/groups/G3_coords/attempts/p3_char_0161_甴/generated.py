@@ -1,12 +1,15 @@
-# p3_char_0161_甴 — main attempt
-# 甴 (cockroach char): looks like a box (口-family) with a vertical
-# extension out of the top (like 由/甲) and one horizontal cross-bar
-# inside splitting the box in half. From the GT PNG:
-#   - top vertical protruding above the box (short)
-#   - box: left竖 + top横折 + bottom横
-#   - one internal horizontal splitting the box
-# Simple PIL rendering — 4-5 strokes total. GT ink is thin uniform,
-# per P12 use ~4-5 px width, not calligraphic.
+# p3_char_0161_甴 — 甴 (yóu, cockroach)
+# Composition: 由-family — box with middle horizontal bar + central 竖
+# that protrudes ABOVE the box and continues DOWN into the box (touching
+# the middle bar), unlike 申 which extends both above and below.
+# Refined from prior attempt: tick now enters the box (由 signature).
+#
+# Strokes (MMH-style order):
+#   1. 竖 (central vertical: from above the box down to middle bar)
+#   2. 竖 (left side of box)
+#   3. 横折 (top + right of box)
+#   4. 横 (middle bar inside)
+#   5. 横 (bottom)
 
 from PIL import Image, ImageDraw
 
@@ -15,34 +18,33 @@ img = Image.new("RGB", (W, H), "white")
 d = ImageDraw.Draw(img)
 
 INK = "black"
-LW = 5  # thin uniform per MMH GT convention
+LW = 5  # thin uniform per MMH GT convention (P12)
 
-# Box coordinates (canvas-px, origin top-left, y grows DOWN)
-# Center the box slightly high on canvas to leave room for the top tick
-box_left   = 70
-box_right  = 230
-box_top    = 110
-box_bottom = 245
+# Box coords (canvas-px, y grows DOWN)
+box_left, box_right = 70, 230
+box_top, box_bottom = 110, 245
 
-# Top protruding vertical (short tick above box top-center)
+# Middle bar ~60% down
+mid_y = box_top + int((box_bottom - box_top) * 0.60)
+
+# Stroke 1: central 竖 — starts above the box top, descends through the
+# top edge and INTO the box, ending near / on the middle bar.
 tick_x = 150
 tick_top_y = 55
-d.line([(tick_x, tick_top_y), (tick_x, box_top)], fill=INK, width=LW)
+d.line([(tick_x, tick_top_y), (tick_x, mid_y - 2)], fill=INK, width=LW)
 
-# Left 竖 (box left side)
+# Stroke 2: left 竖
 d.line([(box_left, box_top), (box_left, box_bottom)], fill=INK, width=LW)
 
-# Top 横 + right 竖 (heng-zhe) — drawn as two segments
+# Stroke 3: 横折 (top + right)
 d.line([(box_left, box_top), (box_right, box_top)], fill=INK, width=LW)
 d.line([(box_right, box_top), (box_right, box_bottom)], fill=INK, width=LW)
 
-# Bottom 横
-d.line([(box_left, box_bottom), (box_right, box_bottom)], fill=INK, width=LW)
-
-# Internal middle horizontal (splits the box roughly in half — closer to bottom
-# actually per GT, the internal heng sits around 60% down)
-mid_y = box_top + int((box_bottom - box_top) * 0.60)
+# Stroke 4: middle 横
 d.line([(box_left, mid_y), (box_right, mid_y)], fill=INK, width=LW)
+
+# Stroke 5: bottom 横
+d.line([(box_left, box_bottom), (box_right, box_bottom)], fill=INK, width=LW)
 
 img.save("01_甴.png")
 print("wrote 01_甴.png")

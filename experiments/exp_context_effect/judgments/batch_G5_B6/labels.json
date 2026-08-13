@@ -1,0 +1,578 @@
+{
+  "p3_char_0134_化__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0134_化",
+    "target_label": "化",
+    "judged_at": "2026-08-08T22:02:20"
+  },
+  "p3_char_0135_刅__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0135_刅",
+    "target_label": "刅",
+    "judged_at": "2026-08-08T22:02:21"
+  },
+  "p3_char_0136_比__att0": {
+    "verdict": "C",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0136_比",
+    "target_label": "比",
+    "judged_at": "2026-08-08T22:02:25"
+  },
+  "p3_char_0137_刈__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0137_刈",
+    "target_label": "刈",
+    "judged_at": "2026-08-08T22:02:28"
+  },
+  "p3_char_0138_水__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0138_水",
+    "target_label": "水",
+    "judged_at": "2026-08-08T22:02:30"
+  },
+  "p3_char_0139_礻__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0139_礻",
+    "target_label": "礻",
+    "judged_at": "2026-08-08T22:02:30"
+  },
+  "p3_char_0140_反__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0140_反",
+    "target_label": "反",
+    "judged_at": "2026-08-08T22:02:35"
+  },
+  "p3_char_0141_办__att0": {
+    "verdict": "C",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0141_办",
+    "target_label": "办",
+    "judged_at": "2026-08-08T22:02:36"
+  },
+  "p3_char_0142_区__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0142_区",
+    "target_label": "区",
+    "judged_at": "2026-08-08T22:02:37"
+  },
+  "p3_char_0143_勻__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0143_勻",
+    "target_label": "勻",
+    "judged_at": "2026-08-08T22:02:41"
+  },
+  "p3_char_0144_风__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0144_风",
+    "target_label": "风",
+    "judged_at": "2026-08-08T22:02:45"
+  },
+  "p3_char_0145_勿__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0145_勿",
+    "target_label": "勿",
+    "judged_at": "2026-08-08T22:02:47"
+  },
+  "p3_char_0146_队__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0146_队",
+    "target_label": "队",
+    "judged_at": "2026-08-08T22:02:49"
+  },
+  "p3_char_0147_卅__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0147_卅",
+    "target_label": "卅",
+    "judged_at": "2026-08-08T22:02:50"
+  },
+  "p3_char_0148_书__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0148_书",
+    "target_label": "书",
+    "judged_at": "2026-08-08T22:02:54"
+  },
+  "p3_char_0149_升__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0149_升",
+    "target_label": "升",
+    "judged_at": "2026-08-08T22:02:55"
+  },
+  "p3_char_0150_引__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0150_引",
+    "target_label": "引",
+    "judged_at": "2026-08-08T22:02:58"
+  },
+  "p3_char_0151_卞__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0151_卞",
+    "target_label": "卞",
+    "judged_at": "2026-08-08T22:02:59"
+  },
+  "p3_char_0152_元__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0152_元",
+    "target_label": "元",
+    "judged_at": "2026-08-08T22:03:03"
+  },
+  "p3_char_0153_卬__att0": {
+    "verdict": "C",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0153_卬",
+    "target_label": "卬",
+    "judged_at": "2026-08-08T22:03:08"
+  },
+  "p3_char_0154_他__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0154_他",
+    "target_label": "他",
+    "judged_at": "2026-08-08T22:03:09"
+  },
+  "p3_char_0155_必__att0": {
+    "verdict": "C",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0155_必",
+    "target_label": "必",
+    "judged_at": "2026-08-08T22:03:11"
+  },
+  "p3_char_0156_们__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0156_们",
+    "target_label": "们",
+    "judged_at": "2026-08-08T22:03:12"
+  },
+  "p3_char_0157_甲__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0157_甲",
+    "target_label": "甲",
+    "judged_at": "2026-08-08T22:03:13"
+  },
+  "p3_char_0158_出__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0158_出",
+    "target_label": "出",
+    "judged_at": "2026-08-08T22:03:13"
+  },
+  "p3_char_0159_申__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0159_申",
+    "target_label": "申",
+    "judged_at": "2026-08-08T22:03:14"
+  },
+  "p3_char_0160_可__att0": {
+    "verdict": "C",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0160_可",
+    "target_label": "可",
+    "judged_at": "2026-08-08T22:03:16"
+  },
+  "p3_char_0161_甴__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0161_甴",
+    "target_label": "甴",
+    "judged_at": "2026-08-08T22:03:20"
+  },
+  "p3_char_0162_生__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0162_生",
+    "target_label": "生",
+    "judged_at": "2026-08-08T22:03:21"
+  },
+  "p3_char_0163_丱__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0163_丱",
+    "target_label": "丱",
+    "judged_at": "2026-08-08T22:03:24"
+  },
+  "p3_char_0164_对__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0164_对",
+    "target_label": "对",
+    "judged_at": "2026-08-08T22:03:26"
+  },
+  "p3_char_0165_乍__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0165_乍",
+    "target_label": "乍",
+    "judged_at": "2026-08-08T22:03:27"
+  },
+  "p3_char_0166_去__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0166_去",
+    "target_label": "去",
+    "judged_at": "2026-08-08T22:03:27"
+  },
+  "p3_char_0167_乎__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0167_乎",
+    "target_label": "乎",
+    "judged_at": "2026-08-08T22:03:28"
+  },
+  "p3_char_0168_用__att0": {
+    "verdict": "C",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0168_用",
+    "target_label": "用",
+    "judged_at": "2026-08-08T22:03:36"
+  },
+  "p3_char_0169_疋__att0": {
+    "verdict": "C",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0169_疋",
+    "target_label": "疋",
+    "judged_at": "2026-08-08T22:03:37"
+  },
+  "p3_char_0170_发__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0170_发",
+    "target_label": "发",
+    "judged_at": "2026-08-08T22:03:38"
+  },
+  "p3_char_0171_疒__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0171_疒",
+    "target_label": "疒",
+    "judged_at": "2026-08-08T22:03:40"
+  },
+  "p3_char_0172_只__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0172_只",
+    "target_label": "只",
+    "judged_at": "2026-08-08T22:03:41"
+  },
+  "p3_char_0173_仔__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0173_仔",
+    "target_label": "仔",
+    "judged_at": "2026-08-08T22:03:48"
+  },
+  "p3_char_0174_主__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0174_主",
+    "target_label": "主",
+    "judged_at": "2026-08-08T22:03:50"
+  },
+  "p3_char_0175_仕__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0175_仕",
+    "target_label": "仕",
+    "judged_at": "2026-08-08T22:03:50"
+  },
+  "p3_char_0176_平__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0176_平",
+    "target_label": "平",
+    "judged_at": "2026-08-08T22:03:51"
+  },
+  "p3_char_0177_仗__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0177_仗",
+    "target_label": "仗",
+    "judged_at": "2026-08-08T22:03:54"
+  },
+  "p3_char_0178_外__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0178_外",
+    "target_label": "外",
+    "judged_at": "2026-08-08T22:03:56"
+  },
+  "p3_char_0179_付__att0": {
+    "verdict": "C",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0179_付",
+    "target_label": "付",
+    "judged_at": "2026-08-08T22:04:02"
+  },
+  "p3_char_0180_打__att0": {
+    "verdict": "C",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0180_打",
+    "target_label": "打",
+    "judged_at": "2026-08-08T22:04:06"
+  },
+  "p3_char_0181_仝__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0181_仝",
+    "target_label": "仝",
+    "judged_at": "2026-08-08T22:04:08"
+  },
+  "p3_char_0182_正__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0182_正",
+    "target_label": "正",
+    "judged_at": "2026-08-08T22:04:08"
+  },
+  "p3_char_0183_仞__att0": {
+    "verdict": "C",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0183_仞",
+    "target_label": "仞",
+    "judged_at": "2026-08-08T22:04:13"
+  },
+  "p3_char_0085_马__retry_1__G5__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0085_马__retry_1__G5",
+    "target_label": "马 (retry #1)",
+    "judged_at": "2026-08-08T22:04:14"
+  },
+  "p3_char_0097_乌__retry_1__G5__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0097_乌__retry_1__G5",
+    "target_label": "乌 (retry #1)",
+    "judged_at": "2026-08-08T22:04:15"
+  },
+  "p3_char_0111_仇__retry_1__G5__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0111_仇__retry_1__G5",
+    "target_label": "仇 (retry #1)",
+    "judged_at": "2026-08-08T22:04:16"
+  },
+  "p3_char_0113_仉__retry_1__G5__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0113_仉__retry_1__G5",
+    "target_label": "仉 (retry #1)",
+    "judged_at": "2026-08-08T22:04:16"
+  },
+  "p3_char_0131_冗__retry_1__G5__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0131_冗__retry_1__G5",
+    "target_label": "冗 (retry #1)",
+    "judged_at": "2026-08-08T22:04:17"
+  },
+  "p3_char_0099_予__retry_1__G5__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0099_予__retry_1__G5",
+    "target_label": "予 (retry #1)",
+    "judged_at": "2026-08-08T22:04:18"
+  },
+  "p3_char_0103_亢__retry_1__G5__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0103_亢__retry_1__G5",
+    "target_label": "亢 (retry #1)",
+    "judged_at": "2026-08-08T22:04:19"
+  },
+  "p3_char_0098_以__retry_1__G5__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0098_以__retry_1__G5",
+    "target_label": "以 (retry #1)",
+    "judged_at": "2026-08-08T22:04:21"
+  },
+  "p3_char_0114_见__retry_1__G5__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0114_见__retry_1__G5",
+    "target_label": "见 (retry #1)",
+    "judged_at": "2026-08-08T22:04:22"
+  },
+  "p3_char_0123_兮__retry_1__G5__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0123_兮__retry_1__G5",
+    "target_label": "兮 (retry #1)",
+    "judged_at": "2026-08-08T22:04:23"
+  },
+  "p3_char_0121_內__retry_1__G5__att0": {
+    "verdict": "PASS",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0121_內__retry_1__G5",
+    "target_label": "內 (retry #1)",
+    "judged_at": "2026-08-08T22:04:24"
+  },
+  "p3_char_0089_义__retry_1__G5__att0": {
+    "verdict": "A",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0089_义__retry_1__G5",
+    "target_label": "义 (retry #1)",
+    "judged_at": "2026-08-08T22:04:27"
+  },
+  "p3_char_0108_无__retry_1__G5__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0108_无__retry_1__G5",
+    "target_label": "无 (retry #1)",
+    "judged_at": "2026-08-08T22:04:31"
+  },
+  "p3_char_0120_气__retry_1__G5__att0": {
+    "verdict": "FAIL",
+    "actual_group": "G5",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "p3_char_0120_气__retry_1__G5",
+    "target_label": "气 (retry #1)",
+    "judged_at": "2026-08-08T22:04:31"
+  }
+}

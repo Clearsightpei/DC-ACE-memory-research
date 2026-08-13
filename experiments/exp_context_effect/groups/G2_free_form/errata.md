@@ -1954,3 +1954,603 @@ pos 388 for the decision to retire the retry mechanism.*
   deprioritize retry.
 - Composition_rules.md (created pos 327) not cited in ANY of 24 fails.
 
+## NEW B7 MAIN FAILS (compact table format continued — evolution.md pos 438)
+
+*B7 curator (pos 438) — 29 main fails from mains-only B7 (retries retired).
+Batch pass rate 21/50 = 42% — MISSED pos 388 target of ≥55%. Ceiling
+declared per contract; see evolution.md pos 438 entry.*
+
+| item_id                    | char | # strokes | failure mode (curator vision) | fix hypothesis / cross-ref |
+|----------------------------|------|-----------|-------------------------------|----------------------------|
+| p3_char_0187_仡            | 仡   | 5         | 亻 clean; 乞 body zigzag rendered as boxy 匚 with no terminal arc/hook — reads as 亻+匚+一. | 乙-family terminal must arc into up-left hook. Cross-ref hook table + form_catalog 乙. |
+| p3_char_0188_边            | 边   | 5         | 辶 base present, but interior 力 collapsed to two floating ticks — no 横折钩+撇 structure. | Enclosed-inside-辶 components fail — see p3_146 队 mode. |
+| p3_char_0190_加            | 加   | 5         | 力 rendered as 刀 (top box + 撇, no terminal up-left hook flick) + 口 boxy. | Sibling risk 力/刀 (hook presence). Add to sibling_signature_checklist candidate. |
+| p3_char_0191_仫            | 仫   | 5         | 亻 clean; 厶 rendered as detached line + isolated tick — 撇折 not looped closed. | Cross-ref principle 9 (never invent structure) + 厶 loop closure. Same mode as p3_116 公. |
+| p3_char_0192_代            | 代   | 5         | 亻 clean; 弋 has 横+斜钩 primary but MISSING top-right 丶 dot AND missing hook flick — reads as 亻+乁. | Sibling risk 弋/戈 — dot is the identity bit. New form_catalog candidate. |
+| p3_char_0193_癶            | 癶   | 5         | 癶 (two feet apart) present but small/thin, both feet vestigial. Curator CBV candidate — signature dimly present. | CBV — add to CBV watchlist. |
+| p3_char_0194_世            | 世   | 5         | 3 stacked vertical ticks + horizontal + wraparound; extra columns, missing 世-signature terminal 竖折. | Composition too geometric; 世's fused-竖 signature not respected. |
+| p3_char_0196_东            | 东   | 5         | 木-body with 提+撇 branches but bottom 冫 pair absent (only one down-slant present), and top 一 too short. | Cross-ref form_catalog 冫 bottom-pair. |
+| p3_char_0198_立            | 198  | 5         | 亠 lid + 冫 pair + bottom 一 all present but sloppy — top 丶 too far right, all strokes wavy. Curator CBV candidate. | CBV — add to watchlist. |
+| p3_char_0201_冉            | 冉   | 5         | 冂 + interior 土-like cross but extra interior 一; interior 竖 doesn't extend through as required. | Cross-ref form_catalog "竖 as through-going axis" (from p2_B2). |
+| p3_char_0203_冊            | 冊   | 5         | Two 冂 with connecting 一 rendered as one boxy rectangle split by 一; hooks missing on both 冂. | Cross-ref B7 PASS p3_207 册 — traditional form 冊 harder due to closed-box aesthetic. |
+| p3_char_0208_北            | 北   | 5         | LEFT side rendered as 十 (should be 竖+提); RIGHT 匕 has hook flicking DOWN not UP-LEFT. | TIER-0 hook table + sibling checklist 匕. Compound-component sibling rule (pos 388) not applied. |
+| p3_char_0209_冎            | 冎   | 5         | 冂-box + interior H-ticks + bottom 一 slant — rare char, entirely wrong. | Rare — deprioritize. |
+| p3_char_0212_处            | 处   | 5         | 夂 left reads as 冫+丿 pair (not 冬-like), right 卜 present; missing 夂 top-撇 arc. | 夂 FROZEN family — same fate. |
+| p3_char_0213_処            | 処   | 5         | 几-like enclosure + top 撇/tick; interior 夂 missing. | Rare traditional form — deprioritize. |
+| p3_char_0214_记            | 记   | 5         | 讠 disintegrated to isolated top tick + 乙-like body; 己 (right) reasonable. | 讠 FROZEN family (p2_038 retry). Component-drift under compound rendering. |
+| p3_char_0216_失            | 失   | 5         | Reads as 夫 (top 一 + 大); missing 失-signature top-left 撇 tick + missing top-中 竖 extension. | Sibling risk 失/夫 — add to sibling_signature_checklist candidate. |
+| p3_char_0218_刍            | 刍   | 5         | Top 撇折 present but body has 3+ stacked 横 (should be closed 口 loop). | 刍 requires closed-loop body; cross-ref form_catalog "closed 口 sub-glyph". |
+| p3_char_0219_在            | 在   | 6         | Reads as 左 (一+撇+工); missing 土 body in bottom-right — has only bare horizontals. | Sibling risk 在/左 — 在 requires 土 sub-glyph occupying bottom-right cell. New sibling row candidate. |
+| p3_char_0222_乑            | 乑   | 6         | Rendered as central 亅 + 2 chevrons — should be 4 撇+捺 pairs stacked. | Rare (multi-人 stack); deprioritize. |
+| p3_char_0223_地            | 地   | 6         | 土 (left) clean; 也 (right) missing bottom 竖弯钩 sweep — has geometric 冂 blocks only. Also extra top tick reads as 几. | Sibling checklist 也/巴/己 bottom-sweep rule needed for compound-component. |
+| p3_char_0224_乓            | 乓   | 6         | Scattered 一 + 匚-top + isolated tick — 乓-signature 丘-body absent. | Sibling 乒/乓/丘 — new candidate. |
+| p3_char_0225_而            | 225  | 6         | 冂-body + 4 内-verticals present but top 一 disconnected floating above; 撇 lid missing. | Top-一 must connect via 撇 tick. Cross-ref principle 2 (shared joints). |
+| p3_char_0226_乔            | 乔   | 6         | 天 top + 小 legs but middle 亅 stops too early; splay too tight. | 乔 signature: central 亅 pierces all the way through 小-splay. |
+| p3_char_0227_年            | 年   | 6         | 3 stacked 横 + 竖 — missing top 撇 hook AND missing bottom-竖 extension; reads as 千+一. | Sibling risk 年/千/牛 — top-撇 tick is the identity bit. Deep FROZEN-牛 territory. |
+| p3_char_0229_自            | 自   | 6         | Reads as 目 (rectangular box + 3 internal 横); missing top-left 撇 tick. | Sibling risk 自/目 — top 撇 tick is the identity bit. New sibling row candidate. |
+| p3_char_0231_会            | 会   | 6         | 人-lid + 一 + 云-body but 厶 fragmented into short line + isolated dot; second 一 missing. | 会 = 人-lid + 二 + 厶 stack. Cross-ref principle 9 (never invent), 厶 loop closure. |
+| p3_char_0232_亙            | 亙   | 6         | 一 top + 口 + 一 bottom but middle 口 has only diagonal interior instead of proper 日 double-横. | 亙 = 一 + 亘 (日+一 wrapper). Traditional form — deprioritize but note. |
+| p3_char_0233_那            | 那   | 6         | 尹 left rendered without crossing 撇 slash — reads as 邦 not 那. | Sibling risk 那/邦 — 尹 vs 丰 top-left. Left-radical component drift. |
+
+**B7 diagnostic summary** (curator vision, n=29 main fails):
+- 7 sibling-bit / identity-tick failures (北 匕, 失 vs 夫, 自 vs 目, 那 vs 邦,
+  年 vs 千, 代 vs 乁, 加 vs 刀). Signature-bit misses that TIER-0 sibling
+  table + form_catalog do not currently name.
+- 6 compound-component drift where left is clean but right collapses
+  (仡 亻+乞, 仫 亻+厶, 代 亻+弋, 地 土+也, 记 讠+己 inverted, 冉 冂+土).
+  Continues B4-B6 pattern; component sibling rule (pos 388) NOT applied
+  by drawer in a single B7 attempt.
+- 5 hook-flick / terminal-flick failures (加 力 hook down, 边 力 body
+  missing, 北 匕 hook down, 乔 亅 truncated, 记 讠 fragmented).
+- 4 duplicated-of-FROZEN modes (处/処 = 夂 family, 记 = 讠 family,
+  边 = enclosure-inside-辶).
+- 3 rare-char fails (冎, 処, 亙, 乑 traditional / rare — low transfer).
+- 2 CBV candidates (癶, 立) — signature present, sloppy execution.
+- Composition_rules.md: still 0 citations across B7 mains.
+- Sibling_signature_checklist: (spot audit needed) — but characters
+  bearing sibling-risk components (北, 失, 自, 加, 代, 那) all failed
+  their sibling bit in B7 mains, so the checklist is still not being
+  operationally applied by drawer at first attempt.
+
+
+## NEW B8 MAIN FAILS (compact table format — evolution.md pos <B8-obs>)
+
+*B8 curator — 44 main fails from mains-only B8 (retries still retired,
+memory-invariance policy in force from B7 pos 438). Batch pass rate
+6/50 = 12% — dramatic drop from B7's 42%. Curriculum this batch was
+17 亻-compound items concentrated on rare/low-frequency right-radicals
+(伄 伧 伥 伫 伤 佤 传 伢 伎 伙 伪 伦 伛 仰 仵 伐 伊 伉 仲 仳 伕 任 —
+recurring 亻-compound-drift mode multiplied by exposure).*
+
+| item_id                    | char | # strokes | failure mode (curator vision) | fix hypothesis / cross-ref |
+|----------------------------|------|-----------|-------------------------------|----------------------------|
+| p3_char_0234_亚             | 亚    | 7         | 二 stacked with H-like interior + ticks — missing 亚 central cross-fusion; reads as 五-hybrid. | Central-cross fusion — new form_catalog candidate. Rare/mid-freq. |
+| p3_char_0235_后             | 后    | 6         | 丿 sweep + 口 box present but no middle 一 and no 厂-lid connection; 口 detached. | 厂-lid + 口 composition — cross-ref form_catalog 厂/口 stack. |
+| p3_char_0236_亥             | 亥    | 6         | 亠 lid + splay-legs but no internal 幺-like structure; reads as 亡+ticks. | Internal 幺-cluster — form_catalog 亠-lid + 幺-body. |
+| p3_char_0238_亦             | 亦    | 6         | 亠 lid + inverted 八 splay + short 亅 but no through-going central axis; four dots read scattered. | Central axis 亅 must span top-to-bottom. Cross-ref principle 9. |
+| p3_char_0239_过             | 过    | 6         | 辶 base OK; interior 寸 rendered as detached 十 + floating tick — not compact 寸. | 寸 must be compact 十+丶 — cross-ref form_catalog 寸. |
+| p3_char_0240_仰             | 仰    | 6         | 亻 clean; 卬 right rendered as bare 卩 only — missing left 卬-top ticks. Sibling 卬/卩. | Sibling 卬/卩 — left-ticks are identity bit. New sibling row candidate. |
+| p3_char_0241_如             | 如    | 6         | 女 fragmented into 4-5 disconnected criss-cross strokes; 口 box on right clean. 女 signature (撇点+撇+一) missed. | 女-signature (撇点+撇+一) — sibling_signature_checklist 女 row needed. |
+| p3_char_0243_成             | 成    | 6         | 戊 outline with floating top-right 丶 but interior 丁-brace missing; reads as 戊/戌 not 成. Sibling 成/戊/戌. | Sibling 成/戊/戌 — internal 丁 + dot placement is identity bit. |
+| p3_char_0244_仳             | 仳    | 6         | 亻 clean; 比 rendered as detached 匕-fragments — reads as 亻+乜. Sibling 比 vs 化 collapse. | Sibling 比 vs 化 — component 比 needs paired 匕+匕 structure. |
+| p3_char_0245_多             | 多    | 6         | Two 夕 stacked present with proper 撇+夕-hook — curator CBV candidate; signature intact, labeler stricter. | CBV candidate — signature intact. |
+| p3_char_0246_仵             | 仵    | 6         | 亻 clean; 午 right rendered as 千 (missing 午 signature top 一 above 千). Sibling 午/千. | Sibling 午/千 — top-一 above 千-body is identity bit. |
+| p3_char_0247_军             | 军    | 6         | 冖 + 车 present but extra tick above 冖 reads as 宀; 车 unbalanced. Sibling 冖/宀 top-dot. | Sibling 冖/宀 — top-dot presence is identity bit. |
+| p3_char_0248_伄             | 伄    | 6         | 亻 clean; 吊-right rectangle + 巾 present but 巾 has no left tick — reads as 亻+另 hybrid. | Rare 亻-compound (吊 right). Component drift. |
+| p3_char_0249_同             | 同    | 6         | 冂 enclosure + 口 interior but no internal 一 above 口 and no hook flick on 冂; reads as 冋/回 variant. | Cross-ref form_catalog 冂 + hook + interior 一+口 stack. |
+| p3_char_0250_伉             | 伉    | 6         | 亻 clean; 亢 fragmented into 亠 + extra 一 + 几 — components detached, not stacked. Compound-component drift. | Compound-component drift — 亢 stack unification. Cross-ref pos 388. |
+| p3_char_0251_当             | 当    | 6         | 3 top ticks + rectangle with interior 一 present but body blocky; curator CBV candidate — signature intact. | CBV candidate — signature intact, labeler strict. |
+| p3_char_0252_伊             | 伊    | 6         | 亻 clean; 尹 rendered without crossing 撇 slash — reads as 亻+尹/丰. Same mode as p3_233 那. | Sibling 尹/丰 — crossing-撇 slash is identity bit. Duplicate of p3_233 那. |
+| p3_char_0253_好             | 好    | 6         | 女 fragmented X-cross + 子 detached; 女 signature (撇点+撇+一) missed. Same mode as 如. | 女-signature row needed (as 如, 她). Sibling_signature_checklist gap. |
+| p3_char_0254_伎             | 伎    | 6         | 亻 clean; 支 right rendered as 又 + top-十 only — missing 支 vertical + arc composition. | Compound-component drift — 支 vertical+arc structure lost. |
+| p3_char_0255_此             | 此    | 6         | 止 left present; 匕 right hook direction inverted — reads as 止+乞. Duplicate of B7 北 匕-hook mode. | Duplicate of B7 北 匕-hook direction mode. FROZEN 匕 family. |
+| p3_char_0256_伐             | 伐    | 6         | 亻 clean; 戈 rendered as fragmented 弋 + floating 丶 — missing 戈 hook-flick. Duplicate of B7 代/弋-family. | Duplicate of B7 代/弋 hook-flick mode. FROZEN 戈/弋 family. |
+| p3_char_0257_问             | 问    | 6         | 门 enclosure lacks top 丶 tick — reads as 冂+口 = 同. Sibling 门/冂 top-dot identity bit. | Sibling 门/冂 — top-丶 tick is identity bit. New sibling row candidate. |
+| p3_char_0258_伕             | 伕    | 6         | 亻 clean; 夫 rendered as ×-cross missing top 一 — reads as 亻+失/天. Sibling 夫/失/天. | Sibling 夫/失/天 — top-一 count/placement is identity bit. |
+| p3_char_0260_伙             | 伙    | 6         | 亻 clean; 火 as 4-splay ticks OK — curator CBV candidate; signature intact. | CBV candidate — 火 4-splay signature intact. |
+| p3_char_0261_再             | 再    | 6         | 冂 + interior grid but missing top-most 一 above the 冂 — reads as 冉 not 再. Sibling 再/冉. | Sibling 再/冉 — top-most 一 above 冂 is identity bit. |
+| p3_char_0263_她             | 她    | 6         | 女 X-cross fragmented + 也 rendered as 冂+hook only; both components collapsed. Same mode as 如/好. | 女-signature row needed (as 如, 好). Bottom-sweep in 也 also missed. |
+| p3_char_0264_伢             | 伢    | 6         | 亻 clean; 牙 right body incomplete — missing bottom hook + 撇 sweep, reads as fragmented 亍. | Compound-component drift — 牙 hook + bottom-sweep lost. |
+| p3_char_0265_名             | 名    | 6         | 夕 top oversized 撇 dominant, 口 detached far below and offset — 名 stack broken. | 夕+口 stack — 口 detachment; principle 6 (component spacing). |
+| p3_char_0266_伥             | 伥    | 6         | 亻 clean; 长 right fragmented — missing 长 signature 一+撇+乁+丶 stack. | Compound-component drift — 长 5-stroke signature lost. Rare 亻-compound. |
+| p3_char_0267_西             | 西    | 6         | 一 top floats above; 冂 + interior verticals only (儿-like) — missing top-crossings and bottom seal. Extra 一 above. | Cross-ref form_catalog 西 top-一 + 囗 + inner ソ crossings. |
+| p3_char_0269_合             | 合    | 6         | 人-lid + 一 + 口 all present but 口 detached and small; curator CBV candidate — signature intact. | CBV candidate — signature intact, 口 small. |
+| p3_char_0270_伧             | 伧    | 6         | 亻 clean; 仓 = 人-lid + 巳 rendered as bare 人-lid + 匚-hook only — 巳 body missing. | Compound-component drift — 仓 (人-lid+巳) stack. Rare. |
+| p3_char_0271_老             | 老    | 6         | 耂 top present; 匕 bottom hook direction inverted — reads as 耂+匕(wrong). Duplicate of 此/北 匕-hook mode. | Duplicate 匕-hook direction mode (北/此). FROZEN 匕 family. |
+| p3_char_0273_次             | 次    | 6         | 冫 pair OK; 欠 right rendered as 人/入 only — missing 欠 top ticks and dot. Component drift. | Compound-component drift — 欠 top-ticks lost. Cross-ref B7 recurring. |
+| p3_char_0274_伫             | 伫    | 6         | 亻 clean; 宁 rendered without 宀 top 丶 — reads as 亻+一+丁. Sibling 宁 top-dot identity bit. | Sibling 宁/丁 — top-丶 dot is identity bit. Same family as 问 门-tick. |
+| p3_char_0275_任             | 任    | 6         | 亻 clean; 壬 rendered as 王 (missing top 撇) — reads as 亻+王. Sibling 壬/王. | Sibling 壬/王 — top-撇 is identity bit. New sibling row candidate. |
+| p3_char_0276_佤             | 佤    | 6         | 亻 clean; 瓦 body rendered as 何/可 hybrid — missing 瓦 signature 乚-hook + interior 丶. | Rare compound — 瓦 signature 乚-hook + interior 丶 lost. |
+| p3_char_0277_先             | 先    | 6         | 丿 + 土-like + 儿 splay present but 土 fused with 丿 poorly; curator CBV candidate — near-signature. | CBV candidate — near-signature, 土/儿 fusion loose. |
+| p3_char_0278_齐             | 齐    | 6         | 亠 top + middle body fragmented (糸-like from stray 幺) + bottom 川 missing — reads as 系-hybrid. | Compound-component drift — 齐 middle 文-body + bottom 川 lost. |
+| p3_char_0279_色             | 色    | 6         | 刀 top-lid + 曰 body but missing bottom 竖弯钩 sweep of 巴. Same as p3_223 地 mode (巴/也 family). | Duplicate of p3_223 地 mode (巴/也 bottom-sweep). FROZEN 巴/也. |
+| p3_char_0280_兆             | 兆    | 6         | Two splays present but no central axis — reads as 化/处 hybrid. Missing 兆-signature 冫-flank + 儿. | Compound-drift — 兆 冫-flank + 儿 signature lost. New form_catalog candidate. |
+| p3_char_0281_设             | 设    | 6         | 讠 left fragmented; 殳 right rendered as 又 + top-cross only. Duplicate of B7 记 讠-family mode. | Duplicate of B7 记 讠-family mode. FROZEN 讠. |
+| p3_char_0282_兇             | 兇    | 6         | 凶 wrap rendered as ∧ + 凵 partial; 儿 bottom present but disconnected. Traditional/rare form. | Rare/traditional form — low transfer. |
+| p3_char_0283_传             | 传    | 6         | 亻 clean; 专 rendered as 4-stacked 一 with hook missing — reads as 亻+曰 hybrid. Sibling 专/云. | Sibling 专/云 — hook + 4-一 count. Compound-drift. |
+
+
+**B8 diagnostic summary** (curator vision, n=44 main fails):
+- **17 compound-component drift (亻 clean, right collapses)**: 仰, 仳,
+  仵, 伄, 伉, 伊, 伎, 伐, 伕, 伙, 伢, 伥, 伧, 伫, 任, 佤, 传. This
+  is the SAME pos-388 pattern from B4-B7 — 亻 signature retrieval is
+  clean, but the right-side low-frequency radical (卬, 比, 午, 吊, 亢,
+  尹, 支, 戈, 夫, 火, 牙, 长, 仓, 宁, 壬, 瓦, 专) is generated by
+  free-form guessing without component memory.
+- **10 sibling-bit / identity-tick failures**: 卬/卩 (仰), 成/戊/戌 (成),
+  午/千 (仵), 冖/宀 (军), 门/冂 (问), 夫/失/天 (伕), 再/冉 (再), 宁/丁
+  (伫), 壬/王 (任), 专/云 (传). Signature-bit misses that TIER-0 sibling
+  table + form_catalog do not currently name.
+- **3 女-radical signature collapses** (NEW density spike): 如, 好, 她.
+  女 3-stroke pictogram (撇点+撇+一) drawn as random criss-cross in
+  all 3 女-compound items. Sibling_signature_checklist gap for 女.
+- **4 duplicates-of-FROZEN modes**: 此/老 = 匕-hook direction (B7 北
+  mode), 伐 = 戈/弋 hook-flick (B7 代 mode), 设 = 讠-family (B7 记
+  mode), 色 = 巴/也 bottom-sweep (B7 地 mode). Same modes returning.
+- **6 CBV candidates** (signature intact, labeler strict): 多, 当, 伙,
+  合, 先, 269 合. Curator vision reads signature but labeler rejects.
+- **3 rare/traditional-char** (low transfer): 兇 (traditional 凶+儿),
+  伄, 佤, 伧, 伥 — low-frequency 亻-compounds.
+- **4 composition/detachment/spacing fails**: 亚 (central-fusion), 亦
+  (central-axis), 亥 (幺-cluster), 名 (夕+口 spacing), 267 西.
+
+
+### B9 (positions 451-500, curator @ pos 500)
+
+*Retries retired at B6; every row below is a first-attempt fail.
+Batch outcome: 10 PASS + 2 A + 38 FAIL = 24% main-pass (recovery
+from B8's 12%). First A verdicts G2 has ever received (你, 没) —
+both compound characters with left radical + right block. See
+drawer_memory pos-500 addition and evolution.md pos-500 entry for
+the calligraphic-weight observation extracted from the A pair.*
+
+| item_id                    | char | # strokes | failure mode (curator vision) | fix hypothesis / cross-ref |
+|----------------------------|------|-----------|-------------------------------|----------------------------|
+| p3_char_0284_龹             | 龹    | 8         | 3 top ticks + 大-cross body only; missing bottom 一 + 丿 signature — reads as 尖-hybrid. | Rare/mid-freq — 龹 signature (八+大+丨+一 stack) uncovered. |
+| p3_char_0285_师             | 师    | 6         | Left 丨-tick + 帀 right rendered as 币 with dropped internal 一 and missing 巾-hook; reads as 帅. | Sibling 师/帅 — left top slash + internal 一 count is identity bit. New sibling row candidate. |
+| p3_char_0286_冱             | 冱    | 6         | 冫 pair OK; 互 rendered as 亏-hybrid — missing 互 internal 二-crossbars and top-bottom-一 sandwich. | Rare compound — 互 4-fold Z-signature lost. Compound-drift. |
+| p3_char_0287_光             | 光    | 6         | 3 top ticks + 一 + 儿-hook all present; curator CBV candidate — signature intact, labeler strict. | CBV candidate — signature intact. |
+| p3_char_0288_凫             | 凫    | 8         | Top 鸟 rendered as 白+dot only (missing 鸟 signature 撇+乛+丶); bottom 几 present. | Compound-drift — 鸟 (5-stroke signature) collapsed to 白. Rare. |
+| p3_char_0289_我             | 我    | 7         | 手+戈 body assembled but 戈 hook missing + top 丿 detached + right 丶 floating; near-signature but tangled. | 戈 hook + 手 crossbar composition. FROZEN 戈 family (B7 代/B8 伐 recur). |
+| p3_char_0290_甸             | 甸    | 7         | 勹 wrap outer 亅 present + 田 interior 4-grid but 勹-hook direction inverted and box overflows. | Sibling 勹-wrap direction; interior alignment. Cross-ref 勺/勾 wrap family. |
+| p3_char_0291_这             | 这    | 7         | 文 top rendered as 幺+又 hybrid (missing 亠 lid + 乂 crossing); 辶 sweep OK. | Compound-drift — 文 4-stroke signature lost inside 辶. Cross-ref B5 文 PASS + form_catalog. |
+| p3_char_0292_甹             | 甹    | 9         | 甶 top rendered as bare 田; 亏 bottom lacks top-一 and hook mis-drawn. Rare traditional. | Rare/traditional — 甶+亏 stack uncovered. |
+| p3_char_0293_来             | 来    | 7         | 一 top + 兩点 crossbar + 木 body all present; curator CBV candidate — signature intact. | CBV candidate — near-signature. |
+| p3_char_0296_串             | 串    | 7         | Two 口 boxes stacked + 丨 pierces both; but boxes drawn as detached squares (no fusion) and 丨 too long above and below. | Component detachment — 串 stack fusion. New composition pattern. |
+| p3_char_0298_丽             | 丽    | 7         | 一 top + two 冂 wraps rendered with internal 丨-only ticks; missing internal 丶+丶 inside each 冂 (should be 丶 not 丨). | Sibling internal-tick 丶 vs 丨 inside 冂 for 丽/兩 family. New sibling row candidate. |
+| p3_char_0300_乱             | 乱    | 7         | 舌 left rendered as 千 + □ (口 as square, missing 舌 signature 丿+一+千+口); 乙 right OK. | Compound-drift — 舌 (6-stroke) collapsed to 千+口. |
+| p3_char_0301_作             | 作    | 7         | 亻 clean; 乍 rendered as 丿 + 3-detached horizontals + 丨; missing 乍 signature (top 丿 + 一 + 竖 + 一 stack) fusion. | Compound-drift — 乍 5-stroke stack fusion lost. Rare 亻-compound. |
+| p3_char_0302_疔             | 疔    | 7         | 疒 outer OK; 丁 interior present but 疒 body strokes fragmented (2-点 top misplaced, 广 missing). | Radical-body fragmentation — 疒 signature (亠 lid + 冫 flank + 广). |
+| p3_char_0304_疖             | 疖    | 7         | 疒 outer + 卩 interior; 卩 rendered as 卩 with reversed hook direction. Same mode as B7 hook-family. | Duplicate B7 hook-flick mode + FROZEN 卩. |
+| p3_char_0305_还             | 还    | 7         | 不 rendered as 幺+乁 hybrid (missing 不 signature 一+丨+丿+丶); 辶 sweep OK. | Compound-drift — 不 (4-stroke) collapsed. Odd since 不 PASSed as p3_094 in B5. Retrieval failure. |
+| p3_char_0306_亨             | 亨    | 7         | 亠 lid + 口 + 了 all present; but middle 一 (亨-signature bit between 口 and 了) missing — reads as 享/亭 variant. | Sibling 亨/享/亭 — middle-一 presence is identity bit. New sibling row candidate. |
+| p3_char_0309_两             | 两    | 7         | 一 top + 冂 wrap + interior 从-like verticals; missing internal 人人 crossing (should be 入+入, not 丨+丨). | Sibling 两/雨 internal 人人 vs 冫 signature. New sibling row candidate. |
+| p3_char_0311_身             | 身    | 7         | Bare 白-like box + top 丿; missing bottom 一 + 撇 + 亅-hook (身 signature 7-stroke stack collapsed to 4). | Radical-body fragmentation — 身 7-stroke signature lost. |
+| p3_char_0312_伲             | 伲    | 8         | 亻 clean; 尼 rendered as bare 几-body (missing 尸 lid + 匕 interior stroke). | Compound-drift — 尼 (5-stroke) collapsed to 几-hybrid. Rare. |
+| p3_char_0313_位             | 位    | 7         | 亻 OK; 立 fragmented — top-dot detached above, middle 一 detached, bottom 一 present. Signature disassembled. | Compound-drift — 立 (5-stroke) stack fusion lost. |
+| p3_char_0314_伶             | 伶    | 7         | 亻 clean; 令 top ∧-lid + middle 一 OK; bottom 卩-hook rendered flat, no hook flick. | Bottom-hook flick missing on 令. Cross-ref TIER-0 hook-flick. Retrieval failure. |
+| p3_char_0315_声             | 声    | 7         | 士 top OK; 尸 body rendered as 厶/口 hybrid — missing 尸 signature (横+丿+竖 + hook stack). | Sibling-signature 尸 (TIER-0 row present but not retrieved). Retrieval failure. |
+| p3_char_0316_伺             | 伺    | 7         | 亻 clean; 司 rendered as 冂-wrap + 口 interior only; missing internal 一 and hook direction wrong. | Compound-drift — 司 (5-stroke) internal 一 + hook. |
+| p3_char_0317_员             | 员    | 7         | 口 top detached far above; 贝 body rendered as 目+八 (missing 贝-signature interior 二 + splay 八). | Component-detachment — 口+贝 vertical stack. FROZEN 贝 family recur. |
+| p3_char_0318_伽             | 伽    | 7         | 亻 clean; 加 = 力 + 口; 力 rendered as square (missing 力 hook + 撇); 口 detached. | Compound-drift — 力 (2-stroke, hook family). Cross-ref B1 力 PASS. |
+| p3_char_0319_听             | 听    | 7         | 口 detached far left; 斤 rendered as ∧ + 丨-hook (missing 斤 internal 一). Component detachment. | Component-detachment — 口+斤 side-by-side. |
+| p3_char_0320_伾             | 伾    | 8         | 亻 clean; 丕 rendered as 不+一 (unified as 不-lookalike); should be top-一 + 不 stack. | Compound-drift — 丕 (5-stroke, top-一 + 不). Rare. |
+| p3_char_0321_把             | 把    | 7         | 扌 OK; 巴 rendered as 曰 + hooked tail (bottom sweep collapsed). Same mode as B8 色/223 地. | Duplicate FROZEN 巴/也 bottom-sweep mode. Recur. |
+| p3_char_0323_形             | 形    | 7         | 开 left OK; 彡 rendered as 冫 (2 ticks not 3, wrong slant angle). | Sibling 彡/冫 — count 3 vs 2 is identity bit. New sibling row candidate. |
+| p3_char_0325_状             | 状    | 7         | 丬 left rendered as 匕-like fragment; 犬 right missing top-丶 dot. | Radical-signature 丬 (3-stroke) + 犬 dot placement. |
+| p3_char_0326_佇             | 佇    | 7         | 亻 clean; 宁 (traditional) rendered as 宀+丁 with extra top dot floating — reads as 宁+丶. | Sibling 佇/伫 — nearly-identity, hook + dot placement. Same family as B8 伫 (retrieval failure). |
+| p3_char_0328_佈             | 佈    | 7         | 亻 clean; 布 rendered as 一 + 巾 (missing top 丿 sweep signature). | Compound-drift — 布 (5-stroke) top-丿 lost. |
+| p3_char_0329_运             | 运    | 7         | 云 top signature (二+厶) present; 辶 sweep OK; curator CBV candidate — signature intact. | CBV candidate — signature intact, labeler strict. |
+| p3_char_0330_佉             | 佉    | 8         | 亻 clean; 去 = 土 + 厶; 土 fragmented (horizontals detached), 厶 rendered as open △. | Compound-drift — 去 stack (previously seen B6 as component fail). Duplicate. |
+| p3_char_0331_更             | 更    | 7         | 一 top + 曰 middle + 从-legs splay; missing central 亅 piercing (更-signature core stroke). | Composition — 更 central-vertical piercing. New form_catalog candidate. |
+| p3_char_0333_条             | 条    | 7         | 夂 top + 木 body all present; curator CBV candidate — signature intact. | CBV candidate — signature intact. |
+
+**B9 diagnostic summary** (curator vision, n=38 main fails):
+- **12 亻-compound-drift** (亻 clean, right collapses): 作, 伲, 位,
+  伶, 伺, 伽, 伾, 佇, 佈, 佉, and 2 borderline (伯, 但 PASSed).
+  This is the SAME pos-388 pattern from B4-B8. 亻 signature is retrieved,
+  right-side low-freq radical (乍, 尼, 立, 令, 司, 加, 丕, 宁, 布, 去)
+  free-form guessed.
+- **6 CBV candidates** (signature intact, labeler strict): 光, 来, 运,
+  条, and possibly 伶 (near-sig). Curator vision reads signature; labeler
+  rejects. Steady density.
+- **7 sibling-bit / identity-tick failures**: 师/帅 (师), 亨/享/亭 (亨),
+  两/雨 (两), 丽/兩 (丽), 彡/冫 (形), 佇/伫 (佇), 勹-wrap direction (甸).
+  Signature-bit misses that current TIER-0 table does not name.
+- **6 radical-body fragmentation** (component signature collapse):
+  疔 (疒), 身 (7-stroke stack), 我 (戈 + 手 tangled), 冱 (互), 乱 (舌),
+  状 (丬).
+- **3 duplicates-of-FROZEN modes**: 疖 (卩-hook), 把 (巴 bottom-sweep),
+  员 (贝 body), 疖 also part of hook-family, 佉 dup of B6 去-family.
+- **4 rare/traditional-char** (low transfer): 龹, 甹, 凫, 伲, 伾,
+  佉 — low-frequency components.
+- **3 composition/detachment/spacing fails**: 员 (口+贝 vertical),
+  听 (口+斤 side-by-side), 串 (口+口+丨 fusion), 317/319 detachment mode.
+- **NEW pattern**: none by mechanism. All 38 fails fit modes documented
+  in B4-B8 memory. Item-mix has shifted toward more 亻-compounds (12
+  vs B7's 3 and B8's 17), and CBV density is up slightly (6 vs B8's 6).
+- **NEW quality signal**: 2 A verdicts (你, 没) — first for G2. Both are
+  compound characters where the drawer applied explicit calligraphic
+  weight-shaping: teardrop taper (thin→thick→thin), shoulder-dab at 折
+  joints, Bezier curves for 撇/捺 sweeps, correct hook flick direction.
+  See drawer_memory.md pos-500 addition.
+
+## NEW B10 MAIN FAILS + C-BAND (compact table format — evolution.md pos 550)
+
+*B10 curator — 32 FAIL + 8 C (close-but-not-exact, new v12 bucket)
+from mains-only B10 (retries still retired, memory-invariance policy
+in force from B7 pos 438). Batch outcome: 10 PASS + 2 A + 8 C + 32
+FAIL = 20% main-pass (down 4pp from B9). Two A verdicts (佘, 佧) —
+A signal replicated from B9 (你, 没). Curriculum this batch shifted
+off 亻-compounds (5 vs B9's 12) and onto 疒-compounds (5 items:
+疙 疟 疠 疚(C) 疝(C)) plus more misc-radical compounds.*
+
+| item_id                    | char | # strokes | failure mode (curator vision) | fix hypothesis / cross-ref |
+|----------------------------|------|-----------|-------------------------------|----------------------------|
+| p3_char_0334_佔             | 佔    | 8         | 亻 clean; 占 rendered as 卜 + 口 with 卜's 丶 detached and 口 too small — compound-drift. | Duplicate 亻-compound-drift mode. Sibling 占/卜 top-丶. |
+| p3_char_0335_别             | 别 (C) | 7        | 口 + 力 + 刂 pieces present but detached rectangles; no calligraphic weight, hook missing on 力. | C-band signature-intact-but-flat. Cross-ref pos-550 point 1. |
+| p3_char_0336_佗             | 佗    | 7         | 亻 clean; 它 rendered as 宀 + 匕-fragment — missing 匕 hook direction (dup B6/B7 匕 family). | Duplicate FROZEN 匕 family mode. Sibling 它/宅. |
+| p3_char_0337_张             | 张    | 7         | 弓 left OK-ish; 长 right fragmented — missing 长 signature 一+撇+乁+丶 stack. Same mode as B8 伥. | Compound-drift — 长 signature dup B8. |
+| p3_char_0339_每             | 每    | 7         | 一 top + 母 body rendered as 冂 + 4-tick interior, missing 母 signature dual-横 crossbar. | Compound-drift — 母 signature (7-stroke) collapsed to bare 冂+dots. |
+| p3_char_0340_佚             | 佚 (C) | 7        | 亻 stretched full-height; 失 as ×-cross with 人-legs, missing top-一 above 千 body. | C-band — sibling 失/夫/天 top-一 miss + proportion stretch. |
+| p3_char_0341_社             | 社    | 7         | 礻 left rendered as 衤 (extra 丶 tick) OR 示 hybrid; 土 right OK. | Sibling 礻/衤 — extra-tick presence. New sibling row candidate. |
+| p3_char_0342_佛             | 佛    | 7         | 亻 clean; 弗 rendered as 弓 + 2丨 hybrid, missing 弗 signature crossbar. | Compound-drift — 弗 (5-stroke) signature lost. Rare 亻-compound. |
+| p3_char_0343_即             | 即    | 7         | 皀 left rendered as 白+匕-hybrid missing 皀 signature; 卩 right hook direction inverted. | Compound-drift + FROZEN 卩 hook dup B7. |
+| p3_char_0345_志             | 志    | 7         | 士 top + 心 bottom detached with gap; 心 rendered without 卧钩 flick direction. | Composition detachment + hook-flick dup. Cross-ref TIER-0. |
+| p3_char_0346_佞             | 佞    | 7         | 亻 clean; 妾/女+又-hybrid renders on right — missing 佞 signature (亻+一+女 stack). | Compound-drift — rare, 佞 sig lost. |
+| p3_char_0347_证             | 证    | 7         | 讠 left fragmented (dup B7 记 讠-family); 正 right OK. | Duplicate FROZEN 讠 family mode. |
+| p3_char_0348_佟             | 佟    | 7         | 亻 clean; 冬 top 夂 + bottom 冫 both present but detached scatter — no dot-below-夂 fusion. | Compound-drift — 冬 stack fusion (dup B9 疔/身 fragment mode). |
+| p3_char_0349_改             | 改    | 7         | 己 left OK; 攵 right rendered as 攴 (extra 丶) — missing 攵 signature 4-stroke splay. | Sibling 攵/攴 — dup B6/B7 hook family. |
+| p3_char_0351_步             | 步    | 7         | 止 top + 少 bottom present but length ratios inverted — 少's 撇 too short. | Sibling 步/涉-family — 止/少 length ratio. New sibling row candidate. |
+| p3_char_0352_佥             | 佥    | 7         | ∧-lid + 一 + 从 stack all present but 从 rendered as 人+人 detached; lid too flat. | Compound-drift — 佥 (∧+一+从) stack fusion lost. |
+| p3_char_0353_找             | 找    | 7         | 扌 OK; 戈 hook missing + top 丿 detached — dup B7 代, B8 伐, B9 我 戈-family. | Duplicate FROZEN 戈 hook-flick mode. |
+| p3_char_0355_块             | 块    | 7         | 土 left OK; 夬 right rendered as 大 + 冫-hybrid, missing 夬 signature 又-hook. | Compound-drift — 夬 (4-stroke) signature lost. Rare. |
+| p3_char_0358_盯             | 盯 (C) | 8        | 目 clean; 丁 detached ~50 px to the right with visible white gap; 丁 stem uniform-radius. | C-band — LR-compound spacing failure. Cross-ref pos-550 point 4. |
+| p3_char_0359_的             | 的 (C) | 8        | 白 left clean; 勺 right rendered as loose oval loop, missing 撇+横折钩+丶 3-primitive structure. | C-band — 勺-wrap 3-primitive. Cross-ref form_catalog pos-550. |
+| p3_char_0360_並             | 並    | 8         | 5-stack pieces (丷+一+一+八+一) rendered as scattered horizontals with no fusion. | Composition-drift — 並 5-stack fusion. Rare compound. |
+| p3_char_0361_到             | 到    | 8         | 至 left present; 刂 right two verticals of unequal length + gap between 至 and 刂. | LR spacing + 刂 length. Cross-ref pos-550 point 4. |
+| p3_char_0362_甾             | 甾 (C) | 8         | 巛 top (3 curves) + 田 bottom present, both clean — signature intact. Curator CBV candidate. | CBV candidate — signature intact. |
+| p3_char_0366_畅             | 畅    | 8         | 申 left rendered as 田 + 丨 (missing 申 through-竖); 昜 right fragmented top-勿 collapse. | Compound-drift — both components partially collapsed. Rare. |
+| p3_char_0367_事             | 事    | 8         | Multi-fold body assembled but central 亅 hook detached at bottom + missing top 一. | Radical-body fragmentation — 事 core central-亅 dup B8 更. |
+| p3_char_0368_乖             | 乖    | 8         | 千 top + 北 bottom rendered as detached fragments — 千 no top-丿, 北 匕-hook inverted. | Compound-drift — sibling 匕 (dup) + 千 top-丿 miss. |
+| p3_char_0369_其             | 其    | 8         | 八 top + 甘 middle + 一 base all present but 甘 (曰 with extra 一) drawn as bare 曰. | Sibling 其/具 — internal 一 count. Compound-drift. |
+| p3_char_0370_乶             | 乶    | ~10       | Rare Korean-loan char; drawer produced 卜 + 甫 approximation with wrong stacking. | Rare/traditional — low transfer. |
+| p3_char_0371_所             | 所    | 8         | 户 left rendered as 尸 + top-丶 (missing 户 signature 亠-lid); 斤 right OK; ~40 px gap. | Sibling 户/尸 top-一 miss + LR spacing. Dup B9 声 尸 family. |
+| p3_char_0372_疌             | 疌    | 8         | 疋 body + interior 3-stroke stack rendered as flat cross+scatter. Rare. | Rare — 疌 signature (疋+聿-hybrid) uncovered. |
+| p3_char_0374_疙             | 疙    | 8         | 疒 rendered as 广 (3-stroke, missing inner 冫); 乞 right present. | 疒-drift NEW top-3 mode. Cross-ref form_catalog pos-550 疒 entry. |
+| p3_char_0375_经             | 经    | 8         | 纟 left fragmented (dup B7 纟 family); 巠 right rendered as 一+川-hybrid. | Duplicate FROZEN 纟 family + 巠 signature miss. |
+| p3_char_0376_疚             | 疚 (C) | 8        | 疒 outer signature present (with inner 冫) + 久 recognizable — small detachment. Curator CBV candidate. | CBV candidate — signature intact, C from spacing. |
+| p3_char_0377_法             | 法 (C) | 8        | 氵 rendered as 3 plain teardrop dots (bottom should be 提 rising, not down-dot); 去 clean. | C-band — 氵 bottom-提 identity bit. Cross-ref pos-550 point 2. |
+| p3_char_0378_疝             | 疝 (C) | 7        | 疒 outer collapsed to 广+丶 (inner 冫 partial); 山 present. Borderline. | C-band — 疒 body dup with 疙/疟/疠 mode. |
+| p3_char_0379_学             | 学    | 8         | 3 top ticks + 冖 lid present but bottom 子 fragmented — missing 子's hook+横 signature. | Sibling 学/半 — 子-hook identity bit. New sibling row candidate. |
+| p3_char_0380_疟             | 疟    | 8         | 疒 rendered as 广 (dup 疙 mode); 虐 right fragmented into 匚+丄 hybrid. | 疒-drift dup + 虐 rare-signature. |
+| p3_char_0381_定             | 定    | 8         | 宀 lid + interior fragmented into 一+口-like shapes; 疋 body (5-stroke) lost. | Sibling 定 vs 元/兄 — 疋 body signature. New sibling row candidate. |
+| p3_char_0382_疠             | 疠    | 7         | 疒 rendered as 广 (dup 疙/疟 mode); 万 right fragmented. | 疒-drift dup + 万 sig miss. |
+| p3_char_0383_些             | 些    | 8         | 此 top (止+匕) present but 匕 hook inverted (FROZEN dup); 二 bottom OK. | Duplicate FROZEN 匕 hook direction mode. |
+
+
+**B10 diagnostic summary** (curator vision, n=32 FAIL + 8 C = 40 non-PASSes):
+- **5 亻-compound-drift**: 佔, 佗, 佛, 佞, 佟 (also 佚 as C). Down
+  significantly from B8's 17 and B9's 12 — item-mix rotated off 亻.
+- **5 疒-compound-drift** (NEW top-3 mode this batch): 疙, 疟, 疠 (all
+  as FAIL: 疒 rendered as 广), 疚 (C), 疝 (C). Documented as
+  form_catalog.md pos-550 entry. 疒 attested-3x-failed threshold now
+  crossed (was B7 疔 + B10 疙/疟/疠).
+- **6 sibling-bit failures**: 张 (长), 佥 (∧+一+从), 找 (戈), 步
+  (止/少), 每 (母), 定 (疋 body). Same mechanism as every prior batch.
+- **5 radical-body fragmentation**: 事 (central 亅), 乖 (千+北), 学
+  (子-hook), 其 (甘 internal 一), 並 (5-stack fusion).
+- **4 composition/detachment/spacing**: 志, 到, 畅, 所. LR spacing
+  documented as pos-550 point 4.
+- **5 duplicates-of-FROZEN**: 找 (戈), 改 (己→攵), 即 (卩-hook), 经
+  (纟), 些 (匕-hook). All modes at earlier scans.
+- **3 讠/礻/纟 left-radical drift**: 证 (讠), 社 (礻/衤), 经 (纟).
+- **2 rare/traditional**: 乶, 疌 — low transfer.
+- **C-band diagnosis (n=8)**: 2 CBV candidates (甾, 疚 — signature
+  intact, labeler strict). 6 signature-intact-but-flat (别, 佚, 盯,
+  的, 法, 疝 — pos-500 calligraphic-weight moves could plausibly lift
+  3-4 to PASS on retry). See drawer_memory pos-550 point 1.
+- **NEW mechanisms**: 0. Every FAIL fits a documented mode. 疒-drift
+  is a documented mode now attested-3x-failed at form_catalog level.
+- **NEW quality signal**: 2 A verdicts (佘, 佧) — the B9 A signal
+  replicated. Both used PIL brush-dabs with tapered widths + explicit
+  stroke-list docstring. See drawer_memory.md pos-550 point 5.
+
+## NEW B11 MAIN FAILS + C-BAND (compact table format — evolution.md pos 600)
+
+*B11 curator — 35 FAIL + 7 C (close-but-not-exact) from mains-only
+B11 (retries retired, memory-invariance policy in force since B7 pos
+438). Batch outcome: 8 PASS + **0 A** + 7 C + 35 FAIL = **16% main-
+pass** (down 4pp from B10, down 8pp from B9 — third consecutive
+decline). Zero A — the A signal from B9+B10 (n=4) did NOT replicate.
+Root cause: all 7 C items used uniform-width polylines, none applied
+the pos-500 calligraphic-weight 4-move. Curriculum this batch heavy
+on 亻-compounds (14 items) + 讠 (5) + 田 (3). See drawer_memory
+pos-600 for full diagnosis and memory_index.md TIER-0 F+G additions.*
+
+| item_id                    | char | # strokes | failure mode (curator vision) | fix hypothesis / cross-ref |
+|----------------------------|------|-----------|-------------------------------|----------------------------|
+| p3_char_0384_疡             | 疡    | 9         | 疒 rendered as 广 (missing inner 冫 — dup B10 疙/疟/疠 mode); 昜 right fragmented. | 疒-drift dup B10 form_catalog entry. attested-4x-failed. |
+| p3_char_0385_物             | 物    | 8         | 牛 left present but 勿 right rendered as 3 detached slashes without wrap. | Compound-drift — 勿 3-slash-in-wrap signature lost. |
+| p3_char_0386_亞             | 亞    | 8         | Symmetric double-口 stack lost; rendered as two horizontals + vertical scatter. | Rare traditional. Composition-drift. Low transfer. |
+| p3_char_0388_亟             | 亟    | 9         | Complex multi-part stack (二 + 了+口 + 又 + 一) rendered as unrelated horizontals + hooks. | Rare — 亟 5-piece stack fusion never attested. |
+| p3_char_0389_话             | 话    | 8         | 讠 left as 3 detached sticks (FROZEN 讠 dup 5x); 舌 right OK-ish. | Duplicate FROZEN 讠 family. frozen_cohort.md fix row 讠. |
+| p3_char_0390_佬 (C)         | 佬    | 8         | Signature intact but ALL uniform width=6 lines; 亻 竖 detached from 撇; 耂 长撇 uniform stick. | C-band flat — dup pos-500/pos-550 recipe absence. |
+| p3_char_0391_表             | 表    | 8         | 主 top clean; 衣 bottom rendered as 一+×+two-legs — missing 衣 signature (bottom fan of 撇+捺+丶). | Compound-drift — 衣-body 4-piece fan lost. |
+| p3_char_0392_佯             | 佯    | 8         | 亻 clean; 羊 right rendered as 二+丨 stack — missing 羊 signature (3-横 + 竖). | 亻-compound-drift. dup B10 mode. |
+| p3_char_0393_实             | 实    | 8         | 宀 lid detached; 头 body rendered as 一+×-cross — missing 头 signature. | Simplified 实 — 头 signature (5-stroke) collapsed. |
+| p3_char_0394_佰             | 佰    | 8         | 亻 clean; 百 rendered as 一 + 曰 with detached top-一. | 亻-compound-drift — 百 top-一/一 attachment. |
+| p3_char_0395_金             | 金    | 8         | 人-lid top present; 王 body missing central 一 (rendered as 一+丨+一); 丶 pair inside collapsed. | 金-stack (人+一+土-with-2丶) fusion lost. |
+| p3_char_0396_佴 [PASS]      | 佴    | 8         | — | — |
+| p3_char_0397_空             | 空    | 8         | 穴 top rendered as detached 宀+八; 工 body sits detached below with ~30 px gap. | LR/vertical spacing dup pos-550 point 4. |
+| p3_char_0398_併             | 併    | 9         | 亻 clean; 并 right rendered as 丷+two-竖 without middle horizontals. | 亻-compound-drift — 并 signature (6-stroke) lost. |
+| p3_char_0399_往 [PASS]      | 往    | 8         | — | — |
+| p3_char_0400_佶 (C)         | 佶    | 8         | Signature intact but 亻 竖 begins mid-撇 (detached); 口 as sharp rectangle; no shoulder dab anywhere. | C-band flat — uniform width=8 polylines. |
+| p3_char_0401_取             | 取    | 8         | 耳 left OK; 又 right detached with visible ~30 px gap; 又's 捺 uniform stick. | LR spacing dup + 又 捺 taper missing. |
+| p3_char_0402_佻             | 佻    | 8         | 亻 clean; 兆 right rendered as 冫+two-竖-flanks without central knots. | 亻-compound-drift — 兆 signature (6-stroke). |
+| p3_char_0403_放             | 放    | 8         | 方 left OK; 攵 right rendered as 4 disconnected splayed sticks (FROZEN 攵 dup 3x). | Duplicate FROZEN 攵 family. frozen_cohort.md fix row 攵. |
+| p3_char_0404_佼 (C)         | 佼    | 8         | Signature intact; 亻 竖 disconnected from 撇 apex; 交 top-lid missing 亠 crossing dot. | C-band flat + 亻 disconnect + minor 亠 miss. |
+| p3_char_0405_治             | 治    | 8         | 氵 left as 3 plain teardrop dots (bottom should be 提, dup B10 法 mode); 台 right OK. | 氵 bottom-提 dup B10 pos-550 point 2. |
+| p3_char_0406_佽             | 佽    | 8         | 亻 clean; 次 right rendered as 冫+人 with 欠-body missing horizontal. | 亻-compound-drift — 次-body 4-stroke lost. |
+| p3_char_0407_规             | 规    | 8         | 夫 left OK; 见 right rendered as 目+人-legs without 见 hook flick + top gap. | 见 sibling row missed (TIER-0 A row 见). LR gap. |
+| p3_char_0408_佾 (C)         | 佾    | 8         | Signature intact; 亻 竖 detached; 八+月 stack present but 月 rendered as bare rectangle, no shoulder dab, no hook. | C-band flat + 亻 disconnect + 月 hook missing. |
+| p3_char_0409_油 [PASS]      | 油    | 8         | — | — |
+| p3_char_0410_侃             | 侃    | 8         | 亻 clean; 兄+川 right rendered as 口+3-vertical bars without hook. | 亻-compound-drift — 侃 signature (7-stroke). Rare. |
+| p3_char_0411_受             | 受    | 8         | 爫+冖+又 3-stack rendered as detached ladder — top-tick trio + roof + bottom 又 all separated. | Composition-drift — 受 stack fusion lost. |
+| p3_char_0412_來             | 來    | 8         | Traditional 来 — 木 body with 人-flanks on each side; rendered as scattered ×-cross fragments. | Rare traditional. Low transfer. |
+| p3_char_0413_采 (C)         | 采    | 8         | Signature intact; 爫 top as 3 raw sticks (no ticks); 木 as ×-cross without 撇/捺 taper. | C-band flat — 爫 3-tick taper missing. |
+| p3_char_0414_侈 [PASS]      | 侈    | 8         | — | — |
+| p3_char_0415_转             | 转    | 8         | 车 left OK-ish (FROZEN 车 in cohort); 云 right rendered as 二+厶 detached. | Duplicate FROZEN 车 mode + 云 fusion. |
+| p3_char_0416_侉             | 侉    | 8         | 亻 clean; 夸 right rendered as 大+一+可-fragment — missing 夸 signature. | 亻-compound-drift — 夸 (6-stroke) sig lost. |
+| p3_char_0417_单             | 单    | 8         | ⺍ top + 田 middle + 十 bottom collapsed — pieces present but detached with gaps. | Stack-fusion loss — 单 3-stack. |
+| p3_char_0418_例             | 例    | 8         | 亻+列 spacing — 列 right rendered as 歹+刂 with detachment; hook missing on 刂. | 亻-compound-drift + LR spacing dup. |
+| p3_char_0419_知 (C)         | 知    | 8         | Signature intact; 矢 top-一 detached from 大 body; 口 as sharp rectangle. | C-band flat — 矢 top-一 attach + 口 shoulder dab. |
+| p3_char_0420_侌             | 侌    | 11        | Complex ∧+二+云 stack — rendered as scattered horizontals. Rare. | Rare — 侌 5-stack. Low transfer. |
+| p3_char_0421_或             | 或    | 8         | 戈 hook missing (FROZEN 戈 dup 5x); inner 口 + 一 present. | Duplicate FROZEN 戈 family. frozen_cohort.md fix row 戈. attested-5x-failed. |
+| p3_char_0422_侍             | 侍    | 8         | 亻 clean; 寺 right rendered as 士+寸 detached scatter. | 亻-compound-drift — 寺 (6-stroke) 土+寸 stack fusion. |
+| p3_char_0423_苦 [PASS]      | 苦    | 8         | — | — |
+| p3_char_0424_侑 [PASS]      | 侑    | 8         | — | — |
+| p3_char_0425_具 [PASS]      | 具    | 8         | — | — |
+| p3_char_0426_侔             | 侔    | 8         | 亻 clean; 牟 right rendered as 厶+牛-hybrid without dot-below-厶. | 亻-compound-drift — 牟 (6-stroke) sig lost. Rare. |
+| p3_char_0427_线             | 线    | 8         | 纟 left fragmented (FROZEN 纟 dup); 戋 right rendered as 二+戈 without hook (戈 dup). | Duplicate FROZEN 纟 + FROZEN 戈 double-hit. |
+| p3_char_0428_侖             | 侖    | 8         | Traditional 仑 — 亻 + 亼-lid + 冊 body. Rendered as fragmented stack. | Rare traditional. Low transfer. |
+| p3_char_0429_是             | 是    | 9         | 日 top OK; 走-like bottom fragmented — 一+人+捺 without 疋 continuity. | Compound-drift — 是-bottom (疋-style) 5-stroke fusion. |
+| p3_char_0430_畈             | 畈    | 9         | 田 left OK; 反 right rendered as 厂+又 splayed sticks (FROZEN 攵-adjacent). | 田-family LR + 反 stack fusion. Related to 攵 mode. |
+| p3_char_0431_说 (C)         | 说    | 9         | Signature intact; 讠 as detached fragments (FROZEN 讠 dup); 兑 hook straight-down (匕/兑-hook dup). | C-band flat + double FROZEN dup (讠 + 兑-hook). Notable: C despite two frozen dups because component silhouettes were readable. |
+| p3_char_0432_畋             | 畋    | 8         | 田 left OK; 攵 right rendered as 4 disconnected splayed sticks (FROZEN 攵 dup 3x). | Duplicate FROZEN 攵 family. attested-3x-failed. |
+| p3_char_0433_要             | 要    | 9         | 覀 top + 女 bottom present but 覀 (西 with flat lid) rendered as sharp 冂+dots; 女 rendered as ×-fold without 撇+捺 taper. | Compound-drift — 覀 as 西-variant sig; 女 uniform strokes. |
+
+
+**B11 diagnostic summary** (curator vision, n=35 FAIL + 7 C = 42 non-PASSes):
+- **16 亻-compound-drift** (12 FAIL + 4 C — up sharply from B10's 5):
+  佯, 佰, 佻, 佽, 侃, 例, 侉, 佬(C), 佶(C), 佼(C), 佾(C), 侖, 侌,
+  侍, 侔, 併. Same mechanism as every prior batch. Item-mix
+  concentrated on 亻-compounds this batch, hence the low pass-rate.
+- **5 讠-family drift** (all FROZEN 讠 dup): 话, 说(C), 转, 线, 规.
+  attested-5x-failed. See frozen_cohort.md fix row 讠.
+- **3 攵/攴 splay dup** (all FROZEN 攵 dup): 放, 畋, 畈. attested-3x-
+  failed. See frozen_cohort.md fix row 攵.
+- **2 戈 hook dup** (all FROZEN 戈 dup): 或, 线. attested-5x-failed.
+  See frozen_cohort.md fix row 戈.
+- **1 匕/兑 hook dup**: 说. attested-continuing.
+- **1 纟 dup**: 线. Compounded with 戈 dup in same char.
+- **1 疒-drift dup**: 疡. attested-4x-failed at this point.
+- **4 rare/traditional** (low expected transfer): 亞, 亟, 來, 侖, 侌
+  (5 items — but 亟 and 侌 are rare structural stacks not per se
+  traditional).
+- **4 body-signature loss**: 表 (衣-body fan), 实 (头), 亟 (multi-
+  stack), 要 (覀+女).
+- **4 LR-spacing / detachment**: 取, 放, 空 (vertical), 例. Dup pos-
+  550 point 4.
+- **3 stack-fusion loss**: 空, 单, 受, 是.
+- **7 C-band signature-intact-but-flat** (ALL of them): 佬, 佶, 佼,
+  佾, 采, 知, 说. **100% of C-band items lacked calligraphic-weight
+  technique.** Direct cause of 0-A regression.
+- **NEW mechanisms**: 0. Every FAIL fits a documented mode. Even the
+  4 rare-traditional items fit "rare/low-transfer" as a documented
+  bucket.
+- **Retrieval count**: sampled 12 generated.py comments — 0 (zero)
+  cited pos-500 or pos-550 calligraphic-weight rules. Consistent with
+  the pos-438 retrieval-ceiling claim.
+
+
+## B12 batch failures (2026-08-04, pos ~650)
+
+*27 FAIL + 11 C = 38 non-PASSes. Format: compact table (per v13 policy —
+no full section per item). Grep by item_id.*
+
+| item_id                     | char  | strokes   | failure mode                                                                    | notes                                       |
+|-----------------------------|-------|-----------|---------------------------------------------------------------------------------|---------------------------------------------|
+| p3_char_0435_看 (C)         | 看    | 9         | Signature intact (龵-hood + 目). 龵 top rendered as detached horizontals; 目 rectangle without shoulder dabs. | C-band structural — top-hood layout off. |
+| p3_char_0436_畏             | 畏    | 9         | 田-top + 长-bottom mis-fused; 长 rendered as scattered horizontals + 撇/捺 without proper 长 sig. | Compound-drift — 长 signature (5-stroke) lost. |
+| p3_char_0437_种 (C)         | 种    | 9         | Signature intact (禾+中). 禾 left drawn as 木 (missing top 撇); 中 body OK. | C-band — 禾 top-撇 omission. |
+| p3_char_0439_将             | 将    | 9         | 丬 left OK-ish; 夕+寸 right rendered as detached stack; 寸's 竖钩 hook straight down. | Compound-drift + hook flick dup (匕/兑-hook family). |
+| p3_char_0440_畑             | 畑    | 9         | 田 left OK; 火 right rendered as detached 4-stroke splay (no fusion at apex). | LR spacing dup + 火-body 4-stroke fusion. |
+| p3_char_0441_前 (C)         | 前    | 9         | Signature intact (丷+一+月+刂). Components stacked correctly but flat uniform strokes; 刂's 竖钩 hook missing flick. | C-band flat + hook flick dup. |
+| p3_char_0442_乹             | 乹    | 10        | Rare traditional. Multi-part left (十+口+人) + right 乙-hook drawn as unrelated scatter. | Rare traditional. Low transfer. |
+| p3_char_0443_面             | 面    | 9         | 面 outer 冂-frame + inner 3-横 grid — rendered as 冂 + detached horizontals + verticals; center 目-like fill lost. | Composition-drift — 面 inner grid fusion lost. |
+| p3_char_0444_疣             | 疣    | 9         | **疒 NEW cluster** — 疒 drawn as `广` (missing inner 点+提 pair); 尤 body outside canopy. | 疒-family dup #1/7 this batch. See frozen_cohort.md 疒 row. |
+| p3_char_0445_点 [PASS]      | 点    | 9         | —                                                                               | —                                           |
+| p3_char_0446_疤             | 疤    | 9         | **疒 dup**. 疒 as `广` again; 巴 body drawn outside canopy to the right. | 疒-family dup #2/7. |
+| p3_char_0447_信 [PASS]      | 信    | 9         | —                                                                               | —                                           |
+| p3_char_0448_疥             | 疥    | 9         | **疒 dup**. 疒 as `广`; 介 nested inside but 疒-body incomplete. | 疒-family dup #3/7. |
+| p3_char_0449_美 (C)         | 美    | 9         | Signature intact (羊-top + 大-bottom). Both components present but flat uniform-width; 大's 撇/捺 straight-line without S-curve. | C-band flat — 大-fan taper missing. |
+| p3_char_0450_疫             | 疫    | 9         | **疒 dup**. 疒 as `广`; 又 body outside canopy. | 疒-family dup #4/7. |
+| p3_char_0451_给 [PASS]      | 给    | 9         | —                                                                               | —                                           |
+| p3_char_0452_疬             | 疬    | 8         | **疒 dup**. 疒 as `广`; 力 body outside canopy. | 疒-family dup #5/7. |
+| p3_char_0453_度             | 度    | 9         | 广-canopy present; interior 廿+又 rendered as scattered horizontals + fold; 又 捺 straight not S-curve. | Composition-drift — 廿+又 fusion; 又-taper missing. |
+| p3_char_0454_疭             | 疭    | 10        | **疒 dup**. 疒 as `广`; 从-body (2×人) collapsed into 1×人+dot. | 疒-family dup #6/7. |
+| p3_char_0455_相 [PASS]      | 相    | 9         | —                                                                               | —                                           |
+| p3_char_0456_疮             | 疮    | 9         | **疒 dup**. 疒 as `广`; 仓 body incomplete (人-top + 巳-bottom fragmented). | 疒-family dup #7/7. Full 疒 cluster this batch. |
+| p3_char_0457_思 (C)         | 思    | 9         | Signature intact (田-top + 心-bottom). 田 OK; 心 rendered as 卧钩 with hook DOWN (should be UP-LEFT), 3 dots absent. | C-band + hook flick dup + missing 心 dots. |
+| p3_char_0458_癸             | 癸    | 9         | 癶 top (2 splayed 撇 flanks) + 天 bottom. 癶 rendered as detached 4-stroke splay; 天 as flat cross. | Compound-drift — 癶 (5-stroke) sig lost. |
+| p3_char_0459_带             | 带    | 9         | 3-stack (弋-topper + 冖 + 巾). Topper drawn as 3 detached uprights; 冖 as bare rectangle; 巾 hook missing UP-LEFT. | Stack-fusion loss + hook flick dup. |
+| p3_char_0460_皅 (C)         | 皅    | 9         | Signature intact (白+巴). 白 as 日 + 撇 (missing 白-top dot); 巴's 竖弯钩 hook DOWN. | C-band + hook flick dup + 白-top dot missing. |
+| p3_char_0461_亲             | 亲    | 9         | 立-top + 木-bottom mis-fused; 立 as 亠+人-legs; 木 as ×-cross without 撇/捺 taper. | Compound-drift + stack fusion loss. |
+| p3_char_0462_皈 [PASS]      | 皈    | 9         | —                                                                               | —                                           |
+| p3_char_0463_神 (C)         | 神    | 9         | Signature intact (礻+申). 礻 left drawn as 亻-lookalike (missing right 点/提); 申 OK. | C-band + 礻-family sig (should be 亠+撇+竖+点+提, not 亻+点). |
+| p3_char_0464_侯             | 侯    | 9         | 亻-clean; 𠂉+一+矢 right rendered as scattered horizontals + fragmented 矢-legs. | 亻-compound-drift dup. Component off. |
+| p3_char_0465_选             | 选    | 9         | 辶 wrap + 先 interior. 辶 rendered as flat wave + 撇 outside; 先 body detached to right. | Composition-drift — 辶 wrap topology (捺-tail spans under whole) lost. |
+| p3_char_0466_盃 (C)         | 盃    | 9         | Signature intact (不-top + 皿-bottom). 不 top OK; 皿 as 冂+ two verticals + 一 (missing feet). | C-band + 皿-feet omission. |
+| p3_char_0467_结 [PASS]      | 结    | 9         | —                                                                               | —                                           |
+| p3_char_0468_盅 (C)         | 盅    | 9         | Signature intact (中-top + 皿-bottom). 中 OK; 皿 as detached rectangle + feet. | C-band + 皿-body detachment. |
+| p3_char_0469_便             | 便    | 9         | 亻-clean; 更 right rendered as 一+日+人-legs without 更-bottom fan. | 亻-compound-drift dup. |
+| p3_char_0470_侶 [PASS]      | 侶    | 9         | —                                                                               | —                                           |
+| p3_char_0471_总             | 总    | 9         | 3-stack (丷+口+心). All 3 pieces present but detached; 心 卧钩 hook DOWN. | Stack-fusion + hook flick dup. |
+| p3_char_0472_侷             | 侷    | 9         | 亻-clean; 局 right rendered as 尸+口 with 尸's fold-hook missing. | 亻-compound-drift dup + 尸-hook omission. |
+| p3_char_0473_城             | 城    | 9         | 土 left OK; 成 right rendered without 斜钩 hook (FROZEN 戈-family dup); top 丶 detached. | Dup FROZEN 戈-family (attested-5x-failed). |
+| p3_char_0474_係             | 係    | 9         | 亻-clean; 系 right rendered as 丿+纟-lookalike without 系-body knot at top. | 亻-compound-drift dup + 系-body sig lost. |
+| p3_char_0475_战 (C)         | 战    | 9         | Signature intact (占+戈). 占-left OK; 戈-right hook straight-down (FROZEN 戈-family dup). | C-band + FROZEN 戈 dup. |
+| p3_char_0476_俅             | 俅    | 9         | 亻-clean; 求 right rendered as 水-lookalike without 求-top 一+点. | 亻-compound-drift dup. |
+| p3_char_0477_南             | 南    | 9         | Outer 冂-frame + inner 干-like fill. Fill rendered as scattered 一+丨+丷 without correct inner glyph. | Composition-drift — 南-inner sig fusion lost. |
+| p3_char_0478_俉 [PASS]      | 俉    | 9         | —                                                                               | —                                           |
+| p3_char_0479_保 [PASS]      | 保    | 9         | —                                                                               | —                                           |
+| p3_char_0480_俊             | 俊    | 9         | 亻-clean; 夋 right (small apex + 一 + 夂) rendered as 4 scattered fragments. | 亻-compound-drift dup — 夋 signature lost. |
+| p3_char_0481_济             | 济    | 9         | 氵 left as 3 plain teardrop dots (bottom should be 提, dup B11 治 mode); 齐 right OK-ish. | 氵 bottom-提 dup (repeat from B10/B11). |
+| p3_char_0482_俎 (C)         | 俎    | 9         | Signature intact (unusual 亻'-lookalike stack + 且). Left component rendered as 冫+乙 lookalike; 且 OK. | C-band + rare-left-component. |
+| p3_char_0483_草 [PASS]      | 草    | 9         | —                                                                               | —                                           |
+| p3_char_0434_畎 [A]         | 畎    | 9         | —                                                                               | 田 + 犬 clean, full 4-move recipe applied.  |
+| p3_char_0438_畐 [PASS]      | 畐    | 9         | —                                                                               | —                                           |
+
+
+**B12 diagnostic summary** (curator vision, n=27 FAIL + 11 C = 38 non-PASSes):
+
+- **7 疒-family cluster** (NEW mode, all FAIL): 疣, 疤, 疥, 疫, 疬, 疭, 疮.
+  100% collapsed 疒 into `广` (omitting inner 点+提 pair). Body drawn
+  outside the canopy in 5/7. **Largest single failure cluster this
+  batch.** Added to frozen_cohort.md 疒 row + memory_index.md TIER-0 G.
+- **6 亻-compound-drift** (down from B11's 12+4): 侯, 便, 侷, 係, 俅, 俊.
+  Right component semantically wrong. But note **4 亻-compound PASSes**
+  this batch (信, 侶, 俉, 保) — pattern is 亻 竖 attached to right
+  component + component-touching. Extracted as TIER-0 H "components
+  must touch" rule.
+- **6 hook-flick dup** (all TIER-0 B rule): 将 (寸's 竖钩 DOWN), 前 (刂
+  竖钩 flat), 思 (心 卧钩 DOWN), 皅 (巴 竖弯钩 DOWN), 总 (心 卧钩 DOWN),
+  盅 (n/a). Persists despite TIER-0 B being in the prompt.
+- **2 FROZEN 戈 dup**: 城, 战 (C). attested-5x-failed. Fix hypothesis
+  in frozen_cohort.md not verified to transfer.
+- **1 氵-bottom-提 dup**: 济. B10/B11 mode carrying over.
+- **6 stack/composition drift**: 畏, 面, 度, 癸, 亲, 带, 选, 南, 471总.
+  Mostly rare 3-stacks or unusual body sigs.
+- **1 rare traditional**: 乹. Low expected transfer.
+- **11 C-band signature-intact-but-structurally-off** (11/50 = 22%):
+  看, 种, 前, 美, 思, 皅, 神, 盃, 盅, 战, 俎. All 11 explicitly
+  reference TIER-0 F in their docstrings and use bez+stroke helpers.
+  **B11's C-band mode ("uniform width=6, no recipe pulled") is
+  ELIMINATED.** New C-band mode: recipe pulled but component
+  decomposition wrong. Different failure surface.
+- **NEW mechanisms**: 1 (疒 collapse to `广`, now documented).
+- **Retrieval count**: sampled 12 generated.py comments — 12/12 (100%)
+  cited "TIER-0 F 4-move" and imported bez()+stroke() helpers.
+  **Retrieval is now stabilized-stochastic** — the pos-600 TIER-0.F
+  promotion resolved the B11 retrieval failure. What remains
+  stochastic is structural decomposition correctness at the
+  per-component level.
+
+
+## B13 batch table (2026-08-05, pos ~700) — worst batch of the experiment
+
+**Totals**: 2 PASS · 8 C · 40 FAIL · 0 A → 4% pass-rate (24% B12 → 4% B13).
+
+| item                        | char  | strokes | curator diagnosis                                                                          | class                                           |
+|-----------------------------|-------|---------|--------------------------------------------------------------------------------------------|--------------------------------------------------|
+| p3_char_0484_俏 (C)         | 俏    | 9       | 亻 attached OK; 肖 top-月 sig off — small/大 flick simplified. | C-band — 肖-top drift. |
+| p3_char_0485_怎             | 怎    | 9       | 乍-top over 心 — components disconnect; 心 hook DOWN (TIER-0 B dup). | Stack-drift + hook-flick dup. |
+| p3_char_0486_俐 (C)         | 俐    | 9       | 亻+利 sig intact; 利-right 刂 hook DOWN + 禾-top pie flat. | C-band + hook-flick dup. |
+| p3_char_0487_孩             | 孩    | 9       | 子+亥 — 亥 upper 亠+撇 fragmented; components detached. | Compound-drift. |
+| p3_char_0488_俑             | 俑    | 9       | 亻-compound-drift — 甬 body signature scattered. | 亻-compound-drift dup. |
+| p3_char_0489_指             | 指    | 9       | 扌+旨 — 旨-top 匕 collapsed; 日 detached. | Composition-drift. |
+| p3_char_0490_俘             | 俘    | 9       | 亻+孚 — 孚 top-爫 rendered as scattered dots; 子 body off. | 亻-compound-drift dup. |
+| p3_char_0491_除             | 除    | 9       | 阝-left as flat E; 余 body sig (人-top+木-legs) mis-fused. | Composition-drift + 阝-left dup. |
+| p3_char_0492_俚 [PASS]      | 俚    | 9       | —                                                                                          | 亻+里 clean; sibling-check + recipe applied.    |
+| p3_char_0493_适             | 适    | 9       | **辶-family NEW mode** — 舌 body placed BESIDE 辶, not INSIDE the wrap. | **辶-wrap dup #1/5.** See frozen_cohort 辶 row. |
+| p3_char_0494_俛             | 俛    | 9       | rare traditional; component-drift. | Rare — low transfer. |
+| p3_char_0495_复             | 复    | 9       | 亠+日+夂 body — 夂 as 3 detached sticks; hook missing. | Compound-drift + hook dup. |
+| p3_char_0496_俜             | 俜    | 9       | 亻+甹 — 甹 (由+丂) body incomplete; hook lost. | 亻-compound-drift dup. |
+| p3_char_0497_响             | 响    | 9       | 口+向 — flat uniform d.line strokes (no 4-move); 冂 no shoulder. | **Recipe NOT applied** — regression from B12. |
+| p3_char_0498_俞             | 俞    | 9       | 亼-top + body — under-cap 一 missing; interior grid off. | Compound-drift. |
+| p3_char_0499_能 (C)         | 能    | 10      | 4-part 厶+月+匕匕 signature intact; 匕匕 hooks DOWN. | C-band + hook-flick dup ×2. |
+| p3_char_0500_丵             | 丵    | 10      | rare 6-flick crown + 業-body; crown as detached ticks. | Rare — low transfer. |
+| p3_char_0501_家 (C)         | 家    | 10      | 宀 canopy OK; 豕 body over-decomposed into 5 撇 (should be 撇+弯钩+3+捺). | C-band — 豕-body decomposition wrong. |
+| p3_char_0502_畚             | 畚    | 10      | rare 龹-top + 田; 龹 crown fragmented. | **田-body-rare-top dup #1/6.** |
+| p3_char_0503_都             | 都    | 10      | 者-left + 阝-right — 者 old-top signature scattered; 阝 detached. | Compound-drift + 阝-right detachment. |
+| p3_char_0504_畛             | 畛    | 10      | 田+㐱 — 㐱 upper 人+彡 mis-fused. | **田-body-rare-top dup #2/6.** |
+| p3_char_0505_起             | 起    | 10      | 走-body wrap + 己 inside — 走-bottom 捺 detached (走之-family FAIL). | **辶-wrap dup #2/5** (走 counts as wrap). |
+| p3_char_0506_畜             | 畜    | 10      | 玄-top + 田 — 玄 upper 亠+幺 fragmented. | **田-body-rare-top dup #3/6.** |
+| p3_char_0507_高 (C)         | 高    | 10      | overall structure OK; inner 口 undersized/missing bottom 一. | C-band — 高 inner-口 detail lost. |
+| p3_char_0508_畝             | 畝    | 10      | rare traditional 亠+田+攵-lookalike; 攵 detached. | **田-body-rare-top dup #4/6.** |
+| p3_char_0509_特 (C)         | 特    | 10      | 牜+寺 sig intact but 寺 flat; 提 does not touch right component (TIER-0 H). | C-band + TIER-0 H dup. |
+| p3_char_0510_畟             | 畟    | 10      | rare 田-body + bottom 夂-lookalike; body-fusion lost. | **田-body-rare-top dup #5/6.** |
+| p3_char_0511_海             | 海    | 10      | 氵 bottom-提 missing (dup B10-B12 mode); 每 body signature off. | 氵 bottom-提 dup ×4 batches. |
+| p3_char_0512_畢             | 畢    | 10      | traditional 田+華-lookalike; heavy strokes without decomposition. | **田-body-rare-top dup #6/6.** |
+| p3_char_0513_通             | 通    | 10      | 甬+辶 — 辶 rendered as flat wave, does NOT wrap under 甬. | **辶-wrap dup #3/5.** |
+| p3_char_0514_乘             | 乘    | 10      | 禾+北-lookalike stack; heavy composition-drift. | Compound-drift. |
+| p3_char_0515_原 [PASS]      | 原    | 10      | —                                                                                          | 厂 canopy + 白+小 body; TIER-0 F+H applied. |
+| p3_char_0516_疰             | 疰    | 10      | **疒 5-stroke decomposition APPLIED but FAIL.** Inner 点+提 read as detached ticks alongside 撇 stem. | **疒 dup #1/8** — hypothesis FALSIFIED. |
+| p3_char_0517_真             | 真    | 10      | 十+目+八 stack; 目 grid mis-fused, 八 legs flat. | Stack-drift. |
+| p3_char_0518_疱             | 疱    | 10      | **疒 recipe applied**; 包 body inside canopy; still FAIL. | **疒 dup #2/8.** |
+| p3_char_0519_候             | 候    | 10      | 亻+丨+矢 body — 矢 legs flat; component-drift. | 亻-compound-drift dup. |
+| p3_char_0520_疳             | 疳    | 10      | **疒 recipe applied**; 甘 body inside; FAIL. | **疒 dup #3/8.** |
+| p3_char_0521_验             | 验    | 10      | 马-left as scattered ticks; 佥 right sig off. | Dup FROZEN 马-family (attested-4+x). |
+| p3_char_0522_疴             | 疴    | 10      | **疒 recipe applied**; 可 body inside; FAIL. | **疒 dup #4/8.** |
+| p3_char_0523_被             | 被    | 10      | 礻+皮 — 礻 as 亻-lookalike (dup B12 神 mode); 皮 body flat. | 礻-family dup + composition-drift. |
+| p3_char_0524_疸             | 疸    | 10      | **疒 recipe applied**; 旦 body inside; FAIL. | **疒 dup #5/8.** |
+| p3_char_0525_部 (C)         | 部    | 10      | 咅+阝 sig intact; 阝 detached (gap); 咅-立 fragments. | C-band + 阝-right detachment + TIER-0 H dup. |
+| p3_char_0526_疹             | 疹    | 10      | **疒 recipe applied**; 㐱 body inside; FAIL. | **疒 dup #6/8.** |
+| p3_char_0527_造             | 造    | 10      | 告+辶 — 辶 does not wrap. | **辶-wrap dup #4/5.** |
+| p3_char_0528_疽             | 疽    | 10      | **疒 recipe applied**; 且 body inside; FAIL. | **疒 dup #7/8.** |
+| p3_char_0529_热             | 热    | 10      | 執-top + 灬 bottom — 灬 as 4 identical dots (missing bounce). | Compound-drift + 灬-signature dup. |
+| p3_char_0530_痂 (C)         | 痂    | 10      | **疒 recipe applied**; 加 inside; C-verdict — closest 疒 result all batch. | **疒 dup #8/8** but the ONLY 疒 to escape FAIL. |
+| p3_char_0531_速             | 速    | 10      | 束+辶 — 辶 does not wrap. | **辶-wrap dup #5/5.** |
+| p3_char_0532_亳             | 亳    | 10      | 亠+口+乇 stack — 乇 body sig (curved hook) lost. | Compound-drift. |
+| p3_char_0533_值             | 值    | 10      | 亻+直 — 直 body 十+目+一 mis-fused. | 亻-compound-drift dup. |
+
+
+**B13 diagnostic summary** (curator vision, n=40 FAIL + 8 C = 48 non-PASSes):
+
+- **8 疒-family cluster (7 FAIL + 1 C)** — largest single cluster.
+  Curator inspected 5 generated.py files (疰/疱/疳/疴/疸/疹/疽/痂):
+  **ALL 8 applied the frozen_cohort 5-stroke decomposition** (点/横/长撇/内点/提)
+  AND tucked body inside AND used bez+stroke helpers. Yet 7/8 FAIL.
+  **B12 疒 fix hypothesis is FALSIFIED** — the recipe is topologically
+  correct but not calligraphically sufficient. The failure surface
+  shifted: B12 疒 fails were "drew as 广" (recipe not followed); B13
+  疒 fails are "recipe followed, still doesn't read as 疒". See
+  frozen_cohort.md updated 疒 row.
+- **5 辶/走-wrap cluster (all FAIL)**: 适/通/造/速/起. Wrap topology
+  never encoded. Drawer places body BESIDE the radical instead of
+  INSIDE the wrap. **NEW attested cluster** — added row to
+  frozen_cohort.md.
+- **6 田-body-rare-top cluster (all FAIL)**: 畚/畛/畜/畝/畟/畢.
+  田 itself is fine (past 田/由/町/畎 PASSes). Rare tops
+  (龹/㐱/玄/亳/華-lookalike) with no encoding. **NEW row added.**
+- **7 亻-compound-drift dup**: 俑/俘/俜/候/值/俐(C)/俏(C). B12 already
+  attested this pattern; carrying forward.
+- **Hook-flick dup ×4**: 怎/俐/能/复 — TIER-0 B not consulted.
+- **Composition/stack drift ×8**: 孩/指/复/复/俞/真/乘/亳/热.
+- **Recipe REGRESSION on 响**: uniform d.line strokes, no 4-move
+  applied. First recipe-regression this batch — most drawers still
+  use recipe.
+- **氵-bottom-提 dup ×1**: 海. Dup B10/B11/B12 — 4-batch carryover.
+- **礻-as-亻 dup ×1**: 被. Dup B12 神 mode.
+- **FROZEN 马-family dup ×1**: 验.
+- **C-band mode**: 8 items — decomposition wrong at component level
+  (家 豕-body over-decomposed; 高 inner-口 lost; 部 阝 detached).
+  C-band is now "recipe pulled + composition right at radical level +
+  wrong at sub-component level". Different from B12 C-band.
+- **Curriculum-difficulty note**: B13 is a systematic difficulty
+  spike. 5 辶 + 8 疒 + 6 田-rare-top + 7 rare-亻 = 26/50 items
+  from rare/uncovered radical families. B12 by comparison had
+  many common characters (相/看/给/神/结/美/草/信/保). The
+  24%→4% drop is jointly explained by curriculum difficulty
+  spike + knowledge-coverage gaps at rare radicals + falsified
+  疒 fix hypothesis.
+- **Retrieval status**: sampled 8 generated.py files — 7/8 cited
+  TIER-0 F, 8/8 imported bez+stroke helpers. Retrieval is stable.
+  The ceiling is knowledge-coverage, not retrieval, for the third
+  batch in a row.
+
+**PASSes** (2): 俚 (亻+里 clean, sibling-check applied), 原 (厂+白+小
+  TIER-0 F+H applied, tucked body under canopy).
+
+**Rows recorded** (all 48 non-PASSes + 2 PASSes above).

@@ -411,3 +411,461 @@ Most useful cross-transfer candidates from B6:
   ~0.65/0.80 scales — template for compound-radical characters.
 - `feng_wind` — variant_pie + inline curved envelope + interior 乂 —
   first B6 recipe to combine helper + inline + composition in one function.
+
+## Batch B7 (2026-07-27, positions 351–400 judged + B7r v9 reruns)
+
+19 new bank entries: 16 main PASSes (rows 185–200) + 3 v9-rerun graduations (rows 201–203).
+Main pass rate 16/50 = 32% (below G1 control mean; B7 struck the cursive/complex-char band).
+Retry channel under v9 visual-diff prompt: 3/10 PASS (vs 0/10 under v8). First non-trivial
+retry lift in five batches. The three graduations (大, 主, 疒) share one recipe: OPEN THE PRIOR
+PNG, name specific pixel-level gaps, REJECT any bank primitive whose baked calligraphic
+embellishment (heavy taper, blob shoulder, kiss_apex apex-above-heng) contradicts GT.
+
+| # | Item | File | Strokes / notes | Status |
+|---|------|------|-----------------|--------|
+| 185 | 仟 (qiān) | qian_thousand.py | 5 (ren_pang + qian body: PIL inline thin) | B7 main PASS |
+| 186 | 本 (běn) | ben_root.py | 5 (mu at 0.85 + short heng near base of shu; bank composition) | B7 main PASS |
+| 187 | 边 (biān) | bian_side.py | 5 (walk-radical + inline right; PIL) | B7 main PASS |
+| 188 | 仨 (sā) | sa_three.py | 5 (ren_pang left + 三 right inline thin) | B7 main PASS |
+| 189 | 皿 (mǐn) | min_dish.py | 5 (PIL inline: 3 shus + top-right corner + long base heng) | B7 main PASS |
+| 190 | 兰 (lán) | lan_orchid.py | 5 (top 丷 + 3 hengs stacked; thin uniform ink) | B7 main PASS |
+| 191 | 市 (shì) | shi_market.py | 5 (top dot + heng + shu-gou spine + side dots; PIL inline) | B7 main PASS |
+| 192 | 术 (shù) | shu_art.py | 5 (mu base + upper-right dot; thin P12) | B7 main PASS |
+| 193 | 冋 (jiōng) | jiong_char.py | 5 (box + interior kou; PIL inline thin) | B7 main PASS |
+| 194 | 白 (bái) | bai_char.py | 5 (short top pie + rectangular ri-body with middle heng) | B7 main PASS |
+| 195 | 册 (cè) | ce_volume.py | 5 (twin 冂 frames with crossbar; PIL inline thin) | B7 main PASS |
+| 196 | 四 (sì) | si_four.py | 5 (rect enclosure + 儿-like inner strokes) | B7 main PASS |
+| 197 | 凸 (tū) | tu_convex.py | 5 (stepped rectangle: PIL polyline) | B7 main PASS |
+| 198 | 有 (yǒu) | you_have.py | 6 (top pie + heng + yue-frame body) | B7 main PASS |
+| 199 | 乩 (jī) | ji_divine.py | 6 (占 left + 乚 right; L-R composition inline) | B7 main PASS |
+| 200 | 亘 (xuān) | xuan_char.py | 6 (top heng + inner ri + bottom wider heng; thin uniform) | B7 main PASS |
+| 201 | 大 (dà) | da_char.py | 3 (V9 RERUN GRADUATE: continuous pie curve above/through heng + separate na from crossing; thin ~4px P12; kiss_apex REJECTED) | B7 v9-rerun GRADUATE |
+| 202 | 主 (zhǔ) | zhu_master.py | 5 (V9 RERUN GRADUATE: dot ABOVE heng leaning down-right, graduated heng-width ladder, shu starts AT top heng; thin P12) | B7 v9-rerun GRADUATE |
+| 203 | 疒 (nè) | ne_sick.py | 5 (V9 RERUN GRADUATE: inline envelope with uniform thin widths, two interior 冫 marks off pie shaft; guang bank REJECTED for aggressive taper) | B7 v9-rerun GRADUATE |
+| 204 | 过 (guò) | guo_char.py | 6 (辶 envelope inline: tapered bezier 平捺 + zigzag + top dot; 寸 right: heng + shu-gou + dian; thin ~4px) | B8 main PASS |
+| 205 | 仲 (zhòng) | zhong_char.py | 6 (亻 bank ren_pang left 0.85 + zhong bank right 0.75 — men_plural L-R pattern) | B8 main PASS |
+| 206 | 多 (duō) | duo_char.py | 6 (bank draw_xi twice — top small 0.62 + bottom larger 0.72 offset right) | B8 main PASS |
+| 207 | 同 (tóng) | tong_char.py | 6 (inline PIL: 冂 outer frame + interior 一 upper + interior 口 lower; thin uniform 5-7px) | B8 main PASS |
+| 208 | 伉 (kàng) | kang_char.py | 6 (inline tall 亻 left + bank draw_ji 几 right + bank tou_radical 亠 above 几) | B8 main PASS |
+| 209 | 问 (wèn) | wen_ask.py | 6 (inline 门 envelope with hand-rolled tapered lines + interior 口 as 4 tapered lines; bank dian for top dot) | B8 main PASS |
+| 210 | 回 (huí) | hui_char.py | 6 (bank wei_radical outer 囗 at 1.0 + bank kou inner 口 at 0.55; pure alias composition) | B8 main PASS |
+| 211 | 伛 (yǔ) | yu_bent.py | 6 (bank ren_pang left 0.95 + inline 区: top heng + inner 乂 pie/na crossing + 竖折 wrapper) | B8 main PASS |
+| 212 | 兇 (xiōng) | xiong_char.py | 8 (inline PIL thin 5px: 凶 = 乂 inside 凵 + 儿 below with poly-bezier 竖弯钩; er_ren bank REJECTED for heavy widths) | B8 main PASS |
+
+## Batch B8 (2026-07-27, positions 401–450 judged + 7 retries)
+
+9 main-curriculum PASSes recorded above (bank entries 204–212). Main
+pass rate 9/50 = **18%** — worst batch since B5 (38%) and worst
+absolute yet; the item mix in the 亻-compound / cursive-radical band
+(0234–0283) has fewer identity-alias shortcuts than any prior 50-item
+window. Retry channel under v9 visual-diff prompt: 0/7 PASS (2nd v9
+rerun for many). Confirms scan_position_400's prediction that the v9
+lift was largely a first-shot effect on named-gap items.
+
+**One TERMINAL_FREEZE** this batch: `p2_radical_011_匕` (retry_5 all
+FAILED across v7 retry_1-4, v9 rerun retry_4, v9 retry_5). Same format
+ceiling as 人/入 — a two-stroke primitive where every calligraphic
+detail is load-bearing.
+
+B8 naming policy:
+- Pure bank composition (5): `zhong_char` (仲 = 亻+中), `duo_char` (多 =
+  夕 stacked), `hui_char` (回 = 囗+口, both bank identity aliases),
+  `kang_char` (伉 = 亻+亠+几), `yu_bent` (伛 = 亻+区 inline right).
+- Mixed inline + bank (2): `guo_char` (过, 辶 inline + 寸 inline; no
+  bank imports), `wen_ask` (问, inline 门 envelope + inline 口 + bank
+  dian).
+- Fully inline PIL (2): `tong_char` (同, thin 6-stroke frame), `xiong_char`
+  (兇, 8-stroke, er_ren bank REJECTED for weight — same lesson as B7
+  疒/主/大 graduations).
+
+Naming disambiguation:
+- `guo_char` — no collision (`ge_char` not present).
+- `zhong_char` — distinct from `zhong.py` (中 radical).
+- `duo_char` — first `duo_*` in bank.
+- `tong_char` — distinct from `tong_same.py` (仝).
+- `wen_ask` — distinct from `wen.py`/`wen_char.py` (both 文).
+- `hui_char` — first `hui_*` in bank.
+- `yu_bent` — distinct from `yu_char.py` (于).
+- `xiong_char` — first `xiong_*` in bank.
+- `kang_char` — first `kang_*` in bank.
+
+Most useful cross-transfer candidates from B8:
+- `hui_char` (囗+口 as pure identity-alias composition) — template for
+  any enclosure-with-interior pattern (困/囚/因/园).
+- `zhong_char` and `kang_char` recipe (bank 亻 + bank right) — reuse
+  for 5–6 stroke 亻+X pattern where the right is a mastered radical
+  compound. Only 2 of B8's 9 亻-family fails could have used this
+  (伉, 仲 both passed via it); the other 亻-fails need right components
+  that aren't in bank.
+- `xiong_char` "reject bank er_ren for calligraphic weight" — same
+  recipe family as 大/主/疒 v9 graduations. Codify in drawer_memory.md
+  as reject-heavy-bank rule.
+
+## Batch B9 (2026-07-30, positions 451–500 judged)
+
+**Note (B10 curator, 2026-07-31)**: B9 curator did not add its 14 PASSes
+as bank entries. I am NOT retroactively adding them from B10 — the
+attempts remain under `attempts/p3_char_0287_光` … `p3_char_0332_佐`
+and are reachable via `pass_index.md` for drawers who want to inspect
+prior PASS PNGs. See B9 addition in `drawer_memory.md` for the B9
+recipes narrative. Future promotion-on-demand is possible if B11+
+recurring shapes cite one of these items.
+
+## Batch B10 (2026-07-31, positions 501–550 judged + 7 retries)
+
+**Main pass rate: 12/50 = 24%. Retry: 2/7. Zero A cumulative through 500 items.**
+
+12 main-curriculum PASSes + 2 retry PASSes recorded below (bank entries
+213–226). Plus 3 v13 BANK_DEVIATION variants promoted (227–229).
+
+| # | Item | File | Strokes | Provenance |
+|---|------|------|---------|------------|
+| 213 | 佔 (zhàn) | zhan_char.py | 7 (亻 left inline + 占 right: 卜 + 口) | B10 main PASS |
+| 214 | 别 (bié) | bie_char.py | 7 (另 = 口+力 left + 刂 right, inline thin) | B10 main PASS |
+| 215 | 社 (shè) | she_char.py | 7 (礻 left bank ceremony_pang alias + 土 right inline) | B10 main PASS |
+| 216 | 佣 (yōng) | yong_char.py | 7 (亻 bank ren_pang + 用 right inline: frame + 3 interior hengs) | B10 main PASS |
+| 217 | 佧 (kǎ) | ka_char.py | 8 (亻 left inline + 卡 right: 上 stacked over 下) | B10 main PASS |
+| 218 | 皃 (mào) | mao_char.py | 7 (INLINE stack: 白-top compact + 儿-bottom wide; BANK_DEVIATION → bai/er_ren primitives skipped) | B10 main PASS |
+| 219 | 花 (huā) | hua_char.py | 7 (艹 top + 化 bottom = 亻 + 匕) | B10 main PASS |
+| 220 | 的 (de) | de_char.py | 8 (白 compressed LEFT + 勺 RIGHT with envelope hook + dot; BANK_DEVIATION → bai_char skipped for width) | B10 main PASS |
+| 221 | 国 (guó) | guo_country.py | 8 (囗 outer bank wei_radical + inner 玉 = 王 + 丶) | B10 main PASS |
+| 222 | 畀 (bì) | bi_field_over_ji.py | 8 (INLINE stack: 田 upper + 丌 lower with splayed legs; BANK_DEVIATION → jia_first skipped) | B10 main PASS |
+| 223 | 者 (zhě) | zhe_char.py | 8 (土-like top + 丿 sweep + 日 bottom box) | B10 main PASS |
+| 224 | 疝 (shàn) | shan_hernia.py | 8 (疒 envelope bank ne_sick + 山 interior bank shan) | B10 main PASS |
+| 225 | 时 (shí) | shi_time.py | 7 (RETRY GRADUATE: bank ri (日) left + bank cun (寸) right with hook; recovered from B9 inlined-lost-hook fail) | B10 retry PASS |
+| 226 | 串 (chuàn) | chuan_char.py | 7 (RETRY GRADUATE: two bank kou boxes vertically stacked with tall central shu protruding above/below; recovered from B9 too-small-boxes fail) | B10 retry PASS |
+| 227 | 白 compressed LEFT variant | bai_char_compressed_for_LR.py | 5 (VARIANT of bai_char.py; 80px-wide body for L-R composition; motivating context: 的) | B10 BANK_DEVIATION promotion |
+| 228 | 白 top-stack variant | bai_char_for_top_stack.py | 5 (VARIANT of bai_char.py; y≈62..155 with slightly compact width; motivating context: 皃) | B10 BANK_DEVIATION promotion |
+| 229 | 儿 bottom-stack variant | er_ren_for_bottom_stack.py | 2 (VARIANT of er_ren_char.py; wide spread across y≈155..288 with thin 6px MMH ink; motivating context: 皃; same "reject-bank-heaviness" family as 大/主/疒/兇) | B10 BANK_DEVIATION promotion |
+
+**B10 BANK_DEVIATION triage summary** (16 deviations observed, 3 in PASS
+attempts):
+
+- **PASS + deviation → variant promoted** (3 items → 3 variants):
+  `de_char` (白 compressed), `mao_char` (白 top + 儿 bottom). See rows
+  227–229. All original primitives untouched per v13.
+- **FAIL + deviation → diagnostic signal** (13 items): notes recorded
+  in `sandbox.md` and `errata.md`. No primitive edits (v13 forbids
+  edits/deletes). Recurring pattern flagged in `principle_bank.md`:
+  when a bank primitive's fixed absolute pixel coords can't shrink to
+  fit a composition slot, the drawer correctly deviates; the resulting
+  fresh render frequently succeeds only if the fresh_component is a
+  known-shape variant (皃/畀/的), and frequently fails when the
+  fresh_component itself is unmastered geometry (聿 in 疌, 巛 curly
+  scoop in 甾, 己 in 改, 攵 in 改).
+- **C attempts with deviation** (5 items — 志, 盯, 甾, 和, 法): treated
+  as fails for promotion purposes. C is close-but-not-panel-PASS; per
+  v13 evidence rule ("only PASS-evidence promotes"), no variant from
+  these.
+
+Naming disambiguation:
+- `zhan_char` — first `zhan_*` in bank.
+- `bie_char` — first `bie_*` in bank.
+- `she_char` — first `she_*` in bank.
+- `yong_char` — first `yong_*` in bank.
+- `ka_char` — first `ka_*` in bank.
+- `mao_char` — first `mao_*` in bank.
+- `hua_char` — first `hua_*` in bank.
+- `de_char` — first `de_*` in bank.
+- `guo_country` — distinct from `guo_char.py` (过).
+- `bi_field_over_ji` — descriptive; first `bi_field_*` in bank.
+- `zhe_char` — first `zhe_*` in bank.
+- `shan_hernia` — distinct from `shan.py`/`shan_char.py`/`shan_radical.py`
+  (all 山 variants); the compound sense here is 疒+山 = 疝.
+- `shi_time` — distinct from `shi_char.py`/`shi_male.py`/
+  `shi_ceremony_*.py`/`shi_market.py`. The compound sense is 日+寸.
+- `chuan_char` — distinct from `chuan.py` (川).
+- Variants use `<orig>_<qualifier>` per v13 naming.
+
+Most useful cross-transfer candidates from B10:
+- `bai_char_for_top_stack` + `er_ren_for_bottom_stack` — the top+底
+  stack recipe transfers cleanly to 貌 / 兒 / 兄 / 光 / 見 (any 白/白-like
+  top over 儿 bottom). Combined, they codify the "stack composition
+  with thin uniform ink" pattern that PASSed 皃.
+- `bai_char_compressed_for_LR` — reusable for 帕 / 皎 / 皖 (any 白 left
+  of a right component).
+- `shi_time` + `chuan_char` recipes prove the **retrieval-leak fix
+  works**: when the drawer is explicitly told "call bank X and bank Y,
+  don't re-invent," the identity-alias composition succeeds. This is
+  the strongest evidence-of-life for the composition-retrieval channel
+  since B4 (子 graduate). Do NOT retire the retry channel — v13's
+  explicit bank-call instruction closed the leak for 2/5 candidates.
+- `bi_field_over_ji` — the 丌 sub-primitive is a NEW radical shape not
+  in bank as a standalone. If a future compound needs 丌 by itself,
+  extract from this compound's lines 51-73.
+
+## Batch B11 (2026-08-03, positions 551-600 judged + 5 retries)
+
+**Main pass rate: 14/50 = 28% (up from B10's 24%; best G3 batch since
+B9). Retry: 0/5 PASS (2 C on retry_4 for 矢/失 → TERMINAL_FREEZE per
+this curator's decision — see retry_log.jsonl and errata.md). Zero A
+cumulative through 550 items (11 consecutive batches).**
+
+14 main-curriculum PASSes + 4 v13 BANK_DEVIATION variants promoted
+(rows 230-247). No retry graduates.
+
+| # | Item | File | Strokes / notes | Status |
+|---|------|------|-----------------|--------|
+| 230 | 果 (guǒ) | guo_fruit.py | 8 (BANK_DEVIATION: skipped mu.py — 田's middle 竖 continues straight down as 木's shu; pie/na cross at 木-heng level well below 田 — fresh guo_mu_under_tian) | B11 main PASS |
+| 231 | 话 (huà) | hua_speak.py | 8 (BANK_DEVIATION: 讠 TERMINAL errata; inline 讠 + 舌 = 千-like top + 口 bottom) | B11 main PASS |
+| 232 | 表 (biǎo) | biao_char.py | 8 (BANK_DEVIATION: no 衣/表 primitive; fresh inline 龶-top + 衣-bottom variant) | B11 main PASS |
+| 233 | 空 (kōng) | kong_char.py | 8 (BANK_DEVIATION: bao_gai_tou/ba/gong all have baked canvas ranges that don't nest into 空's three narrow bands; fully inline PIL) | B11 main PASS |
+| 234 | 往 (wǎng) | wang_go.py | 8 (BANK_DEVIATION: skipped zhu_master.py — canvas-centered; fresh zhu_shifted_right with graduated heng ladder + reversed dot, +55mx shift scale 0.85; **promoted as variant → row 244**) | B11 main PASS |
+| 235 | 佶 (jí) | ji_lucky.py | 8 (ren_pang left + inline 吉 = 士 top over 口 bottom on right; no deviation) | B11 main PASS |
+| 236 | 油 (yóu) | you_oil.py | 8 (BANK_DEVIATION: skipped jia_first.py — 甲 shu extends BELOW, 由 shu extends ABOVE; mirror-shape mismatch; fresh you_frame_up; **promoted as variant → row 245**) | B11 main PASS |
+| 237 | 采 (cǎi) | cai_char.py | 8 (bank zhao_top + mu composed vertically; no deviation) | B11 main PASS |
+| 238 | 侈 (chǐ) | chi_char.py | 8 (bank ren_pang + draw_xi twice for 多; no deviation) | B11 main PASS |
+| 239 | 知 (zhī) | zhi_know.py | 8 (BANK_DEVIATION: skipped kou.py — turtle-based mixes badly with inline PIL 矢 for thin-uniform GT; fully inline zhi_char_inline) | B11 main PASS |
+| 240 | 侍 (shì) | shi_serve.py | 8 (BANK_DEVIATION: skipped ren_pang/tu/cun; bank turtle primitives don't compose under vertical 土-over-寸 stack + shared L-R budget; fresh shi_char_stacked_right; **promoted as variant → row 246**) | B11 main PASS |
+| 241 | 苦 (kǔ) | ku_char.py | 8 (bank cao_zi_tou top + inline 古 = 十 + 口 bottom; no deviation) | B11 main PASS |
+| 242 | 侑 (yòu) | you_help.py | 8 (BANK_DEVIATION: skipped you_have.py — baked canvas-center coords; fresh you_have_for_LR_right with 有 compressed into right ~60%; **promoted as variant → row 247**) | B11 main PASS |
+| 243 | 具 (jù) | ju_char.py | 8 (BANK_DEVIATION: skipped ri.py and ba.py; ri only has 1 inner heng, ba's feet too broad — inline box with 3 inner hengs + broad base + short splay feet) | B11 main PASS |
+| 244 | 主 for L-R right variant | zhu_master_for_LR_right.py | 5 (VARIANT of zhu_master.py; parameterized mx_off + scale for right-column slot; motivating context: 往) | B11 BANK_DEVIATION promotion |
+| 245 | 由-frame (shu-up) variant | you_frame_up.py | 5 (NEW SHAPE — bank had only jia_first / shen_extend / ri for box family; 由's shu-extends-UP shape had no entry; motivating context: 油) | B11 BANK_DEVIATION promotion |
+| 246 | 寺 (土 over 寸) right-stack variant | tu_cun_stacked_for_LR_right.py | 6 (VARIANT — bank had separate tu and cun turtle primitives; this inlines a PIL-pixel 寺-stack for L-R right slot; motivating context: 侍; template for 待/恃/詩/峙) | B11 BANK_DEVIATION promotion |
+| 247 | 有 for L-R right variant | you_have_for_LR_right.py | 6 (VARIANT of you_have.py; shifted/compressed 有 for right ~60% of canvas; motivating context: 侑; template for 郁/洧) | B11 BANK_DEVIATION promotion |
+
+**B11 BANK_DEVIATION triage summary** (18 deviations observed across
+50 mains, 8 in PASS attempts, 4 promoted as variants):
+
+- **PASS + deviation → variant promoted** (4): 往, 油, 侍, 侑. Rows
+  244-247. Each fresh_component was a CLEAR shape family member with
+  plausible future reuse (not a novel one-off).
+- **PASS + deviation → NOT promoted** (4): 果 (guo_mu_under_tian —
+  too specific to 果's 田/木 shared-shu topology), 话 (讠 is
+  TERMINAL — cannot promote as bank), 表 (biao_char inline — 衣-body
+  compositions are rare in the pipeline), 空 (three-band stack too
+  specific), 知 (zhi_char_inline — 矢+口 is 知-specific), 具 (ju_char —
+  8-stroke composition too specific), 425_具. Curator judgment: these
+  are one-off inlines; promoting would bloat bank without clear reuse.
+- **FAIL + deviation** (10 items — 亞, 佬, 佯, 实, 佻, 放, 佽, 规, 侃,
+  转, 侉, 侌, 线, 侖, 是, 畈, 畋): recorded in errata.md. No variant
+  from these (v13 evidence rule).
+- **C + deviation** (2 items — 物, 说): treated as fail for variant
+  purposes.
+
+**Original primitives untouched** (v13 immutability): `zhu_master.py`,
+`jia_first.py`, `tu.py`, `cun.py`, `you_have.py` all preserved.
+
+Naming disambiguation for B11:
+- `guo_fruit` — distinct from `guo_char.py` (过) and `guo_country.py` (国).
+- `hua_speak` — distinct from `hua_char.py` (花).
+- `biao_char` — first `biao_*` in bank.
+- `kong_char` — first `kong_*` in bank.
+- `wang_go` — distinct from `wang_char.py` (亡).
+- `ji_lucky` — distinct from `ji_char.py`/`ji_meet_char.py`/`ji_radical.py`/`ji_divine.py`.
+- `you_oil` — distinct from `you.py`/`you_char.py` (又) and `you_have.py` (有).
+- `cai_char` — first `cai_*` in bank.
+- `chi_char` — first `chi_*` in bank.
+- `zhi_know` — distinct from `zhi_char.py` (之) / `zhi_only.py` (只).
+- `shi_serve` — distinct from `shi_char.py`/`shi_male.py`/`shi_time.py`/
+  `shi_radical.py`/`shi_ceremony_*.py`/`shi_market.py`.
+- `ku_char` — first `ku_*` in bank.
+- `you_help` — distinct from `you.py` (又) / `you_char.py` (又) /
+  `you_have.py` (有) / `you_oil.py` (油).
+- `ju_char` — first `ju_*` in bank.
+
+Most useful cross-transfer candidates from B11:
+- `zhu_master_for_LR_right.py` — reusable for 住 (亻+主), 注 (氵+主),
+  柱 (木+主), 驻 (马+主), 蛀 (虫+主). Copy default (mx_off=55, scale=0.85)
+  for 亻/氵 lefts; try mx_off=+65, scale=0.80 for wider 木/马 lefts.
+- `you_frame_up.py` — reusable for 甲 char (bank has jia_first as
+  radical), 曲 (adjust to add another heng), any 由-topology compound.
+- `tu_cun_stacked_for_LR_right.py` — reusable for 待 (彳+寺), 恃 (忄+寺),
+  詩 (訁+寺), 峙 (山+寺). Adjust `ox` parameter to slide.
+- `you_have_for_LR_right.py` — reusable for 郁 (有+阝), 洧 (氵+有).
+
+---
+
+## B12 batch additions (2026-08-04, position 601, curator B12)
+
+**★★★ FIRST-EVER A VERDICT ★★★ after 600 items / 12 batches / 4 format
+unlocks: `p3_char_0434_畎` broke through as A. Verdict provenance:
+`judgments/batch_B12/labels.json` att1 → G3 → A. Rendered PNG:
+`groups/G3_coords/attempts/p3_char_0434_畎/01_畎.png`. Recipe promoted
+as row 248 (composite) + rows 249-250 (component variants).**
+
+Batch summary: 1 A + 6 PASS + 15 C + 31 FAIL = 7/50 = **14% main pass
+rate** (down from B11's 28% — dip discussion in evolution.md). Retry:
+0/3 (all R3 → TERMINAL_FROZEN). 60 BANK_DEVIATIONs across 50 mains
+(~120% — many attempts skipped multiple bank entries); 2 promoted as
+variants (rows 249-250). Cumulative A rate: 1/600 = 0.17%.
+
+| # | Item | File | Strokes / notes | Status |
+|---|------|------|-----------------|--------|
+| 248 | 畎 (quǎn) — FIRST A | quan_char.py | 9 (BANK_DEVIATION: skipped bi_field_over_ji + da_char; composes quan_tian_for_LR_left + quan_dog_for_LR_right; ★ format-ceiling exception via L-R slot compression — see P-DEV4) | B12 main **A** |
+| 249 | 田 for L-R left variant | quan_tian_for_LR_left.py | 5 (VARIANT — compressed 田 for LR-left slot; PIL-px inline with configurable x_left/x_right/y_top/y_bot; motivating context: 畎; template for 略/畔/畝/畦/畯/畹/畈/畋) | B12 BANK_DEVIATION promotion (A-derived) |
+| 250 | 犬 for L-R right variant | quan_dog_for_LR_right.py | 4 (VARIANT — 犬 = 大 + upper-right dot for LR-right slot with explicit cross-apex weld; motivating context: 畎; template for 猷 and 大-family right radicals in L-R compression) | B12 BANK_DEVIATION promotion (A-derived) |
+
+**B12 mainstream PASSes (6, no wrapper .py written — attempts remain the
+canonical callable form via `pass_index.md`)**:
+
+- `p3_char_0447_信` (信, xìn) — 亻 + 言 (inline). BANK_DEVIATION: no 言
+  bank entry; fresh `yan_speech_inline` (亠+二 hengs+口 stack). NOT
+  promoted (言 is too broad a composition family to codify as one
+  primitive; wait for a shape-family cluster to emerge).
+- `p3_char_0448_疥` (疥) — bank `ne_sick.draw_ne_chuang` (envelope) +
+  inline 介. Non-deviation on envelope; 介 not banked. Clean bank use.
+- `p3_char_0455_相` (相) — bank `mu.py` (left 木) + inline 目 (right,
+  3-inner-heng). No BANK_DEVIATION block (bank ri only has 1 inner heng
+  — different character, so inline is correct not a deviation).
+- `p3_char_0457_思` (思) — BANK_DEVIATION: skipped xin + bi_field_over_ji
+  (both canvas-centered); inline `tian_top_for_si` + `xin_bottom_for_si`.
+  Consider promoting compressed 心 for bottom-stack in a future batch if
+  再 (which uses 心-bottom) hits similar C.
+- `p3_char_0465_选` (选) — BANK_DEVIATION: skipped `zou_zhi.py` (heavy
+  envelope) + `er_ren.py`; inline compact 辶 + fresh 先-top-right. NOT
+  promoted (辶 compact envelope is a broad family — better to wait for
+  a second instance to converge on a stable recipe).
+- `p3_char_0479_保` (保) — bank `ren_pang` + bank `kou` + bank `mu`
+  composed vertically. Clean 3-bank identity-alias composition; no
+  deviation. Exemplifies P-DEV2 (2-part+ side-by-side works when all
+  parts are bank-mastered).
+
+**B12 BANK_DEVIATION triage summary** (60 deviations across 50 mains —
+highest rate yet; ~120% ≥ 1 per item on average):
+
+- **A + deviation → variants promoted** (1 → 2 variants): 畎 → rows 249, 250.
+- **PASS + deviation → NOT promoted** (3): 信 (yan_speech too broad), 思
+  (tian_top_for_si + xin_bottom_for_si too specific to 思's geometry),
+  选 (compact-辶 envelope broad family — needs 2nd instance).
+- **PASS without deviation** (3): 疥, 相, 保 — bank primitives used cleanly.
+- **C + deviation** (14): 种, 前, 点, 给, 神, 盃, 结, 盅, 侶, 係, 战, 俎,
+  草 (13 with dev) + 畐 (no dev). See sandbox for cluster analysis.
+- **FAIL + deviation** (~42 of 50 mains): recorded in errata.md. No
+  variants (v13 evidence rule).
+
+**Naming disambiguation for B12**:
+- `quan_char` — 畎 (quǎn); distinct from any prior. Reserves `quan_` prefix.
+- `quan_tian_for_LR_left` — variant of 田 for LR-left; distinct from
+  `jia_first`, `shen_extend`, `ri`, `you_frame_up` (all box-family, but
+  each is a different topology).
+- `quan_dog_for_LR_right` — 犬 variant; distinct from `da_char.py`
+  (canvas-centered, TERMINAL for standalone use per B11 freezing).
+
+**Most useful cross-transfer candidates from B12**:
+- `quan_tian_for_LR_left.py` — reusable for 略 (田+各), 畔 (田+半), 畝, 畦,
+  畯, 畹. Also directly addresses B11 fails 畈, 畋 — retry candidates
+  under this variant.
+- `quan_dog_for_LR_right.py` — reusable for 猷. Also validates the
+  L-R-slot-compression pathway (P-DEV4) for the 大-family in future
+  compressed contexts (though NOT for standalone 大/矢/失 which remain
+  TERMINAL_FROZEN).
+
+**Original primitives untouched** (v13 immutability): `bi_field_over_ji.py`,
+`da_char.py`, `xin.py`, `mu.py`, `kou.py`, `ren_pang.py`, `ne_sick.py`,
+`zou_zhi.py`, `er_ren.py` all preserved.
+
+---
+
+## B13 batch additions (2026-08-05, position ~651, curator B13)
+
+Batch summary: 0 A + 10 PASS + 11 C + 29 FAIL = **10/50 = 20% main pass
+rate** (recovery from B12's 14% dip; back to normal band). R1 retries:
+1/8 recovery (盃 → PASS). Cumulative A rate: 1/650 = 0.15% (still one A
+via P-DEV4). BANK_DEVIATIONs across 50 mains: ~22 (down from B12's 60;
+many PASSes on 疒-envelope pattern were bank-clean). 2 promoted as
+variants (rows 251-252). ★ First batch where G3 (20%) beat G5 (18%) on
+PASS rate — item-level analysis in sandbox.md.
+
+| # | Item | File | Strokes / notes | Status |
+|---|------|------|-----------------|--------|
+| 251 | 亻 PIL for L-R left variant | ren_pang_pil_for_LR_left.py | 2 (VARIANT — 亻 in PIL pixel coords for LR-left slot with configurable cx / y_top / y_bot / widths; motivating context: 俚 (B13 PASS); template for 伧/佝/债/侏/借/傍/值/傲/侪/佩 — any LR-left 亻 composition that renders the right in PIL) | B13 BANK_DEVIATION promotion (PASS-derived) |
+| 252 | 辶 thin PIL envelope variant | zou_zhi_thin_pil_envelope.py | 3 (VARIANT — 辶 envelope in PIL px MMH-thin ink with configurable envelope box; motivating context: 适 (B13 PASS); template for 逃/追/迅/逢/逛/递/造/遇/遂/遍/遥/遣 — any 辶 char whose interior renders in PIL) | B13 BANK_DEVIATION promotion (PASS-derived) |
+
+**B13 mainstream PASSes (10, no wrapper .py written — attempts remain
+canonical callable form via `pass_index.md`)**:
+
+- `p3_char_0489_指` (指) — BANK_DEVIATION: skipped `shou_pang.py`
+  (turtle mixes badly with inline PIL right at MMH-thin widths); inline
+  `zhi_finger_inline` (扌 + 旨). NOT promoted (whole-char inline, not a
+  family per P-DEV3).
+- `p3_char_0492_俚` (俚) — BANK_DEVIATION: skipped `ren_pang.py`
+  (turtle-based); inline `ren_pang_pil_for_LR_left`. **PROMOTED** as
+  row 251 (亻 has a clear family; recipe crystallizes what worked in
+  B7-B13 across 作/但/佐/伯/佃/仲/伉/伛/保/侑/俚).
+- `p3_char_0493_适` (适) — BANK_DEVIATION: skipped `zou_zhi.py` (heavy
+  turtle) and 舌 pointer (`hua_speak.py`); inline `shi_go_char_inline`
+  (辶 envelope + 舌). Envelope portion **PROMOTED** as row 252
+  (`zou_zhi_thin_pil_envelope.py`) — 辶 is huge family; recipe
+  crystallizes B12's postponed compact-辶 signal (选 was noted as
+  needing a 2nd instance; 适 is the 2nd).
+- `p3_char_0497_响` (响) — no BANK_DEVIATION. Bank-clean composition.
+- `p3_char_0507_高` (高) — BANK_DEVIATION: skipped `tou_radical` +
+  `kou`; inline compressed 亠/口/冂/口 tower. NOT promoted (`high_tower`
+  is char-specific geometry per P-DEV3).
+- `p3_char_0515_原` (原) — BANK_DEVIATION: skipped `chang.py` +
+  `bai_char_for_top_stack.py` (weights too heavy vs MMH thin GT);
+  inline 厂-envelope + 白 + 小. NOT promoted (whole-char inline).
+- `p3_char_0516_疰` (疰) — no BANK_DEVIATION. `ne_sick` envelope +
+  inline 主. Clean bank use of 疒 envelope.
+- `p3_char_0522_疴` (疴) — no BANK_DEVIATION. `ne_sick` envelope +
+  inline 可. Clean bank use.
+- `p3_char_0524_疸` (疸) — no BANK_DEVIATION. `ne_sick` envelope +
+  inline 旦. Clean bank use.
+- `p3_char_0530_痂` (痂) — not BANK_DEVIATION (no bank fit for 加).
+  `ne_sick` envelope + inline 加.
+
+**B13 retry channel (8 R1s, 1 PASS)**:
+
+- `p3_char_0466_盃__retry_1` — **PASS** (recovery). Recipe validated
+  the min_dish_bottom pattern for 皿-family compressed bottoms. Not
+  promoted as a variant yet (single instance; wait for 2nd hit on
+  盅/盂/盒 to codify).
+- `p3_char_0463_神__retry_1`, `p3_char_0470_侶__retry_1`,
+  `p3_char_0474_係__retry_1` → C. Queue for B14 R2 or defer.
+- `p3_char_0430_畈__retry_1`, `p3_char_0432_畋__retry_1` → **FAIL**.
+  Variant-prediction post-mortem below.
+- `p3_char_0451_给__retry_1`, `p3_char_0467_结__retry_1` → FAIL.
+  纟 radical still not decoded; defer to B14.
+
+**B13 BANK_DEVIATION triage summary** (22 dev across 50 mains — ~44%):
+
+- **A + deviation** (0 — no A this batch).
+- **PASS + deviation → PROMOTED** (2): 俚 → row 251, 适 → row 252.
+- **PASS + deviation → NOT promoted** (3): 指 (whole-char inline), 高
+  (whole-char), 原 (whole-char). All fail P-DEV3 criterion #1 (not a
+  reusable shape family) or #2 (not parameterizable as a general slot).
+- **PASS without deviation** (5): 响, 疰, 疴, 疸, 痂 — bank-clean
+  (mostly 疒-envelope + interior inline).
+- **C + deviation** (~8): 俏, 俐, 能, 都, 畛, 畜, 畟, 部, 526, 528, 532.
+  See sandbox for cluster analysis.
+- **FAIL + deviation** (~29 mains): recorded in errata.md. No variants
+  (v13 evidence rule).
+
+**★ Variant-prediction post-mortem (B12 → B13)**: B12 curator promoted
+`quan_tian_for_LR_left` from the 畎 A verdict and named 畈/畋 as reuse
+targets. **Both FAILED on B13 R1.** Diagnosis (see attempts + sandbox):
+the compressed 田 primitive rendered CORRECTLY as a clean rectangle in
+both attempts — the primitive itself was NOT the failure. The failure
+was in the RIGHT radical (反 for 畈, 攵 for 畋), both of which are
+X-crossing-like structures with no bank primitive; the drawer inlined
+fresh and produced topologically broken shapes (畈: 反 collapsed to a
+ㄋ-curl; 畋: 攵 became a floating dash + tiny 人). **Lesson**: variant
+promotion covered the LEFT slot correctly but did not de-risk the
+composition — the promotion note over-projected reuse without verifying
+the SIBLING radical had a working recipe. `quan_tian_for_LR_left` is
+still valid (see 畛 B13 attempt — it worked cleanly there for the box);
+what's absent is a matched-right recipe for the 反/攵 family. See new
+principle **P-DEV5** in principle_bank.md.
+
+**Naming disambiguation for B13**:
+- `ren_pang_pil_for_LR_left` — variant of 亻; distinct from
+  `ren_pang.py` (turtle) and `ren_pang_for_bottom_stack.py` (if it ever
+  exists; not currently). The `_pil_for_LR_left` suffix marks
+  coord-system + slot variant.
+- `zou_zhi_thin_pil_envelope` — variant of 辶; distinct from
+  `zou_zhi.py` (turtle, calligraphic weight). Suffix `_thin_pil_`
+  marks weight + coord-system.
+
+**Original primitives untouched** (v13 immutability): all prior bank
+primitives preserved including `ren_pang.py`, `zou_zhi.py`,
+`ne_sick.py`, `bi_field_over_ji.py`, `da_char.py`,
+`quan_tian_for_LR_left.py`, `quan_dog_for_LR_right.py`.
+
+**Most useful cross-transfer candidates from B13**:
+- `ren_pang_pil_for_LR_left.py` — reusable for the ~40+ 亻-family
+  remaining in the curriculum (借/傍/值/伧/佝/侏/侪/佩/俵/傀/傈/傣...).
+- `zou_zhi_thin_pil_envelope.py` — reusable for the ~30+ 辶-family
+  remaining (逃/追/迅/逢/逛/递/造/遇/遂/遍/遥/遣/邂/邈...).
+

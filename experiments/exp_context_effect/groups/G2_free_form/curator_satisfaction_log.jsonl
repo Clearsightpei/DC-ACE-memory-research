@@ -380,3 +380,353 @@
 {"item_id": "p3_char_0117_仑__retry_1__G2", "attempt_n": 0, "batch": "B6", "curator_verdict": "KEEP-GOING", "reason": "Retry_1: 人 lid OK; 匕 body hook DOWN not UP-LEFT."}
 {"item_id": "p3_char_0011_人__retry_2__G2", "attempt_n": 0, "batch": "B6", "curator_verdict": "KEEP-GOING", "reason": "CBV × 2 — apex + thick foot present. Labeler disagreement, not memory failure."}
 {"item_id": "p3_char_0132_内__retry_1__G2", "attempt_n": 0, "batch": "B6", "curator_verdict": "KEEP-GOING", "reason": "Retry_1: 冂 OK; interior 人 has arrowhead 捺 not broad foot."}
+{"item_id": "p3_char_0184_业__G2", "attempt_n": 2, "batch": "B7", "curator_verdict": "PASS", "reason": "业 clean — 5-stroke silhouette + horizontal base."}
+{"item_id": "p3_char_0185_仟__G2", "attempt_n": 3, "batch": "B7", "curator_verdict": "PASS", "reason": "亻+千 clean; 千 top-撇 tick present."}
+{"item_id": "p3_char_0186_本__G2", "attempt_n": 1, "batch": "B7", "curator_verdict": "PASS", "reason": "木 + base tick clean."}
+{"item_id": "p3_char_0187_仡__G2", "attempt_n": 3, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 乞 zigzag rendered as boxy 匚 with no terminal arc/hook."}
+{"item_id": "p3_char_0188_边__G2", "attempt_n": 3, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "辶 base OK; interior 力 collapsed to floating ticks — no 横折钩+撇."}
+{"item_id": "p3_char_0189_仨__G2", "attempt_n": 2, "batch": "B7", "curator_verdict": "PASS", "reason": "亻+三 clean, top-横 shorter."}
+{"item_id": "p3_char_0190_加__G2", "attempt_n": 3, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "力 rendered as 刀 (no up-left hook flick); 口 boxy."}
+{"item_id": "p3_char_0191_仫__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 厶 rendered as detached line + isolated tick — no closed loop."}
+{"item_id": "p3_char_0192_代__G2", "attempt_n": 1, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "亻+弋 but MISSING top-right 丶 dot and terminal hook — reads as 亻+乁."}
+{"item_id": "p3_char_0193_癶__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "CBV — 癶 signature (two splayed feet) present but too spare/small."}
+{"item_id": "p3_char_0194_世__G2", "attempt_n": 2, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "3 stacked verticals + wraparound; missing fused 竖折 signature."}
+{"item_id": "p3_char_0195_皿__G2", "attempt_n": 1, "batch": "B7", "curator_verdict": "PASS", "reason": "皿 clean — box + interior verticals + wide base."}
+{"item_id": "p3_char_0196_东__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "木-body present but bottom 冫 pair reduced to one slant; top 一 too short."}
+{"item_id": "p3_char_0197_矢__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "PASS", "reason": "矢 clean — top ticks + 大 body + 撇 tail."}
+{"item_id": "p3_char_0198_立__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "CBV — 亠 + 冫 + 一 base all present but sloppy, top-丶 misplaced."}
+{"item_id": "p3_char_0199_兰__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "PASS", "reason": "兰 clean — 3 horizontals + top 丷 ticks."}
+{"item_id": "p3_char_0200_市__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "PASS", "reason": "市 clean — 亠 lid + 冂 body + 亅 through."}
+{"item_id": "p3_char_0201_冉__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "冂 + interior 土-like cross but extra 一 and 竖 doesn't extend through."}
+{"item_id": "p3_char_0202_术__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "PASS", "reason": "术 clean — 木 + top-right 丶 dot."}
+{"item_id": "p3_char_0203_冊__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "Traditional 冊 rendered as split rectangle; both 冂 hooks missing."}
+{"item_id": "p3_char_0204_由__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "PASS", "reason": "由 clean — box + internal 十 + top 竖 extension."}
+{"item_id": "p3_char_0205_冋__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "PASS", "reason": "冋 clean — 冂 + interior 一 + 口."}
+{"item_id": "p3_char_0206_白__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "PASS", "reason": "白 clean — top 撇 tick + box + interior 一."}
+{"item_id": "p3_char_0207_册__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "PASS", "reason": "册 clean — 2 冂 with connecting 一."}
+{"item_id": "p3_char_0208_北__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "LEFT rendered as 十 (should be 竖+提); RIGHT 匕 hook flicks DOWN not UP-LEFT."}
+{"item_id": "p3_char_0209_冎__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "Rare char; 冂 + interior H + bottom sweep — entirely wrong."}
+{"item_id": "p3_char_0210_四__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "PASS", "reason": "四 clean — 口 + interior 儿-legs."}
+{"item_id": "p3_char_0211_冯__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "PASS", "reason": "冯 clean — 冫 + 马 body."}
+{"item_id": "p3_char_0212_处__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "夂 rendered as 冫+丿 pair (not arc); right 卜 OK. 夂 FROZEN family."}
+{"item_id": "p3_char_0213_処__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "几 enclosure + top-撇 tick; interior 夂 missing. Rare traditional form."}
+{"item_id": "p3_char_0214_记__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "讠 fragmented (isolated top tick + 乙-like body); 己 reasonable. 讠 FROZEN family."}
+{"item_id": "p3_char_0215_凸__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "PASS", "reason": "凸 clean — 5-stroke silhouette holds."}
+{"item_id": "p3_char_0216_失__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "Reads as 夫 — missing top-left 撇 tick + missing top-中 竖 extension."}
+{"item_id": "p3_char_0217_凹__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "PASS", "reason": "凹 clean — inverse-U silhouette holds."}
+{"item_id": "p3_char_0218_刍__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "Top 撇折 present; body has 3+ stacked 横 instead of closed 口 loop."}
+{"item_id": "p3_char_0219_在__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "Reads as 左 — bottom-right 土 body missing (bare horizontals only)."}
+{"item_id": "p3_char_0220_丢__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "PASS", "reason": "丢 clean — 丿-lid + 去 body."}
+{"item_id": "p3_char_0221_有__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "PASS", "reason": "有 clean — 𠂇 lid + 月 body."}
+{"item_id": "p3_char_0222_乑__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "Rendered as 亅 + 2 chevrons — should be 4 撇+捺 pairs stacked. Rare."}
+{"item_id": "p3_char_0223_地__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "土 (left) clean; 也 (right) missing bottom 竖弯钩 sweep — geometric 冂 only. Extra top tick."}
+{"item_id": "p3_char_0224_乓__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "Scattered 一 + 匚-top + isolated tick — 丘-body signature absent."}
+{"item_id": "p3_char_0225_而__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "冂 + 4 interior verticals but top 一 floating disconnected; 撇 lid missing."}
+{"item_id": "p3_char_0226_乔__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "天 top + 小 legs but middle 亅 truncated; splay too tight."}
+{"item_id": "p3_char_0227_年__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "3 stacked 横 + 竖 — missing top 撇 hook + missing bottom-竖 extension. Reads as 千+一. FROZEN 牛-family."}
+{"item_id": "p3_char_0228_乩__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "PASS", "reason": "乩 clean — 占 left + 乚 right."}
+{"item_id": "p3_char_0229_自__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "Reads as 目 — missing top-left 撇 tick. Sibling 自/目 identity bit."}
+{"item_id": "p3_char_0230_亘__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "PASS", "reason": "亘 clean — 一 + 日 + 一."}
+{"item_id": "p3_char_0231_会__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "人-lid + 一 + 云 body but 厶 fragmented into short line + isolated dot."}
+{"item_id": "p3_char_0232_亙__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "一 top + 口 + 一 bottom but middle 口 has diagonal interior only, no proper 日 double-横."}
+{"item_id": "p3_char_0233_那__G2", "attempt_n": 0, "batch": "B7", "curator_verdict": "KEEP-GOING", "reason": "尹 left missing crossing 撇 slash — reads as 邦 not 那."}
+{"item_id": "p3_char_0234_亚__G2", "attempt_n": 3, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "二 stacked with H-like interior + ticks — missing 亚 central cross-fusion; reads as 五-hybrid."}
+{"item_id": "p3_char_0235_后__G2", "attempt_n": 3, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "丿 sweep + 口 box present but no middle 一 and no 厂-lid connection; 口 detached."}
+{"item_id": "p3_char_0236_亥__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亠 lid + splay-legs but no internal 幺-like structure; reads as 亡+ticks."}
+{"item_id": "p3_char_0237_行__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "PROMOTE", "reason": "Passes visual + component-signature check."}
+{"item_id": "p3_char_0238_亦__G2", "attempt_n": 2, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亠 lid + inverted 八 splay + short 亅 but no through-going central axis; four dots read scattered."}
+{"item_id": "p3_char_0239_过__G2", "attempt_n": 0, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "辶 base OK; interior 寸 rendered as detached 十 + floating tick — not compact 寸."}
+{"item_id": "p3_char_0240_仰__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 卬 right rendered as bare 卩 only — missing left 卬-top ticks. Sibling 卬/卩."}
+{"item_id": "p3_char_0241_如__G2", "attempt_n": 3, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "女 fragmented into 4-5 disconnected criss-cross strokes; 口 box on right clean. 女 signature (撇点+撇+一) missed."}
+{"item_id": "p3_char_0242_仲__G2", "attempt_n": 2, "batch": "B8", "curator_verdict": "PROMOTE", "reason": "Passes visual + component-signature check."}
+{"item_id": "p3_char_0243_成__G2", "attempt_n": 2, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "戊 outline with floating top-right 丶 but interior 丁-brace missing; reads as 戊/戌 not 成. Sibling 成/戊/戌."}
+{"item_id": "p3_char_0244_仳__G2", "attempt_n": 0, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 比 rendered as detached 匕-fragments — reads as 亻+乜. Sibling 比 vs 化 collapse."}
+{"item_id": "p3_char_0245_多__G2", "attempt_n": 0, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "Two 夕 stacked present with proper 撇+夕-hook — curator CBV candidate; signature intact, labeler stricter."}
+{"item_id": "p3_char_0246_仵__G2", "attempt_n": 3, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 午 right rendered as 千 (missing 午 signature top 一 above 千). Sibling 午/千."}
+{"item_id": "p3_char_0247_军__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "冖 + 车 present but extra tick above 冖 reads as 宀; 车 unbalanced. Sibling 冖/宀 top-dot."}
+{"item_id": "p3_char_0248_伄__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 吊-right rectangle + 巾 present but 巾 has no left tick — reads as 亻+另 hybrid."}
+{"item_id": "p3_char_0249_同__G2", "attempt_n": 2, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "冂 enclosure + 口 interior but no internal 一 above 口 and no hook flick on 冂; reads as 冋/回 variant."}
+{"item_id": "p3_char_0250_伉__G2", "attempt_n": 2, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 亢 fragmented into 亠 + extra 一 + 几 — components detached, not stacked. Compound-component drift."}
+{"item_id": "p3_char_0251_当__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "3 top ticks + rectangle with interior 一 present but body blocky; curator CBV candidate — signature intact."}
+{"item_id": "p3_char_0252_伊__G2", "attempt_n": 2, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 尹 rendered without crossing 撇 slash — reads as 亻+尹/丰. Same mode as p3_233 那."}
+{"item_id": "p3_char_0253_好__G2", "attempt_n": 0, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "女 fragmented X-cross + 子 detached; 女 signature (撇点+撇+一) missed. Same mode as 如."}
+{"item_id": "p3_char_0254_伎__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 支 right rendered as 又 + top-十 only — missing 支 vertical + arc composition."}
+{"item_id": "p3_char_0255_此__G2", "attempt_n": 2, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "止 left present; 匕 right hook direction inverted — reads as 止+乞. Duplicate of B7 北 匕-hook mode."}
+{"item_id": "p3_char_0256_伐__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 戈 rendered as fragmented 弋 + floating 丶 — missing 戈 hook-flick. Duplicate of B7 代/弋-family."}
+{"item_id": "p3_char_0257_问__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "门 enclosure lacks top 丶 tick — reads as 冂+口 = 同. Sibling 门/冂 top-dot identity bit."}
+{"item_id": "p3_char_0258_伕__G2", "attempt_n": 0, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 夫 rendered as ×-cross missing top 一 — reads as 亻+失/天. Sibling 夫/失/天."}
+{"item_id": "p3_char_0259_回__G2", "attempt_n": 2, "batch": "B8", "curator_verdict": "PROMOTE", "reason": "Passes visual + component-signature check."}
+{"item_id": "p3_char_0260_伙__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 火 as 4-splay ticks OK — curator CBV candidate; signature intact."}
+{"item_id": "p3_char_0261_再__G2", "attempt_n": 2, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "冂 + interior grid but missing top-most 一 above the 冂 — reads as 冉 not 再. Sibling 再/冉."}
+{"item_id": "p3_char_0262_伛__G2", "attempt_n": 3, "batch": "B8", "curator_verdict": "PROMOTE", "reason": "Passes visual + component-signature check."}
+{"item_id": "p3_char_0263_她__G2", "attempt_n": 3, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "女 X-cross fragmented + 也 rendered as 冂+hook only; both components collapsed. Same mode as 如/好."}
+{"item_id": "p3_char_0264_伢__G2", "attempt_n": 0, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 牙 right body incomplete — missing bottom hook + 撇 sweep, reads as fragmented 亍."}
+{"item_id": "p3_char_0265_名__G2", "attempt_n": 3, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "夕 top oversized 撇 dominant, 口 detached far below and offset — 名 stack broken."}
+{"item_id": "p3_char_0266_伥__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 长 right fragmented — missing 长 signature 一+撇+乁+丶 stack."}
+{"item_id": "p3_char_0267_西__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "一 top floats above; 冂 + interior verticals only (儿-like) — missing top-crossings and bottom seal. Extra 一 above."}
+{"item_id": "p3_char_0268_伦__G2", "attempt_n": 2, "batch": "B8", "curator_verdict": "PROMOTE", "reason": "Passes visual + component-signature check."}
+{"item_id": "p3_char_0269_合__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "人-lid + 一 + 口 all present but 口 detached and small; curator CBV candidate — signature intact."}
+{"item_id": "p3_char_0270_伧__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 仓 = 人-lid + 巳 rendered as bare 人-lid + 匚-hook only — 巳 body missing."}
+{"item_id": "p3_char_0271_老__G2", "attempt_n": 2, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "耂 top present; 匕 bottom hook direction inverted — reads as 耂+匕(wrong). Duplicate of 此/北 匕-hook mode."}
+{"item_id": "p3_char_0272_伪__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "PROMOTE", "reason": "Passes visual + component-signature check."}
+{"item_id": "p3_char_0273_次__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "冫 pair OK; 欠 right rendered as 人/入 only — missing 欠 top ticks and dot. Component drift."}
+{"item_id": "p3_char_0274_伫__G2", "attempt_n": 0, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 宁 rendered without 宀 top 丶 — reads as 亻+一+丁. Sibling 宁 top-dot identity bit."}
+{"item_id": "p3_char_0275_任__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 壬 rendered as 王 (missing top 撇) — reads as 亻+王. Sibling 壬/王."}
+{"item_id": "p3_char_0276_佤__G2", "attempt_n": 3, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 瓦 body rendered as 何/可 hybrid — missing 瓦 signature 乚-hook + interior 丶."}
+{"item_id": "p3_char_0277_先__G2", "attempt_n": 2, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "丿 + 土-like + 儿 splay present but 土 fused with 丿 poorly; curator CBV candidate — near-signature."}
+{"item_id": "p3_char_0278_齐__G2", "attempt_n": 1, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亠 top + middle body fragmented (糸-like from stray 幺) + bottom 川 missing — reads as 系-hybrid."}
+{"item_id": "p3_char_0279_色__G2", "attempt_n": 2, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "刀 top-lid + 曰 body but missing bottom 竖弯钩 sweep of 巴. Same as p3_223 地 mode (巴/也 family)."}
+{"item_id": "p3_char_0280_兆__G2", "attempt_n": 2, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "Two splays present but no central axis — reads as 化/处 hybrid. Missing 兆-signature 冫-flank + 儿."}
+{"item_id": "p3_char_0281_设__G2", "attempt_n": 0, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "讠 left fragmented; 殳 right rendered as 又 + top-cross only. Duplicate of B7 记 讠-family mode."}
+{"item_id": "p3_char_0282_兇__G2", "attempt_n": 2, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "凶 wrap rendered as ∧ + 凵 partial; 儿 bottom present but disconnected. Traditional/rare form."}
+{"item_id": "p3_char_0283_传__G2", "attempt_n": 0, "batch": "B8", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 专 rendered as 4-stacked 一 with hook missing — reads as 亻+曰 hybrid. Sibling 专/云."}
+{"item_id": "p3_char_0284_龹__G2", "attempt_n": 1, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "3 top ticks + 大-body only; missing bottom 一+丿 signature — reads as 尖-hybrid. Rare."}
+{"item_id": "p3_char_0285_师__G2", "attempt_n": 2, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "Left tick + 币 right, missing 巾-hook + wrong internal 一 — reads as 帅. Sibling 师/帅 identity-bit miss."}
+{"item_id": "p3_char_0286_冱__G2", "attempt_n": 3, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "冫 pair OK; 互 rendered as 亏-hybrid, missing 互 Z-crossbar signature."}
+{"item_id": "p3_char_0287_光__G2", "attempt_n": 3, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "3 top ticks + 一 + 儿-hook all present. CBV candidate — signature intact."}
+{"item_id": "p3_char_0288_凫__G2", "attempt_n": 1, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "Top 鸟 collapsed to 白+dot; missing 鸟 5-stroke signature. Rare."}
+{"item_id": "p3_char_0289_我__G2", "attempt_n": 0, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "手+戈 body but 戈 hook missing + top 丿 detached. FROZEN 戈 family recur."}
+{"item_id": "p3_char_0290_甸__G2", "attempt_n": 0, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "勹 wrap with inverted hook + 田 overflow. Sibling 勹-wrap direction miss."}
+{"item_id": "p3_char_0291_这__G2", "attempt_n": 1, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "文 top rendered as 幺+又 hybrid; 辶 sweep OK. Compound-drift on 文 4-stroke."}
+{"item_id": "p3_char_0292_甹__G2", "attempt_n": 2, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "甶 as bare 田; 亏 lacks top-一 and hook mis-drawn. Rare traditional."}
+{"item_id": "p3_char_0293_来__G2", "attempt_n": 1, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "一 + 兩点 + 木 body all present. CBV candidate — near-signature."}
+{"item_id": "p3_char_0294_町__G2", "attempt_n": 1, "batch": "B9", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 田+丁 both signatures intact, alignment clean."}
+{"item_id": "p3_char_0295_时__G2", "attempt_n": 0, "batch": "B9", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 日+寸 clean, hook direction correct on 寸."}
+{"item_id": "p3_char_0296_串__G2", "attempt_n": 3, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "Two 口 detached squares + 丨 pierces beyond both; fusion missing."}
+{"item_id": "p3_char_0297_你__G2", "attempt_n": 1, "batch": "B9", "verdict": "A", "curator_verdict": "STOP", "reason": "A — 亻 (compressed) + 尔 with correct hook flick, taper widths, teardrop 点. Calligraphic weight applied."}
+{"item_id": "p3_char_0298_丽__G2", "attempt_n": 3, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "一 top + two 冂 with internal 丨-only (should be internal 丶). Sibling internal-tick 丶 vs 丨 miss."}
+{"item_id": "p3_char_0299_里__G2", "attempt_n": 0, "batch": "B9", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 日+土 stack clean, all crossbars present."}
+{"item_id": "p3_char_0300_乱__G2", "attempt_n": 3, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "舌 collapsed to 千+□; 乙 OK. Compound-drift on 舌 6-stroke."}
+{"item_id": "p3_char_0301_作__G2", "attempt_n": 2, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 乍 fragmented (top 丿 + detached horizontals + 丨). Compound-drift on 乍."}
+{"item_id": "p3_char_0302_疔__G2", "attempt_n": 3, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "疒 body fragmented (top-点 misplaced, 广 missing); 丁 present. Radical-body fragmentation."}
+{"item_id": "p3_char_0303_进__G2", "attempt_n": 3, "batch": "B9", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 井+辶 clean, sweep terminates properly."}
+{"item_id": "p3_char_0304_疖__G2", "attempt_n": 3, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "疒 outer OK; 卩 with reversed hook direction. FROZEN 卩-hook family recur."}
+{"item_id": "p3_char_0305_还__G2", "attempt_n": 0, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "不 collapsed to 幺+乁 hybrid; 辶 OK. Compound-drift — 不 (PASSed at p3_094) retrieval failure."}
+{"item_id": "p3_char_0306_亨__G2", "attempt_n": 3, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亠+口+了 present; middle 一 missing — reads as 享/亭 variant. Sibling identity-bit miss."}
+{"item_id": "p3_char_0307_没__G2", "attempt_n": 0, "batch": "B9", "verdict": "A", "curator_verdict": "STOP", "reason": "A — 氵 (teardrop taper + rising 提) + 殳 with shoulder-dab at 折, bezier 撇+捺 with proper widening. Calligraphic weight applied."}
+{"item_id": "p3_char_0308_亩__G2", "attempt_n": 3, "batch": "B9", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 亠+田 clean stack, all interior grid present."}
+{"item_id": "p3_char_0309_两__G2", "attempt_n": 3, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "一+冂+从-verticals; missing internal 人人 crossings. Sibling identity-bit miss."}
+{"item_id": "p3_char_0310_伯__G2", "attempt_n": 0, "batch": "B9", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 亻+白 clean, taper on 撇, internal 一+日 aligned."}
+{"item_id": "p3_char_0311_身__G2", "attempt_n": 2, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "Bare 白-box + top 丿; 身 7-stroke signature collapsed to 4. Radical-body fragmentation."}
+{"item_id": "p3_char_0312_伲__G2", "attempt_n": 0, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 尼 collapsed to 几-body (missing 尸+匕). Compound-drift. Rare."}
+{"item_id": "p3_char_0313_位__G2", "attempt_n": 3, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 OK; 立 fragmented (top-dot detached, 一 detached). Compound-drift on 立 5-stroke."}
+{"item_id": "p3_char_0314_伶__G2", "attempt_n": 1, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 令 ∧ + 一 OK; bottom 卩-hook flat (no flick). Retrieval failure on TIER-0 hook."}
+{"item_id": "p3_char_0315_声__G2", "attempt_n": 0, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "士 top OK; 尸 body as 厶/口 hybrid. Sibling 尸 (TIER-0 present) retrieval failure."}
+{"item_id": "p3_char_0316_伺__G2", "attempt_n": 3, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 司 as 冂+口 only (missing internal 一, wrong hook). Compound-drift."}
+{"item_id": "p3_char_0317_员__G2", "attempt_n": 0, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "口 detached far above; 贝 as 目+八 with extra 一. Component-detachment + FROZEN 贝 family."}
+{"item_id": "p3_char_0318_伽__G2", "attempt_n": 0, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 力 as square (no hook + 撇); 口 detached. Compound-drift on 力 hook."}
+{"item_id": "p3_char_0319_听__G2", "attempt_n": 2, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "口 detached far left; 斤 as ∧+丨-hook (missing internal 一). Component-detachment."}
+{"item_id": "p3_char_0320_伾__G2", "attempt_n": 3, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 丕 as 不+一 (unified as 不-lookalike). Compound-drift. Rare."}
+{"item_id": "p3_char_0321_把__G2", "attempt_n": 0, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "扌 OK; 巴 as 曰+short hook (bottom sweep collapsed). Duplicate B8 色/223 地. FROZEN."}
+{"item_id": "p3_char_0322_佃__G2", "attempt_n": 3, "batch": "B9", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 亻+田 clean, box grid intact."}
+{"item_id": "p3_char_0323_形__G2", "attempt_n": 2, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "开 OK; 彡 rendered as 冫 (2 ticks not 3, wrong slant). Sibling 彡/冫 count miss."}
+{"item_id": "p3_char_0324_但__G2", "attempt_n": 0, "batch": "B9", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 亻+旦 clean, 日+一 base solid."}
+{"item_id": "p3_char_0325_状__G2", "attempt_n": 2, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "丬 as 匕-fragment; 犬 missing top-丶. Radical-signature miss."}
+{"item_id": "p3_char_0326_佇__G2", "attempt_n": 0, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 宁 as 宀+丁 with extra top dot floating. Same family as B8 伫 retrieval failure."}
+{"item_id": "p3_char_0327_识__G2", "attempt_n": 0, "batch": "B9", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 讠+只 clean, ticks and口 stack correct."}
+{"item_id": "p3_char_0328_佈__G2", "attempt_n": 2, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 布 as 一+巾 (missing top 丿 sweep). Compound-drift."}
+{"item_id": "p3_char_0329_运__G2", "attempt_n": 1, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "云 (二+厶) + 辶 sweep all present. CBV candidate — signature intact."}
+{"item_id": "p3_char_0330_佉__G2", "attempt_n": 1, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 去 = 土+厶; 土 fragmented, 厶 as open △. Duplicate B6 去-family."}
+{"item_id": "p3_char_0331_更__G2", "attempt_n": 0, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "一+曰+从-legs splay; missing central 亅 piercing. Composition — 更 core stroke miss."}
+{"item_id": "p3_char_0332_佐__G2", "attempt_n": 0, "batch": "B9", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 亻+左 clean, 工 base + 丿 lid aligned."}
+{"item_id": "p3_char_0333_条__G2", "attempt_n": 2, "batch": "B9", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "夂 top + 木 body present. CBV candidate — signature intact."}
+{"item_id": "p3_char_0334_佔__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 占 = 卜 + 口 detached, 卜 dot floats. Duplicate 亻-compound-drift."}
+{"item_id": "p3_char_0335_别__G2", "attempt_n": 1, "batch": "B10", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C — pieces detached rectangles, no calligraphic weight, 力 hook missing. Sig-intact-but-flat."}
+{"item_id": "p3_char_0336_佗__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 它 = 宀 + 匕-fragment, 匕 hook inverted. FROZEN 匕 family dup."}
+{"item_id": "p3_char_0337_张__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "弓 left OK; 长 fragmented, missing 一+撇+乁+丶 stack. Compound-drift dup B8 伥."}
+{"item_id": "p3_char_0338_佘__G2", "attempt_n": 1, "batch": "B10", "verdict": "A", "curator_verdict": "STOP", "reason": "A — 人-lid + 二 + 小 stack, Bezier + tapered widths + hook flick UP-LEFT. Calligraphic weight lifted to A."}
+{"item_id": "p3_char_0339_每__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "一 top + 母 body → bare 冂 + 4-tick interior; missing 母 dual-横 crossbar. Compound-drift."}
+{"item_id": "p3_char_0340_佚__G2", "attempt_n": 1, "batch": "B10", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C — 亻 stretched full-height, 失 as X-cross missing top-一. Sibling 失/夫/天 + proportion."}
+{"item_id": "p3_char_0341_社__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "礻 rendered as 衤 (extra tick); 土 OK. Sibling 礻/衤."}
+{"item_id": "p3_char_0342_佛__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 弗 = 弓+2丨 hybrid, missing 弗 crossbar. Rare 亻-compound."}
+{"item_id": "p3_char_0343_即__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "皀 left = 白+匕 hybrid; 卩 hook inverted. Compound-drift + FROZEN 卩 dup."}
+{"item_id": "p3_char_0344_佝__G2", "attempt_n": 1, "batch": "B10", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 亻 + 句 clean."}
+{"item_id": "p3_char_0345_志__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "士 top + 心 bottom detached; 心 卧钩 flick missing. Composition + hook dup."}
+{"item_id": "p3_char_0346_佞__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; right = 女+又 hybrid missing 佞 signature. Compound-drift."}
+{"item_id": "p3_char_0347_证__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "讠 fragmented (dup B7 讠 family); 正 OK. FROZEN 讠 dup."}
+{"item_id": "p3_char_0348_佟__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 冬 = 夂+冫 scatter, no fusion. Compound-drift."}
+{"item_id": "p3_char_0349_改__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "己 OK; 攵 rendered as 攴 (extra 丶). Sibling 攵/攴 dup."}
+{"item_id": "p3_char_0350_佣__G2", "attempt_n": 1, "batch": "B10", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 亻 + 用 clean."}
+{"item_id": "p3_char_0351_步__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "止 top + 少 bottom, length ratios inverted (少 撇 too short). Sibling — new row candidate."}
+{"item_id": "p3_char_0352_佥__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "∧-lid + 一 + 从 stack all present but 从 detached, lid flat. Compound-drift."}
+{"item_id": "p3_char_0353_找__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "扌 OK; 戈 hook + top 丿 fragmented. FROZEN 戈 dup B7/B8/B9."}
+{"item_id": "p3_char_0354_佧__G2", "attempt_n": 1, "batch": "B10", "verdict": "A", "curator_verdict": "STOP", "reason": "A — 亻 + 卡 tight LR spacing, polyline-disc-sample with taper=True. Calligraphic weight lifted to A."}
+{"item_id": "p3_char_0355_块__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "土 OK; 夬 = 大+冫 hybrid missing 又-hook. Rare."}
+{"item_id": "p3_char_0356_皃__G2", "attempt_n": 1, "batch": "B10", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 白 + 儿 clean."}
+{"item_id": "p3_char_0357_花__G2", "attempt_n": 1, "batch": "B10", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 艹 + 化 clean."}
+{"item_id": "p3_char_0358_盯__G2", "attempt_n": 1, "batch": "B10", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C — 目 clean but 丁 detached ~50 px right with white gap; uniform-radius stem. LR spacing."}
+{"item_id": "p3_char_0359_的__G2", "attempt_n": 1, "batch": "B10", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C — 白 clean; 勺 as loose oval loop, missing 撇+横折钩+丶 3-primitive. Form_catalog pos-550."}
+{"item_id": "p3_char_0360_並__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "5-stack scattered horizontals, no fusion. Composition-drift."}
+{"item_id": "p3_char_0361_到__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "至 + 刂 unequal verticals + LR gap. LR spacing."}
+{"item_id": "p3_char_0362_甾__G2", "attempt_n": 1, "batch": "B10", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C — 巛 top + 田 bottom clean; signature intact. CBV candidate."}
+{"item_id": "p3_char_0363_国__G2", "attempt_n": 1, "batch": "B10", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 囗 + 玉 clean."}
+{"item_id": "p3_char_0364_畀__G2", "attempt_n": 1, "batch": "B10", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 田 + 一 + 廾 clean."}
+{"item_id": "p3_char_0365_和__G2", "attempt_n": 1, "batch": "B10", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 禾 + 口 clean."}
+{"item_id": "p3_char_0366_畅__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "申 = 田+丨 (missing through-竖); 昜 fragmented top-勿 collapse. Both partial."}
+{"item_id": "p3_char_0367_事__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "Multi-fold body assembled but central 亅 detached + top 一 missing. Central-亅 dup B8 更."}
+{"item_id": "p3_char_0368_乖__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "千 no top-丿; 北 匕 inverted. Compound-drift + FROZEN 匕 dup."}
+{"item_id": "p3_char_0369_其__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "八 top + 甘 (=曰+一) drawn as bare 曰 + 一 base. Sibling 其/具 internal 一."}
+{"item_id": "p3_char_0370_乶__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "Rare Korean-loan; 卜 + 甫 approximation wrong stacking. Rare — low transfer."}
+{"item_id": "p3_char_0371_所__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "户 = 尸+丶 (missing 亠 lid); 斤 OK; ~40 px gap. 尸/户 sibling + LR spacing."}
+{"item_id": "p3_char_0372_疌__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "疋 body + interior 3-stack as flat cross+scatter. Rare 疌 sig uncovered."}
+{"item_id": "p3_char_0373_者__G2", "attempt_n": 1, "batch": "B10", "verdict": "PASS", "curator_verdict": "STOP", "reason": "PASS — 耂 + 日 clean."}
+{"item_id": "p3_char_0374_疙__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "疒 rendered as 广 (missing inner 冫); 乞 present. 疒-drift NEW top-3 mode."}
+{"item_id": "p3_char_0375_经__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "纟 fragmented (dup B7 纟); 巠 as 一+川 hybrid. FROZEN 纟 dup."}
+{"item_id": "p3_char_0376_疚__G2", "attempt_n": 1, "batch": "B10", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C — 疒 outer signature OK (with inner 冫) + 久 recognizable, small detachment. CBV candidate."}
+{"item_id": "p3_char_0377_法__G2", "attempt_n": 1, "batch": "B10", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C — 氵 as 3 plain teardrop dots (bottom should be 提 rising); 去 clean. 氵 bottom-提 identity bit."}
+{"item_id": "p3_char_0378_疝__G2", "attempt_n": 1, "batch": "B10", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C — 疒 collapsed to 广+丶 (inner 冫 partial); 山 OK. Borderline 疒-drift."}
+{"item_id": "p3_char_0379_学__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "3 top ticks + 冖 present; 子 fragmented, missing hook+横 signature. Sibling 学/半."}
+{"item_id": "p3_char_0380_疟__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "疒 as 广 (dup); 虐 fragmented into 匚+丄 hybrid. 疒-drift dup + 虐 rare."}
+{"item_id": "p3_char_0381_定__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "宀 lid + interior fragmented into 一+口-like; 疋 (5-stroke) body lost. Sibling 定/元/兄."}
+{"item_id": "p3_char_0382_疠__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "疒 as 广 (dup); 万 fragmented. 疒-drift + 万 sig miss."}
+{"item_id": "p3_char_0383_些__G2", "attempt_n": 1, "batch": "B10", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "此 (止+匕): 匕 hook inverted (FROZEN dup); 二 OK. FROZEN 匕 dup."}
+{"item_id": "p3_char_0384_疡__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "疒 as 广 dup B10 (missing inner 冫); 昜 fragmented — 疒-drift 4x-attested"}
+{"item_id": "p3_char_0385_物__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "牛 present; 勿 as 3 detached slashes without wrap — compound-drift"}
+{"item_id": "p3_char_0386_亞__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "symmetric double-口 stack lost — rare traditional"}
+{"item_id": "p3_char_0387_果__G2", "attempt_n": 1, "batch": "B11", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 田+木 clean stack, 木 tapered enough to read"}
+{"item_id": "p3_char_0388_亟__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "rare 5-piece stack (二+了+口+又+一) rendered as scattered horizontals"}
+{"item_id": "p3_char_0389_话__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "讠 as 3 detached sticks — FROZEN 讠 dup 5x-attested"}
+{"item_id": "p3_char_0390_佬__G2", "attempt_n": 1, "batch": "B11", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: signature intact; uniform width=6 lines; 亻 竖 detached from 撇; 耂 长撇 uniform stick — pos-500 4-move absent"}
+{"item_id": "p3_char_0391_表__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "主 top OK; 衣-body bottom fan (撇+捺+丶) collapsed — signature loss"}
+{"item_id": "p3_char_0392_佯__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 羊 as 二+丨 stack, missing 3-横+竖 signature — 亻-compound-drift"}
+{"item_id": "p3_char_0393_实__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "宀 detached; 头 body as 一+×-cross — signature loss"}
+{"item_id": "p3_char_0394_佰__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 百 with detached top-一 — 亻-compound-drift"}
+{"item_id": "p3_char_0395_金__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "人-lid + 王 body missing central 一, dots inside collapsed — stack fusion"}
+{"item_id": "p3_char_0396_佴__G2", "attempt_n": 1, "batch": "B11", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 亻+耳 with all 6 耳 strokes, 亻 tail touching base — one of few B11 亻-compound PASSes"}
+{"item_id": "p3_char_0397_空__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "穴 as detached 宀+八; 工 with ~30 px vertical gap — spacing dup pos-550 pt 4"}
+{"item_id": "p3_char_0398_併__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 并 without middle horizontals — 亻-compound-drift"}
+{"item_id": "p3_char_0399_往__G2", "attempt_n": 1, "batch": "B11", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 彳+主 clean, 主 3-横 proportions correct"}
+{"item_id": "p3_char_0400_佶__G2", "attempt_n": 1, "batch": "B11", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: signature intact; 亻 竖 begins mid-撇 (detached); 口 sharp rectangle; no shoulder dab — pos-500 4-move absent"}
+{"item_id": "p3_char_0401_取__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "耳 OK; 又 detached ~30 px + 捺 uniform stick — LR spacing dup"}
+{"item_id": "p3_char_0402_佻__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 兆 without central knots — 亻-compound-drift"}
+{"item_id": "p3_char_0403_放__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "方 OK; 攵 as 4 disconnected splayed sticks — FROZEN 攵 dup 3x"}
+{"item_id": "p3_char_0404_佼__G2", "attempt_n": 1, "batch": "B11", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: signature intact; 亻 竖 disconnected from 撇 apex; 交 亠 crossing minor miss — pos-500 4-move absent"}
+{"item_id": "p3_char_0405_治__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "氵 as 3 plain dots (bottom should be 提) — dup B10 法 pos-550 pt 2"}
+{"item_id": "p3_char_0406_佽__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 次 with 欠-body horizontal missing — 亻-compound-drift"}
+{"item_id": "p3_char_0407_规__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "夫 OK; 见 without hook flick + LR gap — sibling row miss + spacing"}
+{"item_id": "p3_char_0408_佾__G2", "attempt_n": 1, "batch": "B11", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: signature intact; 亻 竖 detached; 月 as bare rectangle without shoulder dab or hook — pos-500 4-move absent"}
+{"item_id": "p3_char_0409_油__G2", "attempt_n": 1, "batch": "B11", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 氵+由 clean; 氵 bottom 提 present this time"}
+{"item_id": "p3_char_0410_侃__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 兄+川 as 口+3-bars without hook — 亻-compound-drift rare"}
+{"item_id": "p3_char_0411_受__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "爫+冖+又 3-stack detached ladder — composition-drift"}
+{"item_id": "p3_char_0412_來__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "traditional 来 with 木+人-flanks as scattered ×-fragments — rare low transfer"}
+{"item_id": "p3_char_0413_采__G2", "attempt_n": 1, "batch": "B11", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: signature intact; 爫 as 3 raw sticks; 木 ×-cross without taper — pos-500 4-move absent"}
+{"item_id": "p3_char_0414_侈__G2", "attempt_n": 1, "batch": "B11", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 亻+多 with 夕 stack readable"}
+{"item_id": "p3_char_0415_转__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "车 (frozen cohort) + 云 as 二+厶 detached — FROZEN 车 dup + 云 fusion"}
+{"item_id": "p3_char_0416_侉__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 夸 as 大+一+可-fragment — 亻-compound-drift"}
+{"item_id": "p3_char_0417_单__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "⺍+田+十 3-stack collapsed with gaps — stack fusion loss"}
+{"item_id": "p3_char_0418_例__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻+列 with 歹+刂 detached; 刂 hook missing — 亻-compound-drift + spacing"}
+{"item_id": "p3_char_0419_知__G2", "attempt_n": 1, "batch": "B11", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: signature intact; 矢 top-一 detached from 大; 口 sharp rectangle — pos-500 4-move absent"}
+{"item_id": "p3_char_0420_侌__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "rare ∧+二+云 5-stack scattered — low transfer"}
+{"item_id": "p3_char_0421_或__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "戈 hook missing (FROZEN 戈 dup 5x); inner 口+一 present"}
+{"item_id": "p3_char_0422_侍__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 寺 as 士+寸 detached scatter — 亻-compound-drift"}
+{"item_id": "p3_char_0423_苦__G2", "attempt_n": 1, "batch": "B11", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 艹+古 clean, 艹 3-tick lid + 古 body proportional"}
+{"item_id": "p3_char_0424_侑__G2", "attempt_n": 1, "batch": "B11", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 亻+有 clean"}
+{"item_id": "p3_char_0425_具__G2", "attempt_n": 1, "batch": "B11", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 目+八 stack clean, 目 with internal 二 correct"}
+{"item_id": "p3_char_0426_侔__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "亻 clean; 牟 as 厶+牛-hybrid without dot-below-厶 — 亻-compound-drift rare"}
+{"item_id": "p3_char_0427_线__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "纟 fragmented (FROZEN 纟) + 戋 戈 without hook (FROZEN 戈) — double dup"}
+{"item_id": "p3_char_0428_侖__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "traditional 仑 (亻+亼+冊) fragmented — rare low transfer"}
+{"item_id": "p3_char_0429_是__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "日 OK; 走-like bottom (疋-style) 5-stroke fusion lost"}
+{"item_id": "p3_char_0430_畈__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "田 OK; 反 as 厂+又 splayed sticks — 攵-adjacent mode"}
+{"item_id": "p3_char_0431_说__G2", "attempt_n": 1, "batch": "B11", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: signature intact despite double FROZEN dup (讠 + 兑-hook); component silhouettes readable — pos-500 4-move absent"}
+{"item_id": "p3_char_0432_畋__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "田 OK; 攵 as 4 splayed sticks — FROZEN 攵 dup 3x"}
+{"item_id": "p3_char_0433_要__G2", "attempt_n": 1, "batch": "B11", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "覀 as sharp 冂+dots; 女 as ×-fold uniform — signature + weight double miss"}
+{"item_id": "p3_char_0434_畎__G2", "attempt_n": 1, "batch": "B12", "verdict": "A", "curator_verdict": "PASS", "reason": "A: full 4-move recipe applied cleanly (bez+taper+shoulder dab on 田's top-right); 田+犬 clean components"}
+{"item_id": "p3_char_0435_看__G2", "attempt_n": 1, "batch": "B12", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: signature intact but 龵-hood detached horizontals; 目 no shoulder dabs"}
+{"item_id": "p3_char_0436_畏__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 田-top OK but 长-bottom scattered horizontals — 长 (5-stroke) sig lost"}
+{"item_id": "p3_char_0437_种__G2", "attempt_n": 1, "batch": "B12", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: 禾 left drawn as 木 (missing top 撇); 中 right OK"}
+{"item_id": "p3_char_0438_畐__G2", "attempt_n": 1, "batch": "B12", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: clean stack; recipe applied"}
+{"item_id": "p3_char_0439_将__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 夕+寸 detached stack; 竖钩 hook straight down (匕/兑 dup)"}
+{"item_id": "p3_char_0440_畑__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: LR-spacing dup — 火 splayed 4 detached strokes, no apex fusion"}
+{"item_id": "p3_char_0441_前__G2", "attempt_n": 1, "batch": "B12", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: signature intact; flat uniform strokes; 刂 竖钩 hook flat"}
+{"item_id": "p3_char_0442_乹__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: rare traditional; multi-part left+乙 unrelated scatter"}
+{"item_id": "p3_char_0443_面__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: composition drift — 冂-frame + inner grid fusion lost"}
+{"item_id": "p3_char_0444_疣__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 疒-cluster #1 — drawn as 广; inner 点+提 missing"}
+{"item_id": "p3_char_0445_点__G2", "attempt_n": 1, "batch": "B12", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: simple stroke-family char, recipe applied"}
+{"item_id": "p3_char_0446_疤__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 疒-cluster #2 — 广-collapse; 巴 outside canopy"}
+{"item_id": "p3_char_0447_信__G2", "attempt_n": 1, "batch": "B12", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 亻 attached to 言 stack; TIER-0 F cited; sibling check present"}
+{"item_id": "p3_char_0448_疥__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 疒-cluster #3 — 广-collapse"}
+{"item_id": "p3_char_0449_美__G2", "attempt_n": 1, "batch": "B12", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: 羊+大 signature intact but flat; 大 撇/捺 straight lines"}
+{"item_id": "p3_char_0450_疫__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 疒-cluster #4 — 广-collapse; 又 outside canopy"}
+{"item_id": "p3_char_0451_给__G2", "attempt_n": 1, "batch": "B12", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 纟-family attempt applied frozen_cohort fix hypothesis (shared joint pixels); 合 body clean"}
+{"item_id": "p3_char_0452_疬__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 疒-cluster #5 — 广-collapse"}
+{"item_id": "p3_char_0453_度__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 广-canopy + 廿+又 scattered; 又 捺 no S-curve"}
+{"item_id": "p3_char_0454_疭__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 疒-cluster #6 — 广-collapse; 从-body collapsed"}
+{"item_id": "p3_char_0455_相__G2", "attempt_n": 1, "batch": "B12", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 木+目 signature check applied; components touching"}
+{"item_id": "p3_char_0456_疮__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 疒-cluster #7 — 广-collapse; 仓 fragmented"}
+{"item_id": "p3_char_0457_思__G2", "attempt_n": 1, "batch": "B12", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: 田+心 intact; 心 卧钩 hook DOWN, missing 3 dots"}
+{"item_id": "p3_char_0458_癸__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 癶 splay 4 detached; 天 flat cross"}
+{"item_id": "p3_char_0459_带__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 3-stack pieces detached; 巾 hook missing UP-LEFT"}
+{"item_id": "p3_char_0460_皅__G2", "attempt_n": 1, "batch": "B12", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: 白+巴 intact; 白 missing top dot; 巴 hook DOWN"}
+{"item_id": "p3_char_0461_亲__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 立+木 stack fusion lost; 立 as 亠+人-legs; 木 as ×-cross"}
+{"item_id": "p3_char_0462_皈__G2", "attempt_n": 1, "batch": "B12", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 皮+反 canonical topology distinct enough despite 反 splay"}
+{"item_id": "p3_char_0463_神__G2", "attempt_n": 1, "batch": "B12", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: 礻+申 intact; 礻 drawn as 亻-lookalike (missing right 点/提)"}
+{"item_id": "p3_char_0464_侯__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 亻-compound-drift — 𠂉+一+矢 scattered"}
+{"item_id": "p3_char_0465_选__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 辶 wrap topology lost; 先 body detached to right"}
+{"item_id": "p3_char_0466_盃__G2", "attempt_n": 1, "batch": "B12", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: 不+皿 intact; 皿 missing feet"}
+{"item_id": "p3_char_0467_结__G2", "attempt_n": 1, "batch": "B12", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 纟-family applied fix hypothesis; 吉 body clean stack"}
+{"item_id": "p3_char_0468_盅__G2", "attempt_n": 1, "batch": "B12", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: 中+皿 intact; 皿 detached from 中"}
+{"item_id": "p3_char_0469_便__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 亻-compound-drift — 更 body missing bottom fan"}
+{"item_id": "p3_char_0470_侶__G2", "attempt_n": 1, "batch": "B12", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 亻 attached to 吕; two-口 stacked with shoulder dabs; no gap"}
+{"item_id": "p3_char_0471_总__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 3-stack detached; 心 hook DOWN"}
+{"item_id": "p3_char_0472_侷__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 亻-compound-drift — 局 尸-hook missing"}
+{"item_id": "p3_char_0473_城__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: FROZEN 戈-family dup (attested-5x)"}
+{"item_id": "p3_char_0474_係__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 亻-compound-drift — 系 body knot missing"}
+{"item_id": "p3_char_0475_战__G2", "attempt_n": 1, "batch": "B12", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: 占+戈 intact; 戈 hook straight-down (FROZEN 戈 dup)"}
+{"item_id": "p3_char_0476_俅__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 亻-compound-drift — 求 top 一+点 missing"}
+{"item_id": "p3_char_0477_南__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 冂-frame + inner-fill composition-drift"}
+{"item_id": "p3_char_0478_俉__G2", "attempt_n": 1, "batch": "B12", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 亻 attached to 吾; components touching; recipe applied"}
+{"item_id": "p3_char_0479_保__G2", "attempt_n": 1, "batch": "B12", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 亻 attached to 木; 木 撇+捺 with taper"}
+{"item_id": "p3_char_0480_俊__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 亻-compound-drift — 夋 signature scattered"}
+{"item_id": "p3_char_0481_济__G2", "attempt_n": 1, "batch": "B12", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 氵 bottom-提 missing (dup B10/B11); 齐 OK"}
+{"item_id": "p3_char_0482_俎__G2", "attempt_n": 1, "batch": "B12", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: rare left component + 且 clean; left rendered as 冫+乙 lookalike"}
+{"item_id": "p3_char_0483_草__G2", "attempt_n": 1, "batch": "B12", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 艹-top + 早-body clean; recipe applied; sibling check on 艹"}
+{"item_id": "p3_char_0484_俏__G2", "attempt_n": 1, "batch": "B13", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: 亻 attached OK; 肖 top-月 sig off — small/大 flick simplified"}
+{"item_id": "p3_char_0485_怎__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 乍-top over 心 — components disconnect; 心 hook DOWN"}
+{"item_id": "p3_char_0486_俐__G2", "attempt_n": 1, "batch": "B13", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: 亻+利 sig intact; 利-right 刂 hook DOWN + 禾-top pie flat"}
+{"item_id": "p3_char_0487_孩__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 子+亥 — 亥 upper 亠+撇 fragmented; components detached"}
+{"item_id": "p3_char_0488_俑__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 亻-compound-drift — 甬 body signature scattered (dup mode)"}
+{"item_id": "p3_char_0489_指__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 扌+旨 — 旨-top 匕 collapsed; 日 detached (composition drift)"}
+{"item_id": "p3_char_0490_俘__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 亻+孚 — 孚 top-爫 rendered as scattered dots; 子 body off"}
+{"item_id": "p3_char_0491_除__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 阝-left as flat E; 余 body signature (人-top+木-legs) mis-fused"}
+{"item_id": "p3_char_0492_俚__G2", "attempt_n": 1, "batch": "B13", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 亻 attached to 里 (compact box); recipe applied + sibling-check"}
+{"item_id": "p3_char_0493_适__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 辶-family NEW mode — 舌 body placed BESIDE 辶 not INSIDE the wrap"}
+{"item_id": "p3_char_0494_俛__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 鲁-lookalike right; component-drift"}
+{"item_id": "p3_char_0495_复__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 复 top 亠+日+夂 body — 夂 as 3 detached sticks; hook missing"}
+{"item_id": "p3_char_0496_俜__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 亻+甹 — 甹 (由+丂) body incomplete; hook lost"}
+{"item_id": "p3_char_0497_响__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 口+向 — flat uniform d.line strokes (no 4-move); 冂 no shoulder"}
+{"item_id": "p3_char_0498_俞__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 亼-top + body — under-cap 一 missing; interior grid off"}
+{"item_id": "p3_char_0499_能__G2", "attempt_n": 1, "batch": "B13", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: 4-part 厶+月+匕匕 signature intact but 匕匕 hooks DOWN"}
+{"item_id": "p3_char_0500_丵__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: rare 6-flick crown + 業-body; crown as detached ticks"}
+{"item_id": "p3_char_0501_家__G2", "attempt_n": 1, "batch": "B13", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: 宀 canopy OK; 豕 body over-decomposed into 5 撇 (should be 撇+弯钩+3+捺)"}
+{"item_id": "p3_char_0502_畚__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: rare 龹-top + 田; 龹 crown fragmented"}
+{"item_id": "p3_char_0503_都__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 者-left + 阝-right — 者 old-top signature scattered; 阝 detached"}
+{"item_id": "p3_char_0504_畛__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 田+㐱 — 㐱 upper 人+彡 mis-fused"}
+{"item_id": "p3_char_0505_起__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 走-body wrap + 己 inside — 走-bottom 捺 detached (走之-family FAIL)"}
+{"item_id": "p3_char_0506_畜__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 玄-top + 田 — 玄 upper 亠+幺 fragmented into ticks"}
+{"item_id": "p3_char_0507_高__G2", "attempt_n": 1, "batch": "B13", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: overall structure OK; inner 口 undersized/missing bottom 一"}
+{"item_id": "p3_char_0508_畝__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: rare traditional 亠+田+攵-lookalike; 攵 detached"}
+{"item_id": "p3_char_0509_特__G2", "attempt_n": 1, "batch": "B13", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: 牜+寺 sig intact but 寺 flat; 提 does not touch right component"}
+{"item_id": "p3_char_0510_畟__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: rare 田-body + bottom 夂-lookalike; body-fusion lost"}
+{"item_id": "p3_char_0511_海__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 氵 bottom-提 missing (dup B10-B12 mode); 每 body signature off"}
+{"item_id": "p3_char_0512_畢__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: traditional 田+華-lookalike; heavy strokes without decomposition"}
+{"item_id": "p3_char_0513_通__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 甬+辶 — 辶 rendered as flat wave, does NOT wrap under 甬 (NEW mode)"}
+{"item_id": "p3_char_0514_乘__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 禾+北-lookalike stack; heavy composition-drift"}
+{"item_id": "p3_char_0515_原__G2", "attempt_n": 1, "batch": "B13", "verdict": "PASS", "curator_verdict": "PASS", "reason": "PASS: 厂 canopy + 白+小 body; TIER-0 F+H applied; tucked under 厂"}
+{"item_id": "p3_char_0516_疰__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 疒 5-stroke decomposition APPLIED per frozen_cohort but still FAIL"}
+{"item_id": "p3_char_0517_真__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 十+目+八 stack; 目 grid mis-fused, 八 legs flat"}
+{"item_id": "p3_char_0518_疱__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 疒 decomposition applied; 包 body inside canopy; FAIL — hypothesis fails"}
+{"item_id": "p3_char_0519_候__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 亻+丨+矢 body — 矢 legs flat; component-drift"}
+{"item_id": "p3_char_0520_疳__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 疒 applied; 甘 body inside; FAIL despite frozen_cohort recipe"}
+{"item_id": "p3_char_0521_验__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 马-left as scattered ticks; 佥 right signature off (dup 马-frozen)"}
+{"item_id": "p3_char_0522_疴__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 疒 applied; 可 body inside; FAIL — hypothesis does not transfer"}
+{"item_id": "p3_char_0523_被__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 礻+皮 — 礻 as 亻-lookalike (dup B12 神 mode); 皮 body flat"}
+{"item_id": "p3_char_0524_疸__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 疒 applied; 旦 body inside; FAIL — hypothesis does not transfer"}
+{"item_id": "p3_char_0525_部__G2", "attempt_n": 1, "batch": "B13", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: 咅+阝 sig intact; 阝 detached (gap); 咅-立 fragments"}
+{"item_id": "p3_char_0526_疹__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 疒 applied; 㐱 body inside; FAIL — hypothesis does not transfer"}
+{"item_id": "p3_char_0527_造__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 告+辶 — 辶 does not wrap; 走之-family NEW mode"}
+{"item_id": "p3_char_0528_疽__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 疒 applied; 且 body inside; FAIL — hypothesis does not transfer"}
+{"item_id": "p3_char_0529_热__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 執-top + 灬 bottom — 灬 rendered as 4 identical dots (missing bounce)"}
+{"item_id": "p3_char_0530_痂__G2", "attempt_n": 1, "batch": "B13", "verdict": "C", "curator_verdict": "KEEP-GOING", "reason": "C: 疒 decomposition applied; 加 inside; body OK — closest 疒 result"}
+{"item_id": "p3_char_0531_速__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 束+辶 — 辶 does not wrap; 走之-family NEW mode"}
+{"item_id": "p3_char_0532_亳__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 亠+口+乇 stack — 乇 body signature (curved hook) lost"}
+{"item_id": "p3_char_0533_值__G2", "attempt_n": 1, "batch": "B13", "verdict": "FAIL", "curator_verdict": "KEEP-GOING", "reason": "F: 亻+直 — 直 body 十+目+一 mis-fused"}

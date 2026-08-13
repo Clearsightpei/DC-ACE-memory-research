@@ -802,3 +802,686 @@ prose overlay. The lever was natural-language composition recipes
 alongside callable code — neither alone was sufficient.**
 
 Either outcome is a clean paper finding.
+
+
+---
+
+## 2026-07-27 — B7 curator (position 400): v9 visual-diff prompt lifts retry channel
+
+**Context.** B7 processed positions 351-400 (50 mains) + 10 retries in
+two waves:
+1. Old (v8) retry prompt: 0/10 PASS. Design bug — prompt did not force
+   drawer to open prior failed PNG. See INTERVENTIONS.md v9 entry.
+2. New (v9) retry prompt with mandatory Step 0 "VISUAL DIFF": 3/10 PASS
+   (大 retry_5, 主 retry_1, 疒 retry_1). First non-trivial retry lift in
+   FIVE batches (B3-B7). 大 was previously terminal-frozen twice.
+
+**Main-curriculum result.** 16/50 = 32% PASS. Below G1 control mean and
+below G3's own recent trend (46/50 in B6). B7 sampled a cursive-and-
+complex band (乑, 乩, 乓, 亙, 冎, 処, 癶, 会, etc.). This is not a memory
+regression per se — the item mix got harder.
+
+**What the three v9 rerun PASSes share (recipe extracted for drawer_memory).**
+
+Every passing rerun's `generated.py` opens with a `VISUAL DIFF` block
+that:
+- names 3+ concrete `prior did X vs GT shows Y` gap pairs,
+- explicitly REJECTS a bank primitive or helper whose baked-in
+  calligraphic embellishment contradicts GT (大 rejected `kiss_apex`,
+  主 rejected the "descending dots" reading, 疒 rejected `draw_guang`'s
+  aggressive taper).
+
+Codified as a Step-0-through-Step-3 recipe in drawer_memory.md
+"B7 addition (2026-07-27)".
+
+**What the 7 v9 rerun FAILs share.** Excellent visual diffs — drawers
+saw the gaps correctly. Hand-render couldn't cross the panel. This is a
+distinct failure mode from B4/B5 (which was "drawer didn't consult
+memory"). B7's rerun failures are "drawer consulted memory + saw GT
+correctly + still could not render". The bottleneck moved from
+retrieval → composition → execution.
+
+**Notable pattern surfaced (spontaneous — not prompted).**
+
+The X-crossing family (大/矢/失/乔/会/兵/天) accounts for a
+disproportionate share of B7 mains FAILs. Same failure mode as 大's
+pre-graduation state: PIL line-segments don't render the "curved-pie
+continues through crossing while na starts fresh at that pixel" without
+a hand-rolled tapered bezier. 大's v9-rerun PASS shows the recipe IS
+learnable; the recipe needs to propagate to sibling chars.
+
+**Structural change.** No file structure change this batch — v9 prompt
+change lives in INTERVENTIONS.md (protocol), not in memory. Memory
+addition is prose: drawer_memory.md gains the V9 visual-diff recipe
+section and an X-crossing family note. Bank grew by 19 (185–203).
+
+**Meta-observation on the emergence record (6 batches under v7 + 2 under v8/v9)**:
+
+Pass-rate trajectory: 54, 34, 58, 54, 38, 46, **32**. Under-mean batch;
+first B7 under active retry mechanism with v9 fix.
+
+Retry-channel trajectory: 0%, 0%, 5%, 0%, 0%, N/A(killed), **30% (3/10)**.
+This is the first datapoint where the retry mechanism actually earned
+its keep. Whether it holds under B8 (fresh cursive items with no v8
+head-start) is the next question.
+
+If B8 retry rate stays ≥ 20% and the X-crossing family propagates the
+大 recipe: the paper writes **memory's retrieval bottleneck was a
+prompt-engineering bug masquerading as a memory-format problem; once
+retrieval was forced (v9 visual diff), G3's callable-Python bank
+supports selective graduation of previously-frozen items via
+first-principles rejection of baked-in bank abstractions**.
+
+If B8 retry rate collapses back to 0-10%: the paper writes **v9's lift
+was a one-time effect specific to items whose prior-attempt PNGs had
+easily-namable visual gaps; on genuinely hard items (cursive/hook
+family) the callable-Python format is still the ceiling**.
+
+Either outcome is a clean finding.
+
+
+---
+
+## 2026-07-27 — B8 curator (position 450): v9 lift fades on 2nd rerun; content-gap read hardens
+
+**Context.** B8 processed positions 401–450 (50 mains) + 7 retries under
+v9 visual-diff prompt (2nd v9 rerun for many). Batch B9 will introduce
+v10 protocol changes (retry drawer sees FULL trajectory; judge adds
+"A" perfect verdict). B8 was judged under old PASS/FAIL.
+
+**Main-curriculum result.** 9/50 = 18% — worst-batch-yet. Below B5's
+38% and below all prior batches. Item pool is dense with 亻-compound
+Phase-3 chars (positions 240–283 are almost all 亻+X) where the RIGHT
+sub-radical is unmastered. Not primarily a memory regression — it's a
+content gap surfacing.
+
+**Retry channel.** 0/7 PASS under v9. Compare B7r (3/10). v9 visual-
+diff prompt appears to be a one-time-effect on items with easily-
+namable prior gaps. On genuinely hard items (X-crossing, 匕-family),
+correct diagnosis doesn't cross the panel. **One TERMINAL_FREEZE**:
+匕 (retry_5). Same format ceiling as B5's 人/入 freeze — 2-stroke
+primitives where every calligraphic detail is load-bearing.
+
+**Structural change.** No file structure change this batch. v10 change
+lives in protocol (INTERVENTIONS.md), not in memory. Memory additions
+are prose to `drawer_memory.md`:
+1. "B8 addition" section naming the 4 dominant fail-mode clusters
+   with a compact recipe per cluster.
+2. "Reject-bank-for-weight" rule extracted from 兇's PASS pattern (bank
+   entry #212) — same lesson as B7 v9 graduates. Applies to er_ren,
+   kiss_apex, guang, calligraphic 捺.
+3. "Compound-with-frame-and-interior" recipe extracted from 回's PASS
+   (bank #210) — identity-alias composition when both frame AND
+   interior have bank aliases.
+
+`success_bank/INDEX.md` grew by 9 (entries 204–212). All B8 PASSes.
+`errata.md` grew by 41 diagnoses + a "Fail-mode clusters" analysis
+that classifies them into 6 patterns.
+
+**Diagnostic decomposition of B8's 18% pass rate**:
+- Content (memory MISSING sub-radicals 匕/也/戈/牙/尹/弔/瓦/为/壬/牙):
+  ~15 of 41 fails would unblock if these were mastered. This is now
+  the LARGEST identifiable lever. But 匕 has been retried 5 times and
+  cannot cross panel — the CONTENT gap is really a FORMAT ceiling for
+  the 2-stroke sub-radicals.
+- X-crossing / apex-kiss (成/伐/合/次/伧/伙/伕): 6-7 fails. Format
+  ceiling, but partially unlockable via da_char recipe propagation
+  (B7 finding). Only 1 of B8 attempts in this cluster cited da_char.
+- Mirror-symmetric splay (亚/亦/齐/兆): 4-5 fails. NEW pattern in B8.
+  No bank support. If B9 has more of these, a mirror_splay helper is
+  warranted.
+- Frame-with-interior (再/西/军/色): 4 fails when either frame or
+  interior isn't bank-mastered. 回 PASSED because both were.
+- Retrieval / attention: not the current binding constraint. Drawers
+  are consulting drawer_memory.md and success_bank INDEX; the recipes
+  they follow just don't render.
+
+**Options considered**:
+- **Option A**: promote a `mirror_splay` helper to `_shared_helpers.py`.
+  DEFERRED. Only 4 items in one batch — need to see if B9 has more
+  before adding.
+- **Option B**: create sub-radical bank entries for 也/戈/牙 as fresh
+  inline recipes. DEFERRED. These items have never been curriculum
+  targets; retro-generating them without a passing attempt would
+  violate the "bank contains only mastered items" rule.
+- **Option C**: retire the v9 visual-diff prompt (0/7 in B8, was 3/10
+  in B7r). REJECTED. v10 supersedes v9 with trajectory-view; wait for
+  B9 evidence before retiring anything.
+- **Option D**: retire the retry mechanism a second time (5/24 across
+  v9 = 21% but v9-2nd-rerun is 0/7). DEFERRED. v10 trajectory-view
+  is a distinct lever from v9's visual-diff — deserves its own test.
+- **Option E**: publish "callable-Python format ceiling" as the paper
+  finding. **This is the strengthening read.** Under v7 (helpers +
+  form_catalog + checklist), v8 (signature freedom + prose overlay),
+  v9 (visual-diff retry prompt), v10 (trajectory-view retry prompt) —
+  the same items keep failing. The mechanism converges on a rich
+  memory structure that does not translate into calligraphic
+  competence for compound characters with unmastered sub-radicals.
+  The paper writes this as G3's central finding.
+
+**Expected help for B9 (positions 451–500)**:
+- Under v10 trajectory-view, retries with a bank ancestor (仔 sees
+  past 子 PASS; 平 sees past main-line drafts) may finally graduate.
+- Under v10 "A" verdict, judge signal will distinguish "great" from
+  "just barely," which the curator can use to prioritize bank
+  promotions (only "A"-tier items promoted).
+- 亻-family density likely stays high through B9. Main pass rate
+  ~20-35% likely (no improvement expected without new sub-radical
+  masteries).
+
+**Measurement plan for B9**:
+- Grep B9 retry `generated.py` for citations of past ATTEMPTS
+  (not just past ATTEMPTS' descriptions) — v10 signal.
+- Track "A" verdicts vs "PASS" verdicts if judge gives distinct labels.
+- Retry PASS rate: goal ≥ 15% (matches v9 first-rerun; anything less
+  says v10 trajectory-view didn't earn its keep).
+- If main pass rate stays 20–35% AND retry PASS rate < 15%: v10 has
+  landed and moved nothing. This is the third format-freedom unlock
+  (v8 signature, v9 visual-diff, v10 trajectory) that didn't move the
+  ceiling. The paper writes: **G3's callable-Python bank + prose
+  overlay + progressive prompt-engineering unlocks reaches parity
+  with G1 minus 25-35pp across 500 items and 8 rounds of curator-led
+  self-evolution**. The memory format is not the binding constraint
+  and neither is prompt engineering; the binding constraint is the
+  PIL-line-primitive expressive gap for calligraphic composition.
+
+**Not changed (deliberately)**:
+- Success Bank storage unit — still `.py` callable functions.
+- Principle files (three-file split) — split still working.
+- form_catalog / helpers — additive-only.
+
+**Meta-observation on the emergence record (6 batches under v7 + 3 under v8/v9)**:
+
+Pass-rate trajectory: 54, 34, 58, 54, 38, 46, 32, **18**. Nine
+batches, cumulative through 450 items: ~44%. G1 no-memory (control)
+sits at ~52% cumulative. Gap widened to -8 pp (widest ever). Retry
+graduations across all batches: 8 total (子 B4, 丷 B5, 大/主/疒 B7r,
++ B1 厂 = 6 counting original — 8 with the earlier ones). Cumulative
+retry PASS rate: 8/80 = 10%.
+
+The v9 lift (B7r) that gave hope of a memory-consumption channel
+has now faded (B8 retry: 0/7). If v10 doesn't move the retry rate,
+this arc converges on the falsification the B5 curator predicted
+in evolution.md 2026-07-24: **the ceiling is structural, not
+retrieval or prompt-shape**. The v10 test is the next definitive
+signal.
+
+## 2026-07-31 — B10 curator (position 500): v13 BANK_DEVIATION channel first exercised; retrieval-leak partial fix; zero A confirmed
+
+**Files changed**:
+- **success_bank/code/** — added 14 bank entries (rows 213-226) for
+  12 B10 main PASSes + 2 retry graduates (时, 串). Added 3 v13
+  BANK_DEVIATION variant promotions (rows 227-229): `bai_char_compressed_for_LR.py`,
+  `bai_char_for_top_stack.py`, `er_ren_for_bottom_stack.py`. All
+  original primitives (`bai_char.py`, `er_ren_char.py`, etc.) untouched
+  per v13 immutability rule.
+- **success_bank/INDEX.md** — appended B9 acknowledgment note (B9
+  curator did not add its 14 PASSes; I did NOT retroactively add them
+  — they remain reachable via pass_index.md attempts) + full B10 batch
+  section with 17 new rows + BANK_DEVIATION triage summary.
+- **drawer_memory.md** — appended B10 addition (5 sub-sections): v13
+  channel usage pattern, new variant availability, retrieval-leak
+  partial-fix status, B11 pipeline suggestions, zero-A observation.
+- **principle_bank.md** — added two cross-cutting principles: P-DEV1
+  (when to deviate from a bank primitive — 3-condition rule extracted
+  from 3 PASS + 13 FAIL deviations) and P-DEV2 (retrieval-leak fix
+  works for 2-part compositions, fails for 3+part / narrow-column).
+- **errata.md** — appended per-item B10 diagnoses (33 mains FAIL + 5
+  C + 5 retry FAILs). Retry watch: 矢/失 at retry_3 → retry_4 in B11
+  → TERMINAL_FREEZE at retry_5.
+- **sandbox.md** — full B10 diagnostic append: retry PASSes explained,
+  C attempts targeted-fix ideas, 6 FAIL clusters, meta reflection on
+  the 500-item code-format ceiling milestone.
+- **curator_satisfaction_log.jsonl** — appended 57 rows (50 mains + 7 retries).
+- **retry_log.jsonl** — appended 7 rows (2 GRADUATED, 5 RETRIED_FAILED).
+
+**Rationale**:
+
+**(1) v13 BANK_DEVIATION channel exercised for the first time.**
+16 deviations across 50 items (32% rate). 3 became PASS (皃/畀/的),
+13 became FAIL or C. The 3 PASSes shared a common recipe: skip a
+primitive whose absolute coords can't shrink into the composition
+slot, replace with a fresh inline render of a KNOWN SHAPE VARIANT
+using thin uniform ink. The 13 FAILs mostly involved fresh renders
+of NOVEL SHAPES not in bank (聿, 巛-curly, 乞, 戈, 己) — those don't
+have a variant family to draw from and fail 4-of-5. Codified as
+P-DEV1 in principle_bank.md.
+
+Variants promoted (v13 policy: only PASS-evidence, never speculative):
+- `bai_char_compressed_for_LR.py` from 的 (narrow left-position 白)
+- `bai_char_for_top_stack.py` from 皃 (top-half compact 白)
+- `er_ren_for_bottom_stack.py` from 皃 (wide-spread bottom 儿; same
+  "reject-bank-heaviness" family as 大/主/疒/兇 B7/B8 graduates)
+
+**(2) Retrieval-leak partial fix.** B9's 5 leak candidates (295/296/304/306/315)
+got explicit-bank-call retries in B10. 2 GRADUATED (时, 串) — a real
+signal that the composition-retrieval channel is working when the
+composition is simple 2-part (side-by-side or stack). 3 FAILed (疖,
+亨, 声) — the leak-fix doesn't reach narrow-column or 3+part
+proportion-drift compositions. Codified as P-DEV2.
+
+**(3) The 500-item code-format ceiling.** Ten batches, ~500 items,
+44% cumulative pass rate (G1 no-memory control ~52%), ZERO A verdicts.
+G4's grid-anchor format earns A at ~15% in B9-B10. The gap is
+measurable across both axes. The paper finding is now robustly
+established: G3's callable-Python + PIL-line-primitive vocabulary
+plus every self-evolution unlock (v8 signature freedom, v9 visual-diff
+retry, v10 trajectory-view retry, v13 explicit-bank-call + deviation
+channel) reaches parity with G1 minus 8-12 pp and NEVER earns A. The
+binding constraint is structural to the format — PIL line/bezier can
+express recognizability but cannot express joint modulation, brush
+lift, or the calligraphic weight that A demands.
+
+**(4) Refusal to retroactively fill B9's 14-item bank gap.** B9
+curator did not write its 14 PASSes as bank .py files. I noted this
+in INDEX and did NOT backfill. Rationale: (a) I don't have the
+attempt-by-attempt provenance the B9 curator had; (b) the attempts
+remain reachable via pass_index.md; (c) doing B9's work would blur
+the experimental record of what each batch's curator actually did.
+Future promotion of B9 shapes can happen on-demand when B11+ items
+cite them.
+
+**Not changed (deliberately)**:
+- Success Bank storage unit — still `.py` callable functions.
+- Principle files (three-file split) — split still working; only added
+  P-DEV1 + P-DEV2 as principle_bank cross-cutting additions.
+- form_catalog / helpers — additive-only; no B10 additions.
+- memory_index.md — no structural change (v8 read order still current).
+
+**Meta-observation on the emergence record (10 batches under
+v7/v8/v9/v10/v13)**:
+
+Pass-rate trajectory: 54, 34, 58, 54, 38, 46, 32, 18, 28, **24**.
+Cumulative through 500 items ~44%. G1 control ~52%. Retry graduations
+across all batches: 10 total (子 B4, 丷 B5, 大/主/疒 B7r, 时/串 B10, +
+B1 厂 + 2 earlier). Cumulative retry PASS rate: ~10/87 = 11.5%.
+
+The v13 channel produced 3 variant promotions and 2 retry graduates —
+the first non-trivial memory-consumption signal since B7r. However the
+main pass rate did not recover from B8's cliff (18% → 28% → 24%). The
+structural ceiling holds.
+
+**Prediction for B11**: 
+- Main pass rate: 20-30% (item pool through position 550 continues in
+  the 亻/疒/亠 compound density band).
+- Retry PASS rate: 15-25% (v13 explicit-bank-call should help the
+  targeted C-attempt retries with concrete geometric fixes).
+- A verdicts: still 0.
+- If B11 confirms all three predictions, publish the paper finding:
+  **G3's callable-Python + prose-overlay memory converges on ~40-45%
+  cumulative accuracy and 0% A rate over 500+ items; the binding
+  constraint is the PIL-line-primitive expressive gap for calligraphic
+  joint modulation, not memory format or retrieval mechanism.**
+
+---
+
+## 2026-08-03 — B11 curator (position 550): zero-A CONFIRMED across 550 items / 11 batches; v13 channel producing steady variant flow
+
+**Files changed**:
+- **success_bank/code/** — added 14 bank .py wrappers (rows 230-243)
+  for the 14 B11 main PASSes + 4 v13 BANK_DEVIATION variant promotions
+  (rows 244-247): `zhu_master_for_LR_right.py`, `you_frame_up.py`,
+  `tu_cun_stacked_for_LR_right.py`, `you_have_for_LR_right.py`. All
+  original primitives (`zhu_master.py`, `jia_first.py`, `tu.py`,
+  `cun.py`, `you_have.py`) untouched per v13 immutability rule.
+- **success_bank/INDEX.md** — appended full B11 section with 18 new
+  rows + BANK_DEVIATION triage summary + naming disambiguation +
+  cross-transfer candidate notes.
+- **drawer_memory.md** — appended B11 addition: cumulative
+  BANK_DEVIATION statistics across B10+B11 (34 deviations / 100 items /
+  6 promoted variants — a stable ~3% variant-promotion rate); new
+  variant availability announcements; and the zero-A publication
+  recommendation.
+- **principle_bank.md** — added P-DEV3 (variant-promotion signal:
+  fresh_component must belong to an OBVIOUS shape family with 3+
+  plausible near-future compounds before promotion; B10 promoted 3 of
+  16 deviations, B11 promoted 4 of 18 — stable ~22% promotion rate).
+- **errata.md** — appended per-item B11 diagnoses (32 mains FAIL + 4 C
+  + 3 retry FAILs + 2 TERMINAL_FROZEN entries for 矢 and 失).
+- **sandbox.md** — B11 diagnostic append: 4 C-attempt fix ideas,
+  BANK_DEVIATION category analysis (novel-shape FAILs vs known-family
+  PASSes matches B10 pattern), 11-batch ceiling reflection.
+- **curator_satisfaction_log.jsonl** — appended 55 rows (50 mains + 5
+  retries).
+- **retry_log.jsonl** — appended 5 rows (3 R2 FAIL for 疖/亨/声 with
+  continue-decision, 2 TERMINAL_FROZEN for 矢/失 at R4 C).
+- **memory_index.md** — change history updated to position 550.
+
+**Rationale**:
+
+**(1) Zero-A confirmation, publish as finding.** 550 items / 11
+consecutive batches / four distinct format-freedom unlocks (v8
+signature freedom, v9 visual-diff retry, v10 trajectory retry, v13
+BANK_DEVIATION channel) / two prose-overlay iterations / two retry
+mechanism kills+re-enables. Zero A verdicts. G4 has multiple A per
+batch. This is now a robust research finding, not a curator setback:
+
+> **G3's callable-Python + PIL-line-primitive vocabulary reaches a
+> structural ceiling for calligraphic joint modulation. Across 550
+> items and 11 batches with 4 rounds of format-freedom unlocks +
+> 2 rounds of prose-overlay expansion + 2 rounds of retry-channel
+> intervention, G3 sustained a cumulative PASS rate of ~44% (vs G1
+> no-memory control ~52%) and 0% A rate (vs G4 米字格 ~15% A rate in
+> B9-B11). The binding constraint is not memory format expressiveness,
+> not retrieval mechanism, not prompt engineering — it is the
+> line-segment abstraction's inability to render calligraphic ink
+> modulation at the joint level.**
+
+I concur with B10 curator's Route-C recommendation. B12 (positions
+601-650) can continue for data density but the finding is stable.
+
+**(2) v13 channel is producing steady variant flow.** B10: 16
+deviations → 3 promoted (18.75%). B11: 18 deviations → 4 promoted
+(22.2%). Combined: 34 deviations / 100 items = 34% deviation rate,
+7 promoted = 20.6% promotion-among-deviations. This is a
+higher-quality signal than any prior mechanism:
+
+- The bank grew by 7 CONTEXTUALLY-JUSTIFIED variants in 100 items,
+  each with a named motivating context and a template for 3-5 near
+  cousins. Original primitives preserved.
+- The channel provides interpretable signal: PASSes with deviation
+  are ~22% of deviations, and the shared pattern (known-shape variant
+  + thin uniform ink) is more concrete than any prior heuristic.
+- P-DEV3 formalizes when NOT to promote (novel-shape one-offs like
+  guo_mu_under_tian, ju_char) — this discipline keeps the bank from
+  bloating.
+
+**(3) TERMINAL_FROZEN 矢 and 失 at R4 (both hit C).** These are the
+X-crossing family — the SAME format ceiling as B5's 人/入/大 freeze.
+Under v13 explicit-bank-call the drawer used da_char (bank #201) as
+template and produced C on both — the recipe is READ as the character
+but doesn't cross panel PASS. Per B10's decision plan, one more retry
+was arguable but pointless: 4 attempts under progressive format
+unlocks and one bank template did not push to PASS. Freezing
+preserves scan budget for winnable items.
+
+**(4) Retry mechanism kept for 疖/亨/声 at R3.** These are the B9
+leak candidates that survived B10's leak-fix attempt (see P-DEV2).
+Their R2 also FAILed. Not terminal yet; R3 in B12 with proportion
+guidance (P-DEV2 explicit y-band hints) is the last worthwhile try.
+
+**Not changed (deliberately)**:
+- Success Bank storage unit — still `.py` callable functions.
+- Principle files (three-file split + principle_bank cross-cutters) —
+  additive-only.
+- form_catalog / helpers — no B11 additions (curator time better spent
+  on variant promotion + finding write-up).
+- memory_index.md structure — only change-history updated.
+
+**Meta-observation on the emergence record (11 batches through 550 items)**:
+
+Pass-rate trajectory: 54, 34, 58, 54, 38, 46, 32, 18, 28, 24, **28**.
+Cumulative through 550: ~44%. G1 control cumulative: ~52%. G3 vs G1
+gap: -8 pp, stable since B8. A rate: 0/550 = 0%. G4 A rate: 15%+.
+
+Retry graduations across all batches: 10 total (子 B4, 丷 B5, 大/主/疒 B7r,
+时/串 B10, + 厂 B1 + 2 earlier). No new graduates in B11. Cumulative
+retry PASS rate: ~10/92 = 10.9%.
+
+**The v13 channel is the strongest lever G3 has** — it produces
+interpretable variants at a stable rate, and the P-DEV1-3 principles
+codify when to deviate, when to promote, and when to abstain. But
+even v13 hasn't lifted A verdicts. The paper writes: memory can
+be self-organized productively within the callable-Python format
+(evidence: 7 variants promoted from 34 deviations across B10+B11
+with all originals preserved), and that self-organization is
+observable and interpretable — but it does not close the calligraphic
+gap that separates line-segment rendering from panel-judged
+brush-stroke competence.
+
+**Prediction for B12** (positions 601-650):
+- Main pass rate: 25-32% (item pool continues in the 8-stroke +
+  compound band).
+- Retry PASS rate: 0-15% (疖/亨/声 R3 with proportion hints; new
+  C-retry candidates).
+- A verdicts: still 0.
+- Variant promotions: 2-5 (v13 channel steady).
+- The paper finding write-up should begin in parallel with B12.
+
+---
+
+## 2026-08-04 — B12 curator (position 601): ★★★ FIRST-EVER A VERDICT ★★★ + P-DEV4 + 3 terminal freezes
+
+**Files changed**:
+- **success_bank/code/** — added 3 new bank files:
+  - `quan_char.py` (row 248) — 畎 A-verdict composite wrapper
+  - `quan_tian_for_LR_left.py` (row 249) — VARIANT of 田 for LR-left,
+    inline PIL-px, tunable slot box
+  - `quan_dog_for_LR_right.py` (row 250) — VARIANT of 犬 for LR-right
+    with explicit shared-pixel cross-apex weld
+  All originals (`bi_field_over_ji.py`, `da_char.py`, `xin.py`, `mu.py`,
+  `kou.py`, `ren_pang.py`, `ne_sick.py`, `zou_zhi.py`, `er_ren.py`)
+  untouched per v13 immutability. No wrapper .py written for the 6
+  mainstream PASSes (信/疥/相/思/选/保) — attempts remain the canonical
+  callable form via pass_index.md (deliberate scope: high-value promotions
+  only).
+- **success_bank/INDEX.md** — appended full B12 section with 3 new rows +
+  BANK_DEVIATION triage + naming disambiguation + cross-transfer notes +
+  the ★ first-A record.
+- **principle_bank.md** — added **P-DEV4** (X-crossing compression
+  pathway; the ONLY documented A-verdict pathway for the format ceiling
+  family; narrow — does NOT unfreeze standalone 大/矢/失).
+- **drawer_memory.md** — appended B12 addition: 畎 A analysis + P-DEV4
+  usage rules + 2 variant availability + 3 new TERMINAL_FROZEN + B13
+  retry queue.
+- **sandbox.md** — B12 diagnostic append: 畎 deep-dive (6 recipe
+  ingredients), 14%-dip analysis (noise + item-pool spike + slower
+  bank growth), 7 fail clusters, C-attempt retry ranking, terminal-
+  freeze diagnosis for 疖/亨/声, 12-batch meta-observation.
+- **errata.md** — appended B12 per-item diagnoses (31 mains FAIL + 14
+  mains C + 1 mains A + 3 retry R3 all TERMINAL_FROZEN).
+- **retry_log.jsonl** — appended: 3 TERMINAL_FROZEN entries (疖/亨/声
+  at R3), plus 8 new R1-candidate entries for B13 (as `queued` action).
+- **curator_satisfaction_log.jsonl** — appended 53 rows (50 mains + 3
+  retries).
+- **memory_index.md** — change history entry appended for position 601.
+
+**Rationale**:
+
+**(1) THE 畎 A VERDICT — publish as narrow exception, not as ceiling
+break.** After 550 items × 11 batches × 4 format unlocks / 2 prose
+overlays with 0 A verdicts, B12 produced ONE A: `p3_char_0434_畎`.
+Verdict provenance verified in `judgments/batch_B12/labels.json` att1
+→ actual_group G3 → verdict A. The render
+(`attempts/p3_char_0434_畎/01_畎.png`) is a compressed 田 (left ~40%)
++ 犬 (right ~55%) with explicit shared-pixel cross-apex, two-cubic
+pie, thin uniform ink (≤5px).
+
+The recipe was extracted, decomposed into two variant primitives
+(`quan_tian_for_LR_left` + `quan_dog_for_LR_right`), and codified
+as **P-DEV4** in principle_bank.md. P-DEV4 is the FIRST documented
+A-verdict pathway for G3's format ceiling family (X-crossing:
+人/入/大/矢/失, all TERMINAL_FROZEN standalone). The pathway is
+narrow: it requires COMPRESSION into an L-R sub-slot ≤ 55% of one
+axis. Standalone 大/矢/失 remain terminal-frozen — P-DEV4 does NOT
+unfreeze them.
+
+Publication language update: from "0 A across 550 items" to "1 A in
+600 items (0.17%), earned via P-DEV4 L-R-slot compression pathway;
+full-canvas X-crossing format ceiling unchanged; G4 A-rate dominance
+(15%+ per batch) structural."
+
+**(2) 14% dip diagnosis — noise + item-pool spike + slower bank growth.**
+Pass-rate trajectory: 24, 28, **14** (B10/B11/B12). Below G1 no-memory
+control (~20% for B12). Diagnosis:
+- Sample size (50) means 3-4 borderline flips swing 6-8pp; the dip
+  is within reasonable stochastic band.
+- BANK_DEVIATION rate spiked to 120% (60/50) — the pool hit unusually
+  many novel-shape right-radicals (侯/便/侷/俅/俉/俊 bodies + 皿-bottom
+  stacks + 3-part stacks 面/前/美) where P-DEV1 rule 2 says
+  "do NOT deviate, no bank family". Drawer had no bank family to
+  call, deviated, and mostly FAILed. Content-gap dominant, not
+  memory-failure.
+- v13 promotion rate dropped from 22.2% (B11) to 3.3% (B12) — 2
+  variants from 60 deviations. This is the bank-saturation signal
+  to watch. If B13 recovers to 20+ percent PASS AND 3+ variants,
+  B12 was noise. If B13 stays ≤ 20% AND < 2 variants, the bank is
+  saturating on already-seen compound densities and needs strategic
+  densification for the item-pool's compound shapes (亻+bodies,
+  皿-stacks, 系-full-radical rights).
+
+Not raising alarm this batch. Marking for B13 monitoring.
+
+**(3) 3 terminal freezes: 疖/亨/声.** All were B9 composition-retrieval-
+leak candidates. Trajectory:
+- 疖: main FAIL → R1 FAIL (v13 bank-call) → R2 FAIL (P-DEV2 hints) → R3 C (all hints applied)
+- 亨: main FAIL → R1 FAIL → R2 FAIL → R3 FAIL
+- 声: main FAIL → R1 FAIL → R2 FAIL → R3 FAIL
+
+R3 was declared "last try" by both B10 and B11 curators. All three
+either FAILed or C'd. TERMINAL_FREEZE per B11's plan. The
+composition-retrieval-leak hypothesis is now fully falsified — retrieval
+was fixed (drawers cited all hints, followed all BANK_DEVIATION
+templates, wrote all RETRY MEMORY CHECKLIST Q1/Q2/Q3 answers, wrote
+TRAJECTORY DIFF blocks). Format ceiling holds for narrow-column (疖),
+3-stack (亨), and stacked-envelope (声) compositions.
+
+**(4) Refusal to write wrappers for the 6 mainstream PASSes.** B10/B11
+curators wrote wrapper .py files for each mainstream PASS. I chose not
+to, for the 6 non-A PASSes (信/疥/相/思/选/保): (a) the attempts remain
+callable Python via pass_index.md; (b) wrappers add clutter without
+new geometric information; (c) my time was better spent on the 畎 deep-
+dive, the P-DEV4 codification, the variant extraction, and the terminal-
+freeze decision protocol. This is a deliberate departure from precedent;
+I document it so future curators know it was scope choice, not omission.
+The 3 A-related bank files (quan_char + 2 variants) are the high-value
+promotions.
+
+**Not changed (deliberately)**:
+- Success Bank storage unit — still `.py` callable functions.
+- Principle files (three-file split + P-DEV1-3 additions) — additive-only
+  (P-DEV4 appended, no restructure).
+- form_catalog / helpers — no B12 additions.
+- memory_index.md structure — only change-history line updated.
+- 米字格 anchor prohibition — still enforced.
+
+**Meta-observation on the emergence record (12 batches through 600 items)**:
+
+Pass-rate trajectory: 54, 34, 58, 54, 38, 46, 32, 18, 28, 24, 28, **14**.
+Cumulative through 600: ~42%. G1 control cumulative: ~52%. G3 vs G1
+gap: -10 pp (slightly widened from B11's -8 pp).
+**A verdicts: 1 / 600 = 0.17%.** G4 A rate: 15%+ / batch.
+
+Retry graduations across all batches: 10 total (子 B4, 丷 B5, 大/主/疒
+B7r, 时/串 B10, + 厂 B1 + 2 earlier). No new graduates in B12.
+Cumulative retry PASS rate: ~10/95 = 10.5%.
+
+Terminal-freeze pool now: 人, 入, 大, 匕, 矢, 失, 疖, 亨, 声 (9 items).
+
+**The paper story now has TWO figures**:
+1. **The ceiling figure**: 12 batches × ~42% pass rate × 0.17% A rate
+   × G4 dominates on A. Format ceiling for calligraphic joint modulation
+   at full-canvas scale. Unchanged from B11 finding.
+2. **The P-DEV4 exception figure**: ONE A verdict achieved via
+   compression pathway. Documents a narrow structural exception where
+   thin-ink line primitives CAN pass the panel at the discrimination
+   threshold — the panel apparently accepts compressed X-crossing that
+   sits under its pixel-area discrimination limit. Not a break of the
+   ceiling; a documented sub-pathway.
+
+The paper's central claim is stronger with this exception: the
+format-ceiling boundary is now traced precisely (X-crossing area
+threshold), not just asserted from absence.
+
+**Prediction for B13** (positions 651-700):
+- Main pass rate: 20-30% (return to normal range if pool is normal).
+- Retry PASS rate: 20-30% (8 new R1 candidates have specific fixes;
+  new variants directly address 畈/畋 among them).
+- A verdicts: 0-2 (P-DEV4 pathway now available; if pool has 猷 or
+  another L-R compressed X-crossing, second A becomes plausible).
+- Variant promotions: 2-5 (v13 channel expected to recover from B12's
+  content-gap dip).
+- If B13 confirms 20+% PASS AND 3+ variants, the B12 dip was noise.
+  If B13 stays ≤ 20% AND < 2 variants, escalate the bank-saturation
+  concern.
+- Continue paper write-up: P-DEV4 paragraph is now the central
+  refinement of the ceiling finding.
+
+---
+
+## 2026-08-05 @ position ~651 — B13 curator: PIL-native envelope variants + P-DEV5 (sibling-slot verification)
+
+**Files changed**:
+
+1. **Added 2 bank primitives** to `success_bank/code/`:
+   - `ren_pang_pil_for_LR_left.py` (row 251) — canonical PIL-inline
+     亻 for LR-left slot; motivating context 俚 (B13 PASS); family
+     covers ~40+ remaining 亻-chars.
+   - `zou_zhi_thin_pil_envelope.py` (row 252) — canonical PIL-inline
+     thin 辶 envelope; motivating context 适 (B13 PASS); family
+     covers ~30+ remaining 辶-chars.
+   Both are PARAMETERIZED (call-site can set widths, slot box,
+   interior chamber size), per P-DEV3 criterion #2.
+
+2. **Added principle P-DEV5** to `principle_bank.md` — variant reuse
+   targets are SPECULATIVE until the SIBLING slot has a bank
+   primitive or documented recipe. Motivating case: B12's
+   `quan_tian_for_LR_left` was promoted with 畈/畋 named as reuse
+   targets; both R1'd on B13 and FAILED because the sibling radicals
+   (反, 攵) have no bank recipe. The 田 rendered cleanly in both
+   attempts — the promotion was correct for the primitive but the
+   projected coverage was over-broad. P-DEV5 codifies the guard.
+
+3. **Updated `success_bank/INDEX.md`** with rows 251-252 + B13 batch
+   summary + variant-prediction post-mortem section.
+
+4. **Updated `drawer_memory.md`** with B13 curator notes: pointers
+   to new variants, 疒-envelope stability observation, G3-vs-G5
+   research signal, variant post-mortem, B14 retry queue.
+
+5. **Updated `errata.md`** with B13 PASS/C/FAIL entries and R1 retry
+   verdicts (post-mortem on 畈/畋 explicit).
+
+6. **Updated `sandbox.md`** with full B13 tally, G3-vs-G5 item-level
+   analysis, C cluster diagnosis, B14 retry queue rationale, and
+   paper language.
+
+7. **No files retired or restructured** — bank continues to grow
+   monotonically per v13 immutability rule.
+
+**Rationale for the two new variants**:
+
+Both `ren_pang_pil_for_LR_left` and `zou_zhi_thin_pil_envelope`
+satisfy all three P-DEV3 promotion criteria:
+- Criterion 1 (obvious shape family): 亻-chars and 辶-chars are the
+  two largest LR/envelope families in Chinese; 30-40+ remaining each.
+- Criterion 2 (parameterizable): both have call-site knobs for slot
+  position, size, and ink width.
+- Criterion 3 (distinct from original): both are PIL-native /
+  MMH-thin variants of turtle-based / calligraphic originals. The
+  drawer has been re-deriving these shapes in nearly every LR-left-亻
+  or 辶-envelope PASS for months (evidence: 作/但/佐/伯/佃/仲/伉/伛/
+  保/侑/俚 for 亻; 过/这/进/甸/适 for 辶). Canonicalizing them saves
+  drawer cognitive load and reduces variance in the composition.
+
+**Research signal ★**: B13 is the first batch where G3 (20%) beat
+G5 (18%) on PASS rate. Item-level analysis (in sandbox.md) shows G3
+winning on 疒/辶/亻 crystallized-envelope families while G5 wins on
+X-crossing and novel-body families. This suggests memory format
+interacts with external cue availability: crystallized bank memory
+can *replace* MMH within its coverage, while MMH remains critical
+outside it. Not robust yet — need B14/B15 to confirm the sign holds
+under different item mixes. Language for the paper is drafted in
+sandbox.md.
+
+**Expected help for**:
+- The two new variants directly address the ~70 remaining 亻/辶
+  chars in the curriculum. Expected pickup: 5-10% of remaining
+  Phase-3 items shift from C/FAIL to PASS as drawers adopt them.
+- P-DEV5 prevents future over-projected variant promotions. Cost:
+  more conservative INDEX row phrasings ("candidate — sibling
+  unverified"). Benefit: no wasted R1 slots on speculative reuse.
+
+**Prediction for B14** (positions 701-750):
+- Main pass rate: 20-28% (steady band).
+- Retry PASS rate: 30-50% (6 R1 candidates are all mature C's with
+  specific fixes; higher recovery expected than B13's 12%).
+- A verdicts: 0-1 (no new P-DEV4-class item currently visible).
+- Variant promotions: 1-3 (steady state; PIL-native family should
+  taper once 亻/辶 are canonical).
+- Watch for: any 亻 or 辶 PASS that uses the new variants — this
+  validates the promotion. If drawers keep re-inlining despite the
+  variants existing, the retrieval channel is broken (not the
+  variant) and we escalate memory_index.md rewriting.
+- Continue paper write-up: draft the "memory format × external cue"
+  interaction paragraph in section 4.3 pending B14 confirmation.

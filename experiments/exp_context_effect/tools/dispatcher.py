@@ -29,6 +29,13 @@ GROUP_DIRS = {
     "G2": os.path.join(EXP, "groups", "G2_free_form"),
     "G3": os.path.join(EXP, "groups", "G3_coords"),
     "G4": os.path.join(EXP, "groups", "G4_grid"),
+    # G5: added 2026-08-03 as post-v14 pivot. Same memory format as G3
+    # (code-based coord bank) but receives MMH auto-injection (like G4).
+    # Isolates MMH's causal contribution within the code-bank regime.
+    # Seeded from G3's post-B11 snapshot (memory + bank cloned; attempts
+    # kept as `attempts_g3_seed/` for reference, `attempts/` empty for
+    # fresh B12+ drawings). No curator — drawer-side ablation only.
+    "G5": os.path.join(EXP, "groups", "G5_code_bank_mmh"),
 }
 
 GROUP_RULES = {
@@ -36,6 +43,11 @@ GROUP_RULES = {
     "G2": os.path.join(PROTOCOL_DIR, "G2_free_form", "rules.md"),
     "G3": os.path.join(PROTOCOL_DIR, "G3_coords", "rules.md"),
     "G4": os.path.join(PROTOCOL_DIR, "G4_grid", "rules.md"),
+    # G5 borrows G3's rules verbatim (same memory format, same drawer
+    # protocol). The G5-specific "you are a comparison group with MMH
+    # injection" briefing is delivered via `memory_index.md` which the
+    # drawer reads first.
+    "G5": os.path.join(PROTOCOL_DIR, "G3_coords", "rules.md"),
 }
 
 SHARED_RULES = os.path.join(PROTOCOL_DIR, "shared_rules.md")
@@ -67,7 +79,22 @@ def _memory_snapshot_lines(group: str) -> str:
         return "(G1 has no memory — you have no files to read.)"
     # G2, G3, G4 — always enter through memory_index.md
     index_path = os.path.join(root, "memory_index.md")
+    pass_index_path = os.path.join(root, "pass_index.md")
     if os.path.exists(index_path):
+        pi_line = ""
+        if os.path.exists(pass_index_path):
+            pi_line = (
+                f"- **PASS-index (v11, may consult on demand)**: {pass_index_path}\n"
+                f"  A full list of every attempt your group has ever produced that\n"
+                f"  the human judged PASS or A, with a path to its PNG. Use this\n"
+                f"  when you want to see what YOUR group has actually rendered\n"
+                f"  well — either a sibling of the current item, or a component\n"
+                f"  it contains, or just a visually similar past success. Bank\n"
+                f"  encodings and prose principles drop information that the raw\n"
+                f"  PASSED PNG carries. Read PNGs of past successes when helpful;\n"
+                f"  the curator may also embed specific PNG paths into your\n"
+                f"  memory files as hints — follow those pointers.\n"
+            )
         return (
             f"- **Entry point (READ FIRST)**: {index_path}\n"
             f"  This index describes what memory files exist and when to\n"
@@ -76,6 +103,7 @@ def _memory_snapshot_lines(group: str) -> str:
             f"  not listed. The curator maintains this index and may\n"
             f"  restructure memory across cycles (see the group's\n"
             f"  `evolution.md` for structural change history).\n"
+            + pi_line +
             f"- Errata (错题集): {root}/errata.md"
         )
     # Fallback if memory_index.md not yet created — behave like pre-v7
@@ -137,13 +165,24 @@ Read them before you draw. Use whatever entries help. Do NOT read any
 other group's files.
 """
 
-    # G4 augmentation: inject MMH-derived joint expectations.
-    # v6+: fires for phase == 'character' AND phase == 'radical' (radicals now
-    # have MMH GT). Skips gracefully if the specific radical isn't in MMH
-    # (e.g. 卝, 牜 — but those were removed from the curriculum).
-    # Failure to import mmh_joints is soft — omit the block rather than break.
+    # G4 + G5 augmentation: inject MMH-derived joint expectations.
+    #
+    # History:
+    # - v6+ (pre-v3 scaffold): G4 always received the injection for
+    #   phase in ('character', 'radical').
+    # - v14 (2026-08-03): temporarily disabled for G4 as an ablation.
+    #   ROLLED BACK 2026-08-03 (same day) — see INTERVENTIONS.md v14.
+    #   B12 data from the v14-enabled window was deleted per user
+    #   direction; the intended isolation moved to a G5 side-group
+    #   instead (G3-format memory + MMH), leaving G4 in its original
+    #   MMH-injected configuration to keep cumulative curves clean.
+    # - Current: G4 (unchanged) AND G5 (new; G3 memory format + MMH)
+    #   both receive the injection. G1/G2/G3 do not.
+    #
+    # Failure to import mmh_joints is soft — omit the block rather than
+    # break.
     joint_block = ""
-    if group == "G4" and item.get("phase") in ("character", "radical"):
+    if group in ("G4", "G5") and item.get("phase") in ("character", "radical"):
         try:
             try:
                 from tools.mmh_joints import render_joint_brief_block

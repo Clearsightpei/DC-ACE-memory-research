@@ -1,7 +1,27 @@
 """judge_blind.py — batch human judgment UI for exp_context_effect.
 
 Reads a batch manifest, presents each attempt one at a time. Human presses:
-  p = PASS   f = FAIL   s = SKIP   b = BACK   q = QUIT (auto-save)
+  a = A (perfect)   p = PASS   c = C (close)   f = FAIL
+  s = SKIP   b = BACK   q = QUIT (auto-save)
+
+Four-level verdict rubric (v10 added A, v12 added C):
+  A    — "absolutely perfect" — calligraphic reference quality;
+         structure, proportion, and brush feel all correct.
+  PASS — correct + recognizable; a fluent reader identifies it and
+         nothing structurally wrong; may still be mechanical.
+  C    — CLOSE but not exact / minor error. Counts as FAIL for
+         success rate. Preserved separately so curators can
+         distinguish "close miss" (one stroke off / one component
+         mis-positioned) from "total wreck". Drawers get graduated
+         feedback via retry-trajectory annotations.
+  FAIL — not recognizable or structurally wrong.
+
+Downstream analytics:
+  - Success rate = (A + PASS) / total. A counts as success.
+  - Failure rate = (C + FAIL) / total. C counts as failure.
+  - A count is reported separately (calligraphic-quality signal).
+  - C count is reported separately (near-miss signal for
+    curator retry prioritization).
 
 Blinding: attempts within each item are shuffled before display so the
 human cannot infer which group produced which attempt. The true group is
@@ -120,7 +140,7 @@ class JudgeApp:
 
         # help
         self.help = ttk.Label(self.root,
-                              text="p = PASS    f = FAIL    s = SKIP    b = BACK    q = QUIT (auto-save)",
+                              text="a = A (perfect)    p = PASS    c = C (close)    f = FAIL    s = SKIP    b = BACK    q = QUIT (auto-save)",
                               font=("Helvetica", 11))
         self.help.pack(pady=(0, 12))
 
@@ -165,11 +185,13 @@ class JudgeApp:
     def _refresh_status(self):
         judged = len(self.labels)
         total = len(self.flat)
+        a_n = sum(1 for v in self.labels.values() if v.get("verdict") == "A")
         p_n = sum(1 for v in self.labels.values() if v.get("verdict") == "PASS")
+        c_n = sum(1 for v in self.labels.values() if v.get("verdict") == "C")
         f_n = sum(1 for v in self.labels.values() if v.get("verdict") == "FAIL")
         s_n = sum(1 for v in self.labels.values() if v.get("verdict") == "SKIP")
         pos_txt = f"{self.idx + 1}/{total}" if self.idx < total else f"{total}/{total}"
-        self.status.config(text=f"[Attempt {pos_txt}   ·   Judged {judged}   ·   PASS {p_n} · FAIL {f_n} · SKIP {s_n}]")
+        self.status.config(text=f"[Attempt {pos_txt}   ·   Judged {judged}   ·   A {a_n} · PASS {p_n} · C {c_n} · FAIL {f_n} · SKIP {s_n}]")
 
     def _record(self, verdict):
         item = self.flat[self.idx]
@@ -198,8 +220,12 @@ class JudgeApp:
         # Once we're past the end, only q and b are meaningful.
         if self.idx >= len(self.flat):
             return
-        if k == "p":
+        if k == "a":
+            self._record("A"); self.idx += 1; self.show_current()
+        elif k == "p":
             self._record("PASS"); self.idx += 1; self.show_current()
+        elif k == "c":
+            self._record("C"); self.idx += 1; self.show_current()
         elif k == "f":
             self._record("FAIL"); self.idx += 1; self.show_current()
         elif k == "s":
@@ -223,10 +249,12 @@ def main():
     app.root.mainloop()
 
     labels = load_labels(labels_path)
+    a_n = sum(1 for v in labels.values() if v.get("verdict") == "A")
     p_n = sum(1 for v in labels.values() if v.get("verdict") == "PASS")
+    c_n = sum(1 for v in labels.values() if v.get("verdict") == "C")
     f_n = sum(1 for v in labels.values() if v.get("verdict") == "FAIL")
     s_n = sum(1 for v in labels.values() if v.get("verdict") == "SKIP")
-    print(f"Done. PASS {p_n} / FAIL {f_n} / SKIP {s_n}, total judged {p_n+f_n+s_n}/{len(flat)}")
+    print(f"Done. A {a_n} / PASS {p_n} / C {c_n} / FAIL {f_n} / SKIP {s_n}, total judged {a_n+p_n+c_n+f_n+s_n}/{len(flat)}")
 
 
 if __name__ == "__main__":

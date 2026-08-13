@@ -60,12 +60,100 @@ attempts). Errata is preserved as reference, but the drawer prompt no
 longer dispatches retries. Ignore any "retry_n" tracking — treat every
 attempt as first-attempt.
 
+### H. Components MUST touch (NEW v7.6, pos ~650) — B12 emergent rule
+
+**B12 evidence**: every PASS this batch had components (radical +
+right-body, or top-lid + bottom-body, or wrap + inner) that TOUCH
+along their shared boundary — no visible gap. Every LR-spacing FAIL
+had a >~15 px gap between components. This holds across all 12
+B12 successes.
+
+**Rule**: after drafting your generated.py, mentally trace the join
+between each pair of components. If you would see white space
+between them at final render, MOVE one component 5-15 px toward the
+other so their strokes overlap by ~5 px. 亻 竖 must touch or start
+within its right component's 撇/横 sweep, not stand off in a
+detached column. Canopy characters (广, 疒, 尸, 户) — the body must
+be tucked INSIDE the canopy's 撇 sweep, not sitting under it.
+
 ### C. Signature-bit override (v7.1 HARD RULE, retained)
 
 If the label matches a sibling-pair table, DO NOT override the
 signature via "the GT shows something slightly different". The
 signature IS the character's identity. B3's 人 failure and B5's 见
 failure were both this pattern.
+
+### F. Calligraphic-weight 4-move (NEW v7.5, pos 600) — the C-to-PASS and PASS-to-A lift
+
+**Direct cause of B11's 0-A regression: all 7 C items used
+`d.line(pts, width=6)` uniform polylines with zero taper. Do NOT
+render Phase-3 characters with uniform-width straight lines.**
+Every 5+-stroke compound target — especially 亻/讠/氵/礻/纟/疒/口-
+prefix characters — MUST apply these four moves before submitting:
+
+1. **Teardrop taper** — every 撇, 捺, 点 uses variable width along
+   the stroke (thin→thick or thick→thin). Two accepted patterns:
+   - `stroke(pts, widths=(11, 5))` helper that samples ellipses at
+     each point with interpolated radius (see drawer_memory.md line 151);
+   - `[5.0, 4.8, 4.3, 3.5, 1.8]` per-point width array.
+   Uniform `width=6` polyline strokes REGRESS a correct signature
+   from PASS to C.
+2. **Shoulder dab at every 折 joint** — one extra `d.ellipse` at
+   radius ~1.3× stroke radius at every corner, BEFORE the second
+   segment starts. Missing shoulder dabs make `折`/`钩` corners
+   read as ruler-square rectangles (see B11 佶 口, B11 侖 冂).
+3. **Bezier for any curved sweep** — 撇 (bowed), 捺 (S-curve),
+   横撇 (hooked pie), 竖弯钩 (arc). Straight-line 撇 is a fail-mode
+   signature. Import the `bez(p0, p1, p2, p3, n=60)` helper (see
+   drawer_memory.md line 170 or copy from p3_char_0338_佘 attempt).
+4. **Correct hook flick** — TIER-0 rule B applies. UP-and-LEFT,
+   into the character body. B11 说's 兑 lost 6→7 quality points
+   from a straight-down hook alone.
+
+**Full recipe with worked example**: read
+`groups/G2_free_form/attempts/p3_char_0338_佘/generated.py`
+(75 lines, B10's first A verdict, uses all 4 moves). Copy the
+`bez()` + `stroke()` helper pattern into your own generated.py
+before drawing anything.
+
+### G. Frozen-radical alarm (NEW v7.5, pos 600) — attested-5x-failed radicals
+
+**If your target contains 讠, 戈, 攵/攴, 匕, 纟, 弓 as a component,
+open `frozen_cohort.md` FIRST**. These radicals have failed 3-5x
+across B7-B11 and identical memory guidance has not transferred.
+The frozen_cohort file is the sole per-radical fix hypothesis
+sheet — TIER-0 alone will not tell you the fix.
+
+Attested counts as of B13 (pos ~700):
+- 讠 family: 5x failed (记, 证, 话, 说, 转, 线, 规)
+- 戈 family: 5x failed (代, 伐, 我, 找, 或)
+- 攵/攴 family: 3x failed (改, 放, 畋)
+- 匕/兑 hook family: continuing (dozens of fails)
+- 纟 family: 2x recent + frozen carryover
+- 弓 family: 1x this batch (张 in B10 already noted)
+- **疒 family: 14x attested (7 in B12 + 7 in B13). Recipe applied
+  in B13 but did NOT transfer.** See frozen_cohort.md 疒 row —
+  hypothesis falsified. If you draw a 疒-family target: apply the
+  5-stroke decomposition, AND geometrically constrain the inner
+  点+提 pair to sit inside the wedge bounded by 横 (above) and 撇
+  (left). Shrink the body ~20% and pack it fully under the 撇's
+  belly. **Neither of these fixes is verified to transfer** — draw
+  carefully and expect the identity may still not read.
+- **辶/走 wrap family: 6x attested (选 B12 + 5 in B13:
+  适/通/造/速/起). NEW cluster this batch.** See frozen_cohort.md
+  辶 row for wrap-topology fix hypothesis (interior body sits ABOVE
+  the 平捺 sweep, 捺 starts to the LEFT of interior and sweeps
+  RIGHT to past its right edge). Untested but geometrically
+  motivated. If your target contains 辶, 廴, or 走: **do NOT** draw
+  the radical to the LEFT of the body — draw the body FIRST at
+  y=30..200, then draw 辶's 平捺 sweep from x_left_of_body,y=205
+  to x_right_of_body+15,y=230, foot flare up-right. Interior body
+  MUST have its bottom stroke overlap the 平捺 start.
+- **田-body-with-rare-top family: 6x attested (畚/畛/畜/畝/畟/畢
+  B13).** Rare tops (龹, 㐱, 玄, 亳, 華-lookalike) have no encoding.
+  **Do not invent the top's structural class from the label** —
+  trace the GT stroke by stroke, emit each in GT order. 田 body
+  encoding is fine (see 田/由/町/畎 PASSes).
 
 ---
 

@@ -135,6 +135,33 @@ evolution, so we now give you the tools to do it.
   If you would rewrite memory as Python or as grid anchors, you are
   no longer G2 — invalidates the comparison.
 
+### Explicit permission — no size or file-count limits (v13, 2026-07-30)
+
+Nothing about your memory has an upper bound you should respect for
+its own sake:
+
+- **No file-size limit.** If a file is helpful at 500 lines, keep it.
+  If it would be clearer as ten 50-line files, split it. If a single
+  1000-line reference table works best for retrieval, keep it as one
+  file. You decide based on what makes drawers find the right entry
+  fastest.
+- **No file-count limit.** Proliferate freely — one file per stroke
+  family, one per radical class, one per failure mode, one per
+  compound-composition pattern, whatever your organization scheme
+  wants. `memory_index.md` is your entry-point router; drawers will
+  follow its pointers.
+- **No format restriction beyond "plain text".** Tables, YAML
+  blocks, JSON, ASCII diagrams, headed prose sections, nested lists
+  — pick what encodes each idea most retrievably.
+- **No restraint required by the memory-invariance policy** (if
+  you're currently under one). Invariance means don't change what
+  memory *says*; it does not mean don't reorganize how it's
+  *arranged* if reorganization would make existing content easier
+  to find. Reshuffling entries into better-indexed files during an
+  invariance window is fine and encouraged — document to
+  `evolution.md` as a "retrieval-only refactor" and log which
+  content moved where.
+
 ### Logging structural changes
 
 Every time you (curator) create a new file, delete a file, or

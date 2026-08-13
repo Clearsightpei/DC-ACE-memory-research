@@ -125,6 +125,15 @@ separate section in each `.py`. Example:
 3. Write **only** `attempts/<item_id>/generated.py` and its output
    PNG. Do NOT create or modify anything under `success_bank/code/`.
    Those are locked until the Curator promotes them post-judgment.
+   **(v13)** — before calling a bank primitive (including
+   `chronic/*.py`), briefly review it against what the current GT
+   actually needs. If the bank primitive's geometry doesn't fit
+   this composition (orientation, size, aspect, endpoint placement),
+   you may skip it and inline a fresh render. If you do deviate,
+   add a `BANK_DEVIATION` comment block at the top of `generated.py`
+   naming what you skipped and why (see the v13 section for the
+   format). Don't skip carelessly — for stylistic preference, use
+   the bank; skip only for real compositional mismatch.
 4. Run the script.
 5. **Dual self-check + one revision** (Phases 2 & 3 — items with GT).
    Per the reflection step in `../shared_rules.md`. You perform
@@ -189,6 +198,15 @@ On **human PASS**:
 - Append to `success_bank/INDEX.md`.
 - Update `principle_bank.md`.
 - The sandbox is persistent — do NOT reset it.
+- **(v13)** — check the top of `attempts/<item>/generated.py` for a
+  `BANK_DEVIATION` block. If present, the drawer skipped or
+  replaced a bank primitive (possibly a chronic one) and inlined a
+  fresh render. If the fresh sub-element looks like something
+  future compositions would plausibly reuse, promote it as a
+  **variant** bank entry — `<name>_A.py`, `<name>_B.py`,
+  `<name>_for_<context>.py`, or (for chronic primitives)
+  `chronic/<name>_v2.py`. Add an INDEX row noting the motivating
+  context. The original entry stays untouched.
 
 On **human FAIL**:
 - Human gave NO text feedback. Use your structural + panel diagnostic
@@ -197,6 +215,51 @@ On **human FAIL**:
 - Update `sandbox.md` with the specific fix idea.
 - Add the item to `errata.md` so it may be re-attempted after 20 more
   curriculum items.
+
+## Drawer bank-deviation channel + evidence-driven variants (v13, 2026-07-30)
+
+Bank entries in `success_bank/code/` remain **immutable**. But the
+drawer explicitly owns the "use it or not" decision per attempt,
+and successful deviations promote new variants:
+
+- **Drawer may skip any bank entry** (including `chronic/*.py`
+  canonical primitives) it judges unsuitable for the current
+  composition. Bank primitives are what worked in a particular past
+  context; the current character may want a different render of the
+  same component — different orientation, size, aspect, stroke
+  weight, or endpoint placement — because component rendering often
+  depends on where the component sits (standalone vs left-side vs
+  bottom-slot vs inside-enclosure). The drawer reviews each bank
+  entry against what the current GT demands and decides: use as-is,
+  use with local transform, or ignore and inline a fresh render
+  from scratch.
+- **If the drawer deviates from bank, it MUST include a
+  `BANK_DEVIATION` comment block** at the top of `generated.py`:
+
+  ```python
+  # BANK_DEVIATION
+  # skipped: <bank_file.py>  (or "replaced: <bank_file.py> with local render")
+  # reason: <one-sentence visual/compositional reason>
+  # fresh_component: <name the fresh sub-element, e.g. "li_variant_for_加">
+  ```
+
+- **On human PASS**, the curator reads the `BANK_DEVIATION` note.
+  If the fresh sub-element looks like something a future composition
+  would plausibly reuse, the curator may promote it as a **new bank
+  entry (variant)** — e.g. `<name>_A.py`, `<name>_B.py`, or
+  `<name>_for_<context>.py` (or, for chronic primitives,
+  `chronic/<name>_v2.py`). INDEX rows record which context motivated
+  the variant. The **original bank entry stays untouched**. Variants
+  only get created from evidence: a drawer tried the deviation, a
+  human PASSed the composition.
+- Curator does NOT speculatively create variants. No variant
+  without a passing attempt to back it.
+
+Guard: the drawer should not skip bank entries carelessly. If the
+bank entry looks basically right for the context, use it — variant
+proliferation without cause bloats the bank. Deviation is for real
+mismatch cases (visible orientation / proportion / aspect problem),
+not stylistic preference.
 
 ## 错题集
 

@@ -316,3 +316,153 @@
 {"batch":"B6","item_id":"p3_char_0181_仝","verdict":"PASS","confidence":"high","note":"agree: 人 over 工 correct"}
 {"batch":"B6","item_id":"p3_char_0182_正","verdict":"FAIL","confidence":"high","note":"agree: reads as Latin E, missing 止 crossing 竖"}
 {"batch":"B6","item_id":"p3_char_0183_仞","verdict":"FAIL","confidence":"high","note":"agree: 刃 as rectangle+dot, no 刀 hook"}
+{"batch": "B7", "item_id": "p3_char_0184_业", "verdict": "FAIL", "confidence": "high", "note": "agree: two 竖+baseline only; missing flanking 丶"}
+{"batch": "B7", "item_id": "p3_char_0185_仟", "verdict": "PASS", "confidence": "high", "note": "agree: 亻+千 recognizable"}
+{"batch": "B7", "item_id": "p3_char_0186_本", "verdict": "PASS", "confidence": "high", "note": "agree: 木+一 base recognizable"}
+{"batch": "B7", "item_id": "p3_char_0187_仡", "verdict": "FAIL", "confidence": "high", "note": "agree: 亻 OK; 乞 disconnected, no 乙 hook"}
+{"batch": "B7", "item_id": "p3_char_0188_边", "verdict": "FAIL", "confidence": "high", "note": "agree: 辶 broken; 力 collapsed to sticks"}
+{"batch": "B7", "item_id": "p3_char_0189_仨", "verdict": "PASS", "confidence": "high", "note": "agree: 亻+三 correct"}
+{"batch": "B7", "item_id": "p3_char_0190_加", "verdict": "FAIL", "confidence": "high", "note": "agree: 力+square 口; halves float far apart"}
+{"batch": "B7", "item_id": "p3_char_0191_仫", "verdict": "FAIL", "confidence": "high", "note": "agree: 幺 collapsed to two angular sticks"}
+{"batch": "B7", "item_id": "p3_char_0192_代", "verdict": "FAIL", "confidence": "high", "note": "agree: 弋 横 detached, no 戈 hook"}
+{"batch": "B7", "item_id": "p3_char_0193_癶", "verdict": "FAIL", "confidence": "high", "note": "agree: only mirrored 撇丶, no central spread"}
+{"batch": "B7", "item_id": "p3_char_0194_世", "verdict": "FAIL", "confidence": "high", "note": "agree: renders as geometric grid, no bottom curve"}
+{"batch": "B7", "item_id": "p3_char_0195_皿", "verdict": "FAIL", "confidence": "high", "note": "agree: too tall/rigid, no 凵 container base"}
+{"batch": "B7", "item_id": "p3_char_0196_东", "verdict": "FAIL", "confidence": "high", "note": "agree: bottom 小 has no 亅, reads as 尔"}
+{"batch": "B7", "item_id": "p3_char_0197_矢", "verdict": "FAIL", "confidence": "high", "note": "agree: proportions off, reads as 失"}
+{"batch": "B7", "item_id": "p3_char_0198_立", "verdict": "FAIL", "confidence": "high", "note": "agree: middle 丶+丿 collapsed to dashes"}
+{"batch": "B7", "item_id": "p3_char_0199_兰", "verdict": "PASS", "confidence": "high", "note": "agree: three 一 stack + 丷 top correct"}
+{"batch": "B7", "item_id": "p3_char_0200_市", "verdict": "FAIL", "confidence": "high", "note": "agree: 冂 empty inside, no 巾 竖钩"}
+{"batch": "B7", "item_id": "p3_char_0201_冉", "verdict": "FAIL", "confidence": "high", "note": "agree: 十 through box malformed"}
+{"batch": "B7", "item_id": "p3_char_0202_术", "verdict": "PASS", "confidence": "high", "note": "agree: 木+丶 recognizable"}
+{"batch": "B7", "item_id": "p3_char_0203_冊", "verdict": "FAIL", "confidence": "high", "note": "agree: two stacked 冂 with no unifying baseline"}
+{"batch": "B7", "item_id": "p3_char_0204_由", "verdict": "PASS", "confidence": "high", "note": "agree: 田+竖 baseline extension OK"}
+{"batch": "B7", "item_id": "p3_char_0205_冋", "verdict": "FAIL", "confidence": "high", "note": "agree: nested rectangles, no 一 divider"}
+{"batch": "B7", "item_id": "p3_char_0206_白", "verdict": "PASS", "confidence": "high", "note": "agree: 丿+日 with top tick correct"}
+{"batch": "B7", "item_id": "p3_char_0207_册", "verdict": "FAIL", "confidence": "high", "note": "agree: wobbly two 冂; barely legible"}
+{"batch": "B7", "item_id": "p3_char_0208_北", "verdict": "FAIL", "confidence": "high", "note": "agree: neither half is 匕"}
+{"batch": "B7", "item_id": "p3_char_0209_冎", "verdict": "FAIL", "confidence": "high", "note": "agree: interior collapsed, no internal 口"}
+{"batch": "B7", "item_id": "p3_char_0210_四", "verdict": "PASS", "confidence": "high", "note": "agree: 囗+儿 inside correct"}
+{"batch": "B7", "item_id": "p3_char_0211_冯", "verdict": "FAIL", "confidence": "high", "note": "agree: 马 collapsed to single 冂+hook"}
+{"batch": "B7", "item_id": "p3_char_0212_处", "verdict": "PASS", "confidence": "high", "note": "agree: 夂+几 halves properly joined"}
+{"batch": "B7", "item_id": "p3_char_0213_処", "verdict": "FAIL", "confidence": "high", "note": "agree: 几 malformed; hatched top; unrecognizable"}
+{"batch": "B7", "item_id": "p3_char_0214_记", "verdict": "FAIL", "confidence": "high", "note": "agree: 讠 detached; 己 as rigid block"}
+{"batch": "B7", "item_id": "p3_char_0215_凸", "verdict": "PASS", "confidence": "high", "note": "agree: distinctive stepped shape recognizable"}
+{"batch": "B7", "item_id": "p3_char_0216_失", "verdict": "PASS", "confidence": "high", "note": "agree: 丿 top + 大 base recognizable"}
+{"batch": "B7", "item_id": "p3_char_0217_凹", "verdict": "PASS", "confidence": "high", "note": "agree: distinctive concave shape recognizable"}
+{"batch": "B7", "item_id": "p3_char_0218_刍", "verdict": "FAIL", "confidence": "high", "note": "agree: components disconnected"}
+{"batch": "B7", "item_id": "p3_char_0219_在", "verdict": "FAIL", "confidence": "high", "note": "agree: 土 as I-beam, reads as 左"}
+{"batch": "B7", "item_id": "p3_char_0220_丢", "verdict": "FAIL", "confidence": "high", "note": "agree: top 千 as +; 厶 collapsed to dashes"}
+{"batch": "B7", "item_id": "p3_char_0221_有", "verdict": "PASS", "confidence": "high", "note": "agree: 𠂇+月 recognizable"}
+{"batch": "B7", "item_id": "p3_char_0222_乑", "verdict": "FAIL", "confidence": "high", "note": "agree: top 丿 as ⌐-hook; reads as 承-like"}
+{"batch": "B7", "item_id": "p3_char_0223_地", "verdict": "FAIL", "confidence": "high", "note": "agree: 也 has no 竖弯钩 sweep, no crossing 横"}
+{"batch": "B7", "item_id": "p3_char_0224_乓", "verdict": "FAIL", "confidence": "high", "note": "agree: top 千 malformed; reads as 兵-fragment"}
+{"batch": "B7", "item_id": "p3_char_0225_而", "verdict": "FAIL", "confidence": "high", "note": "agree: top 一 floats above 冂"}
+{"batch": "B7", "item_id": "p3_char_0226_乔", "verdict": "FAIL", "confidence": "high", "note": "agree: bottom 小 replaced by 亻-like structure"}
+{"batch": "B7", "item_id": "p3_char_0227_年", "verdict": "FAIL", "confidence": "high", "note": "agree: extra horizontals; reads as 生"}
+{"batch": "B7", "item_id": "p3_char_0228_乩", "verdict": "FAIL", "confidence": "high", "note": "agree: 占 has square not 口; 乚 too thin"}
+{"batch": "B7", "item_id": "p3_char_0229_自", "verdict": "PASS", "confidence": "high", "note": "agree: 丿+目 recognizable"}
+{"batch": "B7", "item_id": "p3_char_0230_亘", "verdict": "PASS", "confidence": "high", "note": "agree: 一+日+一 stack correct"}
+{"batch": "B7", "item_id": "p3_char_0231_会", "verdict": "FAIL", "confidence": "high", "note": "agree: 亽 bare triangle; 云 disconnected"}
+{"batch": "B7", "item_id": "p3_char_0232_亙", "verdict": "FAIL", "confidence": "high", "note": "agree: inside 日 replaced by trapezoid+撇"}
+{"batch": "B7", "item_id": "p3_char_0233_那", "verdict": "FAIL", "confidence": "high", "note": "agree: 冄 collapsed; 阝 as Latin P"}
+{"batch": "B8", "item_id": "p3_char_0234_亚", "verdict": "FAIL", "confidence": "high", "note": "agree: 亞-frame scaffold; bottom 一 detached"}
+{"batch": "B8", "item_id": "p3_char_0235_后", "verdict": "FAIL", "confidence": "high", "note": "agree: 厂 wide-open; 口 replaced by 二"}
+{"batch": "B8", "item_id": "p3_char_0236_亥", "verdict": "FAIL", "confidence": "high", "note": "agree: body diagonals overlap; no coherent lower structure"}
+{"batch": "B8", "item_id": "p3_char_0237_行", "verdict": "FAIL", "confidence": "high", "note": "agree: 彳 as 丿+丨; 亍 stubbed"}
+{"batch": "B8", "item_id": "p3_char_0238_亦", "verdict": "FAIL", "confidence": "high", "note": "agree: bottom 4 legs fused to two straight sticks"}
+{"batch": "B8", "item_id": "p3_char_0239_过", "verdict": "FAIL", "confidence": "high", "note": "agree: 辶 as single 一 sweep; 寸 floating"}
+{"batch": "B8", "item_id": "p3_char_0240_仰", "verdict": "FAIL", "confidence": "high", "note": "agree: 卬 collapsed to stacked hooks"}
+{"batch": "B8", "item_id": "p3_char_0241_如", "verdict": "FAIL", "confidence": "high", "note": "agree: 女 tangled X; 口 as open bracket"}
+{"batch": "B8", "item_id": "p3_char_0242_仲", "verdict": "PASS", "confidence": "high", "note": "agree: 亻+中 both legible"}
+{"batch": "B8", "item_id": "p3_char_0243_成", "verdict": "FAIL", "confidence": "high", "note": "agree: 戈 OK but interior 一+丁 as stray bars"}
+{"batch": "B8", "item_id": "p3_char_0244_仳", "verdict": "FAIL", "confidence": "high", "note": "agree: 比 as stacked +/一 pairs"}
+{"batch": "B8", "item_id": "p3_char_0245_多", "verdict": "PASS", "confidence": "high", "note": "agree: two 夕 stacked, hooks readable"}
+{"batch": "B8", "item_id": "p3_char_0246_仵", "verdict": "FAIL", "confidence": "high", "note": "agree: 午 collapsed to 千-like scaffold"}
+{"batch": "B8", "item_id": "p3_char_0247_军", "verdict": "FAIL", "confidence": "high", "note": "agree: 车 replaced by trapezoid+stray +"}
+{"batch": "B8", "item_id": "p3_char_0248_伄", "verdict": "FAIL", "confidence": "high", "note": "agree: 弔 as floating 弓-stub"}
+{"batch": "B8", "item_id": "p3_char_0249_同", "verdict": "FAIL", "confidence": "high", "note": "agree: interior 一+口 as geometric rectangle"}
+{"batch": "B8", "item_id": "p3_char_0250_伉", "verdict": "FAIL", "confidence": "high", "note": "agree: 亢 as 亠+几 without 乚 hook"}
+{"batch": "B8", "item_id": "p3_char_0251_当", "verdict": "FAIL", "confidence": "high", "note": "agree: top dots as diagonals; 彐 as rectangle"}
+{"batch": "B8", "item_id": "p3_char_0252_伊", "verdict": "FAIL", "confidence": "high", "note": "agree: 尹 detached 一+丨+丿 tilt wrong"}
+{"batch": "B8", "item_id": "p3_char_0253_好", "verdict": "FAIL", "confidence": "high", "note": "agree: 女 tangled X; 子 without curl"}
+{"batch": "B8", "item_id": "p3_char_0254_伎", "verdict": "FAIL", "confidence": "high", "note": "agree: 支 as 十+又-stub"}
+{"batch": "B8", "item_id": "p3_char_0255_此", "verdict": "FAIL", "confidence": "high", "note": "agree: 止 as +/一+丨; 匕 as diagonal"}
+{"batch": "B8", "item_id": "p3_char_0256_伐", "verdict": "FAIL", "confidence": "high", "note": "agree: 戈 as isolated diagonal + stray 丶"}
+{"batch": "B8", "item_id": "p3_char_0257_问", "verdict": "PASS", "confidence": "high", "note": "agree: 门 frame + 口 legible"}
+{"batch": "B8", "item_id": "p3_char_0258_伕", "verdict": "PASS", "confidence": "high", "note": "agree: 亻+夫 both legible"}
+{"batch": "B8", "item_id": "p3_char_0259_回", "verdict": "PASS", "confidence": "high", "note": "agree: nested boxes clean"}
+{"batch": "B8", "item_id": "p3_char_0260_伙", "verdict": "FAIL", "confidence": "high", "note": "agree: 火 as 人+two 丶, no 丨 spine"}
+{"batch": "B8", "item_id": "p3_char_0261_再", "verdict": "FAIL", "confidence": "high", "note": "agree: interior as +/一 grid; 竖 short"}
+{"batch": "B8", "item_id": "p3_char_0262_伛", "verdict": "FAIL", "confidence": "high", "note": "agree: 区 as bare rectangle with X"}
+{"batch": "B8", "item_id": "p3_char_0263_她", "verdict": "FAIL", "confidence": "high", "note": "agree: 女 tangled X; 也 as open bracket+丨"}
+{"batch": "B8", "item_id": "p3_char_0264_伢", "verdict": "FAIL", "confidence": "high", "note": "agree: 牙 without interior 亅 hook"}
+{"batch": "B8", "item_id": "p3_char_0265_名", "verdict": "FAIL", "confidence": "high", "note": "agree: 夕 detached from 口"}
+{"batch": "B8", "item_id": "p3_char_0266_伥", "verdict": "FAIL", "confidence": "high", "note": "agree: 长 as stacked 一+oblique 乀"}
+{"batch": "B8", "item_id": "p3_char_0267_西", "verdict": "FAIL", "confidence": "high", "note": "agree: body as bare rectangle with single 丨"}
+{"batch": "B8", "item_id": "p3_char_0268_伦", "verdict": "FAIL", "confidence": "high", "note": "agree: 仑 as 亠+stubby 匕, no 亅"}
+{"batch": "B8", "item_id": "p3_char_0269_合", "verdict": "FAIL", "confidence": "high", "note": "agree: 亽 bare triangle; 口 as thin dashes"}
+{"batch": "B8", "item_id": "p3_char_0270_伧", "verdict": "FAIL", "confidence": "high", "note": "agree: 仓 as 亽+匕 stub, no 巳"}
+{"batch": "B8", "item_id": "p3_char_0271_老", "verdict": "FAIL", "confidence": "high", "note": "agree: 耂 as crossed +/十; 匕 as 乚-curve"}
+{"batch": "B8", "item_id": "p3_char_0272_伪", "verdict": "FAIL", "confidence": "high", "note": "agree: 为 as 力-stub + stray 丶"}
+{"batch": "B8", "item_id": "p3_char_0273_次", "verdict": "FAIL", "confidence": "high", "note": "agree: 欠 as 人-stub + 丶"}
+{"batch": "B8", "item_id": "p3_char_0274_伫", "verdict": "PASS", "confidence": "high", "note": "agree: 亻+宁 legible"}
+{"batch": "B8", "item_id": "p3_char_0275_任", "verdict": "FAIL", "confidence": "high", "note": "agree: 壬 as I-beam with only one 一"}
+{"batch": "B8", "item_id": "p3_char_0276_佤", "verdict": "FAIL", "confidence": "high", "note": "agree: 瓦 as boxy scaffold + 丶 dots"}
+{"batch": "B8", "item_id": "p3_char_0277_先", "verdict": "FAIL", "confidence": "high", "note": "agree: 儿 legs collapsed to short verticals"}
+{"batch": "B8", "item_id": "p3_char_0278_齐", "verdict": "FAIL", "confidence": "high", "note": "agree: bottom legs as two short verticals"}
+{"batch": "B8", "item_id": "p3_char_0279_色", "verdict": "FAIL", "confidence": "high", "note": "agree: 勹 as tilted 丿+box; 巴 detached"}
+{"batch": "B8", "item_id": "p3_char_0280_兆", "verdict": "FAIL", "confidence": "high", "note": "agree: X-cluster; no central gap"}
+{"batch": "B8", "item_id": "p3_char_0281_设", "verdict": "FAIL", "confidence": "high", "note": "agree: 殳 as 几+又-stub"}
+{"batch": "B8", "item_id": "p3_char_0282_兇", "verdict": "FAIL", "confidence": "high", "note": "agree: 凶 as trapezoid+X; 儿 as verticals"}
+{"batch": "B8", "item_id": "p3_char_0283_传", "verdict": "FAIL", "confidence": "high", "note": "agree: 专 as +/一+乀, no 亅 hook"}
+{"batch": "B9", "item_id": "p3_char_0284_龹", "verdict": "PASS", "confidence": "high", "note": "agree: recognizable structure"}
+{"batch": "B9", "item_id": "p3_char_0285_师", "verdict": "FAIL", "confidence": "high", "note": "agree: 丿 detached; missing 帀 spine"}
+{"batch": "B9", "item_id": "p3_char_0286_冱", "verdict": "FAIL", "confidence": "high", "note": "agree: 冫 as dashes; 互 as Z"}
+{"batch": "B9", "item_id": "p3_char_0287_光", "verdict": "FAIL", "confidence": "high", "note": "agree: 冖 missing; parts float"}
+{"batch": "B9", "item_id": "p3_char_0288_凫", "verdict": "FAIL", "confidence": "high", "note": "agree: 鸟/几 detached"}
+{"batch": "B9", "item_id": "p3_char_0289_我", "verdict": "FAIL", "confidence": "high", "note": "agree: chaotic X-cluster"}
+{"batch": "B9", "item_id": "p3_char_0290_甸", "verdict": "PASS", "confidence": "high", "note": "agree: recognizable 勹+田"}
+{"batch": "B9", "item_id": "p3_char_0291_这", "verdict": "FAIL", "confidence": "high", "note": "agree: 辶 zigzag; 文 pyramid detached"}
+{"batch": "B9", "item_id": "p3_char_0292_甹", "verdict": "FAIL", "confidence": "high", "note": "agree: top 田; bottom detached"}
+{"batch": "B9", "item_id": "p3_char_0293_来", "verdict": "PASS", "confidence": "high", "note": "agree: recognizable structure"}
+{"batch": "B9", "item_id": "p3_char_0294_町", "verdict": "PASS", "confidence": "high", "note": "agree: 田+丁 legible"}
+{"batch": "B9", "item_id": "p3_char_0295_时", "verdict": "PASS", "confidence": "high", "note": "agree: 日+寸 legible"}
+{"batch": "B9", "item_id": "p3_char_0296_串", "verdict": "FAIL", "confidence": "high", "note": "agree: two 田 grids, not 口+丨"}
+{"batch": "B9", "item_id": "p3_char_0297_你", "verdict": "FAIL", "confidence": "high", "note": "agree: 尔 as 亠+八 pyramid"}
+{"batch": "B9", "item_id": "p3_char_0298_丽", "verdict": "FAIL", "confidence": "high", "note": "agree: pillars missing 人 inside"}
+{"batch": "B9", "item_id": "p3_char_0299_里", "verdict": "FAIL", "confidence": "high", "note": "agree: body as 田; base detached"}
+{"batch": "B9", "item_id": "p3_char_0300_乱", "verdict": "FAIL", "confidence": "high", "note": "agree: 舌 as 千+square; 乚 detached"}
+{"batch": "B9", "item_id": "p3_char_0301_作", "verdict": "FAIL", "confidence": "high", "note": "agree: 乍 as E-shape, no 丿"}
+{"batch": "B9", "item_id": "p3_char_0302_疔", "verdict": "FAIL", "confidence": "high", "note": "agree: 疒 lacks 冫; 丁 detached"}
+{"batch": "B9", "item_id": "p3_char_0303_进", "verdict": "FAIL", "confidence": "high", "note": "agree: 辶 zigzag; 井 as grid"}
+{"batch": "B9", "item_id": "p3_char_0304_疖", "verdict": "FAIL", "confidence": "high", "note": "agree: 卩 detached inside frame"}
+{"batch": "B9", "item_id": "p3_char_0305_还", "verdict": "FAIL", "confidence": "high", "note": "agree: 辶 zigzag; 不 fragmented"}
+{"batch": "B9", "item_id": "p3_char_0306_亨", "verdict": "FAIL", "confidence": "high", "note": "agree: 口 detached from 亠/了"}
+{"batch": "B9", "item_id": "p3_char_0307_没", "verdict": "FAIL", "confidence": "high", "note": "agree: 氵 as diagonals; 殳 geometric"}
+{"batch": "B9", "item_id": "p3_char_0308_亩", "verdict": "PASS", "confidence": "high", "note": "agree"}
+{"batch": "B9", "item_id": "p3_char_0309_两", "verdict": "FAIL", "confidence": "high", "note": "agree: pillars empty, no 人+人"}
+{"batch": "B9", "item_id": "p3_char_0310_伯", "verdict": "PASS", "confidence": "high", "note": "agree"}
+{"batch": "B9", "item_id": "p3_char_0311_身", "verdict": "FAIL", "confidence": "high", "note": "agree: 3 rectangles + one diagonal"}
+{"batch": "B9", "item_id": "p3_char_0312_伲", "verdict": "FAIL", "confidence": "high", "note": "agree: 尼 blocky, no 乚"}
+{"batch": "B9", "item_id": "p3_char_0313_位", "verdict": "FAIL", "confidence": "high", "note": "agree: 立 missing 一 base"}
+{"batch": "B9", "item_id": "p3_char_0314_伶", "verdict": "FAIL", "confidence": "high", "note": "agree: 令 fragmented"}
+{"batch": "B9", "item_id": "p3_char_0315_声", "verdict": "FAIL", "confidence": "high", "note": "agree: components misplaced"}
+{"batch": "B9", "item_id": "p3_char_0316_伺", "verdict": "FAIL", "confidence": "high", "note": "agree: 司 lacks 乛 hook"}
+{"batch": "B9", "item_id": "p3_char_0317_员", "verdict": "FAIL", "confidence": "high", "note": "agree: 贝 missing 八 base"}
+{"batch": "B9", "item_id": "p3_char_0318_伽", "verdict": "FAIL", "confidence": "high", "note": "agree: 力+口 floating"}
+{"batch": "B9", "item_id": "p3_char_0319_听", "verdict": "FAIL", "confidence": "high", "note": "agree: 口 detached; 斤 no hook"}
+{"batch": "B9", "item_id": "p3_char_0320_伾", "verdict": "FAIL", "confidence": "high", "note": "agree: 不 fragmented"}
+{"batch": "B9", "item_id": "p3_char_0321_把", "verdict": "FAIL", "confidence": "high", "note": "agree: 巴 lacks 竖弯钩"}
+{"batch": "B9", "item_id": "p3_char_0322_佃", "verdict": "PASS", "confidence": "high", "note": "agree"}
+{"batch": "B9", "item_id": "p3_char_0323_形", "verdict": "FAIL", "confidence": "high", "note": "agree: 彡 as straight lines"}
+{"batch": "B9", "item_id": "p3_char_0324_但", "verdict": "PASS", "confidence": "high", "note": "agree"}
+{"batch": "B9", "item_id": "p3_char_0325_状", "verdict": "FAIL", "confidence": "high", "note": "agree: 犬 as X-cluster"}
+{"batch": "B9", "item_id": "p3_char_0326_佇", "verdict": "PASS", "confidence": "high", "note": "agree"}
+{"batch": "B9", "item_id": "p3_char_0327_识", "verdict": "FAIL", "confidence": "high", "note": "agree: 只 lacks 八 base"}
+{"batch": "B9", "item_id": "p3_char_0328_佈", "verdict": "FAIL", "confidence": "high", "note": "agree: 巾 detached"}
+{"batch": "B9", "item_id": "p3_char_0329_运", "verdict": "FAIL", "confidence": "high", "note": "agree: 辶 zigzag; 云 detached"}
+{"batch": "B9", "item_id": "p3_char_0330_佉", "verdict": "FAIL", "confidence": "high", "note": "agree: 去 missing 土 top"}
+{"batch": "B9", "item_id": "p3_char_0331_更", "verdict": "FAIL", "confidence": "high", "note": "agree: base X chaotic"}
+{"batch": "B9", "item_id": "p3_char_0332_佐", "verdict": "PASS", "confidence": "high", "note": "agree"}
+{"batch": "B9", "item_id": "p3_char_0333_条", "verdict": "FAIL", "confidence": "high", "note": "agree: 木 fragmented"}

@@ -451,3 +451,503 @@ SATURATED), 084_夊 (retry_3 SATURATED).
 
 Net change: -20 files. Bank utilization ratio (imports/files) improved
 from 42% → 48%.
+
+---
+
+## Batch B7 (positions 184-233) — 25 main + 2 rerun-retry PASSes
+
+**Best G4 batch yet on mains** (25/50 = 50%). 2 v9-prompt reruns PASSed
+(比, 文) after 12 v8-prompt retries all FAILed. See `../evolution.md`
+position-400 entry for v9-prompt analysis.
+
+### Main PASSes (25 items — INDEX rows only under v8)
+
+| position | item_id | Char | Composition | Primitives reused |
+|----------|---------|------|-------------|-------------------|
+| 184 | p3_char_0184_业 | 业 | 3 vert + base heng | shu + heng |
+| 185 | p3_char_0185_仟 | 仟 | 亻 + 千 | ren_side + heng + shu + pie |
+| 186 | p3_char_0186_本 | 本 | 木 + short heng | heng + shu + pie + na |
+| 189 | p3_char_0189_仨 | 仨 | 亻 + 三 | ren_side + 3×heng |
+| 190 | p3_char_0190_加 | 加 | 力 + 口 | li + kou |
+| 192 | p3_char_0192_代 | 代 | 亻 + 弋 | ren_side + yi_arrow |
+| 194 | p3_char_0194_世 | 世 | 3 vert + base heng | shu + heng |
+| 195 | p3_char_0195_皿 | 皿 | vessel frame | inline enclosing |
+| 197 | p3_char_0197_矢 | 矢 | pie + heng + 大 | pie + heng + da |
+| 198 | p3_char_0198_立 | 立 | dot + 2 heng + 2 legs | dian + heng + pie + dian |
+| 199 | p3_char_0199_兰 | 兰 | 3 heng + 2 dots | heng + dian |
+| 201 | p3_char_0201_冉 | 冉 | inline narrow frame + heng | inline frame + heng |
+| 202 | p3_char_0202_术 | 术 | 木 + dot | mu-pattern + dian |
+| 204 | p3_char_0204_由 | 由 | frame + spine + inner heng | inline frame + shu + heng |
+| 206 | p3_char_0206_白 | 白 | pie top + 日 base | pie + ri |
+| 208 | p3_char_0208_北 | 北 | 2×匕 opposing | bi + bi (mirror) |
+| 210 | p3_char_0210_四 | 四 | frame + inner 儿 | inline frame + er_legs pattern |
+| 215 | p3_char_0215_凸 | 凸 | notched frame | inline heng+shu chain |
+| 219 | p3_char_0219_在 | 在 | 一 + 丿 + 土 | heng + pie + tu |
+| 222 | p3_char_0222_乑 | 乑 | vertical + 4 slants | shu + pie + dian |
+| 223 | p3_char_0223_地 | 地 | 土 + 也 | tu + inline 也 |
+| 224 | p3_char_0224_乓 | 乓 | 兵-like | inline compound |
+| 226 | p3_char_0226_乔 | 乔 | 天 + 八 base | heng + pie + na + ba |
+| 227 | p3_char_0227_年 | 年 | pie + heng + 生-body | pie + heng + shu |
+| 229 | p3_char_0229_自 | 自 | pie + 目-like frame | pie + ri-pattern |
+
+### Retry PASSes (v9-prompt reruns only; 2)
+
+| item_id | Radical | Fix that worked | Prompt |
+|---------|---------|-----------------|--------|
+| p2_radical_086_比 | 比 (bǐ, 4画) | MMH-verbatim anchors + explicit LEFT/RIGHT half decomposition (heng+shu_ti / pie+shu_wan_gou); no chronic 匕-mirror trick, just literal MMH placement centered per grid. Visual-diff prompt made the drawer read prior PNG and see the collapsed right-half. | v9 |
+| p2_radical_124_文 | 文 (wén, 4画) | Shared `CROSS_ANCHOR = ('BC', 0.385, 0.225)` routed pie-mid and na-mid through a single pixel (P-weld pixel-shared). Prior retry_2 apex was `('C', 0.50, 0.55)` — right on the heng, forcing 人-shape not X. Visual-diff prompt surfaced the topology bug. | v9 |
+
+Not recorded as new bank .py files — the two fixes are logged inline
+in the rerun attempt directories (attempts/p2_radical_086_比__retry_1__rerun/generated.py,
+attempts/p2_radical_124_文__retry_2__rerun/generated.py). Under v8,
+attempt files ARE the archive; INDEX row + errata "graduated" note suffice.
+
+### B7 fails NOT in bank (35 items = 25 main + 10 both-fail retries)
+
+**25 main FAILs**: p3_char_0187_仡, 0188_边, 0191_仫, 0193_癶, 0196_东,
+0200_市, 0203_冊, 0205_冋, 0207_册, 0209_冎, 0211_冯, 0212_处, 0213_処,
+0214_记, 0216_失, 0217_凹, 0218_刍, 0220_丢, 0221_有, 0225_而, 0228_乩,
+0230_亘, 0231_会, 0232_亙, 0233_那.
+
+**10 both-fail retries (v8 AND v9)**: 长, 夂, 夊, 水, 礻, 风, 无, 气,
+寸, 夕. All 10 are canonical-primitive escalation candidates
+(retry_n≥2 policy).
+
+## Bank size (post-B7, post-v8 prune round 2)
+
+**~125 files in `code/`** (was 135 post-B6). See `evolution.md`
+position-400 for the prune log. No new B7 .py files added (INDEX-only
+recording under v8).
+
+
+---
+
+## B8 promotions (positions 401-450) — INDEX-only under v8
+
+**Batch**: B8. **Main pass**: 20/50 = 40%. **Retry pass**: 0/7.
+**No new .py bank files this batch** — all PASSes recorded via INDEX
+row only (v8 policy). None promoted to `chronic/` this batch (7
+canonical files queued at pos 400 were never delivered — see
+`../evolution.md` position-450).
+
+### PASS mains (20)
+
+| item | id | Notes / reuse pattern |
+|------|----|-----------------------|
+| 亚 | p3_char_0234_亚 | inline (fat_line only) |
+| 后 | p3_char_0235_后 | inline (svw + quad_bezier) |
+| 仳 | p3_char_0244_仳 | full inline |
+| 多 | p3_char_0245_多 | inline (all primitives fresh) |
+| 仵 | p3_char_0246_仵 | full inline |
+| 当 | p3_char_0251_当 | inline (fat_line + svw) |
+| 此 | p3_char_0255_此 | full inline |
+| 伐 | p3_char_0256_伐 | full inline |
+| 问 | p3_char_0257_问 | full inline (inline 冂 — did NOT use chronic/jiong_frame) |
+| 回 | p3_char_0259_回 | inline (_anchor + shortener helper) |
+| 伙 | p3_char_0260_伙 | full inline |
+| 再 | p3_char_0261_再 | inline; chronic 冂 mentioned in comment, NOT imported |
+| 伛 | p3_char_0262_伛 | full inline |
+| 伦 | p3_char_0268_伦 | pie + shu + na imports (bank reuse — rare in B8) |
+| 合 | p3_char_0269_合 | full inline |
+| 老 | p3_char_0271_老 | full inline |
+| 任 | p3_char_0275_任 | full inline |
+| 先 | p3_char_0277_先 | full inline |
+| 齐 | p3_char_0278_齐 | inline (_anchor helpers) |
+| 兇 | p3_char_0282_兇 | full inline |
+
+### FAIL mains (30)
+
+Full FAIL list with diagnoses lives in `../errata.md` B8 section.
+Summary: 亥, 行, 亦, 过, 仰, 如, 仲, 成, 军, 伄, 同, 伉, 伊, 好, 伎,
+伕, 她, 伢, 名, 伥, 西, 伧, 伪, 次, 伫, 佤, 色, 兆, 设, 传.
+
+### Retry FAILs (7) — TERMINAL_FROZEN
+
+长, 夂, 夊, 水, 礻, 无, 气. All 7 canonical primitives queued at
+pos 400 were NEVER hand-written; retries had no new file to import.
+Removed from B9 retry queue. See `../errata.md` B8 retry section.
+
+## Bank size (post-B8)
+
+**~125 files in `code/`** (no additions, no prunes this batch — see
+prune audit in `../evolution.md` position-450). `chronic/` still
+5 files (5 originals; 7 queued additions NEVER delivered).
+
+---
+
+## B9 promotions (positions 451-500) — INDEX-only under v8
+
+**Batch**: B9. **Main pass**: ~30/50 (10 A + ~20 PASS). **Retry pass**:
+~5/16 (1 A + 4 PASS). No new .py bank files this batch (v8 policy).
+
+Retry PASS/A graduated items: 亚, 如, 次, 处, 凹, 但, 佉 (A), 伯 (A),
+位 (A), 伾 (A) — see pass_index.md for the full list up to position 315.
+
+---
+
+## B10 promotions (positions 501-550) — INDEX-only under v8
+
+**Batch**: B10. **Main pass**: 19/50 = 38% (10 A + 9 PASS).
+**Retry pass**: 6/16 = 38% (3 A + 3 PASS). **No new .py bank files this
+batch** — all PASSes recorded via INDEX row only (v8 policy).
+
+**BANK_DEVIATION channel**: 13 invocations in B10 (first live batch).
+Of the 13, 8 were on PASS/A items (4 A + 4 PASS) and 4 on FAIL items.
+Curator DECIDED NOT to promote any of the 8 candidates as new bank
+variants this batch — see `../evolution.md` position 550 for rationale
+(the deviations all follow A-recipe point 4 = "inline base primitives
+when component is in a compound slot", which is the OPPOSITE of what
+a new compound variant primitive would encourage). Deferral policy:
+re-evaluate promotion in B11 if the same fresh_component fires 2+ more
+times on future passing attempts.
+
+### A mains (10 — reference-quality)
+
+| item | id | Composition | Deviation |
+|------|----|-------------|-----------|
+| 佔 | p3_char_0334_佔 | 亻 + 占 | DEV: skipped ren_side + bu + kou |
+| 佟 | p3_char_0348_佟 | 亻 + 冬 | DEV: skipped ren_side (far-left) |
+| 佥 | p3_char_0352_佥 | 人-cap + 双 | inline |
+| 佧 | p3_char_0354_佧 | 亻 + 卡 | inline (亻 far-left) |
+| 皃 | p3_char_0356_皃 | 白 + 儿 | DEV: skipped er_legs |
+| 花 | p3_char_0357_花 | 艹 + 化 | DEV: skipped cao_grass_radical |
+| 並 | p3_char_0360_並 | single-component | inline |
+| 和 | p3_char_0365_和 | 禾 + 口 | inline |
+| 其 | p3_char_0369_其 | bracket-frame | inline (base primitives) |
+| 者 | p3_char_0373_者 | 耂 + 日-compressed | DEV: skipped ri (BC-compressed) |
+
+### PASS mains (9)
+
+| item | id | Notes |
+|------|----|-------|
+| 别 | p3_char_0335_别 | DEV: skipped kou + li + dao_side (slot compression) |
+| 志 | p3_char_0345_志 | 士 + 心 inline |
+| 步 | p3_char_0351_步 | DEV: skipped zhi_stop |
+| 盯 | p3_char_0358_盯 | 目 + 丁 inline |
+| 的 | p3_char_0359_的 | DEV: skipped bao/bao_char (right-half compression) |
+| 国 | p3_char_0363_国 | DEV: skipped wei_enclose + wang (interior room) |
+| 畀 | p3_char_0364_畀 | 田 + 丌 inline |
+| 乖 | p3_char_0368_乖 | inline |
+| 定 | p3_char_0381_定 | 宀 + 疋 inline |
+
+### Retry A + PASS (6)
+
+| item | id | Fix that worked |
+|------|----|----------------|
+| 作 (A) | p3_char_0301_作__retry_1 | main-attempt PASS; retry copied pattern |
+| 但 (A) | p3_char_0324_但__retry_1 | trajectory diff + MMH-verbatim; 主-day 日 bow stronger pie |
+| 状 (A) | p3_char_0325_状__retry_1 | X-cross CROSS_ANCHOR for 犬; 丬 recomposed |
+| 串 | p3_char_0296_串__retry_1 | stacked 口 aligned column |
+| 把 | p3_char_0321_把__retry_1 | DEV: skipped shou_side (扌 far-left MMH); inlined |
+| 形 | p3_char_0323_形__retry_1 | 彡 stroke discipline |
+
+### FAIL mains (19)
+
+p3_char_0340_佚, 0341_社, 0342_佛, 0343_即, 0346_佞, 0349_改, 0355_块,
+0361_到, 0366_畅, 0367_事, 0370_乶, 0371_所, 0372_疌, 0374_疙, 0375_经,
+0376_疚, 0379_学, 0380_疟, 0382_疠. Diagnoses in `../errata.md` B10
+section.
+
+### Retry FAILs (6)
+
+X-cross chronic cluster: 癶 (retry_3), 処 (retry_3), 乩 (retry_3),
+那 (retry_3), 亥 (retry_2), 龹 (retry_1), 更 (retry_1), 亦 (retry_2)
+— see B10 retry section in `../errata.md`.
+
+## Bank size (post-B10)
+
+**~125 files in `code/`** (unchanged; no additions, no prunes this
+batch). `chronic/` still 5 files. Deferred: `chronic/gong_bow_v2.py`
+(compressed variant motivated by 张 C attempt — deviation reasoning
+was sound but human verdict was C, not PASS, so no promotion per v13
+"no variant without a passing attempt" constraint).
+
+## B11 promotions (positions 384–433, scan 600) — INDEX-only under v8
+
+**Batch outcome**: 17 A + 14 PASS + 8 C + 11 FAIL on mains (31/50 =
+62% success, 34% A-rate — best batch). Retries: 3/17 = 18% (亦, 龹,
+更 PASS). BANK_DEVIATION: 29/50 uses; 21/29 → A/PASS (72% deviation
+→ success). No new .py files this batch (evidence-driven variant
+deferral held despite 8 recurrences of `ren_side_far_left` — see
+`../evolution.md` position-600 for rationale).
+
+### A mains (17 — reference-quality)
+
+| item | id | Composition | Deviation |
+|------|----|-------------|-----------|
+| 果 | p3_char_0387_果 | 田 + 木 stack | inline |
+| 佯 | p3_char_0392_佯 | 亻 + 羊 | DEV: skipped ren_side (far-left) |
+| 佰 | p3_char_0394_佰 | 亻 + 百 | inline |
+| 金 | p3_char_0395_金 | 人-cap + 王-like base | inline |
+| 佴 | p3_char_0396_佴 | 亻 + 耳 | DEV: skipped ren_side (far-left) |
+| 空 | p3_char_0397_空 | 宀 + 八 + 工 | inline (gong custom-anchor) |
+| 併 | p3_char_0398_併 | 亻 + 并 | DEV: skipped ren_side (far-left) |
+| 往 | p3_char_0399_往 | 彳 + 主 | DEV: skipped chi_step (far-left) |
+| 佶 | p3_char_0400_佶 | 亻 + 吉 | DEV: skipped ren_side + kou + ji_gather |
+| 取 | p3_char_0401_取 | 耳 + 又 | inline |
+| 佽 | p3_char_0406_佽 | 亻 + 次 | DEV: skipped ren_side (far-left) |
+| 规 | p3_char_0407_规 | 夫 + 见 | inline |
+| 來 | p3_char_0412_來 | 木 + flanking dots + 人-legs | DEV: skipped da/ren |
+| 采 | p3_char_0413_采 | 爫 + 木 | inline |
+| 侈 | p3_char_0414_侈 | 亻 + 多 | DEV: skipped ren_side (far-left) |
+| 具 | p3_char_0425_具 | 目/貝 stack | inline |
+| 是 | p3_char_0429_是 | 日 top + 疋 base | DEV: skipped ri + zhi_stop |
+
+### PASS mains (14)
+
+| item | id | Notes |
+|------|----|-------|
+| 定 | p3_char_0381_定 | (bootstrap-carryover A row lists it — re-tallied here as PASS if applicable; see labels.json) |
+| 佬 | p3_char_0390_佬 | DEV: skipped ren_side (far-left) |
+| 话 | p3_char_0389_话 | DEV: skipped yan_speech (far-left column) |
+| 实 | p3_char_0393_实 | DEV: skipped mian + da (top-band + bottom-slot) |
+| 佼 | p3_char_0404_佼 | DEV: skipped ren_side (far-left) |
+| 治 | p3_char_0405_治 | DEV: skipped shui + kou + si_private |
+| 油 | p3_char_0409_油 | DEV: skipped shui (far-left column) |
+| 侃 | p3_char_0410_侃 | inline |
+| 单 | p3_char_0417_单 | inline (no matching compound primitive) |
+| 知 | p3_char_0419_知 | DEV: skipped kou (right-half compressed) |
+| 侍 | p3_char_0422_侍 | DEV: skipped ren_side (far-left) |
+| 苦 | p3_char_0423_苦 | DEV: skipped cao_grass_radical + kou (top-band + BC) |
+| 侑 | p3_char_0424_侑 | DEV: skipped ren_side (far-left) |
+| 侖 | p3_char_0428_侖 | DEV: skipped ji_gather (top-band) |
+| 要 | p3_char_0433_要 | DEV: skipped nv (bottom-slot) |
+
+### Retry PASS (3)
+
+| item | id | Fix that worked |
+|------|----|----------------|
+| 亦 | p3_char_0238_亦__retry_3 | Trajectory diff + MMH-verbatim; X-cross via CROSS_ANCHOR at both leg mids |
+| 龹 | p3_char_0284_龹__retry_2 | Trajectory diff + inline base primitives at MMH-verbatim anchors |
+| 更 | p3_char_0331_更__retry_2 | Trajectory diff + MMH-verbatim + inline; central 曰-then-一-then-legs alignment fixed |
+
+### FAIL/C mains (19)
+
+C: 0385_物, 0402_佻, 0408_佾, 0411_受, 0418_例, 0421_或, 0431_说, 0432_畋.
+FAIL: 0384_疡, 0386_亞, 0388_亟, 0391_表, 0403_放, 0415_转, 0416_侉,
+0420_侌, 0426_侔, 0427_线, 0430_畈. Diagnoses + retry fix ideas in
+`../errata.md` B11 section.
+
+### Retry FAIL/TERMINAL_FROZEN
+
+- **TERMINAL_FROZEN (4)**: 癶 (retry_4, C), 処 (retry_4, FAIL),
+  乩 (retry_4, C), 那 (retry_4, FAIL). X-cross cluster saturated
+  per B10 plan.
+- **FAIL retry_1s to escalate (10)**: 佚, 社, 佛, 即, 改 (C),
+  到 (C), 事, 所, 学, 亥 (retry_3, C — one more shot).
+
+## Bank size (post-B11)
+
+**~125 files in `code/`** (unchanged; no additions, no prunes this
+batch). `chronic/` still 5 files. **Deferred variant promotions**
+despite strong recurrence:
+- `ren_side_far_left.py` — 8 A/PASS recurrences in B11 + 2 in B10
+  (佟, 佔). Deferral rationale: the winning tactic is "inline pie+shu
+  with MMH-verbatim anchors per character"; a variant primitive with
+  fixed default anchors would reintroduce the standalone-scale problem
+  and encourage partial-override (the p3_char_0252_伊 anti-pattern).
+  Codified as a NAMED PATTERN in `drawer_memory.md` B11 addendum instead.
+- `shui_left_column.py` (治, 油); `yi_side_far_left` (佯, 佼);
+  `cao_grass_top.py` (花, 苦); `kou_bc_compressed.py` (治, 苦):
+  each recurred 2× passing; same deferral logic applies. Named-pattern
+  documentation in drawer_memory.md rather than new primitives.
+
+## B12 promotions (positions 434–483, scan 650) — INDEX-only under v8
+
+**Batch outcome**: 8 A + 12 PASS + 10 C + 20 FAIL on mains
+(20/50 = 40%; A rate 16% — regression to mean from B11's 62%/34%).
+Retries: 5/14 = 36% (0 A, 5 PASS via literal-errata mechanism, 1 C,
+8 FAIL). Cumulative through B12: ~50% success, ~45 A, ~7.5% A rate.
+BANK_DEVIATION channel: 33/50 mains; ~15/33 → A/PASS (deviation
+reasoning still healthy; failure migrated to right-half execution).
+1 TERMINAL_FROZEN: 亥 (R4, X-cross cluster now 5: 癶/処/乩/那/亥).
+No new .py files.
+
+### A mains (8 — reference-quality)
+
+| item | id | Composition | Deviation |
+|------|----|-------------|-----------|
+| 看 | p3_char_0435_看 | 手 (4) + 目 (5) | inline (no 手 primitive) |
+| 种 | p3_char_0437_种 | 禾 + 中 | inline (no compound) |
+| 点 | p3_char_0445_点 | 占 + 灬 | inline |
+| 信 | p3_char_0447_信 | 亻 + 言 | no dev — used ren_side + kou directly (MMH standard-column 亻) |
+| 美 | p3_char_0449_美 | 羊-top + 大-bottom | inline (no compound) |
+| 相 | p3_char_0455_相 | 木 + 目 | DEV: skipped ri (right-half compressed) |
+| 保 | p3_char_0479_保 | 亻 + 呆 (口+木) | DEV: skipped ren_side + kou (far-left + top-band) |
+| 济 | p3_char_0481_济 | 氵 + 齐 | DEV: skipped shui (far-left) |
+
+### PASS mains (12)
+
+| item | id | Notes |
+|------|----|-------|
+| 畐 | p3_char_0438_畐 | inline |
+| 面 | p3_char_0443_面 | inline (no compound skip) |
+| 疭 | p3_char_0454_疭 | inline |
+| 选 | p3_char_0465_选 | inline |
+| 盃 | p3_char_0466_盃 | inline |
+| 结 | p3_char_0467_结 | DEV: skipped si_silk + shi_scholar + kou (far-left + top-right + bottom-right) |
+| 盅 | p3_char_0468_盅 | DEV: skipped kou (top-band-compressed) |
+| 侶 | p3_char_0470_侶 | DEV: skipped ren_side + kou (far-left + stacked mini-口) |
+| 总 | p3_char_0471_总 | inline |
+| 战 | p3_char_0475_战 | DEV: skipped bu + kou (占 left-column compressed) |
+| 俎 | p3_char_0482_俎 | inline |
+| 草 | p3_char_0483_草 | DEV: skipped cao_grass + cao_grass_radical (top-band → `cao_top_band_for_草`) |
+
+### Retry PASS (5 — all C→PASS via literal errata at retry_1)
+
+| item | id | Fix that worked |
+|------|----|----------------|
+| 物 | p3_char_0385_物__retry_1 | Literal: 勿 flag curve=0.15; 牜 = 丿+二+竖 |
+| 佾 | p3_char_0408_佾__retry_1 | Literal: 月 inner heng at y=0.72 & 0.82 |
+| 例 | p3_char_0418_例__retry_1 | Literal: 歹 = 一 + 夕 (pie+horizontal+point) |
+| 或 | p3_char_0421_或__retry_1 | Literal: 戈 hook up-right after corner |
+| 畋 | p3_char_0432_畋__retry_1 | Literal: 攵 = 短横+长撇+短撇+长捺; 短撇 INSIDE 长撇's belly |
+
+### C mains (10) — retry_1 queued for B13
+
+畎, 畏, 将, 疤, 疥, 度, 癸, 亲, 神, 便. Per-item fix in `../errata.md` B12 section.
+癸 not queued (X-cross cluster candidate).
+
+### FAIL mains (20)
+
+**Cluster A — 亻+X-with-unusual-right (6)**: 侯 (0464), 侷 (0472),
+係 (0474), 俅 (0476), 俉 (0478), 俊 (0480). 亻 far-left inline correct
+in every case; right-half sub-radical failed (no primitive; MMH
+directional-only).
+
+**Cluster B — 疒 (4 FAIL + 2 C)**: 疣 0444, 疫 0450, 疬 0452, 疮 0456
+(FAIL); 疤 0446, 疥 0448 (C, queued). **Canonical primitive candidate
+`chronic/ne_sick.py`** if B13 疒 items also fail.
+
+**Cluster C — 皿-bottom (2)**: 皅 0460, 皈 0462.
+
+**Cluster D — 3-tier / unusual (8)**: 畑 0440, 前 0441, 乹 0442,
+给 0451, 思 0457, 带 0459, 城 0473, plus one shared with A above.
+
+### Retry FAIL/TERMINAL_FROZEN (B12)
+
+- **TERMINAL_FROZEN (1 new)**: 亥 (retry_4, FAIL). X-cross cluster
+  now 5 items (add to prior 4: 癶/処/乩/那).
+- **FAIL retries queued to B13**: 说 (R2, C), 佻 (R2, FAIL), 侉 (R2, FAIL),
+  佚 (R3 FINAL, FAIL), 社 (R3 FINAL, FAIL).
+- **Deferred (chronic / directional errata)**: 受 R2, 转 R2, 即 R3;
+  plus B11 stragglers 佛, 事, 所, 学, 改, 到.
+
+### Named-pattern strengthening (B12 evidence)
+
+| fresh_component | B12 hit | Total precedent | Status |
+|-----------------|---------|-----------------|--------|
+| `shui_far_left_for_*` | 济 A | 治 PASS + 油 PASS + 济 A (3 batches) | named pattern; no variant |
+| `cao_top_band_for_*` | 草 PASS | 花 A + 苦 PASS + 草 PASS (3 batches) | named pattern; no variant |
+| `ri_right_half_for_compound` | 相 A | 是 A + 相 A (2 batches) | named pattern; no variant |
+| `kou_top_band_compressed_for_*` | 保 A + 盅 PASS | 2 hits in B12 alone | named pattern (first codified); no variant |
+| `ren_side_far_left_for_*` | 保 A + 侶 PASS | 10+ prior; DEGRADED to 2/9 in B12 | named pattern retained (degradation is right-half, not 亻 slot) |
+
+## Bank size (post-B12)
+
+**~125 files in `code/`** (unchanged; no additions, no prunes this
+batch). `chronic/` still 5 files. Deferred canonical candidates:
+- `chronic/ne_sick.py` (疒 frame) — pending B13 confirmation of cluster.
+- `chronic/x_cross_composite.py` (5 frozen X-cross chars) — deferred; no mechanism yet.
+- Same deferrals as B11 for named-pattern variants (shui_far_left,
+  cao_top_band, ren_side_far_left, etc.).
+
+## Batch B13 (position 700) additions
+
+### A verdicts (6)
+
+| char | id | Notes / fresh_component |
+|------|----|-------------------------|
+| 俐 | p3_char_0486_俐 | DEV: skipped ren_side + dao_side → `ren_side_far_left_for_3radical`, `dao_side_tight_pair_for_3radical` |
+| 俚 | p3_char_0492_俚 | DEV: skipped ren_side → `ren_side_far_left_for_俚` |
+| 适 | p3_char_0493_适 | USED chuo_walk directly (MMH within ±0.05); no DEV |
+| 都 | p3_char_0503_都 | DEV: skipped ri + fu_right → `ri_bl_compressed_for_都`, `fu_right_narrow_column_for_都` |
+| 特 | p3_char_0509_特 | No DEV — base primitives fit MMH |
+| 疽 | p3_char_0528_疽 | No bank primitive for 疒; inlined 5-stroke frame + 且 all MMH-verbatim → `ne_sick_top_left_frame_for_疽` |
+
+### PASS mains (12)
+
+俏 (0484), 指 (0489), 响 (0497), 丵 (0500), 畛 (0504), 起 (0505),
+高 (0507), 畢 (0512), 真 (0517), 疸 (0524), 造 (0527), 值 (0533).
+Note: 疸 PASS confirms `ne_sick_top_left_frame_for_*` named pattern
+alongside 疽 A.
+
+### Retry A (3, all C→A at R1)
+
+| char | id | Fix that worked |
+|------|----|----------------|
+| 畎 | p3_char_0434_畎__retry_1 | Literal: 犬 = 大 + 丶 upper y-band |
+| 将 | p3_char_0439_将__retry_1 | Literal: 爿 4-stroke L-frame x∈[0.0,0.32] |
+| 度 | p3_char_0453_度__retry_1 | Literal: 又 X-cross apex at (BC,0.35,0.65) bottom-left slot |
+
+### Retry PASS (2)
+
+| char | id | Fix that worked |
+|------|----|----------------|
+| 亲 | p3_char_0461_亲__retry_1 | Literal: 木 y∈[0.55,1.0]; central 竖 shared axis |
+| 说 | p3_char_0431_说__retry_2 | Literal (R2): 兑 3-part stack; 八 top ~15 px each |
+
+### C mains (11) — retry_1 queued for B14
+
+怎 (0485), 能 (0499), 乘 (0514), 疰 (0516), 候 (0519), 疴 (0522),
+部 (0525), 疹 (0526), 热 (0529), 痂 (0530), 速 (0531). Per-item
+literal fix in `../errata.md` B13 section. **部 not queued** —
+directional errata; defer.
+
+### FAIL mains (21)
+
+**Cluster A — 亻+X-with-unusual-right (7)**: 俑 (0488), 俘 (0490),
+除 (0491), 俛 (0494), 复 (0495), 俜 (0496), 俞 (0498).
+Same failure surface as B12; needs `form_catalog.md` per-stroke-class
+taper upgrade before retry ROI improves.
+
+**Cluster B — 3-tier / 田-top-bottom (5)**: 畚 (0502), 畜 (0506),
+畝 (0508), 畟 (0510), 原 (0515).
+
+**Cluster C — 疒-interior (2)**: 疱 (0518), 疳 (0520). 疒 frame OK
+(named pattern works); interior sub-radical composition fails.
+
+**Cluster D — enclosing/wrapping (4)**: 家 (0501), 海 (0511),
+验 (0521), 被 (0523).
+
+**Cluster E — standalone-complex (3)**: 通 (0513), 亳 (0532),
+plus 孩 (0487) = 子+亥 with 亥 X-cross frozen sub-cluster.
+
+### Retry FAIL / TERMINAL_FROZEN (B13)
+
+- **TERMINAL_FROZEN (2 new)**: 佚 (R3, FAIL), 社 (R3, FAIL).
+  X-cross cluster now 6 (add 佚 to 5). **礻-compound** new candidate
+  cluster (社 + 神 C).
+- **FAIL retries queued to B14**: 疤 (R2, C), 疥 (R2, C).
+- **Deferred (chronic / directional errata)**: 便, 神, 佻 R3, 侉 R3,
+  畏 R2; plus prior deferrals (佛, 事, 所, 学, 改, 到, 即 R3, 转 R2,
+  受 R2).
+
+### Named-pattern strengthening (B13 evidence)
+
+| fresh_component | B13 hit | Total precedent | Status |
+|-----------------|---------|-----------------|--------|
+| `ne_sick_top_left_frame_for_*` | 疽 A + 疸 PASS + 4 C + 2 FAIL (6/8 non-FAIL) | first codified this batch | **NEW named pattern**; no variant |
+| `ren_side_far_left_for_*` | 6+ hits (俐 A, 俚 A + 俑, 俘, 俜, 俛, 便 FAIL/C) | 13+ batches | named pattern; degradation continues on right-half failure surface |
+| `ri_bl_compressed_for_都` | 都 A | first codified this batch | slot-specific; watching for reuse |
+| `fu_right_narrow_column_for_都` | 都 A | first codified this batch | slot-specific; watching |
+| `dao_side_tight_pair_for_3radical` | 俐 A | first codified this batch | slot-specific; watching |
+| `shui_far_left_for_*` | 海 FAIL (composition-scale issue, not shui slot) | 3 hits before B13 | named pattern (watching) |
+| `cao_top_band_for_*` | no B13 hit | 3 hits before B13 | named pattern (dormant) |
+| `ri_right_half_for_compound` | no B13 hit | 2 A's before B13 | named pattern (dormant) |
+| `kou_top_band_compressed_for_*` | no B13 hit | 2 hits in B12 | named pattern (dormant) |
+
+## Bank size (post-B13)
+
+**~125 files in `code/`** (unchanged; no additions, no prunes this
+batch). `chronic/` still 5 files. Deferred canonical candidates
+(unchanged from B12):
+- `chronic/ne_sick.py` (疒 frame) — **NOT PROMOTED**; codified as named
+  pattern `ne_sick_top_left_frame_for_*` instead (B13 evidence: 75%
+  non-FAIL rate via per-item MMH-verbatim; baked defaults would defeat
+  discipline).
+- `chronic/x_cross_composite.py` (6 frozen X-cross chars: add 佚) —
+  deferred; no mechanism yet.
+- **NEW** candidate `chronic/shi_altar_compound.py` (礻 as left-column
+  compound; 社 TERMINAL_FROZEN + 神 C in B13) — watching for 1-2 more
+  礻-compound R2+ FAILs before considering.
