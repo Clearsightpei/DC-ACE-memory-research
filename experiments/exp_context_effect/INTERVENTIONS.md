@@ -42,7 +42,7 @@ Format: newest at top.
 - B11 curator work for G1/G2/G3 preserved (they never had v14 briefing; their curation was clean).
 
 **Design pivot** — instead of removing MMH from G4, add G5 as a controlled comparison group:
-- G5 = G3 memory format (code-based coord bank, PIL line-primitive rendering) + MMH auto-injection (same block G4 has always had).
+- G5 = G3 memory format (code bank, PIL line-primitive rendering) + MMH auto-injection (same block G4 has always had).
 - G5 starts B12 with a full clone of G3's post-B11 memory (bank, memory files, pass_index, errata).
 - G5's attempts land in `groups/G5_code_bank_mmh/attempts/` and never contaminate G3.
 - G5 has no curator (one-shot ablation across a small number of batches; drawer-side measurement only).

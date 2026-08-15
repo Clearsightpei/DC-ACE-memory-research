@@ -1,20 +1,23 @@
-group,batch,file_count,total_bytes,bank_primitive_count
-G2,B13_final,19,628288,0
-G3,B13_final,408,1473674,250
-G4,B13_final,270,1242153,124
-G5,B13_final,309,1366812,154
-G1,B13_final,3,0,0
-G5,bootstrap,,,19
-G5,B1,,,44
-G5,B2,,,64
-G5,B3,,,83
-G5,B4,,,92
-G5,B5,,,94
-G5,B6,,,102
-G5,B7,,,115
-G5,B8,,,124
-G5,B9,,,136
-G5,B10,,,152
-G5,B11,,,167
-G5,B12,,,177
-G5,B13,,,177
+group,batch,file_count,total_bytes,bank_primitive_count,source
+G1,all,0,0,0,n/a — control
+G2,bootstrap→B13,~30,~350000,0,markdown-only; no callable bank
+G3,post-v7 (2026-07-18),,,67,git ls-tree at commit 9ae9ffde
+G3,post-B7 (2026-07-27),,,183,git ls-tree at commit 685bde5d
+G3,post-B13 (2026-08-13),,,250,git ls-tree at HEAD
+G4,post-v7 (2026-07-18),,,78,git ls-tree at commit 9ae9ffde
+G4,post-B7 (2026-07-27),,,140,git ls-tree at commit 685bde5d
+G4,post-B13 (2026-08-13),,,130,git ls-tree at HEAD; slight pruning post-checkpoint
+G5,bootstrap,,,19,G5 evolution.md bootstrap curator entry
+G5,B1,,,44,G5 evolution.md
+G5,B2,,,64,G5 evolution.md
+G5,B3,,,83,G5 evolution.md
+G5,B4,,,92,G5 evolution.md
+G5,B5,,,94,G5 evolution.md
+G5,B6,,,102,G5 evolution.md
+G5,B7,,,115,G5 evolution.md
+G5,B8,,,124,G5 evolution.md
+G5,B9,,,136,G5 evolution.md
+G5,B10,,,152,G5 evolution.md
+G5,B11,,,167,G5 evolution.md
+G5,B12,,,177,G5 evolution.md
+G5,B13,,,154,git ls-tree at HEAD; some pruning per B12 curator

@@ -27,11 +27,13 @@ learn a niche task not well-represented in its training data.**
 
 We test this in a domain where the AI has weak prior competence but the
 "right answer" is objective: **drawing Chinese characters stroke-by-stroke
-with Python `turtle`.** Chinese characters are:
+with Python `PIL`.** (Historical note: an earlier orchestration used
+`turtle`; the current experiment standardized on `PIL` — 852/854 G3
+attempts use `from PIL import Image, ImageDraw`.) Chinese characters are:
 
 - Objective (there's a canonical form from `graphics.txt`)
 - Compositional (笔画 → 部首 → 字 → 复杂字 mirrors curriculum learning)
-- Out-of-distribution for the model in the specific "draw with turtle
+- Out-of-distribution for the model in the specific "draw with PIL
   primitives" formulation (LLMs have seen character glyphs, not the
   motor-program required to produce them)
 
