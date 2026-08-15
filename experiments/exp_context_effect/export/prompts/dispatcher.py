@@ -1,0 +1,294 @@
+"""dispatcher.py — build sub-agent prompts for a given (group, item).
+
+The actual sub-agent spawning happens in the main Claude Code turn via
+the Agent tool. This module builds the *text* of the prompt each
+sub-agent receives.
+
+Prompt structure (top-to-bottom):
+  1. Verbatim shared_rules.md (formal exam framing)
+  2. Verbatim group-specific rules.md (per-group memory/format spec)
+  3. Item-specific instructions (what to draw, where to save it)
+  4. Memory context (group-specific files it should read first)
+
+Usage:
+    from dispatcher import build_drawer_prompt, build_curator_prompt
+    prompt = build_drawer_prompt("G4", item)
+    # ... spawn subagent with `prompt` via Agent tool ...
+
+Returns None for build_curator_prompt("G1", ...) — G1 has no curator.
+"""
+import os
+from typing import Optional
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+EXP = os.path.dirname(HERE)
+PROTOCOL_DIR = os.path.join(EXP, "protocol")
+
+GROUP_DIRS = {
+    "G1": os.path.join(EXP, "groups", "G1_no_memory"),
+    "G2": os.path.join(EXP, "groups", "G2_free_form"),
+    "G3": os.path.join(EXP, "groups", "G3_coords"),
+    "G4": os.path.join(EXP, "groups", "G4_grid"),
+    # G5: added 2026-08-03 as post-v14 pivot. Same memory format as G3
+    # (code-based coord bank) but receives MMH auto-injection (like G4).
+    # Isolates MMH's causal contribution within the code-bank regime.
+    # Seeded from G3's post-B11 snapshot (memory + bank cloned; attempts
+    # kept as `attempts_g3_seed/` for reference, `attempts/` empty for
+    # fresh B12+ drawings). No curator — drawer-side ablation only.
+    "G5": os.path.join(EXP, "groups", "G5_code_bank_mmh"),
+}
+
+GROUP_RULES = {
+    "G1": os.path.join(PROTOCOL_DIR, "G1_no_memory", "rules.md"),
+    "G2": os.path.join(PROTOCOL_DIR, "G2_free_form", "rules.md"),
+    "G3": os.path.join(PROTOCOL_DIR, "G3_coords", "rules.md"),
+    "G4": os.path.join(PROTOCOL_DIR, "G4_grid", "rules.md"),
+    # G5 borrows G3's rules verbatim (same memory format, same drawer
+    # protocol). The G5-specific "you are a comparison group with MMH
+    # injection" briefing is delivered via `memory_index.md` which the
+    # drawer reads first.
+    "G5": os.path.join(PROTOCOL_DIR, "G3_coords", "rules.md"),
+}
+
+SHARED_RULES = os.path.join(PROTOCOL_DIR, "shared_rules.md")
+
+
+def _read(path: str) -> str:
+    with open(path, "r", encoding="utf-8") as f:
+        return f.read()
+
+
+def _attempt_path(group: str, item: dict) -> str:
+    """Where the Drawer should save its attempt PNG for this item."""
+    return os.path.join(GROUP_DIRS[group], "attempts", item["id"], f"01_{item['character_or_shape']}.png")
+
+
+def _memory_snapshot_lines(group: str) -> str:
+    """Describe the group's memory ENTRY POINT.
+
+    v7 change (position 150): memory files are no longer hardcoded here.
+    The curator maintains `memory_index.md` describing what memory exists
+    and when to consult each file. Drawers read that index first and
+    follow its pointers. This is part of the memory-self-evolution
+    protocol — curators can restructure files freely, and the drawer's
+    entry point stays stable (memory_index.md) even as the underlying
+    structure changes.
+    """
+    root = GROUP_DIRS[group]
+    if group == "G1":
+        return "(G1 has no memory — you have no files to read.)"
+    # G2, G3, G4 — always enter through memory_index.md
+    index_path = os.path.join(root, "memory_index.md")
+    pass_index_path = os.path.join(root, "pass_index.md")
+    if os.path.exists(index_path):
+        pi_line = ""
+        if os.path.exists(pass_index_path):
+            pi_line = (
+                f"- **PASS-index (v11, may consult on demand)**: {pass_index_path}\n"
+                f"  A full list of every attempt your group has ever produced that\n"
+                f"  the human judged PASS or A, with a path to its PNG. Use this\n"
+                f"  when you want to see what YOUR group has actually rendered\n"
+                f"  well — either a sibling of the current item, or a component\n"
+                f"  it contains, or just a visually similar past success. Bank\n"
+                f"  encodings and prose principles drop information that the raw\n"
+                f"  PASSED PNG carries. Read PNGs of past successes when helpful;\n"
+                f"  the curator may also embed specific PNG paths into your\n"
+                f"  memory files as hints — follow those pointers.\n"
+            )
+        return (
+            f"- **Entry point (READ FIRST)**: {index_path}\n"
+            f"  This index describes what memory files exist and when to\n"
+            f"  consult each. Follow its pointers to specific files, or\n"
+            f"  explore `{root}/` freely if you need to find something\n"
+            f"  not listed. The curator maintains this index and may\n"
+            f"  restructure memory across cycles (see the group's\n"
+            f"  `evolution.md` for structural change history).\n"
+            + pi_line +
+            f"- Errata (错题集): {root}/errata.md"
+        )
+    # Fallback if memory_index.md not yet created — behave like pre-v7
+    if group == "G2":
+        return (
+            f"- Memory file to read (and let the Curator update): {root}/drawer_memory.md\n"
+            f"- Errata (错题集): {root}/errata.md\n"
+            f"- (Note: memory_index.md not yet created; curator should\n"
+            f"  create it on next cycle per v7 protocol.)"
+        )
+    return (
+        f"- Success bank: {root}/success_bank/INDEX.md and {root}/success_bank/code/\n"
+        f"- Principle bank: {root}/principle_bank.md\n"
+        f"- Sandbox (short-term scratch): {root}/sandbox.md\n"
+        f"- Errata (错题集): {root}/errata.md\n"
+        f"- (Note: memory_index.md not yet created; curator should\n"
+        f"  create it on next cycle per v7 protocol.)"
+    )
+
+
+def build_drawer_prompt(group: str, item: dict) -> str:
+    """Build the full Drawer sub-agent prompt for one attempt."""
+    shared = _read(SHARED_RULES)
+    group_rules = _read(GROUP_RULES[group])
+    memory_lines = _memory_snapshot_lines(group)
+    attempt_path = _attempt_path(group, item)
+    attempt_dir = os.path.dirname(attempt_path)
+
+    item_block = f"""## THIS ATTEMPT — item to render
+
+- **item_id**: {item['id']}
+- **phase**: {item['phase']}
+- **target_label**: {item['target_label']}
+- **target_description**: {item.get('target_description') or '(none — infer from label)'}
+"""
+    if item.get("target_png") and os.path.exists(item["target_png"]):
+        item_block += f"- **target GT PNG (may read)**: {item['target_png']}\n"
+    else:
+        # Phase 1 (strokes) has no GT — infer from label + description.
+        # v6+: Phase 2 radicals now have GT (135/137 in MMH; 卝, 牜 excluded).
+        # If we still reach here on a radical, it's one of the excluded ones.
+        item_block += f"- **target GT PNG**: NONE — infer from label + description alone (Phase 1 stroke, or a radical without MMH data).\n"
+
+    item_block += f"""
+## Output
+
+Write your rendering script and PNG to:
+  {attempt_dir}/generated.py
+  {attempt_path}
+
+The PNG must be exactly 300×300, white background, black ink.
+"""
+
+    memory_block = f"""## Your memory (READ FIRST)
+
+{memory_lines}
+
+Read them before you draw. Use whatever entries help. Do NOT read any
+other group's files.
+"""
+
+    # G4 + G5 augmentation: inject MMH-derived joint expectations.
+    #
+    # History:
+    # - v6+ (pre-v3 scaffold): G4 always received the injection for
+    #   phase in ('character', 'radical').
+    # - v14 (2026-08-03): temporarily disabled for G4 as an ablation.
+    #   ROLLED BACK 2026-08-03 (same day) — see INTERVENTIONS.md v14.
+    #   B12 data from the v14-enabled window was deleted per user
+    #   direction; the intended isolation moved to a G5 side-group
+    #   instead (G3-format memory + MMH), leaving G4 in its original
+    #   MMH-injected configuration to keep cumulative curves clean.
+    # - Current: G4 (unchanged) AND G5 (new; G3 memory format + MMH)
+    #   both receive the injection. G1/G2/G3 do not.
+    #
+    # Failure to import mmh_joints is soft — omit the block rather than
+    # break.
+    joint_block = ""
+    if group in ("G4", "G5") and item.get("phase") in ("character", "radical"):
+        try:
+            try:
+                from tools.mmh_joints import render_joint_brief_block
+            except ImportError:
+                import sys as _sys
+                _sys.path.insert(0, HERE)
+                from mmh_joints import render_joint_brief_block
+            char = item.get("character_or_shape") or item.get("target_label", "").split()[0]
+            joint_block = "\n\n" + render_joint_brief_block(char) + "\n"
+        except Exception as e:
+            joint_block = f"\n\n## MMH joint block: unavailable ({e})\n"
+
+    return (
+        "# YOU ARE THE DRAWER SUB-AGENT\n\n"
+        + f"Group: **{group}**\n\n"
+        + "## SHARED RULES\n\n" + shared + "\n\n"
+        + "## GROUP RULES\n\n" + group_rules + "\n\n"
+        + memory_block + "\n"
+        + item_block
+        + joint_block
+    )
+
+
+def build_curator_prompt(group: str, item: dict, human_verdict: str,
+                         attempt_path: str) -> Optional[str]:
+    """Build the Curator sub-agent prompt after human judgment.
+
+    For G1 returns None (no curator).
+    For G4 the diagnostician + memory-writer split is TWO prompts —
+    this builds them concatenated with a marker; the orchestrator can
+    split and spawn two agents if desired.
+    """
+    if group == "G1":
+        return None
+
+    shared = _read(SHARED_RULES)
+    group_rules = _read(GROUP_RULES[group])
+    memory_lines = _memory_snapshot_lines(group)
+    root = GROUP_DIRS[group]
+
+    verdict_block = f"""## HUMAN VERDICT
+
+The human judge marked your attempt on **{item['id']}** as:
+
+  **{human_verdict}**
+
+- attempt PNG: {attempt_path}
+- target label: {item['target_label']}
+- target description: {item.get('target_description') or '(none)'}
+- target GT: {item.get('target_png') or '(none — strokes/radicals have no GT)'}
+
+Human gave NO further comment. You must diagnose (on FAIL) or encode
+(on PASS) from the artifacts alone.
+"""
+
+    action_block = f"""## YOUR JOB THIS TURN
+
+"""
+    if human_verdict == "PASS":
+        action_block += f"""On PASS:
+1. Encode the mastered item into your group's memory in your prescribed format.
+2. Append to your INDEX / memory-file summary (as your group's format
+   requires).
+3. Reset your sandbox (G3/G4).
+4. If this item was on the 错题集, remove it from errata.md.
+
+Do NOT modify past success entries.
+"""
+    else:  # FAIL
+        action_block += f"""On FAIL:
+1. Compare your attempt PNG to the target (GT or the label/description).
+2. Diagnose what went wrong. Log a note to your sandbox / errata / free
+   memory (per your group's rules) about the specific failure mode.
+3. Add this item to your group's 错题集 (errata.md) if it isn't already
+   there. Update its "attempts so far" counter.
+4. Consider whether any Principle Bank entries (G3/G4) or free notes
+   (G2) can be generalized from the failure. Add them if so.
+
+Human will NOT give text feedback. You must self-diagnose from vision.
+"""
+
+    memory_block = f"""## Your memory (READ AND WRITE)
+
+{memory_lines}
+
+You may add/append to these files. Do NOT read or write to any other
+group's files.
+"""
+
+    return (
+        f"# YOU ARE THE CURATOR SUB-AGENT (Group {group})\n\n"
+        + "## SHARED RULES\n\n" + shared + "\n\n"
+        + "## GROUP RULES\n\n" + group_rules + "\n\n"
+        + memory_block + "\n"
+        + verdict_block + "\n"
+        + action_block
+    )
+
+
+if __name__ == "__main__":
+    from teacher import Teacher
+    t = Teacher()
+    item = t.next_item()
+    for g in ["G1", "G2", "G3", "G4"]:
+        print("=" * 40)
+        print(f"DRAWER PROMPT — group {g}, item {item['id']}")
+        print("=" * 40)
+        prompt = build_drawer_prompt(g, item)
+        print(prompt[:400] + "\n...\n[truncated]\n")

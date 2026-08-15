@@ -1,0 +1,587 @@
+{
+  "experiment": "exp_context_effect — DC-ACE emergent memory research",
+  "curriculum": {
+    "total_items": 668,
+    "phase_2_radicals": 135,
+    "phase_3_characters": 533,
+    "source_file": "curriculum/chars_1000.json (Phase-3 subset 1-533 used) + MakeMeAHanzi radicals list",
+    "ordering": "ascending stroke count within each tier"
+  },
+  "drawer_model_notes": {
+    "framework": "Claude Code SDK subagents dispatched via Anthropic Workflow scripts (tools/dispatcher.py + workflow.js/*.js under scratchpad/)",
+    "underlying_model": "Claude Opus (family) — the specific model ID at drawer invocation is whatever the SDK/harness resolves at the time of the batch. See per-batch judged_at timestamps below to correlate with API model-version notes if needed.",
+    "model_change_disclosure": "The experiment ran across ~1 month (2026-07-12 through 2026-08-13, judged_at range). Model updates during this window may have shifted underlying capability. This is flagged as a limitation in REPORT_DRAFT.md §4.5 and elaborated below in `possible_model_drift_windows`. G1-G4 main-experiment batches ran continuously 2026-07 to 2026-08-08; G5 catch-up ran 2026-08-08 through 2026-08-13. Every G5 attempt was drawn AFTER the last G1-G4 attempt (bootstrap), so any late-window model improvement is systematically attributed to G5 in the raw data.",
+    "sampling_settings": "Default Claude Code SDK subagent settings (no temperature override). All drawer subagents ran with the standard 'general-purpose' subagent type, max ~10 tool calls per attempt, ONE within-item revision allowed.",
+    "judge": "Single human (first author), blind to group identity per attempt via tools/judge_blind.py randomization",
+    "harness_version": "Claude Code CLI (Opus-family model) + Anthropic Workflow tool. Repository state at commit 6b761109 (feature/rapidocr-judge branch)."
+  },
+  "possible_model_drift_windows": {
+    "main_experiment_window": "2026-07-12 (v3 scaffold) → 2026-08-03 (post-v14 rollback + B12v2 re-run for G4)",
+    "g5_catch_up_window": "2026-08-08 → 2026-08-13",
+    "drift_risk_note": "G5 was run entirely AFTER G1-G4's main-experiment window. Any capability improvement in the underlying model between the two windows would inflate G5's numbers relative to G1-G4. The paper's cross-group comparisons should be read with this in mind. However: (a) G3 (same code format as G5, no MMH) run in the earlier window achieved 36% cumulative success; G5 (same code format, with MMH) run later achieved 54% — the +18pt gap is much larger than plausible drift and dominantly attributable to MMH. (b) The Format effect comparison (G4 vs G5) is more drift-vulnerable since G4 was in the earlier window and G5 later; a hypothetical model-drift-alone hypothesis would predict G5 > G4 uniformly, which it doesn't — G5 leads on PASS but G4 leads on A rate. The pattern is inconsistent with pure drift."
+  },
+  "per_batch": {
+    "001_pilot": {
+      "total_attempts": 80,
+      "groups": {
+        "G3": {
+          "judged_earliest": "2026-07-12T17:48:20",
+          "judged_latest": "2026-07-12T17:52:43",
+          "n_attempts": 20
+        },
+        "G4": {
+          "judged_earliest": "2026-07-12T17:48:25",
+          "judged_latest": "2026-07-12T17:52:42",
+          "n_attempts": 20
+        },
+        "G2": {
+          "judged_earliest": "2026-07-12T17:48:25",
+          "judged_latest": "2026-07-12T17:52:42",
+          "n_attempts": 20
+        },
+        "G1": {
+          "judged_earliest": "2026-07-12T17:48:26",
+          "judged_latest": "2026-07-12T17:52:44",
+          "n_attempts": 20
+        }
+      }
+    },
+    "002": {
+      "total_attempts": 48,
+      "groups": {
+        "G2": {
+          "judged_earliest": "2026-07-12T22:47:00",
+          "judged_latest": "2026-07-13T21:58:10",
+          "n_attempts": 12
+        },
+        "G1": {
+          "judged_earliest": "2026-07-13T21:55:13",
+          "judged_latest": "2026-07-13T21:58:10",
+          "n_attempts": 12
+        },
+        "G3": {
+          "judged_earliest": "2026-07-13T21:55:14",
+          "judged_latest": "2026-07-13T21:58:09",
+          "n_attempts": 12
+        },
+        "G4": {
+          "judged_earliest": "2026-07-13T21:55:22",
+          "judged_latest": "2026-07-13T21:58:08",
+          "n_attempts": 12
+        }
+      }
+    },
+    "bootstrap": {
+      "total_attempts": 72,
+      "groups": {
+        "G4": {
+          "judged_earliest": "2026-07-17T17:50:33",
+          "judged_latest": "2026-07-17T17:53:12",
+          "n_attempts": 18
+        },
+        "G2": {
+          "judged_earliest": "2026-07-17T17:50:38",
+          "judged_latest": "2026-07-17T17:53:12",
+          "n_attempts": 18
+        },
+        "G1": {
+          "judged_earliest": "2026-07-17T17:50:39",
+          "judged_latest": "2026-07-17T17:53:11",
+          "n_attempts": 18
+        },
+        "G3": {
+          "judged_earliest": "2026-07-17T17:51:36",
+          "judged_latest": "2026-07-17T17:53:11",
+          "n_attempts": 18
+        }
+      }
+    },
+    "B1": {
+      "total_attempts": 211,
+      "groups": {
+        "G1": {
+          "judged_earliest": "2026-07-18T16:15:03",
+          "judged_latest": "2026-07-18T16:18:12",
+          "n_attempts": 50
+        },
+        "G4": {
+          "judged_earliest": "2026-07-18T16:15:04",
+          "judged_latest": "2026-07-18T16:18:31",
+          "n_attempts": 56
+        },
+        "G3": {
+          "judged_earliest": "2026-07-18T16:15:04",
+          "judged_latest": "2026-07-18T16:18:22",
+          "n_attempts": 52
+        },
+        "G2": {
+          "judged_earliest": "2026-07-18T16:15:05",
+          "judged_latest": "2026-07-18T16:18:17",
+          "n_attempts": 53
+        }
+      }
+    },
+    "B2": {
+      "total_attempts": 227,
+      "groups": {
+        "G1": {
+          "judged_earliest": "2026-07-18T18:41:20",
+          "judged_latest": "2026-07-18T18:45:51",
+          "n_attempts": 50
+        },
+        "G2": {
+          "judged_earliest": "2026-07-18T18:41:21",
+          "judged_latest": "2026-07-18T18:46:17",
+          "n_attempts": 60
+        },
+        "G3": {
+          "judged_earliest": "2026-07-18T18:41:21",
+          "judged_latest": "2026-07-18T18:46:36",
+          "n_attempts": 58
+        },
+        "G4": {
+          "judged_earliest": "2026-07-18T18:41:21",
+          "judged_latest": "2026-07-18T18:46:46",
+          "n_attempts": 59
+        }
+      }
+    },
+    "B3": {
+      "total_attempts": 236,
+      "groups": {
+        "G2": {
+          "judged_earliest": "2026-07-19T11:01:50",
+          "judged_latest": "2026-07-22T16:37:22",
+          "n_attempts": 63
+        },
+        "G3": {
+          "judged_earliest": "2026-07-19T11:01:51",
+          "judged_latest": "2026-07-22T16:37:42",
+          "n_attempts": 63
+        },
+        "G4": {
+          "judged_earliest": "2026-07-19T11:01:51",
+          "judged_latest": "2026-07-22T16:38:00",
+          "n_attempts": 60
+        },
+        "G1": {
+          "judged_earliest": "2026-07-19T11:01:51",
+          "judged_latest": "2026-07-22T16:36:53",
+          "n_attempts": 50
+        }
+      }
+    },
+    "B4": {
+      "total_attempts": 230,
+      "groups": {
+        "G3": {
+          "judged_earliest": "2026-07-22T22:16:14",
+          "judged_latest": "2026-07-22T22:52:49",
+          "n_attempts": 58
+        },
+        "G4": {
+          "judged_earliest": "2026-07-22T22:16:28",
+          "judged_latest": "2026-07-22T22:53:25",
+          "n_attempts": 58
+        },
+        "G2": {
+          "judged_earliest": "2026-07-22T22:16:29",
+          "judged_latest": "2026-07-22T22:52:27",
+          "n_attempts": 64
+        },
+        "G1": {
+          "judged_earliest": "2026-07-22T22:16:29",
+          "judged_latest": "2026-07-22T22:51:55",
+          "n_attempts": 50
+        }
+      }
+    },
+    "B5": {
+      "total_attempts": 241,
+      "groups": {
+        "G1": {
+          "judged_earliest": "2026-07-24T11:44:07",
+          "judged_latest": "2026-07-24T11:49:58",
+          "n_attempts": 50
+        },
+        "G3": {
+          "judged_earliest": "2026-07-24T11:44:09",
+          "judged_latest": "2026-07-24T11:50:41",
+          "n_attempts": 67
+        },
+        "G4": {
+          "judged_earliest": "2026-07-24T11:44:09",
+          "judged_latest": "2026-07-24T11:50:51",
+          "n_attempts": 61
+        },
+        "G2": {
+          "judged_earliest": "2026-07-24T11:44:10",
+          "judged_latest": "2026-07-24T11:50:16",
+          "n_attempts": 63
+        }
+      }
+    },
+    "B6": {
+      "total_attempts": 221,
+      "groups": {
+        "G4": {
+          "judged_earliest": "2026-07-26T13:47:40",
+          "judged_latest": "2026-07-26T13:53:48",
+          "n_attempts": 60
+        },
+        "G3": {
+          "judged_earliest": "2026-07-26T13:47:43",
+          "judged_latest": "2026-07-26T13:53:12",
+          "n_attempts": 50
+        },
+        "G2": {
+          "judged_earliest": "2026-07-26T13:47:43",
+          "judged_latest": "2026-07-26T13:53:31",
+          "n_attempts": 61
+        },
+        "G1": {
+          "judged_earliest": "2026-07-26T13:47:48",
+          "judged_latest": "2026-07-26T13:53:03",
+          "n_attempts": 50
+        }
+      }
+    },
+    "B7": {
+      "total_attempts": 222,
+      "groups": {
+        "G1": {
+          "judged_earliest": "2026-07-27T16:35:29",
+          "judged_latest": "2026-07-27T16:41:19",
+          "n_attempts": 50
+        },
+        "G3": {
+          "judged_earliest": "2026-07-27T16:35:30",
+          "judged_latest": "2026-07-27T16:41:44",
+          "n_attempts": 60
+        },
+        "G2": {
+          "judged_earliest": "2026-07-27T16:35:30",
+          "judged_latest": "2026-07-27T16:41:20",
+          "n_attempts": 50
+        },
+        "G4": {
+          "judged_earliest": "2026-07-27T16:35:31",
+          "judged_latest": "2026-07-27T16:41:54",
+          "n_attempts": 62
+        }
+      }
+    },
+    "B7r": {
+      "total_attempts": 22,
+      "groups": {
+        "G3": {
+          "judged_earliest": "2026-07-27T17:08:45",
+          "judged_latest": "2026-07-27T17:08:58",
+          "n_attempts": 10
+        },
+        "G4": {
+          "judged_earliest": "2026-07-27T17:08:59",
+          "judged_latest": "2026-07-27T17:09:10",
+          "n_attempts": 12
+        }
+      }
+    },
+    "B8": {
+      "total_attempts": 214,
+      "groups": {
+        "G4": {
+          "judged_earliest": "2026-07-27T19:42:48",
+          "judged_latest": "2026-07-27T19:48:01",
+          "n_attempts": 57
+        },
+        "G1": {
+          "judged_earliest": "2026-07-27T19:42:49",
+          "judged_latest": "2026-07-27T19:47:38",
+          "n_attempts": 50
+        },
+        "G3": {
+          "judged_earliest": "2026-07-27T19:42:49",
+          "judged_latest": "2026-07-27T19:47:54",
+          "n_attempts": 57
+        },
+        "G2": {
+          "judged_earliest": "2026-07-27T19:42:50",
+          "judged_latest": "2026-07-27T19:47:38",
+          "n_attempts": 50
+        }
+      }
+    },
+    "B9": {
+      "total_attempts": 220,
+      "groups": {
+        "G4": {
+          "judged_earliest": "2026-07-30T14:29:57",
+          "judged_latest": "2026-07-30T14:37:49",
+          "n_attempts": 66
+        },
+        "G2": {
+          "judged_earliest": "2026-07-30T14:29:57",
+          "judged_latest": "2026-07-30T14:36:56",
+          "n_attempts": 50
+        },
+        "G1": {
+          "judged_earliest": "2026-07-30T14:30:01",
+          "judged_latest": "2026-07-30T14:36:56",
+          "n_attempts": 50
+        },
+        "G3": {
+          "judged_earliest": "2026-07-30T14:30:05",
+          "judged_latest": "2026-07-30T14:37:06",
+          "n_attempts": 54
+        }
+      }
+    },
+    "B10": {
+      "total_attempts": 223,
+      "groups": {
+        "G1": {
+          "judged_earliest": "2026-07-30T20:34:07",
+          "judged_latest": "2026-07-30T20:42:06",
+          "n_attempts": 50
+        },
+        "G3": {
+          "judged_earliest": "2026-07-30T20:34:10",
+          "judged_latest": "2026-07-30T20:42:25",
+          "n_attempts": 57
+        },
+        "G4": {
+          "judged_earliest": "2026-07-30T20:34:11",
+          "judged_latest": "2026-07-30T20:43:08",
+          "n_attempts": 66
+        },
+        "G2": {
+          "judged_earliest": "2026-07-30T20:34:12",
+          "judged_latest": "2026-07-30T20:41:57",
+          "n_attempts": 50
+        }
+      }
+    },
+    "B11": {
+      "total_attempts": 222,
+      "groups": {
+        "G2": {
+          "judged_earliest": "2026-08-03T14:55:49",
+          "judged_latest": "2026-08-03T15:02:45",
+          "n_attempts": 50
+        },
+        "G3": {
+          "judged_earliest": "2026-08-03T14:55:51",
+          "judged_latest": "2026-08-03T15:03:01",
+          "n_attempts": 55
+        },
+        "G1": {
+          "judged_earliest": "2026-08-03T14:55:52",
+          "judged_latest": "2026-08-03T15:02:43",
+          "n_attempts": 50
+        },
+        "G4": {
+          "judged_earliest": "2026-08-03T14:55:52",
+          "judged_latest": "2026-08-03T15:03:40",
+          "n_attempts": 67
+        }
+      }
+    },
+    "B12": {
+      "total_attempts": 217,
+      "groups": {
+        "G4": {
+          "judged_earliest": "2026-08-04T18:33:30",
+          "judged_latest": "2026-08-04T18:41:31",
+          "n_attempts": 64
+        },
+        "G3": {
+          "judged_earliest": "2026-08-04T18:33:38",
+          "judged_latest": "2026-08-04T18:41:04",
+          "n_attempts": 53
+        },
+        "G2": {
+          "judged_earliest": "2026-08-04T18:33:39",
+          "judged_latest": "2026-08-04T18:40:56",
+          "n_attempts": 50
+        },
+        "G1": {
+          "judged_earliest": "2026-08-04T18:33:42",
+          "judged_latest": "2026-08-04T18:40:55",
+          "n_attempts": 50
+        }
+      }
+    },
+    "B13": {
+      "total_attempts": 222,
+      "groups": {
+        "G4": {
+          "judged_earliest": "2026-08-05T20:17:57",
+          "judged_latest": "2026-08-05T20:27:00",
+          "n_attempts": 64
+        },
+        "G2": {
+          "judged_earliest": "2026-08-05T20:17:58",
+          "judged_latest": "2026-08-05T20:26:06",
+          "n_attempts": 50
+        },
+        "G1": {
+          "judged_earliest": "2026-08-05T20:17:58",
+          "judged_latest": "2026-08-05T20:26:07",
+          "n_attempts": 50
+        },
+        "G3": {
+          "judged_earliest": "2026-08-05T20:18:04",
+          "judged_latest": "2026-08-05T20:26:26",
+          "n_attempts": 58
+        }
+      }
+    },
+    "G5_bootstrap": {
+      "total_attempts": 18,
+      "groups": {
+        "G5": {
+          "judged_earliest": "2026-08-08T14:51:57",
+          "judged_latest": "2026-08-08T14:52:14",
+          "n_attempts": 18
+        }
+      }
+    },
+    "G5_B1": {
+      "total_attempts": 53,
+      "groups": {
+        "G5": {
+          "judged_earliest": "2026-08-08T15:23:27",
+          "judged_latest": "2026-08-08T15:25:45",
+          "n_attempts": 53
+        }
+      }
+    },
+    "G5_B2": {
+      "total_attempts": 70,
+      "groups": {
+        "G5": {
+          "judged_earliest": "2026-08-08T16:13:48",
+          "judged_latest": "2026-08-08T16:16:38",
+          "n_attempts": 70
+        }
+      }
+    },
+    "G5_B3": {
+      "total_attempts": 88,
+      "groups": {
+        "G5": {
+          "judged_earliest": "2026-08-08T17:08:45",
+          "judged_latest": "2026-08-08T17:11:17",
+          "n_attempts": 88
+        }
+      }
+    },
+    "G5_B4": {
+      "total_attempts": 86,
+      "groups": {
+        "G5": {
+          "judged_earliest": "2026-08-08T18:23:30",
+          "judged_latest": "2026-08-08T18:27:46",
+          "n_attempts": 86
+        }
+      }
+    },
+    "G5_B5": {
+      "total_attempts": 59,
+      "groups": {
+        "G5": {
+          "judged_earliest": "2026-08-08T20:29:53",
+          "judged_latest": "2026-08-08T20:32:04",
+          "n_attempts": 59
+        }
+      }
+    },
+    "G5_B6": {
+      "total_attempts": 64,
+      "groups": {
+        "G5": {
+          "judged_earliest": "2026-08-08T22:02:20",
+          "judged_latest": "2026-08-08T22:04:31",
+          "n_attempts": 64
+        }
+      }
+    },
+    "G5_B7": {
+      "total_attempts": 57,
+      "groups": {
+        "G5": {
+          "judged_earliest": "2026-08-08T22:51:07",
+          "judged_latest": "2026-08-08T22:53:24",
+          "n_attempts": 57
+        }
+      }
+    },
+    "G5_B8": {
+      "total_attempts": 50,
+      "groups": {
+        "G5": {
+          "judged_earliest": "2026-08-09T01:32:01",
+          "judged_latest": "2026-08-09T01:33:53",
+          "n_attempts": 50
+        }
+      }
+    },
+    "G5_B9": {
+      "total_attempts": 57,
+      "groups": {
+        "G5": {
+          "judged_earliest": "2026-08-09T13:34:26",
+          "judged_latest": "2026-08-09T13:37:06",
+          "n_attempts": 57
+        }
+      }
+    },
+    "G5_B10": {
+      "total_attempts": 55,
+      "groups": {
+        "G5": {
+          "judged_earliest": "2026-08-09T14:25:44",
+          "judged_latest": "2026-08-09T14:27:20",
+          "n_attempts": 55
+        }
+      }
+    },
+    "G5_B11": {
+      "total_attempts": 54,
+      "groups": {
+        "G5": {
+          "judged_earliest": "2026-08-09T15:27:14",
+          "judged_latest": "2026-08-09T15:28:47",
+          "n_attempts": 54
+        }
+      }
+    },
+    "G5_B12": {
+      "total_attempts": 55,
+      "groups": {
+        "G5": {
+          "judged_earliest": "2026-08-09T21:49:08",
+          "judged_latest": "2026-08-09T21:51:32",
+          "n_attempts": 55
+        }
+      }
+    },
+    "G5_B13": {
+      "total_attempts": 54,
+      "groups": {
+        "G5": {
+          "judged_earliest": "2026-08-10T12:58:12",
+          "judged_latest": "2026-08-10T13:01:07",
+          "n_attempts": 54
+        }
+      }
+    }
+  },
+  "notes": [
+    "batch_001_pilot and batch_002 are pre-main-experiment pilot runs; excluded from paper tables (see COUNTING_RULE.md R5).",
+    "batch_B7r was a v9-prompt re-run of B7 retries after the v9 intervention (VISUAL DIFF requirement); see INTERVENTIONS.md v9.",
+    "G5 catch-up batches are prefixed G5_. G5 uses the same protocol/G3_coords/rules.md as G3, plus MMH auto-injection (see tools/dispatcher.py L156-L184).",
+    "All batch labels.json files are in-tree at judgments/batch_<name>/labels.json.",
+    "Attempt PNGs and generated.py files are in-tree at groups/<group_dir>/attempts/<item_id>/ (or with __retry_N suffix)."
+  ]
+}

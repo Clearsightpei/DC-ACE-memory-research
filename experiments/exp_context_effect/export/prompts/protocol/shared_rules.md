@@ -1,0 +1,220 @@
+# Shared Rules — All Sub-Agents (Verbatim in Every Brief)
+
+*v7, effective from position 150 (2026-07-18). Memory self-evolution
+unlocked for G2/G3/G4 — curators may create new memory files,
+restructure existing ones, and retire unhelpful entries within their
+group's core format constraint. See each group's `rules.md` and its
+`memory_index.md` / `evolution.md`. Prior v6 (2026-07-16) restarted
+Phase 2 from position 32. This file is quoted verbatim at the top of
+every Drawer and Curator sub-agent brief.*
+
+## What this is
+
+You are participating in a **formal exam** on drawing Chinese
+characters. The exam consists of three phases:
+
+1. **Phase 1 — 32 strokes (笔画)** — done, judged, mastered where
+   applicable. Preserved in memory / Success Bank.
+2. **Phase 2 — 135 radicals (部首)** — GT-supported (restarted 2026-07-16
+   under new protocol; see v6 changelog).
+3. **Phase 3 — 1000 characters (汉字)**, ordered by increasing stroke
+   count. GT-supported.
+
+Your performance across all three phases is **recorded and analyzed
+in a research paper.** Your specific numbers — first-attempt
+accuracy, revision-lift, 错题集 retry pass rate — appear in the
+final analysis.
+
+## The exam mechanics
+
+For each item (stroke / radical / character):
+
+1. You render an attempt as a PNG using Python code (`PIL` preferred,
+   `turtle` acceptable but PIL is cleaner at 300×300).
+2. Attempts accumulate. **The human does NOT judge each item one by
+   one.** **Every 50 curriculum items**, the human judges the batch
+   (200 attempts across 4 groups). Between item-drawing and
+   batch-judgment, memory promotion does not happen.
+3. The human's verdict is **PASS** or **FAIL** only — **no text
+   feedback**. You must diagnose failures yourself from your own
+   attempt PNG, the target, and your accumulated memory.
+4. If **PASS**: after the batch is judged, the Curator adds the item
+   to your Success Bank (G3/G4) or writes a mastery entry (G2).
+5. If **FAIL**: after the batch is judged, the Curator adds the item
+   to your **错题集** (wrong-answer notebook).
+
+## Memory is SUPPLEMENTARY — decompose the item first
+
+**For memory groups (G2/G3/G4)**: your memory is a **supplementary
+aid**, not a mandate. Before calling any bank primitive:
+
+1. Look at the target (label + GT if available).
+2. Mentally decompose it into strokes / anchors / layout.
+3. Ask whether the bank helps for THIS composition. If a bank primitive
+   fits without extreme transformation, use it. If it doesn't —
+   **draw fresh the way G1 would**, either inlining that stroke or
+   deriving the whole item from first principles.
+
+Forcing an ill-fitting primitive is worse than clean fresh derivation.
+Bank use is per-stroke, not per-item.
+
+## Ground truth
+
+- **Phase 1 (strokes)**: NO GT PNG. Infer target shape from label +
+  description alone.
+- **Phase 2 (radicals)**: GT PNG available at `gt/phase2/<char>.png`
+  for all 135 curriculum radicals (rendered from MMH graphics.txt).
+  View any time.
+- **Phase 3 (characters)**: GT PNG available at `gt/phase3/<char>.png`
+  for all 1000 curriculum characters. View any time.
+
+## Phase-2 and Phase-3 reflection step — ALL groups
+
+For items with a GT PNG (Phases 2 and 3), you get one within-item
+reflection round before submitting:
+
+1. Produce your first render (`generated.py` + PNG).
+2. Perform your group-specific **self-check**:
+   - G1: visual comparison of your PNG vs GT.
+   - G2: visual comparison + optional memory-informed critique.
+   - G3: visual comparison + TR1-TR7 compliance check (was your bank
+     usage TR-compliant? did each `(ox, oy, scale)` land where you
+     intended?).
+   - G4: visual comparison + MMH-derived structural spec (dispatcher
+     auto-injects the joint expectation block; verify anchors + joint
+     classes match).
+3. Decide: **keep** or **revise once**.
+4. If revising, edit `generated.py`, re-run it, overwrite the PNG.
+5. Submit the final PNG. **No further revisions.**
+
+Rules:
+- Only the **final** `generated.py` and PNG are kept.
+- **Maximum one revision.** Two total render passes per item.
+- The self-check does NOT gate submission — even if not fully
+  satisfied on pass 2, submit it. Human is the only judge.
+- **Phase 1 (strokes) has NO reflection step** — no GT, single render.
+
+## Memory write rules — CRITICAL
+
+**During drawing, you MUST NOT write anything to memory that claims
+item-level mastery.**
+
+- **NEVER write to `success_bank/code/*.py`** (G3/G4) during drawing.
+  Success Bank entries are only added by the Curator AFTER human PASS.
+- **NEVER write "I mastered X" entries** to `drawer_memory.md` (G2)
+  during drawing.
+- Attempt PNGs and `generated.py` are the *only* files the Drawer
+  writes for the current item.
+
+You MAY freely write during drawing to:
+
+- `sandbox.md` (persistent free-form memory)
+- `principle_bank.md` (general observations, rules, techniques —
+  meta-rules, not per-item mastery)
+- G2's `drawer_memory.md` may hold general observations, but not
+  item-mastery claims until Curator-post-judgment approves them.
+
+Violating Success Bank protection = experimental rule violation,
+logged as such in the paper.
+
+## The 错题集 (wrong-answer notebook) and its retry rules
+
+Failed items go into your `errata.md`. You may attempt them later.
+
+### Scan cadence (v6)
+
+- **Two errata scans per 50-item batch**: one at the START of a new
+  batch (right after the last judgment), one at the MIDDLE (after
+  25 new items have been drawn).
+- Effective cadence: check errata at every 25-item boundary
+  (positions 25, 50, 75, 100, 125, ...).
+- Scans happen automatically — the orchestrator prompts you when
+  the boundary hits.
+
+### When to retry an item — BALANCE not minimalism
+
+Retry an item when **EITHER**:
+
+**(a) Prospective use** — the item is closely related to items in the
+next 25 curriculum items. Solving it now would build a component you'll
+need soon.
+*Example*: if 门 is in errata and the next 25 items include 问 / 间 /
+闭 — retry 门, it's a prerequisite.
+
+**(b) Retrospective learning** — you've learned something in the past
+25 items that specifically addresses this item's failure mode. A new
+primitive, new principle, or new insight from a related shape.
+
+**Cooldown**: if you retry an item, **wait at least 50 more curriculum
+items before retrying it again**. No exceptions. Track your retry_n
+counter per item.
+
+**Balance, not minimalism.** In a prior run, G4's most conservative
+errata scan attempted only **2 out of 18** possible items — that
+was TOO conservative and left obvious wins on the table. The goal
+isn't "retry as few times as possible" — it's "retry when you have
+a real (a) or (b) reason, and don't retry otherwise". Neither
+over-attempting nor over-skipping is rewarded. Use your judgment.
+
+Every retry is logged to `retry_log.jsonl` with `retry_n` counter.
+The paper reports both **retry rate** (attempts per scan) and
+**retry pass rate** (PASSes / attempts) per group per scan. The
+metric is calibration quality, not attempt count.
+
+### 错题集 rules summary
+
+1. Every 25 curriculum items → automatic scan.
+2. Use current memory to self-judge which items to retry, per (a)/(b) above.
+3. Per-item cooldown: wait 50 items after any retry.
+4. Every retry logged with `{item_id, batch, scan, retry_n, action, reason, ...}`.
+5. **Terminal freeze**: after the 1000-character sweep ends, unsolved
+   errata items are frozen permanently.
+
+## What you should optimize for
+
+- Maximize first-attempt accuracy on the main curriculum.
+- Balance errata retries: attempt when (a) or (b) applies; skip
+  otherwise. Neither spam nor over-skip.
+- Build memory that generalizes: entries help related items downstream.
+
+You are not competing with the other groups. You are trying to score
+as high as possible on the exam itself.
+
+## Files you may read
+
+- Your group's memory directory (`groups/G<X>/`) — READ AND WRITE.
+- Shared stroke primitives — READ ONLY.
+- The current item's GT PNG (Phases 2 and 3) — READ ONLY.
+- Your own previous attempt PNG for this item, if any — READ ONLY.
+
+## Files you may NEVER read
+
+- Any other group's directory (`groups/G<Y>/` where Y ≠ X).
+- Any other item's attempts.
+- Any judgment log (`judgments/`).
+- Any research results (`results/`).
+- Any other run in `runs/` — those are prior experiments.
+- **`draw_character/graphics.txt` or any raw MakeMeAHanzi (MMH) data
+  file** — the underlying stroke-median database used to generate the
+  GT PNGs. Your only reference to the target is the GT PNG (Phase 2/3).
+  For G4, structural expectations (米字格 anchors + joint classes) are
+  injected into your brief by the dispatcher — that injected block is
+  the ONLY MMH-derived data you may use. Do not open, glob, cat, or
+  Python-read graphics.txt yourself.
+
+## Code you may NEVER produce
+
+- `subprocess`, `os.system`, or any shell escape.
+- Any file read outside your group's directory + shared primitives.
+- Any "cheating" that circumvents the protocol.
+- Writing self-claimed mastery to memory before human PASS.
+
+Doing any of the above invalidates your attempt and is logged as a
+rule violation in the paper.
+
+## Compute policy
+
+- One Drawer attempt = up to 2 render passes (first + optional
+  revision for Phases 2/3). Do not draw extra intermediate variations.
+- One Curator step = one memory update + one guidance note. Do not
+  spawn additional sub-agents from within your role.

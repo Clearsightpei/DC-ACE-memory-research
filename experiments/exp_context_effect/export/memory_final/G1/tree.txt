@@ -1,0 +1,5 @@
+curator_satisfaction_log.jsonl
+errata.md
+notes.md
+results_log.jsonl
+retry_log.jsonl
