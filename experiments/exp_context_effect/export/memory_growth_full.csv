@@ -1,0 +1,71 @@
+group,batch,size,unit,source
+G1,bootstrap,0,n/a,real (control has no memory)
+G1,B1,0,n/a,real (control has no memory)
+G1,B2,0,n/a,real (control has no memory)
+G1,B3,0,n/a,real (control has no memory)
+G1,B4,0,n/a,real (control has no memory)
+G1,B5,0,n/a,real (control has no memory)
+G1,B6,0,n/a,real (control has no memory)
+G1,B7,0,n/a,real (control has no memory)
+G1,B8,0,n/a,real (control has no memory)
+G1,B9,0,n/a,real (control has no memory)
+G1,B10,0,n/a,real (control has no memory)
+G1,B11,0,n/a,real (control has no memory)
+G1,B12,0,n/a,real (control has no memory)
+G1,B13,0,n/a,real (control has no memory)
+G2,bootstrap,0,markdown_lines,real (git checkpoint)
+G2,B1,524,markdown_lines,linear-interpolated between checkpoints
+G2,B2,1049,markdown_lines,real (git checkpoint)
+G2,B3,1576,markdown_lines,linear-interpolated between checkpoints
+G2,B4,2104,markdown_lines,linear-interpolated between checkpoints
+G2,B5,2632,markdown_lines,linear-interpolated between checkpoints
+G2,B6,3159,markdown_lines,linear-interpolated between checkpoints
+G2,B7,3686,markdown_lines,linear-interpolated between checkpoints
+G2,B8,4214,markdown_lines,real (git checkpoint)
+G2,B9,4710,markdown_lines,linear-interpolated between checkpoints
+G2,B10,5206,markdown_lines,linear-interpolated between checkpoints
+G2,B11,5702,markdown_lines,linear-interpolated between checkpoints
+G2,B12,6198,markdown_lines,linear-interpolated between checkpoints
+G2,B13,6694,markdown_lines,real (git checkpoint)
+G3,bootstrap,0,primitives,real (git checkpoint)
+G3,B1,34,primitives,linear-interpolated between checkpoints
+G3,B2,67,primitives,real (git checkpoint)
+G3,B3,86,primitives,linear-interpolated between checkpoints
+G3,B4,106,primitives,linear-interpolated between checkpoints
+G3,B5,125,primitives,linear-interpolated between checkpoints
+G3,B6,144,primitives,linear-interpolated between checkpoints
+G3,B7,164,primitives,linear-interpolated between checkpoints
+G3,B8,183,primitives,real (git checkpoint)
+G3,B9,196,primitives,linear-interpolated between checkpoints
+G3,B10,210,primitives,linear-interpolated between checkpoints
+G3,B11,223,primitives,linear-interpolated between checkpoints
+G3,B12,237,primitives,linear-interpolated between checkpoints
+G3,B13,250,primitives,real (git checkpoint)
+G4,bootstrap,0,primitives,real (git checkpoint)
+G4,B1,38,primitives,linear-interpolated between checkpoints
+G4,B2,77,primitives,real (git checkpoint)
+G4,B3,87,primitives,linear-interpolated between checkpoints
+G4,B4,98,primitives,linear-interpolated between checkpoints
+G4,B5,108,primitives,linear-interpolated between checkpoints
+G4,B6,118,primitives,linear-interpolated between checkpoints
+G4,B7,129,primitives,linear-interpolated between checkpoints
+G4,B8,139,primitives,real (git checkpoint)
+G4,B9,137,primitives,linear-interpolated between checkpoints
+G4,B10,135,primitives,linear-interpolated between checkpoints
+G4,B11,133,primitives,linear-interpolated between checkpoints
+G4,B12,131,primitives,linear-interpolated between checkpoints
+G4,B13,129,primitives,real (git checkpoint)
+G5,bootstrap,19,primitives,real (G5 evolution.md curator entry)
+G5,B1,44,primitives,real (G5 evolution.md curator entry)
+G5,B2,64,primitives,real (G5 evolution.md curator entry)
+G5,B3,83,primitives,real (G5 evolution.md curator entry)
+G5,B4,92,primitives,real (G5 evolution.md curator entry)
+G5,B5,94,primitives,real (G5 evolution.md curator entry)
+G5,B6,102,primitives,real (G5 evolution.md curator entry)
+G5,B7,115,primitives,real (G5 evolution.md curator entry)
+G5,B8,124,primitives,real (G5 evolution.md curator entry)
+G5,B9,136,primitives,real (G5 evolution.md curator entry)
+G5,B10,152,primitives,real (G5 evolution.md curator entry)
+G5,B11,167,primitives,real (G5 evolution.md curator entry)
+G5,B12,177,primitives,real (G5 evolution.md curator entry)
+G5,B13,154,primitives,real (G5 evolution.md curator entry)
