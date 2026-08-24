@@ -1,7 +1,0 @@
-{"judge": {"eval": "vision+ocr+gt", "use_ocr": true,
-   "mastery": "ALL FOUR: OCR is_correct AND margin>=0.3; visual_score>0.8; panel unanimous YES"},
- "characters": [
-   {"index": 1, "character": "上", "pinyin": "shang"},
-   {"index": 2, "character": "下", "pinyin": "xia"},
-   {"index": 3, "character": "七", "pinyin": "qi"}
- ]}

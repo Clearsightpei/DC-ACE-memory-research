@@ -21,6 +21,17 @@ __pycache__/
 # Ignore system files
 .DS_Store
 
+# Paper PDFs and source zips — kept local, do not commit
+paper_v*.pdf
+paper_v*.zip
+paper_v*_draft*.pdf
+paper_v*_source*.zip
+
+# MakeMeAHanzi raw data — do NOT redistribute (Arphic PL license lineage).
+# Reproducers should install upstream MakeMeAHanzi separately;
+# see MakeMeAHanzi_LICENSE.txt for commit pin and license text.
+draw_character/graphics.txt
+
 # Ignore virtual environments
 .conda/
 env/

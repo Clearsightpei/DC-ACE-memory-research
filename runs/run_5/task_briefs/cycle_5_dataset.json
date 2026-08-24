@@ -1,7 +1,0 @@
-{"judge": {"eval": "vision+ocr+gt", "use_ocr": true,
-   "mastery": "Curator-vision says attempt is unambiguously target (structural distinguishing feature visible); rubric>=7 no 0"},
- "characters": [
-   {"index": 1, "character": "八", "pinyin": "ba"},
-   {"index": 2, "character": "人", "pinyin": "ren"},
-   {"index": 3, "character": "入", "pinyin": "ru"}
- ]}

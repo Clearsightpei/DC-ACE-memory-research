@@ -1,8 +1,0 @@
-{"judge": {"eval": "structural", "use_ocr": true, "mastery": "structural_pass"},
- "characters": [{"index": 1, "character": "口", "pinyin": "kou", "phase": "1.5", "mmh_stroke_count": 3,
-                 "anchors": [
-                   {"stroke": 1, "from": ["TL", 0.37, 0.71], "to": ["BL", 0.84, 0.94]},
-                   {"stroke": 2, "from": ["ML", 0.67, 0.77], "to": ["BR", 0.6, 0.96]},
-                   {"stroke": 3, "from": ["BL", 0.93, 0.19], "to": ["BR", 0.93, 0.15]}
-                 ],
-                 "joints": [{"cell":"ML"},{"cell":"BL"},{"cell":"BR"}]}]}

@@ -1,7 +1,0 @@
-{"judge": {"eval": "vision+ocr+gt+structural", "use_ocr": true, "mastery": "structural_pass"},
- "characters": [{"index": 1, "character": "八", "pinyin": "ba", "phase": "1.5", "mmh_stroke_count": 2,
-                 "anchors": [
-                   {"stroke": 1, "from": ["ML", 0.78, 0.67], "to": ["BL", 0.0, 1.0]},
-                   {"stroke": 2, "from": ["TC", 0.26, 0.77], "to": ["BR", 1.0, 0.6]}
-                 ],
-                 "joints": []}]}

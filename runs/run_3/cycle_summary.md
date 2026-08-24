@@ -1,1 +1,0 @@
-Cycle 25 (run_3, 5 carry + 东): **2/6 mastered (公 10/10 + 为 10/10!)**. 37 chars total. 厶-as-open-triangle prescription worked for 公; prominent slanted top 点 worked for 为. 3 stuck: 也 (16x → empty/卫 family), 寸 (9x → 十/于), 万 (9x → 力/方). 东 first try → 不 (close).

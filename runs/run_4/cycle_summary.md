@@ -1,1 +1,0 @@
-Cycle 14 (run_4, focus=一, FIRST two-phase cycle): **MASTERED 10/10** (OCR 一 conf 0.77, visual_score 0.85). Two-phase architecture validated end-to-end: skeleton (uniform pensize 3) compared against GT by Curator → APPROVED → brushwork added via single Success Bank call `draw_heng(t, ox=0, oy=-100, scale=0.8)`. Phase 3 begun. 14 entries. §5.2 added to Principle Bank.

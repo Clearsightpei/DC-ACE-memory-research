@@ -1,2 +1,0 @@
-{"judge":{"eval":"gt+ocr+vision","use_ocr":true,"mastery":"is_correct AND conf>=0.4 AND rubric>=7 no 0"},
- "characters":[{"index":1,"character":"万","pinyin":"wan"}]}
