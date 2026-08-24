@@ -38,5 +38,5 @@ poly([(215, 85), (235, 115)], width=7)
 # Stroke 5: right dot — short diagonal down-right, right-middle area
 poly([(215, 175), (240, 205)], width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0155_必/01_必.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0155_必/01_必.png")
 print("saved")

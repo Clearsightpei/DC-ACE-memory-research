@@ -66,6 +66,6 @@ hook_end = (end[0] - 10, end[1] - 22)
 shu.append(hook_end)
 stroke(shu, width=8)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0103_亢/01_亢.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0103_亢/01_亢.png"
 img.save(out)
 print("saved", out, img.size)

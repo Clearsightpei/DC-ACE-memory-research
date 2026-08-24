@@ -88,5 +88,5 @@ brush_line((tx, ty), (hx, hy), width=7)
 # Must pass through the vertical body (x ≈ 190).
 brush_taper((238, 100), (158, 178), w0=9, w1=3, steps=70)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0134_化/01_化.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0134_化/01_化.png")
 print("saved 01_化.png")

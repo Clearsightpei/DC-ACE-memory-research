@@ -73,4 +73,4 @@ d.line([s5_head, s5_tail], fill='black', width=W)
 STROKES_DRAWN = 5
 assert STROKES_DRAWN == 5, f"expected 5 strokes, drew {STROKES_DRAWN}"
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0218_刍/01_刍.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0218_刍/01_刍.png')

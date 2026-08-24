@@ -17,4 +17,4 @@ draw.line([(110, 155), (195, 150)], fill=INK, width=THICK)
 # Bottom stroke: longest, lower area
 draw.line([(55, 235), (245, 230)], fill=INK, width=THICK)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0055_三/01_三.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0055_三/01_三.png")

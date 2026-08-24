@@ -95,4 +95,4 @@ stroke(left_dot, (7, 3))
 right_dot = bez((190, 236), (200, 250), (211, 262), (222, 273), n=40)
 stroke(right_dot, (4, 9))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0517_真/01_真.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0517_真/01_真.png")

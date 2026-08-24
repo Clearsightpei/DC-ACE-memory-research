@@ -31,7 +31,7 @@ from PIL import Image, ImageDraw
 
 # Bank primitive import
 BANK_CODE = Path(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G3_coords/success_bank/code"
 )
 sys.path.insert(0, str(BANK_CODE))

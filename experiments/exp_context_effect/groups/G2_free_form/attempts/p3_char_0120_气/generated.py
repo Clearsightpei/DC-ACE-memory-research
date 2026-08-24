@@ -79,4 +79,4 @@ curve = [
 ]
 polyline(curve, w=STROKE_W)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0120_气/01_气.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0120_气/01_气.png")

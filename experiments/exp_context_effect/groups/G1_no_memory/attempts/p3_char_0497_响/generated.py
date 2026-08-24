@@ -48,6 +48,6 @@ line((ix1, iy1), (ix2, iy1))          # top horizontal
 line((ix2, iy1), (ix2, iy2))          # right vertical
 line((ix1, iy2), (ix2, iy2))          # bottom horizontal
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0497_响/01_响.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0497_响/01_响.png"
 img.save(out)
 print("Wrote", out)

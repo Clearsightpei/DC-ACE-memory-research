@@ -63,5 +63,5 @@ lower_pts = [
 lower_widths = [4, 6, 8, 9, 9, 5]
 brush_stroke(lower_pts, lower_widths)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0030_冫/01_冫.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0030_冫/01_冫.png")
 print("Saved 01_冫.png")

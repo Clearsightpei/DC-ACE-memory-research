@@ -85,7 +85,7 @@ draw.ellipse((232, 250, 248, 264), fill="black")
 dab_line((244, 258), (262, 253), r0=4.5, r1=1.5)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0124_文/01_文.png"
 )
 print("wrote 01_文.png")

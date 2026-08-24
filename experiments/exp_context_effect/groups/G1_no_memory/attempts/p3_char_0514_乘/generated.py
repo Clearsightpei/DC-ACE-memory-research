@@ -47,4 +47,4 @@ poly([(150, 155), (60, 265)], w=T)
 # 7) Big 捺 (right downward sweep from mid-vertical)
 poly([(150, 175), (250, 265)], w=T)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0514_乘/01_乘.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0514_乘/01_乘.png")

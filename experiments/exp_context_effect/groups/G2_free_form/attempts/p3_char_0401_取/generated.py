@@ -51,4 +51,4 @@ line((240, 95), (155, 265), w=LW)  # diagonal撇 down-left
 # 8) 捺: from around (185, 155) diagonal down-right to (285, 260)
 line((185, 155), (285, 260), w=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0401_取/01_取.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0401_取/01_取.png")

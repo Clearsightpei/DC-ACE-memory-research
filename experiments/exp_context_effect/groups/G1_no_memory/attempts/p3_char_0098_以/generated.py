@@ -50,5 +50,5 @@ stroke(s3)
 s4 = quad_bezier((175, 130), (205, 195), (250, 245), n=50)
 stroke(s4)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0098_以/01_以.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0098_以/01_以.png")
 print("saved")

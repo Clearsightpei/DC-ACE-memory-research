@@ -55,5 +55,5 @@ taper((150, 170), (60, 265), 10, 5)
 # 捺 (right flare from just below 横)
 taper((150, 170), (250, 265), 6, 12)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0413_采/01_采.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0413_采/01_采.png")
 print("saved")

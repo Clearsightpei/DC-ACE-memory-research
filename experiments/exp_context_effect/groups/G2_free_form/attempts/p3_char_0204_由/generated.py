@@ -38,4 +38,4 @@ d.line([(left, mid_y), (right, mid_y)], fill=INK, width=BW)
 # 5) Bottom horizontal (close box)
 d.line([(left, bot), (right, bot)], fill=INK, width=BW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0204_由/01_由.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0204_由/01_由.png")

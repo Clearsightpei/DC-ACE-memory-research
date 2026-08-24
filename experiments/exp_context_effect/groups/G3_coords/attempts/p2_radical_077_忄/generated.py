@@ -153,7 +153,7 @@ def render():
         bow=(1.5, -1.5),
     )
 
-    out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_077_忄/01_忄.png"
+    out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_077_忄/01_忄.png"
     img.save(out)
     print(f"Wrote {out}")
 

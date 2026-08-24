@@ -13,7 +13,7 @@
 import os
 import sys
 
-sys.path.insert(0, '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code')
+sys.path.insert(0, '<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code')
 
 from PIL import Image, ImageDraw
 from mu import _inline_heng, _inline_shu, _inline_pie, _inline_na

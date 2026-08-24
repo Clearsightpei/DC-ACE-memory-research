@@ -98,6 +98,6 @@ w4 = [max(2.5, 7.5 - i * 0.11) for i in range(len(pts4))]
 brush_stroke(pts4, w4)
 
 # Save
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0110_分/01_分.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0110_分/01_分.png"
 img.save(out)
 print(f"wrote {out}")

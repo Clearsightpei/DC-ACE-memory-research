@@ -32,7 +32,7 @@ import os
 import sys
 
 # Make G3's success_bank/code importable
-ROOT = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect"
+ROOT = "<REPO_ROOT>/experiments/exp_context_effect"
 BANK = os.path.join(ROOT, "groups", "G3_coords", "success_bank", "code")
 if BANK not in sys.path:
     sys.path.insert(0, BANK)

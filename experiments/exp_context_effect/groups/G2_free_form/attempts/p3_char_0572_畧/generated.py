@@ -95,4 +95,4 @@ stroke([(rx, ty), (rx, by)], [6, 5])
 # bottom 横
 stroke([(lx - 2, by), (rx + 2, by)], [5, 5])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0572_畧/01_畧.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0572_畧/01_畧.png")

@@ -100,4 +100,4 @@ na_ctrl = (185, 190)   # gentle bow
 bezier_dab(na_p0, na_ctrl, na_p2, r_start=1.8, r_end=8.5, ease=1.2)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_110_攵/01_攵.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_110_攵/01_攵.png")

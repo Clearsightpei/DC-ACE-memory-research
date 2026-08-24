@@ -53,5 +53,5 @@ stroke(pie_pts, width=6)
 na_pts = [(198, 148), (210, 175), (225, 205), (245, 240), (265, 265), (280, 278)]
 stroke(na_pts, width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0340_佚/01_佚.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0340_佚/01_佚.png")
 print("saved 01_佚.png")

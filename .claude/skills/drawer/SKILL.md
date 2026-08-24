@@ -12,7 +12,7 @@ PNG that satisfies the brief's structural specification.
 
 ## Working directory
 
-`/Users/peilinwu/Documents/AI memory research/runs/run_6` (or whatever
+`<REPO_ROOT>/runs/run_6` (or whatever
 the orchestrator says).
 
 ## Files you may read

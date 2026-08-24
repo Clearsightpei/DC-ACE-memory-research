@@ -107,7 +107,7 @@ if __name__ == "__main__":
     img = Image.new("RGB", (CANVAS_SIZE, CANVAS_SIZE), (255, 255, 255))
     draw = ImageDraw.Draw(img)
     draw_shu_char(draw, ox=0, oy=0, scale=1.0)
-    out_path = ("/Users/peilinwu/Documents/AI memory research/experiments/"
+    out_path = ("<REPO_ROOT>/experiments/"
                 "exp_context_effect/groups/G3_coords/attempts/"
                 "p3_char_0148_书/01_书.png")
     img.save(out_path)

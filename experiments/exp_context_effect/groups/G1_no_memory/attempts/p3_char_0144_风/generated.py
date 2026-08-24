@@ -36,5 +36,5 @@ line([(170, 150), (110, 225)], width=T)
 # 捺 (top-left to bottom-right) with tail
 line([(115, 155), (175, 220), (190, 228)], width=T)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0144_风/01_风.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0144_风/01_风.png")
 print("saved")

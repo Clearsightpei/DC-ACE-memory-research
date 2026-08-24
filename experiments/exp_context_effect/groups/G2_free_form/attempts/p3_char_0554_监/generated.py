@@ -76,4 +76,4 @@ stroke(bez((215, 195), (218, 215), (222, 235), (225, 253), n=40), (7, 7))
 # base 一 — long horizontal seat, wider than verticals
 stroke(bez((30, 258), (100, 260), (200, 260), (275, 262), n=80), (9, 8))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0554_监/01_监.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0554_监/01_监.png")

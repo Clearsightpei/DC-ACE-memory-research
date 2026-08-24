@@ -50,4 +50,4 @@ stroke(TR, BR)
 # Stroke 3: 横 (bottom bar) — from BL to BR (spans full width)
 stroke(BL, BR)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0071_口/01_口.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0071_口/01_口.png")

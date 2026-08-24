@@ -51,4 +51,4 @@ poly([(200, 175), (170, 205), (150, 245), (215, 250)], w=LW)
 # 点: short down-right dot from top area of 厶
 poly([(198, 195), (218, 225)], w=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0330_佉/01_佉.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0330_佉/01_佉.png")

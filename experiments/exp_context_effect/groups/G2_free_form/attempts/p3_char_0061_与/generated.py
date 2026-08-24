@@ -41,4 +41,4 @@ stroke(frame_pts, width=9)
 # Extends beyond the frame on the left, ends just inside the right column.
 stroke([(45, 225), (225, 215)], width=9)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0061_与/01_与.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0061_与/01_与.png")

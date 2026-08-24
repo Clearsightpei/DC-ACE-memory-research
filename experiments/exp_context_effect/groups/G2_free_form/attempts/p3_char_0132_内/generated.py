@@ -56,5 +56,5 @@ d.ellipse([173, 190, 185, 202], fill="black")
 # tiny hook flick up-left
 line([(180, 200), (172, 194)], width=4)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0132_内/01_内.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0132_内/01_内.png")
 print("wrote 01_内.png")

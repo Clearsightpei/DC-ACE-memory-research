@@ -50,4 +50,4 @@ d.line([(rx2, ry2), (rx3, ry3)], fill=INK, width=BW)
 # Stroke 6: 一 bottom seal (closes the frame)
 d.line([(L - 6, B - 2), (R + 8, B - 6)], fill=INK, width=BW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0267_西/01_西.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0267_西/01_西.png")

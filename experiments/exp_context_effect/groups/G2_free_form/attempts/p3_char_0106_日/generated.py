@@ -76,6 +76,6 @@ brush_stroke([(LEFT + 2, MID_Y), (RIGHT - 2, MID_Y)], width=LW - 1)
 # ---- Stroke 4: 横 bottom bar (closes the box) ----
 brush_stroke([(LEFT - 2, BOTTOM), (RIGHT + 2, BOTTOM)], width=LW)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0106_日/01_日.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0106_日/01_日.png"
 img.save(out)
 print("wrote", out)

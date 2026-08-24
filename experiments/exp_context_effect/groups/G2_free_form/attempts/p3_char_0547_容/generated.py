@@ -97,4 +97,4 @@ stroke(kou_hz_v, (6, 6))
 kou_bot = bez((L, B), (L + 25, B + 2), (R - 25, B + 2), (R, B), n=40)
 stroke(kou_bot, (6, 6))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0547_容/01_容.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0547_容/01_容.png")

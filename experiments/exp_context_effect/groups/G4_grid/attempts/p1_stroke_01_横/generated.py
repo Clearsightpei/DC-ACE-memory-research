@@ -23,7 +23,7 @@ from pathlib import Path
 
 # Import from this G4 group's success bank.
 SUCCESS_BANK_CODE = Path(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G4_grid/success_bank/code"
 )
 sys.path.insert(0, str(SUCCESS_BANK_CODE))
@@ -33,7 +33,7 @@ from heng import draw_heng
 
 
 OUT_PATH = Path(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G4_grid/attempts/p1_stroke_01_横/01_横.png"
 )
 

@@ -23,7 +23,7 @@ import os, sys
 from PIL import Image, ImageDraw
 
 _HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code")
+sys.path.insert(0, "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code")
 
 from _anchor import anchor_to_xy, fat_line, quad_bezier, stroke_variable_width
 

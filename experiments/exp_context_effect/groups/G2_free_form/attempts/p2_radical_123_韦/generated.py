@@ -75,6 +75,6 @@ taper_curve([(238, 190), (238, 210), (235, 255)], 7, 6)
 taper_stroke((235, 255), (198, 248), 6, 3)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_123_韦/01_韦.png"
 )

@@ -95,5 +95,5 @@ d.rounded_rectangle(
 dab(x_v, 262, r_v)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_083_丬__retry_1/01_丬.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_083_丬__retry_1/01_丬.png")
 print("saved 01_丬.png")

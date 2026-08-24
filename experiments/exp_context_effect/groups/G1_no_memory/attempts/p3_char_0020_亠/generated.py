@@ -67,5 +67,5 @@ def draw_heng(draw, x0, y0, x1, y1, w_body=5, w_end_nib=9, steps=100):
 # Stroke 2: heng — spans roughly x=42 to x=258, at about y=188
 draw_heng(draw, 45, 190, 258, 186, w_body=5, w_end_nib=9, steps=110)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0020_亠/01_亠.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0020_亠/01_亠.png")
 print("Saved 01_亠.png")

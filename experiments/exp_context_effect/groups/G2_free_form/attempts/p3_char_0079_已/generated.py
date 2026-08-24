@@ -123,6 +123,6 @@ for i in range(1, steps + 1):
     prev = (x, y)
 
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0079_已/01_已.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0079_已/01_已.png"
 img.save(out)
 print(f"wrote {out}")

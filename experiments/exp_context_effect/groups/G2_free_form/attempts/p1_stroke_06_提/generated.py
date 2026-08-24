@@ -50,7 +50,7 @@ for i in range(n_steps + 1):
 # Confirm size and save.
 assert img.size == (300, 300)
 out_path = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p1_stroke_06_提/01_提.png"
 )

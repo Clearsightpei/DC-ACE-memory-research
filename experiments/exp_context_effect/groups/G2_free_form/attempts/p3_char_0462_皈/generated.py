@@ -14,7 +14,7 @@ bezier for curves, hooks flick UP-LEFT (n/a here — 反 has no hook).
 from PIL import Image, ImageDraw
 
 W = H = 300
-OUT = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0462_皈/01_皈.png"
+OUT = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0462_皈/01_皈.png"
 img = Image.new("RGB", (W, H), "white")
 d = ImageDraw.Draw(img)
 

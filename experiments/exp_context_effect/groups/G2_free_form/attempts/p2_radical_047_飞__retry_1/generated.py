@@ -134,4 +134,4 @@ dab(*p_start, r_body + 0.5)
 bezier_dabs(p_start, p_ctrl, p_end, r_body, 1.3, steps=160)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_047_飞__retry_1/01_飞.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_047_飞__retry_1/01_飞.png")

@@ -64,6 +64,6 @@ stroke_taper([(135, 225), (120, 245), (108, 262), (95, 280)], w0=9, w1=4)
 stroke_taper([(185, 232), (198, 250), (215, 272)], w0=6, w1=11)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0369_其/01_其.png"
 )

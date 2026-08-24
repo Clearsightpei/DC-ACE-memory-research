@@ -65,6 +65,6 @@ pts.extend(arc_pts)
 pts.append((x1, y1 - 20))
 line(pts, w=TH)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0154_他/01_他.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0154_他/01_他.png"
 img.save(out_path)
 print(f"saved {out_path}")

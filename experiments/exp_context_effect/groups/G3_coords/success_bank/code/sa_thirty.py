@@ -8,7 +8,7 @@
 from PIL import Image, ImageDraw
 
 CANVAS = 300
-OUT = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0147_卅/01_卅.png"
+OUT = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0147_卅/01_卅.png"
 
 
 def _to_pixel(ox, oy):

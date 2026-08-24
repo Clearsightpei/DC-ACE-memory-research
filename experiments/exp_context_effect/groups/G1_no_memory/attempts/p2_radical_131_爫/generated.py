@@ -38,4 +38,4 @@ poly([(215, 100), (212, 115), (205, 135)])
 # Stroke 4: inner piě — short slanted down-left, positioned in the middle-lower area
 poly([(170, 118), (155, 138), (142, 155)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_131_爫/01_爫.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_131_爫/01_爫.png")

@@ -75,4 +75,4 @@ right_asc = [
 stroke(right_asc, width=7)
 
 # Save
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0007_乛/01_乛.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0007_乛/01_乛.png")

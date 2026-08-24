@@ -34,5 +34,5 @@ line([(200, 160), (245, 220), (275, 265)], width=5)
 # small dot lower-right (点)
 line([(245, 180), (262, 205)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0476_俅/01_俅.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0476_俅/01_俅.png")
 print("saved")

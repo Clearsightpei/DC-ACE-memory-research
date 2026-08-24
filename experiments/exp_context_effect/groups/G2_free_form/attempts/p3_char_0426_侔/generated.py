@@ -66,5 +66,5 @@ stroke([(130, 200), (275, 190)], width=7)
 # 竖 (long central descender): from just above the 横 down to bottom
 stroke([(200, 140), (200, 285)], width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0426_侔/01_侔.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0426_侔/01_侔.png")
 print("saved")

@@ -98,5 +98,5 @@ line_stroke(ti_start, ti_end, r_start=8.5, r_end=1.2, steps=350)
 dab(*ti_start, 9.5)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_070_纟/01_纟.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_070_纟/01_纟.png")
 print("wrote 01_纟.png")

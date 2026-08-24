@@ -73,5 +73,5 @@ lw_pts = [
 ]
 d.line(lw_pts, fill='black', width=LW, joint='curve')
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0576_乾/01_乾.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0576_乾/01_乾.png')
 print("wrote 01_乾.png")

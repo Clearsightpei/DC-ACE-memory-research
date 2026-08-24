@@ -44,7 +44,7 @@ for p in path:
     draw.ellipse([p[0] - width // 2, p[1] - width // 2,
                   p[0] + width // 2, p[1] + width // 2], fill="black")
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_007_乚/01_乚.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_007_乚/01_乚.png"
 img.save(out)
 
 SELF_CHECK = {

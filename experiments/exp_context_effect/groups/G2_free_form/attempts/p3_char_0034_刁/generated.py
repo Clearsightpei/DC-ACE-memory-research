@@ -59,6 +59,6 @@ ti = [(70, 182), (110, 170), (150, 158), (195, 148)]
 brush_line(d, ti, width=8)
 
 # ------------------------------------------------
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0034_刁/01_刁.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0034_刁/01_刁.png"
 img.save(out)
 print(f"wrote {out}")

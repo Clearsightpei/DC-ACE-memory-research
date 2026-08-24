@@ -50,4 +50,4 @@ d.line([(left_x + 8, inner_top_y), (right_x - 8, inner_top_y)], fill=BLACK, widt
 cx = (left_x + right_x) // 2
 d.line([(cx, inner_top_y - 3), (cx, mid_y + 3)], fill=BLACK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0201_冉/01_冉.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0201_冉/01_冉.png")

@@ -53,5 +53,5 @@ draw_bezier((222, 262), (216, 262), (210, 260), (200, 254), w0=5, w1=1)
 # Stroke 4: interior dot — small tick, tilts down-LEFT (GT: mid-lower interior)
 draw_bezier((170, 200), (162, 210), (155, 218), (148, 224), w0=4, w1=2)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0096_为/01_为.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0096_为/01_为.png")
 print("saved")

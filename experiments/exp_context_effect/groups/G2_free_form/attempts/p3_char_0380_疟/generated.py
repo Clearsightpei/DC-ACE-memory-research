@@ -81,5 +81,5 @@ stroke_poly([(130, 245), (245, 245)], w=6)
 #    inside 尸/丆)
 stroke_poly([(155, 200), (155, 245)], w=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0380_疟/01_疟.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0380_疟/01_疟.png")
 print("saved 01_疟.png")

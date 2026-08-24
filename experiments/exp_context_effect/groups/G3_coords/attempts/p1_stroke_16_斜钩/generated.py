@@ -68,6 +68,6 @@ for i in range(1, Nh + 1):
 # Round out the tail joint so the hook looks continuous with the body.
 draw.ellipse([p3[0] - 5, p3[1] - 5, p3[0] + 5, p3[1] + 5], fill="black")
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_16_斜钩/01_斜钩.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_16_斜钩/01_斜钩.png"
 img.save(out)
 print(f"wrote {out}")

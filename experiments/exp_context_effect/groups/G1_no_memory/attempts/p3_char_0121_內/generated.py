@@ -46,5 +46,5 @@ na_start = (135, 145)
 na_end = (215, 245)
 draw.line([na_start, na_end], fill=INK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0121_內/01_內.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0121_內/01_內.png")
 print("saved")

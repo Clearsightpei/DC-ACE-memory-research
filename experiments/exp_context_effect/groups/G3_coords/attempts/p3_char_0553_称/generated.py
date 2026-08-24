@@ -103,6 +103,6 @@ tapered((198, 175), (188, 200), w0=5, w1=2)
 tapered((233, 175), (245, 205), w0=5, w1=2)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G3_coords/attempts/p3_char_0553_称/01_称.png"
 )

@@ -46,5 +46,5 @@ line([(232, 78), (238, 265)], width=8)
 # Hook: UP-and-LEFT flick (per Tier-0 rule)
 line([(238, 265), (215, 245)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0342_佛/01_佛.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0342_佛/01_佛.png")
 print("saved")

@@ -82,7 +82,7 @@ polyline([na_start, na_mid, na_end], width=LW + 1)
 
 
 out = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p3_char_0327_识/01_识.png"
 )

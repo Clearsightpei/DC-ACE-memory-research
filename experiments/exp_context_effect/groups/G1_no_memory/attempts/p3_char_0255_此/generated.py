@@ -32,5 +32,5 @@ d.arc([200, 200, 285, 275], start=270, end=360, fill="black", width=LW)
 # hook tail going up
 line((285, 240), (280, 190))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0255_此/01_此.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0255_此/01_此.png")
 print("saved")

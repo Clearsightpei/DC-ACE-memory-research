@@ -38,4 +38,4 @@ line((205, 190), (205, 265), width=6)
 # bottom horizontal
 line((100, 265), (207, 265), width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0423_苦/01_苦.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0423_苦/01_苦.png")

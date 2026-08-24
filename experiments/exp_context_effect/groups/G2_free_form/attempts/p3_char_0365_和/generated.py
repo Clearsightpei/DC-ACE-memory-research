@@ -64,5 +64,5 @@ stroke([(LX - 2, TY), (RX, TY), (RX, BY)], width=6)
 stroke([(LX - 2, BY), (RX + 2, BY)], width=6)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0365_和/01_和.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0365_和/01_和.png")
 print("saved 01_和.png")

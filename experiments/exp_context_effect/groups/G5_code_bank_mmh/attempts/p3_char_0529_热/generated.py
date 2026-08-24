@@ -115,7 +115,7 @@ polyline([s6_head, s6_tail], 6)
 draw_si_fire_bot(d, ox=0, oy=70, scale=1.0)
 
 # --- Save ---
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0529_热/01_热.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0529_热/01_热.png')
 
 # --- SELF_CHECK (mandatory G5 Phase-3) ---
 SELF_CHECK = {

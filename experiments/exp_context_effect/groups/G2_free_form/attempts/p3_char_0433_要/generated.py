@@ -114,7 +114,7 @@ dab(*heng_end, BW + 1)
 
 
 out_path = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p3_char_0433_要/01_要.png"
 )

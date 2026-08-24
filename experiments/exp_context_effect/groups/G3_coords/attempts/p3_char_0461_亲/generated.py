@@ -66,6 +66,6 @@ for i in range(len(na_steps) - 1):
     w = 4 + int(i * 1.5)
     d.line([na_steps[i], na_steps[i+1]], fill="black", width=w+2)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0461_亲/01_亲.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0461_亲/01_亲.png"
 img.save(out)
 print("wrote", out)

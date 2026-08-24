@@ -45,5 +45,5 @@ d.line([(200, 208), (198, 273)], fill="black", width=7)
 # 横 (bottom)
 d.line([(113, 273), (200, 273)], fill="black", width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0269_合/01_合.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0269_合/01_合.png")
 print("saved")

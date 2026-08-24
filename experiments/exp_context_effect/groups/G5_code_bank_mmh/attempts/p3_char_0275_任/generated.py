@@ -26,7 +26,7 @@ the qian_person.py template shape (亻 pie head at ~(85,61)/tail at
 import sys
 import os
 
-BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code"
+BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code"
 if BANK not in sys.path:
     sys.path.insert(0, BANK)
 
@@ -57,7 +57,7 @@ draw_shu(d, (170, 118), (174, 256), width=8)
 # s6: 壬 bottom heng — long, spans BC to BR
 draw_heng(d, (116, 268), (254, 263), width_head=10, width_tail=12)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0275_任/01_任.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0275_任/01_任.png"
 img.save(out)
 
 SELF_CHECK = {

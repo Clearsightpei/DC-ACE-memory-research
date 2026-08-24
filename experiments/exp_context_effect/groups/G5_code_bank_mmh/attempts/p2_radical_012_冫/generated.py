@@ -77,6 +77,6 @@ s2_start = (158, 208)
 s2_end = (115, 278)
 draw_dian_curve(draw, s2_start, s2_end, thickness_start=4, thickness_end=10)
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_012_冫/01_冫.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_012_冫/01_冫.png')
 print('Wrote 01_冫.png')
 print('SELF_CHECK:', SELF_CHECK)

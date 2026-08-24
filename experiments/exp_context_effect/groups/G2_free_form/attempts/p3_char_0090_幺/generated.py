@@ -49,5 +49,5 @@ stroke_curve(seg2a + seg2b, width=6)
 dot = bezier((180, 225), (188, 235), (195, 248), (208, 262))
 stroke_curve(dot, width=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0090_幺/01_幺.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0090_幺/01_幺.png")
 print("saved")

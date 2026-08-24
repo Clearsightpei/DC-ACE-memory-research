@@ -93,6 +93,6 @@ dab(foot_cx, foot_cy + 1, 7.5)
 dab(foot_cx + 5, foot_cy - 1, 6.2)
 
 # ---- Save ----
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_112_欠/01_欠.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_112_欠/01_欠.png"
 img.save(out)
 print(f"Saved {out}")

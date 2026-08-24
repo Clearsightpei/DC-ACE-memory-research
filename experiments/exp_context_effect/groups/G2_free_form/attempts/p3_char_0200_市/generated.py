@@ -57,5 +57,5 @@ line((214, 174), (198, 162), w=LW)
 # 5. 丨 — long central vertical piercing straight down
 line((150, 100), (150, 275), w=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0200_市/01_市.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0200_市/01_市.png")
 print("wrote 01_市.png")

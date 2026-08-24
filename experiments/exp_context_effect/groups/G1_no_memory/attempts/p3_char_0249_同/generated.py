@@ -27,4 +27,4 @@ d.line([(205, 178), (203, 235)], fill=INK, width=LW)
 # Bottom horizontal of inner 口
 d.line([(108, 235), (203, 235)], fill=INK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0249_同/01_同.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0249_同/01_同.png")

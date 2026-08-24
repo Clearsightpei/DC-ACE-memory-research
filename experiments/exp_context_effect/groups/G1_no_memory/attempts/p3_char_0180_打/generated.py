@@ -30,5 +30,5 @@ stroke([(145, 118), (280, 122)], width=TH)
 # 5. vertical hook (long descender with hook)
 stroke([(215, 122), (215, 250), (195, 260)], width=TH)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0180_打/01_打.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0180_打/01_打.png")
 print("saved")

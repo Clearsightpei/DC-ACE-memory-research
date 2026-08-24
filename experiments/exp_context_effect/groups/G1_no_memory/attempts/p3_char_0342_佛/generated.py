@@ -29,4 +29,4 @@ stroke([(135, 125), (250, 118)], width=5)
 # Lower horizontal crossing all three verticals
 stroke([(125, 180), (255, 175)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0342_佛/01_佛.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0342_佛/01_佛.png")

@@ -84,4 +84,4 @@ dab(h3_x0, h3_y0, 7)     # 顿 start
 line_dabs(h3_x0, h3_y0, h3_x1, h3_y1, 5.5, 5.5)
 dab(h3_x1, h3_y1, 7)     # terminal press
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_082_子/01_子.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_082_子/01_子.png")

@@ -25,7 +25,7 @@ import os, sys
 from PIL import Image, ImageDraw
 
 # Import base primitives from the success bank (READ-ONLY).
-BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
+BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
 sys.path.insert(0, BANK)
 from _anchor import anchor_to_xy, fat_line, quad_bezier, stroke_variable_width
 
@@ -111,6 +111,6 @@ fat_line(d, p8_h, p8_t, width=7)
 p9_h = anchor_to_xy(S9_H); p9_t = anchor_to_xy(S9_T)
 fat_line(d, p9_h, p9_t, width=8)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0488_俑/01_俑.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0488_俑/01_俑.png"
 img.save(out)
 print("saved", out)

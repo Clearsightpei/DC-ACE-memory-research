@@ -64,7 +64,7 @@ for i in range(20):
     dab(x, y, 10 - t * 3)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_009_八/01_八.png"
 )
 print("wrote 01_八.png")

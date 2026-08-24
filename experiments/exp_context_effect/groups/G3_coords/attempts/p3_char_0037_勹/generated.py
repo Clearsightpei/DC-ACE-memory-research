@@ -16,7 +16,7 @@
 from PIL import Image, ImageDraw
 
 CANVAS = 300
-OUT = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0037_勹/01_勹.png"
+OUT = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0037_勹/01_勹.png"
 
 
 def qbez(p0, p1, p2, steps):

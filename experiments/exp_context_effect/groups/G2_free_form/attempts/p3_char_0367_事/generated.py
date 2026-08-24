@@ -66,7 +66,7 @@ poly([(150, 40), (150, 268)], w=7)
 poly([(150, 268), (128, 254)], w=7)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0367_事/01_事.png"
 )
 print("wrote 01_事.png")

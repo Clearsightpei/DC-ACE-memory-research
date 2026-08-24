@@ -75,4 +75,4 @@ in_ctrl = (168, 172)
 dab(in_p0[0], in_p0[1], 4.5)
 bezier_dabs(in_p0, in_ctrl, in_p2, 5, 1.3, steps=120, ease=1.2)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_075_夕/01_夕.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_075_夕/01_夕.png")

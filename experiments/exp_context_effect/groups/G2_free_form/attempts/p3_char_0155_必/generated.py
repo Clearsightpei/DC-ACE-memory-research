@@ -89,5 +89,5 @@ brush_stroke(dot_left, width_start=3, width_end=8)
 dot_right = bezier((235, 145), (255, 158), (275, 172), n=25)
 brush_stroke(dot_right, width_start=3, width_end=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0155_必/01_必.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0155_必/01_必.png")
 print("wrote 01_必.png")

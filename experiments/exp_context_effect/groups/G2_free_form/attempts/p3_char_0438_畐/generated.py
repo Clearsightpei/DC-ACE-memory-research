@@ -82,5 +82,5 @@ stroke([(74, 215), (232, 216)], widths=(5, 5.5))
 # bottom 横 closing
 stroke([(72, 272), (232, 272)], widths=(5.5, 6))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0438_畐/01_畐.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0438_畐/01_畐.png")
 print("saved")

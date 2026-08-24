@@ -71,7 +71,7 @@ line([(263, 135), (258, 228)], width=7)   # 折 down (slight inward)
 line([(188, 227), (262, 226)], width=7)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0190_加/01_加.png"
 )
 print("wrote 01_加.png")

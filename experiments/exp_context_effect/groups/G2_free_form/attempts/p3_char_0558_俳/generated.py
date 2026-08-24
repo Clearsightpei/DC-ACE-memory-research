@@ -75,4 +75,4 @@ stroke(h2R, (6, 5))
 h3R = bez((225, 210), (245, 210), (263, 210), (280, 210), n=30)
 stroke(h3R, (6, 5))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0558_俳/01_俳.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0558_俳/01_俳.png")

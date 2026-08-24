@@ -57,6 +57,6 @@ polyline([(R, SR_TOP), (R - 2, B - 5)])
 # Stroke 5: 横 — bottom horizontal closing the cup
 polyline([(L - 2, B), (R + 2, B - 2)])
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0217_凹/01_凹.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0217_凹/01_凹.png"
 img.save(out)
 print("saved", out)

@@ -48,4 +48,4 @@ stroke([(145, 260), (145, 200)], width=7)
 # Right vertical rising from base
 stroke([(235, 258), (240, 175)], width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0378_疝/01_疝.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0378_疝/01_疝.png")

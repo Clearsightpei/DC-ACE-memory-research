@@ -80,4 +80,4 @@ end = prev
 line(end, (end[0] - 18, end[1] - 18))
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0321_把/01_把.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0321_把/01_把.png")

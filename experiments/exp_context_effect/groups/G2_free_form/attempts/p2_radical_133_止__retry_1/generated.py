@@ -60,6 +60,6 @@ stroke([(95, 130), (95, 240)], width=10)
 stroke([(50, 240), (255, 238)], width=12)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_133_止__retry_1/01_止.png"
 )

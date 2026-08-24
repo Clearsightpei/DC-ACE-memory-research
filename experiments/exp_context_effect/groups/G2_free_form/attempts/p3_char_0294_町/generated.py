@@ -44,5 +44,5 @@ line(v_top, v_bot, w=W)
 hook_end = (200, 218)
 line(v_bot, hook_end, w=W)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0294_町/01_町.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0294_町/01_町.png")
 print("saved")

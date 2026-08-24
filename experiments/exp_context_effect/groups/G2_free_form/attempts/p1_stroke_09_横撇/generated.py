@@ -79,7 +79,7 @@ pie_ctrl = (200, 150)
 dab_bezier(pie_start, pie_ctrl, pie_end, r_start=8.0, r_end=1.2, steps=500)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p1_stroke_09_横撇/01_横撇.png"
 )

@@ -80,5 +80,5 @@ for i in range(steps + 1):
     dab(x, y, r)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_052_广/01_广.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_052_广/01_广.png")
 print("saved")

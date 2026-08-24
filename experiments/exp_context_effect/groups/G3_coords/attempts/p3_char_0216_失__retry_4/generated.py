@@ -80,4 +80,4 @@ for i in range(len(na_pts) - 1):
     w = WIDTH + int(2 * (i / (len(na_pts) - 1)))
     d.line([na_pts[i], na_pts[i + 1]], fill='black', width=w)
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0216_失__retry_4/01_失.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0216_失__retry_4/01_失.png')

@@ -61,4 +61,4 @@ stroke([(150, 180), (150, 242)], width=9)
 # Bottom 一 — WIDEST element (wider than 人 lid)
 stroke([(60, 248), (250, 250)], width=10)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0181_仝/01_仝.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0181_仝/01_仝.png")

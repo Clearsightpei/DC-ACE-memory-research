@@ -85,6 +85,6 @@ gou_hook = [(200, 255), (192, 256), (183, 252), (175, 245)]
 taper_stroke(gou_hook, 9, 3, steps=12)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0107_仃/01_仃.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0107_仃/01_仃.png"
 )
 print("wrote 01_仃.png")

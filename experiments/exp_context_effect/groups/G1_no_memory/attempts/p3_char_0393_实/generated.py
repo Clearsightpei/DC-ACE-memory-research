@@ -30,4 +30,4 @@ stroke([(150, 145), (135, 175), (110, 215), (80, 250), (55, 275)], width=6)
 # 8. 捺 (right-falling)
 stroke([(160, 175), (185, 210), (215, 245), (240, 275)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0393_实/01_实.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0393_实/01_实.png")

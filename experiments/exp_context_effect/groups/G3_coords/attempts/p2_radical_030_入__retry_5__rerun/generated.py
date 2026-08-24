@@ -102,6 +102,6 @@ def draw_ru(canvas_draw):
 
 draw_ru(d)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_030_入__retry_5__rerun/01_入.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_030_入__retry_5__rerun/01_入.png"
 img.save(out_path)
 print(f"wrote {out_path}")

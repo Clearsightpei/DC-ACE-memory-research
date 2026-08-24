@@ -47,5 +47,5 @@ curve(pie)
 na = [peak, (222, 135), (240, 175), (260, 215), (282, 250)]
 curve(na)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0146_队/01_队.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0146_队/01_队.png")
 print("saved")

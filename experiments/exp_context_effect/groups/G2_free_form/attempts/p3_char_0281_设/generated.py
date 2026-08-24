@@ -42,5 +42,5 @@ stroke([(235, 165), (170, 235)], width=8)        # long 撇 down-left
 # 捺 — starts near the crossing, sweeps down-right
 stroke([(180, 195), (260, 265)], width=9)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0281_设/01_设.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0281_设/01_设.png")
 print("done")

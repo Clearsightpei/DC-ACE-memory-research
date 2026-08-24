@@ -8,7 +8,7 @@ Both roughly centered horizontally with visible vertical gap.
 from PIL import Image, ImageDraw
 
 SIZE = 300
-OUT = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0015_二/01_二.png"
+OUT = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0015_二/01_二.png"
 
 img = Image.new("RGB", (SIZE, SIZE), "white")
 d = ImageDraw.Draw(img)

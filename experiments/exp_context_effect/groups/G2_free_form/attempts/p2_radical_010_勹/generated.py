@@ -78,6 +78,6 @@ line_taper(zhu_end, hook_end, r0=5.5, r1=1.2, steps=220)
 
 # ---------------------------------------------------------------------------
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_010_勹/01_勹.png"
 )

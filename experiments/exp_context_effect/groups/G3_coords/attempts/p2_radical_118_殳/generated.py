@@ -158,7 +158,7 @@ def draw_shu(canvas):
 def main():
     img = Image.new("RGB", (W, H), "white")
     draw_shu(img)
-    out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_118_殳/01_殳.png"
+    out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_118_殳/01_殳.png"
     img.save(out)
     print(f"wrote {out}")
 

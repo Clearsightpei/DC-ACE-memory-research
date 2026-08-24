@@ -123,7 +123,7 @@ dab_line(wan_end[0], wan_end[1], hx, hy, R_UNI + 1.5, 1.2)
 # ------------------------------------------------------------------
 # Save
 # ------------------------------------------------------------------
-out_dir = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_24_横撇弯钩"
+out_dir = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_24_横撇弯钩"
 os.makedirs(out_dir, exist_ok=True)
 img.save(os.path.join(out_dir, "01_横撇弯钩.png"))
 print("saved", os.path.join(out_dir, "01_横撇弯钩.png"))

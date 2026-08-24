@@ -37,7 +37,7 @@ import sys
 from PIL import Image, ImageDraw
 
 # Bank imports
-BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code"
+BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code"
 if BANK not in sys.path:
     sys.path.insert(0, BANK)
 
@@ -84,6 +84,6 @@ def render(out_path):
 
 
 if __name__ == "__main__":
-    out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0396_佴/01_佴.png"
+    out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0396_佴/01_佴.png"
     render(out)
     print("wrote", out)

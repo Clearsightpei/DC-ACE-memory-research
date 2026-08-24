@@ -71,5 +71,5 @@ def draw_stroke(idx, head, tail, width=6):
 for i, (head, tail) in enumerate(strokes, 1):
     draw_stroke(i, head, tail, width=6)
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0232_亙/01_亙.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0232_亙/01_亙.png')
 print("rendered 亙 with 6 strokes")

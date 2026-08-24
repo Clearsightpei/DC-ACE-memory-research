@@ -89,5 +89,5 @@ stroke([(200, 145), (200, 262)], widths=[7.0, 6.5])
 # 10. 横 (bottom long bar — extends widest to close the character)
 stroke([(150, 262), (200, 262), (270, 262)], widths=[5.5, 6.5, 5.5])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0538_症/01_症.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0538_症/01_症.png")
 print("saved 01_症.png")

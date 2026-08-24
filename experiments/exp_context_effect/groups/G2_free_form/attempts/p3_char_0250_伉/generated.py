@@ -60,5 +60,5 @@ bezier((250, 126), (255, 200), (260, 245), n=30, width=7)
 # hook flick UP-and-LEFT at the terminal
 stroke([(260, 245), (245, 228)], width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0250_伉/01_伉.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0250_伉/01_伉.png")
 print("wrote 01_伉.png")

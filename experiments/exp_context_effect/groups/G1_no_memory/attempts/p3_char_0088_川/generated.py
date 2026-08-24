@@ -52,6 +52,6 @@ s3 = [
 ]
 stroke(s3)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0088_川/01_川.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0088_川/01_川.png"
 img.save(out)
 print(f"Saved {out}")

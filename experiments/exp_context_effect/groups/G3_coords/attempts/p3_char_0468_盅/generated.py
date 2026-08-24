@@ -58,5 +58,5 @@ def draw_min_bottom(d):
 draw_zhong_top(d)
 draw_min_bottom(d)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0468_盅/01_盅.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0468_盅/01_盅.png")
 print("saved")

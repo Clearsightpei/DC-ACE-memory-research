@@ -124,6 +124,6 @@ line_dabs(V2_BOT[0], V2_BOT[1], HOOK_END[0], HOOK_END[1],
           r_start=R + 0.5, r_end=1.0, steps=180)
 
 # Save
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_059_门/01_门.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_059_门/01_门.png"
 img.save(out_path)
 print(f"saved {out_path}")

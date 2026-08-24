@@ -34,4 +34,4 @@ line([(185, 155), (255, 215)], w=LW)
 # Bottom horizontal stroke (一) - full width
 line([(30, 260), (275, 258)], w=LW+1)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0388_亟/01_亟.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0388_亟/01_亟.png")

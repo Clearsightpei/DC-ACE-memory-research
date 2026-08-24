@@ -70,7 +70,7 @@ line_taper(x_shu, y_top, x_shu, y_bot, r0=5.5, r1=5.5, steps=400)
 dab(x_shu, y_bot, 6.5)  # small terminal press
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_083_丬/01_丬.png"
 )
 print("saved 01_丬.png (revision 1)")

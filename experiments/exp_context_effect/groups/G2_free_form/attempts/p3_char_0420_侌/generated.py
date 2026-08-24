@@ -76,4 +76,4 @@ stroke(sm_turn, width=6)
 sm_dot = [(170, 240), (185, 258)]
 stroke(sm_dot, width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0420_侌/01_侌.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0420_侌/01_侌.png")

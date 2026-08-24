@@ -34,4 +34,4 @@ stroke([(215, 155), (200, 180), (140, 275)], width=5)
 # 捺: from mid going down-right sweeping wide
 stroke([(180, 195), (225, 240), (270, 275)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0480_俊/01_俊.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0480_俊/01_俊.png")

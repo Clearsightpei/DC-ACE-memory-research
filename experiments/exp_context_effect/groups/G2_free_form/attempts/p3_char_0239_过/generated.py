@@ -80,5 +80,5 @@ for i in range(N + 1):
     widths.append(max(3, w))
 brush_curve(pts, widths)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0239_过/01_过.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0239_过/01_过.png")
 print("saved")

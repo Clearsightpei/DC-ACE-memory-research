@@ -48,4 +48,4 @@ curve([(240, 90), (232, 105), (228, 118)])
 # Stroke 6: long right stroke - starts high, goes down and hooks up-right at bottom
 curve([(250, 100), (245, 135), (242, 170), (240, 205), (245, 230), (260, 245), (278, 240)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0565_桃/01_桃.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0565_桃/01_桃.png")

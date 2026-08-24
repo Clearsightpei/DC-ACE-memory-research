@@ -17,7 +17,7 @@ Memory consulted:
 Following MMH anchors verbatim per B7r 比 lesson ("MMH-verbatim > clever math").
 """
 import os, sys
-CODE_DIR = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
+CODE_DIR = "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
 sys.path.insert(0, CODE_DIR)
 
 from PIL import Image, ImageDraw

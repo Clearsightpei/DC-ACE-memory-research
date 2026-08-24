@@ -72,4 +72,4 @@ line_dabs(RV_TOP[0], RV_TOP[1], RV_BOT[0], RV_BOT[1], R_STEM, R_STEM + 0.2)
 dab(RV_BOT[0], RV_BOT[1], R_STEM + 0.5)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_027_凵/01_凵.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_027_凵/01_凵.png")

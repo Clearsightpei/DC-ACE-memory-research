@@ -45,4 +45,4 @@ line((150, 175), (150, 275), w=INK)
 # --- Small heng near lower portion of shu (半-like waist) ---
 line((105, 235), (200, 233), w=INK)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0500_丵/01_丵.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0500_丵/01_丵.png")

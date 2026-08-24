@@ -45,6 +45,6 @@ line(p5, p6)
 # hook (slightly thicker tick that tapers — approximate with a line)
 line(p6, p7, w=T)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_32_横折折折钩/01_横折折折钩.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_32_横折折折钩/01_横折折折钩.png"
 img.save(out_path)
 print(f"Saved {out_path} ({W}x{H})")

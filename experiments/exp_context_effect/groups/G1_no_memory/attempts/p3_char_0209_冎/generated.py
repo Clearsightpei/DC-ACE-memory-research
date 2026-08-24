@@ -28,4 +28,4 @@ d.line([(108, 148), (78, 240)], fill=BLACK, width=LW)
 d.line([(228, 155), (262, 215)], fill=BLACK, width=LW)
 d.line([(262, 215), (248, 222)], fill=BLACK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0209_冎/01_冎.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0209_冎/01_冎.png")

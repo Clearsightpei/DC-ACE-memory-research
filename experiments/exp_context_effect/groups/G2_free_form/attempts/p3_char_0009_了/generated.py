@@ -123,5 +123,5 @@ hook = bezier(
 stroke(hook, r_start=5.5, r_end=1.2, step=1.0)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0009_了/01_了.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0009_了/01_了.png"
 )

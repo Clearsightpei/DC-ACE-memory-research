@@ -53,4 +53,4 @@ d.line([(box_left, box_bot), (box_right, box_bot)], fill=INK, width=LW)
 # extending above and below the box).
 d.line([(box_mid_x, spine_top), (box_mid_x, spine_bot)], fill=INK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0159_申/01_申.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0159_申/01_申.png")

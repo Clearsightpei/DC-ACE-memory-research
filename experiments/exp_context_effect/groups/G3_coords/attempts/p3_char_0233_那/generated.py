@@ -117,7 +117,7 @@ def main():
     draw_left_component(draw)
     draw_right_ear(draw)
 
-    out_path = ("/Users/peilinwu/Documents/AI memory research/experiments/"
+    out_path = ("<REPO_ROOT>/experiments/"
                 "exp_context_effect/groups/G3_coords/attempts/"
                 "p3_char_0233_那/01_那.png")
     img.save(out_path)

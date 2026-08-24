@@ -133,7 +133,7 @@ for k in range(0, 14):
     dab(fx + k * 0.7, fy + k * 0.15, 6.0 - k * 0.2)
 dab(p0[0], p0[1], 3)
 
-out = ("/Users/peilinwu/Documents/AI memory research/experiments/"
+out = ("<REPO_ROOT>/experiments/"
        "exp_context_effect/groups/G2_free_form/attempts/"
        "p3_char_0291_这/01_这.png")
 img.save(out)

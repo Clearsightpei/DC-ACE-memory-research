@@ -55,6 +55,6 @@ line((115, BASE_Y + 3), (85, 285), w=6)
 # Stroke 8: 点 (right foot) — from around baseline center-right, slanting down-right
 line((185, BASE_Y + 3), (215, 285), w=6)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0425_具/01_具.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0425_具/01_具.png"
 img.save(out_path)
 print(f"Wrote {out_path}")

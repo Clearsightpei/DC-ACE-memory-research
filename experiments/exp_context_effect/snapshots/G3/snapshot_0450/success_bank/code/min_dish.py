@@ -51,5 +51,5 @@ d.line([(225, 100), (218, 205)], fill=INK, width=LW)
 # --- Stroke 5: long bottom horizontal (extends beyond box on both sides) ---
 d.line([(35, 220), (270, 218)], fill=INK, width=LW+1)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0195_皿/01_皿.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0195_皿/01_皿.png")
 print("saved")

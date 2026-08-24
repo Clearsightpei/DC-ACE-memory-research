@@ -31,5 +31,5 @@ stroke([(170, 110), (165, 245)], width=6)
 # Right vertical of right component (slight lean)
 stroke([(235, 110), (245, 250)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0398_併/01_併.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0398_併/01_併.png")
 print("saved")

@@ -45,7 +45,7 @@ def main():
     img = Image.new("RGB", (W, H), "white")
     draw = ImageDraw.Draw(img)
     draw_shuzhe(draw, ox=0, oy=0, scale=1.0, ink=10)
-    out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_15_竖折/01_竖折.png"
+    out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_15_竖折/01_竖折.png"
     img.save(out)
     print(f"wrote {out}")
 

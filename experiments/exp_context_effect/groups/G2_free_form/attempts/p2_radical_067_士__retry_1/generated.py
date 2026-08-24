@@ -68,6 +68,6 @@ line_seg(bot_x_left, bot_y_left, bot_x_right, bot_y_right, 5, 5)
 dab(bot_x_right, bot_y_right, 6)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_067_士__retry_1/01_士.png"
 )

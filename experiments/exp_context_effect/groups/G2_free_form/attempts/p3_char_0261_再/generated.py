@@ -61,5 +61,5 @@ brush(wob(100, 115, 210, 117, segs=8, j=1.0), width=7)
 #    Bottom compartment inner horizontal (between long middle and bottom):
 brush(wob(100, 200, 208, 202, segs=8, j=1.0), width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0261_再/01_再.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0261_再/01_再.png")
 print("saved")

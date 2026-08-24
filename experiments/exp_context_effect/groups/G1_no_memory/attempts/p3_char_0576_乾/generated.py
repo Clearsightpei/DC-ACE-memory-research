@@ -50,5 +50,5 @@ sweep = [
 ]
 line(sweep, 4)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0576_乾/01_乾.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0576_乾/01_乾.png")
 print("saved")

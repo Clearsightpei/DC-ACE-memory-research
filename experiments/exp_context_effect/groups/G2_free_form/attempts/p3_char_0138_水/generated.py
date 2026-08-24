@@ -60,6 +60,6 @@ dab_line([(140, 135), (95, 195), (48, 245)], 7, 3)
 dab_line([(158, 150), (200, 190), (255, 232)], 4, 8)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0138_水/01_水.png"
 )

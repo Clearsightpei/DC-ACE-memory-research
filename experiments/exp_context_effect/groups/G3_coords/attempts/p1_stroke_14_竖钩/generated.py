@@ -58,6 +58,6 @@ d.ellipse(
     fill="black",
 )
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_14_竖钩/01_竖钩.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_14_竖钩/01_竖钩.png"
 img.save(out)
 print("wrote", out)

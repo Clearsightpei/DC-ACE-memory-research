@@ -114,4 +114,4 @@ stroke(jin_hook, (7, 3))
 center_v = bez((151, 152), (151, 210), (151, 250), (151, 285), n=60)
 stroke(center_v, (8, 6))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0577_常/01_常.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0577_常/01_常.png")

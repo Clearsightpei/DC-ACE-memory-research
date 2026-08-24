@@ -58,7 +58,7 @@ heng(draw, x0=100, y0=122, x1=205, y1=118, thickness=11, arc=5)
 heng(draw, x0=50, y0=228, x1=250, y1=222, thickness=13, arc=6)
 
 out = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G1_no_memory/attempts/"
     "p2_radical_018_二/01_二.png"
 )

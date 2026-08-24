@@ -80,4 +80,4 @@ for i in range(len(hook_pts) - 1):
     w = max(1, W_SPINE - i - 1)
     t.line([hook_pts[i], hook_pts[i + 1]], fill=INK, width=w)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0367_事/01_事.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0367_事/01_事.png")

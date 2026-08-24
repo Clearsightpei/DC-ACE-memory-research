@@ -72,4 +72,4 @@ stroke(yi, width=6)
 # hook flick — UP-and-LEFT from the bottom-right (per memory: 横折弯钩 ~ -115°)
 stroke([(248, 272), (243, 248)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0374_疙/01_疙.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0374_疙/01_疙.png")

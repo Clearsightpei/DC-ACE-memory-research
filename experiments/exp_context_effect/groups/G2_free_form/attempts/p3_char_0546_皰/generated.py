@@ -108,4 +108,4 @@ curve_out = bez((185, 215), (195, 220), (208, 220), (220, 218), n=40)
 stroke(curve_out, (5, 5))
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0546_皰/01_皰.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0546_皰/01_皰.png")

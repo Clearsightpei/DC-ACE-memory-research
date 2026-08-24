@@ -59,6 +59,6 @@ d.line([(230, 185), (222, 260)], fill=INK, width=LW)
 # Bottom long horizontal (extends beyond box)
 d.line([(40, 273), (275, 271)], fill=INK, width=LW + 1)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0554_监/01_监.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0554_监/01_监.png"
 img.save(out_path)
 print(f"saved {out_path}")

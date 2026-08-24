@@ -40,4 +40,4 @@ stroke([(160, 190), (250, 190), (250, 250)], w=7)
 # 横 (bottom closing horizontal)
 stroke([(160, 250), (250, 250)], w=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0389_话/01_话.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0389_话/01_话.png")

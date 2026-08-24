@@ -39,6 +39,6 @@ d.line([(box_left, box_bottom), (box_right, box_bottom)], fill=INK, width=T)
 # Stroke 5: 竖 - long vertical through center, extending below the box
 d.line([(center_x, box_top + 4), (center_x, bottom_v)], fill=INK, width=T)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0157_甲/01_甲.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0157_甲/01_甲.png"
 img.save(out_path)
 print(f"Saved {out_path}")

@@ -90,6 +90,6 @@ brush_stroke(flick_pts, flick_ws)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0274_伫/01_伫.png"
 )

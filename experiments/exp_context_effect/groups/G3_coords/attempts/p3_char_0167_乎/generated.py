@@ -63,5 +63,5 @@ d.line([(155, 140), (150, 250)], fill=BLACK, width=5)
 # Hook curving up-left from bottom
 draw_pie([(150, 250), (138, 258), (118, 248)], w_head=5, w_tail=3, steps=20)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0167_乎/01_乎.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0167_乎/01_乎.png")
 print("wrote 01_乎.png")

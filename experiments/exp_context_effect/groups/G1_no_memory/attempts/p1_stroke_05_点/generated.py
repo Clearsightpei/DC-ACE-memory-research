@@ -27,6 +27,6 @@ for i in range(steps):
         w = 3 + int(11 * 0.85) - int((t1 - 0.85) * 20)
     draw.line([(xa, ya), (xb, yb)], fill="black", width=max(1, w))
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_05_点/01_点.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_05_点/01_点.png"
 img.save(out)
 print(out)

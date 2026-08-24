@@ -40,7 +40,7 @@ def main():
     t = ImageDraw.Draw(img)
     draw_yue(t)
     img.save(
-        "/Users/peilinwu/Documents/AI memory research/experiments/"
+        "<REPO_ROOT>/experiments/"
         "exp_context_effect/groups/G3_coords/attempts/"
         "p2_radical_129_曰/01_曰.png"
     )

@@ -69,5 +69,5 @@ line(108, 152, 108, 215, w=4)
 # --- Stroke 7: bottom 横 of the box ---
 polyline([(108, 216), (160, 215), (210, 216)], w=4)
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0315_声__retry_3/01_声.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0315_声__retry_3/01_声.png')
 print("wrote 01_声.png")

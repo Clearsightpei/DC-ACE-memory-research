@@ -176,7 +176,7 @@ def draw_qiao(dr):
 
 draw_qiao(draw)
 
-out_path = ("/Users/peilinwu/Documents/AI memory research/"
+out_path = ("<REPO_ROOT>/"
             "experiments/exp_context_effect/groups/G3_coords/"
             "attempts/p3_char_0226_乔__retry_1/01_乔.png")
 img.save(out_path)

@@ -48,6 +48,6 @@ stroke([(105, 220), (75, 260)])
 # 6. Bottom-right 捺 (short slant down-right)
 stroke([(195, 220), (240, 258)])
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0196_东/01_东.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0196_东/01_东.png"
 img.save(out)
 print("saved", out)

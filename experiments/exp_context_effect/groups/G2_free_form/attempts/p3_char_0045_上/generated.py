@@ -41,4 +41,4 @@ draw.line([h3_left, h3_right], fill=INK, width=WIDTH)
 draw.ellipse([h3_left[0]-4, h3_left[1]-4, h3_left[0]+6, h3_left[1]+6], fill=INK)
 draw.ellipse([h3_right[0]-6, h3_right[1]-6, h3_right[0]+4, h3_right[1]+6], fill=INK)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0045_上/01_上.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0045_上/01_上.png")

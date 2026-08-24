@@ -109,5 +109,5 @@ hx1 = hx0 + hook_len * math.cos(hook_angle)
 hy1 = hy0 + hook_len * math.sin(hook_angle)
 line_dab(hx0, hy0, hx1, hy1, r_start=7.0, r_end=1.0, steps=170)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0021_几__retry_1/01_几.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0021_几__retry_1/01_几.png")
 print("wrote 01_几.png")

@@ -26,5 +26,5 @@ stroke([(185, 92), (186, 160), (188, 235)], width=6)
 # 5. Bottom horizontal (longest, slight upward tilt at right): from (115, 240) to (265, 232)
 stroke([(115, 240), (190, 236), (270, 230)], width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0275_任/01_任.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0275_任/01_任.png")
 print("wrote 01_任.png")

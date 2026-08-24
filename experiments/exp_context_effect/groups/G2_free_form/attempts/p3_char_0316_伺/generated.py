@@ -71,6 +71,6 @@ line([(mouth_R - 5, mouth_T + 2), (mouth_R, mouth_B - 2)], width=7)
 # (5) bottom 横 of 口
 line([(mouth_L, mouth_B), (mouth_R, mouth_B - 2)], width=7)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0316_伺/01_伺.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0316_伺/01_伺.png"
 img.save(out)
 print("saved", out)

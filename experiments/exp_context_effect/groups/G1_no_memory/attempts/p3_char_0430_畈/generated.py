@@ -33,4 +33,4 @@ d.line([(178, 165), (250, 155)], fill="black", width=LW)
 # Stroke 4: 捺 (na) — big sweeping stroke from interior down-right
 d.line([(200, 165), (275, 250)], fill="black", width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0430_畈/01_畈.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0430_畈/01_畈.png")

@@ -54,7 +54,7 @@ stroke([(158, 135), (158, 275)], [3.5, 3.0])
 stroke([(190, 175), (220, 210)], [2.0, 5.0])
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0139_礻/01_礻.png"
 )
 print("wrote 01_礻.png")

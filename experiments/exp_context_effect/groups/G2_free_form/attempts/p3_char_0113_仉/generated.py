@@ -128,6 +128,6 @@ hook_ctrl = (tail_end[0] + 0.45 * hook_len * math.cos(rad) + 1,
 bezier_dabs(tail_end, hook_ctrl, hook_end, r0=5.5, r1=1.2, steps=120)
 
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0113_仉/01_仉.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0113_仉/01_仉.png"
 img.save(out_path)
 print(f"Saved {out_path}")

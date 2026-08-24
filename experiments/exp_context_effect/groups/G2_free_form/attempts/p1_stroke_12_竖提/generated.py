@@ -45,7 +45,7 @@ ti_end = (235, 165)  # rises up-right (y decreases in image coords)
 dab_line(shu_bot, ti_end, r_start=8.0, r_end=1.2, steps=380)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p1_stroke_12_竖提/01_竖提.png"
 )
 print("done")

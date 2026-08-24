@@ -81,7 +81,7 @@ def main():
     img = Image.new('RGB', (300, 300), 'white')
     draw = ImageDraw.Draw(img)
     draw_shu_gou(draw)
-    out = '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_002_亅__retry_1/01_亅.png'
+    out = '<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_002_亅__retry_1/01_亅.png'
     img.save(out)
     print(f'wrote {out}')
 

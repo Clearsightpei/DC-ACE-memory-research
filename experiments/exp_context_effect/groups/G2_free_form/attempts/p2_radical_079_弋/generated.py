@@ -104,7 +104,7 @@ dab(d_end[0], d_end[1], 7.5)
 
 # --- save
 out_path = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/p2_radical_079_弋/"
     "01_弋.png"
 )

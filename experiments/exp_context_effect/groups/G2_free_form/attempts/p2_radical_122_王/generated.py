@@ -87,6 +87,6 @@ shu(CX - 5, Y_TOP - 8, Y_BOT + 8, w_top=8, w_bot=7)
 heng(CX - HALF_BOT, CX + HALF_BOT, Y_BOT, w_start=7, w_end=7, tilt=3)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_122_王/01_王.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_122_王/01_王.png"
 )
 print("Wrote 01_王.png")

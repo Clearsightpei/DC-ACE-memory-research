@@ -78,4 +78,4 @@ ctrl = (190, 250)  # bow rightward/downward
 brush_dab(*p0, 5)
 bezier(p0, ctrl, p2, (11, 3), steps=80)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0091_乡/01_乡.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0091_乡/01_乡.png")

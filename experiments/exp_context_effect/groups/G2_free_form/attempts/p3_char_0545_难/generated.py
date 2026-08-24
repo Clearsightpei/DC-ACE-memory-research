@@ -36,4 +36,4 @@ stroke([(180, 208), (248, 208)], width=6)
 # 底横 (bottom horizontal — extends across whole right component)
 stroke([(160, 253), (283, 253)], width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0545_难/01_难.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0545_难/01_难.png")

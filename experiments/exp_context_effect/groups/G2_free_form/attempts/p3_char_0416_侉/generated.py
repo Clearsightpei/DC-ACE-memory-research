@@ -74,4 +74,4 @@ stroke(hook_pts, width=8)
 # small hook flick up-and-left at the terminal
 stroke([(145, 268), (135, 258)], width=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0416_侉/01_侉.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0416_侉/01_侉.png")

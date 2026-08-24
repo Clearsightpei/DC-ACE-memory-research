@@ -54,7 +54,7 @@ def main():
     gx1, gy1 = hx1 - 26, hy1 + 36  # ~53 px length, steep down-left
     dab_line(draw, gx0, gy0, gx1, gy1, r_start=9.5, r_end=1.2, steps=300)
 
-    out = ("/Users/peilinwu/Documents/AI memory research/experiments/"
+    out = ("<REPO_ROOT>/experiments/"
            "exp_context_effect/groups/G2_free_form/attempts/"
            "p1_stroke_10_横钩/01_横钩.png")
     img.save(out)

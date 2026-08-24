@@ -47,6 +47,6 @@ stroke([(146, 178), (222, 178)], width=5)
 # Stroke 6: 横 inside (lower)
 stroke([(146, 220), (222, 220)], width=5)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0221_有/01_有.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0221_有/01_有.png"
 img.save(out)
 print(f"Saved {out}")

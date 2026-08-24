@@ -33,5 +33,5 @@ line((55, 232), (95, 232))
 # Bottom horizontal (longest, extends from near vertical to right)
 line((82, 235), (240, 232))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0182_正/01_正.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0182_正/01_正.png")
 print("saved")

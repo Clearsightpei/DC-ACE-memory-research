@@ -119,7 +119,7 @@ def main():
     # Stroke 2 (starts with N-gap from s1's midpoint region)
     draw_heng_zhe_gou_bao(draw, s2_head, s2_tail, width=6)
 
-    out = '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_010_勹/01_勹.png'
+    out = '<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_010_勹/01_勹.png'
     img.save(out)
     print(f'wrote {out}')
 

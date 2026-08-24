@@ -36,4 +36,4 @@ hzwg = [
 ]
 stroke(hzwg, width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0187_仡/01_仡.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0187_仡/01_仡.png")

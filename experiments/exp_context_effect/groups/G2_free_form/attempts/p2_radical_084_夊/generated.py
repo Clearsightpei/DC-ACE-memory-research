@@ -95,6 +95,6 @@ def na_stroke(p0, p1, p2, r0, r_peak, r_end, steps=350):
 na_stroke((152, 112), (180, 200), (275, 258), 1.6, 11.0, 4.5, steps=380)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_084_夊/01_夊.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_084_夊/01_夊.png"
 )
 print("saved")

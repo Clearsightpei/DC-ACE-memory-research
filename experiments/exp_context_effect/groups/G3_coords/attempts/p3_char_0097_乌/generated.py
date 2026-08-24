@@ -62,6 +62,6 @@ qbez((235, 250), (240, 270), (215, 265), steps=25, w=W)
 line((55, 260), (225, 258), w=W)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G3_coords/attempts/p3_char_0097_乌/01_乌.png"
 )

@@ -110,5 +110,5 @@ SELF_CHECK = {
              'heng_zhe + heng + shu_wan_gou.',
 }
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0505_起/01_起.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0505_起/01_起.png')
 print('OK')

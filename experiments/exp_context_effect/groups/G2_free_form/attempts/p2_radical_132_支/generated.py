@@ -92,5 +92,5 @@ stroke(s4, width_start=3, width_end=10, steps=70)
 # Foot terminal
 d.ellipse((240 - 8, 260 - 5, 240 + 9, 260 + 6), fill="black")
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_132_支/01_支.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_132_支/01_支.png")
 print("saved")

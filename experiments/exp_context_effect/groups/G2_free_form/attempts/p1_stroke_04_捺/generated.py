@@ -127,7 +127,7 @@ draw.polygon(
 )
 
 out_path = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p1_stroke_04_捺/01_捺.png"
 )

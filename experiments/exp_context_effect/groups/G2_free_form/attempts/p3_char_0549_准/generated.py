@@ -90,5 +90,5 @@ stroke(h3, (5, 6))
 h_bot = [(x, 248 + (x - 130) * 0.005) for x in range(130, 275, 2)]
 stroke(h_bot, (6, 8))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0549_准/01_准.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0549_准/01_准.png")
 print("saved")

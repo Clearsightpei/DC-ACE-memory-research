@@ -65,4 +65,4 @@ teardrop(p0=(95, 125), p1=(125, 155), r0=1.8, r1=5.5)
 # This is the longest stroke and anchors the cluster.
 ti_stroke(p0=(90, 250), p1=(180, 190), r_start=6.5, r_end=1.0, steps=350)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_069_氵/01_氵.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_069_氵/01_氵.png")

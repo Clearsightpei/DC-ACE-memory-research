@@ -65,5 +65,5 @@ for i in range(M):
         w = 2
     draw.line([hpts[i], hpts[i+1]], fill="black", width=w)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_07_弯钩/01_弯钩.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_07_弯钩/01_弯钩.png")
 print("saved 01_弯钩.png")

@@ -37,4 +37,4 @@ draw.line([(78, 195), (155, 180)], fill=INK, width=WIDTH)  # left half of crossb
 draw.line([(155, 180), (230, 185)], fill=INK, width=WIDTH) # right half of crossbar
 draw.line([(230, 185), (222, 120)], fill=INK, width=WIDTH) # right rising tick
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0084_屮/01_屮.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0084_屮/01_屮.png")

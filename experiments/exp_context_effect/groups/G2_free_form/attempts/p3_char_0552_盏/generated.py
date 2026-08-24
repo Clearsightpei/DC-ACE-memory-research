@@ -97,4 +97,4 @@ stroke(rw, (7, 7))
 b_bot = bez((55, 278), (130, 275), (200, 275), (265, 278), n=70)
 stroke(b_bot, (7, 10))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0552_盏/01_盏.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0552_盏/01_盏.png")

@@ -123,6 +123,6 @@ stroke_polyline_pts(点_pts, r_start=4.5, r_end=1.8)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0116_公/01_公.png"
 )

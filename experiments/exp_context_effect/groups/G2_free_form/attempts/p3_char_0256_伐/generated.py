@@ -66,6 +66,6 @@ dot = bezier((250, 70), (260, 82), (255, 100))
 stroke(dot, width=8)
 
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0256_伐/01_伐.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0256_伐/01_伐.png"
 img.save(out)
 print("saved", out)

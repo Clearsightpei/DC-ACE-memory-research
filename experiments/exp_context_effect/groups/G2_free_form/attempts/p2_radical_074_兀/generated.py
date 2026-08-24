@@ -98,5 +98,5 @@ ay = h2_end_y + hook_len * math.sin(math.radians(angle_deg))
 line_dabs(h2_end_x, h2_end_y, ax, ay, 3.5, 1.2)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_074_兀/01_兀.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_074_兀/01_兀.png")
 print("wrote 01_兀.png")

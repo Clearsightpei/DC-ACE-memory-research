@@ -62,5 +62,5 @@ for t in range(0, 35):
     pts2.append((x, y))
 stroke(pts2, base=5, taper=4)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0436_畏/01_畏.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0436_畏/01_畏.png")
 print("saved")

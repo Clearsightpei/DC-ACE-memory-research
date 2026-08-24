@@ -72,5 +72,5 @@ curve_quad((205, 225), (215, 260), (260, 265), w=6)
 # hook flick up at end
 line((260, 265), (272, 245), w=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0578_乿/01_乿.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0578_乿/01_乿.png")
 print("wrote 01_乿.png")

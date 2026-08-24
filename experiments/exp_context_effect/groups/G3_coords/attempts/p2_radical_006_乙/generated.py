@@ -83,6 +83,6 @@ draw_curve(path, widths, steps_per_seg=80)
 stamp(178, 102, 5.5)   # top-right 折
 stamp(216, 246, 5.5)   # bottom-right corner before hook
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_006_乙/01_乙.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_006_乙/01_乙.png"
 img.save(out_path)
 print(f"Saved: {out_path}")

@@ -78,4 +78,4 @@ stroke(bot_tail, (12, 3))
 last_dot = bez((168, 210), (176, 225), (183, 240), (188, 250), n=25)
 stroke(last_dot, (4, 8))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0458_癸/01_癸.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0458_癸/01_癸.png")

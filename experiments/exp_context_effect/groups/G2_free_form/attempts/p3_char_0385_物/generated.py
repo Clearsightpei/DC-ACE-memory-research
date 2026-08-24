@@ -87,7 +87,7 @@ stroke_poly(s7, width=5)
 s8 = bezier((235, 165), (200, 218), (145, 275))
 stroke_poly(s8, width=6)
 
-out = ("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+out = ("<REPO_ROOT>/experiments/exp_context_effect/"
        "groups/G2_free_form/attempts/p3_char_0385_物/01_物.png")
 img.save(out)
 print("wrote", out)

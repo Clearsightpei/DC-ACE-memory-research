@@ -88,7 +88,7 @@ brush([(255, 240), (275, 262)], [2.0, 4.5])
 
 
 out = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p3_char_0534_痃/01_痃.png"
 )

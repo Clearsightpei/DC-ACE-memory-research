@@ -60,5 +60,5 @@ dab(245, 148, 8)
 # Hook: down-left flick from (245, 148) to (228, 205)
 teardrop(245, 150, 226, 208, 7, 3, steps=22)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0080_宀/01_宀.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0080_宀/01_宀.png")
 print("Wrote 01_宀.png")

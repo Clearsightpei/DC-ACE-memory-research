@@ -57,6 +57,6 @@ vpts = [(210, 82), (214, 150), (218, 220), (222, 278)]
 stroke(vpts, w=9)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0233_那/01_那.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0233_那/01_那.png"
 )
 print("saved")

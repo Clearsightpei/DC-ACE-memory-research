@@ -38,5 +38,5 @@ stroke(bot_left, bot_right, width=10)
 mid_x = 152
 stroke((mid_x, top_y + 2), (mid_x + 2, bot_y - 1), width=10)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0087_工/01_工.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0087_工/01_工.png")
 print("saved")

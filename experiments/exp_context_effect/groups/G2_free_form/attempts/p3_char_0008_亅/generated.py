@@ -67,7 +67,7 @@ bezier((180, 235), (172, 246), (138, 240), 6.5, 1.2, steps=140)
 dab(180, 235, 6.5)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0008_亅/01_亅.png"
 )
 print("saved")

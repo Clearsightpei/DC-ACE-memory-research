@@ -101,7 +101,7 @@ def draw_heng_zhe(draw, head_anchor, corner_anchor, tail_anchor,
 # ---- Render -----------------------------------------------------------
 
 OUT_PATH = Path(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G4_grid/attempts/p1_stroke_11_横折/01_横折.png"
 )
 

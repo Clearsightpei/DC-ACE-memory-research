@@ -48,6 +48,6 @@ for i in range(steps):
     w = max(1, int(round(12 * (1 - t1))))
     draw.line([(x0, y0), (x1, y1)], fill="black", width=w)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_10_横钩/01_横钩.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_10_横钩/01_横钩.png"
 img.save(out)
 print(f"saved {out}")

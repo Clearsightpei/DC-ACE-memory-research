@@ -49,6 +49,6 @@ stroke(捺_pts, width=7)
 # 点 (top-right dot, small slanted mark above/right of 横)
 stroke([(240, 95), (255, 115)], width=8)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0325_状/01_状.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0325_状/01_状.png"
 img.save(out_path)
 print(f"Saved {out_path}")

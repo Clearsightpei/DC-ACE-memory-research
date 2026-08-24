@@ -56,5 +56,5 @@ line([
     (248, 215),  # hook flick UP-and-LEFT
 ])
 
-im.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0214_记/01_记.png")
+im.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0214_记/01_记.png")
 print("saved 01_记.png")

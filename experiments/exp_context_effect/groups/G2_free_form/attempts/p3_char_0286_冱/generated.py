@@ -63,5 +63,5 @@ bot_widths = [5, 7, 7, 6]
 brush_stroke(bot_h, bot_widths)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0286_冱/01_冱.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0286_冱/01_冱.png")
 print("Saved 01_冱.png")

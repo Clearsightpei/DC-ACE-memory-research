@@ -79,5 +79,5 @@ stroke(c1, width=7)
 stroke([(250, 260), (235, 225)], width=7)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0357_花/01_花.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0357_花/01_花.png")
 print("wrote 01_花.png")

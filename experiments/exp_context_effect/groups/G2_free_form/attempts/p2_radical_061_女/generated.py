@@ -87,4 +87,4 @@ line_taper(h_start, h_end, 5.0, 5.0, steps=260)
 dab(h_end[0], h_end[1], 6.5)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_061_女/01_女.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_061_女/01_女.png")

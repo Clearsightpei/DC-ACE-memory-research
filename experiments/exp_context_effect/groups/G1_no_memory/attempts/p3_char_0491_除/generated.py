@@ -42,5 +42,5 @@ stroke([(208, 195), (160, 250)], width=5)
 # Bottom right diagonal (捺)
 stroke([(208, 195), (255, 245)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0491_除/01_除.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0491_除/01_除.png")
 print("saved")

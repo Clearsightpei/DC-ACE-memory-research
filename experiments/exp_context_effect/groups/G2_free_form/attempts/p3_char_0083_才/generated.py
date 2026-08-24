@@ -76,4 +76,4 @@ pie_pts = [
 ]
 brush_line(pie_pts, width_start=8, width_end=3)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0083_才/01_才.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0083_才/01_才.png")

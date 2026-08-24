@@ -96,4 +96,4 @@ stroke(inner_h1, (5, 5))
 inner_h2 = bez((135, 200), (170, 198), (210, 198), (243, 200), n=40)
 stroke(inner_h2, (5, 5))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0488_俑/01_俑.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0488_俑/01_俑.png")

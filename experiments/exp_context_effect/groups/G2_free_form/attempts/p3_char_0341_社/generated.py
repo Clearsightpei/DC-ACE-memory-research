@@ -45,5 +45,5 @@ line((210, 110), (210, 230), w=7)
 # 7) bottom 横 (LONGER, ~1.5x top)
 line((155, 230), (275, 230), w=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0341_社/01_社.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0341_社/01_社.png")
 print("saved")

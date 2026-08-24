@@ -68,7 +68,7 @@ def main():
     img = Image.new('RGB', (300, 300), 'white')
     draw = ImageDraw.Draw(img)
     draw_yi(draw)
-    img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_006_乙/01_乙.png')
+    img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_006_乙/01_乙.png')
 
 
 if __name__ == '__main__':

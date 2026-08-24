@@ -85,5 +85,5 @@ tapered_specs = [
 for pts, (ws, we) in zip(strokes_pie, tapered_specs):
     curved_pie(list(pts), ws, we, steps=50)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0323_形/01_形.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0323_形/01_形.png")
 print("saved 01_形.png")

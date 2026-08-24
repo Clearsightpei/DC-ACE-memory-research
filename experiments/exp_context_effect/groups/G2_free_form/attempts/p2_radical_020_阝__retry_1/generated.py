@@ -92,6 +92,6 @@ line_dabs(SPINE_X, EAR_TOP_Y + 2, SPINE_X, 258, 7, 7.5, steps=400)
 dab(SPINE_X, EAR_TOP_Y + 2, 7.5)   # top 顿笔
 dab(SPINE_X, 258, 8)               # bottom press (blunt)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_020_阝__retry_1/01_阝.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_020_阝__retry_1/01_阝.png"
 img.save(out_path)
 print(f"Saved: {out_path}")

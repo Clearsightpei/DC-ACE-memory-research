@@ -115,5 +115,5 @@ taper_bezier(in_dot_p0, in_dot_c, in_dot_p2, r_start=2.5, r_end=3.8, steps=350)
 dab(in_dot_p2[0], in_dot_p2[1], 4)  # small foot
 
 # ---------------------------------------------------------------
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0144_风/01_风.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0144_风/01_风.png")
 print("Saved 01_风.png")

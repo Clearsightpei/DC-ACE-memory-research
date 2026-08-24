@@ -103,4 +103,4 @@ stroke(inner1, (5, 5))
 inner2 = bez((L + 6, T + 150), (L + 30, T + 149), (L + 55, T + 149), (R - 4, T + 151), n=50)
 stroke(inner2, (5, 5))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0455_相/01_相.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0455_相/01_相.png")

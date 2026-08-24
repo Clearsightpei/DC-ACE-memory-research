@@ -105,7 +105,7 @@ def main():
     d = ImageDraw.Draw(img)
     draw_zhe_left(d)
     draw_right_ear(d)
-    out = ("/Users/peilinwu/Documents/AI memory research/experiments/"
+    out = ("<REPO_ROOT>/experiments/"
            "exp_context_effect/groups/G3_coords/attempts/"
            "p3_char_0503_都/01_都.png")
     img.save(out)

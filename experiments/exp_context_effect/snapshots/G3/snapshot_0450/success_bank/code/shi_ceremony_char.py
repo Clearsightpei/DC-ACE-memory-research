@@ -10,7 +10,7 @@ import sys
 from PIL import Image, ImageDraw
 
 _BANK = os.path.join(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G3_coords/success_bank/code"
 )
 if _BANK not in sys.path:
@@ -19,7 +19,7 @@ if _BANK not in sys.path:
 from shi_ceremony_pang import draw_shi_ceremony_pang  # noqa: E402
 
 CANVAS = 300
-OUT = ("/Users/peilinwu/Documents/AI memory research/"
+OUT = ("<REPO_ROOT>/"
        "experiments/exp_context_effect/groups/G3_coords/"
        "attempts/p3_char_0139_礻/01_礻.png")
 

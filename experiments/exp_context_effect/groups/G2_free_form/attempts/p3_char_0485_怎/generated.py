@@ -121,5 +121,5 @@ taper_line(210, 182, 235, 218, 2.4, 5.8, steps=140)
 dab(235, 218, 6.0)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0485_怎/01_怎.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0485_怎/01_怎.png")
 print("saved")

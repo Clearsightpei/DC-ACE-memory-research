@@ -49,5 +49,5 @@ stroke([(155, 165), (130, 240)], width=7)
 # --- 7. Long 丨 vertical descending well below horizontal, center-right ---
 stroke([(180, 185), (180, 275)], width=9)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0278_齐/01_齐.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0278_齐/01_齐.png")
 print("saved")

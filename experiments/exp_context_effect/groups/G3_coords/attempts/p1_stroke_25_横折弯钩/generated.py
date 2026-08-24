@@ -125,7 +125,7 @@ def main():
     draw = ImageDraw.Draw(img)
     draw_heng_zhe_wan_gou(draw, ox=0, oy=0, scale=1.0)
     out_path = (
-        "/Users/peilinwu/Documents/AI memory research/experiments/"
+        "<REPO_ROOT>/experiments/"
         "exp_context_effect/groups/G3_coords/attempts/"
         "p1_stroke_25_横折弯钩/01_横折弯钩.png"
     )

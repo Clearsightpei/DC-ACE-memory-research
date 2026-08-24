@@ -135,7 +135,7 @@ draw.line([(60, 240), (240, 240)], fill=(0, 0, 0), width=5)
 draw.line([(150, 218), (150, 290)], fill=(0, 0, 0), width=5)
 
 
-out_path = ("/Users/peilinwu/Documents/AI memory research/"
+out_path = ("<REPO_ROOT>/"
             "experiments/exp_context_effect/groups/G3_coords/"
             "attempts/p3_char_0544_皋/01_皋.png")
 img.save(out_path)

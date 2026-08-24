@@ -57,5 +57,5 @@ cubic((208, 68), (215, 130), (225, 210), (238, 240), width=W_STROKE)
 # curve/hook to the right at bottom
 bezier((238, 240), (255, 258), (278, 252), width=W_STROKE)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0280_兆/01_兆.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0280_兆/01_兆.png")
 print("saved")

@@ -64,7 +64,7 @@ Single-writer rule per file. The Curator is the only writer of
 ## Multi-run support — ONE repo, runs are folders
 
 All runs live as **plain folders inside this single project repo**
-(`github.com/Clearsightpei/DC-ACE-memory-research`). There are no
+(`github.com/[ANONYMIZED-USER]/[ANONYMIZED-REPO]`). There are no
 per-run git repos and no per-run GitHub remotes — every run's
 cycle-by-cycle history is committed to and pushed from the one project
 repo. This is deliberate: a research paper needs one repository whose
@@ -95,7 +95,7 @@ active_run.txt                                         # one line: path of the a
 
 `runs/run_1/` is the completed 12-cycle first experiment (old
 phase-correlation judge). Its granular cycle-by-cycle history also
-remains archived at https://github.com/Clearsightpei/dc-ace-run as a
+remains archived at https://github.com/[ANONYMIZED-USER]/[ANONYMIZED-ARCHIVE] as a
 redundant backup; the consolidated repo holds run_1's final state and
 carries run_2-onward with full per-cycle history.
 
@@ -161,7 +161,7 @@ one. The postmortem chain is part of the experimental record.
 - **How did pedagogy evolve?** `git log -p -- runs/<name>/teaching_plan.md`
 - **Per-cycle summary:** `git log --oneline -- runs/<name>`
 - run_1's pre-consolidation granular log is also at the archived
-  `dc-ace-run` GitHub repo.
+  `[ANONYMIZED-ARCHIVE]` GitHub repo.
 
 ## Existing assets retained
 
@@ -175,4 +175,4 @@ one. The postmortem chain is part of the experimental record.
 
 ## Pilot history (cycles 1–5, deleted)
 
-The first 5 cycles ran but had two confounds: (1) the same Claude session played all three roles, so the Drawer recalled `strokes.py` parameters from earlier turns instead of deriving from observation; (2) the `make_char_gt.py` y-flip bug rendered all Phase-2 ground truths upside-down. Both have been fixed; the polluted history is removed from the git log of the original first run (now `runs/run_1/`, archived at the `dc-ace-run` repo). See `~/.claude/plans/should-i-install-rapid-lexical-lantern.md` for the postmortem.
+The first 5 cycles ran but had two confounds: (1) the same Claude session played all three roles, so the Drawer recalled `strokes.py` parameters from earlier turns instead of deriving from observation; (2) the `make_char_gt.py` y-flip bug rendered all Phase-2 ground truths upside-down. Both have been fixed; the polluted history is removed from the git log of the original first run (now `runs/run_1/`, archived at the `[ANONYMIZED-ARCHIVE]` repo). See `~/.claude/plans/should-i-install-rapid-lexical-lantern.md` for the postmortem.

@@ -182,6 +182,6 @@ stroke_chuo_dot()
 stroke_chuo_body()
 stroke_chuo_pina()
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0329_运/01_运.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0329_运/01_运.png"
 img.save(out)
 print("Saved:", out)

@@ -43,5 +43,5 @@ stroke([(168, 120), (162, 160), (155, 210), (150, 250)])
 # hook curves left and slightly up
 stroke([(150, 250), (135, 252), (118, 240), (110, 225)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0051_于/01_于.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0051_于/01_于.png")
 print("saved")

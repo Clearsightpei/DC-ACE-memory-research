@@ -54,5 +54,5 @@ curve([(200, 135), (160, 200), (85, 250)], width=6)
 stroke([(155, 128), (152, 245)], width=7)
 curve([(152, 245), (140, 252), (120, 248)], width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0099_予/01_予.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0099_予/01_予.png")
 print("saved")

@@ -53,5 +53,5 @@ stroke([(152, 245), (135, 252), (115, 248), (100, 238)], 9, 3)
 # Long horizontal through the middle, slightly bowed up.
 stroke([(45, 200), (100, 194), (155, 192), (215, 194), (255, 198)], 7, 7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0076_孓/01_孓.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0076_孓/01_孓.png")
 print("wrote 01_孓.png")

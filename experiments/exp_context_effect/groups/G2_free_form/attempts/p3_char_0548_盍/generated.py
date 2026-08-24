@@ -69,5 +69,5 @@ line((180, BOX_T + 15), (183, BOX_B), width=LW - 1)
 # Stroke 10: long bottom 一 extending past both sides
 line((45, 258), (260, 255), width=LW + 1)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0548_盍/01_盍.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0548_盍/01_盍.png")
 print("Wrote 01_盍.png")

@@ -95,4 +95,4 @@ dab(220, 278, 4.5)  # dab at arc end before hook
 hook = bez((220, 278), (219, 270), (215, 260), (210, 250), n=25)
 stroke(hook, (6, 2))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0532_亳/01_亳.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0532_亳/01_亳.png")

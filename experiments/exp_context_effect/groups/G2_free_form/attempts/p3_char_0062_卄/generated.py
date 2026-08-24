@@ -28,4 +28,4 @@ d.line([(210, 100), (200, 265)], fill=INK, width=WIDTH)
 # From GT: from about (55, 165) to (245, 160)
 d.line([(55, 165), (245, 158)], fill=INK, width=WIDTH)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0062_卄/01_卄.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0062_卄/01_卄.png")

@@ -86,5 +86,5 @@ dab(150, 50, 7)  # start 顿 at top
 dab_line(150, 50, 150, 275, 5.5, 5.5)
 dab(150, 275, 6)  # blunt terminal (no hook)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_105_肀/01_肀.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_105_肀/01_肀.png")
 print("wrote 01_肀.png")

@@ -104,7 +104,7 @@ curve_taper(
 dab(95, 85, 5)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0315_声/01_声.png"
 )
 print("wrote 01_声.png")

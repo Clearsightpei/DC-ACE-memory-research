@@ -62,6 +62,6 @@ dot_x, dot_y = cx + 20, iy_mid + 20
 d.line([(dot_x, dot_y), (dot_x + 12, dot_y + 10)], fill=INK, width=BW)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0363_国/01_国.png"
 )

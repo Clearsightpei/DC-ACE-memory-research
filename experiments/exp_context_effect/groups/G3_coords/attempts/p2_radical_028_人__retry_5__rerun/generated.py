@@ -175,7 +175,7 @@ def main():
     img = Image.new("L", (W, H), color=255)
     draw_ren(img)
     out = (
-        "/Users/peilinwu/Documents/AI memory research/experiments/"
+        "<REPO_ROOT>/experiments/"
         "exp_context_effect/groups/G3_coords/attempts/"
         "p2_radical_028_人__retry_5__rerun/01_人.png"
     )

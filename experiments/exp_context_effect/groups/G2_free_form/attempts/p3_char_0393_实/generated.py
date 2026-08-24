@@ -73,6 +73,6 @@ bezier([(150, 165), (170, 205), (195, 240), (225, 268)], w=7, steps=60)
 bezier([(225, 268), (232, 270), (240, 270)], w=7, steps=20)
 
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0393_实/01_实.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0393_实/01_实.png"
 img.save(out_path)
 print("Saved:", out_path)

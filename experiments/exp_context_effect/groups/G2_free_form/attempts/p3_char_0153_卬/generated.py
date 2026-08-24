@@ -56,5 +56,5 @@ stroke(top_h + right_v + hook, width=8)
 s4 = [(188, 62), (189, 120), (191, 180), (192, 235), (193, 275)]
 stroke(s4, width=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0153_卬/01_卬.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0153_卬/01_卬.png")
 print("wrote 01_卬.png")

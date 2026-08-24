@@ -39,4 +39,4 @@ stroke([(left_x, bot_y), (right_x, bot_y)], width=7)
 mid_x = (left_x + right_x) // 2
 stroke([(mid_x, 55), (mid_x, 275)], width=9)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0242_仲/01_仲.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0242_仲/01_仲.png")

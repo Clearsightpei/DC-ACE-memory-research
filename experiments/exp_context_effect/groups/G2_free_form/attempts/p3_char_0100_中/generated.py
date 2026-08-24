@@ -57,6 +57,6 @@ r = LW // 2 + 1
 draw.ellipse([(box_cx - r, axis_top - r), (box_cx + r, axis_top + r)], fill=INK)
 draw.ellipse([(box_cx - r, axis_bottom - r), (box_cx + r, axis_bottom + r)], fill=INK)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0100_中/01_中.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0100_中/01_中.png"
 img.save(out)
 print(f"wrote {out}")

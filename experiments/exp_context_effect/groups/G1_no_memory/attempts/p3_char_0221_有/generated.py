@@ -30,4 +30,4 @@ d.line([(135, 160), (218, 162)], fill=INK, width=LW)
 # Stroke 6: lower inner 横
 d.line([(133, 205), (216, 208)], fill=INK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0221_有/01_有.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0221_有/01_有.png")

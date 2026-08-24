@@ -72,7 +72,7 @@ stroke(hook_pts, w=BR)
 line((120, 258), (108, 250), w=BR)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p3_char_0292_甹/01_甹.png"
 )

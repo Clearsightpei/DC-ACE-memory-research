@@ -68,6 +68,6 @@ stroke_line((208, 122), (208, 190), r=5)
 stroke_line((132, 190), (210, 190), r=5)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0257_问/01_问.png"
 )

@@ -55,5 +55,5 @@ line(CX, TOP-2, CX, BOT + 95, w=W_STROKE+1)
 # blunt terminal
 dab(CX, BOT + 95, 4)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0157_甲/01_甲.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0157_甲/01_甲.png")
 print("saved 01_甲.png")

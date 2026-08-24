@@ -83,5 +83,5 @@ s2 = segA + segB[1:] + segC[1:]
 s2_int = [(int(round(x)), int(round(y))) for (x, y) in s2]
 stroke(s2_int, width=10)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0018_乜__retry_2/01_乜.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0018_乜__retry_2/01_乜.png")
 print("wrote 01_乜.png")

@@ -37,7 +37,7 @@ via primitive endpoint anchors, not scale hacks).
 import os, sys
 from PIL import Image, ImageDraw
 
-BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code"
+BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code"
 sys.path.insert(0, BANK)
 
 from shu import draw_shu

@@ -50,5 +50,5 @@ line(lower, width=5)
 # vertical descender (long, hooking slightly)
 line([(198, 128), (198, 285)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0525_部/01_部.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0525_部/01_部.png")
 print("done")

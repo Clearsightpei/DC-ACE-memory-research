@@ -52,6 +52,6 @@ short = [
 ]
 stroke(short, width=6)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0005_丿/01_丿.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0005_丿/01_丿.png"
 img.save(out)
 print("wrote", out)

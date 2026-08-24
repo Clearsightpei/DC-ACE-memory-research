@@ -88,6 +88,6 @@ stroke(d3, (3, 8))
 d4 = bez((210, 215), (222, 235), (232, 250), (242, 265), n=30)
 stroke(d4, (3, 10))
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0445_点/01_点.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0445_点/01_点.png"
 img.save(out)
 print("saved:", out)

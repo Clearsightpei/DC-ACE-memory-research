@@ -43,5 +43,5 @@ d.line([(L + 5, MID_Y), (R - 3, MID_Y)], fill=INK, width=LW)
 # 5. 横 — bottom horizontal
 d.line([(L - 2, B), (R + 2, B)], fill=INK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0206_白/01_白.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0206_白/01_白.png")
 print("saved")

@@ -82,5 +82,5 @@ def dot_stroke(draw, p0, p1, w_start=4, w_end=9, steps=10):
 
 dot_stroke(d, (180, 215), (210, 260), w_start=4, w_end=9)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0425_具/01_具.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0425_具/01_具.png")
 print("saved")

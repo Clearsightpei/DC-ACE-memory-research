@@ -41,7 +41,7 @@
 from PIL import Image, ImageDraw
 import os, sys
 
-REPO = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect"
+REPO = "<REPO_ROOT>/experiments/exp_context_effect"
 sys.path.insert(0, os.path.join(REPO, "groups/G3_coords/success_bank/code"))
 
 from heng import draw_heng

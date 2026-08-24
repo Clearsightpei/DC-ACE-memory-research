@@ -100,7 +100,7 @@ dot_dab((278, 246), 5.5)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/p3_char_0432_畋/01_畋.png"
 )
 print("wrote 01_畋.png")

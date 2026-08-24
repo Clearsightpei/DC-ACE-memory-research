@@ -50,4 +50,4 @@ stroke([(222, 235), (195, 218)], width=8)
 # Stroke 3: 横 — long horizontal crossing through mid, extends slightly past left edge of body
 stroke([(110, 190), (240, 187)], width=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0211_冯/01_冯.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0211_冯/01_冯.png")

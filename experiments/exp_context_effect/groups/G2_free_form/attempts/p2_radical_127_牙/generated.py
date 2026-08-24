@@ -93,5 +93,5 @@ tapered_stroke(
     w_start=7, w_end=3, steps=90,
 )
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_127_牙/01_牙.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_127_牙/01_牙.png")
 print("saved 01_牙.png")

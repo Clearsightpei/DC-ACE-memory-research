@@ -30,5 +30,5 @@ d.line([(215, 220), (200, 210)], fill=BLACK, width=LW)
 # Stroke 5: long vertical through the character (丨) extending below box
 d.line([(150, 105), (150, 275)], fill=BLACK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0200_市/01_市.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0200_市/01_市.png")
 print("Saved 市")

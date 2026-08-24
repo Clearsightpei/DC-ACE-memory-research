@@ -80,7 +80,7 @@ Aggregate token-usage estimate (~112M subagent tokens total; approximately USD $
 
 ---
 
-## What you (Kai) need to do
+## What you (the corresponding author) need to do
 
 1. **Legal review of the MakeMeAHanzi license situation before submission.** See ANSWERS.md item (d). Concrete action items:
    - Do NOT include `draw_character/graphics.txt` in the reproduction package.

@@ -103,4 +103,4 @@ stroke(mid_v, (5, 5))
 bot_h = bez((LX, BOT_Y), (140, BOT_Y), (180, BOT_Y), (RX, BOT_Y), n=40)
 stroke(bot_h, (6, 6))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0502_畚/01_畚.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0502_畚/01_畚.png")

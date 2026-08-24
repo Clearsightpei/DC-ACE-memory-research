@@ -97,4 +97,4 @@ stroke(hook, (7, 3))
 h_mid = bez((110, 205), (150, 203), (210, 203), (265, 205), n=60)
 stroke(h_mid, (7, 8))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0490_俘/01_俘.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0490_俘/01_俘.png")

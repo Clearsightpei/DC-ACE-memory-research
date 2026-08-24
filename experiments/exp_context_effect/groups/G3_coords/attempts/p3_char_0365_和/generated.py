@@ -100,5 +100,5 @@ _line(RX_R, RY_T, RX_R - 3, RY_B, w=6)
 _line(RX_L, RY_B, RX_R - 1, RY_B, w=6)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0365_和/01_和.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0365_和/01_和.png"
 )

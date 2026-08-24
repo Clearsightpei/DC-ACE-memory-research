@@ -73,5 +73,5 @@ stroke([(215,210),(215,258)], width=9)
 # long bottom 横
 stroke([(155,262),(275,262)], width=9)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0375_经/01_经.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0375_经/01_经.png")
 print("wrote 01_经.png")

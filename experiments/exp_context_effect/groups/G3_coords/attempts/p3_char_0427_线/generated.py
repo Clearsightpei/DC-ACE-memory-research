@@ -98,5 +98,5 @@ tapered_line(d, (70, -100), (95, -85), w_head=7, w_tail=1, n=15)
 tapered_line(d, (90, 80), (68, 55), w_head=6, w_tail=2, n=15)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0427_线/01_线.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0427_线/01_线.png")
 print("saved")

@@ -57,5 +57,5 @@ poly([(135, 175), (120, 210), (100, 245), (70, 278)], w=WT)
 # 9. 捺 — long diagonal sweeping down-right with a thickening tail
 poly([(155, 205), (180, 230), (210, 255), (245, 275)], w=WT+2)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0429_是/01_是.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0429_是/01_是.png")
 print("saved")

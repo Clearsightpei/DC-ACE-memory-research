@@ -125,5 +125,5 @@ bezier(P0_dot, P1_dot, P2_dot, steps=45, r0=2.0, r1=6.0)
 # Terminal press for weight.
 dab(P2_dot[0], P2_dot[1], 7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_094_风__retry_2/01_风.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_094_风__retry_2/01_风.png")
 print("saved")

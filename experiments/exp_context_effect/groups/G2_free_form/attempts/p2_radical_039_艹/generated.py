@@ -83,6 +83,6 @@ segment(rv_top[0], rv_top[1], rv_bot[0], rv_bot[1], r_v, r_v - 1)
 dab(*rv_bot, r_v - 0.5)
 
 # Save
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_039_艹/01_艹.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_039_艹/01_艹.png"
 img.save(out)
 print("Saved:", out)

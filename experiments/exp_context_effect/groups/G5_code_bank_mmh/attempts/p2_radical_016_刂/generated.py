@@ -75,5 +75,5 @@ SELF_CHECK = {
     'notes': 'stroke 2 rendered as straight body + hook curve; anchor coords used as-is.'
 }
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_016_刂/01_刂.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_016_刂/01_刂.png")
 print("wrote 01_刂.png")

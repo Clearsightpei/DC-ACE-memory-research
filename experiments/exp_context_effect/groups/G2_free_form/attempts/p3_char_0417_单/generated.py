@@ -57,5 +57,5 @@ d.line([(35, h_y), (265, h_y)], fill=INK, width=LW + 1)
 cx = 150
 d.line([(cx, box_top - 5), (cx, 285)], fill=INK, width=LW + 1)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0417_单/01_单.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0417_单/01_单.png")
 print("wrote 01_单.png", img.size)

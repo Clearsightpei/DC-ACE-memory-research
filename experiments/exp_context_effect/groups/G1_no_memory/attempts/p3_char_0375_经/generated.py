@@ -44,5 +44,5 @@ line((197, 208), (197, 260))
 # Bottom long horizontal (extends across whole character width)
 line((115, 262), (270, 262))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0375_经/01_经.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0375_经/01_经.png")
 print("saved")

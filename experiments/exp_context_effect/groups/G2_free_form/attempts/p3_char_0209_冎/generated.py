@@ -47,6 +47,6 @@ stroke([(50, 200), (210, 205), (245, 215), (265, 250)])
 # --- Small internal tick / stub inside the lower area (like part of 冎 interior) ---
 stroke([(135, 175), (170, 178)])
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0209_冎/01_冎.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0209_冎/01_冎.png"
 img.save(out)
 print("wrote", out)

@@ -34,4 +34,4 @@ poly([(175, 180), (175, 235)])  # left
 poly([(245, 180), (245, 235)])  # right
 poly([(175, 235), (245, 235)])  # bottom
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0451_给/01_给.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0451_给/01_给.png")

@@ -97,6 +97,6 @@ inner = bez((145, 180), (150, 195), (155, 210), (160, 225), n=30)
 stroke(inner, widths=(5, 3))
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0510_畟/01_畟.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0510_畟/01_畟.png"
 )
 print("saved")

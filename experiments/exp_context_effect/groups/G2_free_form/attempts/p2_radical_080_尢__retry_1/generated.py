@@ -113,7 +113,7 @@ line_stroke(h2_end, (hx, hy), r_start=5.0, r_end=1.3, steps=180)
 
 
 out_path = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_080_尢__retry_1/01_尢.png"
 )
 img.save(out_path)

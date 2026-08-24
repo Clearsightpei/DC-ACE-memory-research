@@ -126,7 +126,7 @@ def main():
     draw_dian(draw, cx=+45, cy=-70, length=22, angle_deg=30,
               w_head=3, w_tail=13)
 
-    out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_078_幺/01_幺.png"
+    out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_078_幺/01_幺.png"
     img.save(out)
     print(f"wrote {out}")
 

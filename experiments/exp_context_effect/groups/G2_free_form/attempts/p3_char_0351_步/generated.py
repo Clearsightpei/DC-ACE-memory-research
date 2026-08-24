@@ -57,4 +57,4 @@ line((150, 148), (150, 215), w=7)
 # Stroke 7: long sweeping 撇, from mid area, curving down-right
 bezier([(170, 155), (185, 205), (210, 245), (260, 275)], w=8, n=70, taper=(10,3))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0351_步/01_步.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0351_步/01_步.png")

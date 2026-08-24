@@ -54,4 +54,4 @@ line((195, 78), (195, 268), w=6)
 line((150, 135), (250, 133), w=6)
 line((150, 195), (247, 193), w=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0350_佣/01_佣.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0350_佣/01_佣.png")

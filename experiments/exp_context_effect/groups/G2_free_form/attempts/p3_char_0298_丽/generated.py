@@ -53,4 +53,4 @@ stroke([(250, 118), (245, 200), (240, 268), (230, 262)], w=8)
 # 7) RIGHT inner mark
 stroke([(205, 165), (205, 210)], w=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0298_丽/01_丽.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0298_丽/01_丽.png")

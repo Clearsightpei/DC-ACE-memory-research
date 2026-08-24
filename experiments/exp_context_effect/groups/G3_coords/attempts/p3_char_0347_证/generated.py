@@ -54,5 +54,5 @@ stroke((202, 92), (202, 252), w=5)
 # 5) 一 bottom wide heng (widest of the three horizontals)
 stroke((102, 252), (280, 248), w=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0347_证/01_证.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0347_证/01_证.png")
 print("wrote 01_证.png")

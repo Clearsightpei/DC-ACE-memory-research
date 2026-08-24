@@ -117,6 +117,6 @@ ti_p1 = (168, 240)
 ti_p2 = (180, 232)
 bezier_dabs(ti_p0, ti_p1, ti_p2, r_start=6, r_end=3)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_089_车__retry_2/01_车.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_089_车__retry_2/01_车.png"
 img.save(out)
 print("wrote", out)

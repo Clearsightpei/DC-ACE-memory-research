@@ -29,4 +29,4 @@ line((125, 205), (260, 205), w=6)  # bottom horizontal (longest)
 # Central vertical, extends below bottom
 line((193, 115), (193, 265), w=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0392_佯/01_佯.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0392_佯/01_佯.png")

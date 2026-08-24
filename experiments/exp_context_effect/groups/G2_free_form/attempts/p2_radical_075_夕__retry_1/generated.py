@@ -88,6 +88,6 @@ dab(in_p0[0], in_p0[1], 4)
 bezier_dabs(in_p0, in_ctrl, in_p2, 4, 6, steps=100, ease=1.2)   # thin→thick teardrop
 dab(in_p2[0], in_p2[1], 6)   # terminal press
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_075_夕__retry_1/01_夕.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_075_夕__retry_1/01_夕.png"
 img.save(out_path)
 print(f"saved {out_path}")

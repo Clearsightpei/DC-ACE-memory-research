@@ -134,7 +134,7 @@ dab(G[0], G[1], 2.8)
 
 # ---- Save ----------------------------------------------------------
 out = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_036_廴/01_廴.png"
 )
 img.save(out)

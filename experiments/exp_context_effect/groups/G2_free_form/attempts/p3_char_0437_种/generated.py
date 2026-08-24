@@ -96,5 +96,5 @@ cx = (box_left + box_right) // 2  # 215
 v_center = bez((cx, 40), (cx, 100), (cx, 200), (cx, 270), n=100)
 stroke(v_center, (8, 8))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0437_种/01_种.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0437_种/01_种.png")
 print("saved")

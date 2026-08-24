@@ -45,7 +45,7 @@ Joints: all N (natural gaps at top confluence).
 """
 
 import sys
-BANK = '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code'
+BANK = '<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code'
 sys.path.insert(0, BANK)
 
 from PIL import Image, ImageDraw
@@ -110,6 +110,6 @@ SELF_CHECK = {
 
 
 if __name__ == '__main__':
-    out = '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_134_爪__retry_1/01_爪.png'
+    out = '<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_134_爪__retry_1/01_爪.png'
     render().save(out)
     print('wrote', out)

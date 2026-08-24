@@ -84,7 +84,7 @@ for i in range(N_h + 1):
 dab(Hend[0], Hend[1], 7)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p1_stroke_18_撇折/01_撇折.png"
 )
 print("wrote 01_撇折.png (300x300)")

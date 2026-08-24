@@ -9,7 +9,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 # Allow importing from bank
-BANK = Path("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code")
+BANK = Path("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code")
 sys.path.insert(0, str(BANK))
 
 from zhu_top import draw_zhu_top  # noqa: E402
@@ -50,6 +50,6 @@ if __name__ == "__main__":
     img = Image.new("RGB", (CANVAS, CANVAS), "white")
     t = ImageDraw.Draw(img)
     draw_zhu(t)
-    out = Path("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0174_主/01_主.png")
+    out = Path("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0174_主/01_主.png")
     img.save(out)
     print(f"wrote {out}")

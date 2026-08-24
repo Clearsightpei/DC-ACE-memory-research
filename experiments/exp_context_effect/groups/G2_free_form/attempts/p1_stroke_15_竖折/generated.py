@@ -57,6 +57,6 @@ stroke_segment(CORNER, H_END, R_JOINT, R_UNIFORM, steps=520)
 # 5) Blunt terminal press at right endpoint (round end, no hook)
 dab(H_END[0], H_END[1], R_TERMINAL)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_15_竖折/01_竖折.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_15_竖折/01_竖折.png"
 img.save(out_path)
 print(f"Saved {out_path}")

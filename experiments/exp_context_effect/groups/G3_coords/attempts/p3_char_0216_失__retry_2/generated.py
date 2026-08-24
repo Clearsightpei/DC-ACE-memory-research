@@ -134,7 +134,7 @@ def draw_shi(dr):
 
 draw_shi(draw)
 
-out_path = ("/Users/peilinwu/Documents/AI memory research/"
+out_path = ("<REPO_ROOT>/"
             "experiments/exp_context_effect/groups/G3_coords/"
             "attempts/p3_char_0216_失__retry_2/01_失.png")
 img.save(out_path)

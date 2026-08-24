@@ -58,5 +58,5 @@ for (p1, p2, w) in na_segments:
 # Broaden the 捺 foot
 d.line([(275, 260), (290, 278)], fill="black", width=12)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0146_队/01_队.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0146_队/01_队.png")
 print("saved")

@@ -43,5 +43,5 @@ line((235, 235), (218, 220))
 # ---- Stroke 3: long bottom 一 crossing under ----
 line((45, 250), (230, 245))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0085_马/01_马.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0085_马/01_马.png")
 print("Saved 01_马.png (revised)")

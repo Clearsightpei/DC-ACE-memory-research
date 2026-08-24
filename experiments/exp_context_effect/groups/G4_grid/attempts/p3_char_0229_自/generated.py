@@ -70,7 +70,7 @@ line(d, ('BC', 0.07, 0.20), ('BC', 0.73, 0.11))
 # stroke 6: 横 (bottom closing) — ('BC', 0.04, 0.73) to ('BC', 0.90, 0.63)
 line(d, ('BC', 0.04, 0.73), ('BC', 0.90, 0.63))
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0229_自/01_自.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0229_自/01_自.png')
 
 SELF_CHECK = {
     'visual_ok': True,

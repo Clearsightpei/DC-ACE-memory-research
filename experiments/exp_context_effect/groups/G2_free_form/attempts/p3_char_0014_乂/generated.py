@@ -70,6 +70,6 @@ draw.ellipse(
 )
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0014_乂/01_乂.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0014_乂/01_乂.png"
 )
 print("Saved 01_乂.png")

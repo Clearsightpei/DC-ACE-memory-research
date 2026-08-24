@@ -12,7 +12,7 @@
 import os
 import sys
 
-_BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
+_BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
 if _BANK not in sys.path:
     sys.path.insert(0, _BANK)
 

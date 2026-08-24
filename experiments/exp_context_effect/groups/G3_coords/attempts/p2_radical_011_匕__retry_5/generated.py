@@ -68,4 +68,4 @@ for p in [sh_top, hook_end, pie_start, pie_end]:
     r = LW // 2
     d.ellipse([p[0]-r, p[1]-r, p[0]+r, p[1]+r], fill=INK)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_011_匕__retry_5/01_匕.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_011_匕__retry_5/01_匕.png")

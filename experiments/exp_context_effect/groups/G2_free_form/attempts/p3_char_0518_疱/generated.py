@@ -98,4 +98,4 @@ stroke(in_base_v, (6, 6))
 in_base_h = bez((183, 224), (200, 227), (215, 226), (228, 220), n=40)
 stroke(in_base_h, (6, 5))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0518_疱/01_疱.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0518_疱/01_疱.png")

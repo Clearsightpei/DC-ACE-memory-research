@@ -55,4 +55,4 @@ polyline([(195, 255), (205, 270), (225, 278), (250, 273), (260, 258)])
 # small hook up at end
 line((260, 258), (260, 238))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0271_老/01_老.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0271_老/01_老.png")

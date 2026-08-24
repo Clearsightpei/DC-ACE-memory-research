@@ -89,5 +89,5 @@ line((RB2_R, RB2_T), (RB2_R, RB2_B), w=5)
 # 6. OUTER BOTTOM base horizontal — widest stroke
 line((35, BASE_Y), (270, BASE_Y+2), w=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0386_亞/01_亞.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0386_亞/01_亞.png")
 print("saved 01_亞.png")

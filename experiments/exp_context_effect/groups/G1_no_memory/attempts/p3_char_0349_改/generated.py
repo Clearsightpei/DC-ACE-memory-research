@@ -45,6 +45,6 @@ poly([(220, 95), (158, 262)], w=T)
 poly([(192, 155), (278, 262)], w=T)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0349_改/01_改.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0349_改/01_改.png"
 )
 print("wrote PNG")

@@ -54,4 +54,4 @@ for i, w in enumerate([7, 8, 9, 10, 11, 12]):
     y1 = right_pts[0][1] + (right_pts[1][1] - right_pts[0][1]) * t1
     draw.line([(x0, y0), (x1, y1)], fill="black", width=w)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0057_小/01_小.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0057_小/01_小.png")

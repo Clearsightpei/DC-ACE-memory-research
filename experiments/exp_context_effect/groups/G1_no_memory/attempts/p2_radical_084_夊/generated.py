@@ -38,5 +38,5 @@ s3 = [
 ]
 stroke(s3, width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_084_夊/01_夊.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_084_夊/01_夊.png")
 print("saved")

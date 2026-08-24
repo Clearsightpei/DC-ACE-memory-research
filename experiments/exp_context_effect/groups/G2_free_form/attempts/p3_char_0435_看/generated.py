@@ -92,4 +92,4 @@ stroke(h_in2, (4, 4))
 h_bot = bez((x0, y1), (x0 + 45, y1), (x1 - 45, y1), (x1, y1), n=40)
 stroke(h_bot, (5, 5))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0435_看/01_看.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0435_看/01_看.png")

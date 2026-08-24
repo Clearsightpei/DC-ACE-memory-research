@@ -98,4 +98,4 @@ dab(hook_p0[0], hook_p0[1] - hook_len, 2.4)
 # 顿笔 at the start of the top 横 (subtle, standalone-scale)
 dab(top_p0[0], top_p0[1], R + 1.0)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_006_乙/01_乙.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_006_乙/01_乙.png")

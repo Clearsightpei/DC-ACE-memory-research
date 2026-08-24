@@ -59,6 +59,6 @@ poly([(220, 115), (222, 205), (245, 220)])  # 竖 with slight bend + hook right
 poly([(232, 130), (172, 205)])
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G3_coords/attempts/p3_char_0368_乖/01_乖.png"
 )

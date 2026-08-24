@@ -112,5 +112,5 @@ stroke([(BX_L-5, 205), (BX_R+5, 205)], width=8)
 # 11. 横: bottom horizontal — WIDEST stroke of the whole character
 stroke([(130, 260), (270, 258)], width=11)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0573_理/01_理.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0573_理/01_理.png")
 print("saved 理")

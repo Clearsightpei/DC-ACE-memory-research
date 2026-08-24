@@ -20,7 +20,7 @@ Reading order performed:
 # fresh_component: zhan_left_zhan_occupy_for_战 (占 as left-column ~40% width)
 
 import os, sys
-sys.path.insert(0, "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code")
+sys.path.insert(0, "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code")
 
 from PIL import Image, ImageDraw
 from _anchor import anchor_to_xy, fat_line, quad_bezier, stroke_variable_width

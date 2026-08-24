@@ -10,7 +10,7 @@
 # Reference: yue.py (draw_yue) for the inner 月; top 横 + long 撇 inline.
 
 import sys, os
-BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
+BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
 sys.path.insert(0, BANK)
 
 from PIL import Image, ImageDraw

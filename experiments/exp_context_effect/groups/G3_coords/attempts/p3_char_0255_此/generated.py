@@ -45,4 +45,4 @@ polyline([(180, 220), (190, 235), (208, 243), (232, 240), (248, 225)])
 # Hook (small upward tick at right end)
 line((248, 225), (248, 205))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0255_此/01_此.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0255_此/01_此.png")

@@ -87,7 +87,7 @@ dab(175, 158, 5)  # start dab
 tapered_line((238, 262), (245, 245), 7, 2, steps=20)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_135_无/01_无.png"
 )
 print("saved 无 PNG 300x300")

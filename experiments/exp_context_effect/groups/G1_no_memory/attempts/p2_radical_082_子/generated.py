@@ -64,6 +64,6 @@ s3 = [(50, 172), (250, 162)]
 polyline(list(s3), w=T)
 
 # Save
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_082_子/01_子.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_082_子/01_子.png"
 img.save(out)
 print("wrote", out)

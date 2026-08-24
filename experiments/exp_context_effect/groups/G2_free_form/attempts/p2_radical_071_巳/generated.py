@@ -138,6 +138,6 @@ for i in range(steps_h + 1):
     r = R + (1.2 - R) * t
     dab(x, y, r)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_071_巳/01_巳.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_071_巳/01_巳.png"
 img.save(out)
 print(f"saved {out}")

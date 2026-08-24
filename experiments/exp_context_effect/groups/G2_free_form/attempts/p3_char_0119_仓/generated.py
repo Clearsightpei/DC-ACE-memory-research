@@ -77,7 +77,7 @@ stroke_polyline([(ix0, iy1), (ix1, iy1)], width=6)  # bottom
 stroke_polyline([(ix1, iy0), (ix1, iy1)], width=6)  # right
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0119_仓/01_仓.png"
 )
 print("saved 01_仓.png")

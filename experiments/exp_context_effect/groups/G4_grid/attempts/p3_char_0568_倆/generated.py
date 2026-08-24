@@ -26,7 +26,7 @@ serve the shape while staying within a cell of MMH expected regions.
 # fresh_component: ren_side_far_left_for_倆 ; liang_body_for_倆
 
 import sys, os
-BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
+BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
 sys.path.insert(0, BANK)
 
 from PIL import Image, ImageDraw
@@ -108,7 +108,7 @@ pts = [(p0[0] + i / n_seg * (p1[0] - p0[0]),
 widths = [3 + (11 - 3) * (i / n_seg) for i in range(n_seg + 1)]
 stroke_variable_width(d, pts, widths)
 
-OUT = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0568_倆/01_倆.png"
+OUT = "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0568_倆/01_倆.png"
 img.save(OUT)
 print("saved", OUT)
 

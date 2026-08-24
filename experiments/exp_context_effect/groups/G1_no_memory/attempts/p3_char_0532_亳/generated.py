@@ -38,5 +38,5 @@ poly([(150, 178), (85, 265)], w=6)
 # vertical + right-hook (竖弯钩 style)
 poly([(175, 178), (175, 260), (225, 260), (225, 240)], w=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0532_亳/01_亳.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0532_亳/01_亳.png")
 print("saved")

@@ -59,5 +59,5 @@ stroke([(152, 100), (150, 240)], width_start=5, width_end=5)
 # Wide sweep across ~55..255, y ~= 243, slight rise at both ends.
 stroke([(55, 248), (150, 242), (258, 248)], width_start=5, width_end=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0174_主/01_主.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0174_主/01_主.png")
 print("wrote 01_主.png")

@@ -78,6 +78,6 @@ quad_bezier((148, 58), (105, 160), (48, 272),
             r_start=5.8, r_end=1.2, steps=550)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0023_九/01_九.png"
 )

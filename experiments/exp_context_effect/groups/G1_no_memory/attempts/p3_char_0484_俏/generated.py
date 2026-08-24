@@ -34,4 +34,4 @@ stroke([(150, 165), (228, 168)], width=5)
 # lower horizontal bar
 stroke([(150, 215), (228, 218)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0484_俏/01_俏.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0484_俏/01_俏.png")

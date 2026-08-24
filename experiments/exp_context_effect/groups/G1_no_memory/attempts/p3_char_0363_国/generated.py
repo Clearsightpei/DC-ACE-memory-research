@@ -40,5 +40,5 @@ d.line([(cx, iy_top), (cx, iy_bot)], fill=INK, width=LW)
 # Dot (点) to the lower right of the vertical
 d.line([(cx + 20, iy_mid + 15), (cx + 30, iy_mid + 28)], fill=INK, width=LW + 1)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0363_国/01_国.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0363_国/01_国.png")
 print("saved")

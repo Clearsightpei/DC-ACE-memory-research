@@ -83,7 +83,7 @@ dab(na_p2[0], na_p2[1], 11)
 dab(na_p2[0] - 4, na_p2[1] + 1, 10)
 
 out = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p2_radical_104_木/01_木.png"
 )

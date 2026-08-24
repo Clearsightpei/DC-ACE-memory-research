@@ -72,6 +72,6 @@ for j in range(M + 1):
     draw.ellipse((x - r, y - r, x + r, y + r), fill="black")
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_08_卧钩/01_卧钩.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_08_卧钩/01_卧钩.png"
 )
 print("saved 01_卧钩.png (300x300)")

@@ -79,6 +79,6 @@ dab(PIE_START[0], PIE_START[1], 7)
 bezier_dabs(PIE_START, PIE_END, PIE_CTRL, r0=7.5, r1=1.2, steps=600, ease=1.4)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_014_厂/01_厂.png"
 )

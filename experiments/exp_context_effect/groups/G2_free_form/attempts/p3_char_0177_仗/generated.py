@@ -112,6 +112,6 @@ brush_stroke(tail, tail_w)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0177_仗/01_仗.png"
 )

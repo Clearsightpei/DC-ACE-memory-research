@@ -80,5 +80,5 @@ draw.ellipse([248, 246, 270, 262], fill="black")
 pie_pts = bezier((163, 105), (105, 180), (50, 260), steps=100)
 stroke(pie_pts, r_start=7, r_end=2)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0029_入__retry_1/01_入.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0029_入__retry_1/01_入.png")
 print("Saved 01_入.png")

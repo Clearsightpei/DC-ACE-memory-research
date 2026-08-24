@@ -66,4 +66,4 @@ stroke([(165, 72), (200, 74), (240, 78)], widths=(6, 7))
 # from (228, 68) straight down to (218, 240), slight left curve
 stroke([(228, 68), (222, 130), (218, 200), (215, 245)], widths=(7, 6))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0212_处/01_处.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0212_处/01_处.png")

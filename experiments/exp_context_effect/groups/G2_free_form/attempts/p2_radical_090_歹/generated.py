@@ -87,6 +87,6 @@ dot_x1, dot_y1 = 195, 185
 line_taper(dot_x0, dot_y0, dot_x1, dot_y1, 2, 6, steps=150)
 dab(dot_x1, dot_y1, 6)  # terminal press
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_090_歹/01_歹.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_090_歹/01_歹.png"
 img.save(out_path)
 print(f"saved {out_path}")

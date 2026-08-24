@@ -52,6 +52,6 @@ shù_points = [
 ]
 draw_curve(shù_points, width=6)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_029_亻/01_亻.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_029_亻/01_亻.png"
 img.save(out_path)
 print(f"Saved: {out_path}")

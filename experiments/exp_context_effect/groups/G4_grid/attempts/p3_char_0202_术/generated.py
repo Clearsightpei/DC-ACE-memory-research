@@ -76,4 +76,4 @@ taper_line(s5_head, s5_tail, 3, 7, steps=12)
 
 assert 5 == 5, "stroke count check"
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0202_术/01_术.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0202_术/01_术.png')

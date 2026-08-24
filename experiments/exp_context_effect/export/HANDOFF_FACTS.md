@@ -104,4 +104,4 @@ At commit **[to be filled]** on `main`:
 4. `experiments/exp_context_effect/README.md` — naming fixes (turtle → PIL in intro; historical changelog entries preserved unchanged).
 5. `experiments/exp_context_effect/INTERVENTIONS.md` — "coord bank" → "code bank" (1 instance).
 
-**Note on `draw_character/graphics.txt`**: still in-repo (was in-repo from experiment start). For the paper's public reproduction snapshot, the recommendation stands: **exclude `graphics.txt` from the paper release**, keep only the LICENSE + derived tooling. This repo (`Clearsightpei/DC-ACE-memory-research`) is the internal working repo; the paper release is a separate anonymized snapshot per the Data Availability section.
+**Note on `draw_character/graphics.txt`**: still in-repo (was in-repo from experiment start). For the paper's public reproduction snapshot, the recommendation stands: **exclude `graphics.txt` from the paper release**, keep only the LICENSE + derived tooling. This repo (`[ANONYMIZED-USER]/[ANONYMIZED-REPO]`) is the internal working repo; the paper release is a separate anonymized snapshot per the Data Availability section.

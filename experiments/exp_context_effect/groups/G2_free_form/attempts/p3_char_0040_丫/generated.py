@@ -55,6 +55,6 @@ brush_line(draw, (JX, JY - 2), (JX, 268), width_start=8, width_end=7)
 draw.ellipse((JX - 4, JY - 4, JX + 4, JY + 4), fill=INK)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0040_丫/01_丫.png"
 )

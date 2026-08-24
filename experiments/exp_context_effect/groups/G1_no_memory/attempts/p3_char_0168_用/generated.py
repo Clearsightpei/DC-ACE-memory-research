@@ -32,5 +32,5 @@ d.line([(90, 195), (211, 198)], fill=BLACK, width=LW)
 # Stroke 5: middle vertical — from top down through both crossbars to bottom
 d.line([(150, 75), (150, 260)], fill=BLACK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0168_用/01_用.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0168_用/01_用.png")
 print("saved")

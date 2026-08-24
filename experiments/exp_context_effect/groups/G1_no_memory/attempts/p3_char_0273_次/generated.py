@@ -24,4 +24,4 @@ line([(195, 130), (115, 260)], width=6)
 # Stroke 4: 捺 — long right-slanting ending flare
 line([(170, 175), (255, 265)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0273_次/01_次.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0273_次/01_次.png")

@@ -98,7 +98,7 @@ stroke([(118, 208), (248, 208)], width=8)
 stroke([(105, 262), (270, 260)], width=10)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0492_俚/01_俚.png"
 )
 print("saved")

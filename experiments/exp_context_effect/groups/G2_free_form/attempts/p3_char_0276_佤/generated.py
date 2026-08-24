@@ -55,6 +55,6 @@ dab([(150, 258), (140, 240), (135, 228)], [6, 5, 3])
 # stroke 4: 点 — small dot upper-mid interior
 dab([(200, 130), (215, 148)], [4, 8])
 
-out_png = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0276_佤/01_佤.png"
+out_png = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0276_佤/01_佤.png"
 img.save(out_png)
 print("wrote", out_png)

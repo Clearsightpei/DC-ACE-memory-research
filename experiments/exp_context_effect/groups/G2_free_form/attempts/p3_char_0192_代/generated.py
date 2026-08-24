@@ -57,4 +57,4 @@ stroke([(250, 250), (245, 240), (238, 232)], widths=[9, 7, 4])
 # 点: small dot upper-right, above/near start of 斜钩
 stroke([(210, 65), (222, 72), (232, 80)], widths=[4, 7, 8])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0192_代/01_代.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0192_代/01_代.png")

@@ -129,7 +129,7 @@ def main():
     bot = _to_pixel(-60, -125)
     _tapered_line(draw, top, bot, 10.0, 10.0, steps=100)
 
-    out_path = ("/Users/peilinwu/Documents/AI memory research/experiments/"
+    out_path = ("<REPO_ROOT>/experiments/"
                 "exp_context_effect/groups/G3_coords/attempts/"
                 "p2_radical_020_阝/01_阝.png")
     img.save(out_path)

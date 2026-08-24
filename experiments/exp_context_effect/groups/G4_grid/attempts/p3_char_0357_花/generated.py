@@ -20,7 +20,7 @@ of ML/MR). Bank primitive geometry doesn't fit a compound char where
 
 import os
 import sys
-BANK_DIR = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
+BANK_DIR = "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
 if BANK_DIR not in sys.path:
     sys.path.insert(0, BANK_DIR)
 
@@ -105,7 +105,7 @@ stroke_variable_width(d, pts7, w7)
 hook_end = (s7b[0] - 3, s7b[1] - 16)
 fat_line(d, s7b, hook_end, W_SHU - 1)
 
-out_dir = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0357_花"
+out_dir = "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0357_花"
 os.makedirs(out_dir, exist_ok=True)
 img.save(os.path.join(out_dir, "01_花.png"))
 print("wrote 01_花.png; SELF_CHECK:", SELF_CHECK)

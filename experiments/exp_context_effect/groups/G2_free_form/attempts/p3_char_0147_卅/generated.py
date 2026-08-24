@@ -73,6 +73,6 @@ brush_line(d, (X_MID, Y_TOP + 8), (X_MID, Y_BOT), width=9)
 # Stroke 4: right 竖 — straight vertical
 brush_line(d, (X_RIGHT, Y_TOP + 8), (X_RIGHT, Y_BOT - 5), width=9)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0147_卅/01_卅.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0147_卅/01_卅.png"
 img.save(out)
 print("saved", out)

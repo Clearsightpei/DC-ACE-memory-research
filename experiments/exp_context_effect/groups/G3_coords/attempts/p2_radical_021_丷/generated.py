@@ -81,5 +81,5 @@ def render():
 if __name__ == "__main__":
     out = render()
     out.save(
-        "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_021_丷/01_丷.png"
+        "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_021_丷/01_丷.png"
     )

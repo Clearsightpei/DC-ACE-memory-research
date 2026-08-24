@@ -39,4 +39,4 @@ d.line([(260, 170), (260, 245)], fill=INK, width=LW)    # right vertical
 # Stroke 5: bottom long 横
 d.line([(40, 245), (260, 245)], fill=INK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0215_凸/01_凸.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0215_凸/01_凸.png")

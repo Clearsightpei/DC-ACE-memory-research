@@ -54,5 +54,5 @@ line([(200, 260), (180, 245)], w=7)
 line([(200, 155), (155, 250)], w=7)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0384_疡/01_疡.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0384_疡/01_疡.png"
 )

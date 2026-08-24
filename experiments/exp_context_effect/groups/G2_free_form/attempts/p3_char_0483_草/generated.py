@@ -109,7 +109,7 @@ v_long = bez((152, 195), (152, 235), (152, 260), (152, 285), n=60)
 stroke(v_long, (8, 7))
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p3_char_0483_草/01_草.png"
 )

@@ -102,5 +102,5 @@ tapered_bezier(
     w_head=2, w_tail=5, steps=24,
 )
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0135_刅/01_刅.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0135_刅/01_刅.png")
 print("wrote 01_刅.png")

@@ -54,5 +54,5 @@ curve((215, 148), (170, 205), (120, 268), width=6)
 # 捺 (long, from just below 一 center-left sweeping to lower-right)
 curve((195, 148), (240, 205), (280, 268), width=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0404_佼/01_佼.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0404_佼/01_佼.png")
 print("saved")

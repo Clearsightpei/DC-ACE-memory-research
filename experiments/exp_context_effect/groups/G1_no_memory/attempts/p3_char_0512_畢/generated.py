@@ -41,4 +41,4 @@ line((150, 133), (150, 275))
 # --- Bottom horizontal (short base) ---
 line((110, 245), (195, 247))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0512_畢/01_畢.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0512_畢/01_畢.png")

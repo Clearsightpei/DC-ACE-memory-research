@@ -36,5 +36,5 @@ stroke([(218, 150), (218, 225), (200, 232)], width=5)
 # 寸 - dot on right
 stroke([(232, 190), (248, 210)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0556_俯/01_俯.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0556_俯/01_俯.png")
 print("saved")

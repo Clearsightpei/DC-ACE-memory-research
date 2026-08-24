@@ -63,6 +63,6 @@ for t in range(1, 41):
 
 line(s2, width=TH+1)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_036_廴/01_廴.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_036_廴/01_廴.png"
 img.save(out)
 print("saved", out)

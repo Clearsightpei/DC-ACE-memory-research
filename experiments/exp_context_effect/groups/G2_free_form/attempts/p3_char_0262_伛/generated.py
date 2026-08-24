@@ -42,5 +42,5 @@ brush([(170, 130), (190, 155), (215, 185), (240, 215)], width=6)
 # 6) 竖折 乚: vertical from (140, 100) down to (140, 250), then horizontal to (270, 250)
 brush([(140, 100), (140, 175), (140, 250), (200, 250), (270, 250)], width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0262_伛/01_伛.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0262_伛/01_伛.png")
 print("saved")

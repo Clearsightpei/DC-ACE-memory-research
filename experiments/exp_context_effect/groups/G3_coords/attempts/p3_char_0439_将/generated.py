@@ -65,5 +65,5 @@ bezier([(200, 258), (192, 268), (175, 268)], w=LW)
 # 点 — dot to right of vertical, mid-height
 bezier([(212, 218), (228, 226), (242, 238)], w=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0439_将/01_将.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0439_将/01_将.png")
 print("saved")

@@ -34,5 +34,5 @@ polyline([
     (260, 220),
 ], w=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0134_化/01_化.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0134_化/01_化.png")
 print("saved 01_化.png")

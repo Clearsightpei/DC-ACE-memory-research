@@ -64,4 +64,4 @@ stroke(na_main, lambda t: 3 + 7 * t)
 tail = bezier((232, 260), (250, 262), (265, 262), (278, 258), n=50)
 stroke(tail, lambda t: 10 - 7 * t)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0072_夊/01_夊.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0072_夊/01_夊.png")

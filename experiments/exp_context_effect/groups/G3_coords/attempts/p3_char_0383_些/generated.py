@@ -63,4 +63,4 @@ line((115, 195), (185, 195))
 line((40, 250), (260, 250))
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0383_些/01_些.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0383_些/01_些.png")

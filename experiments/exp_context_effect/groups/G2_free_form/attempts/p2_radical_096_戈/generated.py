@@ -107,6 +107,6 @@ dab(d1[0], d1[1], 11)  # terminal press
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_096_戈/01_戈.png"
 )

@@ -16,7 +16,7 @@ s2/s5 (both bottoms near BL), s4/s6 and s5/s6 (na starts just below crossing).
 import sys
 import os
 
-BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code"
+BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code"
 sys.path.insert(0, BANK)
 
 from PIL import Image, ImageDraw

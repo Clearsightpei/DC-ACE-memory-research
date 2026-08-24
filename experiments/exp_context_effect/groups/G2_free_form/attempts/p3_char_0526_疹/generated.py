@@ -90,5 +90,5 @@ stroke(f2, (6, 3))
 f3 = bez((245, 230), (225, 248), (205, 262), (183, 278), n=45)
 stroke(f3, (7, 3))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0526_疹/01_疹.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0526_疹/01_疹.png")
 print("wrote PNG")

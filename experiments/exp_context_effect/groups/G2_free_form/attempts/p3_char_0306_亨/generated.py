@@ -74,5 +74,5 @@ end = pts[-1]
 hook_end = (end[0] - 15, end[1] - 22)
 stroke([end, hook_end], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0306_亨/01_亨.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0306_亨/01_亨.png")
 print("wrote 01_亨.png")

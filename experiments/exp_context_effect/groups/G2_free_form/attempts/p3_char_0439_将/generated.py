@@ -90,4 +90,4 @@ stroke(hook, (7, 3))
 dian = bez((220, 225), (228, 232), (236, 240), (244, 250), n=30)
 stroke(dian, (3, 8))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0439_将/01_将.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0439_将/01_将.png")

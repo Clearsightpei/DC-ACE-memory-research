@@ -75,5 +75,5 @@ brush_line(pie, w_start=9, w_end=3)  # taper to fine tip
 na = [(180, 135), (200, 170), (225, 210), (250, 240), (260, 245)]
 brush_line(na, w_start=4, w_end=12)  # thin→thick foot
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0098_以/01_以.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0098_以/01_以.png")
 print("saved")

@@ -97,5 +97,5 @@ draw.line([(inner2_top_x, top_y + 3), (inner2_bot_x, box_bot_y)], fill=INK, widt
 # Bottom long horizontal (extends past left and right)
 draw.line([(hline_left, bot_hline_y), (hline_right, bot_hline_y)], fill=INK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0195_皿/01_皿.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0195_皿/01_皿.png")
 print("saved")

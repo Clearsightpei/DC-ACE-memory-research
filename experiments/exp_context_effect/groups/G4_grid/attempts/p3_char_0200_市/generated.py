@@ -69,7 +69,7 @@ s5_tail_raw = A('BC', 0.485, 1.164)
 s5_tail = (s5_tail_raw[0], min(s5_tail_raw[1], H - 2))
 line(s5_head, s5_tail, w=7)
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0200_市/01_市.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0200_市/01_市.png')
 
 # Structural self-check summary
 strokes = 5

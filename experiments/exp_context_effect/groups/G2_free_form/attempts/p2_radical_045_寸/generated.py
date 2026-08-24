@@ -90,4 +90,4 @@ for i in range(steps + 1):
     dab(x, y, r)
 dab(D_END[0], D_END[1], 7)  # terminal press (smaller than standalone 丶)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_045_寸/01_寸.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_045_寸/01_寸.png")

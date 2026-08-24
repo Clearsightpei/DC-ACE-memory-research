@@ -97,7 +97,7 @@ w4 = [7, 7, 7, 7, 7, 7, 7, 6, 5, 4, 3]
 stroke_poly(s4, w4)
 
 out_path = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G5_code_bank_mmh/attempts/p2_radical_099_旡__retry_2/01_旡.png"
 )
 img.save(out_path)

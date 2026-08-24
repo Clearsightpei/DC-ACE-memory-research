@@ -81,6 +81,6 @@ brush_stroke(
     r_start=6.5, r_end=3.0, steps=25,
 )
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0070_夂/01_夂.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0070_夂/01_夂.png"
 img.save(out_path)
 print(f"wrote {out_path}")

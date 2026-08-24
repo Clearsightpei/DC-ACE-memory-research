@@ -55,6 +55,6 @@ line([(210, 220), (225, 245), (255, 255), (280, 250)], w=LW)
 # hook flick UP-and-LEFT at terminal
 line([(280, 250), (270, 232)], w=LW)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0223_地/01_地.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0223_地/01_地.png"
 img.save(out)
 print("saved", out)

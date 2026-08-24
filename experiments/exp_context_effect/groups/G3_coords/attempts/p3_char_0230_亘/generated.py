@@ -33,4 +33,4 @@ def draw_xuan(img_path):
     img.save(img_path)
 
 if __name__ == "__main__":
-    draw_xuan("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0230_亘/01_亘.png")
+    draw_xuan("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0230_亘/01_亘.png")

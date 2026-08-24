@@ -33,4 +33,4 @@ line((60, 218), (238, 220))
 # central long vertical descender (through the whole char)
 line((150, 100), (150, 270))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0247_军/01_军.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0247_军/01_军.png")

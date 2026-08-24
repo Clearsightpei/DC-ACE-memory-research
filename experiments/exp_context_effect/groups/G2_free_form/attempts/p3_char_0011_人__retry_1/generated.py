@@ -97,7 +97,7 @@ for i in range(foot_steps + 1):
     dab(x, y, r)
 
 
-out_path = ("/Users/peilinwu/Documents/AI memory research/experiments/"
+out_path = ("<REPO_ROOT>/experiments/"
             "exp_context_effect/groups/G2_free_form/attempts/"
             "p3_char_0011_人__retry_1/01_人.png")
 img.save(out_path)

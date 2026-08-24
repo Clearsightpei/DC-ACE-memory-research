@@ -39,4 +39,4 @@ d.line([(x1, y0 + 3), (x1, y1)], fill=BLACK, width=LW-1)
 # Stroke 5: bottom 横
 d.line([(x0, y1), (x1, y1)], fill=BLACK, width=LW-1)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0205_冋/01_冋.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0205_冋/01_冋.png")

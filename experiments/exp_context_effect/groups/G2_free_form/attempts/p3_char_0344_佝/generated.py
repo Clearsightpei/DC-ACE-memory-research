@@ -60,6 +60,6 @@ stroke([(222, 158), (223, 192), (222, 225)], width=6)
 # Stroke 7: 横 (bottom of 口, sealing) — from (138, 225) to (222, 225)
 stroke([(138, 225), (180, 226), (222, 225)], width=6)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0344_佝/01_佝.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0344_佝/01_佝.png"
 img.save(out)
 print(f"Saved {out}")

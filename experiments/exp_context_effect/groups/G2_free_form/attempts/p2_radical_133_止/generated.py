@@ -62,4 +62,4 @@ stroke([(185, 70), (185, 220)], w_start=10, w_end=10)
 # slight up-tilt from left to right
 stroke([(55, 238), (260, 230)], w_start=9, w_end=10)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_133_止/01_止.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_133_止/01_止.png")

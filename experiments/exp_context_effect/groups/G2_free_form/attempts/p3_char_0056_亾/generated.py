@@ -34,4 +34,4 @@ brush_line([(140, 95), (170, 130), (215, 175), (255, 210)], width=8)
 # 4) Bottom 横 — flat base, slightly detached from the vertical.
 brush_line([(60, 262), (260, 262)], width=9)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0056_亾/01_亾.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0056_亾/01_亾.png")

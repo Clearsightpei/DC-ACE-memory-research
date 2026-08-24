@@ -79,6 +79,6 @@ stroke_polyline([(LO_LEFT_X, LO_TOP_Y),
 stroke_line((LO_RIGHT_X, LO_TOP_Y), (LO_RIGHT_X, LO_BOT_Y), r_start=5.0, r_end=5.0)
 
 # ---------- Save ----------
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0158_出/01_出.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0158_出/01_出.png"
 img.save(out)
 print(f"Wrote {out}")

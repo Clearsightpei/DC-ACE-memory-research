@@ -60,6 +60,6 @@ stroke(撇_pts, width=7)
 stroke(捺_pts, width=8)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0284_龹/01_龹.png"
 )

@@ -86,6 +86,6 @@ hook_y1 = hook_y0 + hook_len * math.sin(rad)
 line_dabs(hook_x0, hook_y0, hook_x1, hook_y1, R_MAIN + 1, 1.2, steps=260)
 
 # Save
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_23_竖弯钩/01_竖弯钩.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_23_竖弯钩/01_竖弯钩.png"
 img.save(out_path)
 print(f"Saved {out_path}")

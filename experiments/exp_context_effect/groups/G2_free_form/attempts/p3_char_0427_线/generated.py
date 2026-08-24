@@ -50,5 +50,5 @@ bezier([(200, 145), (170, 205), (125, 255)], width=6)
 # 点 — small tick in upper-right, above the 斜钩 start
 bezier([(248, 70), (258, 82), (250, 92)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0427_线/01_线.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0427_线/01_线.png")
 print("saved")

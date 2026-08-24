@@ -35,6 +35,6 @@ d.line(inner1, fill=BLACK, width=LW, joint="curve")
 inner2 = [(95, 195), (210, 195)]
 d.line(inner2, fill=BLACK, width=LW, joint="curve")
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_130_月/01_月.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_130_月/01_月.png"
 img.save(out)
 print(out)

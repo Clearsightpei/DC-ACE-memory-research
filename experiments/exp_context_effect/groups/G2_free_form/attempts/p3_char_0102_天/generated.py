@@ -94,5 +94,5 @@ pts = [
 ]
 stroke(pts, width_start=5, width_end=15)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0102_天/01_天.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0102_天/01_天.png")
 print("saved")

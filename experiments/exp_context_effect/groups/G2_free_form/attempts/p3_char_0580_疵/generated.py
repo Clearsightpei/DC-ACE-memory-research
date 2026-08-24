@@ -109,4 +109,4 @@ hook = bez((268, 248), (263, 238), (258, 228), (253, 220), n=25)
 stroke(hook, (6, 3))
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0580_疵/01_疵.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0580_疵/01_疵.png")

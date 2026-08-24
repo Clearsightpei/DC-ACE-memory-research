@@ -94,4 +94,4 @@ stroke(bez((214, 155), (214, 190), (214, 225), (214, 258), n=40), (7, 7))
 # bottom 一 of 圭 (the longest 横, base of character)
 stroke(bez((155, 258), (200, 257), (240, 257), (283, 258), n=40), (6, 8))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0570_畦/01_畦.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0570_畦/01_畦.png")

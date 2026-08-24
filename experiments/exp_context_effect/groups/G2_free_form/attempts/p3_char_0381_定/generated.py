@@ -62,5 +62,5 @@ for i in range(len(capts) - 1):
 d.line((210, 258, 265, 260), fill="black", width=7)
 dab(265, 260, 3)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0381_定/01_定.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0381_定/01_定.png")
 print("saved")

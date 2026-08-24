@@ -68,6 +68,6 @@ s1 = [(188, 102), (170, 115), (150, 130), (128, 148), (105, 168), (85, 178)]
 brush_stroke(s1, base_w=12, taper_end=True)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0038_匕/01_匕.png"
 )

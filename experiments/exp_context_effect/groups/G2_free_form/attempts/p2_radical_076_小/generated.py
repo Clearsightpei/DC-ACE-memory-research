@@ -95,5 +95,5 @@ bezier_taper(q0, q1, q2, r0=2.0, r1=8.5, steps=300)
 dab(q2[0], q2[1], 9)
 
 # --------------------------------------------------------------------
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_076_小/01_小.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_076_小/01_小.png")
 print("wrote 01_小.png")

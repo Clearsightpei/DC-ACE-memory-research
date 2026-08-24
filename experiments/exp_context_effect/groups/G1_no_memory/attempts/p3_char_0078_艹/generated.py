@@ -20,4 +20,4 @@ d.line([(105, 120), (95, 205)], fill=ink, width=thick)
 # Right vertical (short, slight right-slant at bottom)
 d.line([(190, 120), (200, 205)], fill=ink, width=thick)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0078_艹/01_艹.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0078_艹/01_艹.png")

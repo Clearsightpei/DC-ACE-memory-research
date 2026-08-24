@@ -139,6 +139,6 @@ SELF_CHECK = {
               'crossing occurs from the anchor geometry.'),
 }
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/'
+img.save('<REPO_ROOT>/experiments/'
          'exp_context_effect/groups/G5_code_bank_mmh/attempts/'
          'p3_char_0452_疬/01_疬.png')

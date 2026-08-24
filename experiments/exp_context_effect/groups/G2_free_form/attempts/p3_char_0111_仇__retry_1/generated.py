@@ -79,5 +79,5 @@ brush_line(d, wan_bot, width=W_STROKE)
 brush_line(d, [(218, 255), (208, 238)], width=W_STROKE)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0111_仇__retry_1/01_仇.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0111_仇__retry_1/01_仇.png")
 print("saved")

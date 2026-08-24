@@ -40,4 +40,4 @@ line([(165, 118), (180, 200)], width=3)
 line([(220, 118), (208, 200)], width=3)
 line([(225, 118), (240, 200)], width=3)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0568_倆/01_倆.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0568_倆/01_倆.png")

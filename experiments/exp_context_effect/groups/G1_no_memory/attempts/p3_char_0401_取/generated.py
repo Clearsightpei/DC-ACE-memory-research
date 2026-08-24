@@ -34,4 +34,4 @@ line((255, 100), (180, 245))
 # 2) 捺: from upper crossing point, sweep down-right to lower corner
 line((200, 155), (285, 240))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0401_取/01_取.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0401_取/01_取.png")

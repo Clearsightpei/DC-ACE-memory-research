@@ -46,5 +46,5 @@ polyline([(190, 190), (55, 285)], w=T)
 # 捺 right-falling stroke (starts mid, sweeps down-right)
 polyline([(115, 235), (265, 285)], w=T)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0495_复/01_复.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0495_复/01_复.png")
 print("saved")

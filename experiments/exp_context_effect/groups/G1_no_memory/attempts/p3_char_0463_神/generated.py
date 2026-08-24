@@ -39,4 +39,4 @@ line([(160, 160), (250, 160)])
 # Central long vertical extending above and below
 line([(205, 55), (205, 285)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0463_神/01_神.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0463_神/01_神.png")

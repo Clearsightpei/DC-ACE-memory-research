@@ -42,6 +42,6 @@ d.line([(90, 100), (90, hy)], fill=INK, width=T)
 # Right branch: short vertical from horizontal extending UP-RIGHT
 d.line([(210, 110), (210, hy)], fill=INK, width=T)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0084_屮/01_屮.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0084_屮/01_屮.png"
 img.save(out)
 print("saved", out)

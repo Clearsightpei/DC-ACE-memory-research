@@ -57,5 +57,5 @@ stroke(hook, width=8)
 dot = bezier((262, 55), (270, 68), (275, 82), steps=15)
 stroke(dot, width=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0283_传/01_传.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0283_传/01_传.png")
 print("saved")

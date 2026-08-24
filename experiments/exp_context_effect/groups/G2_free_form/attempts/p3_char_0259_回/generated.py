@@ -47,5 +47,5 @@ stroke([(IL - 3, IB), (IR + 4, IB - 1)], width=6)
 # 3) 横 bottom (outer) — drawn last, closes outer square
 stroke([(OL - 6, OB), (OR + 6, OB - 2)], width=9)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0259_回/01_回.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0259_回/01_回.png")
 print("wrote 01_回.png")

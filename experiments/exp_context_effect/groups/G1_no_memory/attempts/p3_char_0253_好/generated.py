@@ -31,5 +31,5 @@ line([(220, 260), (200, 250)], width=5)       # hook left
 # Stroke 3: 横 — horizontal crossbar through middle of 子
 line([(160, 185), (275, 180)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0253_好/01_好.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0253_好/01_好.png")
 print("saved")

@@ -76,7 +76,7 @@ brush_poly(
 draw.ellipse((248, 230, 262, 242), fill=BLACK)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0052_亡/01_亡.png"
 )
 print("wrote 01_亡.png")

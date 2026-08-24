@@ -77,4 +77,4 @@ stroke([(143, 165), (143, 250)], [5, 5])
 # bottom 横 (longest)
 stroke([(50, 250), (240, 248)], [6, 6])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0581_望/01_望.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0581_望/01_望.png")

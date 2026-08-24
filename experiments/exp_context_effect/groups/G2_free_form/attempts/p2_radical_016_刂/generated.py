@@ -53,4 +53,4 @@ for i in range(steps + 1):
     r = 5.0 + (1.0 - 5.0) * t
     dab(x, y, r)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_016_刂/01_刂.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_016_刂/01_刂.png")

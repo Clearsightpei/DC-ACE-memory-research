@@ -29,4 +29,4 @@ line([(85, 175), (70, 210), (95, 240)], 6)
 # long horizontal 捺 sweep across the bottom, gently rising to the right
 line([(70, 250), (275, 235)], 7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0305_还/01_还.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0305_还/01_还.png")

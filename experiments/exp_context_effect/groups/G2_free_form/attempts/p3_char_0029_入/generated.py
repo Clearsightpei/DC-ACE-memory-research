@@ -71,6 +71,6 @@ na_pts = [
 na_widths = [3, 5, 7, 9, 11, 13, 15, 14, 8]
 brush_stroke(na_pts, na_widths)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0029_入/01_入.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0029_入/01_入.png"
 img.save(out_path)
 print(f"Wrote {out_path}")

@@ -102,7 +102,7 @@ dab(p0[0], p0[1], 7.5)
 bezier_dabs(p0, p1, p2, r0=9.0, r1=1.2, steps=500)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_097_户/01_户.png"
 )
 print("wrote 01_户.png")

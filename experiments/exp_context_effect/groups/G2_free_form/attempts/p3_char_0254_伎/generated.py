@@ -42,4 +42,4 @@ stroke([(145, 165), (185, 163), (210, 163),
 # 捺: long diagonal from ~(190, 170) down-right to (270, 275)
 stroke([(190, 170), (215, 210), (245, 245), (272, 275)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0254_伎/01_伎.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0254_伎/01_伎.png")

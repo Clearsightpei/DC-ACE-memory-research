@@ -88,4 +88,4 @@ stroke(kr, (6, 6))
 kb = bez((140, 272), (180, 270), (225, 270), (255, 272), n=40)
 stroke(kb, (6, 6))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0447_信/01_信.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0447_信/01_信.png")

@@ -99,4 +99,4 @@ stroke(d3, (4, 9))
 d4 = bez((225, 215), (232, 230), (238, 245), (245, 258), n=25)
 stroke(d4, (4, 9))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0529_热/01_热.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0529_热/01_热.png")

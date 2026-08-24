@@ -30,4 +30,4 @@ line([(195, 145), (195, 250)], w=LW)
 #   dot/piě-dian on right side of 下's vertical
 line([(200, 185), (225, 205)], w=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0354_佧/01_佧.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0354_佧/01_佧.png")

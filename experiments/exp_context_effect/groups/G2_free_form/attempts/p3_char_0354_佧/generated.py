@@ -77,4 +77,4 @@ stroke(shu_main, width_start=7, width_end=6)
 dian = [(207, 168), (225, 178), (245, 188)]
 stroke(dian, width_start=5, width_end=3, taper=True)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0354_佧/01_佧.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0354_佧/01_佧.png")

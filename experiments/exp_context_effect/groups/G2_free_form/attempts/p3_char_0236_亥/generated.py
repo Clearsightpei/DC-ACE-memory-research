@@ -45,4 +45,4 @@ stroke([(170, 175), (158, 195), (150, 210)], width=5)
 # 6. 捺 — sweeping diagonal, tapered terminal (no blob)
 stroke([(175, 175), (195, 205), (220, 235), (248, 258), (268, 268)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0236_亥/01_亥.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0236_亥/01_亥.png")

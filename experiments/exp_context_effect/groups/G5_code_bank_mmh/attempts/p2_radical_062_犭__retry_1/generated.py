@@ -101,6 +101,6 @@ SELF_CHECK = {
     'notes': 'retry_1: added top X-crossing (P) that main lacked; kept N-gap for bottom pie.',
 }
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_062_犭__retry_1/01_犭.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_062_犭__retry_1/01_犭.png"
 img.save(out)
 print("wrote", out)

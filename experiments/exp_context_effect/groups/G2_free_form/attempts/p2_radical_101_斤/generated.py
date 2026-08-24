@@ -93,6 +93,6 @@ dab(s4_x, s4_y0, 5.2)  # 顿笔 top
 line_dabs(s4_x, s4_y0, s4_x, s4_y1, r0=4.2, r1=4.2, steps=260)
 dab(s4_x, s4_y1, 5.2)  # blunt terminal
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_101_斤/01_斤.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_101_斤/01_斤.png"
 img.save(out)
 print(f"wrote {out}")

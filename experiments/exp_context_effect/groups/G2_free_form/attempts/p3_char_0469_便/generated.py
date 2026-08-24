@@ -98,6 +98,6 @@ stroke(foot, (12, 4))
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0469_便/01_便.png"
 )

@@ -115,4 +115,4 @@ stroke(pna_b, (10, 13))
 foot2 = bez((265, 250), (272, 251), (278, 252), (282, 253), n=20)
 stroke(foot2, (13, 3))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0531_速/01_速.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0531_速/01_速.png")

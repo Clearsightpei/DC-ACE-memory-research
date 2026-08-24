@@ -51,4 +51,4 @@ pie_pts = [
 ]
 polyline(pie_pts)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_014_厂/01_厂.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_014_厂/01_厂.png")

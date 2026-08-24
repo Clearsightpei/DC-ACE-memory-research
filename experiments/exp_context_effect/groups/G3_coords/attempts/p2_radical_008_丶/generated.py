@@ -51,4 +51,4 @@ for i in range(n_segments + 1):
         t.ellipse([px - r, py - r, px + r, py + r], fill=(0, 0, 0))
     prev_pt = (px, py)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_008_丶/01_丶.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_008_丶/01_丶.png")

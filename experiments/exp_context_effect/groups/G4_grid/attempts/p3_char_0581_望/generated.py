@@ -30,7 +30,7 @@ SELF_CHECK = {
 }
 
 import sys, os
-BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
+BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
 sys.path.insert(0, BANK)
 
 from PIL import Image, ImageDraw
@@ -102,7 +102,7 @@ fat_line(draw, A('BC', 0.42, 0.15), A('BC', 0.44, 0.85), width=W)   # (142,215)�
 # s11 — bottom 横 (WIDEST)
 fat_line(draw, A('BL', 0.15, 0.92), A('BR', 0.85, 0.90), width=W+1) # (15,292)→(285,290)
 
-OUT = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0581_望/01_望.png"
+OUT = "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0581_望/01_望.png"
 img.save(OUT)
 print(f"saved {OUT}")
 print("stroke count = 11 (亡:3 + 月:4 + 王:4)")

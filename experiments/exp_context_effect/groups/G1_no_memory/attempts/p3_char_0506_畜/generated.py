@@ -53,5 +53,5 @@ line(mid_x, top, mid_x, bot, 4)
 mid_y = (top + bot) // 2
 line(left, mid_y, right, mid_y, 4)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0506_畜/01_畜.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0506_畜/01_畜.png")
 print("saved")

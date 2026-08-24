@@ -25,4 +25,4 @@ d.line([(200, 110), (200, 175)], fill="black", width=5)
 # bottom horizontal 一 (long, under 立 only)
 d.line([(140, 220), (265, 220)], fill="black", width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0313_位/01_位.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0313_位/01_位.png")

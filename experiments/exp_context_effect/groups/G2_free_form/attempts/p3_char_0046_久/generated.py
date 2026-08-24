@@ -78,7 +78,7 @@ na_w = [2.5, 3.5, 4.5, 5.5, 6.5, 5.5, 2.8]
 brush(na, na_w)
 
 out = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p3_char_0046_久/01_久.png"
 )

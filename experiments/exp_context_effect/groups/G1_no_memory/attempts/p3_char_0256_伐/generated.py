@@ -25,4 +25,4 @@ stroke([(175, 115), (210, 180), (250, 245), (275, 235), (280, 220)], w=6)
 # Small top-right dot (点)
 stroke([(255, 75), (270, 95)], w=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0256_伐/01_伐.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0256_伐/01_伐.png")

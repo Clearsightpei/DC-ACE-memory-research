@@ -41,4 +41,4 @@ stroke([(238, 150), (262, 162)], width=6)
 # Bottom 一 (long horizontal — longest stroke of the character)
 stroke([(130, 258), (288, 248)], width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0320_伾/01_伾.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0320_伾/01_伾.png")

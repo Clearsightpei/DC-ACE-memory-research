@@ -56,5 +56,5 @@ brush_line([(200, 95), (190, 140), (175, 195), (145, 265)], width_start=5, width
 # distinctly separated from strokes 3 and 4; short down-right teardrop
 brush_line([(158, 115), (168, 128)], width_start=3, width_end=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0183_仞/01_仞.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0183_仞/01_仞.png")
 print("wrote 01_仞.png")

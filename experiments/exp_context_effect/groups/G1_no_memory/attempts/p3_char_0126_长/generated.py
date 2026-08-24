@@ -26,6 +26,6 @@ line([(118, 255), (150, 240), (175, 228)], width=TH)
 # Stroke 4: long 捺 (na) — from crossing area, sweep down-right with tail
 line([(130, 140), (160, 170), (195, 205), (230, 235), (265, 260)], width=TH)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0126_长/01_长.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0126_长/01_长.png"
 img.save(out)
 print(f"Saved {out}")

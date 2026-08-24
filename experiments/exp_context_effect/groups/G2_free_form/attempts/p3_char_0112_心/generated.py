@@ -78,6 +78,6 @@ taper_line(215, 125, 240, 165, 2.5, 6.0, steps=140)
 dab(240, 165, 6.2)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0112_心/01_心.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0112_心/01_心.png"
 )
 print("saved")

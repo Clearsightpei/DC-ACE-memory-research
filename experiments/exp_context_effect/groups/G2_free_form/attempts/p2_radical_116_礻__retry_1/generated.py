@@ -63,5 +63,5 @@ stroke_line([(150, 100), (150, 265)], width_start=9, width_end=8)
 # to the right of the 竖, around (200, 180)
 stroke_line([(175, 170), (215, 205)], width_start=4, width_end=11)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_116_礻__retry_1/01_礻.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_116_礻__retry_1/01_礻.png")
 print("saved")

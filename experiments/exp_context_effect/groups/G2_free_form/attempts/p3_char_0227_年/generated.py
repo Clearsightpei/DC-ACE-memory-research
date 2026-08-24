@@ -64,6 +64,6 @@ taper_line((42, 208), (272, 202), 10, 11, steps=40)
 # from about (168, 90) to (168, 285), slight leftward drift at bottom
 taper_line((170, 92), (168, 285), 11, 10, steps=50)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0227_年/01_年.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0227_年/01_年.png"
 img.save(out)
 print(f"Saved {out}")

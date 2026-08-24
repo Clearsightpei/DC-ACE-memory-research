@@ -32,5 +32,5 @@ d.line([(ix2, iy1), (ix2, iy2)], fill=INK, width=LW)
 # Inner bottom
 d.line([(ix1, iy2), (ix2, iy2)], fill=INK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0259_回/01_回.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0259_回/01_回.png")
 print("saved")

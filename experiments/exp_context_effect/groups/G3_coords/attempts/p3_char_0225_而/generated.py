@@ -41,4 +41,4 @@ line((120, 135), (120, 255), w=5)
 # 6) Inner-right 丨
 line((185, 135), (185, 255), w=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0225_而/01_而.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0225_而/01_而.png")

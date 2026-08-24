@@ -42,4 +42,4 @@ stroke([(205, 86), (200, 160)], width=7)
 # 5. Bottom 横 (LONGEST — clearly widest of all strokes)
 stroke([(60, 246), (245, 242)], width=9)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0182_正/01_正.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0182_正/01_正.png")

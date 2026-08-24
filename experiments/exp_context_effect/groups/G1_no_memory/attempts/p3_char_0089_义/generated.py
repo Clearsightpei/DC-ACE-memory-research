@@ -52,5 +52,5 @@ na = [
 ]
 stroke(na, width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0089_义/01_义.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0089_义/01_义.png")
 print("saved")

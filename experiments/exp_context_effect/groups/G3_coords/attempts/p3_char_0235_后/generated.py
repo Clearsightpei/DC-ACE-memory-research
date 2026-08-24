@@ -57,6 +57,6 @@ def draw_hou(img_size=300):
 if __name__ == "__main__":
     im = draw_hou()
     im.save(
-        "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+        "<REPO_ROOT>/experiments/exp_context_effect/"
         "groups/G3_coords/attempts/p3_char_0235_后/01_后.png"
     )

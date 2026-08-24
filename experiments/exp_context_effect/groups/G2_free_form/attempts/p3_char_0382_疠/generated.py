@@ -72,4 +72,4 @@ brush_line([(198, 258), (178, 245)], w0=6, w1=3)
 # 7. 撇 inside 万 — from upper corner sweeping down-left
 brush_line([(185, 140), (160, 205), (125, 268)], w0=9, w1=3)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0382_疠/01_疠.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0382_疠/01_疠.png")

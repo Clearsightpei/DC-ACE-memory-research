@@ -55,4 +55,4 @@ line((203, 258), (188, 250), w=LW)  # hook tip
 # Stroke 3: 横 — long horizontal crossbar.
 line((168, 195), (290, 192), w=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0253_好/01_好.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0253_好/01_好.png")

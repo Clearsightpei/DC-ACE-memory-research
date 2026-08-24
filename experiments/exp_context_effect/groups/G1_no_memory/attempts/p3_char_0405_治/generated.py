@@ -40,4 +40,4 @@ polyline([(lx, ty), (rx, ty), (rx, by)])
 # bottom horizontal
 polyline([(lx, by), (rx, by)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0405_治/01_治.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0405_治/01_治.png")

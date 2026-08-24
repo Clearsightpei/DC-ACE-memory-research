@@ -9,7 +9,7 @@
 # needed beyond the identity.
 
 import sys
-sys.path.insert(0, "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code")
+sys.path.insert(0, "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code")
 
 from PIL import Image, ImageDraw
 from yi_radical import draw_yi_radical
@@ -21,6 +21,6 @@ d = ImageDraw.Draw(img)
 # Standalone character — identity transform (same as passing radical render).
 draw_yi_radical(d, ox=0.0, oy=0.0, scale=1.0)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0003_乙/01_乙.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0003_乙/01_乙.png"
 img.save(out_path)
 print(f"Saved: {out_path}")

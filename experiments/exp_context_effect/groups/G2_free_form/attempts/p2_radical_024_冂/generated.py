@@ -72,7 +72,7 @@ dab(vx1, vy1, 5.0)
 line_dabs(vx1, vy1, hkx1, hky1, 5.0, 1.2)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p2_radical_024_冂/01_冂.png"
 )

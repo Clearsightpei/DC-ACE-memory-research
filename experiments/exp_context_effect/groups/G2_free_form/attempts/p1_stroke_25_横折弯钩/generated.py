@@ -154,6 +154,6 @@ dab(r_x1, r_y1, BASE_R + 1.5)
 stroke_line(r_x1, r_y1, fx1, fy1, BASE_R + 0.5, 1.2, steps=200)
 
 # Save
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_25_横折弯钩/01_横折弯钩.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_25_横折弯钩/01_横折弯钩.png"
 img.save(out)
 print(f"Saved: {out}")

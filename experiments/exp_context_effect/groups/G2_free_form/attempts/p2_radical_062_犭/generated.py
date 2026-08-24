@@ -86,6 +86,6 @@ dab(s3_p0[0], s3_p0[1], 7)
 bezier_taper(s3_p0, s3_ctrl, s3_p2, r0=6.5, r1=1.5, steps=400)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_062_犭/01_犭.png"
 )

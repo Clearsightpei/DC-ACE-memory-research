@@ -58,5 +58,5 @@ stroke(na, width=10)
 d.ellipse([250, 245, 268, 258], fill="black")
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0193_癶/01_癶.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0193_癶/01_癶.png"
 )

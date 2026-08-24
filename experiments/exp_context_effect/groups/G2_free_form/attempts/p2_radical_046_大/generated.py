@@ -96,5 +96,5 @@ FOOT_END = (283, 258)
 line_dabs(NA_P2[0], NA_P2[1], FOOT_END[0], FOOT_END[1], 10, 3)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_046_大/01_大.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_046_大/01_大.png")
 print("saved 大")

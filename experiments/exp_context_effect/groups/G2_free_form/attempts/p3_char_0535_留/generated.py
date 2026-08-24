@@ -13,7 +13,7 @@ Components touch (H rule): top row sits flush on 田's top edge.
 from PIL import Image, ImageDraw
 
 W = H = 300
-OUT = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0535_留/01_留.png"
+OUT = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0535_留/01_留.png"
 
 img = Image.new("RGB", (W, H), "white")
 d = ImageDraw.Draw(img)

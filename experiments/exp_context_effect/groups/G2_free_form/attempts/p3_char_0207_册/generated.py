@@ -49,5 +49,5 @@ line((236, 250), (220, 236), w=LW)
 # The bar is slightly angled up-right (calligraphic 横)
 line((40, 162), (260, 152), w=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0207_册/01_册.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0207_册/01_册.png")
 print("wrote 01_册.png")

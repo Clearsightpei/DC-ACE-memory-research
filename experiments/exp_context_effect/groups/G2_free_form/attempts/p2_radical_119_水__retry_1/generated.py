@@ -73,5 +73,5 @@ brush(right_leg, width_start=4, width_end=9)
 # Terminal splay tail-tip for 捺
 brush([(255, 245), (265, 246)], width_start=9, width_end=3)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_119_水__retry_1/01_水.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_119_水__retry_1/01_水.png")
 print("saved 01_水.png")

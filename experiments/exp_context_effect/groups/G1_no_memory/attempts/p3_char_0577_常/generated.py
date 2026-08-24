@@ -44,5 +44,5 @@ stroke([(210, 175), (210, 260), (188, 275)], width=5)
 # Center long vertical of 巾 (goes from just under 口 to bottom)
 stroke([(150, 152), (150, 285)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0577_常/01_常.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0577_常/01_常.png")
 print("saved")

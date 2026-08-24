@@ -21,7 +21,7 @@ from ren_side because we pass MMH-derived anchors that already respect
 the gap.
 """
 import sys, os
-sys.path.insert(0, "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code")
+sys.path.insert(0, "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code")
 
 from PIL import Image, ImageDraw
 from _anchor import anchor_to_xy

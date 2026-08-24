@@ -113,4 +113,4 @@ SELF_CHECK = {
              'Anchors verbatim from MMH block. Uniform PIL line (G5 structural A ceiling).'
 }
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0522_疴/01_疴.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0522_疴/01_疴.png")

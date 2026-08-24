@@ -43,4 +43,4 @@ line([(275, 260), (290, 262)])
 # tiny hook back up
 line([(290, 262), (288, 252)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0407_规/01_规.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0407_规/01_规.png")

@@ -72,6 +72,6 @@ draw.ellipse((p0_h[0] - 5, p0_h[1] - 5, p0_h[0] + 5, p0_h[1] + 5), fill="black")
 draw.ellipse((p2_h[0] - 5, p2_h[1] - 5, p2_h[0] + 5, p2_h[1] + 5), fill="black")
 
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_033_亠/01_亠.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_033_亠/01_亠.png"
 img.save(out)
 print(f"Saved {out}")

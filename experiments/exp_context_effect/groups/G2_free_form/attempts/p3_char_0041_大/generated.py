@@ -73,5 +73,5 @@ brush_stroke(na_pts, na_ws)
 fx, fy = 250, 262
 draw.ellipse([fx - 6, fy - 4, fx + 10, fy + 4], fill="black")
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0041_大/01_大.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0041_大/01_大.png")
 print("saved")

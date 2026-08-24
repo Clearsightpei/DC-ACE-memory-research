@@ -73,5 +73,5 @@ tapered((42, 160), (272, 156), 5, 7)
 # 5) 竖 descending from crossbar down to near bottom (center x)
 tapered((156, 158), (154, 286), 7, 5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0176_平__retry_3/01_平.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0176_平__retry_3/01_平.png")
 print("wrote 01_平.png")

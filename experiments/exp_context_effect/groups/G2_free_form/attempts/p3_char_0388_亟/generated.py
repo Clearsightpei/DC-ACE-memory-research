@@ -40,4 +40,4 @@ line([(175, 130), (215, 175), (240, 200)], width=LW)
 # --- Stroke 8: bottom horizontal (longer) ---
 line([(45, 245), (260, 250)], width=LW+1)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0388_亟/01_亟.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0388_亟/01_亟.png")

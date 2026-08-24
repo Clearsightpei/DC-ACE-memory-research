@@ -64,5 +64,5 @@ poly([(185, 240), (180, 225), (178, 215)], width=6)
 poly([(215, 155), (220, 175), (222, 195)], width=7)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0359_的/01_的.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0359_的/01_的.png")
 print("saved")

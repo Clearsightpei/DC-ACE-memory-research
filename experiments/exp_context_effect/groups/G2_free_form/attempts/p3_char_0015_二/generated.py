@@ -45,5 +45,5 @@ heng(95, 122, 200, 115, r=5, dun=1)
 heng(45, 220, 260, 210, r=5.5, dun=1)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0015_二/01_二.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0015_二/01_二.png"
 )

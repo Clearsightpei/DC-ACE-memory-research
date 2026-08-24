@@ -46,4 +46,4 @@ line((200, 130), (200, 230))
 polyline([(200, 230), (210, 248), (230, 258), (258, 255), (275, 238)])
 line((275, 238), (275, 215))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0244_仳/01_仳.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0244_仳/01_仳.png")

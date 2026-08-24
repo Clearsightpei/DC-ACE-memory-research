@@ -94,4 +94,4 @@ _pie(cx - 3, 195, 68, 275, w_head=8, w_tail=2, bow_perp=-10)
 # Right long na (from mid-spine sweeping down-right)
 _na(cx + 3, 195, 235, 275, w_head=2, w_belly=10, w_tail=2, bow_perp=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0566_眔/01_眔.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0566_眔/01_眔.png")

@@ -128,6 +128,6 @@ for i in range(steps_hook + 1):
     dab(x, y, r)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0287_光/01_光.png"
 )

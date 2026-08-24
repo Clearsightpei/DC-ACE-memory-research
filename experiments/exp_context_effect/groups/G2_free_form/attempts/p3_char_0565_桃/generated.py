@@ -147,7 +147,7 @@ rhk_p2 = (262, 244)
 bezier_dabs(rhk_p0, rhk_p1, rhk_p2, r0=5.5, r1=1.2, steps=120, ease=1.2)
 
 out = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p3_char_0565_桃/01_桃.png"
 )

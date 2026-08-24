@@ -63,5 +63,5 @@ na_widths = [6, 9, 11, 12, 8]
 stroke(na_pts, na_widths)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_009_八/01_八.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_009_八/01_八.png"
 )

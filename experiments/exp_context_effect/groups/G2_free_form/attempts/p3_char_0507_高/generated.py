@@ -106,4 +106,4 @@ stroke(i_right, (5, 5))
 i_bot = bez((105, 252), (135, 252), (170, 252), (195, 252), n=30)
 stroke(i_bot, (5, 5))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0507_高/01_高.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0507_高/01_高.png")

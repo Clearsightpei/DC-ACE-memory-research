@@ -110,5 +110,5 @@ bezier((152, 213), (175, 232), (200, 258), (234, 286), w0=4, w1=8)
 brush_line((234, 286), (242, 282), w0=8, w1=2)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0317_员/01_员.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0317_员/01_员.png")
 print("wrote 01_员.png")

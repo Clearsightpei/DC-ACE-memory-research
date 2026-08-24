@@ -105,4 +105,4 @@ stroke(pie2, (7, 3))
 dot = bez((255, 95), (260, 103), (263, 110), (265, 118), n=25)
 stroke(dot, (3, 9))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0473_城/01_城.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0473_城/01_城.png")

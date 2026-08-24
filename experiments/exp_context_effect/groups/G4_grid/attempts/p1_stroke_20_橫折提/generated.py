@@ -195,7 +195,7 @@ def draw_heng_zhe_ti(draw,
 # ---- Render -----------------------------------------------------------
 
 OUT_PATH = Path(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G4_grid/attempts/p1_stroke_20_橫折提/"
     "01_橫折提.png"
 )

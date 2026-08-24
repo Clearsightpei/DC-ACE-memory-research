@@ -43,6 +43,6 @@ d.line([(box_left + 4, box_mid_y), (box_right - 4, box_mid_y)], fill=BLACK, widt
 # 5. 横 bottom horizontal
 d.line([(box_left - 2, box_bot), (box_right + 2, box_bot)], fill=BLACK, width=LW)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0161_甴/01_甴.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0161_甴/01_甴.png"
 img.save(out_path)
 print(f"Wrote {out_path}")

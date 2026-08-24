@@ -32,7 +32,7 @@
 from PIL import Image, ImageDraw
 import os, sys
 
-_BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
+_BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
 if _BANK not in sys.path:
     sys.path.insert(0, _BANK)
 
@@ -74,7 +74,7 @@ def main():
     # tail (+80,-90) → (72+70, -81-65) = (142, -146) → PIL (292, 296). OK.
     draw_na(d, ox=70, oy=-65, scale=0.90)
 
-    out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_046_大/01_大.png"
+    out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_046_大/01_大.png"
     img.save(out)
     print("wrote", out)
 

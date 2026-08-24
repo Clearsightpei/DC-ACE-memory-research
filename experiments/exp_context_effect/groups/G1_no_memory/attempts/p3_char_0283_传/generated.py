@@ -36,4 +36,4 @@ line([(130, 200), (275, 195)])
 # The final 点 (dot) on lower right
 line([(215, 235), (235, 260)], width=W+1)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0283_传/01_传.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0283_传/01_传.png")

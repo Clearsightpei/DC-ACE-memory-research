@@ -67,7 +67,7 @@ taper_line(235, 138, 232, 278, w1=9, w2=9, steps=150)
 dab(232, 278, 6)  # blunt terminal (below the bottom horizontal)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0032_凵/01_凵.png"
 )
 print("wrote 01_凵.png")

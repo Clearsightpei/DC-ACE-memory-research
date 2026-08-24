@@ -89,5 +89,5 @@ def taper_line(pts, w0=3, w1=8):
 
 taper_line([(120, 130), (160, 180), (210, 235), (222, 243)], w0=4, w1=9)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0127_冈/01_冈.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0127_冈/01_冈.png")
 print("Saved 01_冈.png")

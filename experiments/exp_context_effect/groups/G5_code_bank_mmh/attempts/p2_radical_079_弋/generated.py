@@ -74,4 +74,4 @@ SELF_CHECK = {
     'notes': 'BANK_DEVIATION: inlined xie_gou fresh (no bank primitive); heng short/angled inlined too.'
 }
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_079_弋/01_弋.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_079_弋/01_弋.png")

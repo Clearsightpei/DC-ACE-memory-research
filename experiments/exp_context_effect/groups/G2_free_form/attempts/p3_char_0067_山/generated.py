@@ -27,4 +27,4 @@ d.line([(150, 78), (150, 225)], fill=ink, width=w)
 # 3) Right vertical: from (~228, 120) down to (~238, 232) — slight outward slope
 d.line([(228, 118), (238, 232)], fill=ink, width=w)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0067_山/01_山.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0067_山/01_山.png")

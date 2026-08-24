@@ -91,5 +91,5 @@ pie_p2 = (55, 275)
 pie_ctrl = (200, 190)
 bezier_taper(pie_p0, pie_ctrl, pie_p2, THIN + 1.5, 1.0, steps=420)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_102_耂/01_耂.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_102_耂/01_耂.png")
 print("wrote 01_耂.png")

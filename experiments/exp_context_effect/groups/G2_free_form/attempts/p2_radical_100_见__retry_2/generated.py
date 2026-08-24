@@ -126,5 +126,5 @@ hy1 = horiz_end_y + hook_len * math.sin(math.radians(hook_angle_deg))
 dab(horiz_end_x, horiz_end_y, R)  # joining dab = segment radius
 line_dabs(horiz_end_x, horiz_end_y, hx1, hy1, R, 1.0, steps=80)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_100_见__retry_2/01_见.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_100_见__retry_2/01_见.png")
 print("Wrote 01_见.png")

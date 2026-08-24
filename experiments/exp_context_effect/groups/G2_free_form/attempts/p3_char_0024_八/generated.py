@@ -89,5 +89,5 @@ for i in range(15):
 tail_widths = [max(1.0, 4.0 * (1 - i / 14)) for i in range(15)]
 brush_stroke(tail_pts, tail_widths)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0024_八/01_八.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0024_八/01_八.png")
 print("wrote 01_八.png")

@@ -85,6 +85,6 @@ brush_line(draw, hpts, hwidths)
 # 顿 dab at end (slight down-press)
 draw.ellipse([h_end[0] - 4, h_end[1] - 3, h_end[0] + 5, h_end[1] + 5], fill=BLACK)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0020_亠/01_亠.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0020_亠/01_亠.png"
 img.save(out_path)
 print(f"wrote {out_path}")

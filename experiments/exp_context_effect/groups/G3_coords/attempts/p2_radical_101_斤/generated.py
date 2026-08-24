@@ -90,7 +90,7 @@ def draw_jin(img):
 def main():
     img = Image.new("L", (W, H), color=255)
     draw_jin(img)
-    out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_101_斤/01_斤.png"
+    out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_101_斤/01_斤.png"
     img.save(out)
     print(f"wrote {out}")
 

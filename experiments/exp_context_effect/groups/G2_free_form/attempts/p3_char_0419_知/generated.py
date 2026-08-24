@@ -50,4 +50,4 @@ stroke([(x1, y0), (x1, y1 - 3)], width=6)
 # bottom horizontal (一)
 stroke([(x0 - 2, y1), (x1 + 3, y1)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0419_知/01_知.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0419_知/01_知.png")

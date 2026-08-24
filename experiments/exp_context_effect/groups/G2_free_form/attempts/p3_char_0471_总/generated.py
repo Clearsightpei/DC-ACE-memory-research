@@ -92,4 +92,4 @@ stroke(mid_pt, (3, 7))
 right_dot = bez((198, 205), (206, 215), (213, 226), (220, 238), n=30)
 stroke(right_dot, (3, 8))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0471_总/01_总.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0471_总/01_总.png")

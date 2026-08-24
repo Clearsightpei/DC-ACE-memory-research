@@ -68,6 +68,6 @@ line((x_left + 3, y_mid), (x_right - 3, y_mid))
 # Stroke 9: bottom 横
 line((x_left, y_bot), (x_right, y_bot))
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0489_指/01_指.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0489_指/01_指.png"
 img.save(out)
 print("saved", out)

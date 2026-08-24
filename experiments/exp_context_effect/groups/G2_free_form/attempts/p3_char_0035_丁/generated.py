@@ -66,4 +66,4 @@ d.line(hook_pts, fill=BLACK, width=LW)
 tip_x, tip_y = hook_pts[-1]
 dab(tip_x, tip_y, r=4)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0035_丁/01_丁.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0035_丁/01_丁.png")

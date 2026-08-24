@@ -23,7 +23,7 @@ FIXES for retry_2
 """
 
 import sys
-sys.path.insert(0, '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code')
+sys.path.insert(0, '<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code')
 
 from PIL import Image, ImageDraw
 from _anchor import anchor_to_xy, fat_line, quad_bezier, stroke_variable_width
@@ -98,6 +98,6 @@ p6b_raw = anchor_to_xy(('BC', 0.77, 1.05))   # (177, 305)
 p6b = (p6b_raw[0], min(p6b_raw[1], 298))
 fat_line(draw, p6a, p6b, width=10)
 
-out_path = '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0233_那__retry_2/01_那.png'
+out_path = '<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0233_那__retry_2/01_那.png'
 img.save(out_path)
 print('wrote', out_path)

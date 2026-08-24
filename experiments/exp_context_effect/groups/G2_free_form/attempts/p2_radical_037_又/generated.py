@@ -97,6 +97,6 @@ foot_x, foot_y = na_P2
 draw.ellipse((foot_x - 8, foot_y - 3.5, foot_x + 4, foot_y + 3.5), fill="black")
 
 # Save
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_037_又/01_又.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_037_又/01_又.png"
 img.save(out_path)
 print(f"Wrote {out_path}")

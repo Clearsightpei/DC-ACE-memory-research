@@ -88,4 +88,4 @@ stroke(bez((228, 253), (245, 258), (260, 261), (275, 263), n=50), (6, 7))
 stroke(bez((275, 263), (272, 255), (268, 247), (263, 240), n=25), (7, 3))
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0561_晓/01_晓.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0561_晓/01_晓.png")

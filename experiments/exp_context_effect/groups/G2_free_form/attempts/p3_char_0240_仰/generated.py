@@ -72,4 +72,4 @@ pts = bezier((245, 215), (240, 213), (232, 210), (225, 208), n=15)
 stroke(pts, w_start=4, w_end=2)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0240_仰/01_仰.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0240_仰/01_仰.png")

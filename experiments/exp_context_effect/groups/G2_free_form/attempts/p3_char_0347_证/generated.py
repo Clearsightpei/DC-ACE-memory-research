@@ -63,7 +63,7 @@ stroke([(245, 115), (250, 240)], width=7)
 stroke([(140, 245), (280, 240)], width=9)
 
 out_path = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0347_证/01_证.png"
 )
 img.save(out_path)

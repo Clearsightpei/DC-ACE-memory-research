@@ -97,4 +97,4 @@ stroke(h_box_bot, (5, 5))
 h_under = bez((100, 250), (150, 248), (210, 248), (265, 252), n=50)
 stroke(h_under, (7, 7))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0533_值/01_值.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0533_值/01_值.png")

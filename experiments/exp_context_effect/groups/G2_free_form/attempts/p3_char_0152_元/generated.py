@@ -55,5 +55,5 @@ shu_wan_gou = [
 ]
 stroke(shu_wan_gou)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0152_元/01_元.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0152_元/01_元.png")
 print("wrote 01_元.png")

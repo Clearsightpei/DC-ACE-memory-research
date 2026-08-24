@@ -30,5 +30,5 @@ draw.line([(270, 130), (270, 245)], fill=INK, width=LW)
 # Stroke 3: 横 — bottom horizontal closing
 draw.line([(180, 245), (270, 245)], fill=INK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0241_如/01_如.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0241_如/01_如.png")
 print("saved")

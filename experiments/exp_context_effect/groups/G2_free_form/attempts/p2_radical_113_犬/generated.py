@@ -99,6 +99,6 @@ dot((225, 80), (252, 105), r0=2, r1=7)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_113_犬/01_犬.png"
 )

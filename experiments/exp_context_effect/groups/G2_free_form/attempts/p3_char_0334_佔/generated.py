@@ -55,5 +55,5 @@ stroke([(245, 180), (245, 265)], width=6)
 # Bottom horizontal
 stroke([(150, 265), (245, 265)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0334_佔/01_佔.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0334_佔/01_佔.png")
 print("Saved.")

@@ -33,7 +33,7 @@ d.line([(216, 250), (208, 260)], fill=INK, width=W)
 d.line([(208, 260), (188, 258)], fill=INK, width=W)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G1_no_memory/attempts/p3_char_0160_可/01_可.png"
 )
 print("wrote 01_可.png")

@@ -65,6 +65,6 @@ p2_4 = (245, 220)
 bezier_dot(p0_4, p1_4, p2_4, r_start=1.5, r_end=5.0, steps=260, easing=1.3)
 
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_087_灬/01_灬.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_087_灬/01_灬.png"
 img.save(out)
 print("saved:", out)

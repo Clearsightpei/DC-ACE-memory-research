@@ -92,5 +92,5 @@ brush(rx0, ry0, 6)
 tapered_line((rx0, ry0), (rx1, ry1), r_start=6, r_end=2)
 
 # ------------------------------------------------------------------
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_077_忄__retry_1/01_忄.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_077_忄__retry_1/01_忄.png")
 print("wrote 01_忄.png")

@@ -60,6 +60,6 @@ line((50, 245), (255, 242), width=6)
 # small starting tick on the left of bottom horizontal
 d.line([(50, 245), (58, 250)], fill="black", width=5)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0352_佥/01_佥.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0352_佥/01_佥.png"
 img.save(out)
 print("wrote", out)

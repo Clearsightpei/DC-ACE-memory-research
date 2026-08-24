@@ -64,4 +64,4 @@ right_bot = (218, 175)
 dab(right_top[0], right_top[1], r_h + 1.0)  # 顿 at top
 seg(right_top[0], right_top[1], right_bot[0], right_bot[1], r_h, r_h, steps=260)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_040_屮/01_屮.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_040_屮/01_屮.png")

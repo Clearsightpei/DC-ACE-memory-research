@@ -87,5 +87,5 @@ stroke([(235, 222), (222, 210)], [6, 2.5])
 # Stroke 5: 横 (bottom foot horizontal) — spans under body, tucks under
 stroke([(150, 235), (270, 235)], [7, 7])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0563_鸭/01_鸭.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0563_鸭/01_鸭.png")
 print("saved")

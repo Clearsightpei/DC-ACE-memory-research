@@ -84,5 +84,5 @@ for i in range(len(na_pts)):
     na_widths.append(w)
 brush_stroke(na_pts, na_widths)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0331_更/01_更.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0331_更/01_更.png")
 print("saved")

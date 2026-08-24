@@ -21,7 +21,7 @@ import os
 from PIL import Image, ImageDraw
 
 # Import shared helpers from the success bank.
-SB = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
+SB = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
 sys.path.insert(0, SB)
 from _shared_helpers import variant_pie, variant_na, to_px, tapered_line  # noqa: E402
 from shu_gou import draw_shu_gou  # noqa: E402

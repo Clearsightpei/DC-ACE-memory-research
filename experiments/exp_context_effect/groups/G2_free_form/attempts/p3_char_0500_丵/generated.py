@@ -78,6 +78,6 @@ hline(70, 145, 230, w=6)   # upper mid horizontal
 hline(60, 195, 240, w=6)   # long horizontal (widest of the three)
 hline(80, 235, 220, w=6)   # bottom horizontal (shorter)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0500_丵/01_丵.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0500_丵/01_丵.png"
 img.save(out)
 print("saved", out)

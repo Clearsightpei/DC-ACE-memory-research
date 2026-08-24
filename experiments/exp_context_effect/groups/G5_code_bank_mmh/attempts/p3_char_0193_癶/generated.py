@@ -93,4 +93,4 @@ s5_head = A('TC', 0.512, 0.885)
 s5_tail = A('MR', 0.883, 0.91)
 curved(s5_head, s5_tail, bow=0.18, taper_from=4, taper_to=13)
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0193_癶/01_癶.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0193_癶/01_癶.png')

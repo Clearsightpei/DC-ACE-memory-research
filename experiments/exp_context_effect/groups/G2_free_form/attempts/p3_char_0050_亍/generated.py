@@ -37,4 +37,4 @@ stroke([(168, 138), (166, 245), (140, 258)])
 # Small hook flick continues up-left
 stroke([(140, 258), (128, 248)], width=BRUSH)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0050_亍/01_亍.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0050_亍/01_亍.png")

@@ -55,5 +55,5 @@ polyline([
 ])
 polyline([(250, 240), (245, 215)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0136_比/01_比.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0136_比/01_比.png")
 print("wrote 01_比.png (revised)")

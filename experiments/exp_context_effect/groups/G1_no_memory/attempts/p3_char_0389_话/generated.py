@@ -41,5 +41,5 @@ polyline([(x1, y1), (x1, y2)], w=LW)          # left vertical
 polyline([(x2, y1), (x2, y2)], w=LW)          # right vertical (turn from top)
 polyline([(x1, y2), (x2, y2)], w=LW)          # bottom horizontal (closing seal)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0389_话/01_话.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0389_话/01_话.png")
 print("saved")

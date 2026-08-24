@@ -51,7 +51,7 @@ def main():
         r = r_start + (r_end - r_start) * t
         dab(d, x, y, r)
 
-    out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_003_丿/01_丿.png"
+    out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_003_丿/01_丿.png"
     img.save(out)
 
 

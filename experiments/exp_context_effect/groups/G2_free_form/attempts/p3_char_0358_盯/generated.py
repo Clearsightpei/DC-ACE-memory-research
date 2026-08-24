@@ -57,4 +57,4 @@ vy_top = ty0 + 2
 vy_bot = 245
 hook_v(vx, vy_top, vy_bot, flick_len=16)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0358_盯/01_盯.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0358_盯/01_盯.png")

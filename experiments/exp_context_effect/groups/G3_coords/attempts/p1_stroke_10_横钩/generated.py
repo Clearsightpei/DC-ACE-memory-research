@@ -66,7 +66,7 @@ def main():
     draw = ImageDraw.Draw(img)
     draw_henggou(draw)
     out = (
-        "/Users/peilinwu/Documents/AI memory research/experiments/"
+        "<REPO_ROOT>/experiments/"
         "exp_context_effect/groups/G3_coords/attempts/p1_stroke_10_横钩/"
         "01_横钩.png"
     )

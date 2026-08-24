@@ -38,4 +38,4 @@ line([(188, 210), (120, 275)], width=6)
 # 捺 sweeping down-right from lower center
 line([(188, 210), (270, 275)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0469_便/01_便.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0469_便/01_便.png")

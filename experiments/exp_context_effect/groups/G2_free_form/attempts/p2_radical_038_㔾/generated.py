@@ -108,6 +108,6 @@ line_dabs(h2_end[0], h2_end[1], hook_end_x, hook_end_y, r_body, 1.5)
 
 
 # Save
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_038_㔾/01_㔾.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_038_㔾/01_㔾.png"
 img.save(out_path)
 print(f"Wrote {out_path}")

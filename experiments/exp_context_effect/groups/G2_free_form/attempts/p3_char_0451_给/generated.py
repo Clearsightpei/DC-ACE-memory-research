@@ -91,6 +91,6 @@ stroke(kou_tv, (6, 7))
 kou_b = bez((160, 265), (200, 266), (240, 266), (250, 265), n=40)
 stroke(kou_b, (7, 7))
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0451_给/01_给.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0451_给/01_给.png"
 img.save(out)
 print(f"wrote {out}")

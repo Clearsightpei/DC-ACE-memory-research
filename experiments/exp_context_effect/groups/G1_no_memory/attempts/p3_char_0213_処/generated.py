@@ -29,4 +29,4 @@ stroke([(140, 130), (125, 175), (105, 240)], width=5)
 # stroke 5: 横折弯钩 - top horizontal from mid to right, then curves down along right edge, ends with small upward hook
 stroke([(140, 130), (200, 128), (245, 140), (255, 200), (260, 250), (245, 265)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0213_処/01_処.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0213_処/01_処.png")

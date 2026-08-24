@@ -27,5 +27,5 @@ draw.line([(L + 8, MID), (R - 30, MID + 2)], fill="black", width=W)
 # Stroke 4: bottom horizontal (closes the box)
 draw.line([(L - 5, B + 2), (R - 2, B - 2)], fill="black", width=W)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_129_曰/01_曰.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_129_曰/01_曰.png")
 print("saved 01_曰.png")

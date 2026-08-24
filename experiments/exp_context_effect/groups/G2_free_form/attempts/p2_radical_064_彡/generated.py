@@ -76,5 +76,5 @@ bezier_pie(
 )
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_064_彡/01_彡.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_064_彡/01_彡.png"
 )

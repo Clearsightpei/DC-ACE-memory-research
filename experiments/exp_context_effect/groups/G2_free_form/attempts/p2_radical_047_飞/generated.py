@@ -134,4 +134,4 @@ for i in range(d_steps + 1):
 dab(*d_end, 7.0)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_047_飞/01_飞.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_047_飞/01_飞.png")

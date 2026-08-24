@@ -179,6 +179,6 @@ draw_left_pie()
 draw_right_shu()
 draw_pina()  # last so it sits on top at bottom
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0303_进/01_进.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0303_进/01_进.png"
 img.save(out)
 print("Saved:", out)

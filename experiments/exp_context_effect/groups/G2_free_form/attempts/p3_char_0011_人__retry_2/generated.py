@@ -81,7 +81,7 @@ for k in range(0, 14):
         fill="black",
     )
 
-out = ("/Users/peilinwu/Documents/AI memory research/experiments/"
+out = ("<REPO_ROOT>/experiments/"
        "exp_context_effect/groups/G2_free_form/attempts/"
        "p3_char_0011_人__retry_2/01_人.png")
 img.save(out)

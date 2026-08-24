@@ -97,4 +97,4 @@ stroke(bez((146, 270), (138, 265), (128, 258), (118, 250), n=25), (7, 3))
 # ============ RIGHT 撇 (final diagonal sweep, down-right) ============
 stroke(bez((205, 195), (218, 220), (232, 245), (250, 272), n=50), (7, 3))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0575_第/01_第.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0575_第/01_第.png")

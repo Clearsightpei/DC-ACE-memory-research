@@ -55,7 +55,7 @@ for i in range(spine_steps + 1):
 dab(x_bot, y_bot, 3.5)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p2_radical_001_丨/01_丨.png"
 )

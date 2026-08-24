@@ -70,5 +70,5 @@ bezier((225, 92), (200, 165), (152, 245), steps=40, width=7)
 bezier((195, 155), (235, 195), (278, 238), steps=40, width=7)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0349_改/01_改.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0349_改/01_改.png")
 print("saved")

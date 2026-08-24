@@ -38,5 +38,5 @@ poly([(100, 115), (70, 150)])              # 撇 down-left
 # 平捺 — long sweeping bottom curve, rises at right tail
 poly([(35, 230), (75, 258), (170, 265), (240, 245), (270, 220)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0513_通/01_通.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0513_通/01_通.png")
 print("saved")

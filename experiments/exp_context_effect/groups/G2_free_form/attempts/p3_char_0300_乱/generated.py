@@ -64,7 +64,7 @@ stroke(right_pts, width=9)
 stroke([(280, 258), (272, 235)], width=8)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0300_乱/01_乱.png"
 )
 print("wrote 01_乱.png")

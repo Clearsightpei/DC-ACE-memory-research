@@ -31,4 +31,4 @@ line([(135, 195), (235, 195)], width=LW)
 # S5: 一 (long bottom horizontal — base of 旦)
 line([(110, 250), (270, 250)], width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0324_但/01_但.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0324_但/01_但.png")

@@ -57,6 +57,6 @@ polyline([(170, 235), (185, 258), (215, 268), (245, 258), (252, 240)])
 # hook (upward tick at right end)
 line((252, 240), (250, 215))
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0312_伲/01_伲.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0312_伲/01_伲.png"
 img.save(out_path)
 print("saved", out_path)

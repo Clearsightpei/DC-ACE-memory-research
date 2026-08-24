@@ -36,4 +36,4 @@ line((213, 240), (200, 232))
 # 点 (dot) — short diagonal stroke on the left of 竖
 line((175, 165), (195, 180))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0295_时/01_时.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0295_时/01_时.png")

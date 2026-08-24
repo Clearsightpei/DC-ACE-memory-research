@@ -75,7 +75,7 @@ brush([(195, 140), (285, 268)], [4, 13])
 brush([(285, 268), (293, 272)], [13, 3])
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0355_块/01_块.png"
 )
 print("saved")

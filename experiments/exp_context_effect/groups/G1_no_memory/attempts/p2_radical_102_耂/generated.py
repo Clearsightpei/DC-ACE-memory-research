@@ -58,6 +58,6 @@ pie_points = [
 stroke_taper(pie_points, w_start=8, w_end=3)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G1_no_memory/attempts/p2_radical_102_耂/01_耂.png"
 )

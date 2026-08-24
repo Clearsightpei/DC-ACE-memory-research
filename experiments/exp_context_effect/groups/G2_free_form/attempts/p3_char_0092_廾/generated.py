@@ -60,6 +60,6 @@ shu_pts = [
 ]
 stroke_line(shu_pts, width=9)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0092_廾/01_廾.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0092_廾/01_廾.png"
 img.save(out)
 print(f"Wrote {out}  size={img.size}")

@@ -36,6 +36,6 @@ for (x, y) in [(x1_top, y1_top), (x1_bot, y1_bot),
                (x_hook_end, y_hook_end)]:
     draw.ellipse([(x - r, y - r), (x + r, y + r)], fill=INK)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0036_刂/01_刂.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0036_刂/01_刂.png"
 img.save(out)
 print(f"wrote {out}")

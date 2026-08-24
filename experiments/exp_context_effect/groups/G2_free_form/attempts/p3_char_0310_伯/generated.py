@@ -76,7 +76,7 @@ d.line([(L - 2, B), (R + 2, B)], fill=INK, width=LW)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0310_伯/01_伯.png"
 )
 print("saved")

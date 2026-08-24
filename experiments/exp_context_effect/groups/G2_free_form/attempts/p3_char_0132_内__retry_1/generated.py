@@ -53,5 +53,5 @@ polyline([(150, 130), (170, 165), (195, 205), (215, 235)], w=7)
 # Slight thicker tail at end
 line((205, 225), (222, 240), w=10)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0132_内__retry_1/01_内.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0132_内__retry_1/01_内.png")
 print("saved")

@@ -121,4 +121,4 @@ stroke(pn, (5, 12))
 foot = bez((240, 252), (252, 248), (262, 243), (270, 238), n=25)
 stroke(foot, (12, 3))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0513_通/01_通.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0513_通/01_通.png")

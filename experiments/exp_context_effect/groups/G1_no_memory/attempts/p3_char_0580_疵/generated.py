@@ -41,5 +41,5 @@ stroke([(200, 120), (195, 175), (200, 220), (255, 220), (255, 205)], width=3)
 # diagonal cross of 匕 (going up-right)
 stroke([(185, 175), (240, 150)], width=3)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0580_疵/01_疵.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0580_疵/01_疵.png")
 print("saved")

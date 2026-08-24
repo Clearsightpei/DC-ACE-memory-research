@@ -35,6 +35,6 @@ for i in range(STEPS + 1):
     r = r_start * (1 - t) ** 1.3 + r_end * t
     draw.ellipse((x - r, y - r, x + r, y + r), fill="black")
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_03_撇/01_撇.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_03_撇/01_撇.png"
 img.save(out)
 print(out)

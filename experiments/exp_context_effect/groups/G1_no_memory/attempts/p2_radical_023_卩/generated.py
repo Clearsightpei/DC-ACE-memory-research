@@ -44,6 +44,6 @@ s2 = [
 ]
 stroke(s2)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_023_卩/01_卩.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_023_卩/01_卩.png"
 img.save(out)
 print(out)

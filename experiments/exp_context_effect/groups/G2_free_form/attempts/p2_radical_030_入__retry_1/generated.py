@@ -75,7 +75,7 @@ bezier_stroke(P0, P1, P2, r_start=6.5, r_end=1.8, steps=500, ease=1.25)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_030_入__retry_1/01_入.png"
 )
 print("wrote 01_入.png")

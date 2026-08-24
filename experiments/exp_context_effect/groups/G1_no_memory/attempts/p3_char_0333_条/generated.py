@@ -44,5 +44,5 @@ curve([(150, 185), (115, 220), (75, 265)], width=5)
 # 7) na (from upper-center down-right)
 curve([(150, 185), (190, 225), (230, 270)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0333_条/01_条.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0333_条/01_条.png")
 print("saved")

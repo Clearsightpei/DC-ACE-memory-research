@@ -61,4 +61,4 @@ brush(hook, width=7)
 dot2 = bezier((178, 175), (188, 188), (200, 205), n=20)
 brush(dot2, width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0272_伪/01_伪.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0272_伪/01_伪.png")

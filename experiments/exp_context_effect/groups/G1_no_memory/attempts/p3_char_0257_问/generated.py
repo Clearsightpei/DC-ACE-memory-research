@@ -36,5 +36,5 @@ d.line([(x1, y0), (x1 + 3, y1)], fill=BLACK, width=LW)
 # Bottom horizontal
 d.line([(x0, y1), (x1 + 3, y1)], fill=BLACK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0257_问/01_问.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0257_问/01_问.png")
 print("saved")

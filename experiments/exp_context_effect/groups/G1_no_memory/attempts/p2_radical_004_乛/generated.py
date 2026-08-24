@@ -46,4 +46,4 @@ draw.line([(x1, y1), (x2, y2)], fill=ink, width=thick)
 # Slight taper at the pie tip
 draw.ellipse((x2-3, y2-3, x2+3, y2+3), fill=ink)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_004_乛/01_乛.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_004_乛/01_乛.png")

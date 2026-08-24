@@ -57,4 +57,4 @@ stroke([(265, 90), (252, 115), (238, 140), (225, 165)])
 # 6. 点 mid-right tick
 stroke([(258, 180), (270, 205)], width=BR + 1)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0402_佻/01_佻.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0402_佻/01_佻.png")

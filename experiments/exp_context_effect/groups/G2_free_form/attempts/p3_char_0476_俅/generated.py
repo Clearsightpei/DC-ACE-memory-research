@@ -91,4 +91,4 @@ p_lower_right = bez((240, 200), (247, 210), (252, 220), (255, 228), n=25)
 stroke(p_lower_right, (4, 8))
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0476_俅/01_俅.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0476_俅/01_俅.png")

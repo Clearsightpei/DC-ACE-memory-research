@@ -35,5 +35,5 @@ line([(148, 195), (250, 285)], 3)
 # Small horizontal cross through middle of 女
 line([(105, 235), (225, 232)], 3)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0433_要/01_要.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0433_要/01_要.png")
 print("saved")

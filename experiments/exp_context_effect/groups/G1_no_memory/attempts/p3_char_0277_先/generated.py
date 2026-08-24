@@ -33,5 +33,5 @@ line([(135, 140), (115, 175), (90, 215), (60, 258)])
 # 6) 竖弯钩 (vertical-curving-hook) on the right
 line([(180, 140), (180, 210), (188, 245), (220, 260), (245, 248), (250, 232)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0277_先/01_先.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0277_先/01_先.png")
 print("Saved.")

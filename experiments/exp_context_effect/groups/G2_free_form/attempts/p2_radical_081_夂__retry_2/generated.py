@@ -108,6 +108,6 @@ line_dab(foot_start, foot_end, r_start=5.5, r_end=0.8, steps=55)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_081_夂__retry_2/01_夂.png"
 )

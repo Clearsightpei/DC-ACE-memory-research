@@ -106,4 +106,4 @@ dab(225, 258, 5)
 inner_dot = bez((205, 180), (212, 190), (218, 200), (222, 210), n=25)
 stroke(inner_dot, (4, 8))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0556_俯/01_俯.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0556_俯/01_俯.png")

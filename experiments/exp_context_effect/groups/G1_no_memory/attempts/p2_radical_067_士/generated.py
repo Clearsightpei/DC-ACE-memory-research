@@ -34,4 +34,4 @@ bot_left = (cx - 55, bot_y)
 bot_right = (cx + 55, bot_y)
 draw.line([bot_left, bot_right], fill=INK, width=STROKE)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_067_士/01_士.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_067_士/01_士.png")

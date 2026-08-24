@@ -51,5 +51,5 @@ poly([(245, 55), (245, 255)], 8)
 # hook flick up-and-left at bottom
 poly([(245, 255), (225, 240)], 7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0335_别/01_别.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0335_别/01_别.png")
 print("saved")

@@ -41,4 +41,4 @@ line([(195, 265), (175, 258)], w=LW)
 # 点 (dot) on right side of vertical
 line([(210, 205), (225, 220)], w=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0439_将/01_将.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0439_将/01_将.png")

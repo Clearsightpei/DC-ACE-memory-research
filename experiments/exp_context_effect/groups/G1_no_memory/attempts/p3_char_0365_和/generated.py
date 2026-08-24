@@ -45,6 +45,6 @@ curve([(200, 135), (270, 135), (270, 225)], w=LW)
 # Stroke 8 (口-3): bottom 横 (horizontal) closing the box
 line((200, 225), (270, 225))
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0365_和/01_和.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0365_和/01_和.png"
 img.save(out)
 print("saved", out)

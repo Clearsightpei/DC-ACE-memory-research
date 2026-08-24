@@ -38,6 +38,6 @@ stroke_line((214, 92), (204, 168), w0=12, w1=9, steps=60)
 # 3) 提 — rising stroke: from bottom of 折, tapered from thick to fine, going up-right
 stroke_line((204, 168), (258, 130), w0=11, w1=2, steps=80)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_20_橫折提/01_橫折提.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_20_橫折提/01_橫折提.png"
 img.save(out_path)
 print(f"saved {out_path}")

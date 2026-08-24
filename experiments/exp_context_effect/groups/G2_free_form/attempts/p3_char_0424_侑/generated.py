@@ -87,6 +87,6 @@ brush_stroke([(170, 232), (245, 230)], [4.5, 4.5])
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0424_侑/01_侑.png"
 )

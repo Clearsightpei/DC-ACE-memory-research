@@ -97,4 +97,4 @@ stroke(bottom_curve, (5, 5))
 hook = bez((180, 270), (175, 263), (172, 255), (168, 245), n=25)
 stroke(hook, (5, 3))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0456_疮/01_疮.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0456_疮/01_疮.png")

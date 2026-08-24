@@ -39,5 +39,5 @@ line([(155, 210), (125, 240)], w=5)
 # Long right 捺 (falling stroke down-right)
 line([(160, 165), (245, 270)], w=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0501_家/01_家.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0501_家/01_家.png")
 print("saved")

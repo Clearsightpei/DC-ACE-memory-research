@@ -37,5 +37,5 @@ stroke(h2)
 h3 = [(140, 235), (265, 228)]
 stroke(h3)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0189_仨/01_仨.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0189_仨/01_仨.png")
 print("saved")

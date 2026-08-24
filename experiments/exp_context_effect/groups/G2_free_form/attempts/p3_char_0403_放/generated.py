@@ -87,6 +87,6 @@ taper_line((215, 158), (285, 262), w0=4, w1=11, steps=26)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0403_放/01_放.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0403_放/01_放.png"
 )
 print("wrote 01_放.png (revision 2)")

@@ -101,6 +101,6 @@ teardrop((168, 178), (198, 212), r0=1.5, r1=6.5)
 
 
 # Save
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_116_礻/01_礻.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_116_礻/01_礻.png"
 img.save(out_path)
 print(f"Wrote {out_path}")

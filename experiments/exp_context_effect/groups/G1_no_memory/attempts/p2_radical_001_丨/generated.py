@@ -16,4 +16,4 @@ draw.line([(150, 70), (150, 255)], fill="black", width=6)
 # Small top curl (mimic GT's slight hook at the top)
 draw.line([(150, 70), (155, 60)], fill="black", width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_001_丨/01_丨.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_001_丨/01_丨.png")

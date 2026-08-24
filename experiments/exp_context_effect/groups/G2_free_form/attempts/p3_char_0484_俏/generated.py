@@ -90,4 +90,4 @@ stroke(inner1, (5, 5))
 inner2 = bez((165, 200), (190, 199), (215, 199), (238, 201), n=40)
 stroke(inner2, (5, 5))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0484_俏/01_俏.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0484_俏/01_俏.png")

@@ -100,4 +100,4 @@ stroke(ear_bot_close, (6, 5))
 tail = bez((178, 60), (178, 130), (178, 200), (178, 275), n=80)
 stroke(tail, (7, 7))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0525_部/01_部.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0525_部/01_部.png")

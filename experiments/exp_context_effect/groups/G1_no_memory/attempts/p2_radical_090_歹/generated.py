@@ -52,7 +52,7 @@ curve([(185, 148), (188, 158), (180, 178)], width=TH)
 curve([(178, 108), (145, 200), (80, 275)], width=TH + 1)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G1_no_memory/attempts/p2_radical_090_歹/01_歹.png"
 )
 print("wrote 01_歹.png")

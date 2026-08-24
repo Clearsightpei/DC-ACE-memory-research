@@ -41,6 +41,6 @@ draw.line([(left_x, bot_y), (right_x, bot_y)], fill=INK, width=T)
 # --- Stroke 3: right vertical ---
 draw.line([(right_x, right_top_y), (right_x, right_bot_y)], fill=INK, width=T)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_063_山/01_山.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_063_山/01_山.png"
 img.save(out_path)
 print(f"Saved {out_path}")

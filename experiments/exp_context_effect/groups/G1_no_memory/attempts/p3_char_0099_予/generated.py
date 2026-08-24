@@ -36,5 +36,5 @@ line((60, 168), (240, 165), w=TH)
 # starts near where stroke 2 diagonal ended, descends, hooks left
 poly([(158, 140), (152, 255), (135, 245)], w=TH)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0099_予/01_予.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0099_予/01_予.png")
 print("saved")

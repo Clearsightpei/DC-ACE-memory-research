@@ -52,4 +52,4 @@ bot_x0, bot_x1, bot_y = 45, 255, 235
 stroke_line(bot_x0, bot_y, bot_x1, bot_y - 2,
             r_start=5.5, r_end=5.5, steps=300)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_072_土/01_土.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_072_土/01_土.png")

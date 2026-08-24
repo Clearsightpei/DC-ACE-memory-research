@@ -95,4 +95,4 @@ stroke(kou_r, (6, 5))
 kou_bot = bez((150, 268), (185, 266), (215, 266), (245, 268), n=50)
 stroke(kou_bot, (6, 6))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0478_俉/01_俉.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0478_俉/01_俉.png")

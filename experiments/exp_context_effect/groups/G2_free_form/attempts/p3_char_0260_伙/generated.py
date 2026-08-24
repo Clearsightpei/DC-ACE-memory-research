@@ -51,4 +51,4 @@ stroke((215, 115), (150, 270), 12, 5, curve=(175, 210))
 # 捺 (long right sweep): starts near the pie's upper section, sweeps down-right with flare
 stroke((200, 140), (285, 265), 6, 15, curve=(225, 205))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0260_伙/01_伙.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0260_伙/01_伙.png")

@@ -70,6 +70,6 @@ na_pts = bezier((175, 110), (215, 175), (275, 250), n=90)
 brush(na_pts, 5, 12)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0266_伥/01_伥.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0266_伥/01_伥.png"
 )
 print("saved")

@@ -73,5 +73,5 @@ taper_stroke([(105, 258), (100, 235)], w_start=7, w_end=2, steps=15)
 # --- Stroke 4: 点 --- small teardrop inside upper part of bowl
 taper_stroke([(158, 148), (175, 172)], w_start=3, w_end=8, steps=15)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_120_瓦/01_瓦.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_120_瓦/01_瓦.png")
 print("Saved 01_瓦.png")

@@ -92,6 +92,6 @@ stroke([(153, 205), (153, 270)], width=7)
 # 8. Bottom horizontal — widest, base of the character
 stroke([(50, 272), (260, 272)], width=8)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0395_金/01_金.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0395_金/01_金.png"
 img.save(out)
 print("wrote", out)

@@ -117,4 +117,4 @@ v_center = bez((193, 105), (192, 155), (191, 215), (190, 265), n=70)
 stroke(v_center, (6, 6))
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0540_痈/01_痈.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0540_痈/01_痈.png")

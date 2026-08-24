@@ -64,6 +64,6 @@ dab_bezier(dian_start, dian_ctrl, dian_end, r_start=3.0, r_end=10.0, steps=300)
 draw.ellipse((dian_end[0] - 12, dian_end[1] - 12,
               dian_end[0] + 12, dian_end[1] + 12), fill="black")
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_17_撇点/01_撇点.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_17_撇点/01_撇点.png"
 img.save(out_path)
 print(f"saved {out_path} ({W}x{H})")

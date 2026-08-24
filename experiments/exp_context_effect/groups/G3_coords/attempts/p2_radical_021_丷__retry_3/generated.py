@@ -23,14 +23,14 @@
 #   - Place slightly ABOVE center (oy=+15) since 丷 as a radical sits at TOP.
 
 import sys
-sys.path.insert(0, "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code")
+sys.path.insert(0, "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code")
 
 from PIL import Image, ImageDraw
 from _shared_helpers import variant_dian
 
 CANVAS = 300
 
-OUT = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_021_丷__retry_3/01_丷.png"
+OUT = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_021_丷__retry_3/01_丷.png"
 
 
 def render():

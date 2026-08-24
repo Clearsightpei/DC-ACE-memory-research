@@ -38,7 +38,7 @@ import os
 import sys
 from PIL import Image, ImageDraw
 
-_BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
+_BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
 sys.path.insert(0, _BANK)
 
 from _anchor import anchor_to_xy, fat_line, quad_bezier, stroke_variable_width

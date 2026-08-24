@@ -53,7 +53,7 @@ def main():
     t2 = cell_to_px('BR', 0.684, 0.326)
     draw_heng(d, h2, t2, width=15)
 
-    out = '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_018_二/01_二.png'
+    out = '<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_018_二/01_二.png'
     img.save(out)
     print('wrote', out)
     print('SELF_CHECK:', SELF_CHECK)

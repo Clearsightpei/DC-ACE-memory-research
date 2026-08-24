@@ -33,4 +33,4 @@ line([(120, 250), (245, 245)], width=LW)
 # right slanted (dot) stroke, top-right descending to meet base
 line([(200, 205), (240, 245)], width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0377_法/01_法.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0377_法/01_法.png")

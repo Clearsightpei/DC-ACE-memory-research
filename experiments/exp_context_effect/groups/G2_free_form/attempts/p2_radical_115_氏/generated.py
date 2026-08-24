@@ -97,7 +97,7 @@ dab(hx0, hy0, 4)
 line_taper(hx0, hy0, hx1, hy1, r0=3.8, r1=1.1)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_115_氏/01_氏.png"
 )
 print("wrote 01_氏.png (revision 1)")

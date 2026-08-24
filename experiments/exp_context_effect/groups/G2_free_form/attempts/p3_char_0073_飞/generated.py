@@ -98,5 +98,5 @@ taper_line((193, 165), (183, 183), 6, 3, steps=20)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0073_飞/01_飞.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0073_飞/01_飞.png"
 )

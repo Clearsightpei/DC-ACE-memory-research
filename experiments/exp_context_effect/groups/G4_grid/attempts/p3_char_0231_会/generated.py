@@ -69,7 +69,7 @@ d.line([p5b, p5c], fill='black', width=6)
 # Stroke 6: 点/short — BC(0.802,0.429) → BR(0.215,0.968)
 line(('BC', 0.802, 0.429), ('BR', 0.215, 0.968), w=6)
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0231_会/01_会.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0231_会/01_会.png')
 
 SELF_CHECK = {
     'visual_ok': True,

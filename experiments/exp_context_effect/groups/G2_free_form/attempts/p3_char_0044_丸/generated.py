@@ -106,6 +106,6 @@ taper_line(dot_x0, dot_y0, dot_x1, dot_y1, r0=2.5, r1=6.2, steps=100)
 dab(dot_x1, dot_y1, 6.2)
 
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0044_丸/01_丸.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0044_丸/01_丸.png"
 img.save(out_path)
 print(f"saved: {out_path}")

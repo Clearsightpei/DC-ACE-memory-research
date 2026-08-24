@@ -43,6 +43,6 @@ d.line([(80, 275), (230, 272)], fill=INK, width=WIDTH)     # bottom horizontal p
 # Small "corner" reinforcement at (80, 275) — the turn of 竖折
 d.line([(78, 270), (88, 278)], fill=INK, width=WIDTH)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_019_匚/01_匚.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_019_匚/01_匚.png"
 img.save(out_path)
 print(f"wrote {out_path}")

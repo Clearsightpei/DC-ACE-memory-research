@@ -105,7 +105,7 @@ for i, (x, y) in enumerate(na_pts):
 draw.ellipse((252, 238, 268, 252), fill=BLACK)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_119_水/01_水.png"
 )
 print("wrote 01_水.png")

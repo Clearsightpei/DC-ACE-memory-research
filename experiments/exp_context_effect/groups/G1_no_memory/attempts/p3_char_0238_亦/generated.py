@@ -43,5 +43,5 @@ for i in range(21):
 for i in range(len(pts2)-1):
     d.line([pts2[i], pts2[i+1]], fill=BLACK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0238_亦/01_亦.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0238_亦/01_亦.png")
 print("saved")

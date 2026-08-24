@@ -93,6 +93,6 @@ SELF_CHECK = {
 
 
 if __name__ == '__main__':
-    out = '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_009_八/01_八.png'
+    out = '<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_009_八/01_八.png'
     render().save(out)
     print('wrote', out)

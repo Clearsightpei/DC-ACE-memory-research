@@ -74,5 +74,5 @@ brush_line([p_corner, (200, 205), (235, 215)], 6, 8)
 dian_pts = [(220, 145), (240, 175), (250, 195)]
 brush_line(dian_pts, 4, 10)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0191_仫/01_仫.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0191_仫/01_仫.png")
 print("saved")

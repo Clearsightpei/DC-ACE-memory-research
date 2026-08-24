@@ -76,7 +76,7 @@ dab(ti_start, r_heng + 2.5)
 dab_line(ti_start, ti_end, r_heng + 1.5, 1.2)
 
 out_path = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p1_stroke_20_橫折提/01_橫折提.png"
 )

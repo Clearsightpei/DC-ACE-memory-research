@@ -17,7 +17,7 @@ from PIL import Image, ImageDraw
 import sys, os
 
 # Import the pie primitive from the success bank for the 撇 stroke.
-_BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
+_BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
 sys.path.insert(0, _BANK)
 from pie import draw_pie  # noqa: E402
 
@@ -114,6 +114,6 @@ h_tip = (p_v_end[0] - 23, p_v_end[1] + 25)
 _tapered_segment(draw, h_base, h_tip, w0=10, w1=2, steps=18)
 
 # Save.
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_010_勹/01_勹.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_010_勹/01_勹.png"
 img.save(out_path)
 print(f"Wrote {out_path}")

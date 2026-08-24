@@ -89,6 +89,6 @@ dab(SHU_END[0], SHU_END[1], 7)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_051_廾/01_廾.png"
 )

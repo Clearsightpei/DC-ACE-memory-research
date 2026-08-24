@@ -41,7 +41,7 @@ draw.ellipse(
 )
 
 out_path = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_01_横/01_横.png"
 )
 img.save(out_path)

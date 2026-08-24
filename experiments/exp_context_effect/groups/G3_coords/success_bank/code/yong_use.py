@@ -97,5 +97,5 @@ if __name__ == "__main__":
     D = ImageDraw.Draw(img)
     draw_yong(D)
     img.save(
-        "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0168_用/01_用.png"
+        "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0168_用/01_用.png"
     )

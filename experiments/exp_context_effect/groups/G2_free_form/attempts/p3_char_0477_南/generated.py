@@ -121,5 +121,5 @@ stroke(left_tick, (5, 3))
 right_tick = bez((190, 130), (192, 145), (194, 160), (196, 178), n=30)
 stroke(right_tick, (5, 3))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0477_南/01_南.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0477_南/01_南.png")
 print("saved 南")

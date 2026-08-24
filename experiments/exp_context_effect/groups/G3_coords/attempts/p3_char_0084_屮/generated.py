@@ -44,4 +44,4 @@ right_end = (cx, bar_y)
 d.line([right_top, right_corner], fill=INK, width=LW)
 d.line([right_corner, right_end], fill=INK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0084_屮/01_屮.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0084_屮/01_屮.png")

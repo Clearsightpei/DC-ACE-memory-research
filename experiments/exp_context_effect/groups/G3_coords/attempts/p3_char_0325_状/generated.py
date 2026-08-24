@@ -122,7 +122,7 @@ dot_seg = [(238, 95), (252, 118)]
 tapered_polyline(dot_seg, w_head=3.0, w_tail=5.5)
 
 
-out_path = ("/Users/peilinwu/Documents/AI memory research/"
+out_path = ("<REPO_ROOT>/"
             "experiments/exp_context_effect/groups/G3_coords/"
             "attempts/p3_char_0325_状/01_状.png")
 img.save(out_path)

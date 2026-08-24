@@ -61,4 +61,4 @@ line((230, 135), (230, 200), w=6)
 line((188, 110), (188, 265), w=7)
 bezier([(188, 265), (180, 262), (172, 256), (163, 248)], w=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0248_伄/01_伄.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0248_伄/01_伄.png")

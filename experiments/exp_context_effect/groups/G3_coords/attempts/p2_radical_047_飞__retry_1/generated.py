@@ -25,7 +25,7 @@
 from PIL import Image, ImageDraw
 import sys, os
 
-BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
+BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
 if BANK not in sys.path:
     sys.path.insert(0, BANK)
 
@@ -112,7 +112,7 @@ def main():
     img = Image.new("RGB", (W, H), (255, 255, 255))
     t = ImageDraw.Draw(img)
     draw_fei(t)
-    out_dir = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_047_飞__retry_1"
+    out_dir = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_047_飞__retry_1"
     out_path = os.path.join(out_dir, "01_飞.png")
     img.save(out_path)
     print(f"wrote {out_path}")

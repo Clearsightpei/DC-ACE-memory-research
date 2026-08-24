@@ -34,5 +34,5 @@ line([(238, 90), (225, 115)], width=3)
 # 8. 点 (dot) at very top-right
 line([(258, 85), (272, 100)], width=4)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0473_城/01_城.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0473_城/01_城.png")
 print("saved")

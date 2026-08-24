@@ -99,6 +99,6 @@ tapered_stroke(
 )
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0169_疋/01_疋.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0169_疋/01_疋.png"
 )
 print("Wrote 01_疋.png")

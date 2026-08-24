@@ -92,7 +92,7 @@ dab(287, 263, 6.2)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p3_char_0406_佽/01_佽.png"
 )

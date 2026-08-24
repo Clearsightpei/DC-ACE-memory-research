@@ -44,4 +44,4 @@ line((160, 160), (215, 158))
 # stroke 5: long vertical of 斤 (rightmost)
 line((215, 105), (215, 280))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0371_所/01_所.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0371_所/01_所.png")

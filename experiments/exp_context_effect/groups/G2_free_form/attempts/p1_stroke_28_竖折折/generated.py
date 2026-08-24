@@ -56,5 +56,5 @@ dab(*p3, SHOULDER)                     # shoulder dab at 折 #2
 segment(p3[0], p3[1], p4[0], p4[1], R, R)
 dab(*p4, DUN)                          # blunt end-press
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_28_竖折折/01_竖折折.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_28_竖折折/01_竖折折.png")
 print("saved")

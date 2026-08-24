@@ -42,5 +42,5 @@ draw.line([(140, 245), (135, 225)], fill=INK, width=LW)
 # Stroke 3: 点 - small dot inside body (lower-middle area)
 draw.line([(150, 190), (170, 215)], fill=INK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0044_丸/01_丸.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0044_丸/01_丸.png")
 print("saved")

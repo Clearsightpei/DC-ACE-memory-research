@@ -37,7 +37,7 @@ def main():
     draw = ImageDraw.Draw(img)
     # Centered, canonical scale
     draw_shu(draw, ox=0, oy=0, scale=1.0)
-    out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_02_竖/01_竖.png"
+    out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_02_竖/01_竖.png"
     img.save(out)
     print(f"Saved {out} ({img.size[0]}x{img.size[1]})")
 

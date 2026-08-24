@@ -105,5 +105,5 @@ def teardrop(p0, p1, r0=2, r1=8, steps=200):
 
 teardrop((160, 215), (200, 258), r0=2, r1=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_078_幺/01_幺.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_078_幺/01_幺.png")
 print("saved 01_幺.png")

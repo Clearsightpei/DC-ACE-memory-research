@@ -78,5 +78,5 @@ stroke(sk, width=6)
 # Stroke 6: right 点 (going down-right), on the far right, slender
 dot(228, 150, 18, 25, w=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0238_亦/01_亦.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0238_亦/01_亦.png")
 print("saved")

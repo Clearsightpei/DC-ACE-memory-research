@@ -31,6 +31,6 @@ draw.line([(cx, 90), (cx, 260)], fill="black", width=5)
 # Slight rounded bottom (taper) — nothing dramatic, GT ends fairly cleanly.
 draw.line([(cx, 258), (cx + 1, 264)], fill="black", width=4)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0002_丨/01_丨.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0002_丨/01_丨.png"
 img.save(out_path)
 print(f"Saved {out_path}")

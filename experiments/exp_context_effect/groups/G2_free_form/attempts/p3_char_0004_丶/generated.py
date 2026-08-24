@@ -44,4 +44,4 @@ for i in range(N + 1):
 tx, ty = P2
 draw.ellipse((tx - R_END, ty - R_END, tx + R_END, ty + R_END), fill="black")
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0004_丶/01_丶.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0004_丶/01_丶.png")

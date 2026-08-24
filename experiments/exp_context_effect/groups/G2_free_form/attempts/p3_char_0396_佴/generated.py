@@ -39,4 +39,4 @@ stroke([(160, 178), (222, 178)], w=6)
 # Bottom 横 — long, extends past both sides
 stroke([(120, 230), (260, 232)], w=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0396_佴/01_佴.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0396_佴/01_佴.png")

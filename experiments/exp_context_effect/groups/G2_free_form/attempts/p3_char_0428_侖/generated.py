@@ -41,4 +41,4 @@ stroke([(85, 210), (228, 210)], width=6)
 stroke([(125, 155), (125, 275)], width=6)
 stroke([(178, 155), (178, 275)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0428_侖/01_侖.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0428_侖/01_侖.png")

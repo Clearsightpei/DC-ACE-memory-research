@@ -116,6 +116,6 @@ for k in range(0, 12):
     d.ellipse([x - r, y - r, x + r, y + r], fill=BLACK)
 
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0305_还/01_还.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0305_还/01_还.png"
 img.save(out)
 print("Saved:", out)

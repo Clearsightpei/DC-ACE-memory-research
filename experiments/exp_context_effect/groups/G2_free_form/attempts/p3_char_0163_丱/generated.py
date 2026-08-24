@@ -113,6 +113,6 @@ sE = [
 stroke(sE, lambda t: 3.0)
 
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0163_丱/01_丱.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0163_丱/01_丱.png"
 img.save(out)
 print(f"Saved {out}")

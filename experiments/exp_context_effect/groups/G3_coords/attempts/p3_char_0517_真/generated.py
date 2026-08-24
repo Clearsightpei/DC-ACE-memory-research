@@ -58,6 +58,6 @@ line((118, BASE_Y + 3), (82, 285), w=6)
 # 点 (right foot slanting down-right)
 line((182, BASE_Y + 3), (218, 285), w=6)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0517_真/01_真.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0517_真/01_真.png"
 img.save(out_path)
 print(f"Wrote {out_path}")

@@ -83,5 +83,5 @@ dab_dot(108, 158, angle_deg=215, length=24, thick=10)
 # ---------------------------------------------------------------
 dab_dot(190, 130, angle_deg=30, length=32, thick=11)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0135_刅/01_刅.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0135_刅/01_刅.png")
 print("saved 01_刅.png")

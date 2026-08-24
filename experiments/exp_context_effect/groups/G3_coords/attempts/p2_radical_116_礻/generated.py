@@ -115,7 +115,7 @@ def draw():
         n=25,
     )
 
-    out = ("/Users/peilinwu/Documents/AI memory research/"
+    out = ("<REPO_ROOT>/"
            "experiments/exp_context_effect/groups/G3_coords/"
            "attempts/p2_radical_116_礻/01_礻.png")
     img.save(out)

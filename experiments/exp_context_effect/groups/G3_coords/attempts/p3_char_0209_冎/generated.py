@@ -35,5 +35,5 @@ poly([(105, 148), (85, 220), (75, 245)], 6)
 # 6) 横折钩 (long stroke: horizontal from box, then hooks down-right)
 poly([(195, 145), (255, 165), (245, 220), (225, 235)], 7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0209_冎/01_冎.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0209_冎/01_冎.png")
 print("saved")

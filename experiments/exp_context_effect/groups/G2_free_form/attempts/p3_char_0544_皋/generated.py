@@ -98,4 +98,4 @@ long_v = bez((152, 190), (152, 225), (152, 255), (152, 282), n=60)
 stroke(long_v, (7, 7))
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0544_皋/01_皋.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0544_皋/01_皋.png")

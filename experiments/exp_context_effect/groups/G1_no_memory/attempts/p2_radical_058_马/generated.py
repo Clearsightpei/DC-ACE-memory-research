@@ -37,4 +37,4 @@ curve([(108, 240), (125, 235), (138, 230)])
 # ---- Stroke 3: 一 (long bottom horizontal) ----
 curve([(65, 260), (120, 255), (180, 252), (235, 250)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_058_马/01_马.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_058_马/01_马.png")

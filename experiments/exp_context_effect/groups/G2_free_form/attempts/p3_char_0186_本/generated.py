@@ -71,6 +71,6 @@ for i in range(len(na_pts) - 1):
 d.line([(115, 248), (185, 248)], fill=BLACK, width=INK)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0186_本/01_本.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0186_本/01_本.png"
 )
 print("wrote 01_本.png")

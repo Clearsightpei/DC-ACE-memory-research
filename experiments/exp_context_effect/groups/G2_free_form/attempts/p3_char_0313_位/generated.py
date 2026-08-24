@@ -51,5 +51,5 @@ d.line([(222, 148), (234, 178)], fill=INK, width=9)
 # (5) 横 — long bottom horizontal (widest stroke)
 line([(132, 235), (200, 232), (272, 236)], width=10)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0313_位/01_位.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0313_位/01_位.png")
 print("saved 01_位.png")

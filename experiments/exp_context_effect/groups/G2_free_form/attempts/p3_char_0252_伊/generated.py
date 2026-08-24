@@ -34,4 +34,4 @@ stroke([(155, 175), (200, 173), (240, 172)], width=6)
 # long 撇 — sweeps from top-right (225, 70) down-left through the strokes to (110, 265)
 stroke([(225, 70), (200, 120), (170, 175), (140, 225), (110, 265)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0252_伊/01_伊.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0252_伊/01_伊.png")

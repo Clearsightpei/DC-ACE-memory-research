@@ -53,4 +53,4 @@ line((210, 150), (60, 275))
 #    both sides of the 撇 crossing.
 line((55, 235), (270, 235))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0433_要/01_要.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0433_要/01_要.png")

@@ -99,4 +99,4 @@ stroke(s_int1, width=LW)
 s_int2 = bezier((248, 195), (215, 240), (165, 285))
 stroke(s_int2, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0366_畅/01_畅.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0366_畅/01_畅.png")

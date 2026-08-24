@@ -42,5 +42,5 @@ line([(192, 138), (200, 200), (215, 235), (245, 240), (255, 225)])
 # --- Stroke 4: long bottom 横 ---
 line([(50, 258), (250, 260)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0097_乌/01_乌.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0097_乌/01_乌.png")
 print("wrote 01_乌.png")

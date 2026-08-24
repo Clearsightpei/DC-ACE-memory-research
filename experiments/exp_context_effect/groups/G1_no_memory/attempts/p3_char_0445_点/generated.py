@@ -52,7 +52,7 @@ dot_stroke((155, 220), (160, 255), w=6)
 dot_stroke((195, 215), (215, 250), w=6)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G1_no_memory/attempts/p3_char_0445_点/01_点.png"
 )
 print("saved 01_点.png")

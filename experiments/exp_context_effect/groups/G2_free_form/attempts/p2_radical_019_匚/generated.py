@@ -61,4 +61,4 @@ dab(BL[0], BL[1], R_SHOULDER)
 segment(BL[0], BL[1], BR[0], BR[1], R, R)
 dab(BR[0], BR[1], R_PRESS)                 # blunt terminal press
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_019_匚/01_匚.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_019_匚/01_匚.png")

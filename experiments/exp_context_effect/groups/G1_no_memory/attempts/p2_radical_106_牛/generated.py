@@ -32,5 +32,5 @@ stroke((172, 55), (172, 278), width=6)
 # Stroke 3: long middle horizontal, slight upward tilt to the right
 stroke((70, 165), (250, 150), width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_106_牛/01_牛.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_106_牛/01_牛.png")
 print("saved")

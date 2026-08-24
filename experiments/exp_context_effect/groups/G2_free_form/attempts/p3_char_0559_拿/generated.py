@@ -88,4 +88,4 @@ d.ellipse((152 - 5.5, 288 - 5.5, 152 + 5.5, 288 + 5.5), fill="black")
 hook = bez((152, 288), (146, 282), (140, 275), (132, 268), n=25)
 stroke(hook, (8, 3))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0559_拿/01_拿.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0559_拿/01_拿.png")

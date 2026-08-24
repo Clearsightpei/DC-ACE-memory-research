@@ -46,5 +46,5 @@ brush_line(inner1, width=7)
 inner2 = [(112, 185), (150, 183), (192, 183)]
 brush_line(inner2, width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0143_勻/01_勻.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0143_勻/01_勻.png")
 print("saved")

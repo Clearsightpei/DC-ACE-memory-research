@@ -70,4 +70,4 @@ zheh_pts = [
 ]
 stroke(zheh_pts, width=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0131_冗/01_冗.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0131_冗/01_冗.png")

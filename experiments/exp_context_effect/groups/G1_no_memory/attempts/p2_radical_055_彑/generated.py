@@ -23,4 +23,4 @@ d.line([
 # Stroke 3: long horizontal stroke at bottom (slight tilt like GT)
 d.line([(45, 250), (255, 245)], fill=INK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_055_彑/01_彑.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_055_彑/01_彑.png")

@@ -52,7 +52,7 @@ lower_pie = [(160, 170), (140, 185), (115, 205), (90, 225)]
 stroke(lower_pie, width=7)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0077_习/01_习.png"
 )
 print("wrote 01_习.png")

@@ -68,4 +68,4 @@ draw_stream(cx=85)
 draw_stream(cx=150)
 draw_stream(cx=220)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0086_巛/01_巛.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0086_巛/01_巛.png")

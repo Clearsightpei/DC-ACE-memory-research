@@ -96,6 +96,6 @@ draw_pie(268, 180, length=50, dx=-28, thick=8.0)   # top pie
 draw_pie(245, 210, length=55, dx=-30, thick=8.0)   # middle pie
 draw_pie(220, 240, length=58, dx=-32, thick=8.0)   # bottom pie
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0504_畛/01_畛.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0504_畛/01_畛.png"
 img.save(out)
 print("saved", out)

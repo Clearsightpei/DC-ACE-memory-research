@@ -41,5 +41,5 @@ line((175, 128), (178, 218), width=LW-1)
 # Stroke 5: 一 — long bottom horizontal, extending beyond box on both sides
 line((40, 232), (262, 228), width=LW+1)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0195_皿/01_皿.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0195_皿/01_皿.png")
 print("Wrote 01_皿.png")

@@ -43,5 +43,5 @@ polyline([(105, 200), (215, 200), (220, 235)])
 # --- Stroke 5: long bottom 横 extending across ---
 line((70, 250), (245, 248))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0218_刍/01_刍.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0218_刍/01_刍.png")
 print("wrote 01_刍.png")

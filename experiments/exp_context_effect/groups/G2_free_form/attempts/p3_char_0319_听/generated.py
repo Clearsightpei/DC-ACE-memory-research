@@ -55,5 +55,5 @@ bezier((185, 115), (170, 175), (150, 235), w=LW)
 # 丨 (long vertical down from right side of shoulder)
 line((235, 100), (232, 285), w=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0319_听/01_听.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0319_听/01_听.png")
 print("saved")

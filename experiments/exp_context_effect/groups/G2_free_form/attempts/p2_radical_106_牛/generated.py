@@ -103,6 +103,6 @@ stroke_line(v_start, v_end, r_start=4.2, r_end=4.2)
 dab(*v_end, r=4.6)  # blunt round terminal (NO hook — 牛 not 千)
 
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_106_牛/01_牛.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_106_牛/01_牛.png"
 img.save(out_path)
 print(f"Saved {out_path}")

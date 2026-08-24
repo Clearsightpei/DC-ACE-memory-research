@@ -89,6 +89,6 @@ for p in [(180, 125), end, hook_end]:
     r = 4
     d.ellipse([p[0] - r, p[1] - r, p[0] + r, p[1] + r], fill=BLACK)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0108_无/01_无.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0108_无/01_无.png"
 img.save(out)
 print(f"wrote {out}")

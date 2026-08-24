@@ -11,7 +11,7 @@ All joints are N-class (natural gaps).
 """
 
 import sys
-sys.path.insert(0, "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code")
+sys.path.insert(0, "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code")
 from _anchor import anchor_to_xy, fat_line, stroke_variable_width, quad_bezier
 from PIL import Image, ImageDraw
 
@@ -84,4 +84,4 @@ s9_h = anchor_to_xy(('BC', 0.573, 0.32))
 s9_t = anchor_to_xy(('BR', 0.06, 0.256))
 fat_line(d, s9_h, s9_t, 5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0484_俏/01_俏.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0484_俏/01_俏.png")

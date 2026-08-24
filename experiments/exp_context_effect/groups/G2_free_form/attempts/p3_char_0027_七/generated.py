@@ -109,7 +109,7 @@ taper_line(HK_X0, HK_Y0, HK_X1, HK_Y1, R_V, 1.5, steps=200)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p3_char_0027_七/01_七.png"
 )

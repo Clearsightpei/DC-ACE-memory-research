@@ -76,5 +76,5 @@ line([(262, 248), (250, 240)], w=5)
 # Connect left 竖 to sweep along bottom (the bottom horizontal of 巴)
 line([(85, 250), (215, 250)], w=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0279_色/01_色.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0279_色/01_色.png")
 print("saved")

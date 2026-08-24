@@ -4,12 +4,12 @@
 import sys
 from PIL import Image, ImageDraw
 
-BANK_CODE = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
+BANK_CODE = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
 sys.path.insert(0, BANK_CODE)
 
 from mu import draw_mu, _inline_heng
 
-OUT_PNG = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0186_本/01_本.png"
+OUT_PNG = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0186_本/01_本.png"
 
 
 def draw_ben(t, ox=0.0, oy=0.0, scale=0.85):

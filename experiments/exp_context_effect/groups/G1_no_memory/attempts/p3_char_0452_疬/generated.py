@@ -35,5 +35,5 @@ curve([(140, 140), (225, 138), (223, 175), (215, 225), (200, 260), (185, 265)])
 # 力 piě: from top-mid, sweeping down-left
 curve([(160, 145), (145, 200), (130, 250), (115, 275)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0452_疬/01_疬.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0452_疬/01_疬.png")
 print("saved")

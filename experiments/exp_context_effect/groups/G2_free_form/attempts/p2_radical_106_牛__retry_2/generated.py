@@ -65,7 +65,7 @@ taper_line((150, 82), (150, 272), r0=3.5, r1=3.0, steps=120)
 draw.ellipse((147, 79, 153, 85), fill="black")
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_106_牛__retry_2/01_牛.png"
 )
 print("wrote 01_牛.png")

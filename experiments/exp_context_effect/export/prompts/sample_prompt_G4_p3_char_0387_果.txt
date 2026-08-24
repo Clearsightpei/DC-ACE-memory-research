@@ -636,14 +636,14 @@ per the experiment's fair-comparison rule.
 
 ## Your memory (READ FIRST)
 
-- **Entry point (READ FIRST)**: /Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/memory_index.md
+- **Entry point (READ FIRST)**: <REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/memory_index.md
   This index describes what memory files exist and when to
   consult each. Follow its pointers to specific files, or
-  explore `/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/` freely if you need to find something
+  explore `<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/` freely if you need to find something
   not listed. The curator maintains this index and may
   restructure memory across cycles (see the group's
   `evolution.md` for structural change history).
-- **PASS-index (v11, may consult on demand)**: /Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/pass_index.md
+- **PASS-index (v11, may consult on demand)**: <REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/pass_index.md
   A full list of every attempt your group has ever produced that
   the human judged PASS or A, with a path to its PNG. Use this
   when you want to see what YOUR group has actually rendered
@@ -653,7 +653,7 @@ per the experiment's fair-comparison rule.
   PASSED PNG carries. Read PNGs of past successes when helpful;
   the curator may also embed specific PNG paths into your
   memory files as hints — follow those pointers.
-- Errata (错题集): /Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/errata.md
+- Errata (错题集): <REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/errata.md
 
 Read them before you draw. Use whatever entries help. Do NOT read any
 other group's files.
@@ -664,13 +664,13 @@ other group's files.
 - **phase**: character
 - **target_label**: 果
 - **target_description**: (none — infer from label)
-- **target GT PNG (may read)**: /Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/果.png
+- **target GT PNG (may read)**: <REPO_ROOT>/experiments/exp_context_effect/gt/phase3/果.png
 
 ## Output
 
 Write your rendering script and PNG to:
-  /Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0387_果/generated.py
-  /Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0387_果/01_果.png
+  <REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0387_果/generated.py
+  <REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0387_果/01_果.png
 
 The PNG must be exactly 300×300, white background, black ink.
 

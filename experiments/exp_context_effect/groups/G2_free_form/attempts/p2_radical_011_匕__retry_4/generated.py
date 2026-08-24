@@ -123,7 +123,7 @@ bezier_stroke(p0, p1, p2, r_start=10.0, r_end=1.4, steps=460, ease=1.15)
 
 # =========================================================================
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p2_radical_011_匕__retry_4/01_匕.png"
 )

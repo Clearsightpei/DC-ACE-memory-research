@@ -50,6 +50,6 @@ stroke([(215, 130), (200, 165), (180, 205), (165, 240)], width=6)
 # stroke D: 捺 (from mid, sweeps down-right)
 stroke([(200, 170), (225, 205), (250, 240), (278, 278)], width=7)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0430_畈/01_畈.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0430_畈/01_畈.png"
 img.save(out)
 print("saved", out)

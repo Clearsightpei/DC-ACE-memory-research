@@ -58,5 +58,5 @@ line([(205, 175), (240, 174), (265, 175)], width=8)
 # (5) bottom 横: from spine going right, at the bottom
 line([(205, 258), (240, 258), (268, 258)], width=9)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0301_作/01_作.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0301_作/01_作.png")
 print("saved 01_作.png")

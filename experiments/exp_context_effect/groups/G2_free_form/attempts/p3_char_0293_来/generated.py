@@ -51,6 +51,6 @@ taper((105, 215), (55, 275), w_start=7, w_end=4)
 taper((153, 155), (200, 215), w_start=8, w_end=9)
 taper((200, 215), (255, 270), w_start=9, w_end=11)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0293_来/01_来.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0293_来/01_来.png"
 img.save(out)
 print("saved", out)

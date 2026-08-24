@@ -69,6 +69,6 @@ dot = [(205, 82), (232, 102)]
 stroke(dot, width=6)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G1_no_memory/attempts/p2_radical_113_犬/01_犬.png"
 )

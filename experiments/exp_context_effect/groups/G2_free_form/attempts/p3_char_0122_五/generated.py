@@ -47,5 +47,5 @@ stroke([h_left, h_right, v_bottom], width=10)
 # Longest stroke, spans nearly full width, slight rise
 stroke([(50, 250), (255, 240)], width=11)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0122_五/01_五.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0122_五/01_五.png")
 print("wrote 01_五.png", W, H)

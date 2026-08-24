@@ -58,4 +58,4 @@ stroke(arc, width=7)
 flick = [(240, 258), (232, 240)]
 stroke(flick, width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0356_皃/01_皃.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0356_皃/01_皃.png")

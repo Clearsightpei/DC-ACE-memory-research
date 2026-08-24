@@ -65,5 +65,5 @@ d.line([(left+5, h_in2), (right-5, h_in2)], fill=INK, width=LW-1)
 # 6) 横 — bottom horizontal
 d.line([(left-3, h_bot), (right+2, h_bot)], fill=INK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0229_自/01_自.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0229_自/01_自.png")
 print("saved")

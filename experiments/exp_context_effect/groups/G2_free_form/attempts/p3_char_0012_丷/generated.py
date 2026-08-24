@@ -63,4 +63,4 @@ right_pts = [
 right_widths = [4.0, 3.6, 3.0, 2.2, 1.2]
 brush_stroke(right_pts, right_widths)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0012_丷/01_丷.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0012_丷/01_丷.png")

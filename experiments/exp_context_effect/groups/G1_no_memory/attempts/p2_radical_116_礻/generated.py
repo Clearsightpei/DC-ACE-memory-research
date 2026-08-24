@@ -38,5 +38,5 @@ stroke([(150, 128), (150, 265)], width=7)
 # Stroke 4: right dot (点) — small down-right dot to right of vertical
 stroke([(162, 165), (198, 200)], width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_116_礻/01_礻.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_116_礻/01_礻.png")
 print("saved")

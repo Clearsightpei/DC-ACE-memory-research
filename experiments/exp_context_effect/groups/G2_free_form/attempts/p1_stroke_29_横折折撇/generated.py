@@ -96,5 +96,5 @@ pie_p2 = (70, 250)              # lower-left tip
 pie_p1 = (185, 190)             # control point: rightward bow
 bezier_dabs(pie_p0, pie_p1, pie_p2, R_SHOULDER, 1.2, steps=500)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_29_横折折撇/01_横折折撇.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p1_stroke_29_横折折撇/01_横折折撇.png")
 print("saved 01_横折折撇.png (300x300)")

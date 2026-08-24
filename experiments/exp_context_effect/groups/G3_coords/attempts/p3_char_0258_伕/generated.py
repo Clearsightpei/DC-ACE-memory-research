@@ -105,7 +105,7 @@ na_seg = cubic_pts(na_head, na_c1, na_c2, na_end, steps=80)
 tapered_polyline(na_seg, w_head=3.2, w_tail=5.5)
 
 
-out_path = ("/Users/peilinwu/Documents/AI memory research/"
+out_path = ("<REPO_ROOT>/"
             "experiments/exp_context_effect/groups/G3_coords/"
             "attempts/p3_char_0258_伕/01_伕.png")
 img.save(out_path)

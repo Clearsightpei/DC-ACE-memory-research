@@ -57,6 +57,6 @@ line((KR, KT), (KR, KB), w=5)
 # bottom heng closes kou
 line((KL, KB), (KR, KB), w=5)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0472_侷/01_侷.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0472_侷/01_侷.png"
 img.save(out_path)
 print(f"Wrote {out_path}")

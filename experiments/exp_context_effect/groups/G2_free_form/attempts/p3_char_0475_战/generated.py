@@ -97,6 +97,6 @@ stroke(duan_pie, (7, 3))
 top_dot = bez((255, 85), (260, 95), (264, 105), (268, 125), n=30)
 stroke(top_dot, (4, 10))
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0475_战/01_战.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0475_战/01_战.png"
 img.save(out)
 print(f"Saved: {out}")

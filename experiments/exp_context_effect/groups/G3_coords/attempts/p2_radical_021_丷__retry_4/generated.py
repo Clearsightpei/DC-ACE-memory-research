@@ -33,14 +33,14 @@
 #   - Composition is asymmetric — NOT a mirrored pair.
 
 import sys
-sys.path.insert(0, "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code")
+sys.path.insert(0, "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code")
 
 from PIL import Image, ImageDraw
 from _shared_helpers import variant_pie, variant_dian
 
 CANVAS = 300
 
-OUT = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_021_丷__retry_4/01_丷.png"
+OUT = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_021_丷__retry_4/01_丷.png"
 
 
 def render():

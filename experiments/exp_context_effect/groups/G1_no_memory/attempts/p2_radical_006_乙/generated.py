@@ -48,6 +48,6 @@ r = LW // 2
 for (x, y) in [path[0], path[-1]]:
     draw.ellipse([x - r, y - r, x + r, y + r], fill=INK)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_006_乙/01_乙.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_006_乙/01_乙.png"
 img.save(out)
 print(out)

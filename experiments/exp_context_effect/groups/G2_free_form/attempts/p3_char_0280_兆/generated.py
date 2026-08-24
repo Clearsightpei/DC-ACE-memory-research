@@ -60,5 +60,5 @@ brush(sweep, 9, 8)
 hk = bezier((270, 250), (263, 245), (255, 238), (247, 228), n=40)
 brush(hk, 8, 2)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0280_兆/01_兆.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0280_兆/01_兆.png")
 print("saved")

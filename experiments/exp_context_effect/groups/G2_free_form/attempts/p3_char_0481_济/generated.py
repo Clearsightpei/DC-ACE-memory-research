@@ -81,4 +81,4 @@ stroke(left_v, (8, 4))
 right_v = bez((220, 200), (220, 230), (220, 255), (220, 278), n=50)
 stroke(right_v, (7, 6))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0481_济/01_济.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0481_济/01_济.png")

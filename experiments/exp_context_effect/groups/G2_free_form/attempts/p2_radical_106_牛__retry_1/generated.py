@@ -96,6 +96,6 @@ stroke_tapered(
 draw.ellipse((142 - 6, 92 - 6, 142 + 6, 92 + 6), fill="black")
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_106_牛__retry_1/01_牛.png"
 )

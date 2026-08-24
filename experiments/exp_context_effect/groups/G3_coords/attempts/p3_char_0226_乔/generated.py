@@ -36,4 +36,4 @@ curve([(140, 155), (135, 190), (125, 225), (115, 255)])
 # 6. Right leg — 亅 vertical with hook at bottom
 curve([(170, 155), (170, 190), (172, 225), (170, 255), (162, 258)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0226_乔/01_乔.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0226_乔/01_乔.png")

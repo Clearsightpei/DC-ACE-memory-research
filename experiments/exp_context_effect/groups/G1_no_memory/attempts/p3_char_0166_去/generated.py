@@ -34,5 +34,5 @@ line([(145, 200), (115, 250), (165, 262)])   # 撇 down-left then 折 right
 # 点 / small 捺 on the right, angling down-right
 line([(170, 230), (200, 275)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0166_去/01_去.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0166_去/01_去.png")
 print("wrote 01_去.png")

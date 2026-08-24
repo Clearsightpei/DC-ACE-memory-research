@@ -126,6 +126,6 @@ taper_line(seg_F, 4.0, 1.0)
 
 stamp(s2_start[0], s2_start[1], 5.5)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0016_乃__retry_1/01_乃.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0016_乃__retry_1/01_乃.png"
 img.save(out)
 print("wrote", out)

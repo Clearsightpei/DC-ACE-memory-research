@@ -57,6 +57,6 @@ def draw_chu(t=None, ox=0, oy=0, scale=1.0):
 
 draw_chu()
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0212_处/01_处.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0212_处/01_处.png"
 img.save(out)
 print("wrote", out)

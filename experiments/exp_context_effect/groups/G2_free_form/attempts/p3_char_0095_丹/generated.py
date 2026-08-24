@@ -60,4 +60,4 @@ brush_line(dot, width=7)
 cross = [(35, 165), (260, 162)]
 brush_line(cross, width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0095_丹/01_丹.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0095_丹/01_丹.png")

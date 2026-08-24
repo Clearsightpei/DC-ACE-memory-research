@@ -101,7 +101,7 @@ def draw_shu_zhe(draw, head_anchor, corner_anchor, tail_anchor,
 # ---- Render -----------------------------------------------------------
 
 OUT_PATH = Path(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G4_grid/attempts/p1_stroke_15_竖折/01_竖折.png"
 )
 

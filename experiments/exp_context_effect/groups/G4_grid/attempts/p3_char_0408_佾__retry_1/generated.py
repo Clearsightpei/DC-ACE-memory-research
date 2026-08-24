@@ -36,7 +36,7 @@ TRAJECTORY DIFF (from PNG comparison, main→retry_1):
 import sys, os
 from PIL import Image, ImageDraw
 
-BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
+BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
 sys.path.insert(0, BANK)
 
 from _anchor import anchor_to_xy, fat_line

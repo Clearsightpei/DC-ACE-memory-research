@@ -53,4 +53,4 @@ stroke([(197,90), (180,160), (160,220), (140,275)], w_start=7, w_end=3)
 # 捺 — from apex sweeping down-right with thick foot ending around (260, 275)
 stroke([(200,105), (220,170), (240,220), (265,275)], w_start=3, w_end=9)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0118_从/01_从.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0118_从/01_从.png")

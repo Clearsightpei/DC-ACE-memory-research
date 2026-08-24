@@ -91,4 +91,4 @@ right_foot = bez((225, 215), (238, 235), (250, 255), (260, 272), n=40)
 stroke(right_foot, (4, 8))
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0474_係/01_係.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0474_係/01_係.png")

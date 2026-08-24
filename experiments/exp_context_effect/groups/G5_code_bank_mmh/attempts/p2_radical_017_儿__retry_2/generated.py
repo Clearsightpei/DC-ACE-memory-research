@@ -29,7 +29,7 @@ Joints: NONE (strokes clearly separate).
 """
 
 import sys, pathlib
-BANK = pathlib.Path('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code')
+BANK = pathlib.Path('<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code')
 sys.path.insert(0, str(BANK))
 
 from PIL import Image, ImageDraw
@@ -67,6 +67,6 @@ draw_pie(d, head=(125, 100), tail=(48, 280),
 draw_shu_wan_gou(d, head=(172, 88), tail=(262, 210),
                  width=8, bottom_extra=75, knee_ratio=0.92)
 
-OUT = '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_017_儿__retry_2/01_儿.png'
+OUT = '<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_017_儿__retry_2/01_儿.png'
 img.save(OUT)
 print('saved', OUT)

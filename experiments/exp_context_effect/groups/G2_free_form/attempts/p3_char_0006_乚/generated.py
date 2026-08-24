@@ -102,6 +102,6 @@ for i in range(steps + 1):
     dab(x, y, rr)
 
 # --- Save -----------------------------------------------------------
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0006_乚/01_乚.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0006_乚/01_乚.png"
 img.save(out)
 print(f"wrote {out}")

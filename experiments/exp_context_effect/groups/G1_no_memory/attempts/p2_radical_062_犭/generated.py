@@ -64,4 +64,4 @@ s3 = [
 ]
 curve(s3, width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_062_犭/01_犭.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_062_犭/01_犭.png")

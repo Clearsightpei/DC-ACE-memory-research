@@ -62,7 +62,7 @@ line((140, 175), (275, 172), width=6)
 line((207, 100), (207, 285), width=6)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0246_仵/01_仵.png"
 )
 print("saved 01_仵.png")

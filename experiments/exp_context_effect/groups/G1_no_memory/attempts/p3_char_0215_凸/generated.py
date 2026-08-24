@@ -62,5 +62,5 @@ d.line([(60, 128), (60, 240)], fill="black", width=LW)
 # S6 (final): bottom horizontal (long base): (60,240) to (240,240)
 d.line([(58, 240), (242, 240)], fill="black", width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0215_凸/01_凸.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0215_凸/01_凸.png")
 print("saved")

@@ -58,4 +58,4 @@ stroke(s3, width=6)
 s4 = bezier((188, 168), (150, 215), (85, 270))
 stroke(s4, width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0145_勿/01_勿.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0145_勿/01_勿.png")

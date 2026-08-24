@@ -45,5 +45,5 @@ poly([(150, 205), (138, 220), (120, 240), (95, 262), (72, 275)], 3)
 # Long na sweeping down and right from near the pie base
 poly([(115, 268), (155, 275), (200, 278), (240, 272), (258, 265)], 3)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0372_疌/01_疌.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0372_疌/01_疌.png")
 print("wrote 01_疌.png")

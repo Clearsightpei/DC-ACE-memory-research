@@ -39,4 +39,4 @@ d.line([(175, 120), (178, 195)], fill=INK, width=w)
 # small hook curl at right inner stroke's bottom
 d.line([(178, 195), (198, 205)], fill=INK, width=w)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0210_四/01_四.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0210_四/01_四.png")

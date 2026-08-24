@@ -78,5 +78,5 @@ tapered((X0 + 4, Y0 + 78), (X1 - 6, Y0 + 78), w0=4, w1=4)
 # Stroke 10: bottom heng (closes 目)
 tapered((X0, Y1), (X1 - 3, Y1), w0=5, w1=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0435_看/01_看.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0435_看/01_看.png")
 print("saved")

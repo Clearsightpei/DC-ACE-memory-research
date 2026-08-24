@@ -52,5 +52,5 @@ stroke([(85, 205), (215, 205)], width=9)
 # 7. 横: bottom horizontal — the WIDEST stroke, slight rightward taper
 stroke([(50, 260), (255, 258)], width=11)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0299_里/01_里.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0299_里/01_里.png")
 print("saved")

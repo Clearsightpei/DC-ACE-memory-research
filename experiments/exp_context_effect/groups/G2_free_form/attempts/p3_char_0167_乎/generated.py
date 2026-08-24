@@ -59,5 +59,5 @@ stroke([(155, 140), (152, 260)], width_start=8, width_end=7)
 # Hook flick UP-and-LEFT (~-115 deg) — pronounced hook curling back
 stroke([(152, 260), (138, 252), (125, 238), (118, 222)], width_start=7, width_end=3)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0167_乎/01_乎.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0167_乎/01_乎.png")
 print("Saved 01_乎.png")

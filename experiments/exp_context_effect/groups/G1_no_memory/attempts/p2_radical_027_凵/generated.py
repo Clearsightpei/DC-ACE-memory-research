@@ -39,4 +39,4 @@ p2 = [(RIGHT_X, TOP_Y + 5),
       (RIGHT_X, BOT_Y - 5)]
 draw.line(p2, fill=INK, width=THICK, joint="curve")
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_027_凵/01_凵.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_027_凵/01_凵.png")

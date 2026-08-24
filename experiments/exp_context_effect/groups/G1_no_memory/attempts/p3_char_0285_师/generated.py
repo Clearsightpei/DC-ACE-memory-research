@@ -42,5 +42,5 @@ d.line([(255, 220), (243, 213)], fill=BLACK, width=LW)
 # Long central descender (巾's central vertical) going down past the frame
 d.line([(205, 135), (205, 270)], fill=BLACK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0285_师/01_师.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0285_师/01_师.png")
 print("saved")

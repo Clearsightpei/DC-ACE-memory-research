@@ -129,6 +129,6 @@ draw_dot()
 draw_body()
 draw_pina()
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_044_辶/01_辶.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_044_辶/01_辶.png"
 img.save(out)
 print("Saved:", out)

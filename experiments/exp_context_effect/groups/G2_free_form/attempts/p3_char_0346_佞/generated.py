@@ -38,5 +38,5 @@ stroke([(245, 145), (215, 200), (170, 275)], width=8)
 # stroke 3: 长横 - the horizontal crossing
 stroke([(140, 215), (270, 213)], width=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0346_佞/01_佞.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0346_佞/01_佞.png")
 print("saved")

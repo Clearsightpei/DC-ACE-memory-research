@@ -51,5 +51,5 @@ poly(curve)
 # 点 (small dot near top-right of 专)
 d.ellipse([(238, 100), (250, 112)], fill=INK)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0415_转/01_转.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0415_转/01_转.png")
 print("done")

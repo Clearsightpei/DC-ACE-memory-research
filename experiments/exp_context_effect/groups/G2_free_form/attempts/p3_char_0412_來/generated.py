@@ -62,5 +62,5 @@ bezier([(148, 208), (120, 240), (85, 275)], w=6)
 # 7) Bottom 捺 from spine/horizontal intersection sweeping down-right
 bezier([(154, 208), (200, 240), (250, 265)], w=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0412_來/01_來.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0412_來/01_來.png")
 print("saved")

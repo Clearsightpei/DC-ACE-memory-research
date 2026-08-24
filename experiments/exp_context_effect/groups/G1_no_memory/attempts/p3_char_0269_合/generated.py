@@ -25,4 +25,4 @@ stroke([(105, 190), (205, 188), (205, 258)], width=5)
 # bottom 横
 stroke([(107, 260), (207, 258)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0269_合/01_合.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0269_合/01_合.png")

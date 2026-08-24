@@ -54,6 +54,6 @@ dot(172, 190, 3)
 brush_line((95, 245), (205, 215), 7, 3)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0068_纟/01_纟.png"
 )

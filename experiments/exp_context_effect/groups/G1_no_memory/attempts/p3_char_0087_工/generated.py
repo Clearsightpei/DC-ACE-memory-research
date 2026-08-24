@@ -23,6 +23,6 @@ bot_y = 210
 bot_x1, bot_x2 = 55, 250
 draw.line([(bot_x1, bot_y), (bot_x2, bot_y)], fill=ink, width=thick)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0087_工/01_工.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0087_工/01_工.png"
 img.save(out)
 print("saved", out)

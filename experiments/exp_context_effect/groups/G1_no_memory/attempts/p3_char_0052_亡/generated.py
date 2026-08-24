@@ -19,4 +19,4 @@ d.line([(55, 140), (245, 140)], fill=INK, width=LW)
 d.line([(85, 140), (85, 235)], fill=INK, width=LW)   # vertical
 d.line([(82, 232), (225, 232)], fill=INK, width=LW)  # horizontal bottom
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0052_亡/01_亡.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0052_亡/01_亡.png")

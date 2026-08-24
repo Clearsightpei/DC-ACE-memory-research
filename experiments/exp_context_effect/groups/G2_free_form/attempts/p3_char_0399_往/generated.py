@@ -64,5 +64,5 @@ stroke([(200, 105), (200, 245)], width=9)
 # 8. 横 bottom horizontal (longest)
 stroke([(135, 248), (200, 245), (275, 250)], width=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0399_往/01_往.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0399_往/01_往.png")
 print("wrote 01_往.png")

@@ -100,6 +100,6 @@ line((inner_R_x, bot_box_T + 12), (inner_R_x + 2, bot_box_B), width=LW - 1)
 # Stroke 9: 一 — long bottom horizontal extending beyond box on both sides
 line((bot_bar_L, bot_bar_Y - 1), (bot_bar_R, bot_bar_Y + 1), width=LW + 1)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0468_盅/01_盅.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0468_盅/01_盅.png"
 img.save(out)
 print(f"wrote {out}")

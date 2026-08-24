@@ -42,4 +42,4 @@ stroke([(135, 215), (265, 215)], width=8)   # bottom 横 (longest)
 # Central 竖 through the horizontals (from just above top-横 to bottom of char)
 stroke([(198, 90), (198, 268)], width=9)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0392_佯/01_佯.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0392_佯/01_佯.png")

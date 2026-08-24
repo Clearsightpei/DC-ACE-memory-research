@@ -43,4 +43,4 @@ poly([(143, 200), (230, 197), (228, 258)], w=6)
 # 6. 横 — bottom horiz
 line((143, 258), (228, 258), w=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0265_名/01_名.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0265_名/01_名.png")

@@ -65,5 +65,5 @@ line([(225, 235), (240, 258), (270, 262)], width=7)
 # hook up-and-left
 taper(270, 262, 276, 232, w0=8, w1=3)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0431_说/01_说.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0431_说/01_说.png")
 print("saved")

@@ -37,5 +37,5 @@ line([(260, 60), (260, 245)])
 # Hook at bottom of right vertical curves toward left
 line([(260, 245), (240, 260)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0361_到/01_到.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0361_到/01_到.png")
 print("saved")

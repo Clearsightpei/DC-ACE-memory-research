@@ -41,6 +41,6 @@ line([(RX - 20, BY), (RX, BY - 15)], LW)  # curve up
 line([(RX, BY - 15), (RX, BY - 30)], LW)  # continue up
 line([(RX, BY - 30), (RX + 15, BY - 45)], LW)  # hook up-right
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0321_把/01_把.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0321_把/01_把.png"
 img.save(out)
 print("saved", out)

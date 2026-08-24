@@ -49,7 +49,7 @@ brush_line((105, 120), (95, 200), width=10)
 brush_line((195, 120), (185, 200), width=10)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0078_艹/01_艹.png"
 )
 print("saved")

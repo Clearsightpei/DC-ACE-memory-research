@@ -64,5 +64,5 @@ thick_line((LEFT_X_TOP - 2, LOWER_H_Y), (RIGHT_X - 3, LOWER_H_Y))
 # extends slightly below BOT_Y
 thick_line((MID_X, TOP_Y + 4), (MID_X, BOT_Y + 8))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0168_用/01_用.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0168_用/01_用.png")
 print("saved 01_用.png")

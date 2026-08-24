@@ -88,4 +88,4 @@ stroke(hook, (6, 3))
 pie2 = bez((175, 155), (162, 200), (145, 240), (120, 278), n=70)
 stroke(pie2, (9, 3))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0452_疬/01_疬.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0452_疬/01_疬.png")

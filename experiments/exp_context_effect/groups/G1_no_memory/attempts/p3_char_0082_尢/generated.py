@@ -39,4 +39,4 @@ line(pts_hzwg)
 # hook up
 line([(258, 258), (260, 235)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0082_尢/01_尢.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0082_尢/01_尢.png")

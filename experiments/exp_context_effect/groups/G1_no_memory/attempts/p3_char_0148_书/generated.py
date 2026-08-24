@@ -54,7 +54,7 @@ polyline([(150, 260), (140, 265), (128, 260)])
 polyline([(205, 88), (220, 108)], w=6)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G1_no_memory/attempts/p3_char_0148_书/01_书.png"
 )
 print("saved 01_书.png")

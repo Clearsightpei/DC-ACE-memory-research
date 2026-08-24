@@ -27,7 +27,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 # Add bank to path
-BANK = Path("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code")
+BANK = Path("<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code")
 sys.path.insert(0, str(BANK))
 
 from pie import draw_pie

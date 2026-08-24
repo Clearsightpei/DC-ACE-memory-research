@@ -40,5 +40,5 @@ draw.line([(82, 235), (218, 232)], fill=INK, width=LW)
 # 6) Small bottom-right upward hook
 draw.line([(218, 232), (222, 205)], fill=INK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0007_乛/01_乛.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0007_乛/01_乛.png")
 print("saved")

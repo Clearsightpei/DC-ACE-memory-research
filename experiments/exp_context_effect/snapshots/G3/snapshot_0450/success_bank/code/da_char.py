@@ -175,7 +175,7 @@ def draw_da(dr):
 
 draw_da(draw)
 
-out_path = ("/Users/peilinwu/Documents/AI memory research/"
+out_path = ("<REPO_ROOT>/"
             "experiments/exp_context_effect/groups/G3_coords/"
             "attempts/p2_radical_046_大__retry_5__rerun/01_大.png")
 img.save(out_path)

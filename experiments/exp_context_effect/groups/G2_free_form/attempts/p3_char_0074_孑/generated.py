@@ -80,4 +80,4 @@ bezier((155, 260), (140, 255), (120, 240), r_start=3.5, r_end=1.0, n=50)
 stroke([(180, 180), (260, 150)], r_start=4.5, r_end=1.2)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0074_孑/01_孑.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0074_孑/01_孑.png")

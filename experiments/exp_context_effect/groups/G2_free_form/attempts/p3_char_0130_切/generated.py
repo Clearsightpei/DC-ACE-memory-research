@@ -85,6 +85,6 @@ pie = [
 ]
 stroke(pie, width=8)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0130_切/01_切.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0130_切/01_切.png"
 img.save(out)
 print(f"wrote {out}")

@@ -92,4 +92,4 @@ stroke(right_v2, (8, 7))
 bot_h2 = bez((LX1, LY2), (LX1+30, LY2+1), (LX2-30, LY2+1), (LX2, LY2), n=50)
 stroke(bot_h2, (7, 7))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0470_侶/01_侶.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0470_侶/01_侶.png")

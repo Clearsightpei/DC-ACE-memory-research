@@ -12,7 +12,7 @@
 import sys, os
 from PIL import Image, ImageDraw
 
-BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
+BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
 sys.path.insert(0, BANK)
 
 from shu_wan_gou import draw_shu_wan_gou  # noqa: E402
@@ -39,6 +39,6 @@ t.line([(x_left, y_left), (x_right, y_right)], fill=(0, 0, 0), width=12)
 # tail extends to (55, -85), hook to (50, -63).
 draw_shu_wan_gou(t, ox=-25.0, oy=-15.0, scale=1.0)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0027_七/01_七.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0027_七/01_七.png"
 img.save(out_path)
 print("saved:", out_path)

@@ -79,7 +79,7 @@ line(d, ('BL', 0.466, 0.112), ('C', 0.793, 0.91))
 # --- stroke 7: 撇 long final descending sweep ---
 line(d, ('MR', 0.303, 0.274), ('BL', 0.437, 0.903))
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0311_身/01_身.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0311_身/01_身.png')
 
 SELF_CHECK = {
     'visual_ok': True,

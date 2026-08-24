@@ -39,4 +39,4 @@ for i in range(len(curve) - 1):
 # Small hook upward at right end
 draw.line([(232, 242), (238, 222)], fill=ink, width=thick)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_007_乚/01_乚.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_007_乚/01_乚.png")

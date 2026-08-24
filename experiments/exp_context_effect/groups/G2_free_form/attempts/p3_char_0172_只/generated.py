@@ -49,6 +49,6 @@ na_mid = (215, 215)
 na_end = (255, 260)
 polyline([na_start, na_mid, na_end], width=LW+1)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0172_只/01_只.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0172_只/01_只.png"
 img.save(out)
 print("wrote", out)

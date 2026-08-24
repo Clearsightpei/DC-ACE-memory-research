@@ -99,7 +99,7 @@ for i in range(foot_steps + 1):
     r = r_foot_start + (r_foot_end - r_foot_start) * t
     dab(x, y, r)
 
-out_path = ("/Users/peilinwu/Documents/AI memory research/experiments/"
+out_path = ("<REPO_ROOT>/experiments/"
             "exp_context_effect/groups/G2_free_form/attempts/"
             "p2_radical_028_人__retry_1/01_人.png")
 img.save(out_path)

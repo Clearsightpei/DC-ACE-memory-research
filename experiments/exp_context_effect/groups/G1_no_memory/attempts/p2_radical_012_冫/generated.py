@@ -53,6 +53,6 @@ lower = [
 lower_w = [8, 8, 7, 5, 3]
 draw_stroke(lower, lower_w)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_012_冫/01_冫.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_012_冫/01_冫.png"
 img.save(out)
 print(f"Saved: {out}")

@@ -46,6 +46,6 @@ stroke([(90, 195), (75, 285)], width=9)
 stroke([(210, 195), (225, 285)], width=9)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0364_畀/01_畀.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0364_畀/01_畀.png"
 )
 print("saved 01_畀.png")

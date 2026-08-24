@@ -67,5 +67,5 @@ polyline(right_stroke, w=LW)
 # hook flick UP-and-LEFT from terminal
 polyline([(275, 262), (272, 245), (265, 235)], w=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0228_乩/01_乩.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0228_乩/01_乩.png")
 print("wrote 01_乩.png")

@@ -67,6 +67,6 @@ strk3.append((262, 260))
 strk3.append((258, 240))
 stroke(strk3, width=9)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0048_乇/01_乇.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0048_乇/01_乇.png"
 img.save(out)
 print("saved", out)

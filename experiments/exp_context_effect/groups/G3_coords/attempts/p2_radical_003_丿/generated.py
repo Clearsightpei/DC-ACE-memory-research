@@ -70,7 +70,7 @@ def main():
     img = Image.new("RGB", (CANVAS_SIZE, CANVAS_SIZE), (255, 255, 255))
     t = ImageDraw.Draw(img)
     draw_pie_radical(t, ox=0, oy=0, scale=1.0)
-    out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_003_丿/01_丿.png"
+    out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_003_丿/01_丿.png"
     img.save(out)
 
 

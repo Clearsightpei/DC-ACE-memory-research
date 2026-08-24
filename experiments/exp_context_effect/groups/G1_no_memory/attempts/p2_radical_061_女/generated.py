@@ -55,7 +55,7 @@ s3_b = (270, 170)
 line(s3_a, s3_b)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G1_no_memory/attempts/"
     "p2_radical_061_女/01_女.png"
 )

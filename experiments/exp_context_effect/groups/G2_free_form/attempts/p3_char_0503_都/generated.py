@@ -116,6 +116,6 @@ line_str((215, 128), (215, 288), (7, 7))
 d.ellipse((215-5, 128-5, 215+5, 128+5), fill="black")  # loaded start
 
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0503_都/01_都.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0503_都/01_都.png"
 img.save(out_path)
 print(f"saved {out_path}")

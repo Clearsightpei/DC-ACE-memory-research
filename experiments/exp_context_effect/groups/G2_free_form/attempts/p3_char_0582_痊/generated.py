@@ -100,4 +100,4 @@ stroke(sh, (7, 7))
 h3 = bez((155, 250), (185, 248), (220, 248), (255, 252), n=50)
 stroke(h3, (7, 7))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0582_痊/01_痊.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0582_痊/01_痊.png")

@@ -43,4 +43,4 @@ poly([(160, 200), (230, 200), (250, 215), (250, 240), (235, 255), (215, 255)])
 # Dot at upper right
 poly([(260, 70), (270, 85)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0415_转/01_转.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0415_转/01_转.png")

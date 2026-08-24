@@ -43,5 +43,5 @@ d.line([(right_x, top_y+5), (right_x, bot_y-5)], fill=ink, width=w)
 # Stroke 4: long horizontal through middle crossing both boxes
 d.line([(left_x-15, mid_y), (right_x+15, mid_y)], fill=ink, width=w)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0203_冊/01_冊.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0203_冊/01_冊.png")
 print("wrote 01_冊.png")

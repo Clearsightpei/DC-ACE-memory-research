@@ -74,5 +74,5 @@ line([(151, 200), (135, 225), (108, 261)])
 # S8: long 撇 — from mid-right down-left to bottom-center
 line([(186, 191), (170, 220), (150, 250), (135, 275), (122, 295)])
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0384_疡/01_疡.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0384_疡/01_疡.png')
 print('saved')

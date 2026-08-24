@@ -96,4 +96,4 @@ stroke(mu_i2, (5, 5))
 mu_bot = bez((133, 278), (170, 277), (200, 277), (230, 278), n=40)
 stroke(mu_bot, (6, 6))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0571_着/01_着.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0571_着/01_着.png")

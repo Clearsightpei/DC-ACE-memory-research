@@ -80,6 +80,6 @@ s3_pts = [
 s3_w = [5, 8, 11, 13, 12, 6]
 stroke_polyline(s3_pts, s3_w)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0059_么/01_么.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0059_么/01_么.png"
 img.save(out)
 print("saved", out)

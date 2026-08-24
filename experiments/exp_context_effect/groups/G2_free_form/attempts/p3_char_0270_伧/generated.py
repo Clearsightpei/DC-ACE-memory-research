@@ -42,4 +42,4 @@ line((172, 205), (232, 205), w=LW)
 # Bottom left short vertical + closure (the 巳/口-like bottom)
 poly([(172, 205), (172, 245), (232, 245)], w=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0270_伧/01_伧.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0270_伧/01_伧.png")

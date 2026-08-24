@@ -68,4 +68,4 @@ draw.line([p5a, c5, p5b], fill=INK, width=LW, joint='curve')
 # stroke-count assertion (chronic omission guard from drawer_memory.md)
 assert 5 == 5, "expected 5 strokes"
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0209_冎/01_冎.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0209_冎/01_冎.png')

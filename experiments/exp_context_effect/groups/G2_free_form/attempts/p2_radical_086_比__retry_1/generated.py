@@ -140,7 +140,7 @@ line_taper(arc_end_x, arc_end_y, hx, hy, 5.8, 1.0, steps=220)
 # Save
 # ============================================================
 out_path = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p2_radical_086_比__retry_1/01_比.png"
 )

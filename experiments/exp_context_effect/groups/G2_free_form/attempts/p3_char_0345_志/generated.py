@@ -85,5 +85,5 @@ d.polygon([(147, 195), (162, 195), (165, 225), (150, 228)], fill=INK)
 d.polygon([(213, 172), (228, 170), (238, 205), (224, 210)], fill=INK)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0345_志/01_志.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0345_志/01_志.png")
 print("saved 01_志.png")

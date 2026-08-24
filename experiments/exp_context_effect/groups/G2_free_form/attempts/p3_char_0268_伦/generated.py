@@ -76,5 +76,5 @@ hook_start = (245, 258)
 hook_end = (232, 232)
 stroke_line(hook_start, hook_end, 9, 3, n=30)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0268_伦/01_伦.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0268_伦/01_伦.png")
 print("saved")

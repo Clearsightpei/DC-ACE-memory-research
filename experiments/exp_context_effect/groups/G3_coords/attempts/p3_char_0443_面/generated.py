@@ -47,4 +47,4 @@ if __name__ == "__main__":
     img = Image.new("RGB", (300, 300), "white")
     d = ImageDraw.Draw(img)
     draw_mian(d)
-    img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0443_面/01_面.png")
+    img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0443_面/01_面.png")

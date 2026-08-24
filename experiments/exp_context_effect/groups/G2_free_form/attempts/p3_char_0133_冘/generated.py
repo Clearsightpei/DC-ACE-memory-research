@@ -109,4 +109,4 @@ s4_hook = [(255, 265), (253, 240)]
 dab_stroke(s4_hook, (9, 4))
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0133_冘/01_冘.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0133_冘/01_冘.png")

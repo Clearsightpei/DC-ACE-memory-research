@@ -44,7 +44,7 @@ stroke([(175,195),(158,225)], [8,7])
 # small hook/竖 inside right (like a mini 乚)
 stroke([(190,215),(185,245),(200,255)], [7,7,6])
 
-out_dir = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0391_表"
+out_dir = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0391_表"
 os.makedirs(out_dir, exist_ok=True)
 img.save(os.path.join(out_dir, "01_表.png"))
 print("saved")

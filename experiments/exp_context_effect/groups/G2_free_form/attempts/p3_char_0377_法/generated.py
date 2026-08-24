@@ -67,5 +67,5 @@ stroke([(140, 245), (235, 243)], width=8)
 teardrop(210, 215, 228, 240, w0=3, w1=10)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+img.save("<REPO_ROOT>/experiments/exp_context_effect/"
          "groups/G2_free_form/attempts/p3_char_0377_法/01_法.png")

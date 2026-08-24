@@ -31,7 +31,7 @@ import sys
 import os
 sys.path.insert(
     0,
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code",
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code",
 )
 from _shared_helpers import variant_dian, to_px  # noqa: E402
 
@@ -129,7 +129,7 @@ def render():
     )
 
     out = (
-        "/Users/peilinwu/Documents/AI memory research/experiments/"
+        "<REPO_ROOT>/experiments/"
         "exp_context_effect/groups/G3_coords/attempts/"
         "p2_radical_077_忄__retry_1/01_忄.png"
     )

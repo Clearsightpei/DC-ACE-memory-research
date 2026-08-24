@@ -59,7 +59,7 @@ draw.ellipse([v_end[0] - 5, v_end[1] - 5, v_end[0] + 5, v_end[1] + 5],
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p3_char_0013_十/01_十.png"
 )

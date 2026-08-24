@@ -134,6 +134,6 @@ brush_stroke(hook, hook_w)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0312_伲/01_伲.png"
 )

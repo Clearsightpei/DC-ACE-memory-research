@@ -134,7 +134,7 @@ def main():
     draw = ImageDraw.Draw(img)
     draw_ge(draw)
     out = (
-        "/Users/peilinwu/Documents/AI memory research/experiments/"
+        "<REPO_ROOT>/experiments/"
         "exp_context_effect/groups/G3_coords/attempts/p2_radical_096_戈/"
         "01_戈.png"
     )

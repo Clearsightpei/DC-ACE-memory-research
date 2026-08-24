@@ -27,5 +27,5 @@ stroke([(128, 180), (155, 265)], width=4)              # nà
 stroke([(195, 125), (180, 195), (165, 265)], width=4)  # piě sweep
 stroke([(195, 180), (255, 275)], width=4)              # nà
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0454_疭/01_疭.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0454_疭/01_疭.png")
 print("done")

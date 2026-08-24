@@ -21,7 +21,7 @@ Memory checklist (per memory_index.md v8 slim path):
 # fresh_component: you_left_slot_top_for_compound
 
 import sys, os
-BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
+BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
 sys.path.insert(0, BANK)
 
 from PIL import Image, ImageDraw
@@ -102,6 +102,6 @@ SELF_CHECK = {
 }
 
 # --- Save ---
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0545_难/01_难.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0545_难/01_难.png"
 img.save(out)
 print("wrote", out, "strokes=", STROKE_COUNT)

@@ -94,4 +94,4 @@ stroke(jie_left, (7, 4))
 jie_right = bez((215, 175), (215, 210), (215, 245), (215, 278), n=60)
 stroke(jie_right, (7, 7))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0448_疥/01_疥.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0448_疥/01_疥.png")

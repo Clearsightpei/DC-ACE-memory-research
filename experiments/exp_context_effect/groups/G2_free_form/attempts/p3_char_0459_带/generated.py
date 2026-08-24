@@ -102,4 +102,4 @@ stroke(cen, (8, 7))
 cen_hook = bez((155, 278), (149, 274), (143, 268), (137, 261), n=20)
 stroke(cen_hook, (8, 3))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0459_带/01_带.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0459_带/01_带.png")

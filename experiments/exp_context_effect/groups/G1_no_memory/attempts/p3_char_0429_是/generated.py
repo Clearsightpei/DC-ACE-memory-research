@@ -41,4 +41,4 @@ line([(95, 232), (160, 235)])
 # --- 捺 (right downward stroke, going down-right) ---
 line([(160, 195), (255, 270)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0429_是/01_是.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0429_是/01_是.png")

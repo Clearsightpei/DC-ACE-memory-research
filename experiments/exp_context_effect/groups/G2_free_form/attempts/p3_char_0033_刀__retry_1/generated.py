@@ -91,6 +91,6 @@ taper_stroke(
     r_end=1.0,
 )
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0033_刀__retry_1/01_刀.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0033_刀__retry_1/01_刀.png"
 img.save(out)
 print(f"Saved {out}")

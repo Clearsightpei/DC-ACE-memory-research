@@ -72,5 +72,5 @@ d.line(curve_pts, fill=BLACK, width=LW)
 # Terminal hook: UP-and-LEFT flick (~-110°)
 d.line([(222, 268), (208, 250)], fill=BLACK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0114_见/01_见.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0114_见/01_见.png")
 print("saved 01_见.png")

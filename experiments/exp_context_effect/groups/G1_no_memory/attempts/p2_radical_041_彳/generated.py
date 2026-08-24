@@ -43,5 +43,5 @@ stroke(s2, width=7)
 s3 = [(140, 172), (140, 265)]
 stroke(s3, width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_041_彳/01_彳.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_041_彳/01_彳.png")
 print("saved")

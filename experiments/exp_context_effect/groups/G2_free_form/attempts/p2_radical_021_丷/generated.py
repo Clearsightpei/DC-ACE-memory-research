@@ -70,4 +70,4 @@ dab(R_P0[0], R_P0[1], 5.5)
 bezier_taper(R_P0, R_P1, R_P2, r0=5.0, r1=1.0, steps=240, ease=1.2)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_021_丷/01_丷.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_021_丷/01_丷.png")

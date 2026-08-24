@@ -63,6 +63,6 @@ def draw_yi_different(t):
 draw_yi_different(d)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G3_coords/attempts/p3_char_0574_異/01_異.png"
 )

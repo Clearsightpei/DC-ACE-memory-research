@@ -40,5 +40,5 @@ line([(40, 210), (270, 205)], width=7)
 # Stroke 6: 丿 downward flick at bottom-right (乓 distinguishing feature)
 bezier((215, 215), (230, 245), (250, 275), width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0224_乓/01_乓.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0224_乓/01_乓.png")
 print("saved")

@@ -31,6 +31,6 @@ d.line([(85, 205), (215, 205)], fill=INK, width=TH)
 d.line([(215, 110), (215, 200)], fill=INK, width=TH)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G1_no_memory/attempts/p2_radical_040_屮/01_屮.png"
 )

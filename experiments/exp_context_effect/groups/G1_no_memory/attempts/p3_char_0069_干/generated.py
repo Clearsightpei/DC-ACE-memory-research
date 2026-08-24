@@ -16,4 +16,4 @@ d.line([(55, 170), (250, 160)], fill=ink, width=w)
 # Vertical stroke through both horizontals, extending to bottom
 d.line([(150, 90), (150, 275)], fill=ink, width=w)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0069_干/01_干.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0069_干/01_干.png")

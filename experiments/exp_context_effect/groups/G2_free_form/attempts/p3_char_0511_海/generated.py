@@ -99,4 +99,4 @@ stroke(p1, (4, 7))
 p2 = bez((200, 130), (199, 140), (198, 150), (198, 160), n=30)
 stroke(p2, (4, 7))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0511_海/01_海.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0511_海/01_海.png")

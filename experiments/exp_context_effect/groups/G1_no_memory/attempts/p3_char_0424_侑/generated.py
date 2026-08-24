@@ -34,5 +34,5 @@ line([(245, 255), (230, 262)], w=LW)
 line([(155, 185), (240, 185)], w=LW)
 line([(155, 220), (240, 220)], w=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0424_侑/01_侑.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0424_侑/01_侑.png")
 print("saved")

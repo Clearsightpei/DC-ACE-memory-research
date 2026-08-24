@@ -54,5 +54,5 @@ curve(s4)
 # hook upward at end
 d.line([(85, 242), (100, 225)], fill=BLACK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_120_瓦/01_瓦.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_120_瓦/01_瓦.png")
 print("saved")

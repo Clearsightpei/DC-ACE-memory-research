@@ -52,4 +52,4 @@ line((258, 75), (260, 258), w=6)
 # Terminal at (260, 258); flick to about (238, 245).
 line((260, 258), (238, 245), w=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0137_刈/01_刈.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0137_刈/01_刈.png")

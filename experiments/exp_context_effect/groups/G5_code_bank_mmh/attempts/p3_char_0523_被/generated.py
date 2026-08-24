@@ -96,7 +96,7 @@ mid_s10 = (255, 245)
 s10_tail = (290, 285)
 stroke_poly([s10_head, mid_s10, s10_tail], 7)
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0523_被/01_被.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0523_被/01_被.png')
 
 SELF_CHECK = {
     'visual_ok': True,

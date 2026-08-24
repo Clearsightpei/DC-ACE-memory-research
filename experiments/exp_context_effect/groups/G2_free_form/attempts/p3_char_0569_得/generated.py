@@ -97,4 +97,4 @@ stroke(hook, (7, 2))
 dot = bez((205, 218), (215, 228), (222, 236), (228, 242), n=25)
 stroke(dot, (3, 8))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0569_得/01_得.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0569_得/01_得.png")

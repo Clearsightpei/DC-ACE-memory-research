@@ -87,4 +87,4 @@ stroke(shu_gou, (8, 8))
 hook = bez((262, 258), (256, 253), (250, 247), (244, 240), n=20)
 stroke(hook, (8, 3))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0486_俐/01_俐.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0486_俐/01_俐.png")

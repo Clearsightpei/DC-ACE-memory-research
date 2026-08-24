@@ -50,5 +50,5 @@ stroke(zigzag, width=8)
 pn = bezier((45, 245), (140, 275), (270, 250), n=40)
 stroke(pn, width=9)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0188_边/01_边.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0188_边/01_边.png")
 print("saved")

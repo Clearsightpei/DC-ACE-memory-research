@@ -42,4 +42,4 @@ s3 = [
 ]
 d.line(s3, fill=BLACK, width=LW, joint="curve")
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0079_已/01_已.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0079_已/01_已.png")

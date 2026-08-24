@@ -86,6 +86,6 @@ line(255, 255, 262, 215, width=7)
 dab(262, 215, r=4)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0047_也/01_也.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0047_也/01_也.png"
 )
 print("saved")

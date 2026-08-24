@@ -39,5 +39,5 @@ stroke(left_vert)
 bot_horiz = [(72, 235), (140, 234), (200, 232), (232, 232)]
 stroke(bot_horiz)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_034_匸/01_匸.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_034_匸/01_匸.png")
 print("saved 01_匸.png")

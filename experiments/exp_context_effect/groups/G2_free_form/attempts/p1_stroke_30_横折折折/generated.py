@@ -84,7 +84,7 @@ segment(*p3, *p4, r_start=R, r_end=R)
 dab(p4[0], p4[1], R_DUN)
 
 out_path = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p1_stroke_30_横折折折/01_横折折折.png"
 )

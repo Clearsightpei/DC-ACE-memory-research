@@ -43,4 +43,4 @@ bot_x1 = cx - 55   # 95
 bot_x2 = cx + 55   # 205
 d.line([(bot_x1, bot_y + 2), (cx, bot_y), (bot_x2, bot_y - 2)], fill=INK, width=WIDTH)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_067_士__retry_2/01_士.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_067_士__retry_2/01_士.png")

@@ -68,6 +68,6 @@ stroke([(bb_left, bb_bot), (bb_right, bb_bot)])
 # --- central vertical (drawn last so it dominates) ---
 stroke([(cx, v_top), (cx, v_bot)], width=LW+1)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0296_串/01_串.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0296_串/01_串.png"
 img.save(out)
 print("wrote", out)

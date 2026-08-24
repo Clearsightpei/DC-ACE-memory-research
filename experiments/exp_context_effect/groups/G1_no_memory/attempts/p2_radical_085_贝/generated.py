@@ -28,4 +28,4 @@ line((105, 210), (75, 265))
 # Stroke 4: 点 - right leg going down-right from bottom-right area
 line((175, 210), (220, 265))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_085_贝/01_贝.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_085_贝/01_贝.png")

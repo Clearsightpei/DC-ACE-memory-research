@@ -41,4 +41,4 @@ stroke([(170, 178), (155, 220), (135, 260)], width=6)
 # Right leg — 竖弯钩: down, curve right, hook up-right
 stroke([(215, 178), (215, 235), (240, 260), (270, 250)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0494_俛/01_俛.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0494_俛/01_俛.png")

@@ -115,6 +115,6 @@ for i, w in enumerate([11, 11, 10, 9, 7, 5]):
     x = 275 + i * 3
     d.ellipse((x - w / 2, 254 - w / 2, x + w / 2, 254 + w / 2), fill=BLACK)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+img.save("<REPO_ROOT>/experiments/exp_context_effect/"
          "groups/G2_free_form/attempts/p3_char_0065_及/01_及.png")
 print("wrote 01_及.png (rev2)")

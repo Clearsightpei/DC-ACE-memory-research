@@ -34,4 +34,4 @@ stroke([(140, 265), (250, 265)], width=7)
 # Middle horizontal (making it 日-like)
 stroke([(150, 195), (245, 195)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0394_佰/01_佰.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0394_佰/01_佰.png")

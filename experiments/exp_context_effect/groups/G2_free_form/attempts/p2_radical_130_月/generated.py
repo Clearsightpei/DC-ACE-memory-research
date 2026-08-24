@@ -99,5 +99,5 @@ h4 = [(76, 195), (138, 194), (201, 195)]
 taper_line(h4, w_start=4, w_end=5, steps=30)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_130_月/01_月.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_130_月/01_月.png"
 )

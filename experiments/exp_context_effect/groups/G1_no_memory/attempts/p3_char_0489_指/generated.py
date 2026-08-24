@@ -39,4 +39,4 @@ line([(160, 208), (245, 208)], w=LW)
 # Bottom horizontal
 line([(160, 265), (245, 265)], w=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0489_指/01_指.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0489_指/01_指.png")

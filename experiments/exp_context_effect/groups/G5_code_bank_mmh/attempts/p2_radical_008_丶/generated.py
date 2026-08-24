@@ -69,7 +69,7 @@ def main():
 
     draw_dian_tapered(draw, head, tail, w_head=3, w_tail=8, bow=5, steps=48)
 
-    out = '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_008_丶/01_丶.png'
+    out = '<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_008_丶/01_丶.png'
     img.save(out)
     print('saved', out)
 

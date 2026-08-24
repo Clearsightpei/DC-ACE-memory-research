@@ -59,7 +59,7 @@ for i, (h, t) in enumerate(anchors):
     else:
         d.line([hp, tp], fill='black', width=STROKE_W)
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0524_疸/01_疸.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0524_疸/01_疸.png')
 
 SELF_CHECK = {
     'visual_ok': None,

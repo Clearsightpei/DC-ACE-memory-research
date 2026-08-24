@@ -52,5 +52,5 @@ line(158, 92, 158, 268)
 # (Optional) small bottom heng at very bottom -- 车 in 军 usually ends with
 # the shaft dropping past the wide heng; keep the shaft as the terminus.
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0247_军/01_军.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0247_军/01_军.png")
 print("wrote 01_军.png")

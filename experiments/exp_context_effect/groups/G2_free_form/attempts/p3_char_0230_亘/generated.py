@@ -48,4 +48,4 @@ hline(BOX_L, BOX_R, BOX_B, w=6)
 # 6) bottom long 一 — widest of all
 hline(40, 260, 240, w=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0230_亘/01_亘.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0230_亘/01_亘.png")

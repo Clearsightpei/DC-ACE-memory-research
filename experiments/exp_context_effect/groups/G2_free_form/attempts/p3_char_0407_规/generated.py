@@ -76,6 +76,6 @@ d.line(curve, fill=BLACK, width=LW)
 # Hook: UP-and-LEFT flick
 d.line([(280, 273), (268, 258)], fill=BLACK, width=LW)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0407_规/01_规.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0407_规/01_规.png"
 img.save(out)
 print("saved", out)

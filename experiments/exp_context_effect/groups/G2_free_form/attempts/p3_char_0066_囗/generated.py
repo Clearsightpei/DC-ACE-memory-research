@@ -44,4 +44,4 @@ brush_line((RIGHT, TOP), (RIGHT, BOTTOM))
 # 3. 横 (bottom): closes the box, wall-to-wall
 brush_line((LEFT, BOTTOM), (RIGHT, BOTTOM))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0066_囗/01_囗.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0066_囗/01_囗.png")

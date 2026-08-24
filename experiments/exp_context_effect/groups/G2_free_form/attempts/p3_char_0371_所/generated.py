@@ -50,4 +50,4 @@ curve([(180, 100), (172, 180), (152, 270)], w=7)
 # 8) 长竖 - long vertical extending well below from mid-top area
 line([(228, 100), (228, 285)], w=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0371_所/01_所.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0371_所/01_所.png")

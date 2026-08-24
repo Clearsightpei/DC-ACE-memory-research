@@ -75,6 +75,6 @@ s3_pts = [
 s3_w = [4, 6, 8, 10, 11, 3]
 stroke(s3_pts, s3_w)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_081_夂/01_夂.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_081_夂/01_夂.png"
 img.save(out)
 print(f"wrote {out}")

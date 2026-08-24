@@ -41,5 +41,5 @@ curve([(105, 178), (185, 172), (195, 178), (188, 218)], width=LW)
 # ---- Stroke 5: bottom long horizontal extending well to the right
 line([(90, 240), (215, 235)], width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0218_刍/01_刍.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0218_刍/01_刍.png")
 print("saved")

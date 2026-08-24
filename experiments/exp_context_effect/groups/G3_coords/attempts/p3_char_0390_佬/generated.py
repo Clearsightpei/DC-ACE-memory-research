@@ -67,6 +67,6 @@ polyline([(215, 160), (215, 245)], w=W)  # vertical shaft
 polyline([(215, 245), (230, 265), (255, 268), (275, 260)], w=W)  # curve
 line((275, 260), (277, 235), w=W)  # hook up
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0390_佬/01_佬.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0390_佬/01_佬.png"
 img.save(out)
 print("saved", out)

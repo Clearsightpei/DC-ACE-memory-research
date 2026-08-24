@@ -36,5 +36,5 @@ dab_line([(115, 110), (140, 145), (170, 180), (200, 215), (220, 240)], width=7)
 dab_line([(82, 80), (80, 130), (78, 190), (76, 240), (75, 260)], width=7)
 dab_line([(75, 260), (130, 258), (190, 256), (240, 253)], width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0142_区/01_区.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0142_区/01_区.png")
 print("saved")

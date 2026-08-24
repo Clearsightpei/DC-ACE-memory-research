@@ -30,5 +30,5 @@ d.line([(55, 175), (255, 170)], fill=INK, width=LW)
 # 5) Vertical down the middle, from top area through the long horizontal to bottom
 d.line([(155, 90), (155, 275)], fill=INK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0176_平/01_平.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0176_平/01_平.png")
 print("saved")

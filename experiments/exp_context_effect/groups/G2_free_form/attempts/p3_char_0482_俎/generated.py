@@ -83,4 +83,4 @@ stroke(h_mid2, (6, 6))
 base = bez((30, 260), (100, 258), (180, 258), (260, 258), n=80)
 stroke(base, (8, 8))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0482_俎/01_俎.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0482_俎/01_俎.png")

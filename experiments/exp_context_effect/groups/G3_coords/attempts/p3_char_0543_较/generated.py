@@ -77,6 +77,6 @@ stroke(bezier((222, 155), (195, 205), (155, 265)))
 stroke(bezier((222, 155), (252, 210), (290, 268)))
 
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0543_较/01_较.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0543_较/01_较.png"
 img.save(out)
 print("wrote", out)

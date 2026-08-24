@@ -51,5 +51,5 @@ line([(120, 220), (280, 220)])
 # Stroke 9: central long vertical from top down through bottom
 line([(199, 60), (199, 275)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0562_俾/01_俾.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0562_俾/01_俾.png")
 print("saved")

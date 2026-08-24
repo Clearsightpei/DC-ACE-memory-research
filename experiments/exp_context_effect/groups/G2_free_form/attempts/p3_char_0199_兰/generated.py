@@ -44,4 +44,4 @@ brush_line((80, 180), (225, 180), width=9)
 # Bottom 横: longest, ~220px, sits at foot of grid
 brush_line((45, 235), (265, 235), width=10)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0199_兰/01_兰.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0199_兰/01_兰.png")

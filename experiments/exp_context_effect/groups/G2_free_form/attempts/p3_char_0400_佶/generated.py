@@ -46,6 +46,6 @@ stroke([(145, 185), (145, 265)], width=8)
 stroke([(260, 185), (260, 265), (145, 265)], width=8)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0400_佶/01_佶.png"
 )

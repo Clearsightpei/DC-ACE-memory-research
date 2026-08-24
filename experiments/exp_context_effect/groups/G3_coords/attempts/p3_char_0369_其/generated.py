@@ -77,6 +77,6 @@ for i in range(len(pts_dot) - 1):
     w = int(round(3 + 4 * (i / (len(pts_dot) - 1))))  # grows toward tail
     d.line([pts_dot[i], pts_dot[i + 1]], fill=INK, width=w)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0369_其/01_其.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0369_其/01_其.png"
 img.save(out)
 print("saved", out)

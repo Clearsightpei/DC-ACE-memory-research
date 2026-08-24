@@ -45,7 +45,7 @@ d.line([(left_x, bot_y), (right_x + 20, bot_y)], fill=INK, width=w)
 d.line([(right_x + 20, bot_y), (right_x + 20, bot_y - 22)], fill=INK, width=w)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0194_世/01_世.png"
 )
 print("saved")

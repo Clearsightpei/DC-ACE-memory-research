@@ -10,7 +10,7 @@ import os
 import sys
 from PIL import Image, ImageDraw
 
-BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
+BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
 sys.path.insert(0, BANK)
 from ren_pang_pil_for_LR_left import draw_ren_pang_pil_for_LR_left, _tapered_line
 

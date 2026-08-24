@@ -63,6 +63,6 @@ polyline([(180, 240), (188, 255), (205, 263), (230, 260), (250, 245)])
 line((250, 245), (250, 225))
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G3_coords/attempts/p3_char_0357_花/01_花.png"
 )

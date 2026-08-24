@@ -102,4 +102,4 @@ central = bez((CX, 55), (CX, 130), (CX, 210), (CX, 278), n=90)
 stroke(central, (9, 9))
 
 # save
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0463_神/01_神.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0463_神/01_神.png")

@@ -52,5 +52,5 @@ d.polygon([
     (rx - 6, ry + 6),
 ], fill="black")
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0001_一/01_一.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0001_一/01_一.png")
 print("saved")

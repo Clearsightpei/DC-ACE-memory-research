@@ -20,7 +20,7 @@ Fixes applied this retry:
 """
 
 import sys
-sys.path.insert(0, "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code")
+sys.path.insert(0, "<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code")
 
 from PIL import Image, ImageDraw
 from nu_woman import draw_nu_woman
@@ -126,4 +126,4 @@ SELF_CHECK = {
 }
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0253_好__retry_1/01_好.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0253_好__retry_1/01_好.png")

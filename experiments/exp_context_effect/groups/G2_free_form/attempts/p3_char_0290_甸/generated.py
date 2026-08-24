@@ -82,7 +82,7 @@ stroke([(LEFT, BOT), (RIGHT, BOT)], width=6)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0290_甸/01_甸.png"
 )
 print("wrote 01_甸.png")

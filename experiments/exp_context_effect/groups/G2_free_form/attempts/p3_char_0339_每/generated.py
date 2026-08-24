@@ -62,4 +62,4 @@ stroke([(55, MID_Y + 2), (245, MID_Y - 4)], width=5)
 # --- 7. 点 (lower inside) ---
 stroke([(150, 205), (164, 218)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0339_每/01_每.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0339_每/01_每.png")

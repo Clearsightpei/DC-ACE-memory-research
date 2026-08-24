@@ -56,5 +56,5 @@ stroke([p1, p2, p3, p4], width=10)
 xV = 215
 stroke([(xV, 55), (xV + 2, 270)], width=11)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0150_引/01_引.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0150_引/01_引.png")
 print("saved")

@@ -115,6 +115,6 @@ bezier_dabs(tail_end, hook_ctrl, hook_end, r0=5.5, r1=1.2, steps=120)
 
 
 # Save
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_022_几/01_几.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_022_几/01_几.png"
 img.save(out_path)
 print(f"Saved {out_path}")

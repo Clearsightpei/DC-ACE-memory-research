@@ -69,4 +69,4 @@ dpts = bezier(dp0, dp1, dp2, n=25)
 dwidths = taper_widths(len(dpts), 4, 10)
 stroke(dpts, dwidths)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0093_弋/01_弋.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0093_弋/01_弋.png")

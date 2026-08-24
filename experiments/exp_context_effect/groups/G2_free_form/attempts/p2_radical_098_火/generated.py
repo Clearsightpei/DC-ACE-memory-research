@@ -113,7 +113,7 @@ for i in range(foot_steps + 1):
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_098_火/01_火.png"
 )
 print("Saved 01_火.png")

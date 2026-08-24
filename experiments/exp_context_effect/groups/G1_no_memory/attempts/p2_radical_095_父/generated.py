@@ -82,7 +82,7 @@ tapered_stroke(
 )
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G1_no_memory/attempts/p2_radical_095_父/01_父.png"
 )
 print("wrote 01_父.png")

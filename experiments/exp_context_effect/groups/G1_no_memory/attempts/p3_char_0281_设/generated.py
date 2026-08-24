@@ -35,5 +35,5 @@ line([(215, 158), (125, 250)], width=5)    # long 撇 down-left
 # 2) 捺 - long sweeping falling-right
 line([(165, 175), (275, 265)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0281_设/01_设.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0281_设/01_设.png")
 print("saved")

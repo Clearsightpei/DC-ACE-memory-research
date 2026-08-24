@@ -139,6 +139,6 @@ bezier_stroke(hk_p0, hk_p1, hk_p2, r_start=6.5, r_end=1.5,
 
 
 # ---------------- Save ----------------
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0336_佗/01_佗.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0336_佗/01_佗.png"
 img.save(out)
 print(f"Saved {out}")

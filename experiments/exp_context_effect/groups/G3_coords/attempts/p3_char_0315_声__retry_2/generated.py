@@ -94,6 +94,6 @@ def draw_sheng(t=None):
 
 draw_sheng()
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0315_声__retry_2/01_声.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0315_声__retry_2/01_声.png"
 img.save(out)
 print(f"saved {out}")

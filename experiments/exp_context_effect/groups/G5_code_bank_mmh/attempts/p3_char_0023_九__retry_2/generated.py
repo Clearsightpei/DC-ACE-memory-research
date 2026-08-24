@@ -62,7 +62,7 @@ hook = bezier((222, 275), (215, 258), (208, 245))
 s2 = h1 + belly1 + belly2 + hook
 polyline(s2, width=9)
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0023_九__retry_2/01_九.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0023_九__retry_2/01_九.png')
 
 # ---- SELF CHECK ----
 SELF_CHECK = {

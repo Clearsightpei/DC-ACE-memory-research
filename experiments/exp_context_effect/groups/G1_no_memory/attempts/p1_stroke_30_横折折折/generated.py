@@ -47,6 +47,6 @@ draw.ellipse([sx - THICK // 2 - 1, sy - THICK // 2 - 1,
               sx + THICK // 2 + 1, sy + THICK // 2 + 1], fill=INK)
 
 # Save.
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_30_横折折折/01_横折折折.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_30_横折折折/01_横折折折.png"
 img.save(out)
 print("Saved:", out, img.size)

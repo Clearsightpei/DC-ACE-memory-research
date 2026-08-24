@@ -51,6 +51,6 @@ line([(180, 110), (145, 190)])
 line([(245, 95), (262, 115)])
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G1_no_memory/attempts/p3_char_0353_找/01_找.png"
 )

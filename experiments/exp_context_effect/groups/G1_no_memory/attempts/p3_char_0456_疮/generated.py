@@ -48,5 +48,5 @@ curve([(155, 245), (200, 245), (220, 235), (222, 215)])
 # small inner horizontal
 line((165, 215), (200, 215))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0456_疮/01_疮.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0456_疮/01_疮.png")
 print("saved")

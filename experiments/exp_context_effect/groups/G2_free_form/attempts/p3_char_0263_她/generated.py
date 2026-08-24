@@ -64,4 +64,4 @@ bez([(180, 150), (176, 215), (205, 248)], w=7)
 bez([(205, 248), (250, 252), (278, 240)], w=7)
 bez([(278, 240), (273, 225), (265, 215)], w=7)  # 钩 up-and-left
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0263_她/01_她.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0263_她/01_她.png")

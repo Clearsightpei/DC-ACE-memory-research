@@ -73,5 +73,5 @@ brush(s6b, [8, 6])
 s6c = bezier((235, 250), (238, 244), (236, 236), (228, 228), n=30)
 brush(s6c, [6, 2])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0277_先/01_先.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0277_先/01_先.png")
 print("saved")

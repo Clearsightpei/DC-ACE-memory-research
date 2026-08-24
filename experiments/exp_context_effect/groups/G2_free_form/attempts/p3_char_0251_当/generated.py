@@ -36,5 +36,5 @@ stroke([(95, 178), (205, 178)], width=7)
 # 6. bottom 横 (closes the box)
 stroke([(88, 258), (215, 258)], width=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0251_当/01_当.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0251_当/01_当.png")
 print("done")

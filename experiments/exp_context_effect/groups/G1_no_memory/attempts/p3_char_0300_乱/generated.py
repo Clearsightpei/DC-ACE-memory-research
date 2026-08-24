@@ -43,5 +43,5 @@ line([(240, 50), (238, 240)], width=LW)
 # Curve at the bottom sweeping right
 line([(238, 240), (250, 260), (275, 265), (285, 260)], width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0300_乱/01_乱.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0300_乱/01_乱.png")
 print("saved")

@@ -61,5 +61,5 @@ stroke(s2a, width=8)
 s2b = bezier([(155, 240), (200, 275), (271, 223)], steps=120)
 stroke(s2b, width=8)
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_017_儿/01_儿.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_017_儿/01_儿.png')
 print('done')

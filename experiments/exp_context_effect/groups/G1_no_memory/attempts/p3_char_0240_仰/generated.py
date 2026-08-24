@@ -37,5 +37,5 @@ line([(195, 90), (240, 90), (240, 165), (222, 180)], width=T)
 # Left long vertical of 卩 (the tall descender)
 line([(195, 90), (195, 265)], width=T)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0240_仰/01_仰.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0240_仰/01_仰.png")
 print("saved")

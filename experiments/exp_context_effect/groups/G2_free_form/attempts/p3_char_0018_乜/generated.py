@@ -76,5 +76,5 @@ bezier((35, 178), (110, 250), (230, 230), width=8)
 line(230, 230, 235, 200, width=7)
 dab(235, 200, r=4)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0018_乜/01_乜.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0018_乜/01_乜.png")
 print("saved")

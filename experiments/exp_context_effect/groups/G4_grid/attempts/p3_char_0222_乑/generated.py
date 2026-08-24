@@ -88,7 +88,7 @@ s6_tail = A('BR', 0.681, 0.49)
 s6_mid = ((s6_head[0] + s6_tail[0]) / 2, (s6_head[1] + s6_tail[1]) / 2 + 3)
 stroke([s6_head, s6_mid, s6_tail], width=6)
 
-out = '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0222_乑/01_乑.png'
+out = '<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0222_乑/01_乑.png'
 img.save(out)
 print(f"Saved {out}")
 print(f"Stroke count = 6")

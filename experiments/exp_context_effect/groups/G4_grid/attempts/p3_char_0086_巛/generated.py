@@ -25,7 +25,7 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 # make the shared success_bank/code helpers importable
-_BANK = Path("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code")
+_BANK = Path("<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code")
 sys.path.insert(0, str(_BANK))
 
 from _anchor import anchor_to_xy, quad_bezier, stroke_variable_width  # noqa: E402

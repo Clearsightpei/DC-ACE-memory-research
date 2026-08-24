@@ -29,6 +29,6 @@ d.line([(118, 140), (110, 230)], fill=INK, width=STROKE)
 #    Crosses horizontal near x≈180. Top a bit above line, bottom below.
 d.line([(178, 140), (188, 232)], fill=INK, width=STROKE)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_039_艹/01_艹.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_039_艹/01_艹.png"
 img.save(out)
 print(f"Wrote {out}")

@@ -21,4 +21,4 @@ draw.line([(185, 70), (185, 240)], fill=BLACK, width=WIDTH)
 # Bottom hook: curl up-left, more visible
 draw.line([(185, 240), (160, 225)], fill=BLACK, width=WIDTH + 1)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_016_刂/01_刂.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_016_刂/01_刂.png")

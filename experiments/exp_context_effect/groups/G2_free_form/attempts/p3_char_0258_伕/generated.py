@@ -38,4 +38,4 @@ stroke([(210, 92), (200, 130), (180, 175), (150, 220), (125, 265)], width=6)
 # 捺: starts from around intersection with 撇 near top, curves down-right
 stroke([(195, 100), (215, 150), (240, 200), (275, 265)], width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0258_伕/01_伕.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0258_伕/01_伕.png")

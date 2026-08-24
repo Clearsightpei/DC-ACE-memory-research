@@ -43,4 +43,4 @@ line([(148, 195), (230, 192), (230, 260)], width=7)
 # bottom horizontal
 line([(148, 260), (232, 260)], width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0405_治/01_治.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0405_治/01_治.png")

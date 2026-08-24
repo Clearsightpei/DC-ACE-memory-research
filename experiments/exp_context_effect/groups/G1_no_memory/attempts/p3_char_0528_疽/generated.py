@@ -43,5 +43,5 @@ poly([(142, 240), (232, 238)], w=5)
 # Bottom long horizontal (base stroke extending across)
 poly([(55, 265), (265, 260)], w=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0528_疽/01_疽.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0528_疽/01_疽.png")
 print("saved")

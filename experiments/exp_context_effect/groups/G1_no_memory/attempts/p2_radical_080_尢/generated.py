@@ -68,6 +68,6 @@ hook = [(253, 268), (255, 260), (256, 253)]
 stroke(hook)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G1_no_memory/attempts/p2_radical_080_尢/01_尢.png"
 )

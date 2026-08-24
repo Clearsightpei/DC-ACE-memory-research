@@ -325,12 +325,12 @@ other group's files.
 - **phase**: character
 - **target_label**: 果
 - **target_description**: (none — infer from label)
-- **target GT PNG (may read)**: /Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/gt/phase3/果.png
+- **target GT PNG (may read)**: <REPO_ROOT>/experiments/exp_context_effect/gt/phase3/果.png
 
 ## Output
 
 Write your rendering script and PNG to:
-  /Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0387_果/generated.py
-  /Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0387_果/01_果.png
+  <REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0387_果/generated.py
+  <REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0387_果/01_果.png
 
 The PNG must be exactly 300×300, white background, black ink.

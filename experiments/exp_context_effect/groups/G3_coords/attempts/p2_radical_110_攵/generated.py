@@ -119,7 +119,7 @@ tapered_bezier_profile(
 
 
 out_path = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G3_coords/attempts/p2_radical_110_攵/01_攵.png"
 )
 img.save(out_path)

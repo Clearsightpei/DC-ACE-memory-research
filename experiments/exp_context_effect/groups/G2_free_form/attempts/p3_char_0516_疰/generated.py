@@ -85,4 +85,4 @@ stroke(zshu, (8, 7))
 zh3 = bez((120, 273), (175, 270), (235, 270), (275, 275), n=50)
 stroke(zh3, (6, 7))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0516_疰/01_疰.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0516_疰/01_疰.png")

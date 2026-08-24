@@ -51,7 +51,7 @@ def main():
     img = Image.new("RGB", (W, H), "white")
     draw = ImageDraw.Draw(img)
     draw_shu_zhe_zhe(draw, ox=0, oy=0, scale=1.0, ink=10)
-    out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_28_竖折折/01_竖折折.png"
+    out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_28_竖折折/01_竖折折.png"
     img.save(out)
     print(f"wrote {out}")
 

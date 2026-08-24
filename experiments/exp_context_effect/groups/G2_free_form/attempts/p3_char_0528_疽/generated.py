@@ -110,4 +110,4 @@ bot = bez((LEFT_X - 8, BOT_Y), (LEFT_X + 40, BOT_Y - 2),
           (RIGHT_X - 40, BOT_Y - 2), (RIGHT_X + 8, BOT_Y), n=60)
 stroke(bot, (6, 7))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0528_疽/01_疽.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0528_疽/01_疽.png")

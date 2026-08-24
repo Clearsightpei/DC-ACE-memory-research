@@ -10,7 +10,7 @@ the bottom-left corner.
 from PIL import Image, ImageDraw
 
 CANVAS = 300
-OUT = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0025_力/01_力.png"
+OUT = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0025_力/01_力.png"
 
 
 def to_px(ox, oy):

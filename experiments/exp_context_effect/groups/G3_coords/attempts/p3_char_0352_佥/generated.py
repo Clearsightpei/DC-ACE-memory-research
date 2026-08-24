@@ -48,4 +48,4 @@ line((190, 195), (220, 235), w=4)  # small 捺
 # --- Bottom long 横 (spans wide) ---
 line((45, 268), (255, 268), w=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0352_佥/01_佥.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0352_佥/01_佥.png")

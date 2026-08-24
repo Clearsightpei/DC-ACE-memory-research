@@ -111,4 +111,4 @@ bot_h = bez((158, 268), (185, 268), (218, 268), (245, 268), n=40)
 stroke(bot_h, (7, 7))
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0489_指/01_指.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0489_指/01_指.png")

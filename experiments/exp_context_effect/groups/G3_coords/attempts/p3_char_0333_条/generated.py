@@ -89,7 +89,7 @@ def draw_tiao():
     na_curve(t, x0=-5, y0=-20, x1=60, y1=-100, bow_perp=5.0,
              w_head=2, w_belly=7, w_tail=2)
 
-    img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0333_条/01_条.png")
+    img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0333_条/01_条.png")
 
 if __name__ == "__main__":
     draw_tiao()

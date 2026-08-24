@@ -64,4 +64,4 @@ stroke(bot_pie, width_start=7, width_end=3, steps=60)
 bot_na = [(145, 158), (175, 195), (205, 230), (235, 265), (265, 288)]
 stroke(bot_na, width_start=3, width_end=10, steps=60)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0115_仌/01_仌.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0115_仌/01_仌.png")

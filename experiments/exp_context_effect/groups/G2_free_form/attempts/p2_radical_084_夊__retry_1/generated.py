@@ -93,7 +93,7 @@ stroke_bezier((155, 115), (175, 175), (215, 235), r_start=3, r_end=9)
 stroke_bezier((215, 235), (240, 244), (272, 248), r_start=9, r_end=4)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_084_夊__retry_1/01_夊.png"
 )
 print("done")

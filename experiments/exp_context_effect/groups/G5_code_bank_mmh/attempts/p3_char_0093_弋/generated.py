@@ -54,4 +54,4 @@ SELF_CHECK = {
     'notes': 'Bank reuse: xie_gou (B2 promotion), heng, dian. No BANK_DEVIATION.'
 }
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0093_弋/01_弋.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0093_弋/01_弋.png")

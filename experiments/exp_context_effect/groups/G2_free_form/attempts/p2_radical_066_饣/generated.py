@@ -120,5 +120,5 @@ HOOK_END = (CONT_END[0] + flick_len * math.cos(math.radians(ang_deg)),
 line_taper(CONT_END[0], CONT_END[1], HOOK_END[0], HOOK_END[1], r0=4.0, r1=0.9, steps=140)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_066_饣/01_饣.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_066_饣/01_饣.png")
 print("saved")

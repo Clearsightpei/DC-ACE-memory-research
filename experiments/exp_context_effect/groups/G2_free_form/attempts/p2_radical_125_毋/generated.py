@@ -62,4 +62,4 @@ stroke([(LEFT_X - 25, MID_Y + 4),
 stroke([(RIGHT_X - 20, TOP_Y + 40),
         (LEFT_X - 20, BOX_BOTTOM_Y + 15)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_125_毋/01_毋.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_125_毋/01_毋.png")

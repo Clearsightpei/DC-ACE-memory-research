@@ -36,4 +36,4 @@ stroke([(178, 125), (260, 128), (258, 213)])
 # Stroke 6: 横 (bottom close)
 stroke([(176, 210), (260, 213)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0241_如/01_如.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0241_如/01_如.png")

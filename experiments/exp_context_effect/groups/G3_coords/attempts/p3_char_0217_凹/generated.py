@@ -54,5 +54,5 @@ d.line([(115, 170), (185, 170)], fill="black", width=w)
 # Right inner wall
 d.line([(185, 170), (185, 100)], fill="black", width=w)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0217_凹/01_凹.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0217_凹/01_凹.png")
 print("wrote 01_凹.png")

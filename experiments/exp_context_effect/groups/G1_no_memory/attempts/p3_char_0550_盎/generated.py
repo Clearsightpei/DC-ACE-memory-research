@@ -50,5 +50,5 @@ line((175, 205), (177, 258))
 # bottom long horizontal (extends past edges)
 line((55, 268), (255, 270))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0550_盎/01_盎.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0550_盎/01_盎.png")
 print("done")

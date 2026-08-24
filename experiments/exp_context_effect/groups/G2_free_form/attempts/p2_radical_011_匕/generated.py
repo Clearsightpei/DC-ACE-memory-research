@@ -119,5 +119,5 @@ hook_ctrl = (heng_end_x - 4, heng_end_y - hook_len * 0.55)
 bezier_dabs((heng_end_x, heng_end_y), hook_ctrl, (hook_end_x, hook_end_y),
             r0=6.5, r1=1.2, steps=250)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_011_匕/01_匕.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_011_匕/01_匕.png")
 print("wrote 01_匕.png")

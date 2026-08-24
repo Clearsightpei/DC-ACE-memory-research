@@ -122,4 +122,4 @@ dab(H_L[0], H_L[1], R + 2)   # 顿-dab at start
 line_dabs(H_L[0], H_L[1], H_R[0], H_R[1], R, R + 0.5)
 dab(H_R[0], H_R[1], R + 2)   # terminal press
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_058_马/01_马.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_058_马/01_马.png")

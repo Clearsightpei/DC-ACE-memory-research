@@ -50,5 +50,5 @@ line([(170, 70), (232, 68), (230, 175), (210, 170)], w=LW)  # hook UP-and-LEFT
 # 竖 hanging: long vertical from around (185,70) down to (185,275)
 line([(185, 72), (188, 275)], w=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0343_即/01_即.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0343_即/01_即.png")
 print("saved")

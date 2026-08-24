@@ -20,7 +20,7 @@ bottom as three straight strokes (down-right 捺, down-left 撇, horizontal
 verbatim beats hand-tune for cross-stroke topology).
 """
 import os, sys
-_BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
+_BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
 sys.path.insert(0, _BANK)
 
 from PIL import Image, ImageDraw

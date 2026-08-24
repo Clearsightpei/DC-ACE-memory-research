@@ -73,5 +73,5 @@ poly([
     (55,  280),
 ], w=INK)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0311_身/01_身.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0311_身/01_身.png")
 print("wrote 01_身.png")

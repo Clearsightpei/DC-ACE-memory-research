@@ -79,7 +79,7 @@ brush([(LEFT - 2, BOX_BOT), (RIGHT + 2, BOX_BOT)], width=LW)
 BASE_Y = 255
 brush([(108, BASE_Y - 2), (180, BASE_Y), (282, BASE_Y + 3)], width=LW + 1)
 
-out = ("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+out = ("<REPO_ROOT>/experiments/exp_context_effect/"
        "groups/G2_free_form/attempts/p3_char_0324_但/01_但.png")
 img.save(out)
 print("wrote", out)

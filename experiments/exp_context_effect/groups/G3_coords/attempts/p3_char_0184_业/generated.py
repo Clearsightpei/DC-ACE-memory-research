@@ -29,6 +29,6 @@ def draw_ye(d):
 
 draw_ye(d)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0184_业/01_业.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0184_业/01_业.png"
 img.save(out)
 print("saved", out)

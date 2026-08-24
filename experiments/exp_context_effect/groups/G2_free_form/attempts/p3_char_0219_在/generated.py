@@ -52,5 +52,5 @@ stroke([(168, 155), (168, 260)], width=T)
 # 5) Bottom 横 — base of 土, slightly wider than the middle 横
 stroke([(95, 258), (250, 258)], width=T)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0219_在/01_在.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0219_在/01_在.png")
 print("wrote 01_在.png")

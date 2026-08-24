@@ -31,5 +31,5 @@ line([(100, 195), (200, 195)], width=5)
 line([(100, 240), (215, 240)], width=5)
 line([(215, 240), (220, 215)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0279_色/01_色.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0279_色/01_色.png")
 print("saved")

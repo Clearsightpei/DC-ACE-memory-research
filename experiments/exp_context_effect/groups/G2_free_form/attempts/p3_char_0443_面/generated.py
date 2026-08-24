@@ -92,4 +92,4 @@ stroke(inner_bot, (6, 6))
 # NOTE: GT shows inner short bars only on LEFT side of the middle vertical
 # (面's classic 目-with-only-left-bars pattern). Right-side bars removed.
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0443_面/01_面.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0443_面/01_面.png")

@@ -63,7 +63,7 @@ s5 = [
 stroke(s5, width=6)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G5_code_bank_mmh/attempts/p3_char_0213_処/01_処.png"
 )
 

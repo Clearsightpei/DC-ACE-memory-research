@@ -76,6 +76,6 @@ p6b_raw = A(('BC', 0.767, 1.129))
 p6b = (p6b_raw[0], min(p6b_raw[1], 298))
 draw.line([p6a, p6b], fill='black', width=9)
 
-out_path = '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0233_那/01_那.png'
+out_path = '<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0233_那/01_那.png'
 img.save(out_path)
 print('wrote', out_path)

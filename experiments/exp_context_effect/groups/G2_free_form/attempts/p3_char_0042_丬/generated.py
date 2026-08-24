@@ -43,4 +43,4 @@ stroke((75, 235), (155, 210))
 # from (180, 45) down to (175, 275)
 stroke((180, 45), (175, 275), w=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0042_丬/01_丬.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0042_丬/01_丬.png")

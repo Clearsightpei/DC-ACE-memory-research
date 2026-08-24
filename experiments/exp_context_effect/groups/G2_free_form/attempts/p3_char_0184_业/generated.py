@@ -39,4 +39,4 @@ d.line([(240, 130), (198, 175)], fill=ink, width=LW)
 # Stroke 5: bottom long horizontal (spans wider than the verticals)
 d.line([(40, base_y), (262, base_y)], fill=ink, width=LW + 2)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0184_业/01_业.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0184_业/01_业.png")

@@ -88,6 +88,6 @@ dot_pts = [
 dot_ws = [5, 8, 10]
 brush_stroke(dot_pts, dot_ws)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0128_太/01_太.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0128_太/01_太.png"
 img.save(out)
 print("saved", out)

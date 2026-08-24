@@ -12,7 +12,7 @@ Shape:
 from PIL import Image, ImageDraw
 
 SIZE = 300
-OUT = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_27_竖折撇/01_竖折撇.png"
+OUT = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_27_竖折撇/01_竖折撇.png"
 
 img = Image.new("RGB", (SIZE, SIZE), "white")
 draw = ImageDraw.Draw(img)

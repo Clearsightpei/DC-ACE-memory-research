@@ -50,4 +50,4 @@ line((235, 105), (235, 180))
 # Long right vertical with hook (竖钩)
 poly([(262, 75), (262, 250), (250, 258)], w=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0486_俐/01_俐.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0486_俐/01_俐.png")

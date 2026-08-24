@@ -88,5 +88,5 @@ line((225, 175), (218, 260), w=6)
 line((35, 275), (270, 273), w=7)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0466_盃/01_盃.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0466_盃/01_盃.png")
 print("saved")

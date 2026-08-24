@@ -37,5 +37,5 @@ line([(172, 185), (253, 183)], w=LW)
 # Bottom horizontal (base, long, extending both sides)
 line([(150, 245), (275, 240)], w=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0545_难/01_难.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0545_难/01_难.png")
 print("saved")

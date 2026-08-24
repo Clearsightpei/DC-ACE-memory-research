@@ -61,6 +61,6 @@ brush_line(d, left_leg, width=10)
 brush_line(d, [(195, 138), (195, 265)], width=10)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0101_亓/01_亓.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0101_亓/01_亓.png"
 )
 print("wrote 01_亓.png")

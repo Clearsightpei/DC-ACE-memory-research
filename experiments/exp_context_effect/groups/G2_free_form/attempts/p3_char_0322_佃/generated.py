@@ -69,6 +69,6 @@ line([(L + 2, MID_Y), (R - 2, MID_Y)], width=7)
 # Stroke 5: bottom horizontal
 line([(L - 2, BOT), (R + 2, BOT - 2)], width=8)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0322_佃/01_佃.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0322_佃/01_佃.png"
 img.save(out)
 print("saved", out)

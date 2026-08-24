@@ -47,5 +47,5 @@ d.line([(160, 60), (162, 245)], fill=BLACK, width=LW)
 # passes below the top horizontals, roughly at y=170
 d.line([(45, 172), (260, 165)], fill=BLACK, width=LW+1)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0203_冊/01_冊.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0203_冊/01_冊.png")
 print("wrote 01_冊.png")

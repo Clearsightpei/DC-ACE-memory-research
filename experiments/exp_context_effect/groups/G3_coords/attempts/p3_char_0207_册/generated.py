@@ -65,6 +65,6 @@ draw_frame(RF_L, RF_R, TOP, BOT, hook_left=True)
 CROSS_Y = 160
 line((LF_L - 8, CROSS_Y + 4), (RF_R + 12, CROSS_Y - 6))
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0207_册/01_册.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0207_册/01_册.png"
 img.save(out)
 print("saved", out)

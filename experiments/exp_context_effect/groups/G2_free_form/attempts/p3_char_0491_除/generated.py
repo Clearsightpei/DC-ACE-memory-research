@@ -112,6 +112,6 @@ right_dot = bez((228, 222), (243, 237), (254, 252), (264, 264), n=40)
 stroke(right_dot, (4, 8))
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0491_除/01_除.png"
 )

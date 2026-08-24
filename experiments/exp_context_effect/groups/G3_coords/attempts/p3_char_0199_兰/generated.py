@@ -28,4 +28,4 @@ line((115, 182), (192, 180), w=5)
 # Bottom heng — widest, sits low, slight upward tilt then back
 line((55,  240), (248, 238), w=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0199_兰/01_兰.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0199_兰/01_兰.png")

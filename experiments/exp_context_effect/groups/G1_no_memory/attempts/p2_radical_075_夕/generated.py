@@ -71,6 +71,6 @@ dot = bezier((142, 168), (148, 173), (156, 180), (164, 188), steps=40)
 stroke_var(dot, 2.5, 5.0)
 
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_075_夕/01_夕.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_075_夕/01_夕.png"
 img.save(out)
 print(f"wrote {out}")

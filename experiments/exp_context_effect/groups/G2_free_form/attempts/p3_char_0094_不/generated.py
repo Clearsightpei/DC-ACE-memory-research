@@ -74,4 +74,4 @@ taper(shu, 9, 8)
 dian = [(200, 185), (218, 210), (235, 232)]
 taper(dian, 4, 11)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0094_不/01_不.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0094_不/01_不.png")

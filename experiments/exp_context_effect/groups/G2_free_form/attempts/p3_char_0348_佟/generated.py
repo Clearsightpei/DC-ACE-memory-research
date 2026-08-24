@@ -73,5 +73,5 @@ dot2 = bezier_pts((235, 205), (225, 222), (213, 240), steps=100)
 stroke_taper(dot2, 3, 8)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0348_佟/01_佟.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0348_佟/01_佟.png")
 print("saved")

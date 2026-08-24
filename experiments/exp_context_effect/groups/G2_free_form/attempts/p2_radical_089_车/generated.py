@@ -94,6 +94,6 @@ line_dabs(v_x0, v_y0, v_x1, v_y1, r_start=6, r_end=6)
 dab(v_x0, v_y0, 7)
 dab(v_x1, v_y1, 7)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_089_车/01_车.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_089_车/01_车.png"
 img.save(out)
 print("wrote", out)

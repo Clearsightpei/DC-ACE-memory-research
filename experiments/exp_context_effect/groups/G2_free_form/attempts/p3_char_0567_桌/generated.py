@@ -82,5 +82,5 @@ for i, (x, y) in enumerate(na):
         w = 8.0 - 3.0 * ((t - 0.75) / 0.25)
     dab(x, y, w / 2)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0567_桌/01_桌.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0567_桌/01_桌.png")
 print("saved")

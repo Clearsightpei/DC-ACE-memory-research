@@ -34,5 +34,5 @@ line([(115, 155), (185, 148)])
 # Stroke 6: 点 (dot) at upper right, small diagonal
 line([(210, 75), (235, 95)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0243_成/01_成.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0243_成/01_成.png")
 print("saved")

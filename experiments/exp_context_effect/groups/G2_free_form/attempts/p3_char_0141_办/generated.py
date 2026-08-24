@@ -75,6 +75,6 @@ draw.ellipse((250 - 5, 195 - 5, 250 + 5, 195 + 5), fill="black")
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0141_办/01_办.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0141_办/01_办.png"
 )
 print("wrote 01_办.png")

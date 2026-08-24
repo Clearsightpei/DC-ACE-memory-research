@@ -32,5 +32,5 @@ stroke([(255, 225), (252, 245), (240, 255), (215, 258), (185, 253)], w=5)
 # hook up
 stroke([(185, 253), (183, 235)], w=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0223_地/01_地.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0223_地/01_地.png")
 print("saved")

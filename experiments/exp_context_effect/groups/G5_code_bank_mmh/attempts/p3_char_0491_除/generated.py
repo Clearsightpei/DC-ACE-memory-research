@@ -173,6 +173,6 @@ SELF_CHECK = {
 
 
 if __name__ == '__main__':
-    out = '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0491_除/01_除.png'
+    out = '<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0491_除/01_除.png'
     render().save(out)
     print('wrote', out)

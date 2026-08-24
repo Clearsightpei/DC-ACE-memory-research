@@ -8,7 +8,7 @@ Strokes (canonical order for 口):
 from PIL import Image, ImageDraw
 
 SIZE = 300
-OUT = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_057_口/01_口.png"
+OUT = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_057_口/01_口.png"
 
 img = Image.new("RGB", (SIZE, SIZE), "white")
 d = ImageDraw.Draw(img)

@@ -122,6 +122,6 @@ for i in range(hs + 1):
     dab(x, y, r)
 
 # Save
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_111_气/01_气.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_111_气/01_气.png"
 img.save(out_path)
 print(f"saved: {out_path}")

@@ -100,7 +100,7 @@ for i in range(s_steps + 1):
     r = r_top + (r_bot - r_top) * t
     dab(s_x, y, r)
 
-out_path = ("/Users/peilinwu/Documents/AI memory research/experiments/"
+out_path = ("<REPO_ROOT>/experiments/"
             "exp_context_effect/groups/G2_free_form/attempts/"
             "p3_char_0043_个/01_个.png")
 img.save(out_path)

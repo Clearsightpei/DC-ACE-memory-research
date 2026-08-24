@@ -89,5 +89,5 @@ h_start_x = x_bot + arc_r
 h_start_y = y_bot + arc_r
 draw.line([(h_start_x, h_start_y), (x_end, y_end)], fill="black", width=TH)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_13_竖弯/01_竖弯.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_13_竖弯/01_竖弯.png")
 print("saved")

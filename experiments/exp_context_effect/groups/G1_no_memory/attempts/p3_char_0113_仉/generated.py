@@ -37,5 +37,5 @@ curve_pts = [
 ]
 stroke(curve_pts, width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0113_仉/01_仉.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0113_仉/01_仉.png")
 print("saved")

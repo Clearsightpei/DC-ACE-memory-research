@@ -121,6 +121,6 @@ line_taper(S3_ARC_END, S3_H_END, r_body, r_body + 0.8, steps=240)
 dab(S3_H_END[0], S3_H_END[1], r_body + 1.8)
 
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_053_己/01_己.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_053_己/01_己.png"
 img.save(out_path)
 print(f"Saved {out_path}")

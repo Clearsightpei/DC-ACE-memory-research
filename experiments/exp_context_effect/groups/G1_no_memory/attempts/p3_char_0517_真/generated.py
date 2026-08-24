@@ -48,4 +48,4 @@ line((125, 220), (95, 265))
 # right foot: slants down-right (捺-like)
 line((170, 220), (215, 265))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0517_真/01_真.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0517_真/01_真.png")

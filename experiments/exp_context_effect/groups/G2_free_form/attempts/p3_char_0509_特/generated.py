@@ -97,7 +97,7 @@ taper((215, 255), (188, 235), r0=3.5, r1=1.3, steps=40)
 taper((228, 192), (248, 212), r0=3.8, r1=1.5, steps=40)
 
 
-out = ("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+out = ("<REPO_ROOT>/experiments/exp_context_effect/"
        "groups/G2_free_form/attempts/p3_char_0509_特/01_特.png")
 img.save(out)
 print("wrote", out)

@@ -54,4 +54,4 @@ line(138, 165, 235, 163, w=LW)
 # Stroke 5: 横 — bottom horizontal (base of the right structure)
 line(138, 235, 232, 233, w=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0165_乍/01_乍.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0165_乍/01_乍.png")

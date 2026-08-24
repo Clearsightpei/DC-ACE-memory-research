@@ -51,4 +51,4 @@ poly([(150, 185), (55, 275)], w=5)
 # ---- Bottom 捺 (long right-spreading) ----
 poly([(150, 185), (255, 275)], w=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0514_乘/01_乘.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0514_乘/01_乘.png")

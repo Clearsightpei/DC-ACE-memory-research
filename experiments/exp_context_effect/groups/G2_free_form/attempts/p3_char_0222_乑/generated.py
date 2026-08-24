@@ -45,5 +45,5 @@ brush_curve([(200, 135), (192, 155), (185, 175)], width=7)
 # 捺 (long sweeping down-right)
 brush_curve([(200, 145), (218, 175), (240, 210), (265, 235)], width=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0222_乑/01_乑.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0222_乑/01_乑.png")
 print("saved")

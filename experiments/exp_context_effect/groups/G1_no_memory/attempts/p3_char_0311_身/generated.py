@@ -36,4 +36,4 @@ line([(200, 65), (55, 275)], width=LW)
 # Actually 身 = 7 strokes: 撇, 横折钩, 横, 横, 横, 撇
 # The final 撇 replaces a hypothetical bottom - so 7 strokes total. Skip extra.
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0311_身/01_身.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0311_身/01_身.png")

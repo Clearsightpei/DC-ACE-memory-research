@@ -12,7 +12,7 @@ import sys
 import math
 from PIL import Image, ImageDraw
 
-_BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
+_BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
 if _BANK not in sys.path:
     sys.path.insert(0, _BANK)
 
@@ -114,7 +114,7 @@ def main():
     # Right half: 中 via bank primitive (bigger to match 禾 vertical extent)
     draw_zhong(t, ox=70, oy=-10, scale=1.0)
 
-    out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0437_种/01_种.png"
+    out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0437_种/01_种.png"
     img.save(out)
     print(f"wrote {out}")
 

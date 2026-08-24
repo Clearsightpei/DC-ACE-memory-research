@@ -90,4 +90,4 @@ taper_stroke([(108, 218), (200, 218)], w_start=5, w_end=5, steps=80)
 # Inner horizontal 2
 taper_stroke([(108, 245), (200, 245)], w_start=5, w_end=5, steps=80)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0498_俞/01_俞.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0498_俞/01_俞.png")

@@ -32,5 +32,5 @@ stroke([(200, 140), (200, 190), (240, 190)], width=4)
 # 10) 竖弯钩 tail
 stroke([(240, 140), (240, 200), (250, 220), (270, 220)], width=4)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0546_皰/01_皰.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0546_皰/01_皰.png")
 print("done")

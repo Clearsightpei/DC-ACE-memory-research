@@ -29,7 +29,7 @@ FIXES APPLIED:
 # fresh_component: wu_flag_bowed_for_物
 
 import os, sys
-sys.path.insert(0, "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code")
+sys.path.insert(0, "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code")
 from PIL import Image, ImageDraw
 from _anchor import anchor_to_xy, quad_bezier, stroke_variable_width, fat_line, sample_line
 

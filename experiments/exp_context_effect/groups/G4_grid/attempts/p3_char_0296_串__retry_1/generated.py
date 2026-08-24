@@ -81,7 +81,7 @@ def main():
     # bottom box, welded (P) across both horizontal bars.
     fat_line(draw, (CENTER_X, 15), (CENTER_X, 292))
 
-    out = '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0296_串__retry_1/01_串.png'
+    out = '<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0296_串__retry_1/01_串.png'
     img.save(out)
     print('wrote', out)
 

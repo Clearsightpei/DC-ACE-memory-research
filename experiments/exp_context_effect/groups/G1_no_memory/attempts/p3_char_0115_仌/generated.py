@@ -27,4 +27,4 @@ stroke([(140, 155), (128, 180), (108, 215), (85, 250), (70, 268)])
 # 捺 (right-falling): long sweeping curve down-right, extending further
 stroke([(146, 178), (170, 210), (200, 240), (235, 262), (255, 268)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0115_仌/01_仌.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0115_仌/01_仌.png")

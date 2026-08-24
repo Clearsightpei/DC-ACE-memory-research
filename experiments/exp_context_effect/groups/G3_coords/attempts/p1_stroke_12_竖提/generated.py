@@ -38,6 +38,6 @@ for i in range(n_seg):
     w = max(1, int(round(13 * (1 - f0) + 1 * f0)))
     d.line([(x0, y0), (x1, y1)], fill="black", width=w)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_12_竖提/01_竖提.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_12_竖提/01_竖提.png"
 img.save(out)
 print(f"Wrote {out} size={img.size}")

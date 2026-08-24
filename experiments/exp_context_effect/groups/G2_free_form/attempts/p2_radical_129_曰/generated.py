@@ -65,5 +65,5 @@ line((LEFT, BOT), (RIGHT, BOT))
 dab((LEFT, BOT), r=5)
 dab((RIGHT, BOT), r=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_129_曰/01_曰.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_129_曰/01_曰.png")
 print("saved 01_曰.png")

@@ -36,4 +36,4 @@ line([
 # Stroke 3: bottom long 横 — from lower-left to lower-right
 line([(50, 245), (255, 250)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0085_马/01_马.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0085_马/01_马.png")

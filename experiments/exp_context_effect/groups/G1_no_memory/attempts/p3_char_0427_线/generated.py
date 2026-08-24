@@ -30,5 +30,5 @@ line([(275, 260), (255, 255)], width=5)
 # 点 (dot at upper right)
 line([(240, 90), (258, 108)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0427_线/01_线.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0427_线/01_线.png")
 print("wrote 01_线.png")

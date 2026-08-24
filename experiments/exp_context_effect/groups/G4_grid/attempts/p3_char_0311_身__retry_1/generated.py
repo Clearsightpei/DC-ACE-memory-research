@@ -31,13 +31,13 @@ Fixes this attempt:
      pattern from Success Bank), so the frame reads as a coherent enclosure.
 """
 import sys, os
-sys.path.insert(0, '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code')
+sys.path.insert(0, '<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code')
 
 from _anchor import anchor_to_xy, fat_line, quad_bezier, stroke_variable_width
 from PIL import Image, ImageDraw
 
 W = H = 300
-OUT = '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0311_身__retry_1/01_身.png'
+OUT = '<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/attempts/p3_char_0311_身__retry_1/01_身.png'
 
 
 def _shorten(pt, other, px):

@@ -39,5 +39,5 @@ line([(190, 185), (265, 185)], 4)
 # hook up
 line([(265, 185), (265, 165)], 4)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0505_起/01_起.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0505_起/01_起.png")
 print("saved")

@@ -59,5 +59,5 @@ right_pts = [
 ]
 brush_line(right_pts, width=10)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0088_川/01_川.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0088_川/01_川.png")
 print("wrote 01_川.png")

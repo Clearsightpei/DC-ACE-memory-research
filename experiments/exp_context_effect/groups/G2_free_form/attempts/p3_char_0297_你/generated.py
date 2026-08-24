@@ -98,6 +98,6 @@ brush_stroke(leg_R, leg_RW)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0297_你/01_你.png"
 )

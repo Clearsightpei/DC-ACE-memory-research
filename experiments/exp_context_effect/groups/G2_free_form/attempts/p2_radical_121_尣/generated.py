@@ -77,6 +77,6 @@ taper_stroke(curve, w_start=6, w_end=7, steps=30)
 hook = [(230, 255), (238, 240), (240, 225)]
 taper_stroke(hook, w_start=7, w_end=3, steps=20)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_121_尣/01_尣.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_121_尣/01_尣.png"
 img.save(out)
 print(f"saved {out}")

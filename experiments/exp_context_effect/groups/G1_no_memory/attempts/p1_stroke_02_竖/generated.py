@@ -38,6 +38,6 @@ draw.ellipse(
     fill="black",
 )
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_02_竖/01_竖.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_02_竖/01_竖.png"
 img.save(out)
 print(f"Saved: {out} size={img.size}")

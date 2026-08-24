@@ -65,6 +65,6 @@ line([(200, 118), (185, 145), (165, 175), (145, 210)])
 line([(250, 75), (268, 92)], w=7)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0353_找/01_找.png"
+    "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0353_找/01_找.png"
 )
 print("saved")

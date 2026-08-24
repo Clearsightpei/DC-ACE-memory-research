@@ -30,5 +30,5 @@ stroke([(178, 148), (178, 275), (158, 268)], width=5)
 # Long horizontal 一 through middle
 stroke([(110, 208), (245, 202)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0490_俘/01_俘.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0490_俘/01_俘.png")
 print("saved")

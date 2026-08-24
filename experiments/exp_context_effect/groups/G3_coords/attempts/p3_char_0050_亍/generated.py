@@ -11,7 +11,7 @@ import os
 import sys
 from PIL import Image, ImageDraw
 
-_BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
+_BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code"
 if _BANK not in sys.path:
     sys.path.insert(0, _BANK)
 
@@ -36,7 +36,7 @@ def main():
     img = Image.new("RGB", (300, 300), "white")
     t = ImageDraw.Draw(img)
     draw_chu(t)
-    out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0050_亍/01_亍.png"
+    out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0050_亍/01_亍.png"
     img.save(out)
     print("wrote", out)
 

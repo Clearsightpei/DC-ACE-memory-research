@@ -46,4 +46,4 @@ d.line([(rx2, ry2), (rx3, ry3)], fill=INK, width=BW)
 # Stroke 5: 横 bottom seal
 d.line([(L - 4, B), (R + 4, B - 4)], fill=INK, width=BW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0210_四/01_四.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0210_四/01_四.png")

@@ -70,7 +70,7 @@ segB = bezier([(235, 260), (240, 285), (270, 285), (280, 260)], n=60)
 s2 = segA + segB
 stroke(s2, width=9)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0018_乜__retry_1/01_乜.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0018_乜__retry_1/01_乜.png")
 
 # --- MMH self-check dict ---
 SELF_CHECK = {

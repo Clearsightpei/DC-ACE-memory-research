@@ -74,5 +74,5 @@ line_taper((200, 45), (200, 265), r_start=4.5, r_end=3, dun_r=5)
 # Short flick going down-right from cross-point
 line_taper((205, 130), (240, 160), r_start=2.5, r_end=4, dun_r=2.5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0178_外/01_外.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0178_外/01_外.png")
 print("saved 01_外.png")

@@ -65,6 +65,6 @@ for i in range(len(hook_pts) - 1):
 sx, sy = M(*arc_pts[0])
 d.ellipse([sx - 1.5, sy - 1.5, sx + 1.5, sy + 1.5], fill="black")
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_08_卧钩/01_卧钩.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p1_stroke_08_卧钩/01_卧钩.png"
 img.save(out)
 print("saved:", out, img.size)

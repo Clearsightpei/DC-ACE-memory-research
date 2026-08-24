@@ -6,13 +6,13 @@ from pathlib import Path
 from PIL import Image, ImageDraw
 
 # Make the shared primitive importable.
-_BANK_CODE = Path("/Users/peilinwu/Documents/AI memory research/experiments/"
+_BANK_CODE = Path("<REPO_ROOT>/experiments/"
                   "exp_context_effect/groups/G3_coords/success_bank/code")
 sys.path.insert(0, str(_BANK_CODE))
 
 from heng import draw_heng  # noqa: E402
 
-OUT_PATH = Path("/Users/peilinwu/Documents/AI memory research/experiments/"
+OUT_PATH = Path("<REPO_ROOT>/experiments/"
                 "exp_context_effect/groups/G3_coords/attempts/"
                 "p1_stroke_01_横/01_横.png")
 

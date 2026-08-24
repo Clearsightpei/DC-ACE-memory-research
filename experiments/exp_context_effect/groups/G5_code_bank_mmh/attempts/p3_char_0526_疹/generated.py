@@ -76,4 +76,4 @@ SELF_CHECK = {
 }
 
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0526_疹/01_疹.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0526_疹/01_疹.png')

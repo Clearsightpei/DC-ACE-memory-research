@@ -83,6 +83,6 @@ bezier_dabs(pie_p0, pie_p2, pie_ctrl, r0=9, r1=1.3, steps=500, ease=1.15)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_015_刀/01_刀.png"
 )

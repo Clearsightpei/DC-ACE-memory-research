@@ -69,4 +69,4 @@ s5 = [
 ]
 stroke_taper(s5, w_start=5, w_end=10)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0197_矢/01_矢.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0197_矢/01_矢.png")

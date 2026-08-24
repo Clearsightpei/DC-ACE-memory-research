@@ -63,6 +63,6 @@ pts = [
 ]
 line(pts, width=5)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0442_乹/01_乹.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0442_乹/01_乹.png"
 img.save(out)
 print("wrote", out)

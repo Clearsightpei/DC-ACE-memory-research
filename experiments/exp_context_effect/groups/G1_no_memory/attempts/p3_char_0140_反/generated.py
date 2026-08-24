@@ -41,5 +41,5 @@ curve([(225, 145), (215, 175), (195, 205), (170, 225), (140, 245)], w=T)
 # Stroke 4: 捺 - diagonal from around (150, 200) sweeping down-right to (265, 270)
 curve([(155, 200), (190, 230), (225, 255), (265, 272)], w=T)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0140_反/01_反.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0140_反/01_反.png")
 print("saved")

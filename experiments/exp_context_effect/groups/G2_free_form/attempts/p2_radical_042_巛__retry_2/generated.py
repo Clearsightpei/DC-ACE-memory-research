@@ -60,7 +60,7 @@ stroke(160)
 stroke(215)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_042_巛__retry_2/01_巛.png"
 )
 print("wrote 01_巛.png")

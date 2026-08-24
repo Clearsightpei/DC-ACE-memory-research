@@ -135,7 +135,7 @@ stroke_line(h_end, flick_end, r0=5, r1=1.2)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_103_毛/01_毛.png"
 )
 print("wrote 01_毛.png")

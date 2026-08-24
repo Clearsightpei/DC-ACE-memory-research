@@ -89,6 +89,6 @@ tapered_dot(x0=205, y0=115, x1=230, y1=145, r_start=1.8, r_end=5.5, steps=30)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_126_心/01_心.png"
 )

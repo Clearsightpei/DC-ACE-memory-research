@@ -17,7 +17,7 @@ BANK use:
 """
 
 import sys
-sys.path.insert(0, "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code")
+sys.path.insert(0, "<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code")
 
 from PIL import Image, ImageDraw
 from chuo_walk import draw_chuo
@@ -54,7 +54,7 @@ d.line([(168, 140), (176, 242)], fill='black', width=LW)
 # --- 辶 (s8, s9, s10) via draw_chuo bank primitive ---------------------------
 draw_chuo(d, ox=-3, oy=5, scale=1.0)
 
-OUT = ("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+OUT = ("<REPO_ROOT>/experiments/exp_context_effect/"
        "groups/G5_code_bank_mmh/attempts/p3_char_0513_通/01_通.png")
 img.save(OUT)
 

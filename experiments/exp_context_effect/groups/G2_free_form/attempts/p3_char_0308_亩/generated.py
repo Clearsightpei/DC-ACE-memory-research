@@ -84,6 +84,6 @@ draw.line([(left, cy), (right, cy)], fill=BLACK, width=BW)
 # Bottom horizontal (close box)
 draw.line([(left, bot), (right, bot)], fill=BLACK, width=BW)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0308_亩/01_亩.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0308_亩/01_亩.png"
 img.save(out_path)
 print(f"wrote {out_path}")

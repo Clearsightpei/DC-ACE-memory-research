@@ -72,5 +72,5 @@ stroke([(LEFT - 2, Y_LOW + 2),
         (LEFT + 70, Y_LOW),
         (RIGHT - 4, Y_LOW + 2)], width=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0125_円/01_円.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0125_円/01_円.png")
 print("Saved 01_円.png")

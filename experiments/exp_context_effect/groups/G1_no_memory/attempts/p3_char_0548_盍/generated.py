@@ -41,5 +41,5 @@ line([(175, 178), (178, 240)], 4)
 # bottom long horizontal (base of 皿)
 line([(50, 253), (250, 250)], 5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0548_盍/01_盍.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0548_盍/01_盍.png")
 print("saved")

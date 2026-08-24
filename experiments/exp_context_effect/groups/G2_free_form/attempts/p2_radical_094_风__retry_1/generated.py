@@ -132,4 +132,4 @@ bezier(i2_start, i2_ctrl, i2_end, r_start=2, r_end=6, steps=200, ease=0.9)
 dab(*i2_end, r=6)  # terminal press (broad foot, but modest)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_094_风__retry_1/01_风.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_094_风__retry_1/01_风.png")

@@ -63,5 +63,5 @@ for i in range(n_steps + 1):
     r = 2 + 4 * t
     dab(x, y, r)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0053_下/01_下.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0053_下/01_下.png")
 print("saved")

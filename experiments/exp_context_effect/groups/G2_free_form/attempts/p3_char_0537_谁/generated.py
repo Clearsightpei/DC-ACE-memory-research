@@ -95,4 +95,4 @@ stroke(h4, (6, 8))
 zhong_shu = bez((205, 112), (205, 160), (205, 210), (205, 248), n=60)
 stroke(zhong_shu, (7, 7))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0537_谁/01_谁.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0537_谁/01_谁.png")

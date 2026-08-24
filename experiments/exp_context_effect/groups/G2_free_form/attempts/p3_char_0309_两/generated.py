@@ -82,5 +82,5 @@ stroke(right_pie, width=6)
 right_dian = bez((188, 155), (200, 195), (215, 240), 20)
 stroke(right_dian, width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0309_两/01_两.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0309_两/01_两.png")
 print("wrote 01_两.png")

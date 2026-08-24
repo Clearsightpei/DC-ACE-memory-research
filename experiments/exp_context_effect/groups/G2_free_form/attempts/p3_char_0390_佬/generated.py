@@ -51,5 +51,5 @@ line([(202, 178), (185, 200), (168, 225), (155, 245)], width=6)
 # 竖弯钩: from (175, 200) down to (175, 250), sweep right to (250, 255), hook UP-and-LEFT
 line([(178, 200), (178, 232), (178, 255), (205, 262), (240, 260), (255, 252), (250, 240)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0390_佬/01_佬.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0390_佬/01_佬.png")
 print("wrote 01_佬.png")

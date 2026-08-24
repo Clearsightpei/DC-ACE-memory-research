@@ -37,4 +37,4 @@ stroke([(205, 260), (190, 252), (178, 243)], width=7)
 # 5. 寸 点 — dot on right side of 竖钩, mid-height
 stroke([(225, 175), (240, 195)], width=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0179_付/01_付.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0179_付/01_付.png")

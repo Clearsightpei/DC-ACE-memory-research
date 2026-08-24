@@ -96,4 +96,4 @@ stroke(za_mid_h, (5, 5))
 za_bot_h = bez((160, 218), (185, 217), (210, 217), (232, 218), n=50)
 stroke(za_bot_h, (5, 6))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0536_痄/01_痄.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0536_痄/01_痄.png")

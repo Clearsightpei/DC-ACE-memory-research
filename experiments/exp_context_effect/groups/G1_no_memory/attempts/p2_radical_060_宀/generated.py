@@ -49,5 +49,5 @@ line([(105, 170), (230, 180)], width=4)
 # hook: short stroke turning down-left from the right end
 line([(230, 180), (215, 210)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_060_宀/01_宀.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_060_宀/01_宀.png")
 print("wrote 01_宀.png")

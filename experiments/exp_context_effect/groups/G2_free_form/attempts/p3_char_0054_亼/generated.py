@@ -71,4 +71,4 @@ taper_stroke([h_left, h_right], w_start=7, w_end=6, steps=60)
 draw.ellipse((h_left[0] - 5, h_left[1] - 5, h_left[0] + 6, h_left[1] + 6), fill="black")
 draw.ellipse((h_right[0] - 6, h_right[1] - 6, h_right[0] + 7, h_right[1] + 7), fill="black")
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0054_亼/01_亼.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0054_亼/01_亼.png")

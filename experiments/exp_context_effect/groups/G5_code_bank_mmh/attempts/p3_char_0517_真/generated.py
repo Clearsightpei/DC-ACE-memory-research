@@ -122,7 +122,7 @@ mid_s10 = ((s10_head[0] + s10_tail[0]) / 2 + 3,
 stroke_poly([s10_head, mid_s10, s10_tail], 6)
 
 # --- Save ---
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0517_真/01_真.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0517_真/01_真.png')
 
 # --- SELF_CHECK (mandatory G5 Phase-3) ---
 SELF_CHECK = {

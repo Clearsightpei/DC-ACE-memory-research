@@ -69,4 +69,4 @@ stroke(hook_body, width=6)
 # 钩 flick UP-and-LEFT (~-115° per TIER-0 hook rule)
 stroke([(245, 235), (232, 220)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0288_凫/01_凫.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0288_凫/01_凫.png")

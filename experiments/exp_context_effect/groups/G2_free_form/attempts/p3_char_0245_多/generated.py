@@ -90,4 +90,4 @@ draw_xi(cx=130, cy=110, scale=0.60, brush_scale=0.9)
 # Bottom 夕 — lower-right, larger; overlaps with top 夕 (they interlock)
 draw_xi(cx=175, cy=210, scale=0.62, brush_scale=1.0)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0245_多/01_多.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0245_多/01_多.png")

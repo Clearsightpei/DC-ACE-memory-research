@@ -113,5 +113,5 @@ taper_bezier(D, (208, 240), (230, 268), (272, 262), w0=9, w1=10, steps=32)
 # hook up
 taper_line(D, (272, 262), (272, 235), w0=10, w1=3, steps=12)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0499_能/01_能.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0499_能/01_能.png")
 print("saved")

@@ -39,4 +39,4 @@ line((180, 125), (188, 240), width=7)  # right vertical
 # Long lower horizontal (base)
 line((45, 245), (270, 250), width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0360_並/01_並.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0360_並/01_並.png")

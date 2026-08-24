@@ -45,4 +45,4 @@ poly([(178, 190), (255, 190)])
 poly([(203, 200), (195, 230)])
 poly([(233, 200), (241, 230)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0521_验/01_验.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0521_验/01_验.png")

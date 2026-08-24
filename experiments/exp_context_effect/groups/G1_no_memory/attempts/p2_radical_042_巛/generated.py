@@ -46,6 +46,6 @@ curved_stroke(x_center=110, y_top=100, y_bot=225, bulge_left=10, top_hook=6, bot
 curved_stroke(x_center=155, y_top=100, y_bot=225, bulge_left=10, top_hook=6, bot_tail=10)
 curved_stroke(x_center=205, y_top=100, y_bot=225, bulge_left=10, top_hook=6, bot_tail=10)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_042_巛/01_巛.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_042_巛/01_巛.png"
 img.save(out)
 print(f"wrote {out}")

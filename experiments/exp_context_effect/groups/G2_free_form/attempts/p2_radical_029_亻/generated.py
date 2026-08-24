@@ -76,6 +76,6 @@ line_stroke(shu_top, shu_bot, r_start=5.5, r_end=5.5, steps=250)
 dab(shu_bot[0], shu_bot[1], 6.5)
 
 # ---------------- Save ----------------
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_029_亻/01_亻.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_029_亻/01_亻.png"
 img.save(out)
 print(f"Saved {out}")

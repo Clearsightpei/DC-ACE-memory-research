@@ -57,5 +57,5 @@ s5 = [(83, 262), (212, 246)]
 for stroke in [s1, s2, s3, s4, s5]:
     polyline(stroke)
 
-img.save('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0217_凹/01_凹.png')
+img.save('<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0217_凹/01_凹.png')
 print('wrote 01_凹.png; stroke_count=5')

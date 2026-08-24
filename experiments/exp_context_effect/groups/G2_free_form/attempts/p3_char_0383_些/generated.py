@@ -71,5 +71,5 @@ line(105, 210, 195, 210)
 # long lower 横
 line(60, 265, 245, 265)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0383_些/01_些.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0383_些/01_些.png")
 print("saved")

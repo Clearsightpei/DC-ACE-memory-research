@@ -26,4 +26,4 @@ stroke([(195, 175), (195, 240)], width=5)
 # Stroke 5: 工 bottom horizontal (longer)
 stroke([(140, 245), (260, 243)], width=5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0332_佐/01_佐.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0332_佐/01_佐.png")

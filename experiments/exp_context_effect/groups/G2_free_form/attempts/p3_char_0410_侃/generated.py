@@ -55,5 +55,5 @@ stroke([(213, 225), (222, 245), (240, 258), (262, 258)], width=6)
 # terminal hook: up-and-slightly-LEFT
 stroke([(262, 258), (258, 240)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0410_侃/01_侃.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0410_侃/01_侃.png")
 print("wrote 01_侃.png")

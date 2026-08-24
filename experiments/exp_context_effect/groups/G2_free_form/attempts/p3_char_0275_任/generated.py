@@ -53,5 +53,5 @@ stroke(shu2, width=8)
 bot_heng = [(140, 235), (270, 232)]
 stroke(bot_heng, width=9)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0275_任/01_任.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0275_任/01_任.png")
 print("saved")

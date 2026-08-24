@@ -64,7 +64,7 @@ stroke([(145, 118), (205, 250)], width=6)
 d.ellipse((199, 244, 213, 258), fill=INK)
 
 out_path = (
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p3_char_0121_內/01_內.png"
 )

@@ -41,7 +41,7 @@ def main():
     img = Image.new("RGB", (300, 300), "white")
     draw = ImageDraw.Draw(img)
     draw_jiong(draw)
-    out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0026_冂/01_冂.png"
+    out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0026_冂/01_冂.png"
     img.save(out)
     print(f"wrote {out}")
 

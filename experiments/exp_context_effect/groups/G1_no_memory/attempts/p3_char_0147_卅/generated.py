@@ -34,5 +34,5 @@ draw.line([(215, 70), (218, 255)], fill=INK, width=LW)
 # Stroke 4: long horizontal crossbar
 draw.line([(55, 135), (255, 138)], fill=INK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0147_卅/01_卅.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0147_卅/01_卅.png")
 print("saved")

@@ -49,5 +49,5 @@ line_taper((160, 85), (220, 82), 4.0, 3.5)
 # ---- 几 right leg 横折弯钩: comes down and sweeps out to lower-right ----
 bezier_taper((220, 82), (215, 210), (285, 275), 4.5, 2.5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0213_処/01_処.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0213_処/01_処.png")
 print("saved")

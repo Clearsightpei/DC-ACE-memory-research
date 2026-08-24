@@ -47,6 +47,6 @@ line(((bx1 + bx2) // 2, by1), ((bx1 + bx2) // 2, by2))
 # Inner horizontal
 line((bx1, (by1 + by2) // 2), (bx2, (by1 + by2) // 2))
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0502_畚/01_畚.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0502_畚/01_畚.png"
 img.save(out)
 print(f"saved {out}")

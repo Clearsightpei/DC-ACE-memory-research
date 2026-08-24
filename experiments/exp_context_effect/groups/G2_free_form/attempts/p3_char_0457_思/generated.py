@@ -107,4 +107,4 @@ stroke(mdot, (4, 9))
 rdot = bez((205, 200), (210, 213), (215, 226), (222, 238), n=30)
 stroke(rdot, (4, 10))
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0457_思/01_思.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0457_思/01_思.png")

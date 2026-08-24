@@ -34,5 +34,5 @@ stroke([(163, 190), (163, 255), (155, 265)], width=5)
 # Right slanting na
 stroke([(195, 200), (240, 275)], width=4)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0515_原/01_原.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0515_原/01_原.png")
 print("saved")

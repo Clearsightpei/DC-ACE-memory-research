@@ -80,5 +80,5 @@ stroke_bezier((118, 145), (130, 152), (150, 162), 5, 9, n=50)
 # Start higher/more-left, end further right for a wide bottom fork.
 stroke_bezier((105, 145), (185, 220), (265, 250), 3, 13, n=110)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0064_叉/01_叉.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0064_叉/01_叉.png")
 print("wrote 01_叉.png")

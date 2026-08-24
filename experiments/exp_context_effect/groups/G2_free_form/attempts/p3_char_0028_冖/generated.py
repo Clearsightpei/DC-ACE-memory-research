@@ -79,7 +79,7 @@ taper_line((FOOT_X, FOOT_Y), flick_end, w0=5, w1=2, steps=14)
 
 # ---------------------------------------------------------------
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p3_char_0028_冖/01_冖.png"
 )

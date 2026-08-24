@@ -54,6 +54,6 @@ stroke([(206, 180), (205, 245)], width=6)
 # Stroke 7: 横 (long bottom of 工) — from (150, 250) to (280, 248)
 stroke([(150, 252), (215, 249), (280, 246)], width=7)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0332_佐/01_佐.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0332_佐/01_佐.png"
 img.save(out)
 print(f"Saved {out}")

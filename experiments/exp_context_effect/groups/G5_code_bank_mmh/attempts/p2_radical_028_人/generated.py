@@ -19,7 +19,7 @@ than in TC.
 import sys
 from pathlib import Path
 
-BANK = Path('/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code')
+BANK = Path('<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code')
 sys.path.insert(0, str(BANK))
 
 from PIL import Image, ImageDraw
@@ -79,6 +79,6 @@ SELF_CHECK = {
 
 
 if __name__ == '__main__':
-    out = '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_028_人/01_人.png'
+    out = '<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_028_人/01_人.png'
     render().save(out)
     print('wrote', out)

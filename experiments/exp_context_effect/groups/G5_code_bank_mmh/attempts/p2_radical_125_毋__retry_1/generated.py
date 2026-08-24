@@ -166,7 +166,7 @@ def main():
     # Head at MMH ML(22,165); tail at MMH MR(270,155).
     draw_heng(d, (18, 165), (280, 156), width=9)
 
-    out = '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_125_毋__retry_1/01_毋.png'
+    out = '<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p2_radical_125_毋__retry_1/01_毋.png'
     img.save(out)
     print('Rendered 4-stroke 毋 (retry_1) to', out)
 

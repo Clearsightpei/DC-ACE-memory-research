@@ -110,7 +110,7 @@ line(L - 1, BOT, R + 2, BOT - 1, w=W_S)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0440_畑/01_畑.png"
 )
 print("Saved 01_畑.png")

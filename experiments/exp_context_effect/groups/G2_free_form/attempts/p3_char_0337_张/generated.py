@@ -48,5 +48,5 @@ line([(195, 220), (235, 205)], width=6)
 # Stroke 4: 捺 - long sweeping diagonal from near crossing down to lower-right
 bezier((200, 135), (240, 190), (285, 240), width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0337_张/01_张.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0337_张/01_张.png")
 print("saved")

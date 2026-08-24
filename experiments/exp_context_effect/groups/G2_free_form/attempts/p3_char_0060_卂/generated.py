@@ -53,4 +53,4 @@ brush_stroke(pts2, w=6)
 # -------- Stroke 3: middle 横 (shorter) --------
 brush_stroke([(55, 175), (195, 170)], w=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0060_卂/01_卂.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0060_卂/01_卂.png")

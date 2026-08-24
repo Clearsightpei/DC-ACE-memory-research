@@ -19,7 +19,7 @@ import os, sys, math
 from PIL import Image, ImageDraw
 
 # path so we can import bank primitives
-_BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
+_BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G4_grid/success_bank/code"
 sys.path.insert(0, _BANK)
 
 from _anchor import (

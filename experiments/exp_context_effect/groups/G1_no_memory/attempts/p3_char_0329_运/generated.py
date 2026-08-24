@@ -26,4 +26,4 @@ stroke([(60, 135), (95, 140), (70, 175), (105, 190)], width=7)
 # long 平捺 sweeping across the bottom
 stroke([(50, 225), (150, 260), (275, 225)], width=9)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0329_运/01_运.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0329_运/01_运.png")

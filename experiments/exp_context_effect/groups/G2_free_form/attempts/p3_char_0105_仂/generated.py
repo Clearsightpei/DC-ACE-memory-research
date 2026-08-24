@@ -144,6 +144,6 @@ brush_line(pie2_pts, width_start=11, width_end=2, steps=200)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0105_仂/01_仂.png"
 )

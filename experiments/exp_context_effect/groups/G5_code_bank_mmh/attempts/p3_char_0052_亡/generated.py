@@ -19,7 +19,7 @@ from PIL import Image, ImageDraw
 import os, sys
 
 # ensure bank importable
-BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code"
+BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code"
 sys.path.insert(0, BANK)
 
 from dian import draw_dian
@@ -72,7 +72,7 @@ SELF_CHECK = {
               '(96.7, 251.4). Joint s2/s3 kept as neighbor gap (~10px).'),
 }
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0052_亡/01_亡.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0052_亡/01_亡.png"
 os.makedirs(os.path.dirname(out), exist_ok=True)
 img.save(out)
 print("WROTE", out)

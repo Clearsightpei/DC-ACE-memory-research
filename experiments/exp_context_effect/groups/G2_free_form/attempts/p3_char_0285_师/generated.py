@@ -57,5 +57,5 @@ poly([(155, 120), (255, 120), (255, 250), (245, 240)], w=BW)
 poly([(205, 120), (205, 285)], w=BW)
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0285_师/01_师.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0285_师/01_师.png")
 print("wrote 01_师.png")

@@ -35,7 +35,7 @@ curve([(200, 55), (200, 165), (200, 245), (202, 280)])
 curve([(200, 145), (225, 155), (245, 170)])
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G1_no_memory/attempts/p3_char_0178_外/01_外.png"
 )
 print("saved")

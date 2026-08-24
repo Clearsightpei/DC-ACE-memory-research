@@ -104,4 +104,4 @@ center_v = bez((CX, 42), (CX, 130), (CX, 210), (CX, 285), n=80)
 stroke(center_v, (7, 7))
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0512_畢/01_畢.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0512_畢/01_畢.png")

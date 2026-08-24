@@ -132,6 +132,6 @@ draw.ellipse((foot_x - 10, foot_y - 6, foot_x + 6, foot_y + 6), fill="black")
 # SAVE
 # ============================================================
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_109_攴__retry_2/01_攴.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_109_攴__retry_2/01_攴.png"
 img.save(out)
 print(f"Saved {out}  size={img.size}")

@@ -26,5 +26,5 @@ for i in range(n + 1):
         r = 3.2
     d.ellipse((x - r, y - r, x + r, y + r), fill="black")
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_005_一/01_一.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_005_一/01_一.png")
 print("wrote 01_一.png")

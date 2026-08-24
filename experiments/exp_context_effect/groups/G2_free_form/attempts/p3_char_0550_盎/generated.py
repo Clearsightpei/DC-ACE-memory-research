@@ -100,5 +100,5 @@ poly([(178, 172), (181, 253)], width=5)
 # Stroke 5: 一 — long bottom horizontal, extends beyond box
 poly([(42, 268), (265, 264)], width=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0550_盎/01_盎.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0550_盎/01_盎.png")
 print("Wrote 01_盎.png")

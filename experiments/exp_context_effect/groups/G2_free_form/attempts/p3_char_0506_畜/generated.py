@@ -86,4 +86,4 @@ MY = (TY + BY) // 2
 stroke([(MX, TY + 4), (MX, BY - 4)], [5, 5])
 stroke([(LX + 4, MY), (RX - 4, MY)], [5, 5])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0506_畜/01_畜.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0506_畜/01_畜.png")

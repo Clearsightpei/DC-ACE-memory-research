@@ -82,6 +82,6 @@ line_dabs(bot_left_x, bot_left_y, bot_right_x, bot_right_y, R, R)
 dab(bot_right_x, bot_right_y, JOINT)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_114_日/01_日.png"
 )

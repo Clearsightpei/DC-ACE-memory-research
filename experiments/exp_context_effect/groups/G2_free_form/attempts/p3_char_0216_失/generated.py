@@ -57,5 +57,5 @@ tapered([(170, 62), (150, 130), (110, 200), (55, 275)], 10, 4)
 # 5. 捺 — from where 撇 crosses middle 横, down-right, widening
 tapered([(150, 165), (200, 220), (265, 275)], 5, 13)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0216_失/01_失.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0216_失/01_失.png")
 print("saved")

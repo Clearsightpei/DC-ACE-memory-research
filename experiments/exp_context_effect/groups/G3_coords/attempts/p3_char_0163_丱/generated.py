@@ -68,6 +68,6 @@ center = [(150, 55), (150, 85)]
 stroke(center)
 
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0163_丱/01_丱.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p3_char_0163_丱/01_丱.png"
 img.save(out)
 print(f"saved {out}")

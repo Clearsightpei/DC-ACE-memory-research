@@ -90,4 +90,4 @@ r_na = bez((230, 140), (238, 175), (247, 210), (255, 245), n=55)
 stroke(r_na, (3, 7))
 
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0568_倆/01_倆.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0568_倆/01_倆.png")

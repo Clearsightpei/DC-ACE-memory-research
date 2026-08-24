@@ -74,6 +74,6 @@ dab(hbar_start[0], hbar_start[1], 5)
 dab(hbar_end[0], hbar_end[1], 6)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0049_子/01_子.png"
 )

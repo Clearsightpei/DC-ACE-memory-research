@@ -71,6 +71,6 @@ for k in range(14):
     dab(255 + k * 0.5, 245 + k * 0.05, 7.5 - k * 0.4)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0017_又/01_又.png"
 )

@@ -83,6 +83,6 @@ line_dabs(ti_x0, ti_y0, ti_x1, ti_y1, 5.8, 1.1, steps=280)
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p2_radical_068_扌/01_扌.png"
 )

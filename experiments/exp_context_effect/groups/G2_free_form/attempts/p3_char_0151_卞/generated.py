@@ -54,4 +54,4 @@ brush_line(d, [(150, 125), (150, 260)], width_start=10, width_end=8)
 # diagonal dab from upper-left to lower-right
 brush_line(d, [(178, 158), (208, 195)], width_start=6, width_end=12)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0151_卞/01_卞.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0151_卞/01_卞.png")

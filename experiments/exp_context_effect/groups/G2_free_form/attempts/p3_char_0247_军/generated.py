@@ -50,7 +50,7 @@ stroke([(58, 210), (250, 210)], width=8)
 stroke([(152, 118), (152, 275)], width=8)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p3_char_0247_军/01_军.png"
 )

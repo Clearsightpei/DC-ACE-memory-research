@@ -105,6 +105,6 @@ fy1 = hook_base[1] + flick_len * math.sin(fa)
 stroke_line(hook_base[0], hook_base[1], fx1, fy1, BASE_R + 0.3, 1.0, steps=180)
 
 # Save
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0003_乙/01_乙.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0003_乙/01_乙.png"
 img.save(out)
 print(f"Saved: {out}")

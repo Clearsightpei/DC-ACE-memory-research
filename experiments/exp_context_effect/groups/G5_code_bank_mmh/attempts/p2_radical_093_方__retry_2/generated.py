@@ -40,7 +40,7 @@ import sys
 
 from PIL import Image, ImageDraw
 
-_BANK = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code"
+_BANK = "<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/success_bank/code"
 if _BANK not in sys.path:
     sys.path.insert(0, _BANK)
 from dian import draw_dian  # noqa: E402

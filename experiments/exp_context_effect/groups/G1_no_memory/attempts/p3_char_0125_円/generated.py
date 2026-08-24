@@ -41,5 +41,5 @@ draw.line([(LEFT_X_TOP + 3, 165), (RIGHT_X - 8, 163)], fill=INK, width=LW)
 # Stroke 4: bottom horizontal (closes the box)
 draw.line([(LEFT_X_BOT, BOT_Y), (RIGHT_X - 20, BOT_Y - 10)], fill=INK, width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0125_円/01_円.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0125_円/01_円.png")
 print("saved")

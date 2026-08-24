@@ -20,4 +20,4 @@ d.line([(55, 205), (255, 200)], fill="black", width=LW)
 # 6. vertical stem down through center
 d.line([(170, 90), (170, 285)], fill="black", width=LW)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0227_年/01_年.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0227_年/01_年.png")

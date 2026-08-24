@@ -72,6 +72,6 @@ def draw_long(t, ox=0, oy=0, scale=1.0):
 draw_long(None)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G3_coords/attempts/p3_char_0284_龹/01_龹.png"
 )

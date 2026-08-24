@@ -49,6 +49,6 @@ stroke([(150, 178), (150, 235)], width=7)
 # 8. Bottom long horizontal of 工
 stroke([(65, 240), (240, 238)], width=7)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0397_空/01_空.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0397_空/01_空.png"
 img.save(out)
 print("saved", out)

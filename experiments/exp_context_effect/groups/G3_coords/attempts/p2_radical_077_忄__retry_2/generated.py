@@ -29,7 +29,7 @@ Fix vs retry_1:
 """
 
 import sys
-sys.path.insert(0, "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/success_bank/code")
+sys.path.insert(0, "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/success_bank/code")
 
 from PIL import Image, ImageDraw
 from _shared_helpers import (
@@ -91,7 +91,7 @@ def render():
         w_head=6.0, w_tail=1.5, bow_perp=+1.5,
     )
 
-    out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_077_忄__retry_2/01_忄.png"
+    out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G3_coords/attempts/p2_radical_077_忄__retry_2/01_忄.png"
     img.save(out)
     print(f"Wrote {out}")
 

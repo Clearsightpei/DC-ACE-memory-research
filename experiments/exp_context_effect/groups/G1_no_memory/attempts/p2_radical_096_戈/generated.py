@@ -53,5 +53,5 @@ stroke(pie, width=8)
 dot = [(210, 88), (220, 98), (228, 108)]
 stroke(dot, width=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_096_戈/01_戈.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p2_radical_096_戈/01_戈.png")
 print("saved")

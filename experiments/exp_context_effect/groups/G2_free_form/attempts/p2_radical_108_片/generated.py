@@ -93,6 +93,6 @@ zhe_v1 = (222, 275)
 line_taper(zhe_h1, zhe_v1, r0=6, r1=5.5, steps=400)
 dab(zhe_v1[0], zhe_v1[1], 6)
 
-out = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_108_片/01_片.png"
+out = "<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_108_片/01_片.png"
 img.save(out)
 print(f"Saved: {out}")

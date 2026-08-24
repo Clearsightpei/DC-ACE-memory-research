@@ -101,7 +101,7 @@ stroke(foot, (12, 3))
 
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/"
+    "<REPO_ROOT>/experiments/"
     "exp_context_effect/groups/G2_free_form/attempts/"
     "p3_char_0564_倀/01_倀.png"
 )

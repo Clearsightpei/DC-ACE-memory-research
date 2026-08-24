@@ -63,5 +63,5 @@ stroke([(215, 250), (200, 245), (185, 240)], width=7)     # hook up-left
 # Stroke 3: 横 — long horizontal across the middle of 子, extends left into 女 area
 stroke([(145, 165), (275, 170)], width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0253_好/01_好.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0253_好/01_好.png")
 print("saved")

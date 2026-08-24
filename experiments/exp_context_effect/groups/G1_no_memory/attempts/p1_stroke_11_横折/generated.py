@@ -43,6 +43,6 @@ def cap(cx, cy, rr):
 cap(x1, y1, STROKE_W // 2)
 cap(x3, y3, STROKE_W // 2)
 
-out_path = "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_11_横折/01_横折.png"
+out_path = "<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p1_stroke_11_横折/01_横折.png"
 img.save(out_path)
 print(f"Wrote {out_path}")

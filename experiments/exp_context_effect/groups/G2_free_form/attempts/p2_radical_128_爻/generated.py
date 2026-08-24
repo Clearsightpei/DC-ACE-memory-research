@@ -80,5 +80,5 @@ curved_stroke((95, 160), (165, 225), (235, 265),
 stroke((235, 265), (250, 268), w_start=4.5, w_end=2.5, steps=30)
 dab(235, 265, 4.5)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_128_爻/01_爻.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p2_radical_128_爻/01_爻.png")
 print("wrote 01_爻.png")

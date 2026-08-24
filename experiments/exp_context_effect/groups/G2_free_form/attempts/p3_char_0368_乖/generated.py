@@ -51,6 +51,6 @@ line((175, 148), (245, 142), w=BW)
 poly([(210, 155), (200, 210), (215, 250), (255, 245)], w=BW)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0368_乖/01_乖.png"
 )

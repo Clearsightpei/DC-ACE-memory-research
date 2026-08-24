@@ -63,4 +63,4 @@ stroke([(ix0 - 2, iy0), (ix1, iy0 - 1), (ix1 + 1, iy1)], width=6)
 # 9. 一 (inner bottom)
 stroke([(ix0, iy1), (ix1 + 1, iy1)], width=6)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0497_响/01_响.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0497_响/01_响.png")

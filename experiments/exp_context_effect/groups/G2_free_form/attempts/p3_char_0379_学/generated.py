@@ -47,5 +47,5 @@ stroke([(155, 130), (155, 250), (135, 240)], width=9)
 # 一 : horizontal crossbar mid-child, long, spans wide
 stroke([(70, 205), (245, 210)], width=8)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0379_学/01_学.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0379_学/01_学.png")
 print("wrote 01_学.png")

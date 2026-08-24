@@ -57,5 +57,5 @@ stroke([(250, 85), (250, 250)], width=7)
 # hook flick UP-LEFT
 stroke([(250, 250), (232, 240)], width=7)
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0418_例/01_例.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G2_free_form/attempts/p3_char_0418_例/01_例.png")
 print("wrote 01_例.png")

@@ -52,4 +52,4 @@ polyline([(155, 110), (245, 110), (245, 60)])   # top part: horizontal to right 
 polyline([(180, 160), (165, 205)])
 polyline([(155, 210), (245, 210), (245, 160)])
 
-img.save("/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0499_能/01_能.png")
+img.save("<REPO_ROOT>/experiments/exp_context_effect/groups/G1_no_memory/attempts/p3_char_0499_能/01_能.png")

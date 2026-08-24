@@ -138,7 +138,7 @@ def main():
     s8t = anchor('BR', 0.581, 0.851)
     draw_line(dr, s8h, s8t, width=9)
 
-    out = '/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0388_亟/01_亟.png'
+    out = '<REPO_ROOT>/experiments/exp_context_effect/groups/G5_code_bank_mmh/attempts/p3_char_0388_亟/01_亟.png'
     img.save(out)
     print(f'wrote {out}')
 

@@ -55,6 +55,6 @@ stroke_line((240, 72), (240, 262), r=7)
 stroke_bezier((240, 262), (228, 278), (192, 272), r=7)
 
 img.save(
-    "/Users/peilinwu/Documents/AI memory research/experiments/exp_context_effect/"
+    "<REPO_ROOT>/experiments/exp_context_effect/"
     "groups/G2_free_form/attempts/p3_char_0063_门/01_门.png"
 )
