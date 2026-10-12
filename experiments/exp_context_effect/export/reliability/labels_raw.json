@@ -1,0 +1,1352 @@
+{
+  "R0001__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0001",
+    "target_label": "乖",
+    "judged_at": "2026-10-06T19:33:07"
+  },
+  "R0002__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0002",
+    "target_label": "实",
+    "judged_at": "2026-10-06T19:33:11"
+  },
+  "R0003__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0003",
+    "target_label": "畢",
+    "judged_at": "2026-10-06T19:33:12"
+  },
+  "R0004__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0004",
+    "target_label": "畜",
+    "judged_at": "2026-10-06T19:33:15"
+  },
+  "R0005__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0005",
+    "target_label": "佧",
+    "judged_at": "2026-10-06T19:33:21"
+  },
+  "R0006__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0006",
+    "target_label": "侈",
+    "judged_at": "2026-10-06T19:33:24"
+  },
+  "R0007__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0007",
+    "target_label": "伯",
+    "judged_at": "2026-10-06T19:33:26"
+  },
+  "R0008__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0008",
+    "target_label": "师",
+    "judged_at": "2026-10-06T19:33:29"
+  },
+  "R0009__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0009",
+    "target_label": "来",
+    "judged_at": "2026-10-06T19:33:31"
+  },
+  "R0010__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0010",
+    "target_label": "将",
+    "judged_at": "2026-10-06T19:33:34"
+  },
+  "R0011__att0": {
+    "verdict": "A",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0011",
+    "target_label": "形",
+    "judged_at": "2026-10-06T19:33:47"
+  },
+  "R0012__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0012",
+    "target_label": "规",
+    "judged_at": "2026-10-06T19:33:49"
+  },
+  "R0013__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0013",
+    "target_label": "亲",
+    "judged_at": "2026-10-06T19:33:52"
+  },
+  "R0014__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0014",
+    "target_label": "痂",
+    "judged_at": "2026-10-06T19:33:56"
+  },
+  "R0015__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0015",
+    "target_label": "面",
+    "judged_at": "2026-10-06T19:33:57"
+  },
+  "R0016__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0016",
+    "target_label": "者",
+    "judged_at": "2026-10-06T19:33:58"
+  },
+  "R0017__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0017",
+    "target_label": "通",
+    "judged_at": "2026-10-06T19:34:01"
+  },
+  "R0018__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0018",
+    "target_label": "带",
+    "judged_at": "2026-10-06T19:34:06"
+  },
+  "R0019__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0019",
+    "target_label": "话",
+    "judged_at": "2026-10-06T19:34:07"
+  },
+  "R0020__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0020",
+    "target_label": "张",
+    "judged_at": "2026-10-06T19:34:10"
+  },
+  "R0021__att0": {
+    "verdict": "A",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0021",
+    "target_label": "信",
+    "judged_at": "2026-10-06T19:34:11"
+  },
+  "R0022__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0022",
+    "target_label": "甾",
+    "judged_at": "2026-10-06T19:34:13"
+  },
+  "R0023__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0023",
+    "target_label": "佉",
+    "judged_at": "2026-10-06T19:34:18"
+  },
+  "R0024__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0024",
+    "target_label": "畈",
+    "judged_at": "2026-10-06T19:34:22"
+  },
+  "R0025__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0025",
+    "target_label": "伺",
+    "judged_at": "2026-10-06T19:34:26"
+  },
+  "R0026__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0026",
+    "target_label": "位",
+    "judged_at": "2026-10-06T19:34:30"
+  },
+  "R0027__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0027",
+    "target_label": "疌",
+    "judged_at": "2026-10-06T19:34:32"
+  },
+  "R0028__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0028",
+    "target_label": "畎",
+    "judged_at": "2026-10-06T19:34:34"
+  },
+  "R0029__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0029",
+    "target_label": "改",
+    "judged_at": "2026-10-06T19:34:35"
+  },
+  "R0030__att0": {
+    "verdict": "A",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0030",
+    "target_label": "疣",
+    "judged_at": "2026-10-06T19:34:39"
+  },
+  "R0031__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0031",
+    "target_label": "苦",
+    "judged_at": "2026-10-06T19:34:41"
+  },
+  "R0032__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0032",
+    "target_label": "佟",
+    "judged_at": "2026-10-06T19:34:42"
+  },
+  "R0033__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0033",
+    "target_label": "但",
+    "judged_at": "2026-10-06T19:34:51"
+  },
+  "R0034__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0034",
+    "target_label": "给",
+    "judged_at": "2026-10-06T19:34:54"
+  },
+  "R0035__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0035",
+    "target_label": "真",
+    "judged_at": "2026-10-06T19:34:55"
+  },
+  "R0036__att0": {
+    "verdict": "A",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0036",
+    "target_label": "往",
+    "judged_at": "2026-10-06T19:34:56"
+  },
+  "R0037__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0037",
+    "target_label": "伲",
+    "judged_at": "2026-10-06T19:34:59"
+  },
+  "R0038__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0038",
+    "target_label": "到",
+    "judged_at": "2026-10-06T19:35:06"
+  },
+  "R0039__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0039",
+    "target_label": "畅",
+    "judged_at": "2026-10-06T19:35:07"
+  },
+  "R0040__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0040",
+    "target_label": "热",
+    "judged_at": "2026-10-06T19:35:08"
+  },
+  "R0041__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0041",
+    "target_label": "高",
+    "judged_at": "2026-10-06T19:35:11"
+  },
+  "R0042__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0042",
+    "target_label": "疭",
+    "judged_at": "2026-10-06T19:35:15"
+  },
+  "R0043__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0043",
+    "target_label": "佇",
+    "judged_at": "2026-10-06T19:35:20"
+  },
+  "R0044__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0044",
+    "target_label": "俑",
+    "judged_at": "2026-10-06T19:35:22"
+  },
+  "R0045__att0": {
+    "verdict": "A",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0045",
+    "target_label": "俚",
+    "judged_at": "2026-10-06T19:35:25"
+  },
+  "R0046__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0046",
+    "target_label": "佬",
+    "judged_at": "2026-10-06T19:35:27"
+  },
+  "R0047__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0047",
+    "target_label": "佔",
+    "judged_at": "2026-10-06T19:35:30"
+  },
+  "R0048__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0048",
+    "target_label": "伽",
+    "judged_at": "2026-10-06T19:35:32"
+  },
+  "R0049__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0049",
+    "target_label": "这",
+    "judged_at": "2026-10-06T19:35:35"
+  },
+  "R0050__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0050",
+    "target_label": "畋",
+    "judged_at": "2026-10-06T19:35:37"
+  },
+  "R0051__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0051",
+    "target_label": "点",
+    "judged_at": "2026-10-06T19:35:38"
+  },
+  "R0052__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0052",
+    "target_label": "的",
+    "judged_at": "2026-10-06T19:35:44"
+  },
+  "R0053__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0053",
+    "target_label": "皈",
+    "judged_at": "2026-10-06T19:35:45"
+  },
+  "R0054__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0054",
+    "target_label": "即",
+    "judged_at": "2026-10-06T19:35:45"
+  },
+  "R0055__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0055",
+    "target_label": "还",
+    "judged_at": "2026-10-06T19:35:52"
+  },
+  "R0056__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0056",
+    "target_label": "受",
+    "judged_at": "2026-10-06T19:35:53"
+  },
+  "R0057__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0057",
+    "target_label": "经",
+    "judged_at": "2026-10-06T19:35:54"
+  },
+  "R0058__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0058",
+    "target_label": "造",
+    "judged_at": "2026-10-06T19:35:55"
+  },
+  "R0059__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0059",
+    "target_label": "海",
+    "judged_at": "2026-10-06T19:35:55"
+  },
+  "R0060__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0060",
+    "target_label": "町",
+    "judged_at": "2026-10-06T19:35:57"
+  },
+  "R0061__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0061",
+    "target_label": "取",
+    "judged_at": "2026-10-06T19:36:00"
+  },
+  "R0062__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0062",
+    "target_label": "更",
+    "judged_at": "2026-10-06T19:36:01"
+  },
+  "R0063__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0063",
+    "target_label": "放",
+    "judged_at": "2026-10-06T19:36:01"
+  },
+  "R0064__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0064",
+    "target_label": "原",
+    "judged_at": "2026-10-06T19:36:04"
+  },
+  "R0065__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0065",
+    "target_label": "疝",
+    "judged_at": "2026-10-06T19:36:05"
+  },
+  "R0066__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0066",
+    "target_label": "南",
+    "judged_at": "2026-10-06T19:36:07"
+  },
+  "R0067__att0": {
+    "verdict": "A",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0067",
+    "target_label": "选",
+    "judged_at": "2026-10-06T19:36:08"
+  },
+  "R0068__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0068",
+    "target_label": "畟",
+    "judged_at": "2026-10-06T19:36:09"
+  },
+  "R0069__att0": {
+    "verdict": "A",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0069",
+    "target_label": "佝",
+    "judged_at": "2026-10-06T19:36:11"
+  },
+  "R0070__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0070",
+    "target_label": "伾",
+    "judged_at": "2026-10-06T19:36:14"
+  },
+  "R0071__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0071",
+    "target_label": "身",
+    "judged_at": "2026-10-06T19:36:20"
+  },
+  "R0072__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0072",
+    "target_label": "战",
+    "judged_at": "2026-10-06T19:36:21"
+  },
+  "R0073__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0073",
+    "target_label": "我",
+    "judged_at": "2026-10-06T19:36:22"
+  },
+  "R0074__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0074",
+    "target_label": "疮",
+    "judged_at": "2026-10-06T19:36:23"
+  },
+  "R0075__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0075",
+    "target_label": "亳",
+    "judged_at": "2026-10-06T19:36:24"
+  },
+  "R0076__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0076",
+    "target_label": "冱",
+    "judged_at": "2026-10-06T19:36:24"
+  },
+  "R0077__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0077",
+    "target_label": "侷",
+    "judged_at": "2026-10-06T19:36:26"
+  },
+  "R0078__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0078",
+    "target_label": "甹",
+    "judged_at": "2026-10-06T19:36:27"
+  },
+  "R0079__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0079",
+    "target_label": "时",
+    "judged_at": "2026-10-06T19:36:28"
+  },
+  "R0080__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0080",
+    "target_label": "部",
+    "judged_at": "2026-10-06T19:36:31"
+  },
+  "R0081__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0081",
+    "target_label": "疴",
+    "judged_at": "2026-10-06T19:36:32"
+  },
+  "R0082__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0082",
+    "target_label": "畝",
+    "judged_at": "2026-10-06T19:36:33"
+  },
+  "R0083__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0083",
+    "target_label": "俉",
+    "judged_at": "2026-10-06T19:36:36"
+  },
+  "R0084__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0084",
+    "target_label": "识",
+    "judged_at": "2026-10-06T19:36:43"
+  },
+  "R0085__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0085",
+    "target_label": "值",
+    "judged_at": "2026-10-06T19:36:47"
+  },
+  "R0086__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0086",
+    "target_label": "佥",
+    "judged_at": "2026-10-06T19:36:48"
+  },
+  "R0087__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0087",
+    "target_label": "说",
+    "judged_at": "2026-10-06T19:36:51"
+  },
+  "R0088__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0088",
+    "target_label": "疠",
+    "judged_at": "2026-10-06T19:36:56"
+  },
+  "R0089__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0089",
+    "target_label": "员",
+    "judged_at": "2026-10-06T19:36:58"
+  },
+  "R0090__att0": {
+    "verdict": "A",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0090",
+    "target_label": "俞",
+    "judged_at": "2026-10-06T19:36:59"
+  },
+  "R0091__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0091",
+    "target_label": "盃",
+    "judged_at": "2026-10-06T19:37:01"
+  },
+  "R0092__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0092",
+    "target_label": "除",
+    "judged_at": "2026-10-06T19:37:03"
+  },
+  "R0093__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0093",
+    "target_label": "总",
+    "judged_at": "2026-10-06T19:37:20"
+  },
+  "R0094__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0094",
+    "target_label": "龹",
+    "judged_at": "2026-10-06T19:37:22"
+  },
+  "R0095__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0095",
+    "target_label": "亩",
+    "judged_at": "2026-10-06T19:37:25"
+  },
+  "R0096__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0096",
+    "target_label": "状",
+    "judged_at": "2026-10-06T19:37:32"
+  },
+  "R0097__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0097",
+    "target_label": "两",
+    "judged_at": "2026-10-06T19:37:34"
+  },
+  "R0098__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0098",
+    "target_label": "国",
+    "judged_at": "2026-10-06T19:37:36"
+  },
+  "R0099__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0099",
+    "target_label": "运",
+    "judged_at": "2026-10-06T19:37:37"
+  },
+  "R0100__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0100",
+    "target_label": "甸",
+    "judged_at": "2026-10-06T19:37:40"
+  },
+  "R0101__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0101",
+    "target_label": "城",
+    "judged_at": "2026-10-06T19:37:41"
+  },
+  "R0102__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0102",
+    "target_label": "声",
+    "judged_at": "2026-10-06T19:37:41"
+  },
+  "R0103__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0103",
+    "target_label": "里",
+    "judged_at": "2026-10-06T19:37:47"
+  },
+  "R0104__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0104",
+    "target_label": "畏",
+    "judged_at": "2026-10-06T19:37:48"
+  },
+  "R0105__att0": {
+    "verdict": "A",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0105",
+    "target_label": "佘",
+    "judged_at": "2026-10-06T19:37:51"
+  },
+  "R0106__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0106",
+    "target_label": "美",
+    "judged_at": "2026-10-06T19:37:53"
+  },
+  "R0107__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0107",
+    "target_label": "具",
+    "judged_at": "2026-10-06T19:37:56"
+  },
+  "R0108__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0108",
+    "target_label": "例",
+    "judged_at": "2026-10-06T19:37:57"
+  },
+  "R0109__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0109",
+    "target_label": "疤",
+    "judged_at": "2026-10-06T19:37:58"
+  },
+  "R0110__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0110",
+    "target_label": "花",
+    "judged_at": "2026-10-06T19:38:00"
+  },
+  "R0111__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0111",
+    "target_label": "畚",
+    "judged_at": "2026-10-06T19:38:01"
+  },
+  "R0112__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0112",
+    "target_label": "侑",
+    "judged_at": "2026-10-06T19:38:03"
+  },
+  "R0113__att0": {
+    "verdict": "A",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0113",
+    "target_label": "畛",
+    "judged_at": "2026-10-06T19:38:04"
+  },
+  "R0114__att0": {
+    "verdict": "A",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0114",
+    "target_label": "些",
+    "judged_at": "2026-10-06T19:38:05"
+  },
+  "R0115__att0": {
+    "verdict": "A",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0115",
+    "target_label": "是",
+    "judged_at": "2026-10-06T19:38:06"
+  },
+  "R0116__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0116",
+    "target_label": "佞",
+    "judged_at": "2026-10-06T19:38:07"
+  },
+  "R0117__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0117",
+    "target_label": "佻",
+    "judged_at": "2026-10-06T19:38:08"
+  },
+  "R0118__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0118",
+    "target_label": "佾",
+    "judged_at": "2026-10-06T19:38:11"
+  },
+  "R0119__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0119",
+    "target_label": "乱",
+    "judged_at": "2026-10-06T19:38:13"
+  },
+  "R0120__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0120",
+    "target_label": "畐",
+    "judged_at": "2026-10-06T19:38:16"
+  },
+  "R0121__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0121",
+    "target_label": "进",
+    "judged_at": "2026-10-06T19:38:19"
+  },
+  "R0122__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0122",
+    "target_label": "金",
+    "judged_at": "2026-10-06T19:38:20"
+  },
+  "R0123__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0123",
+    "target_label": "相",
+    "judged_at": "2026-10-06T19:38:23"
+  },
+  "R0124__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0124",
+    "target_label": "疱",
+    "judged_at": "2026-10-06T19:38:25"
+  },
+  "R0125__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0125",
+    "target_label": "佗",
+    "judged_at": "2026-10-06T19:38:27"
+  },
+  "R0126__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0126",
+    "target_label": "丵",
+    "judged_at": "2026-10-06T19:38:30"
+  },
+  "R0127__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0127",
+    "target_label": "丽",
+    "judged_at": "2026-10-06T19:38:32"
+  },
+  "R0128__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0128",
+    "target_label": "疔",
+    "judged_at": "2026-10-06T19:38:34"
+  },
+  "R0129__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0129",
+    "target_label": "果",
+    "judged_at": "2026-10-06T19:38:36"
+  },
+  "R0130__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0130",
+    "target_label": "疥",
+    "judged_at": "2026-10-06T19:38:37"
+  },
+  "R0131__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0131",
+    "target_label": "係",
+    "judged_at": "2026-10-06T19:38:38"
+  },
+  "R0132__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0132",
+    "target_label": "草",
+    "judged_at": "2026-10-06T19:38:40"
+  },
+  "R0133__att0": {
+    "verdict": "A",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0133",
+    "target_label": "盅",
+    "judged_at": "2026-10-06T19:38:41"
+  },
+  "R0134__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0134",
+    "target_label": "疡",
+    "judged_at": "2026-10-06T19:38:45"
+  },
+  "R0135__att0": {
+    "verdict": "A",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0135",
+    "target_label": "神",
+    "judged_at": "2026-10-06T19:38:48"
+  },
+  "R0136__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0136",
+    "target_label": "侃",
+    "judged_at": "2026-10-06T19:38:50"
+  },
+  "R0137__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0137",
+    "target_label": "能",
+    "judged_at": "2026-10-06T19:38:52"
+  },
+  "R0138__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0138",
+    "target_label": "济",
+    "judged_at": "2026-10-06T19:38:54"
+  },
+  "R0139__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0139",
+    "target_label": "找",
+    "judged_at": "2026-10-06T19:38:57"
+  },
+  "R0140__att0": {
+    "verdict": "A",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0140",
+    "target_label": "俏",
+    "judged_at": "2026-10-06T19:39:00"
+  },
+  "R0141__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0141",
+    "target_label": "每",
+    "judged_at": "2026-10-06T19:39:02"
+  },
+  "R0142__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0142",
+    "target_label": "侍",
+    "judged_at": "2026-10-06T19:39:04"
+  },
+  "R0143__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0143",
+    "target_label": "疖",
+    "judged_at": "2026-10-06T19:39:09"
+  },
+  "R0144__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0144",
+    "target_label": "结",
+    "judged_at": "2026-10-06T19:39:11"
+  },
+  "R0145__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0145",
+    "target_label": "乘",
+    "judged_at": "2026-10-06T19:39:11"
+  },
+  "R0146__att0": {
+    "verdict": "FAIL",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0146",
+    "target_label": "佛",
+    "judged_at": "2026-10-06T19:39:12"
+  },
+  "R0147__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0147",
+    "target_label": "空",
+    "judged_at": "2026-10-06T19:39:14"
+  },
+  "R0148__att0": {
+    "verdict": "PASS",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0148",
+    "target_label": "畀",
+    "judged_at": "2026-10-06T19:39:16"
+  },
+  "R0149__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0149",
+    "target_label": "知",
+    "judged_at": "2026-10-06T19:39:18"
+  },
+  "R0150__att0": {
+    "verdict": "C",
+    "actual_group": "BLINDED",
+    "shown_position": 0,
+    "phase": "character",
+    "item_id": "R0150",
+    "target_label": "线",
+    "judged_at": "2026-10-06T19:39:19"
+  }
+}

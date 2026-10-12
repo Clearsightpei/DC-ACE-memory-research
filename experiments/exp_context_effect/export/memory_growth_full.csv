@@ -1,3 +1,11 @@
+# SUPERSEDED for the camera-ready. This file counts G2 memory as all
+# top-level .md (6,694 lines at B13) and linearly interpolates 10 of 14
+# per-batch points for G2/G3/G4 from only 4 git checkpoints.
+# The paper's Table 2 instead reports OBSERVED checkpoints only, with G2
+# counted as curator-authored operational memory (5,111 lines at B13,
+# excluding auto-generated pass_index.md and process records).
+# See export/memory_checkpoints.csv. This file is retained unchanged for
+# provenance; prefer memory_checkpoints.csv.
 group,batch,size,unit,source
 G1,bootstrap,0,n/a,real (control has no memory)
 G1,B1,0,n/a,real (control has no memory)

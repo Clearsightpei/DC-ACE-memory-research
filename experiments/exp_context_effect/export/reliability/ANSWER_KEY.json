@@ -1,0 +1,1202 @@
+{
+  "R0001": {
+    "group": "G5",
+    "item_id": "p3_char_0368_乖",
+    "abs": 503,
+    "char": "乖",
+    "batch": "G5_B10",
+    "original_verdict": "FAIL"
+  },
+  "R0002": {
+    "group": "G5",
+    "item_id": "p3_char_0393_实",
+    "abs": 528,
+    "char": "实",
+    "batch": "G5_B11",
+    "original_verdict": "FAIL"
+  },
+  "R0003": {
+    "group": "G3",
+    "item_id": "p3_char_0512_畢",
+    "abs": 647,
+    "char": "畢",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0004": {
+    "group": "G4",
+    "item_id": "p3_char_0506_畜",
+    "abs": 641,
+    "char": "畜",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0005": {
+    "group": "G3",
+    "item_id": "p3_char_0354_佧",
+    "abs": 489,
+    "char": "佧",
+    "batch": "B10",
+    "original_verdict": "PASS"
+  },
+  "R0006": {
+    "group": "G1",
+    "item_id": "p3_char_0414_侈",
+    "abs": 549,
+    "char": "侈",
+    "batch": "B11",
+    "original_verdict": "C"
+  },
+  "R0007": {
+    "group": "G5",
+    "item_id": "p3_char_0310_伯",
+    "abs": 445,
+    "char": "伯",
+    "batch": "G5_B9",
+    "original_verdict": "PASS"
+  },
+  "R0008": {
+    "group": "G2",
+    "item_id": "p3_char_0285_师",
+    "abs": 420,
+    "char": "师",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0009": {
+    "group": "G1",
+    "item_id": "p3_char_0293_来",
+    "abs": 428,
+    "char": "来",
+    "batch": "B9",
+    "original_verdict": "PASS"
+  },
+  "R0010": {
+    "group": "G2",
+    "item_id": "p3_char_0439_将",
+    "abs": 574,
+    "char": "将",
+    "batch": "B12",
+    "original_verdict": "FAIL"
+  },
+  "R0011": {
+    "group": "G4",
+    "item_id": "p3_char_0323_形",
+    "abs": 458,
+    "char": "形",
+    "batch": "B9",
+    "original_verdict": "PASS"
+  },
+  "R0012": {
+    "group": "G3",
+    "item_id": "p3_char_0407_规",
+    "abs": 542,
+    "char": "规",
+    "batch": "B11",
+    "original_verdict": "FAIL"
+  },
+  "R0013": {
+    "group": "G5",
+    "item_id": "p3_char_0461_亲",
+    "abs": 596,
+    "char": "亲",
+    "batch": "G5_B12",
+    "original_verdict": "FAIL"
+  },
+  "R0014": {
+    "group": "G2",
+    "item_id": "p3_char_0530_痂",
+    "abs": 665,
+    "char": "痂",
+    "batch": "B13",
+    "original_verdict": "C"
+  },
+  "R0015": {
+    "group": "G2",
+    "item_id": "p3_char_0443_面",
+    "abs": 578,
+    "char": "面",
+    "batch": "B12",
+    "original_verdict": "FAIL"
+  },
+  "R0016": {
+    "group": "G3",
+    "item_id": "p3_char_0373_者",
+    "abs": 508,
+    "char": "者",
+    "batch": "B10",
+    "original_verdict": "PASS"
+  },
+  "R0017": {
+    "group": "G1",
+    "item_id": "p3_char_0513_通",
+    "abs": 648,
+    "char": "通",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0018": {
+    "group": "G4",
+    "item_id": "p3_char_0459_带",
+    "abs": 594,
+    "char": "带",
+    "batch": "B12",
+    "original_verdict": "FAIL"
+  },
+  "R0019": {
+    "group": "G4",
+    "item_id": "p3_char_0389_话",
+    "abs": 524,
+    "char": "话",
+    "batch": "B11",
+    "original_verdict": "PASS"
+  },
+  "R0020": {
+    "group": "G4",
+    "item_id": "p3_char_0337_张",
+    "abs": 472,
+    "char": "张",
+    "batch": "B10",
+    "original_verdict": "C"
+  },
+  "R0021": {
+    "group": "G5",
+    "item_id": "p3_char_0447_信",
+    "abs": 582,
+    "char": "信",
+    "batch": "G5_B12",
+    "original_verdict": "A"
+  },
+  "R0022": {
+    "group": "G3",
+    "item_id": "p3_char_0362_甾",
+    "abs": 497,
+    "char": "甾",
+    "batch": "B10",
+    "original_verdict": "C"
+  },
+  "R0023": {
+    "group": "G2",
+    "item_id": "p3_char_0330_佉",
+    "abs": 465,
+    "char": "佉",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0024": {
+    "group": "G4",
+    "item_id": "p3_char_0430_畈",
+    "abs": 565,
+    "char": "畈",
+    "batch": "B11",
+    "original_verdict": "FAIL"
+  },
+  "R0025": {
+    "group": "G2",
+    "item_id": "p3_char_0316_伺",
+    "abs": 451,
+    "char": "伺",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0026": {
+    "group": "G2",
+    "item_id": "p3_char_0313_位",
+    "abs": 448,
+    "char": "位",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0027": {
+    "group": "G5",
+    "item_id": "p3_char_0372_疌",
+    "abs": 507,
+    "char": "疌",
+    "batch": "G5_B10",
+    "original_verdict": "FAIL"
+  },
+  "R0028": {
+    "group": "G4",
+    "item_id": "p3_char_0434_畎",
+    "abs": 569,
+    "char": "畎",
+    "batch": "B12",
+    "original_verdict": "C"
+  },
+  "R0029": {
+    "group": "G3",
+    "item_id": "p3_char_0349_改",
+    "abs": 484,
+    "char": "改",
+    "batch": "B10",
+    "original_verdict": "FAIL"
+  },
+  "R0030": {
+    "group": "G5",
+    "item_id": "p3_char_0444_疣",
+    "abs": 579,
+    "char": "疣",
+    "batch": "G5_B12",
+    "original_verdict": "PASS"
+  },
+  "R0031": {
+    "group": "G2",
+    "item_id": "p3_char_0423_苦",
+    "abs": 558,
+    "char": "苦",
+    "batch": "B11",
+    "original_verdict": "PASS"
+  },
+  "R0032": {
+    "group": "G2",
+    "item_id": "p3_char_0348_佟",
+    "abs": 483,
+    "char": "佟",
+    "batch": "B10",
+    "original_verdict": "FAIL"
+  },
+  "R0033": {
+    "group": "G2",
+    "item_id": "p3_char_0324_但",
+    "abs": 459,
+    "char": "但",
+    "batch": "B9",
+    "original_verdict": "PASS"
+  },
+  "R0034": {
+    "group": "G2",
+    "item_id": "p3_char_0451_给",
+    "abs": 586,
+    "char": "给",
+    "batch": "B12",
+    "original_verdict": "PASS"
+  },
+  "R0035": {
+    "group": "G1",
+    "item_id": "p3_char_0517_真",
+    "abs": 652,
+    "char": "真",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0036": {
+    "group": "G4",
+    "item_id": "p3_char_0399_往",
+    "abs": 534,
+    "char": "往",
+    "batch": "B11",
+    "original_verdict": "A"
+  },
+  "R0037": {
+    "group": "G5",
+    "item_id": "p3_char_0312_伲",
+    "abs": 447,
+    "char": "伲",
+    "batch": "G5_B9",
+    "original_verdict": "C"
+  },
+  "R0038": {
+    "group": "G1",
+    "item_id": "p3_char_0361_到",
+    "abs": 496,
+    "char": "到",
+    "batch": "B10",
+    "original_verdict": "FAIL"
+  },
+  "R0039": {
+    "group": "G4",
+    "item_id": "p3_char_0366_畅",
+    "abs": 501,
+    "char": "畅",
+    "batch": "B10",
+    "original_verdict": "FAIL"
+  },
+  "R0040": {
+    "group": "G3",
+    "item_id": "p3_char_0529_热",
+    "abs": 664,
+    "char": "热",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0041": {
+    "group": "G5",
+    "item_id": "p3_char_0507_高",
+    "abs": 642,
+    "char": "高",
+    "batch": "G5_B13",
+    "original_verdict": "PASS"
+  },
+  "R0042": {
+    "group": "G5",
+    "item_id": "p3_char_0454_疭",
+    "abs": 589,
+    "char": "疭",
+    "batch": "G5_B12",
+    "original_verdict": "FAIL"
+  },
+  "R0043": {
+    "group": "G5",
+    "item_id": "p3_char_0326_佇",
+    "abs": 461,
+    "char": "佇",
+    "batch": "G5_B9",
+    "original_verdict": "FAIL"
+  },
+  "R0044": {
+    "group": "G1",
+    "item_id": "p3_char_0488_俑",
+    "abs": 623,
+    "char": "俑",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0045": {
+    "group": "G5",
+    "item_id": "p3_char_0492_俚",
+    "abs": 627,
+    "char": "俚",
+    "batch": "G5_B13",
+    "original_verdict": "A"
+  },
+  "R0046": {
+    "group": "G5",
+    "item_id": "p3_char_0390_佬",
+    "abs": 525,
+    "char": "佬",
+    "batch": "G5_B11",
+    "original_verdict": "PASS"
+  },
+  "R0047": {
+    "group": "G2",
+    "item_id": "p3_char_0334_佔",
+    "abs": 469,
+    "char": "佔",
+    "batch": "B10",
+    "original_verdict": "FAIL"
+  },
+  "R0048": {
+    "group": "G4",
+    "item_id": "p3_char_0318_伽",
+    "abs": 453,
+    "char": "伽",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0049": {
+    "group": "G3",
+    "item_id": "p3_char_0291_这",
+    "abs": 426,
+    "char": "这",
+    "batch": "B9",
+    "original_verdict": "PASS"
+  },
+  "R0050": {
+    "group": "G4",
+    "item_id": "p3_char_0432_畋",
+    "abs": 567,
+    "char": "畋",
+    "batch": "B11",
+    "original_verdict": "C"
+  },
+  "R0051": {
+    "group": "G2",
+    "item_id": "p3_char_0445_点",
+    "abs": 580,
+    "char": "点",
+    "batch": "B12",
+    "original_verdict": "PASS"
+  },
+  "R0052": {
+    "group": "G1",
+    "item_id": "p3_char_0359_的",
+    "abs": 494,
+    "char": "的",
+    "batch": "B10",
+    "original_verdict": "PASS"
+  },
+  "R0053": {
+    "group": "G3",
+    "item_id": "p3_char_0462_皈",
+    "abs": 597,
+    "char": "皈",
+    "batch": "B12",
+    "original_verdict": "FAIL"
+  },
+  "R0054": {
+    "group": "G2",
+    "item_id": "p3_char_0343_即",
+    "abs": 478,
+    "char": "即",
+    "batch": "B10",
+    "original_verdict": "FAIL"
+  },
+  "R0055": {
+    "group": "G3",
+    "item_id": "p3_char_0305_还",
+    "abs": 440,
+    "char": "还",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0056": {
+    "group": "G1",
+    "item_id": "p3_char_0411_受",
+    "abs": 546,
+    "char": "受",
+    "batch": "B11",
+    "original_verdict": "FAIL"
+  },
+  "R0057": {
+    "group": "G1",
+    "item_id": "p3_char_0375_经",
+    "abs": 510,
+    "char": "经",
+    "batch": "B10",
+    "original_verdict": "FAIL"
+  },
+  "R0058": {
+    "group": "G3",
+    "item_id": "p3_char_0527_造",
+    "abs": 662,
+    "char": "造",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0059": {
+    "group": "G2",
+    "item_id": "p3_char_0511_海",
+    "abs": 646,
+    "char": "海",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0060": {
+    "group": "G4",
+    "item_id": "p3_char_0294_町",
+    "abs": 429,
+    "char": "町",
+    "batch": "B9",
+    "original_verdict": "PASS"
+  },
+  "R0061": {
+    "group": "G1",
+    "item_id": "p3_char_0401_取",
+    "abs": 536,
+    "char": "取",
+    "batch": "B11",
+    "original_verdict": "FAIL"
+  },
+  "R0062": {
+    "group": "G3",
+    "item_id": "p3_char_0331_更",
+    "abs": 466,
+    "char": "更",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0063": {
+    "group": "G3",
+    "item_id": "p3_char_0403_放",
+    "abs": 538,
+    "char": "放",
+    "batch": "B11",
+    "original_verdict": "FAIL"
+  },
+  "R0064": {
+    "group": "G4",
+    "item_id": "p3_char_0515_原",
+    "abs": 650,
+    "char": "原",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0065": {
+    "group": "G2",
+    "item_id": "p3_char_0378_疝",
+    "abs": 513,
+    "char": "疝",
+    "batch": "B10",
+    "original_verdict": "C"
+  },
+  "R0066": {
+    "group": "G3",
+    "item_id": "p3_char_0477_南",
+    "abs": 612,
+    "char": "南",
+    "batch": "B12",
+    "original_verdict": "FAIL"
+  },
+  "R0067": {
+    "group": "G4",
+    "item_id": "p3_char_0465_选",
+    "abs": 600,
+    "char": "选",
+    "batch": "B12",
+    "original_verdict": "PASS"
+  },
+  "R0068": {
+    "group": "G2",
+    "item_id": "p3_char_0510_畟",
+    "abs": 645,
+    "char": "畟",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0069": {
+    "group": "G5",
+    "item_id": "p3_char_0344_佝",
+    "abs": 479,
+    "char": "佝",
+    "batch": "G5_B10",
+    "original_verdict": "PASS"
+  },
+  "R0070": {
+    "group": "G1",
+    "item_id": "p3_char_0320_伾",
+    "abs": 455,
+    "char": "伾",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0071": {
+    "group": "G4",
+    "item_id": "p3_char_0311_身",
+    "abs": 446,
+    "char": "身",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0072": {
+    "group": "G1",
+    "item_id": "p3_char_0475_战",
+    "abs": 610,
+    "char": "战",
+    "batch": "B12",
+    "original_verdict": "FAIL"
+  },
+  "R0073": {
+    "group": "G3",
+    "item_id": "p3_char_0289_我",
+    "abs": 424,
+    "char": "我",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0074": {
+    "group": "G1",
+    "item_id": "p3_char_0456_疮",
+    "abs": 591,
+    "char": "疮",
+    "batch": "B12",
+    "original_verdict": "FAIL"
+  },
+  "R0075": {
+    "group": "G2",
+    "item_id": "p3_char_0532_亳",
+    "abs": 667,
+    "char": "亳",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0076": {
+    "group": "G5",
+    "item_id": "p3_char_0286_冱",
+    "abs": 421,
+    "char": "冱",
+    "batch": "G5_B9",
+    "original_verdict": "FAIL"
+  },
+  "R0077": {
+    "group": "G2",
+    "item_id": "p3_char_0472_侷",
+    "abs": 607,
+    "char": "侷",
+    "batch": "B12",
+    "original_verdict": "FAIL"
+  },
+  "R0078": {
+    "group": "G1",
+    "item_id": "p3_char_0292_甹",
+    "abs": 427,
+    "char": "甹",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0079": {
+    "group": "G5",
+    "item_id": "p3_char_0295_时",
+    "abs": 430,
+    "char": "时",
+    "batch": "G5_B9",
+    "original_verdict": "PASS"
+  },
+  "R0080": {
+    "group": "G5",
+    "item_id": "p3_char_0525_部",
+    "abs": 660,
+    "char": "部",
+    "batch": "G5_B13",
+    "original_verdict": "PASS"
+  },
+  "R0081": {
+    "group": "G1",
+    "item_id": "p3_char_0522_疴",
+    "abs": 657,
+    "char": "疴",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0082": {
+    "group": "G1",
+    "item_id": "p3_char_0508_畝",
+    "abs": 643,
+    "char": "畝",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0083": {
+    "group": "G4",
+    "item_id": "p3_char_0478_俉",
+    "abs": 613,
+    "char": "俉",
+    "batch": "B12",
+    "original_verdict": "FAIL"
+  },
+  "R0084": {
+    "group": "G3",
+    "item_id": "p3_char_0327_识",
+    "abs": 462,
+    "char": "识",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0085": {
+    "group": "G2",
+    "item_id": "p3_char_0533_值",
+    "abs": 668,
+    "char": "值",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0086": {
+    "group": "G1",
+    "item_id": "p3_char_0352_佥",
+    "abs": 487,
+    "char": "佥",
+    "batch": "B10",
+    "original_verdict": "FAIL"
+  },
+  "R0087": {
+    "group": "G2",
+    "item_id": "p3_char_0431_说",
+    "abs": 566,
+    "char": "说",
+    "batch": "B11",
+    "original_verdict": "C"
+  },
+  "R0088": {
+    "group": "G3",
+    "item_id": "p3_char_0382_疠",
+    "abs": 517,
+    "char": "疠",
+    "batch": "B10",
+    "original_verdict": "FAIL"
+  },
+  "R0089": {
+    "group": "G1",
+    "item_id": "p3_char_0317_员",
+    "abs": 452,
+    "char": "员",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0090": {
+    "group": "G5",
+    "item_id": "p3_char_0498_俞",
+    "abs": 633,
+    "char": "俞",
+    "batch": "G5_B13",
+    "original_verdict": "A"
+  },
+  "R0091": {
+    "group": "G2",
+    "item_id": "p3_char_0466_盃",
+    "abs": 601,
+    "char": "盃",
+    "batch": "B12",
+    "original_verdict": "C"
+  },
+  "R0092": {
+    "group": "G5",
+    "item_id": "p3_char_0491_除",
+    "abs": 626,
+    "char": "除",
+    "batch": "G5_B13",
+    "original_verdict": "C"
+  },
+  "R0093": {
+    "group": "G1",
+    "item_id": "p3_char_0471_总",
+    "abs": 606,
+    "char": "总",
+    "batch": "B12",
+    "original_verdict": "FAIL"
+  },
+  "R0094": {
+    "group": "G3",
+    "item_id": "p3_char_0284_龹",
+    "abs": 419,
+    "char": "龹",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0095": {
+    "group": "G4",
+    "item_id": "p3_char_0308_亩",
+    "abs": 443,
+    "char": "亩",
+    "batch": "B9",
+    "original_verdict": "PASS"
+  },
+  "R0096": {
+    "group": "G5",
+    "item_id": "p3_char_0325_状",
+    "abs": 460,
+    "char": "状",
+    "batch": "G5_B9",
+    "original_verdict": "PASS"
+  },
+  "R0097": {
+    "group": "G4",
+    "item_id": "p3_char_0309_两",
+    "abs": 444,
+    "char": "两",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0098": {
+    "group": "G5",
+    "item_id": "p3_char_0363_国",
+    "abs": 498,
+    "char": "国",
+    "batch": "G5_B10",
+    "original_verdict": "PASS"
+  },
+  "R0099": {
+    "group": "G5",
+    "item_id": "p3_char_0329_运",
+    "abs": 464,
+    "char": "运",
+    "batch": "G5_B9",
+    "original_verdict": "FAIL"
+  },
+  "R0100": {
+    "group": "G3",
+    "item_id": "p3_char_0290_甸",
+    "abs": 425,
+    "char": "甸",
+    "batch": "B9",
+    "original_verdict": "PASS"
+  },
+  "R0101": {
+    "group": "G3",
+    "item_id": "p3_char_0473_城",
+    "abs": 608,
+    "char": "城",
+    "batch": "B12",
+    "original_verdict": "FAIL"
+  },
+  "R0102": {
+    "group": "G3",
+    "item_id": "p3_char_0315_声",
+    "abs": 450,
+    "char": "声",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0103": {
+    "group": "G1",
+    "item_id": "p3_char_0299_里",
+    "abs": 434,
+    "char": "里",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0104": {
+    "group": "G3",
+    "item_id": "p3_char_0436_畏",
+    "abs": 571,
+    "char": "畏",
+    "batch": "B12",
+    "original_verdict": "FAIL"
+  },
+  "R0105": {
+    "group": "G2",
+    "item_id": "p3_char_0338_佘",
+    "abs": 473,
+    "char": "佘",
+    "batch": "B10",
+    "original_verdict": "A"
+  },
+  "R0106": {
+    "group": "G1",
+    "item_id": "p3_char_0449_美",
+    "abs": 584,
+    "char": "美",
+    "batch": "B12",
+    "original_verdict": "FAIL"
+  },
+  "R0107": {
+    "group": "G1",
+    "item_id": "p3_char_0425_具",
+    "abs": 560,
+    "char": "具",
+    "batch": "B11",
+    "original_verdict": "C"
+  },
+  "R0108": {
+    "group": "G1",
+    "item_id": "p3_char_0418_例",
+    "abs": 553,
+    "char": "例",
+    "batch": "B11",
+    "original_verdict": "FAIL"
+  },
+  "R0109": {
+    "group": "G1",
+    "item_id": "p3_char_0446_疤",
+    "abs": 581,
+    "char": "疤",
+    "batch": "B12",
+    "original_verdict": "FAIL"
+  },
+  "R0110": {
+    "group": "G5",
+    "item_id": "p3_char_0357_花",
+    "abs": 492,
+    "char": "花",
+    "batch": "G5_B10",
+    "original_verdict": "PASS"
+  },
+  "R0111": {
+    "group": "G3",
+    "item_id": "p3_char_0502_畚",
+    "abs": 637,
+    "char": "畚",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0112": {
+    "group": "G4",
+    "item_id": "p3_char_0424_侑",
+    "abs": 559,
+    "char": "侑",
+    "batch": "B11",
+    "original_verdict": "PASS"
+  },
+  "R0113": {
+    "group": "G5",
+    "item_id": "p3_char_0504_畛",
+    "abs": 639,
+    "char": "畛",
+    "batch": "G5_B13",
+    "original_verdict": "A"
+  },
+  "R0114": {
+    "group": "G5",
+    "item_id": "p3_char_0383_些",
+    "abs": 518,
+    "char": "些",
+    "batch": "G5_B10",
+    "original_verdict": "A"
+  },
+  "R0115": {
+    "group": "G4",
+    "item_id": "p3_char_0429_是",
+    "abs": 564,
+    "char": "是",
+    "batch": "B11",
+    "original_verdict": "A"
+  },
+  "R0116": {
+    "group": "G2",
+    "item_id": "p3_char_0346_佞",
+    "abs": 481,
+    "char": "佞",
+    "batch": "B10",
+    "original_verdict": "FAIL"
+  },
+  "R0117": {
+    "group": "G3",
+    "item_id": "p3_char_0402_佻",
+    "abs": 537,
+    "char": "佻",
+    "batch": "B11",
+    "original_verdict": "FAIL"
+  },
+  "R0118": {
+    "group": "G5",
+    "item_id": "p3_char_0408_佾",
+    "abs": 543,
+    "char": "佾",
+    "batch": "G5_B11",
+    "original_verdict": "FAIL"
+  },
+  "R0119": {
+    "group": "G1",
+    "item_id": "p3_char_0300_乱",
+    "abs": 435,
+    "char": "乱",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0120": {
+    "group": "G4",
+    "item_id": "p3_char_0438_畐",
+    "abs": 573,
+    "char": "畐",
+    "batch": "B12",
+    "original_verdict": "PASS"
+  },
+  "R0121": {
+    "group": "G4",
+    "item_id": "p3_char_0303_进",
+    "abs": 438,
+    "char": "进",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0122": {
+    "group": "G1",
+    "item_id": "p3_char_0395_金",
+    "abs": 530,
+    "char": "金",
+    "batch": "B11",
+    "original_verdict": "FAIL"
+  },
+  "R0123": {
+    "group": "G3",
+    "item_id": "p3_char_0455_相",
+    "abs": 590,
+    "char": "相",
+    "batch": "B12",
+    "original_verdict": "PASS"
+  },
+  "R0124": {
+    "group": "G4",
+    "item_id": "p3_char_0518_疱",
+    "abs": 653,
+    "char": "疱",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0125": {
+    "group": "G4",
+    "item_id": "p3_char_0336_佗",
+    "abs": 471,
+    "char": "佗",
+    "batch": "B10",
+    "original_verdict": "C"
+  },
+  "R0126": {
+    "group": "G3",
+    "item_id": "p3_char_0500_丵",
+    "abs": 635,
+    "char": "丵",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0127": {
+    "group": "G1",
+    "item_id": "p3_char_0298_丽",
+    "abs": 433,
+    "char": "丽",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0128": {
+    "group": "G1",
+    "item_id": "p3_char_0302_疔",
+    "abs": 437,
+    "char": "疔",
+    "batch": "B9",
+    "original_verdict": "FAIL"
+  },
+  "R0129": {
+    "group": "G3",
+    "item_id": "p3_char_0387_果",
+    "abs": 522,
+    "char": "果",
+    "batch": "B11",
+    "original_verdict": "PASS"
+  },
+  "R0130": {
+    "group": "G1",
+    "item_id": "p3_char_0448_疥",
+    "abs": 583,
+    "char": "疥",
+    "batch": "B12",
+    "original_verdict": "FAIL"
+  },
+  "R0131": {
+    "group": "G2",
+    "item_id": "p3_char_0474_係",
+    "abs": 609,
+    "char": "係",
+    "batch": "B12",
+    "original_verdict": "FAIL"
+  },
+  "R0132": {
+    "group": "G2",
+    "item_id": "p3_char_0483_草",
+    "abs": 618,
+    "char": "草",
+    "batch": "B12",
+    "original_verdict": "PASS"
+  },
+  "R0133": {
+    "group": "G4",
+    "item_id": "p3_char_0468_盅",
+    "abs": 603,
+    "char": "盅",
+    "batch": "B12",
+    "original_verdict": "PASS"
+  },
+  "R0134": {
+    "group": "G3",
+    "item_id": "p3_char_0384_疡",
+    "abs": 519,
+    "char": "疡",
+    "batch": "B11",
+    "original_verdict": "FAIL"
+  },
+  "R0135": {
+    "group": "G5",
+    "item_id": "p3_char_0463_神",
+    "abs": 598,
+    "char": "神",
+    "batch": "G5_B12",
+    "original_verdict": "A"
+  },
+  "R0136": {
+    "group": "G2",
+    "item_id": "p3_char_0410_侃",
+    "abs": 545,
+    "char": "侃",
+    "batch": "B11",
+    "original_verdict": "FAIL"
+  },
+  "R0137": {
+    "group": "G4",
+    "item_id": "p3_char_0499_能",
+    "abs": 634,
+    "char": "能",
+    "batch": "B13",
+    "original_verdict": "C"
+  },
+  "R0138": {
+    "group": "G2",
+    "item_id": "p3_char_0481_济",
+    "abs": 616,
+    "char": "济",
+    "batch": "B12",
+    "original_verdict": "FAIL"
+  },
+  "R0139": {
+    "group": "G4",
+    "item_id": "p3_char_0353_找",
+    "abs": 488,
+    "char": "找",
+    "batch": "B10",
+    "original_verdict": "C"
+  },
+  "R0140": {
+    "group": "G4",
+    "item_id": "p3_char_0484_俏",
+    "abs": 619,
+    "char": "俏",
+    "batch": "B13",
+    "original_verdict": "PASS"
+  },
+  "R0141": {
+    "group": "G4",
+    "item_id": "p3_char_0339_每",
+    "abs": 474,
+    "char": "每",
+    "batch": "B10",
+    "original_verdict": "C"
+  },
+  "R0142": {
+    "group": "G5",
+    "item_id": "p3_char_0422_侍",
+    "abs": 557,
+    "char": "侍",
+    "batch": "G5_B11",
+    "original_verdict": "PASS"
+  },
+  "R0143": {
+    "group": "G5",
+    "item_id": "p3_char_0304_疖",
+    "abs": 439,
+    "char": "疖",
+    "batch": "G5_B9",
+    "original_verdict": "C"
+  },
+  "R0144": {
+    "group": "G3",
+    "item_id": "p3_char_0467_结",
+    "abs": 602,
+    "char": "结",
+    "batch": "B12",
+    "original_verdict": "C"
+  },
+  "R0145": {
+    "group": "G2",
+    "item_id": "p3_char_0514_乘",
+    "abs": 649,
+    "char": "乘",
+    "batch": "B13",
+    "original_verdict": "FAIL"
+  },
+  "R0146": {
+    "group": "G4",
+    "item_id": "p3_char_0342_佛",
+    "abs": 477,
+    "char": "佛",
+    "batch": "B10",
+    "original_verdict": "FAIL"
+  },
+  "R0147": {
+    "group": "G1",
+    "item_id": "p3_char_0397_空",
+    "abs": 532,
+    "char": "空",
+    "batch": "B11",
+    "original_verdict": "C"
+  },
+  "R0148": {
+    "group": "G5",
+    "item_id": "p3_char_0364_畀",
+    "abs": 499,
+    "char": "畀",
+    "batch": "G5_B10",
+    "original_verdict": "PASS"
+  },
+  "R0149": {
+    "group": "G2",
+    "item_id": "p3_char_0419_知",
+    "abs": 554,
+    "char": "知",
+    "batch": "B11",
+    "original_verdict": "C"
+  },
+  "R0150": {
+    "group": "G3",
+    "item_id": "p3_char_0427_线",
+    "abs": 562,
+    "char": "线",
+    "batch": "B11",
+    "original_verdict": "FAIL"
+  }
+}

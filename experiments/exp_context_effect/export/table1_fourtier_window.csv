@@ -1,0 +1,6 @@
+group,label,perfect,pass,close,fail,success_n,success_rate
+G1,G1 no memory,6,33,25,186,39,15.6
+G2,G2 notes,5,39,34,172,44,17.6
+G3,G3 code bank,1,56,34,159,57,22.8
+G4,G4 grid + supervision,51,57,41,101,108,43.2
+G5,G5 code bank + supervision,38,80,33,99,118,47.2

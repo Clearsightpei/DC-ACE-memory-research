@@ -1,0 +1,11 @@
+{
+  "created": "2026-10-06T19:25:16",
+  "seed": 20261006,
+  "per_group": 30,
+  "n_selected": 150,
+  "window": "B9-B13, curriculum positions 419-668 (250 items per group)",
+  "sampling": "item-disjoint: 150 distinct characters, 30 per group",
+  "selection_sha256": "d40a3554f8b8fedc37de06ed296998809ddcd2bada8a4a90ad7599e5b14ac222",
+  "source": "export/item_grades.csv, first attempts only",
+  "note": "Sample frozen at creation. Re-running with the same seed and the same item_grades.csv reproduces it exactly."
+}

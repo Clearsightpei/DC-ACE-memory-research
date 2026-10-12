@@ -1,0 +1,6 @@
+group,label,success_n_all668,success_rate_all668,perfect_n_window,perfect_rate_window
+G1,G1 no memory,219,32.8,6,2.4
+G2,G2 notes,250,37.4,5,2.0
+G3,G3 code bank,238,35.6,1,0.4
+G4,G4 grid + supervision,332,49.7,51,20.4
+G5,G5 code bank + supervision,359,53.7,38,15.2

@@ -1,0 +1,21 @@
+# Observed memory checkpoints (paper Table 2).
+# G2 unit: lines of curator-authored operational memory --
+#   all curator-authored .md available to support drawing,
+#   EXCLUDING auto-generated pass_index.md and process records
+#   (evolution.md, scans/). At position 668 this is 5,111 lines:
+#   2,556 in errata.md + 2,555 across seven other files.
+# G3/G4 unit: count of promoted bank primitives (.py in
+#   success_bank/code/). G4's decrease at 668 reflects pruning.
+# Units are architecture-specific and are NOT comparable
+#   information quantities across conditions.
+# Values are the four observed git checkpoints; intermediate
+#   per-batch values were NOT recorded and are not interpolated here.
+# G5 is absent: it was created post-B11 and has no checkpoint series;
+#   its per-batch bank counts are in groups/G5_code_bank_mmh/evolution.md.
+# Supersedes the earlier memory_growth_full.csv, which used a
+#   different G2 counting definition (6,694) and linear interpolation.
+curriculum_position,git_commit,g2_operational_memory_lines,g3_bank_primitives,g4_bank_primitives
+0,b502d0ed,0,0,0
+150,9ae9ffde,1011,67,78
+400,685bde5d,3707,184,140
+668,6b761109,5111,251,130

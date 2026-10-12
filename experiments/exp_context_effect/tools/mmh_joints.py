@@ -18,9 +18,15 @@ from typing import List, Dict, Tuple
 
 # Point sys.path at run_6's tools so we can import the vetted MMH modules.
 _HERE = os.path.dirname(os.path.abspath(__file__))
+# The exploratory runs/ tree lives on the `legacy` branch; the three modules
+# this file needs are vendored verbatim under tools/mmh_vendor/ so that a clean
+# checkout of main can run the structural-supervision tooling. Fall back to the
+# original run_6 location if it is present.
+_VENDOR = os.path.join(_HERE, "mmh_vendor")
 _RUN6_TOOLS = os.path.abspath(os.path.join(_HERE, "..", "..", "..", "runs", "run_6", "tools"))
-if _RUN6_TOOLS not in sys.path:
-    sys.path.insert(0, _RUN6_TOOLS)
+for _p in (_VENDOR, _RUN6_TOOLS):
+    if os.path.isdir(_p) and _p not in sys.path:
+        sys.path.insert(0, _p)
 
 from joint_detector import (  # noqa: E402
     find_joints,

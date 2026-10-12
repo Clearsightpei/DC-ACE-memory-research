@@ -102,3 +102,44 @@ Aggregate token-usage estimate (~112M subagent tokens total; approximately USD $
 ## Provenance
 
 Prepared by Claude Code from repository state at commit 6b761109 on branch `feature/rapidocr-judge`. Every file in this export is derived from data already committed to the repository; no new judgments were run to produce this package.
+
+---
+
+## Camera-ready additions (v1.8, 2026-10)
+
+| file | paper reference |
+|---|---|
+| `table1_main.csv` | Table 1 — first-attempt success (all 668) and Perfect rate (B9–B13) |
+| `table1_fourtier_window.csv` | Table 4 — four-tier distribution on the common 250-item window |
+| `memory_checkpoints.csv` | Table 2 — observed memory checkpoints (supersedes `memory_growth_full.csv`) |
+| `fig3_matched_advantage.csv` | Figure 3 — batch-matched advantage over the control, with OLS fits and 95% bands |
+| `mmh_joint_table.csv` | §2.4 / Appendix B — derived per-character structural supervision (533 characters) |
+| `reliability/` | §2.5 / Appendix E — second-rater study: seed, manifest, both raters' labels |
+
+### Reproducing every statistic in the paper
+
+    python3 analysis/reproduce_paper_stats.py
+
+Regenerates Tables 1, 3 and 4 and all of §3.3–§3.6 from `item_grades.csv`
+alone, and rewrites `fig3_matched_advantage.csv`. Requires numpy and scipy.
+
+    python3 analysis/make_release_exports.py
+
+Rebuilds `memory_checkpoints.csv` and `mmh_joint_table.csv`. The joint table
+additionally requires upstream MakeMeAHanzi `graphics.txt` at
+`draw_character/graphics.txt` (not redistributed here; see
+`MakeMeAHanzi_LICENSE.txt`).
+
+### Reproducing the inter-rater agreement
+
+    python3 tools/score_reliability.py --dir export/reliability
+
+### Two scope notes
+
+- **Memory snapshots** under `snapshots/` cover G1–G4 (13–14 positions each).
+  G5 was created after B11 and has no snapshot series; its per-batch bank
+  counts are in `groups/G5_code_bank_mmh/evolution.md` and its final memory
+  state is in that directory.
+- **Counting conventions** (first attempt vs retry, Success definition,
+  exclusion of the B7r diagnostic reruns) are in `COUNTING_RULE.md` and
+  restated in the header of `reproduce_paper_stats.py`.

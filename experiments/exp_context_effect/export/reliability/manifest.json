@@ -1,0 +1,1956 @@
+{
+  "batch_id": "reliability_study",
+  "shuffle_seed": 20261006,
+  "items": [
+    {
+      "id": "R0001",
+      "phase": "character",
+      "target_label": "乖",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0001_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0001.png"
+        }
+      ]
+    },
+    {
+      "id": "R0002",
+      "phase": "character",
+      "target_label": "实",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0002_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0002.png"
+        }
+      ]
+    },
+    {
+      "id": "R0003",
+      "phase": "character",
+      "target_label": "畢",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0003_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0003.png"
+        }
+      ]
+    },
+    {
+      "id": "R0004",
+      "phase": "character",
+      "target_label": "畜",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0004_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0004.png"
+        }
+      ]
+    },
+    {
+      "id": "R0005",
+      "phase": "character",
+      "target_label": "佧",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0005_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0005.png"
+        }
+      ]
+    },
+    {
+      "id": "R0006",
+      "phase": "character",
+      "target_label": "侈",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0006_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0006.png"
+        }
+      ]
+    },
+    {
+      "id": "R0007",
+      "phase": "character",
+      "target_label": "伯",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0007_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0007.png"
+        }
+      ]
+    },
+    {
+      "id": "R0008",
+      "phase": "character",
+      "target_label": "师",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0008_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0008.png"
+        }
+      ]
+    },
+    {
+      "id": "R0009",
+      "phase": "character",
+      "target_label": "来",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0009_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0009.png"
+        }
+      ]
+    },
+    {
+      "id": "R0010",
+      "phase": "character",
+      "target_label": "将",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0010_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0010.png"
+        }
+      ]
+    },
+    {
+      "id": "R0011",
+      "phase": "character",
+      "target_label": "形",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0011_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0011.png"
+        }
+      ]
+    },
+    {
+      "id": "R0012",
+      "phase": "character",
+      "target_label": "规",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0012_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0012.png"
+        }
+      ]
+    },
+    {
+      "id": "R0013",
+      "phase": "character",
+      "target_label": "亲",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0013_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0013.png"
+        }
+      ]
+    },
+    {
+      "id": "R0014",
+      "phase": "character",
+      "target_label": "痂",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0014_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0014.png"
+        }
+      ]
+    },
+    {
+      "id": "R0015",
+      "phase": "character",
+      "target_label": "面",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0015_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0015.png"
+        }
+      ]
+    },
+    {
+      "id": "R0016",
+      "phase": "character",
+      "target_label": "者",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0016_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0016.png"
+        }
+      ]
+    },
+    {
+      "id": "R0017",
+      "phase": "character",
+      "target_label": "通",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0017_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0017.png"
+        }
+      ]
+    },
+    {
+      "id": "R0018",
+      "phase": "character",
+      "target_label": "带",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0018_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0018.png"
+        }
+      ]
+    },
+    {
+      "id": "R0019",
+      "phase": "character",
+      "target_label": "话",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0019_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0019.png"
+        }
+      ]
+    },
+    {
+      "id": "R0020",
+      "phase": "character",
+      "target_label": "张",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0020_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0020.png"
+        }
+      ]
+    },
+    {
+      "id": "R0021",
+      "phase": "character",
+      "target_label": "信",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0021_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0021.png"
+        }
+      ]
+    },
+    {
+      "id": "R0022",
+      "phase": "character",
+      "target_label": "甾",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0022_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0022.png"
+        }
+      ]
+    },
+    {
+      "id": "R0023",
+      "phase": "character",
+      "target_label": "佉",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0023_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0023.png"
+        }
+      ]
+    },
+    {
+      "id": "R0024",
+      "phase": "character",
+      "target_label": "畈",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0024_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0024.png"
+        }
+      ]
+    },
+    {
+      "id": "R0025",
+      "phase": "character",
+      "target_label": "伺",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0025_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0025.png"
+        }
+      ]
+    },
+    {
+      "id": "R0026",
+      "phase": "character",
+      "target_label": "位",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0026_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0026.png"
+        }
+      ]
+    },
+    {
+      "id": "R0027",
+      "phase": "character",
+      "target_label": "疌",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0027_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0027.png"
+        }
+      ]
+    },
+    {
+      "id": "R0028",
+      "phase": "character",
+      "target_label": "畎",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0028_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0028.png"
+        }
+      ]
+    },
+    {
+      "id": "R0029",
+      "phase": "character",
+      "target_label": "改",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0029_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0029.png"
+        }
+      ]
+    },
+    {
+      "id": "R0030",
+      "phase": "character",
+      "target_label": "疣",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0030_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0030.png"
+        }
+      ]
+    },
+    {
+      "id": "R0031",
+      "phase": "character",
+      "target_label": "苦",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0031_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0031.png"
+        }
+      ]
+    },
+    {
+      "id": "R0032",
+      "phase": "character",
+      "target_label": "佟",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0032_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0032.png"
+        }
+      ]
+    },
+    {
+      "id": "R0033",
+      "phase": "character",
+      "target_label": "但",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0033_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0033.png"
+        }
+      ]
+    },
+    {
+      "id": "R0034",
+      "phase": "character",
+      "target_label": "给",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0034_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0034.png"
+        }
+      ]
+    },
+    {
+      "id": "R0035",
+      "phase": "character",
+      "target_label": "真",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0035_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0035.png"
+        }
+      ]
+    },
+    {
+      "id": "R0036",
+      "phase": "character",
+      "target_label": "往",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0036_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0036.png"
+        }
+      ]
+    },
+    {
+      "id": "R0037",
+      "phase": "character",
+      "target_label": "伲",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0037_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0037.png"
+        }
+      ]
+    },
+    {
+      "id": "R0038",
+      "phase": "character",
+      "target_label": "到",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0038_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0038.png"
+        }
+      ]
+    },
+    {
+      "id": "R0039",
+      "phase": "character",
+      "target_label": "畅",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0039_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0039.png"
+        }
+      ]
+    },
+    {
+      "id": "R0040",
+      "phase": "character",
+      "target_label": "热",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0040_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0040.png"
+        }
+      ]
+    },
+    {
+      "id": "R0041",
+      "phase": "character",
+      "target_label": "高",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0041_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0041.png"
+        }
+      ]
+    },
+    {
+      "id": "R0042",
+      "phase": "character",
+      "target_label": "疭",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0042_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0042.png"
+        }
+      ]
+    },
+    {
+      "id": "R0043",
+      "phase": "character",
+      "target_label": "佇",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0043_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0043.png"
+        }
+      ]
+    },
+    {
+      "id": "R0044",
+      "phase": "character",
+      "target_label": "俑",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0044_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0044.png"
+        }
+      ]
+    },
+    {
+      "id": "R0045",
+      "phase": "character",
+      "target_label": "俚",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0045_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0045.png"
+        }
+      ]
+    },
+    {
+      "id": "R0046",
+      "phase": "character",
+      "target_label": "佬",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0046_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0046.png"
+        }
+      ]
+    },
+    {
+      "id": "R0047",
+      "phase": "character",
+      "target_label": "佔",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0047_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0047.png"
+        }
+      ]
+    },
+    {
+      "id": "R0048",
+      "phase": "character",
+      "target_label": "伽",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0048_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0048.png"
+        }
+      ]
+    },
+    {
+      "id": "R0049",
+      "phase": "character",
+      "target_label": "这",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0049_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0049.png"
+        }
+      ]
+    },
+    {
+      "id": "R0050",
+      "phase": "character",
+      "target_label": "畋",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0050_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0050.png"
+        }
+      ]
+    },
+    {
+      "id": "R0051",
+      "phase": "character",
+      "target_label": "点",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0051_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0051.png"
+        }
+      ]
+    },
+    {
+      "id": "R0052",
+      "phase": "character",
+      "target_label": "的",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0052_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0052.png"
+        }
+      ]
+    },
+    {
+      "id": "R0053",
+      "phase": "character",
+      "target_label": "皈",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0053_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0053.png"
+        }
+      ]
+    },
+    {
+      "id": "R0054",
+      "phase": "character",
+      "target_label": "即",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0054_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0054.png"
+        }
+      ]
+    },
+    {
+      "id": "R0055",
+      "phase": "character",
+      "target_label": "还",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0055_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0055.png"
+        }
+      ]
+    },
+    {
+      "id": "R0056",
+      "phase": "character",
+      "target_label": "受",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0056_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0056.png"
+        }
+      ]
+    },
+    {
+      "id": "R0057",
+      "phase": "character",
+      "target_label": "经",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0057_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0057.png"
+        }
+      ]
+    },
+    {
+      "id": "R0058",
+      "phase": "character",
+      "target_label": "造",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0058_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0058.png"
+        }
+      ]
+    },
+    {
+      "id": "R0059",
+      "phase": "character",
+      "target_label": "海",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0059_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0059.png"
+        }
+      ]
+    },
+    {
+      "id": "R0060",
+      "phase": "character",
+      "target_label": "町",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0060_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0060.png"
+        }
+      ]
+    },
+    {
+      "id": "R0061",
+      "phase": "character",
+      "target_label": "取",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0061_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0061.png"
+        }
+      ]
+    },
+    {
+      "id": "R0062",
+      "phase": "character",
+      "target_label": "更",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0062_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0062.png"
+        }
+      ]
+    },
+    {
+      "id": "R0063",
+      "phase": "character",
+      "target_label": "放",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0063_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0063.png"
+        }
+      ]
+    },
+    {
+      "id": "R0064",
+      "phase": "character",
+      "target_label": "原",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0064_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0064.png"
+        }
+      ]
+    },
+    {
+      "id": "R0065",
+      "phase": "character",
+      "target_label": "疝",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0065_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0065.png"
+        }
+      ]
+    },
+    {
+      "id": "R0066",
+      "phase": "character",
+      "target_label": "南",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0066_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0066.png"
+        }
+      ]
+    },
+    {
+      "id": "R0067",
+      "phase": "character",
+      "target_label": "选",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0067_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0067.png"
+        }
+      ]
+    },
+    {
+      "id": "R0068",
+      "phase": "character",
+      "target_label": "畟",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0068_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0068.png"
+        }
+      ]
+    },
+    {
+      "id": "R0069",
+      "phase": "character",
+      "target_label": "佝",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0069_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0069.png"
+        }
+      ]
+    },
+    {
+      "id": "R0070",
+      "phase": "character",
+      "target_label": "伾",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0070_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0070.png"
+        }
+      ]
+    },
+    {
+      "id": "R0071",
+      "phase": "character",
+      "target_label": "身",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0071_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0071.png"
+        }
+      ]
+    },
+    {
+      "id": "R0072",
+      "phase": "character",
+      "target_label": "战",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0072_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0072.png"
+        }
+      ]
+    },
+    {
+      "id": "R0073",
+      "phase": "character",
+      "target_label": "我",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0073_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0073.png"
+        }
+      ]
+    },
+    {
+      "id": "R0074",
+      "phase": "character",
+      "target_label": "疮",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0074_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0074.png"
+        }
+      ]
+    },
+    {
+      "id": "R0075",
+      "phase": "character",
+      "target_label": "亳",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0075_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0075.png"
+        }
+      ]
+    },
+    {
+      "id": "R0076",
+      "phase": "character",
+      "target_label": "冱",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0076_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0076.png"
+        }
+      ]
+    },
+    {
+      "id": "R0077",
+      "phase": "character",
+      "target_label": "侷",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0077_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0077.png"
+        }
+      ]
+    },
+    {
+      "id": "R0078",
+      "phase": "character",
+      "target_label": "甹",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0078_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0078.png"
+        }
+      ]
+    },
+    {
+      "id": "R0079",
+      "phase": "character",
+      "target_label": "时",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0079_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0079.png"
+        }
+      ]
+    },
+    {
+      "id": "R0080",
+      "phase": "character",
+      "target_label": "部",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0080_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0080.png"
+        }
+      ]
+    },
+    {
+      "id": "R0081",
+      "phase": "character",
+      "target_label": "疴",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0081_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0081.png"
+        }
+      ]
+    },
+    {
+      "id": "R0082",
+      "phase": "character",
+      "target_label": "畝",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0082_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0082.png"
+        }
+      ]
+    },
+    {
+      "id": "R0083",
+      "phase": "character",
+      "target_label": "俉",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0083_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0083.png"
+        }
+      ]
+    },
+    {
+      "id": "R0084",
+      "phase": "character",
+      "target_label": "识",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0084_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0084.png"
+        }
+      ]
+    },
+    {
+      "id": "R0085",
+      "phase": "character",
+      "target_label": "值",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0085_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0085.png"
+        }
+      ]
+    },
+    {
+      "id": "R0086",
+      "phase": "character",
+      "target_label": "佥",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0086_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0086.png"
+        }
+      ]
+    },
+    {
+      "id": "R0087",
+      "phase": "character",
+      "target_label": "说",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0087_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0087.png"
+        }
+      ]
+    },
+    {
+      "id": "R0088",
+      "phase": "character",
+      "target_label": "疠",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0088_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0088.png"
+        }
+      ]
+    },
+    {
+      "id": "R0089",
+      "phase": "character",
+      "target_label": "员",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0089_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0089.png"
+        }
+      ]
+    },
+    {
+      "id": "R0090",
+      "phase": "character",
+      "target_label": "俞",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0090_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0090.png"
+        }
+      ]
+    },
+    {
+      "id": "R0091",
+      "phase": "character",
+      "target_label": "盃",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0091_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0091.png"
+        }
+      ]
+    },
+    {
+      "id": "R0092",
+      "phase": "character",
+      "target_label": "除",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0092_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0092.png"
+        }
+      ]
+    },
+    {
+      "id": "R0093",
+      "phase": "character",
+      "target_label": "总",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0093_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0093.png"
+        }
+      ]
+    },
+    {
+      "id": "R0094",
+      "phase": "character",
+      "target_label": "龹",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0094_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0094.png"
+        }
+      ]
+    },
+    {
+      "id": "R0095",
+      "phase": "character",
+      "target_label": "亩",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0095_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0095.png"
+        }
+      ]
+    },
+    {
+      "id": "R0096",
+      "phase": "character",
+      "target_label": "状",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0096_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0096.png"
+        }
+      ]
+    },
+    {
+      "id": "R0097",
+      "phase": "character",
+      "target_label": "两",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0097_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0097.png"
+        }
+      ]
+    },
+    {
+      "id": "R0098",
+      "phase": "character",
+      "target_label": "国",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0098_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0098.png"
+        }
+      ]
+    },
+    {
+      "id": "R0099",
+      "phase": "character",
+      "target_label": "运",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0099_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0099.png"
+        }
+      ]
+    },
+    {
+      "id": "R0100",
+      "phase": "character",
+      "target_label": "甸",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0100_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0100.png"
+        }
+      ]
+    },
+    {
+      "id": "R0101",
+      "phase": "character",
+      "target_label": "城",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0101_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0101.png"
+        }
+      ]
+    },
+    {
+      "id": "R0102",
+      "phase": "character",
+      "target_label": "声",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0102_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0102.png"
+        }
+      ]
+    },
+    {
+      "id": "R0103",
+      "phase": "character",
+      "target_label": "里",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0103_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0103.png"
+        }
+      ]
+    },
+    {
+      "id": "R0104",
+      "phase": "character",
+      "target_label": "畏",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0104_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0104.png"
+        }
+      ]
+    },
+    {
+      "id": "R0105",
+      "phase": "character",
+      "target_label": "佘",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0105_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0105.png"
+        }
+      ]
+    },
+    {
+      "id": "R0106",
+      "phase": "character",
+      "target_label": "美",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0106_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0106.png"
+        }
+      ]
+    },
+    {
+      "id": "R0107",
+      "phase": "character",
+      "target_label": "具",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0107_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0107.png"
+        }
+      ]
+    },
+    {
+      "id": "R0108",
+      "phase": "character",
+      "target_label": "例",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0108_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0108.png"
+        }
+      ]
+    },
+    {
+      "id": "R0109",
+      "phase": "character",
+      "target_label": "疤",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0109_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0109.png"
+        }
+      ]
+    },
+    {
+      "id": "R0110",
+      "phase": "character",
+      "target_label": "花",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0110_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0110.png"
+        }
+      ]
+    },
+    {
+      "id": "R0111",
+      "phase": "character",
+      "target_label": "畚",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0111_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0111.png"
+        }
+      ]
+    },
+    {
+      "id": "R0112",
+      "phase": "character",
+      "target_label": "侑",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0112_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0112.png"
+        }
+      ]
+    },
+    {
+      "id": "R0113",
+      "phase": "character",
+      "target_label": "畛",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0113_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0113.png"
+        }
+      ]
+    },
+    {
+      "id": "R0114",
+      "phase": "character",
+      "target_label": "些",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0114_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0114.png"
+        }
+      ]
+    },
+    {
+      "id": "R0115",
+      "phase": "character",
+      "target_label": "是",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0115_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0115.png"
+        }
+      ]
+    },
+    {
+      "id": "R0116",
+      "phase": "character",
+      "target_label": "佞",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0116_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0116.png"
+        }
+      ]
+    },
+    {
+      "id": "R0117",
+      "phase": "character",
+      "target_label": "佻",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0117_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0117.png"
+        }
+      ]
+    },
+    {
+      "id": "R0118",
+      "phase": "character",
+      "target_label": "佾",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0118_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0118.png"
+        }
+      ]
+    },
+    {
+      "id": "R0119",
+      "phase": "character",
+      "target_label": "乱",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0119_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0119.png"
+        }
+      ]
+    },
+    {
+      "id": "R0120",
+      "phase": "character",
+      "target_label": "畐",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0120_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0120.png"
+        }
+      ]
+    },
+    {
+      "id": "R0121",
+      "phase": "character",
+      "target_label": "进",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0121_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0121.png"
+        }
+      ]
+    },
+    {
+      "id": "R0122",
+      "phase": "character",
+      "target_label": "金",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0122_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0122.png"
+        }
+      ]
+    },
+    {
+      "id": "R0123",
+      "phase": "character",
+      "target_label": "相",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0123_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0123.png"
+        }
+      ]
+    },
+    {
+      "id": "R0124",
+      "phase": "character",
+      "target_label": "疱",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0124_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0124.png"
+        }
+      ]
+    },
+    {
+      "id": "R0125",
+      "phase": "character",
+      "target_label": "佗",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0125_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0125.png"
+        }
+      ]
+    },
+    {
+      "id": "R0126",
+      "phase": "character",
+      "target_label": "丵",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0126_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0126.png"
+        }
+      ]
+    },
+    {
+      "id": "R0127",
+      "phase": "character",
+      "target_label": "丽",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0127_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0127.png"
+        }
+      ]
+    },
+    {
+      "id": "R0128",
+      "phase": "character",
+      "target_label": "疔",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0128_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0128.png"
+        }
+      ]
+    },
+    {
+      "id": "R0129",
+      "phase": "character",
+      "target_label": "果",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0129_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0129.png"
+        }
+      ]
+    },
+    {
+      "id": "R0130",
+      "phase": "character",
+      "target_label": "疥",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0130_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0130.png"
+        }
+      ]
+    },
+    {
+      "id": "R0131",
+      "phase": "character",
+      "target_label": "係",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0131_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0131.png"
+        }
+      ]
+    },
+    {
+      "id": "R0132",
+      "phase": "character",
+      "target_label": "草",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0132_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0132.png"
+        }
+      ]
+    },
+    {
+      "id": "R0133",
+      "phase": "character",
+      "target_label": "盅",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0133_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0133.png"
+        }
+      ]
+    },
+    {
+      "id": "R0134",
+      "phase": "character",
+      "target_label": "疡",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0134_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0134.png"
+        }
+      ]
+    },
+    {
+      "id": "R0135",
+      "phase": "character",
+      "target_label": "神",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0135_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0135.png"
+        }
+      ]
+    },
+    {
+      "id": "R0136",
+      "phase": "character",
+      "target_label": "侃",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0136_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0136.png"
+        }
+      ]
+    },
+    {
+      "id": "R0137",
+      "phase": "character",
+      "target_label": "能",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0137_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0137.png"
+        }
+      ]
+    },
+    {
+      "id": "R0138",
+      "phase": "character",
+      "target_label": "济",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0138_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0138.png"
+        }
+      ]
+    },
+    {
+      "id": "R0139",
+      "phase": "character",
+      "target_label": "找",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0139_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0139.png"
+        }
+      ]
+    },
+    {
+      "id": "R0140",
+      "phase": "character",
+      "target_label": "俏",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0140_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0140.png"
+        }
+      ]
+    },
+    {
+      "id": "R0141",
+      "phase": "character",
+      "target_label": "每",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0141_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0141.png"
+        }
+      ]
+    },
+    {
+      "id": "R0142",
+      "phase": "character",
+      "target_label": "侍",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0142_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0142.png"
+        }
+      ]
+    },
+    {
+      "id": "R0143",
+      "phase": "character",
+      "target_label": "疖",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0143_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0143.png"
+        }
+      ]
+    },
+    {
+      "id": "R0144",
+      "phase": "character",
+      "target_label": "结",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0144_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0144.png"
+        }
+      ]
+    },
+    {
+      "id": "R0145",
+      "phase": "character",
+      "target_label": "乘",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0145_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0145.png"
+        }
+      ]
+    },
+    {
+      "id": "R0146",
+      "phase": "character",
+      "target_label": "佛",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0146_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0146.png"
+        }
+      ]
+    },
+    {
+      "id": "R0147",
+      "phase": "character",
+      "target_label": "空",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0147_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0147.png"
+        }
+      ]
+    },
+    {
+      "id": "R0148",
+      "phase": "character",
+      "target_label": "畀",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0148_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0148.png"
+        }
+      ]
+    },
+    {
+      "id": "R0149",
+      "phase": "character",
+      "target_label": "知",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0149_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0149.png"
+        }
+      ]
+    },
+    {
+      "id": "R0150",
+      "phase": "character",
+      "target_label": "线",
+      "target_description": null,
+      "target_png": "reliability_study/images/R0150_gt.png",
+      "attempts": [
+        {
+          "group": "BLINDED",
+          "path": "reliability_study/images/R0150.png"
+        }
+      ]
+    }
+  ]
+}

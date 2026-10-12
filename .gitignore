@@ -40,3 +40,16 @@ dataset_pilot/*.png
 chinese_strokes_dataset/*.png
 Chinese_2/*.png
 Chinese_L3/*.png
+
+# Second-rater working directory: 2.6 MB of duplicate PNGs plus a manifest
+# with machine-specific absolute paths. The releasable, path-relative copy
+# lives at experiments/exp_context_effect/export/reliability/.
+experiments/exp_context_effect/reliability_study/
+
+# Skill-manager install artifacts (machine-local, not research)
+.agents/
+skills-lock.json
+
+# Personal / application material — never commit
+rec_letter_packet.md
+实验报告.pages
